@@ -12,13 +12,13 @@ function App() {
     <div>
       <p>Logo</p>
       <nav>
-        <NavLink to="/count">Count</NavLink>
+        <NavLink to="/counter">Counter</NavLink>
         <NavLink to="/form">Form</NavLink>
         <NavLink to="/time">Time</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/count" element={<Counter />} />
+        <Route path="/counter" element={<Counter />} />
         <Route path="/form" element={<Form />} />
         <Route path="/time" element={<Time />} />
         <Route path="*" element={<NotFound />} />

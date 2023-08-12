@@ -1,4 +1,4 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import { Home } from '../pages/HomePage';
 import { Counter } from '../pages/CounterPage';
 import { Form } from '../pages/FormPage';
@@ -10,12 +10,22 @@ import './App.css';
 function App() {
   return (
     <div>
-      <p>Logo</p>
-      <nav>
-        <NavLink to="/counter">Counter</NavLink>
-        <NavLink to="/form">Form</NavLink>
-        <NavLink to="/time">Time</NavLink>
-      </nav>
+      <header>
+        <Link to="/">WebForge</Link>
+        <nav>
+          <ul>
+            <li>
+              <NavLink to="/counter">Counter</NavLink>
+            </li>
+            <li>
+              <NavLink to="/form">Form</NavLink>
+            </li>
+            <li>
+              <NavLink to="/time">Time</NavLink>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />

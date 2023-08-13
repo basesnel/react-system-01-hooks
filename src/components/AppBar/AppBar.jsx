@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { Container } from 'components/Container/Container';
 import { Logo } from 'components/Logo/Logo';

@@ -1,0 +1,32 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+@value colors: "../../cssvariables/colors.module.css";
+@value sapphire, logoblack from colors;
+
+.logo {
+  display: block;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: center;
+  color: sapphire;
+}
+
+@media mobile {
+  .logo {
+    font-size: 22px;
+  }
+}
+
+@media smartphone {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+.decor {
+  color: logoblack;
+}

@@ -1,3 +1,37 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+@value colors: "../../cssvariables/colors.module.css";
+@value bgcolor, brdcolor from colors;
 .container {
-  margin: 0 auto;
+  margin: 10px 10px 0;
+  padding: 10px;
+  border: 1px solid brdcolor;
+  border-radius: 10px;
+  background-color: bgcolor;
+}
+
+@media mobile {
+  .container {
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+}
+
+@media smartphone {
+  .container {
+    max-width: 420px;
+  }
+}
+
+@media tablet {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media desktop {
+  .container {
+    max-width: 1200px;
+  }
 }

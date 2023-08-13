@@ -1,31 +1,19 @@
-import { Routes, Route, Link, NavLink } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+
 import { Home } from '../pages/HomePage';
 import { Counter } from '../pages/CounterPage';
 import { Form } from '../pages/FormPage';
 import { Time } from '../pages/TimePage';
 import { NotFound } from '../pages/NotFoundPage';
 
+import { AppBar } from './AppBar/AppBar';
+
 import './App.css';
 
 function App() {
   return (
     <div>
-      <header>
-        <Link to="/">WebForge</Link>
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/counter">Counter</NavLink>
-            </li>
-            <li>
-              <NavLink to="/form">Form</NavLink>
-            </li>
-            <li>
-              <NavLink to="/time">Time</NavLink>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <AppBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/counter" element={<Counter />} />

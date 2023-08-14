@@ -1,12 +1,42 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
-import css from './Logo.module.css';
+import css from './NavBar.module.css';
 
-export const Logo = ({ text }) => {
+export const NavBar = () => {
   return (
-    <Link className={css.logo} to="/">
-      {text.substr(0, 3)}
-      <span className={css.decor}>{text.substr(3)}</span>
-    </Link>
+    <nav>
+      <ul>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/counter"
+          >
+            Counter
+          </NavLink>
+        </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/form"
+          >
+            Form
+          </NavLink>
+        </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/time"
+          >
+            Time
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 };

@@ -1,0 +1,43 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+@value colors: "../../cssvariables/colors.module.css";
+@value light, sapphire from colors;
+
+.item {
+  text-align: center;
+}
+
+.navlink {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: center;
+  color: light;
+}
+
+.navlinkactive {
+  composes: navlink;
+  color: sapphire;
+}
+
+.navlink:hover {
+  color: sapphire;
+}
+
+@media mobile {
+  .navlink {
+    font-size: 22px;
+  }
+}
+
+@media smartphone {
+  .navlink {
+    font-size: 24px;
+  }
+}
+
+.decor {
+  color: logoblack;
+}

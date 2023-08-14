@@ -2,7 +2,7 @@
 @value mobile, smartphone, tablet, desktop from sizes;
 
 @value colors: "../../cssvariables/colors.module.css";
-@value sapphire, logoblack from colors;
+@value sapphire, logolight from colors;
 
 .logo {
   display: block;
@@ -28,5 +28,5 @@
 }
 
 .decor {
-  color: logoblack;
+  color: logolight;
 }

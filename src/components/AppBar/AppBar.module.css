@@ -1,0 +1,6 @@
+@value colors: "../../cssvariables/colors.module.css";
+@value dark from colors;
+
+.appbar {
+  background-color: dark;
+}

@@ -1,10 +1,11 @@
 import { Container } from 'components/Container/Container';
+import { Title } from 'components/Title/Title';
 
 export const Form = () => {
   return (
     <main>
       <Container>
-        <h1>Form</h1>
+        <Title caption="Form" />
         <p>Form hook case.</p>
       </Container>
     </main>

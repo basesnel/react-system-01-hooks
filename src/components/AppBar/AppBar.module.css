@@ -1,6 +1,10 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
 @value colors: "../../cssvariables/colors.module.css";
 @value dark from colors;
 
 .appbar {
+  margin-bottom: 20px;
   background-color: dark;
 }

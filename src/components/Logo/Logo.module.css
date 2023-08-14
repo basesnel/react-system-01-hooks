@@ -2,11 +2,12 @@
 @value mobile, smartphone, tablet, desktop from sizes;
 
 @value colors: "../../cssvariables/colors.module.css";
-@value sapphire, logolight from colors;
+@value sapphire, logolight, light from colors;
 
 .logo {
   display: block;
-  padding: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid light;
   font-size: 18px;
   font-weight: 600;
   line-height: 1.25;
@@ -24,6 +25,12 @@
 @media smartphone {
   .logo {
     font-size: 24px;
+  }
+}
+
+@media tablet {
+  .logo {
+    border: none;
   }
 }
 

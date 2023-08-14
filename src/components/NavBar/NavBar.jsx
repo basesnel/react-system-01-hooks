@@ -5,7 +5,7 @@ import css from './NavBar.module.css';
 export const NavBar = () => {
   return (
     <nav>
-      <ul>
+      <ul className={css.menu}>
         <li className={css.item}>
           <NavLink
             className={({ isActive }) =>

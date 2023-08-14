@@ -5,7 +5,7 @@
 @value bgcolor, brdcolor from colors;
 
 .container {
-  margin: 0 auto 10px;
+  margin: 0 auto;
   padding: 0 10px;
 }
 
@@ -24,6 +24,13 @@
 @media tablet {
   .container {
     max-width: 720px;
+  }
+}
+
+@media tablet {
+  .container.navigation {
+    display: flex;
+    justify-content: space-between;
   }
 }
 

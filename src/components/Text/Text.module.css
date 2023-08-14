@@ -1,0 +1,13 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.txt {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media mobile {
+  .txt {
+    font-size: 16px;
+  }
+}

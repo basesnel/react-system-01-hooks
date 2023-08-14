@@ -4,16 +4,30 @@
 @value colors: "../../cssvariables/colors.module.css";
 @value light, sapphire from colors;
 
+@media smartphone {
+  .menu {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+@media tablet {
+  .menu {
+    gap: 30px;
+  }
+}
+
 .item {
   text-align: center;
 }
 
 .navlink {
+  display: block;
+  padding: 10px 0;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.25;
   text-decoration: none;
-  text-align: center;
   color: light;
 }
 
@@ -28,13 +42,13 @@
 
 @media mobile {
   .navlink {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 
 @media smartphone {
   .navlink {
-    font-size: 24px;
+    padding: 12px 0;
   }
 }
 

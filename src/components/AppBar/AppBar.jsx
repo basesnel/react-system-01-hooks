@@ -7,7 +7,7 @@ import css from './AppBar.module.css';
 export const AppBar = () => {
   return (
     <header className={css.appbar}>
-      <Container>
+      <Container variant="navigation">
         <Logo text="WebForge" />
         <NavBar />
       </Container>

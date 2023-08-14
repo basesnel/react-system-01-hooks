@@ -1,0 +1,26 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+@value colors: "../../cssvariables/colors.module.css";
+@value caption from colors;
+
+.title {
+  color: caption;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid caption;
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+@media mobile {
+  .title {
+    font-size: 22px;
+  }
+}
+
+@media smartphone {
+  .title {
+    font-size: 24px;
+  }
+}

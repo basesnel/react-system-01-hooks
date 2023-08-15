@@ -5,7 +5,7 @@ export const NotFound = () => {
   return (
     <main>
       <Container>
-        <Title caption="Not found" />
+        <Title level={1} caption="Not found" />
         <p>Oops, there is no content. Error 404.</p>
       </Container>
     </main>

@@ -2,7 +2,7 @@
 @value mobile, smartphone, tablet, desktop from sizes;
 
 .container {
-  margin: 0 auto;
+  margin: 0 auto 20px;
   padding: 0 10px;
 }
 
@@ -22,6 +22,10 @@
   .container {
     max-width: 720px;
   }
+}
+
+.container.navigation {
+  margin: 0 auto;
 }
 
 @media tablet {

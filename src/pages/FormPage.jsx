@@ -5,7 +5,7 @@ export const Form = () => {
   return (
     <main>
       <Container>
-        <Title caption="Form" />
+        <Title level={1} caption="Form" />
         <p>Form hook case.</p>
       </Container>
     </main>

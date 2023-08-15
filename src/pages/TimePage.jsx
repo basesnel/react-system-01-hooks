@@ -5,7 +5,7 @@ export const Time = () => {
   return (
     <main>
       <Container>
-        <Title caption="Time" />
+        <Title level={1} caption="Time" />
         <p>Time hook case.</p>
       </Container>
     </main>

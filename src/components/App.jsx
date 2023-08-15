@@ -12,7 +12,7 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <>
       <AppBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/time" element={<Time />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </div>
+    </>
   );
 }
 

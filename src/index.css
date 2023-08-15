@@ -1,6 +1,23 @@
 @import-normalize;
 /* @import '../node_modules/modern-normalize/modern-normalize.css'; */
 
+:root {
+  --color-dark: #202020;
+  --color-light: #e0e0e0;
+
+  --color-logodark: #000;
+  --color-logolight: #fff;
+
+  --color-accent: #0f52ba;
+
+  --color-caption: #404040;
+  --color-text: #808080;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
 
 body {
@@ -10,8 +27,7 @@ body {
     'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #e0e0e0;
-  color: #808080;
+  background-color: var(--color-light);
 }
 
 code {

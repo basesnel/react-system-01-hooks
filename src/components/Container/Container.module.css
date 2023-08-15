@@ -1,9 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile, smartphone, tablet, desktop from sizes;
 
-@value colors: "../../cssvariables/colors.module.css";
-@value bgcolor, brdcolor from colors;
-
 .container {
   margin: 0 auto;
   padding: 0 10px;

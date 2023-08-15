@@ -1,9 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile, smartphone, tablet, desktop from sizes;
 
-@value colors: "../../cssvariables/colors.module.css";
-@value light, sapphire from colors;
-
 @media smartphone {
   .menu {
     display: flex;
@@ -28,16 +25,16 @@
   font-weight: 400;
   line-height: 1.25;
   text-decoration: none;
-  color: light;
+  color: var(--color-light);
 }
 
 .navlinkactive {
   composes: navlink;
-  color: sapphire;
+  color: var(--color-accent);
 }
 
 .navlink:hover {
-  color: sapphire;
+  color: var(--color-accent);
 }
 
 @media mobile {

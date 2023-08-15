@@ -10,7 +10,7 @@
 
 @media tablet {
   .menu {
-    gap: 30px;
+    gap: 10px;
   }
 }
 
@@ -20,7 +20,7 @@
 
 .navlink {
   display: block;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 18px;
   font-weight: 400;
   line-height: 1.25;
@@ -31,6 +31,7 @@
 .navlinkactive {
   composes: navlink;
   color: var(--color-accent);
+  background-color: var(--color-light);
 }
 
 .navlink:hover {
@@ -45,7 +46,13 @@
 
 @media smartphone {
   .navlink {
-    padding: 12px 0;
+    padding: 12px 10px;
+  }
+}
+
+@media tablet {
+  .navlink {
+    padding: 12px 10px 13px;
   }
 }
 

@@ -1,0 +1,19 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media tablet {
+  .grid {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}

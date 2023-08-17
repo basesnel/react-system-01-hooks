@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
+import { Grid } from 'components/Grid/Grid';
 import { ButtonCount } from 'components/ButtonCount/ButtonCount';
 import { ButtonGeneralCount } from 'components/ButtonGeneralCount/ButtonGeneralCount';
 
@@ -21,16 +22,20 @@ export const Counter = () => {
       </Container>
       <Container>
         <Title level={2} caption="Counter with own state" />
-        <ButtonCount />
-        <ButtonCount />
-        <ButtonCount />
-        <ButtonCount />
-        <ButtonCount />
+        <Grid>
+          <ButtonCount />
+          <ButtonCount />
+          <ButtonCount />
+          <ButtonCount />
+          <ButtonCount />
+        </Grid>
       </Container>
       <Container>
         <Title level={2} caption="Counter with general state" />
-        <ButtonGeneralCount count={count} onClick={handleClick} />
-        <ButtonGeneralCount count={count} onClick={handleClick} />
+        <Grid>
+          <ButtonGeneralCount count={count} onClick={handleClick} />
+          <ButtonGeneralCount count={count} onClick={handleClick} />
+        </Grid>
       </Container>
     </main>
   );

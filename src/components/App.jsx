@@ -16,8 +16,8 @@ function App() {
       <AppBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/counter" element={<Counter />} />
         <Route path="/form" element={<Form />} />
+        <Route path="/counter" element={<Counter />} />
         <Route path="/time" element={<Time />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

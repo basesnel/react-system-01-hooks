@@ -11,9 +11,9 @@ export const NavBar = () => {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/counter"
+            to="/form"
           >
-            Counter
+            Form
           </NavLink>
         </li>
         <li className={css.item}>
@@ -21,9 +21,9 @@ export const NavBar = () => {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/form"
+            to="/counter"
           >
-            Form
+            Counter
           </NavLink>
         </li>
         <li className={css.item}>

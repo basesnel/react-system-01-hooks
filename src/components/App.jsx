@@ -1,10 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { Home } from '../pages/HomePage';
-import { Counter } from '../pages/CounterPage';
-import { Form } from '../pages/FormPage';
-import { Time } from '../pages/TimePage';
-import { NotFound } from '../pages/NotFoundPage';
+import { HomePage } from '../pages/HomePage';
+import { CounterPage } from '../pages/CounterPage';
+import { ColorPickerPage } from '../pages/ColorPickerPage';
+import { FormPage } from '../pages/FormPage';
+import { TimePage } from '../pages/TimePage';
+import { NotFoundPage } from '../pages/NotFoundPage';
 
 import { AppBar } from './AppBar/AppBar';
 
@@ -15,11 +16,12 @@ function App() {
     <>
       <AppBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/form" element={<Form />} />
-        <Route path="/counter" element={<Counter />} />
-        <Route path="/time" element={<Time />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/form" element={<FormPage />} />
+        <Route path="/counter" element={<CounterPage />} />
+        <Route path="/colorpicker" element={<ColorPickerPage />} />
+        <Route path="/time" element={<TimePage />} />
+        <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>
   );

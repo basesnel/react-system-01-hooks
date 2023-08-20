@@ -3,7 +3,7 @@ import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { SignupForm } from 'components/SignupForm/SignupForm';
 
-export const Form = () => {
+export const FormPage = () => {
   return (
     <main>
       <Container>

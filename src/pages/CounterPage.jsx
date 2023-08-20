@@ -7,7 +7,7 @@ import { Grid } from 'components/Grid/Grid';
 import { ButtonCount } from 'components/ButtonCount/ButtonCount';
 import { ButtonGeneralCount } from 'components/ButtonGeneralCount/ButtonGeneralCount';
 
-export const Counter = () => {
+export const CounterPage = () => {
   const [count, setCount] = useState(0);
 
   function handleClick() {

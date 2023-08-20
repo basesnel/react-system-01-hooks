@@ -31,6 +31,16 @@ export const NavBar = () => {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
+            to="/colorpicker"
+          >
+            Color picker
+          </NavLink>
+        </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
             to="/time"
           >
             Time

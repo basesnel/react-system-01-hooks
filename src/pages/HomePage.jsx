@@ -2,7 +2,7 @@ import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 
-export const Home = () => {
+export const HomePage = () => {
   return (
     <main>
       <Container>

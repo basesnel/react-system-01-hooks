@@ -1,7 +1,7 @@
 import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 
-export const NotFound = () => {
+export const NotFoundPage = () => {
   return (
     <main>
       <Container>

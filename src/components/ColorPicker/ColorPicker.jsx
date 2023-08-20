@@ -9,7 +9,9 @@ export const ColorPicker = ({ options }) => {
   const [activeIndexOptionIdx, setActiveIndexOptionIdx] = useState(0);
 
   const makeOptionClassName = index => {
-    return index === activeIndexOptionIdx ? css.activeOption : css.option;
+    return index === activeIndexOptionIdx
+      ? `${css.option} ${css.activeOption}`
+      : css.option;
   };
 
   const { label, color } = options[activeIndexOptionIdx];

@@ -2,6 +2,7 @@
 @value mobile, smartphone, tablet, desktop from sizes;
 
 .txt {
+  padding-bottom: 10px;
   font-size: 14px;
   line-height: 1.5;
   color: var(--color-text);

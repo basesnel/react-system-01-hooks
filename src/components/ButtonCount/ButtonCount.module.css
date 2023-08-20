@@ -1,0 +1,16 @@
+.btnCount {
+  border: 1px solid var(--color-text);
+  border-radius: 4px;
+  padding: 4px 10px;
+  font-weight: 500;
+  background-color: var(--color-light);
+  color: var(--color-text);
+  transition: var(--my-transition);
+}
+
+.btnCount:hover {
+  border: 1px solid var(--color-accent);
+  background-color: var(--color-accent);
+  color: var(--color-light);
+  transform: scale(1.1);
+}

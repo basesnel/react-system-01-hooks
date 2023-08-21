@@ -1,10 +1,24 @@
-import { useState } from 'react';
+import { useLocalStorage } from 'hooks/useLocalStorage';
 
 import css from './SignupForm.module.css';
 
 export const SignupForm = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  // case lazy init state:
+  // ===================================================================
+  // const localStorageState = () => {
+  //   console.log('get state on re-render');
+  //   return JSON.parse(window.localStorage.getItem('email')) ?? '';
+  // };
+
+  // const initState = () => localStorageState();
+  // initState trigger on init render in this form: initState = () => func();
+  // initState trigger on every render in this form: initState = func();
+
+  // const [email, setEmail] = useState(initState);
+  // ====================================================================
+
+  const [email, setEmail] = useLocalStorage('email', '');
+  const [password, setPassword] = useLocalStorage('password', '');
 
   const handleChange = event => {
     const { name, value } = event.target;

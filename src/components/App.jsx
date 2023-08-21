@@ -4,7 +4,7 @@ import { HomePage } from '../pages/HomePage';
 import { CounterPage } from '../pages/CounterPage';
 import { ColorPickerPage } from '../pages/ColorPickerPage';
 import { FormPage } from '../pages/FormPage';
-import { TimePage } from '../pages/TimePage';
+import { ClockPage } from '../pages/ClockPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 
 import { AppBar } from './AppBar/AppBar';
@@ -20,7 +20,7 @@ function App() {
         <Route path="/form" element={<FormPage />} />
         <Route path="/counter" element={<CounterPage />} />
         <Route path="/colorpicker" element={<ColorPickerPage />} />
-        <Route path="/time" element={<TimePage />} />
+        <Route path="/clock" element={<ClockPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>

@@ -6,9 +6,9 @@ import App from './components/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <StrictMode>
-    <BrowserRouter basename="/react-system-01-hooks">
-      <App />
-    </BrowserRouter>
-  </StrictMode>
+  // <StrictMode>
+  <BrowserRouter basename="/react-system-01-hooks">
+    <App />
+  </BrowserRouter>
+  // </StrictMode>
 );

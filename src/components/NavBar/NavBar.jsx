@@ -41,9 +41,9 @@ export const NavBar = () => {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/time"
+            to="/clock"
           >
-            Time
+            Clock
           </NavLink>
         </li>
       </ul>

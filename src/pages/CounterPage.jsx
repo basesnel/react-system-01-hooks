@@ -5,7 +5,7 @@ import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { Grid } from 'components/Grid/Grid';
 import { ButtonCount } from 'components/ButtonCount/ButtonCount';
-import { ButtonGeneralCount } from 'components/ButtonGeneralCount/ButtonGeneralCount';
+import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
 export const CounterPage = () => {
   const [count, setCount] = useState(0);
@@ -50,20 +50,28 @@ export const CounterPage = () => {
       <Container>
         <Title level={2} caption="Counter with general state" />
         <Grid>
-          <ButtonGeneralCount count={count} onClick={handleClick} />
-          <ButtonGeneralCount count={count} onClick={handleClick} />
+          <DecoratedButton
+            caption={`Clicked ${count} times`}
+            onClick={handleClick}
+          />
+          <DecoratedButton
+            caption={`Clicked ${count} times`}
+            onClick={handleClick}
+          />
         </Grid>
       </Container>
       <Container>
         <Title level={2} caption="CounterA and CounterB" />
         <Text>Counters with useEffect hook case.</Text>
         <Grid>
-          <button type="button" onClick={handleCounterAIncrement}>
-            pressed the button {counterA} times
-          </button>
-          <button type="button" onClick={handleCounterBIncrement}>
-            pressed the button {counterB} times
-          </button>
+          <DecoratedButton
+            caption={`pressed the button ${counterA} times`}
+            onClick={handleCounterAIncrement}
+          />
+          <DecoratedButton
+            caption={`pressed the button ${counterB} times`}
+            onClick={handleCounterBIncrement}
+          />
         </Grid>
       </Container>
     </main>

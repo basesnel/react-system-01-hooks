@@ -1,5 +1,7 @@
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
+import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+
 import css from './SignupForm.module.css';
 
 export const SignupForm = () => {
@@ -60,9 +62,7 @@ export const SignupForm = () => {
         />
       </label>
       <div className={css.aligner}>
-        <button type="submit" className={css.button}>
-          Register
-        </button>
+        <DecoratedButton type="submit" caption="Register" />
       </div>
     </form>
   );

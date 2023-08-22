@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { Text } from 'components/Text/Text';
+import { Grid } from 'components/Grid/Grid';
+import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
 export const Clock = () => {
   const [time, setTime] = useState(() => new Date());
@@ -42,8 +44,13 @@ export const Clock = () => {
   return (
     <>
       <Text>Current time: {time.toLocaleTimeString()}</Text>
-      <button onClick={() => setTime(new Date())}>Update time state</button>
-      <button onClick={stop}>Stop</button>
+      <Grid>
+        <DecoratedButton
+          caption="Update time state"
+          onClick={() => setTime(new Date())}
+        />
+        <DecoratedButton caption="Stop" onClick={stop} />
+      </Grid>
     </>
   );
 };

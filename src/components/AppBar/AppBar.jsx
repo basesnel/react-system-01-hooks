@@ -4,9 +4,11 @@ import { Container } from 'components/Container/Container';
 import { Logo } from 'components/Logo/Logo';
 import { NavBar } from 'components/NavBar/NavBar';
 import { UserMenu } from 'components/UserMenu/UserMenu';
+import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 import authContext from 'contexts/auth/context';
 
 import css from './AppBar.module.css';
+import { Grid } from 'components/Grid/Grid';
 
 export const AppBar = () => {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
@@ -20,9 +22,9 @@ export const AppBar = () => {
         {isLoggedIn ? (
           <UserMenu onLogOut={onLogOut} user={user} />
         ) : (
-          <button type="button" onClick={onLogIn}>
-            Log In
-          </button>
+          <Grid>
+            <DecoratedButton caption="Log In" onClick={onLogIn} />
+          </Grid>
         )}
       </Container>
     </header>

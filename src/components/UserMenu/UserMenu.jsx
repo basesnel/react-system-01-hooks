@@ -1,8 +1,11 @@
+import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import { Grid } from 'components/Grid/Grid';
+
 export const UserMenu = ({ user, onLogOut }) => {
   return (
-    <div>
+    <Grid>
       <span>Welcome, {user.name}</span>
-      <button onClick={onLogOut}>Log Out</button>
-    </div>
+      <DecoratedButton caption="Log Out" onClick={onLogOut} />
+    </Grid>
   );
 };

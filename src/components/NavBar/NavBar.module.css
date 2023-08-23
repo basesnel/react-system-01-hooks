@@ -4,6 +4,7 @@
 @media smartphone {
   .menu {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
 }

@@ -56,6 +56,16 @@ export const NavBar = () => {
             Clock
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/pokemon"
+          >
+            Pokemon
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

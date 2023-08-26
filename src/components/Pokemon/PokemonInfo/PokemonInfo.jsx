@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react';
-// import { toast } from 'react-toastify';
-
-import { Text } from 'components/Text/Text';
 
 import pokemonAPI from 'services/pokemon-api';
+
+import { Text } from 'components/Text/Text';
 
 const Status = {
   IDLE: 'idle',

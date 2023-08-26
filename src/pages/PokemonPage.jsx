@@ -1,4 +1,4 @@
-import { PokemonView } from 'components/PokemonView/PokemonView';
+import { PokemonView } from 'components/Pokemon/PokemonView/PokemonView';
 import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';

@@ -2,7 +2,7 @@ import { PokemonForm } from 'components/Pokemon/PokemonForm/PokemonForm';
 import { PokemonInfo } from 'components/Pokemon/PokemonInfo/PokemonInfo';
 import { useState } from 'react';
 
-export const PokemonView = () => {
+export const Pokemon = () => {
   const [pokemonName, setPokemonName] = useState('');
 
   return (

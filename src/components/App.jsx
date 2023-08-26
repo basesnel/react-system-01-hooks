@@ -1,4 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { HomePage } from '../pages/HomePage';
 import { CounterPage } from '../pages/CounterPage';
@@ -27,6 +29,7 @@ function App() {
         <Route path="/pokemon" element={<PokemonPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
+      <ToastContainer autoClose={3000} />
     </>
   );
 }

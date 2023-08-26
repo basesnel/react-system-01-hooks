@@ -1,4 +1,4 @@
-import { Pokemon } from 'components/Pokemon/Pokemon';
+import { PokemonView } from 'components/PokemonView/PokemonView';
 import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
@@ -11,8 +11,8 @@ export const PokemonPage = () => {
         <Text>Pokemon rest API hook case.</Text>
       </Container>
       <Container>
-        <Title level={1} caption="Pokemon - first case" />
-        <Pokemon />
+        <Title level={2} caption="Pokemon - first case" />
+        <PokemonView />
       </Container>
     </main>
   );

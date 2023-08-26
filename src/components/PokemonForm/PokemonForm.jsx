@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 
-export const PokemonForm = () => {
+export const PokemonForm = ({ onFormSubmit }) => {
   const [pokemonName, setPokemonName] = useState('');
 
   const handleNameChange = event => {
@@ -9,6 +10,12 @@ export const PokemonForm = () => {
 
   const handleSubmit = event => {
     event.preventDefault();
+
+    if (pokemonName.trim() === '') {
+      return toast.warning('Please, input pokemon name!');
+    }
+
+    onFormSubmit(pokemonName);
     setPokemonName('');
   };
 
@@ -17,6 +24,7 @@ export const PokemonForm = () => {
       <input
         type="text"
         name="pokemonName"
+        autoComplete="off"
         value={pokemonName}
         onChange={handleNameChange}
       />

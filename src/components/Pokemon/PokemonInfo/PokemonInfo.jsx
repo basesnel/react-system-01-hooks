@@ -4,6 +4,8 @@ import pokemonAPI from 'services/pokemon-api';
 
 import { Text } from 'components/Text/Text';
 
+import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
+
 const Status = {
   IDLE: 'idle',
   PENDING: 'pending',
@@ -43,7 +45,7 @@ export const PokemonInfo = ({ pokemonName }) => {
   }
 
   if (status === Status.REJECTED) {
-    return <Text>Error of query: {error.message}</Text>;
+    return <PokemonErrorView message={error.message} />;
   }
 
   if (status === Status.RESOlVED) {

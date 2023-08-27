@@ -5,6 +5,7 @@ import pokemonAPI from 'services/pokemon-api';
 import { Text } from 'components/Text/Text';
 
 import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
+import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
 
 const Status = {
   IDLE: 'idle',
@@ -49,16 +50,6 @@ export const PokemonInfo = ({ pokemonName }) => {
   }
 
   if (status === Status.RESOlVED) {
-    return (
-      <div>
-        <Text>Pokemon info</Text>
-        <Text>{pokemonName}</Text>
-        <img
-          src={pokemon.sprites.other['official-artwork'].front_default}
-          alt={pokemon.name}
-          width="240"
-        />
-      </div>
-    );
+    return <PokemonDataView pokemon={pokemon} />;
   }
 };

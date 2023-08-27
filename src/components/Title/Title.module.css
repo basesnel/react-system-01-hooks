@@ -45,3 +45,20 @@
     font-size: 20px;
   }
 }
+
+.title03 {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+@media mobile {
+  .title03 {
+    font-size: 16px;
+  }
+}
+
+@media smartphone {
+  .title03 {
+    font-size: 18px;
+  }
+}

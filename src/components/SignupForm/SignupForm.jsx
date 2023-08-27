@@ -3,6 +3,7 @@ import { useLocalStorage } from 'hooks/useLocalStorage';
 import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
 import css from './SignupForm.module.css';
+import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
 
 export const SignupForm = () => {
   // case lazy init state:
@@ -41,26 +42,18 @@ export const SignupForm = () => {
 
   return (
     <form className={css.form} autoComplete="off">
-      <label className={css.field}>
-        <span className={css.label}>E-mail</span>
-        <input
-          type="email"
-          name="email"
-          className={css.input}
-          onChange={handleChange}
-          value={email}
-        />
-      </label>
-      <label className={css.field}>
-        <span className={css.label}>Password</span>
-        <input
-          type="password"
-          name="password"
-          className={css.input}
-          onChange={handleChange}
-          value={password}
-        />
-      </label>
+      <DecoratedInput
+        inputName="email"
+        inputValue={email}
+        inputLabel="E-mail"
+        handleChange={handleChange}
+      />
+      <DecoratedInput
+        inputName="password"
+        inputValue={password}
+        inputLabel="Password"
+        handleChange={handleChange}
+      />
       <div className={css.aligner}>
         <DecoratedButton type="submit" caption="Register" />
       </div>

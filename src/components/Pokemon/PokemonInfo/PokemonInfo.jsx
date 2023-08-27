@@ -45,7 +45,7 @@ export const PokemonInfo = ({ pokemonName }) => {
   }
 
   if (status === Status.PENDING) {
-    return <PokemonPendingView />;
+    return <PokemonPendingView pokemonName={pokemonName} />;
   }
 
   if (status === Status.REJECTED) {

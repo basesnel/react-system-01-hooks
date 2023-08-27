@@ -6,6 +6,7 @@ import { Text } from 'components/Text/Text';
 
 import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
 import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
+import { PokemonPendingView } from '../PokemonPendingView/PokemonPendingView';
 
 const Status = {
   IDLE: 'idle',
@@ -25,16 +26,18 @@ export const PokemonInfo = ({ pokemonName }) => {
     }
 
     setStatus(Status.PENDING);
-    pokemonAPI
-      .fetchPokemon(pokemonName)
-      .then(pokemon => {
-        setPokemon(pokemon);
-        setStatus(Status.RESOlVED);
-      })
-      .catch(error => {
-        setError(error);
-        setStatus(Status.REJECTED);
-      });
+    setTimeout(() => {
+      pokemonAPI
+        .fetchPokemon(pokemonName)
+        .then(pokemon => {
+          setPokemon(pokemon);
+          setStatus(Status.RESOlVED);
+        })
+        .catch(error => {
+          setError(error);
+          setStatus(Status.REJECTED);
+        });
+    }, 2000);
   }, [pokemonName]);
 
   if (status === Status.IDLE) {
@@ -42,7 +45,7 @@ export const PokemonInfo = ({ pokemonName }) => {
   }
 
   if (status === Status.PENDING) {
-    return <Text>Loading...</Text>;
+    return <PokemonPendingView />;
   }
 
   if (status === Status.REJECTED) {

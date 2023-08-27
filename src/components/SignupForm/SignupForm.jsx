@@ -4,6 +4,7 @@ import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
 import css from './SignupForm.module.css';
 import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
+import { toast } from 'react-toastify';
 
 export const SignupForm = () => {
   // case lazy init state:
@@ -40,8 +41,14 @@ export const SignupForm = () => {
     }
   };
 
+  const handleSubmitForm = event => {
+    event.preventDefault();
+    toast.success(`Welcome, ${email}!`);
+    console.log({ email, password });
+  };
+
   return (
-    <form className={css.form} autoComplete="off">
+    <form className={css.form} onSubmit={handleSubmitForm} autoComplete="off">
       <DecoratedInput
         inputName="email"
         inputValue={email}

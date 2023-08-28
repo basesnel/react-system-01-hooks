@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
+import { DecoratedForm } from 'components/DecoratedForm/DecoratedForm';
+import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
+import { DecoratedSubmit } from 'components/DecoratedSubmit/DecoratedSubmit';
+
 export const PokemonForm = ({ onFormSubmit }) => {
   const [pokemonName, setPokemonName] = useState('');
 
@@ -20,15 +24,14 @@ export const PokemonForm = ({ onFormSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="pokemonName"
-        autoComplete="off"
-        value={pokemonName}
-        onChange={handleNameChange}
+    <DecoratedForm onSubmit={handleSubmit}>
+      <DecoratedInput
+        inputName="pokemonName"
+        inputValue={pokemonName}
+        inputLabel="Pokemon name"
+        handleChange={handleNameChange}
       />
-      <button type="submit">Search</button>
-    </form>
+      <DecoratedSubmit caption="Search" />
+    </DecoratedForm>
   );
 };

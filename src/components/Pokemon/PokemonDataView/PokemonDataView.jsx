@@ -5,7 +5,7 @@ export const PokemonDataView = ({ pokemon }) => {
   const { sprites, name, stats } = pokemon;
 
   return (
-    <div>
+    <>
       <DecoratedImg
         src={sprites.other['official-artwork'].front_default}
         name={name}
@@ -23,6 +23,6 @@ export const PokemonDataView = ({ pokemon }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 };

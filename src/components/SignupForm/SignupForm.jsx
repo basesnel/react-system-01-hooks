@@ -1,10 +1,9 @@
+import { toast } from 'react-toastify';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
-
-import css from './SignupForm.module.css';
 import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
-import { toast } from 'react-toastify';
+import { DecoratedForm } from 'components/DecoratedForm/DecoratedForm';
+import { DecoratedSubmit } from 'components/DecoratedSubmit/DecoratedSubmit';
 
 export const SignupForm = () => {
   // case lazy init state:
@@ -48,7 +47,7 @@ export const SignupForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmitForm} autoComplete="off">
+    <DecoratedForm onSubmit={handleSubmitForm}>
       <DecoratedInput
         inputName="email"
         inputValue={email}
@@ -61,9 +60,7 @@ export const SignupForm = () => {
         inputLabel="Password"
         handleChange={handleChange}
       />
-      <div className={css.aligner}>
-        <DecoratedButton type="submit" caption="Register" />
-      </div>
-    </form>
+      <DecoratedSubmit caption="Register" />
+    </DecoratedForm>
   );
 };

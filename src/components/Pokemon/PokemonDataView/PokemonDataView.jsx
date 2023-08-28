@@ -10,11 +10,6 @@ export const PokemonDataView = ({ pokemon }) => {
         src={sprites.other['official-artwork'].front_default}
         name={name}
       />
-      {/* <img
-        src={sprites.other['official-artwork'].front_default}
-        alt={name}
-        width="240"
-      /> */}
       <Title level={3} caption={name} />
       <ul>
         {stats.map(entry => (

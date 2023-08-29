@@ -19,3 +19,9 @@
     height: 400px;
   }
 }
+
+@media desktop {
+  .thumb {
+    margin: 0;
+  }
+}

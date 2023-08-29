@@ -7,7 +7,7 @@ export const PokemonDataView = ({ pokemon, ...delegated }) => {
   const { sprites, name, stats } = pokemon;
 
   return (
-    <div {...delegated}>
+    <div className={css.box} {...delegated}>
       <DecoratedImg
         src={sprites.other['official-artwork'].front_default}
         name={name}

@@ -1,4 +1,3 @@
-// import { Loader } from 'components/Loader/Loader';
 import { ImSpinner } from 'react-icons/im';
 import { Text } from 'components/Text/Text';
 
@@ -21,14 +20,12 @@ export const PokemonPendingView = ({ pokemonName }) => {
   };
 
   return (
-    <div>
-      {/* <Loader /> */}
+    <div className={css.box}>
       <div className={css.spinner}>
-        <ImSpinner size="32" color="#808080" className={css['icon-spin']} />{' '}
+        <ImSpinner size="32" color="#e0e0e0" className={css['icon-spin']} />{' '}
         <Text>Loading...</Text>
       </div>
-      {/* <Text>Loading...</Text> */}
-      <PokemonDataView pokemon={pokemon} />
+      <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>
   );
 };

@@ -3,11 +3,11 @@ import { Title } from 'components/Title/Title';
 
 import css from './PokemonDataView.module.css';
 
-export const PokemonDataView = ({ pokemon }) => {
+export const PokemonDataView = ({ pokemon, ...delegated }) => {
   const { sprites, name, stats } = pokemon;
 
   return (
-    <>
+    <div {...delegated}>
       <DecoratedImg
         src={sprites.other['official-artwork'].front_default}
         name={name}
@@ -22,6 +22,6 @@ export const PokemonDataView = ({ pokemon }) => {
           ))}
         </ul>
       </div>
-    </>
+    </div>
   );
 };

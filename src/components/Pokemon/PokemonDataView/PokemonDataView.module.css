@@ -1,0 +1,24 @@
+@value sizes: "../../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.thumb {
+  border: 1px solid var(--color-text);
+  border-radius: 6px;
+  margin: 0 auto 10px;
+  padding: 10px;
+}
+
+.thumb h3 {
+  text-align: center;
+}
+
+.thumb li {
+  padding: 4px 10px;
+}
+
+@media tablet {
+  .thumb {
+    width: 400px;
+    height: 400px;
+  }
+}

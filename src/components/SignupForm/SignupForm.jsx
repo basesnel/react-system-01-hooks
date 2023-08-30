@@ -1,9 +1,13 @@
 import { toast } from 'react-toastify';
+import { FiLock } from 'react-icons/fi';
+import { FiMail } from 'react-icons/fi';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
 import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
 import { DecoratedForm } from 'components/DecoratedForm/DecoratedForm';
 import { DecoratedSubmit } from 'components/DecoratedSubmit/DecoratedSubmit';
+
+import css from './SignupForm.module.css';
 
 export const SignupForm = () => {
   // case lazy init state:
@@ -53,12 +57,14 @@ export const SignupForm = () => {
         inputValue={email}
         inputLabel="E-mail"
         handleChange={handleChange}
+        icon={<FiLock className={css.icon} />}
       />
       <DecoratedInput
         inputName="password"
         inputValue={password}
         inputLabel="Password"
         handleChange={handleChange}
+        icon={<FiMail className={css.icon} />}
       />
       <DecoratedSubmit caption="Register" />
     </DecoratedForm>

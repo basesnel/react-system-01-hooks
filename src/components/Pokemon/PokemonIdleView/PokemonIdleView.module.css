@@ -1,0 +1,31 @@
+@value sizes: "../../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.box {
+  margin: 0 24px;
+  padding: 10px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: var(--color-text);
+}
+
+.box p {
+  color: var(--color-light);
+  padding: 0;
+}
+
+@media tablet {
+  .box {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .box p {
+    font-size: 20px;
+  }
+
+  .thumb li {
+    padding: 8px 60px;
+    font-size: 24px;
+  }
+}

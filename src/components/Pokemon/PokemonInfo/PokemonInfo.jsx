@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react';
 
 import pokemonAPI from 'services/pokemon-api';
 
-import { Text } from 'components/Text/Text';
-
 import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
 import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
 import { PokemonPendingView } from '../PokemonPendingView/PokemonPendingView';
+import { PokemonIdleView } from '../PokemonIdleView/PokemonIdleView';
 
 const Status = {
   IDLE: 'idle',
@@ -41,7 +40,7 @@ export const PokemonInfo = ({ pokemonName }) => {
   }, [pokemonName]);
 
   if (status === Status.IDLE) {
-    return <Text>Please, enter pokemon name.</Text>;
+    return <PokemonIdleView />;
   }
 
   if (status === Status.PENDING) {

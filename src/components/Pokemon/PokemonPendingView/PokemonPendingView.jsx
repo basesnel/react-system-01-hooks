@@ -22,8 +22,7 @@ export const PokemonPendingView = ({ pokemonName }) => {
   return (
     <div className={css.box}>
       <div className={css.spinner}>
-        <ImSpinner size="32" color="#e0e0e0" className={css['icon-spin']} />{' '}
-        <Text>Loading...</Text>
+        <ImSpinner className={css['icon-spin']} /> <Text>Loading...</Text>
       </div>
       <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>

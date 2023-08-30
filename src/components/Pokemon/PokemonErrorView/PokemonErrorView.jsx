@@ -1,14 +1,25 @@
 import errorImage from 'assets/images/404.png';
+import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
 
-import { DecoratedImg } from 'components/DecoratedImg/DecoratedImg';
-import { Text } from 'components/Text/Text';
+// import { DecoratedImg } from 'components/DecoratedImg/DecoratedImg';
+// import { Text } from 'components/Text/Text';
 
 export const PokemonErrorView = ({ message }) => {
+  const pokemon = {
+    name: message,
+    sprites: {
+      other: {
+        'official-artwork': {
+          front_default: errorImage,
+        },
+      },
+    },
+    stats: [],
+  };
+
   return (
     <div role="alert">
-      <DecoratedImg src={errorImage} name="Not found" width={400} />
-      {/* <img src={errorImage} width="400" alt="Not found" /> */}
-      <Text>{message}</Text>
+      <PokemonDataView pokemon={pokemon} />
     </div>
   );
 };

@@ -12,7 +12,6 @@ export const DecoratedInput = ({
   return (
     <label className={css.field}>
       <span className={css.label}>{inputLabel}</span>
-      {icon}
       {/* <FiLock className={css.icon} /> */}
       <input
         type={inputName}
@@ -21,6 +20,7 @@ export const DecoratedInput = ({
         onChange={handleChange}
         value={inputValue}
       />
+      {icon}
     </label>
   );
 };

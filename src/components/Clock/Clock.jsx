@@ -5,6 +5,8 @@ import { Grid } from 'components/Grid/Grid';
 import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 import { Box } from 'components/Box/Box';
 
+import css from './Clock.module.css';
+
 export const Clock = () => {
   const [time, setTime] = useState(() => new Date());
 
@@ -44,9 +46,9 @@ export const Clock = () => {
 
   return (
     <>
-      <Text>Current time:</Text>
+      <Text centered={true}>Current time:</Text>
       <Box>
-        <span>{time.toLocaleTimeString()}</span>
+        <span className={css.time}>{time.toLocaleTimeString()}</span>
       </Box>
       <Grid>
         <DecoratedButton

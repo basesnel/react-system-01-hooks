@@ -1,0 +1,20 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
+.time {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media tablet {
+  .time {
+    font-size: 30px;
+  }
+}
+
+@media desktop {
+  .time {
+    font-size: 50px;
+  }
+}

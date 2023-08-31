@@ -8,6 +8,10 @@
   color: var(--color-text);
 }
 
+.txt.centered {
+  text-align: center;
+}
+
 @media mobile {
   .txt {
     font-size: 16px;

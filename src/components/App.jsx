@@ -13,8 +13,6 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 
 import { AppBar } from './AppBar/AppBar';
 
-import './App.css';
-
 function App() {
   return (
     <>

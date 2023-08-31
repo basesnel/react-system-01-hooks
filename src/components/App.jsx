@@ -11,7 +11,7 @@ import { ClockPage } from '../pages/ClockPage';
 import { PokemonPage } from '../pages/PokemonPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 
-import { AppBar } from './AppBar/AppBar';
+import AppBar from './AppBar';
 
 function App() {
   return (

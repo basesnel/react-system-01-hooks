@@ -10,7 +10,7 @@ import authContext from 'contexts/auth/context';
 import css from './AppBar.module.css';
 import { Grid } from 'components/Grid/Grid';
 
-export const AppBar = () => {
+export default function AppBar() {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
 
   return (
@@ -49,4 +49,4 @@ export const AppBar = () => {
     //   )}
     // </authContext.Consumer>
   );
-};
+}

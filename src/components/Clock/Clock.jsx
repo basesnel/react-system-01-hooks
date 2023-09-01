@@ -10,6 +10,7 @@ import Caption from 'components/Caption';
 export default function Clock() {
   const [time, setTime] = useState(() => new Date());
   const [isTicking, setIsTicking] = useState(true);
+  const [btnLabel, setBtnLabel] = useState('stop');
 
   const intervalId = useRef(null);
 
@@ -41,6 +42,7 @@ export default function Clock() {
 
   const start = () => {
     setIsTicking(true);
+    setBtnLabel('stop');
     intervalId.current = setInterval(() => {
       console.log('This interval every 1000ms ' + Date.now());
       setTime(new Date());
@@ -49,7 +51,18 @@ export default function Clock() {
 
   const stop = () => {
     setIsTicking(false);
+    setBtnLabel('start');
     clearInterval(intervalId.current);
+  };
+
+  const toggle = () => {
+    if (isTicking) {
+      stop();
+      return;
+    }
+
+    start();
+    return;
   };
   // console.log(intervalId.current);
 
@@ -60,16 +73,12 @@ export default function Clock() {
       </Box>
       <Caption text="Current time" />
       <Grid>
-        <DecoratedButton
-          caption="Start"
-          onClick={start}
-          isDisabled={isTicking}
-        />
-        <DecoratedButton
+        <DecoratedButton caption={btnLabel} onClick={toggle} />
+        {/* <DecoratedButton
           caption="Stop"
           onClick={stop}
           isDisabled={!isTicking}
-        />
+        /> */}
       </Grid>
     </>
   );

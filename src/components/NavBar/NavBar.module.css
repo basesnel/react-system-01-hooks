@@ -27,16 +27,17 @@
   line-height: 1.25;
   text-decoration: none;
   color: var(--color-light);
+  transition: var(--my-transition);
+}
+
+.navlink:hover {
+  color: var(--color-accent);
 }
 
 .navlinkactive {
   composes: navlink;
   color: var(--color-accent);
   background-color: var(--color-light);
-}
-
-.navlink:hover {
-  color: var(--color-accent);
 }
 
 @media mobile {

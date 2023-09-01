@@ -1,5 +1,5 @@
 import { Pokemon } from 'components/Pokemon/Pokemon';
-import { Container } from 'components/Container/Container';
+import Container from 'components/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { VisuallyHidden } from 'components/VisuallyHidden/VisuallyHidden';

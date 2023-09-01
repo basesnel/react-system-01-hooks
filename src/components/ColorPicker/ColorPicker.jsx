@@ -5,7 +5,7 @@ import { Grid } from 'components/Grid/Grid';
 
 import css from './ColorPicker.module.css';
 
-export const ColorPicker = ({ options }) => {
+export default function ColorPicker({ options }) {
   const [activeIndexOptionIdx, setActiveIndexOptionIdx] = useState(0);
 
   const makeOptionClassName = index => {
@@ -34,4 +34,4 @@ export const ColorPicker = ({ options }) => {
       </Grid>
     </div>
   );
-};
+}

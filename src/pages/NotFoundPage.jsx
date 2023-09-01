@@ -1,4 +1,4 @@
-import { Container } from 'components/Container/Container';
+import Container from 'components/Container';
 import { Title } from 'components/Title/Title';
 
 export const NotFoundPage = () => {

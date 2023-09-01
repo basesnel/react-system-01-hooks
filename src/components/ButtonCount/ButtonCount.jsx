@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 
 export default function ButtonCount() {
   const [count, setCount] = useState(0);

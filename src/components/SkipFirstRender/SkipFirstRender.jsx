@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 import { Text } from 'components/Text/Text';
 // import css from './SkipFirstRender.module.css';
 

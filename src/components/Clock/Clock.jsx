@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from 'react';
 
 import { Text } from 'components/Text/Text';
 import { Grid } from 'components/Grid/Grid';
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 import Box from 'components/Box';
 
 import css from './Clock.module.css';
 
-export const Clock = () => {
+export default function Clock() {
   const [time, setTime] = useState(() => new Date());
 
   const intervalId = useRef(null);
@@ -59,4 +59,4 @@ export const Clock = () => {
       </Grid>
     </>
   );
-};
+}

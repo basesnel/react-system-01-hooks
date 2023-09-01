@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
 
-import { Container } from 'components/Container/Container';
+import Container from 'components/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { Grid } from 'components/Grid/Grid';
 import ButtonCount from 'components/ButtonCount';
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 
 export const CounterPage = () => {
   const [count, setCount] = useState(0);

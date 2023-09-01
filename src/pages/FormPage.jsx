@@ -1,4 +1,4 @@
-import { Container } from 'components/Container/Container';
+import Container from 'components/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { SignupForm } from 'components/SignupForm/SignupForm';

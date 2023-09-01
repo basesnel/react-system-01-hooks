@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 
-import { Container } from 'components/Container/Container';
+import Container from 'components/Container';
 import { Logo } from 'components/Logo/Logo';
 import { NavBar } from 'components/NavBar/NavBar';
 import { UserMenu } from 'components/UserMenu/UserMenu';
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 import authContext from 'contexts/auth/context';
 
 import css from './AppBar.module.css';

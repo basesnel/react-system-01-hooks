@@ -1,4 +1,4 @@
-import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
+import DecoratedButton from 'components/DecoratedButton';
 
 import css from './DecoratedSubmit.module.css';
 

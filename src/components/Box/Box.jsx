@@ -1,5 +1,5 @@
 import css from './Box.module.css';
 
-export const Box = ({ children }) => {
+export default function Box({ children }) {
   return <section className={css.box}>{children}</section>;
-};
+}

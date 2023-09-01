@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
-export const ButtonCount = () => {
+export default function ButtonCount() {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -12,4 +12,4 @@ export const ButtonCount = () => {
   return (
     <DecoratedButton caption={`Clicked ${count} times`} onClick={handleClick} />
   );
-};
+}

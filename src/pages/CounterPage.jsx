@@ -4,7 +4,7 @@ import { Container } from 'components/Container/Container';
 import { Title } from 'components/Title/Title';
 import { Text } from 'components/Text/Text';
 import { Grid } from 'components/Grid/Grid';
-import { ButtonCount } from 'components/ButtonCount/ButtonCount';
+import ButtonCount from 'components/ButtonCount';
 import { DecoratedButton } from 'components/DecoratedButton/DecoratedButton';
 
 export const CounterPage = () => {

@@ -1,9 +1,8 @@
 import { useEffect, useState, useRef } from 'react';
 import DecoratedButton from 'components/DecoratedButton';
-import { Text } from 'components/Text/Text';
-// import css from './SkipFirstRender.module.css';
+import Text from 'components/Text';
 
-export const SkipFirstRender = () => {
+export default function SkipFirstRender() {
   const [count, setCount] = useState(0);
   const isFirstRender = useRef(true);
 
@@ -27,4 +26,4 @@ export const SkipFirstRender = () => {
       </Text>
     </div>
   );
-};
+}

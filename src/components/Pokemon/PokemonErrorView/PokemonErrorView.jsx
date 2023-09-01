@@ -1,10 +1,7 @@
 import errorImage from 'assets/images/404.png';
-import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
+import PokemonDataView from '../PokemonDataView';
 
-// import { DecoratedImg } from 'components/DecoratedImg/DecoratedImg';
-// import { Text } from 'components/Text/Text';
-
-export const PokemonErrorView = ({ message }) => {
+export default function PokemonErrorView({ message }) {
   const pokemon = {
     name: message,
     sprites: {
@@ -22,4 +19,4 @@ export const PokemonErrorView = ({ message }) => {
       <PokemonDataView pokemon={pokemon} />
     </div>
   );
-};
+}

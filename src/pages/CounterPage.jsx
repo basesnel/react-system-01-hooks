@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 
 import Container from 'components/Container';
-import { Title } from 'components/Title/Title';
-import { Text } from 'components/Text/Text';
+import Title from 'components/Title';
+import Text from 'components/Text';
 import Grid from 'components/Grid';
 import ButtonCount from 'components/ButtonCount';
 import DecoratedButton from 'components/DecoratedButton';

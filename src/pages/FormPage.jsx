@@ -1,7 +1,7 @@
 import Container from 'components/Container';
-import { Title } from 'components/Title/Title';
-import { Text } from 'components/Text/Text';
-import { SignupForm } from 'components/SignupForm/SignupForm';
+import Title from 'components/Title';
+import Text from 'components/Text';
+import SignupForm from 'components/SignupForm';
 
 export const FormPage = () => {
   return (

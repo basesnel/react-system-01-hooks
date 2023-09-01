@@ -1,5 +1,5 @@
 import Container from 'components/Container';
-import { Title } from 'components/Title/Title';
+import Title from 'components/Title';
 
 export const NotFoundPage = () => {
   return (

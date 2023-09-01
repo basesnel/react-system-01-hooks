@@ -1,6 +1,6 @@
 import css from './Title.module.css';
 
-export const Title = ({ level, caption }) => {
+export default function Title({ level, caption }) {
   switch (level) {
     case 1:
       return <h1 className={css.title01}>{caption}</h1>;
@@ -14,4 +14,4 @@ export const Title = ({ level, caption }) => {
     default:
       return null;
   }
-};
+}

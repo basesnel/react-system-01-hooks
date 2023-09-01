@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import { Text } from 'components/Text/Text';
+import Text from 'components/Text';
 import Grid from 'components/Grid';
 import DecoratedButton from 'components/DecoratedButton';
 import Box from 'components/Box';

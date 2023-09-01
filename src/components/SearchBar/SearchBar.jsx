@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 
 import css from './SearchBar.module.css';
 
-export const SearchBar = ({ onFormSubmit, query = null }) => {
+export default function SearchBar({ onFormSubmit, query = null }) {
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleInputChange = event => {
@@ -42,4 +42,4 @@ export const SearchBar = ({ onFormSubmit, query = null }) => {
       </form>
     </section>
   );
-};
+}

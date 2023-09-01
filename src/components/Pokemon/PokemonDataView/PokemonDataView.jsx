@@ -1,9 +1,9 @@
 import DecoratedImg from 'components/DecoratedImg';
-import { Title } from 'components/Title/Title';
+import Title from 'components/Title';
 
 import css from './PokemonDataView.module.css';
 
-export const PokemonDataView = ({ pokemon, ...delegated }) => {
+export default function PokemonDataView({ pokemon, ...delegated }) {
   const { sprites, name, stats } = pokemon;
 
   return (
@@ -24,4 +24,4 @@ export const PokemonDataView = ({ pokemon, ...delegated }) => {
       </div>
     </div>
   );
-};
+}

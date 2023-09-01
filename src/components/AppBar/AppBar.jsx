@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import Container from 'components/Container';
 import Logo from 'components/Logo';
 import NavBar from 'components/NavBar';
-import { UserMenu } from 'components/UserMenu/UserMenu';
+import UserMenu from 'components/UserMenu';
 import DecoratedButton from 'components/DecoratedButton';
 import authContext from 'contexts/auth/context';
 import Grid from 'components/Grid';

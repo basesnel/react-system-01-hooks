@@ -9,7 +9,7 @@ import DecoratedSubmit from 'components/DecoratedSubmit';
 
 import css from './SignupForm.module.css';
 
-export const SignupForm = () => {
+export default function SignupForm() {
   // case lazy init state:
   // ===================================================================
   // const localStorageState = () => {
@@ -69,4 +69,4 @@ export const SignupForm = () => {
       <DecoratedSubmit caption="Register" />
     </DecoratedForm>
   );
-};
+}

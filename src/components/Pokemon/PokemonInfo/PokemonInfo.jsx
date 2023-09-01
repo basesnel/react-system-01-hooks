@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 
 import pokemonAPI from 'services/pokemon-api';
 
-import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
-import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
-import { PokemonPendingView } from '../PokemonPendingView/PokemonPendingView';
+import PokemonErrorView from '../PokemonErrorView';
+import PokemonDataView from '../PokemonDataView';
+import PokemonPendingView from '../PokemonPendingView';
 import PokemonIdleView from '../PokemonIdleView';
 
 const Status = {
@@ -14,7 +14,7 @@ const Status = {
   REJECTED: 'rejected',
 };
 
-export const PokemonInfo = ({ pokemonName }) => {
+export default function PokemonInfo({ pokemonName }) {
   const [pokemon, setPokemon] = useState(null);
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(Status.IDLE);
@@ -54,4 +54,4 @@ export const PokemonInfo = ({ pokemonName }) => {
   if (status === Status.RESOlVED) {
     return <PokemonDataView pokemon={pokemon} />;
   }
-};
+}

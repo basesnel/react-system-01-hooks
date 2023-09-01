@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { Text } from 'components/Text/Text';
+import Text from 'components/Text';
 import Grid from 'components/Grid';
 
 import css from './ColorPicker.module.css';

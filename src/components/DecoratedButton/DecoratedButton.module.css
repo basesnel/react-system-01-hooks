@@ -2,15 +2,16 @@
   border: 1px solid var(--color-text);
   border-radius: 4px;
   padding: 4px 10px;
-  font-weight: 500;
-  background-color: var(--color-light);
-  color: var(--color-text);
+  font-weight: 700;
+  background-color: var(--color-text);
+  color: var(--color-light);
   transition: var(--my-transition);
 }
 
 .decoratedButton:hover {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   color: var(--color-light);
   transform: scale(1.1);
 }

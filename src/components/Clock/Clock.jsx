@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 
-import Text from 'components/Text';
 import Grid from 'components/Grid';
 import DecoratedButton from 'components/DecoratedButton';
 import Box from 'components/Box';
 
 import css from './Clock.module.css';
+import Caption from 'components/Caption';
 
 export default function Clock() {
   const [time, setTime] = useState(() => new Date());
@@ -46,10 +46,10 @@ export default function Clock() {
 
   return (
     <>
-      <Text centered={true}>Current time:</Text>
       <Box>
         <span className={css.time}>{time.toLocaleTimeString()}</span>
       </Box>
+      <Caption text="Current time" />
       <Grid>
         <DecoratedButton
           caption="Update time state"

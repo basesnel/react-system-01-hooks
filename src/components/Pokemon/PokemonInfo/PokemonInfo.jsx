@@ -39,19 +39,20 @@ export default function PokemonInfo({ pokemonName }) {
     }, 2000);
   }, [pokemonName]);
 
-  if (status === Status.IDLE) {
-    return <PokemonIdleView />;
-  }
+  switch (status) {
+    case Status.IDLE:
+      return <PokemonIdleView />;
 
-  if (status === Status.PENDING) {
-    return <PokemonPendingView pokemonName={pokemonName} />;
-  }
+    case Status.PENDING:
+      return <PokemonPendingView pokemonName={pokemonName} />;
 
-  if (status === Status.REJECTED) {
-    return <PokemonErrorView message={error.message} />;
-  }
+    case Status.REJECTED:
+      return <PokemonErrorView message={error.message} />;
 
-  if (status === Status.RESOlVED) {
-    return <PokemonDataView pokemon={pokemon} />;
+    case Status.RESOlVED:
+      return <PokemonDataView pokemon={pokemon} />;
+
+    default:
+      return null;
   }
 }

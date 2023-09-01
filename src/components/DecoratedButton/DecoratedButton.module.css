@@ -15,3 +15,7 @@
   color: var(--color-light);
   transform: scale(1.1);
 }
+
+.decoratedButton:disabled {
+  opacity: 0.15;
+}

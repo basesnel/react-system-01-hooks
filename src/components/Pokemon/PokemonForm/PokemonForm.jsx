@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import { DecoratedForm } from 'components/DecoratedForm/DecoratedForm';
-import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
-import { DecoratedSubmit } from 'components/DecoratedSubmit/DecoratedSubmit';
+import DecoratedForm from 'components/DecoratedForm';
+import DecoratedInput from 'components/DecoratedInput';
+import DecoratedSubmit from 'components/DecoratedSubmit';
 
-export const PokemonForm = ({ onFormSubmit }) => {
+export default function PokemonForm({ onFormSubmit }) {
   const [pokemonName, setPokemonName] = useState('');
 
   const handleNameChange = event => {
@@ -34,4 +34,4 @@ export const PokemonForm = ({ onFormSubmit }) => {
       <DecoratedSubmit caption="Search" />
     </DecoratedForm>
   );
-};
+}

@@ -1,5 +1,5 @@
 import DecoratedButton from 'components/DecoratedButton';
-import { Grid } from 'components/Grid/Grid';
+import Grid from 'components/Grid';
 
 export const UserMenu = ({ user, onLogOut }) => {
   return (

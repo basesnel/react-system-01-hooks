@@ -5,7 +5,7 @@ import pokemonAPI from 'services/pokemon-api';
 import { PokemonErrorView } from '../PokemonErrorView/PokemonErrorView';
 import { PokemonDataView } from '../PokemonDataView/PokemonDataView';
 import { PokemonPendingView } from '../PokemonPendingView/PokemonPendingView';
-import { PokemonIdleView } from '../PokemonIdleView/PokemonIdleView';
+import PokemonIdleView from '../PokemonIdleView';
 
 const Status = {
   IDLE: 'idle',

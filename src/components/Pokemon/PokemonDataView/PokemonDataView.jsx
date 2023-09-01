@@ -1,4 +1,4 @@
-import { DecoratedImg } from 'components/DecoratedImg/DecoratedImg';
+import DecoratedImg from 'components/DecoratedImg';
 import { Title } from 'components/Title/Title';
 
 import css from './PokemonDataView.module.css';

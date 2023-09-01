@@ -1,14 +1,14 @@
 import { useContext } from 'react';
 
 import Container from 'components/Container';
-import { Logo } from 'components/Logo/Logo';
-import { NavBar } from 'components/NavBar/NavBar';
+import Logo from 'components/Logo';
+import NavBar from 'components/NavBar';
 import { UserMenu } from 'components/UserMenu/UserMenu';
 import DecoratedButton from 'components/DecoratedButton';
 import authContext from 'contexts/auth/context';
+import Grid from 'components/Grid';
 
 import css from './AppBar.module.css';
-import { Grid } from 'components/Grid/Grid';
 
 export default function AppBar() {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);

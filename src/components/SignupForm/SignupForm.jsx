@@ -3,9 +3,9 @@ import { FiLock } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
-import { DecoratedInput } from 'components/DecoratedInput/DecoratedInput';
-import { DecoratedForm } from 'components/DecoratedForm/DecoratedForm';
-import { DecoratedSubmit } from 'components/DecoratedSubmit/DecoratedSubmit';
+import DecoratedInput from 'components/DecoratedInput';
+import DecoratedForm from 'components/DecoratedForm';
+import DecoratedSubmit from 'components/DecoratedSubmit';
 
 import css from './SignupForm.module.css';
 

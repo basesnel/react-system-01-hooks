@@ -2,13 +2,13 @@ import css from './DecoratedInput.module.css';
 
 // import { FiLock } from 'react-icons/fi';
 
-export const DecoratedInput = ({
+export default function DecoratedInput({
   inputName,
   inputValue,
   inputLabel,
   handleChange,
   icon,
-}) => {
+}) {
   return (
     <label className={css.field}>
       <span className={css.label}>{inputLabel}</span>
@@ -23,4 +23,4 @@ export const DecoratedInput = ({
       {icon}
     </label>
   );
-};
+}

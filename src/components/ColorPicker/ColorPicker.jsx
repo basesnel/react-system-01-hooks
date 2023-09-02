@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 import Text from 'components/Text';
 import Grid from 'components/Grid';
@@ -35,3 +36,12 @@ export default function ColorPicker({ options }) {
     </div>
   );
 }
+
+ColorPicker.propTypes = {
+  options: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      color: PropTypes.string.isRequired,
+    })
+  ),
+};

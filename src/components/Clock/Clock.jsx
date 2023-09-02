@@ -4,8 +4,9 @@ import Grid from 'components/Grid';
 import DecoratedButton from 'components/DecoratedButton';
 import Box from 'components/Box';
 
-import css from './Clock.module.css';
 import Caption from 'components/Caption';
+
+import css from './Clock.module.css';
 
 export default function Clock() {
   const [time, setTime] = useState(() => new Date());

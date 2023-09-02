@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './Caption.module.css';
 
 export default function Caption({ text }) {
@@ -7,3 +9,7 @@ export default function Caption({ text }) {
     </div>
   );
 }
+
+Caption.propTypes = {
+  text: PropTypes.string.isRequired,
+};

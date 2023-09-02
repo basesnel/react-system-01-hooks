@@ -1,3 +1,4 @@
-import * as SIZE from './sizes';
+import * as sizes from './sizes';
+import { colorPickerOptions } from './colorPickerOptions';
 
-export { SIZE };
+export { sizes, colorPickerOptions };

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useReducer } from 'react';
 
 import Container from 'components/Container';
 import Title from 'components/Title';
@@ -7,8 +7,24 @@ import Grid from 'components/Grid';
 import ButtonCount from 'components/ButtonCount';
 import DecoratedButton from 'components/DecoratedButton';
 
+const countReducer = (state, action) => {
+  switch (action.type) {
+    case 'increment':
+      return { ...state, countR: state.countR + action.payload };
+
+    case 'decrement':
+      return { ...state, countR: state.countR - action.payload };
+
+    default:
+      throw new Error(`Unsupported action type ${action.type}`);
+    // return state;
+  }
+};
+
 export const CounterPage = () => {
   const [count, setCount] = useState(0);
+
+  const [state, dispatch] = useReducer(countReducer, { countR: 0 });
 
   const [counterA, setCounterA] = useState(0);
   const [counterB, setCounterB] = useState(0);
@@ -71,6 +87,19 @@ export const CounterPage = () => {
           <DecoratedButton
             caption={`pressed the button ${counterB} times`}
             onClick={handleCounterBIncrement}
+          />
+        </Grid>
+      </Container>
+      <Container>
+        <Title level={2} caption="Counter with reducer" />
+        <Grid>
+          <DecoratedButton
+            caption={`Decrease ${state.countR}`}
+            onClick={() => dispatch({ type: 'decrement', payload: 1 })}
+          />
+          <DecoratedButton
+            caption={`Increase ${state.countR}`}
+            onClick={() => dispatch({ type: 'increment', payload: 1 })}
           />
         </Grid>
       </Container>

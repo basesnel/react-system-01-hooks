@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './DecoratedImg.module.css';
 
 export default function DecoratedImg({ src, name, width = null }) {
@@ -7,3 +9,9 @@ export default function DecoratedImg({ src, name, width = null }) {
     </div>
   );
 }
+
+DecoratedImg.propTypes = {
+  src: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  width: PropTypes.any,
+};

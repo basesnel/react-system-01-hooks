@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './DecoratedForm.module.css';
 
 export default function DecoratedForm({ children, onSubmit }) {
@@ -7,3 +9,8 @@ export default function DecoratedForm({ children, onSubmit }) {
     </form>
   );
 }
+
+DecoratedForm.propTypes = {
+  children: PropTypes.node.isRequired,
+  onSubmit: PropTypes.func.isRequired,
+};

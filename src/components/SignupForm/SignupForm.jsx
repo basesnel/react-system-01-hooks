@@ -47,14 +47,16 @@ export default function SignupForm() {
   const handleSubmitForm = event => {
     event.preventDefault();
 
-    const emailLength = email.trim().length;
-    const passLength = password.trim().length;
-
-    if (emailLength && passLength) {
-      console.log({ email, password });
-      return toast.success(`Welcome, ${email}!`);
+    if (!email.trim().length) {
+      return toast.error(`E-mail field is empty - please, enter it!`);
     }
-    return toast.error(`Please, enter email or password!`);
+
+    if (!password.trim().length) {
+      return toast.error(`Password field is empty - please, enter it!`);
+    }
+
+    console.log({ email, password });
+    return toast.success(`Welcome, ${email}!`);
   };
 
   return (

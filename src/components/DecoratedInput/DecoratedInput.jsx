@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './DecoratedInput.module.css';
 
 // import { FiLock } from 'react-icons/fi';
@@ -24,3 +26,11 @@ export default function DecoratedInput({
     </label>
   );
 }
+
+DecoratedInput.propTypes = {
+  inputName: PropTypes.string.isRequired,
+  inputValue: PropTypes.string.isRequired,
+  inputLabel: PropTypes.string.isRequired,
+  handleChange: PropTypes.func.isRequired,
+  icon: PropTypes.node,
+};

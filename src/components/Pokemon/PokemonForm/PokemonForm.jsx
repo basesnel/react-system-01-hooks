@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -35,3 +37,7 @@ export default function PokemonForm({ onFormSubmit }) {
     </DecoratedForm>
   );
 }
+
+PokemonForm.propTypes = {
+  onFormSubmit: PropTypes.func.isRequired,
+};

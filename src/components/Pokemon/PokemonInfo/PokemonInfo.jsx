@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useEffect, useState } from 'react';
 
 import pokemonAPI from 'services/pokemon-api';
@@ -56,3 +58,7 @@ export default function PokemonInfo({ pokemonName }) {
       return null;
   }
 }
+
+PokemonInfo.propTypes = {
+  pokemonName: PropTypes.string.isRequired,
+};

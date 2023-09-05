@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import DecoratedImg from 'components/DecoratedImg';
 import Title from 'components/Title';
 
@@ -25,3 +27,7 @@ export default function PokemonDataView({ pokemon, ...delegated }) {
     </div>
   );
 }
+
+PokemonDataView.propTypes = {
+  pokemon: PropTypes.object.isRequired,
+};

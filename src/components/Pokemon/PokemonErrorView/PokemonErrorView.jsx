@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import errorImage from 'assets/images/404.png';
 import PokemonDataView from '../PokemonDataView';
 
@@ -20,3 +22,7 @@ export default function PokemonErrorView({ message }) {
     </div>
   );
 }
+
+PokemonErrorView.propTypes = {
+  message: PropTypes.string.isRequired,
+};

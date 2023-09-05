@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { Link } from 'react-router-dom';
 
 import css from './Logo.module.css';
@@ -10,3 +12,7 @@ export default function Logo({ text }) {
     </Link>
   );
 }
+
+Logo.propTypes = {
+  text: PropTypes.string.isRequired,
+};

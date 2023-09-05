@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './Text.module.css';
 
 export default function Text({ children, centered }) {
@@ -7,3 +9,8 @@ export default function Text({ children, centered }) {
     </p>
   );
 }
+
+Text.propTypes = {
+  children: PropTypes.node.isRequired,
+  centered: PropTypes.bool,
+};

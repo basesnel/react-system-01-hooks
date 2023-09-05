@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
@@ -43,3 +45,8 @@ export default function SearchBar({ onFormSubmit, query = null }) {
     </section>
   );
 }
+
+SearchBar.propTypes = {
+  onFormSubmit: PropTypes.func.isRequired,
+  query: PropTypes.string,
+};

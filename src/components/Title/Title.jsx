@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './Title.module.css';
 
 export default function Title({ level, caption }) {
@@ -15,3 +17,8 @@ export default function Title({ level, caption }) {
       return null;
   }
 }
+
+Title.propTypes = {
+  level: PropTypes.number.isRequired,
+  caption: PropTypes.string.isRequired,
+};

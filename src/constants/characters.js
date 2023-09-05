@@ -1,4 +1,4 @@
-export const friends = [
+export const initialCharacters = [
   '(I Noldor) Finwe Noldoran',
   '(I Noldor) Miriel Perinde Serinde',
   '(I Noldor) Mahtan Aulendir (Urundil, Rusco)',

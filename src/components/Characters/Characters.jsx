@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 
 import { initialCharacters } from 'constants';
 import DecoratedButton from 'components/DecoratedButton';
@@ -8,9 +8,23 @@ export default function Characters() {
   const [characters] = useState(initialCharacters);
   const [filter, setFilter] = useState('');
 
-  const visibleCharacters = characters.filter(character =>
-    character.toLowerCase().includes(filter)
-  );
+  // const visibleCharacters = characters.filter(character =>
+  //   character.toLowerCase().includes(filter)
+  // );
+
+  const visibleCharacters = useMemo(() => {
+    console.log('characters is filtering ' + Date.now());
+    return characters.filter(character =>
+      character.toLowerCase().includes(filter)
+    );
+  }, [filter, characters]);
+
+  // const visibleCharacters = (() => {
+  //   console.log('characters is filtering ' + Date.now());
+  //   return characters.filter(character =>
+  //     character.toLowerCase().includes(filter)
+  //   );
+  // })();
 
   return (
     <div>

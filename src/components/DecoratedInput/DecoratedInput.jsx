@@ -14,7 +14,6 @@ export default function DecoratedInput({
   return (
     <label className={css.field}>
       <span className={css.label}>{inputLabel}</span>
-      {/* <FiLock className={css.icon} /> */}
       <input
         type={inputName}
         name={inputName}
@@ -28,9 +27,9 @@ export default function DecoratedInput({
 }
 
 DecoratedInput.propTypes = {
-  inputName: PropTypes.string.isRequired,
-  inputValue: PropTypes.string.isRequired,
-  inputLabel: PropTypes.string.isRequired,
-  handleChange: PropTypes.func.isRequired,
+  inputName: PropTypes.string,
+  inputValue: PropTypes.string,
+  inputLabel: PropTypes.string,
+  handleChange: PropTypes.func,
   icon: PropTypes.node,
 };

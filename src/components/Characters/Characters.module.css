@@ -1,0 +1,12 @@
+.icon {
+  position: absolute;
+  top: 43px;
+  left: 12px;
+  transform: translate(0, -50%);
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+input:hover + .icon {
+  color: var(--color-accent);
+}

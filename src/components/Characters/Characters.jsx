@@ -1,7 +1,12 @@
 import { useState, useMemo } from 'react';
 
+import { FiFilter } from 'react-icons/fi';
+
 import { initialCharacters } from 'constants';
 import DecoratedButton from 'components/DecoratedButton';
+import DecoratedInput from 'components/DecoratedInput';
+
+import css from './Characters.module.css';
 
 export default function Characters() {
   const [count, setCount] = useState(0);
@@ -30,7 +35,13 @@ export default function Characters() {
     <div>
       <DecoratedButton caption={count} onClick={() => setCount(c => c + 1)} />
       <hr />
-      <input onChange={e => setFilter(e.target.value)} value={filter} />
+      {/* <input onChange={e => setFilter(e.target.value)} value={filter} /> */}
+      <DecoratedInput
+        inputLabel="Filter"
+        handleChange={e => setFilter(e.target.value)}
+        inputValue={filter}
+        icon={<FiFilter className={css.icon} />}
+      />
       <ul>
         {visibleCharacters.map((character, idx) => (
           <li key={idx}>{character}</li>

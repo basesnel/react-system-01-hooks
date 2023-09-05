@@ -30,4 +30,5 @@ export default function PokemonDataView({ pokemon, ...delegated }) {
 
 PokemonDataView.propTypes = {
   pokemon: PropTypes.object.isRequired,
+  delegated: PropTypes.any,
 };

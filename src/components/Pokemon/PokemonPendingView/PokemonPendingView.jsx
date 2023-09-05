@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { ImSpinner } from 'react-icons/im';
 
 import pendingImage from 'assets/images/pending.png';
@@ -28,3 +30,7 @@ export default function PokemonPendingView({ pokemonName }) {
     </div>
   );
 }
+
+PokemonPendingView.propTypes = {
+  pokemonName: PropTypes.string.isRequired,
+};

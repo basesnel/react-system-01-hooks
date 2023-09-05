@@ -47,6 +47,12 @@ export default function SignupForm() {
   const handleSubmitForm = event => {
     event.preventDefault();
 
+    if (!email.trim().length && !password.trim().length) {
+      return toast.error(
+        `E-mail & Password fields is empty - please, enter E-mail and Password!`
+      );
+    }
+
     if (!email.trim().length) {
       return toast.error(`E-mail field is empty - please, enter it!`);
     }

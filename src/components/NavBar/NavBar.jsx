@@ -66,6 +66,16 @@ export default function NavBar() {
             Pokemon
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/characters"
+          >
+            Characters
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

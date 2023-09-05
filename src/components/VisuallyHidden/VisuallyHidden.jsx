@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import css from './VisuallyHidden.module.css';
 
 export default function VisuallyHidden({ children, ...delegated }) {
@@ -7,3 +9,8 @@ export default function VisuallyHidden({ children, ...delegated }) {
     </span>
   );
 }
+
+VisuallyHidden.propTypes = {
+  children: PropTypes.node.isRequired,
+  delegated: PropTypes.any,
+};

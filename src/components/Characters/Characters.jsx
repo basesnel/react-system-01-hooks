@@ -44,7 +44,9 @@ export default function Characters() {
       />
       <ul>
         {visibleCharacters.map((character, idx) => (
-          <li key={idx}>{character}</li>
+          <li key={idx} className={css.item}>
+            {character}
+          </li>
         ))}
       </ul>
     </div>

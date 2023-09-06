@@ -14,14 +14,16 @@ export default function DecoratedInput({
   return (
     <label className={css.field}>
       <span className={css.label}>{inputLabel}</span>
-      <input
-        type={inputName}
-        name={inputName}
-        className={css.input}
-        onChange={handleChange}
-        value={inputValue}
-      />
-      {icon}
+      <div className={css['wrap-input']}>
+        <input
+          type={inputName}
+          name={inputName}
+          className={css.input}
+          onChange={handleChange}
+          value={inputValue}
+        />
+        {icon}
+      </div>
     </label>
   );
 }

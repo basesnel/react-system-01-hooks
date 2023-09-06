@@ -76,6 +76,16 @@ export default function NavBar() {
             Characters
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/news"
+          >
+            News
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -10,6 +10,7 @@ import { FormPage } from '../pages/FormPage';
 import { ClockPage } from '../pages/ClockPage';
 import { PokemonPage } from '../pages/PokemonPage';
 import { CharactersPage } from '../pages/CharactersPage';
+import { NewsPage } from '../pages/NewsPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 
 import AppBar from './AppBar';
@@ -27,6 +28,7 @@ function App() {
         <Route path="/clock" element={<ClockPage />} />
         <Route path="/pokemon" element={<PokemonPage />} />
         <Route path="/characters" element={<CharactersPage />} />
+        <Route path="/news" element={<NewsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

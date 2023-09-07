@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
 
@@ -13,11 +13,11 @@ const fetchArticles = ({
   currentPage = 1,
   pageSize = 5,
 } = {}) => {
-  return axios
-    .get(
-      `https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${apiKey}&pageSize=${pageSize}&page=${currentPage}`
-    )
-    .then(response => response.data.articles);
+  return fetch(
+    `https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${apiKey}&pageSize=${pageSize}&page=${currentPage}`
+  )
+    .then(answer => answer.json())
+    .then(response => response.articles);
 };
 
 export default function News() {

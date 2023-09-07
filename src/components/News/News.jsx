@@ -1,23 +1,21 @@
 import { useState, useEffect } from 'react';
-// import axios from 'axios';
+import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
 
-// axios.defaults.headers.common['Authorization'] =
-//   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
-
-const apiKey = '12bb4d5829d14b34ac0d67e4ed8ca6bf';
+axios.defaults.headers.common['Authorization'] =
+  'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
 
 const fetchArticles = ({
   searchQuery = '',
   currentPage = 1,
   pageSize = 5,
 } = {}) => {
-  return fetch(
-    `https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${apiKey}&pageSize=${pageSize}&page=${currentPage}`
-  )
-    .then(answer => answer.json())
-    .then(response => response.articles);
+  return axios
+    .get(
+      `https://newsapi.org/v2/everything?q=${searchQuery}&pageSize=${pageSize}&page=${currentPage}`
+    )
+    .then(response => response.data.articles);
 };
 
 export default function News() {

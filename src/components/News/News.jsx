@@ -3,8 +3,10 @@ import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
 
-axios.defaults.headers.common['Authorization'] =
-  'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
+// axios.defaults.headers.common['Authorization'] =
+//   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
+
+const apiKey = '12bb4d5829d14b34ac0d67e4ed8ca6bf';
 
 const fetchArticles = ({
   searchQuery = '',
@@ -13,7 +15,7 @@ const fetchArticles = ({
 } = {}) => {
   return axios
     .get(
-      `https://newsapi.org/v2/everything?q=${searchQuery}&pageSize=${pageSize}&page=${currentPage}`
+      `https://newsapi.org/v2/everything?q=${searchQuery}&apiKey=${apiKey}&pageSize=${pageSize}&page=${currentPage}`
     )
     .then(response => response.data.articles);
 };

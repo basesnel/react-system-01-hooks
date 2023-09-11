@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
@@ -19,19 +19,36 @@ const fetchArticles = ({
 };
 
 export default function News() {
-  const [newQuery, setNewQuery] = useState('');
   const [articles, setArticles] = useState([]);
+  const [newQuery, setNewQuery] = useState('');
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    fetchArticles({ searchQuery: 'css' }).then(responseArticles =>
-      setArticles(responseArticles)
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+
+    fetchArticles({ searchQuery: newQuery, currentPage }).then(
+      responseArticles => {
+        setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+        setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
+      }
     );
-  }, []);
+  }, [currentPage, newQuery]);
+
+  const onChangeNewQuery = query => {
+    setNewQuery(query);
+    setCurrentPage(1);
+    setArticles([]);
+  };
 
   return (
     <>
-      <SearchBar onFormSubmit={setNewQuery} query="for news" />
-      <div>{newQuery}</div>
+      <SearchBar onFormSubmit={onChangeNewQuery} />
+      {/* <div>{newQuery}</div> */}
       <ul>
         {articles.map(({ title, url }) => (
           <li key={title}>

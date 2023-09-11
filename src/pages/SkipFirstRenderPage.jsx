@@ -8,7 +8,7 @@ export const SkipFirstRenderPage = () => {
     <main>
       <Container>
         <Title level={1} caption="Skip first render" />
-        <Text>Skop first render - useEffect case.</Text>
+        <Text>Skip first render - useEffect case.</Text>
       </Container>
       <Container>
         <Title level={2} caption="Skip first render" />

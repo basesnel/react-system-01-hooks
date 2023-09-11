@@ -1,0 +1,45 @@
+.spinner {
+  /* position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, 0); */
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+  background-color: var(--color-text);
+}
+
+.spinner p {
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--color-light);
+}
+
+.icon-spin {
+  margin-right: 10px;
+  font-size: 32px;
+  color: var(--color-light);
+  animation: icon-spin 2s infinite linear;
+}
+
+@-webkit-keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes icon-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}

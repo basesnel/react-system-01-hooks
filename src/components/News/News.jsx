@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
+import CustomLoader from 'components/CustomLoader';
 
 axios.defaults.headers.common['Authorization'] =
   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
@@ -22,6 +23,7 @@ export default function News() {
   const [articles, setArticles] = useState([]);
   const [newQuery, setNewQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
+  const [isLoading, setIsLoading] = useState(false);
 
   const isFirstRender = useRef(true);
 
@@ -31,12 +33,14 @@ export default function News() {
       return;
     }
 
-    fetchArticles({ searchQuery: newQuery, currentPage }).then(
-      responseArticles => {
+    setIsLoading(true);
+
+    fetchArticles({ searchQuery: newQuery, currentPage })
+      .then(responseArticles => {
         setArticles(prevArticles => [...prevArticles, ...responseArticles]);
         setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
-      }
-    );
+      })
+      .finally(() => setIsLoading(false));
   }, [currentPage, newQuery]);
 
   const onChangeNewQuery = query => {
@@ -58,6 +62,8 @@ export default function News() {
           </li>
         ))}
       </ul>
+
+      {isLoading && <CustomLoader />}
     </>
   );
 }

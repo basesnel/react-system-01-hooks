@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
+import DecoratedButton from 'components/DecoratedButton';
 
 axios.defaults.headers.common['Authorization'] =
   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
@@ -24,6 +25,9 @@ export default function News() {
   const [newQuery, setNewQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  const shouldRenderLoadMoreButton = articles.length > 0 && !isLoading;
 
   const isFirstRender = useRef(true);
 
@@ -35,18 +39,23 @@ export default function News() {
 
     setIsLoading(true);
 
-    fetchArticles({ searchQuery: newQuery, currentPage })
-      .then(responseArticles => {
-        setArticles(prevArticles => [...prevArticles, ...responseArticles]);
-        setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
-      })
-      .finally(() => setIsLoading(false));
+    setInterval(
+      fetchArticles({ searchQuery: newQuery, currentPage })
+        .then(responseArticles => {
+          setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+          setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
+        })
+        .catch(error => setError(error.message))
+        .finally(() => setIsLoading(false)),
+      5000
+    );
   }, [currentPage, newQuery]);
 
   const onChangeNewQuery = query => {
     setNewQuery(query);
     setCurrentPage(1);
     setArticles([]);
+    setError(null);
   };
 
   return (
@@ -62,6 +71,12 @@ export default function News() {
           </li>
         ))}
       </ul>
+
+      {error && <p>Oops.. error of request!</p>}
+
+      {shouldRenderLoadMoreButton && (
+        <DecoratedButton caption="Load more" onClick={() => null} />
+      )}
 
       {isLoading && <CustomLoader />}
     </>

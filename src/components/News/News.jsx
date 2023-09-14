@@ -30,7 +30,7 @@ export default function News() {
   const shouldRenderLoadMoreButton = articles.length > 0 && !isLoading;
 
   const isFirstRender = useRef(true);
-  const intervalNewsId = useRef(null);
+  // const intervalNewsId = useRef(null);
 
   useEffect(() => {
     if (isFirstRender.current) {
@@ -38,25 +38,37 @@ export default function News() {
       return;
     }
 
-    console.log('This interval every 5000ms ' + Date.now());
-
     setIsLoading(true);
 
-    intervalNewsId.current = setInterval(() => {
+    setTimeout(() => {
       fetchArticles({ searchQuery: newQuery, currentPage })
         .then(responseArticles => {
           setArticles(prevArticles => [...prevArticles, ...responseArticles]);
-          setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
+          // setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
         })
         .catch(error => setError(error.message))
         .finally(() => setIsLoading(false));
-    }, 5000);
+    }, 3000);
 
-    return () => {
-      console.log('This is function for clear to next effect trigger');
-      clearInterval(intervalNewsId.current);
-      setIsLoading(false);
-    };
+    // console.log('This interval every 5000ms ' + Date.now());
+
+    // setIsLoading(true);
+
+    // intervalNewsId.current = setInterval(() => {
+    //   fetchArticles({ searchQuery: newQuery, currentPage })
+    //     .then(responseArticles => {
+    //       setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+    //       // setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
+    //     })
+    //     .catch(error => setError(error.message))
+    //     .finally(() => setIsLoading(false));
+    // }, 5000);
+
+    // return () => {
+    //   console.log('This is function for clear to next effect trigger');
+    //   clearInterval(intervalNewsId.current);
+    //   setIsLoading(false);
+    // };
   }, [currentPage, newQuery]);
 
   const onChangeNewQuery = query => {
@@ -83,7 +95,10 @@ export default function News() {
       {error && <p>Oops.. error of request!</p>}
 
       {shouldRenderLoadMoreButton && (
-        <DecoratedButton caption="Load more" onClick={() => null} />
+        <DecoratedButton
+          caption="Load more"
+          onClick={() => setCurrentPage(prevCurrentPage => prevCurrentPage + 1)}
+        />
       )}
 
       {isLoading && <CustomLoader />}

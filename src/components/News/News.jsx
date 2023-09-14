@@ -5,6 +5,8 @@ import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
 import DecoratedButton from 'components/DecoratedButton';
 
+import css from './News.module.css';
+
 axios.defaults.headers.common['Authorization'] =
   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
 
@@ -84,8 +86,13 @@ export default function News() {
       {/* <div>{newQuery}</div> */}
       <ul>
         {articles.map(({ title, url }) => (
-          <li key={title}>
-            <a href={url} target="_blank" rel="noopener noreferrer">
+          <li key={title} className={css.item}>
+            <a
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={css.link}
+            >
               {title}
             </a>
           </li>

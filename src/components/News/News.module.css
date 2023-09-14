@@ -1,0 +1,14 @@
+.item {
+  padding: 6px 10px;
+  color: var(--color-text);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--my-transition);
+}
+
+.item:hover .link {
+  color: var(--color-accent);
+}

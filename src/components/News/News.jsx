@@ -7,6 +7,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import css from './News.module.css';
 
 import { fetchArticles } from 'services/news-api';
+import Grid from 'components/Grid';
 
 export default function News() {
   const [articles, setArticles] = useState([]);
@@ -65,24 +66,24 @@ export default function News() {
       </ul>
 
       {error && (
-        <div className={css.wrapper}>
+        <grid>
           <p>Oops.. error of request!</p>
-        </div>
+        </grid>
       )}
 
       {shouldRenderLoadMoreButton && (
-        <div className={css.wrapper}>
+        <Grid>
           <DecoratedButton
             caption="Load more"
             onClick={() => setCurrentPage(prevPage => prevPage + 1)}
           />
-        </div>
+        </Grid>
       )}
 
       {isLoading && (
-        <div className={css.wrapper}>
+        <Grid>
           <CustomLoader />
-        </div>
+        </Grid>
       )}
     </>
   );

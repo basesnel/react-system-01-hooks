@@ -1,3 +1,7 @@
+.list {
+  margin-bottom: 40px;
+}
+
 .item {
   padding: 6px 10px;
   color: var(--color-text);
@@ -11,4 +15,12 @@
 
 .item:hover .link {
   color: var(--color-accent);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
 }

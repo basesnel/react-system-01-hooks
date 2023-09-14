@@ -83,8 +83,7 @@ export default function News() {
   return (
     <>
       <SearchBar onFormSubmit={onChangeNewQuery} />
-      {/* <div>{newQuery}</div> */}
-      <ul>
+      <ul className={css.list}>
         {articles.map(({ title, url }) => (
           <li key={title} className={css.item}>
             <a
@@ -99,16 +98,28 @@ export default function News() {
         ))}
       </ul>
 
-      {error && <p>Oops.. error of request!</p>}
-
-      {shouldRenderLoadMoreButton && (
-        <DecoratedButton
-          caption="Load more"
-          onClick={() => setCurrentPage(prevCurrentPage => prevCurrentPage + 1)}
-        />
+      {error && (
+        <div className={css.wrapper}>
+          <p>Oops.. error of request!</p>
+        </div>
       )}
 
-      {isLoading && <CustomLoader />}
+      {shouldRenderLoadMoreButton && (
+        <div className={css.wrapper}>
+          <DecoratedButton
+            caption="Load more"
+            onClick={() =>
+              setCurrentPage(prevCurrentPage => prevCurrentPage + 1)
+            }
+          />
+        </div>
+      )}
+
+      {isLoading && (
+        <div className={css.wrapper}>
+          <CustomLoader />
+        </div>
+      )}
     </>
   );
 }

@@ -32,6 +32,7 @@ export default function News() {
   const shouldRenderLoadMoreButton = articles.length > 0 && !isLoading;
 
   const isFirstRender = useRef(true);
+  // const intervalNewsId = useRef(null);
 
   useEffect(() => {
     if (isFirstRender.current) {
@@ -39,18 +40,37 @@ export default function News() {
       return;
     }
 
-    console.log(`${query} ${currentPage}`);
-
     setIsLoading(true);
 
     setTimeout(() => {
       fetchArticles({ searchQuery: query, currentPage })
         .then(responseArticles => {
           setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+          // setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
         })
         .catch(error => setError(error.message))
         .finally(() => setIsLoading(false));
     }, 3000);
+
+    // console.log('This interval every 5000ms ' + Date.now());
+
+    // setIsLoading(true);
+
+    // intervalNewsId.current = setInterval(() => {
+    //   fetchArticles({ searchQuery: newQuery, currentPage })
+    //     .then(responseArticles => {
+    //       setArticles(prevArticles => [...prevArticles, ...responseArticles]);
+    //       // setCurrentPage(prevCurrentPage => prevCurrentPage + 1);
+    //     })
+    //     .catch(error => setError(error.message))
+    //     .finally(() => setIsLoading(false));
+    // }, 5000);
+
+    // return () => {
+    //   console.log('This is function for clear to next effect trigger');
+    //   clearInterval(intervalNewsId.current);
+    //   setIsLoading(false);
+    // };
   }, [currentPage, query]);
 
   const onHandleSubmit = query => {
@@ -88,7 +108,9 @@ export default function News() {
         <div className={css.wrapper}>
           <DecoratedButton
             caption="Load more"
-            onClick={() => setCurrentPage(prevPage => prevPage + 1)}
+            onClick={() =>
+              setCurrentPage(prevCurrentPage => prevCurrentPage + 1)
+            }
           />
         </div>
       )}

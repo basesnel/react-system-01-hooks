@@ -22,6 +22,6 @@ export default function Modal({ url, onHide, onClose }) {
 
 Modal.propTypes = {
   url: PropTypes.string.isRequired,
-  onCHide: PropTypes.func.isRequired,
+  onHide: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
 };

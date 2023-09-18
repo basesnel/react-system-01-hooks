@@ -1,14 +1,19 @@
 import { useState } from 'react';
 
 import Modal from 'components/Modal';
+import Grid from 'components/Grid';
+
+import css from './BigCards.module.css';
+
+import { images } from 'constants';
 
 const List = ({ items }) => {
   return (
-    <div>
+    <Grid>
       {items.map(item => (
         <ListItem key={item.large} item={item} />
       ))}
-    </div>
+    </Grid>
   );
 };
 
@@ -16,7 +21,9 @@ const ListItem = ({ item }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <div>
-      <div onClick={() => setIsModalOpen(true)}>{item.preview}</div>
+      <div className={css.card} onClick={() => setIsModalOpen(true)}>
+        <span>{item.preview}</span>
+      </div>
       {isModalOpen && (
         <Modal
           url={item.large}
@@ -31,17 +38,7 @@ const ListItem = ({ item }) => {
 };
 
 export default function BigCards() {
-  // const [images, setImages] = useState([
-  //   { preview: 'preview-1', large: 'large-1' },
-  //   { preview: 'preview-2', large: 'large-2' },
-  //   { preview: 'preview-3', large: 'large-3' },
-  // ]);
-
-  const images = [
-    { preview: 'preview-1', large: 'large-1' },
-    { preview: 'preview-2', large: 'large-2' },
-    { preview: 'preview-3', large: 'large-3' },
-  ];
+  // const [initImages, setInitImages] = useState(images);
 
   return (
     <section>

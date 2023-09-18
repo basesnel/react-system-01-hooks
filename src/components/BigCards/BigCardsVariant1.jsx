@@ -11,26 +11,18 @@ const Modal = ({ url, onClose }) => {
   );
 };
 
-const List = ({ items }) => {
+const List = ({ items, onSelect }) => {
   return (
     <div>
       {items.map(item => (
-        <ListItem key={item.large} item={item} />
+        <ListItem key={item.large} item={item} onSelect={onSelect} />
       ))}
     </div>
   );
 };
 
-const ListItem = ({ item }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  return (
-    <div>
-      <div onClick={() => setIsModalOpen(true)}>{item.preview}</div>
-      {isModalOpen && (
-        <Modal url={item.large} onClose={() => setIsModalOpen(false)} />
-      )}
-    </div>
-  );
+const ListItem = ({ item, onSelect }) => {
+  return <div onClick={() => onSelect(item.large)}>{item.large}</div>;
 };
 
 export default function BigCards() {
@@ -46,9 +38,14 @@ export default function BigCards() {
     { preview: 'preview-3', large: 'large-3' },
   ];
 
+  const [selectImageUrl, setSelectImageUrl] = useState(null);
+
   return (
     <section>
-      <List items={images} />
+      <List items={images} onSelect={setSelectImageUrl} />
+      {selectImageUrl && (
+        <Modal url={selectImageUrl} onClose={() => setSelectImageUrl(null)} />
+      )}
     </section>
   );
 }

@@ -6,9 +6,9 @@ import Text from 'components/Text';
 
 import css from './Modal.module.css';
 
-export default function Modal({ url, onClose }) {
+export default function Modal({ url, onHide, onClose }) {
   return (
-    <div className={css.backdrop}>
+    <div className={css.backdrop} onClick={onHide}>
       <div className={css.modal}>
         <Text>Modal</Text>
         <Text>url: {url}</Text>
@@ -22,5 +22,6 @@ export default function Modal({ url, onClose }) {
 
 Modal.propTypes = {
   url: PropTypes.string.isRequired,
+  onCHide: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
 };

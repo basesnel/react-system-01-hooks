@@ -18,7 +18,13 @@ const ListItem = ({ item }) => {
     <div>
       <div onClick={() => setIsModalOpen(true)}>{item.preview}</div>
       {isModalOpen && (
-        <Modal url={item.large} onClose={() => setIsModalOpen(false)} />
+        <Modal
+          url={item.large}
+          onHide={event => {
+            if (event.target === event.currentTarget) setIsModalOpen(false);
+          }}
+          onClose={() => setIsModalOpen(false)}
+        />
       )}
     </div>
   );

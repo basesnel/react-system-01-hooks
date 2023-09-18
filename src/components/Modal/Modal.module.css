@@ -26,6 +26,38 @@
   background-color: var(--color-light);
 }
 
+.modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  background-color: var(--color-light);
+  cursor: pointer;
+  transition: var(--my-transition);
+}
+
+.icon {
+  color: var(--color-text);
+  transition: var(--my-transition);
+}
+
+.modal-close:hover {
+  border: 1px solid var(--color-accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+}
+
+.modal-close:hover .icon {
+  color: var(--color-accent);
+}
+
 /* @media smartphone {
   .menu {
     display: flex;

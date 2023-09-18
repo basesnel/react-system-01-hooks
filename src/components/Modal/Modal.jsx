@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-import DecoratedButton from 'components/DecoratedButton';
+import { MdClose } from 'react-icons/md';
+
 import Text from 'components/Text';
 
 import css from './Modal.module.css';
@@ -11,7 +12,9 @@ export default function Modal({ url, onClose }) {
       <div className={css.modal}>
         <Text>Modal</Text>
         <Text>url: {url}</Text>
-        <DecoratedButton caption="Close" onClick={onClose} />
+        <button className={css['modal-close']} onClick={onClose}>
+          <MdClose className={css.icon} />
+        </button>
       </div>
     </div>
   );

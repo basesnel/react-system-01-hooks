@@ -1,15 +1,6 @@
-import DecoratedButton from 'components/DecoratedButton';
 import { useState } from 'react';
 
-const Modal = ({ url, onClose }) => {
-  return (
-    <div>
-      <p>Modal</p>
-      <p>url: {url}</p>
-      <DecoratedButton caption="Close" onClick={onClose} />
-    </div>
-  );
-};
+import Modal from 'components/Modal';
 
 const List = ({ items }) => {
   return (

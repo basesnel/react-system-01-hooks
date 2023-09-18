@@ -86,6 +86,16 @@ export default function NavBar() {
             News
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/big-cards"
+          >
+            Big cards
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

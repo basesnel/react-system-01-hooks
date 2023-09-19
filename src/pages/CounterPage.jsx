@@ -6,6 +6,7 @@ import Text from 'components/Text';
 import Grid from 'components/Grid';
 import ButtonCount from 'components/ButtonCount';
 import DecoratedButton from 'components/DecoratedButton';
+import Caption from 'components/Caption';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -29,7 +30,8 @@ export const CounterPage = () => {
   const [counterA, setCounterA] = useState(0);
   const [counterB, setCounterB] = useState(0);
 
-  const [number, setNumber] = useState(0);
+  const [numberA, setNumberA] = useState(0);
+  const [numberB, setNumberB] = useState(0);
 
   useEffect(() => {
     const totalCount = counterA + counterB;
@@ -114,13 +116,26 @@ export const CounterPage = () => {
           <DecoratedButton
             caption="+3"
             onClick={() => {
-              setNumber(n => n + 1);
-              setNumber(n => n + 1);
-              setNumber(n => n + 1);
+              setNumberA(n => n + 1);
+              setNumberA(n => n + 1);
+              setNumberA(n => n + 1);
             }}
           />
-          <Text>{number}</Text>
         </Grid>
+        <Caption text={`number A: ${numberA.toString()}`} />
+      </Container>
+      <Container>
+        <Title level={2} caption="Update state after replacing it" />
+        <Grid>
+          <DecoratedButton
+            caption="Increase the number"
+            onClick={() => {
+              setNumberB(numberB + 5);
+              setNumberB(n => n + 1);
+            }}
+          />
+        </Grid>
+        <Caption text={`number B: ${numberB.toString()}`} />
       </Container>
     </main>
   );

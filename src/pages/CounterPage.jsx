@@ -32,6 +32,7 @@ export const CounterPage = () => {
 
   const [numberA, setNumberA] = useState(0);
   const [numberB, setNumberB] = useState(0);
+  const [numberC, setNumberC] = useState(0);
 
   useEffect(() => {
     const totalCount = counterA + counterB;
@@ -136,6 +137,20 @@ export const CounterPage = () => {
           />
         </Grid>
         <Caption text={`number B: ${numberB.toString()}`} />
+      </Container>
+      <Container>
+        <Title level={2} caption="Replace state after updating it" />
+        <Grid>
+          <DecoratedButton
+            caption="Increase the number"
+            onClick={() => {
+              setNumberC(numberC + 5);
+              setNumberC(n => n + 1);
+              setNumberC(42);
+            }}
+          />
+        </Grid>
+        <Caption text={`number C: ${numberC.toString()}`} />
       </Container>
     </main>
   );

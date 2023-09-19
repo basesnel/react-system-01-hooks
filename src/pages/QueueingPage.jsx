@@ -26,6 +26,16 @@ export const QueueingPage = () => {
         </Text>
         <Text>Why does this happen? Fix both counters.</Text>
         <FixRequestCounter />
+        <Title level={3} caption="Solution" />
+        <Text>
+          Inside the handleClick event handler, the values of pending and
+          completed correspond to what they were at the time of the click event.
+          For the first render, pending was 0, so setPending&#40;pending -
+          1&#41; becomes setPending&#40;-1&#41;, which is wrong. Since you want
+          to increment or decrement the counters, rather than set them to a
+          concrete value determined during the click, you can instead pass the
+          updater functions: setPending&#40;p =&#62; p - 1&#41; etc..
+        </Text>
       </Container>
       <Container>
         <Title level={2} caption="Implement the state queue yourself" />

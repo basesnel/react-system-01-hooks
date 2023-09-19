@@ -7,6 +7,8 @@ export default function FixRequestCounter() {
   const [pending, setPending] = useState(0);
   const [completed, setCompleted] = useState(0);
 
+  // Task is completed.
+
   async function handleClick() {
     setPending(p => p + 1);
     await delay(3000);

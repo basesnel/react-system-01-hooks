@@ -13,6 +13,7 @@ import { CharactersPage } from '../pages/CharactersPage';
 import { NewsPage } from '../pages/NewsPage';
 import { BigCardsPage } from '../pages/BigCardsPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
+import { QueueingPage } from '../pages/QueueingPage';
 
 import AppBar from './AppBar';
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/characters" element={<CharactersPage />} />
         <Route path="/news" element={<NewsPage />} />
         <Route path="/big-cards" element={<BigCardsPage />} />
+        <Route path="/queueing" element={<QueueingPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

@@ -2,6 +2,7 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import FixRequestCounter from 'components/FixRequestCounter';
+import ImpStateQueue from 'components/ImpStateQueue';
 
 export const QueueingPage = () => {
   return (
@@ -39,6 +40,7 @@ export const QueueingPage = () => {
       </Container>
       <Container>
         <Title level={2} caption="Implement the state queue yourself" />
+        <ImpStateQueue />
       </Container>
     </main>
   );

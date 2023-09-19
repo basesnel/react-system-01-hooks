@@ -29,6 +29,8 @@ export const CounterPage = () => {
   const [counterA, setCounterA] = useState(0);
   const [counterB, setCounterB] = useState(0);
 
+  const [number, setNumber] = useState(0);
+
   useEffect(() => {
     const totalCount = counterA + counterB;
     document.title = `You are clicked ${totalCount} times`;
@@ -101,6 +103,23 @@ export const CounterPage = () => {
             caption={`Increase ${state.countR}`}
             onClick={() => dispatch({ type: 'increment', payload: 1 })}
           />
+        </Grid>
+      </Container>
+      <Container>
+        <Title
+          level={2}
+          caption="Update the same counter multiple times before the next render"
+        />
+        <Grid>
+          <DecoratedButton
+            caption="+3"
+            onClick={() => {
+              setNumber(n => n + 1);
+              setNumber(n => n + 1);
+              setNumber(n => n + 1);
+            }}
+          />
+          <Text>{number}</Text>
         </Grid>
       </Container>
     </main>

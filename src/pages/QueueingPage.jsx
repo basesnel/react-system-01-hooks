@@ -1,6 +1,7 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
+import FixRequestCounter from 'components/FixRequestCounter';
 
 export const QueueingPage = () => {
   return (
@@ -24,6 +25,7 @@ export const QueueingPage = () => {
           if you click fast twice, both counters seem to behave unpredictably.
         </Text>
         <Text>Why does this happen? Fix both counters.</Text>
+        <FixRequestCounter />
       </Container>
       <Container>
         <Title level={2} caption="Implement the state queue yourself" />

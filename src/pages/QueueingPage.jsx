@@ -40,7 +40,34 @@ export const QueueingPage = () => {
       </Container>
       <Container>
         <Title level={2} caption="Implement the state queue yourself" />
+        <Text>
+          In this challenge, you will reimplement a tiny part of React from
+          scratch! It&apos;s not as hard as it sounds.
+        </Text>
+        <Text>
+          Scroll through the sandbox preview. Notice that it shows{' '}
+          <b>four test cases</b>. They correspond to the examples you&apos;ve
+          seen earlier on this page. Your task is to implement the getFinalState
+          function so that it returns the correct result for each of those
+          cases. If you implement it correctly, all four tests should pass.
+        </Text>
+        <Text>
+          You will receive two arguments: baseState is the initial state
+          &#40;like 0&#41;, and the queue is an array which contains a mix of
+          numbers &#40;like 5&#41; and updater functions &#40;like n =&#62; n +
+          1&#41; in the order they were added.
+        </Text>
+        <Text>
+          Your task is to return the final state, just like the tables on this
+          page show!
+        </Text>
         <ImpStateQueue />
+        <Title level={3} caption="Solution" />
+        <Text>
+          The exact algorithm described on this page that React uses to
+          calculate the final state - is in the code of function
+          getFinalState&#40;&#41;.
+        </Text>
       </Container>
     </main>
   );

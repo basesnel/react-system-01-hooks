@@ -1,20 +1,6 @@
-function getFinalState(baseState, queue) {
-  return queue.reduce((prevValue, element) => {
-    return typeof element === 'function' ? element(prevValue) : element;
-  }, baseState);
+import PropTypes, { any } from 'prop-types';
 
-  // let finalState = baseState;
-
-  // for (let update of queue) {
-  //   if (typeof update === 'function') {
-  //     finalState = update(finalState);
-  //   } else {
-  //     finalState = update;
-  //   }
-  // }
-
-  // return finalState;
-}
+import { getFinalState } from 'constants';
 
 function increment(n) {
   return n + 1;
@@ -60,3 +46,9 @@ function TestCase({ baseState, queue, expected }) {
     </>
   );
 }
+
+TestCase.propTypes = {
+  baseState: PropTypes.number,
+  queue: PropTypes.arrayOf(any),
+  expect: PropTypes.number,
+};

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function ObjectInState() {
-  const [position] = useState({
+  const [position, setPosition] = useState({
     x: 0,
     y: 0,
   });
@@ -9,8 +9,10 @@ export default function ObjectInState() {
   return (
     <div
       onPointerMove={e => {
-        position.x = e.clientX;
-        position.y = e.clientY;
+        setPosition({
+          x: e.clientX,
+          y: e.clientY,
+        });
       }}
       style={{
         position: 'relative',
@@ -26,7 +28,7 @@ export default function ObjectInState() {
           position: 'absolute',
           backgroundColor: 'red',
           borderRadius: '50%',
-          transform: `translate(${position.x})px, ${position.y}px`,
+          transform: `translate(${position.x}px, ${position.y}px)`,
           left: -10,
           top: -10,
           width: 20,

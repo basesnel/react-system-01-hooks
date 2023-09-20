@@ -106,6 +106,16 @@ export default function NavBar() {
             Queueing
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/objects"
+          >
+            Objects
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

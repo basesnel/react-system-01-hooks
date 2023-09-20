@@ -14,6 +14,7 @@ import { NewsPage } from '../pages/NewsPage';
 import { BigCardsPage } from '../pages/BigCardsPage';
 import { NotFoundPage } from '../pages/NotFoundPage';
 import { QueueingPage } from '../pages/QueueingPage';
+import { ObjectInStatePage } from '../pages/ObjectInStatePage';
 
 import AppBar from './AppBar';
 
@@ -33,6 +34,7 @@ function App() {
         <Route path="/news" element={<NewsPage />} />
         <Route path="/big-cards" element={<BigCardsPage />} />
         <Route path="/queueing" element={<QueueingPage />} />
+        <Route path="/objects" element={<ObjectInStatePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

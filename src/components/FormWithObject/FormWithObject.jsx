@@ -3,22 +3,22 @@ import { useState } from 'react';
 // import css from './Grid.module.css';
 
 export default function FormWithObject() {
-  const [person] = useState({
+  const [person, setPerson] = useState({
     firstName: 'Barbara',
     lastName: 'Hepworth',
     email: 'bhepworth@sculpture.com',
   });
 
   const handleFirstNameChange = e => {
-    person.firstName = e.target.value;
+    setPerson({ ...person, firstName: e.target.value });
   };
 
   const handleLastNameChange = e => {
-    person.lastName = e.target.value;
+    setPerson({ ...person, lastName: e.target.value });
   };
 
   const handleEmailChange = e => {
-    person.email = e.target.value;
+    setPerson({ ...person, email: e.target.value });
   };
 
   return (

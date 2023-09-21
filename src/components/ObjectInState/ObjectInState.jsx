@@ -7,7 +7,8 @@ export default function ObjectInState() {
   });
 
   const moveToCursor = e => {
-    const parent = document.getElementById('parent');
+    // const parent = document.getElementById('parent');
+    const parent = document.querySelector('[data-box]');
     setPosition({
       x: e.clientX - parent.getBoundingClientRect().x,
       y: e.clientY - parent.getBoundingClientRect().y,
@@ -16,12 +17,12 @@ export default function ObjectInState() {
 
   return (
     <div
-      id="parent"
+      data-box
       onPointerMove={moveToCursor}
       style={{
         position: 'relative',
         width: '100%',
-        height: '100vh',
+        height: '400px',
         backgroundColor: 'white',
         borderRadius: '10px',
         overflow: 'hidden',

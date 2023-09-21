@@ -6,17 +6,21 @@ export default function ObjectInState() {
     y: 0,
   });
 
+  const moveToCursor = e => {
+    const parent = document.getElementById('parent');
+    setPosition({
+      x: e.clientX - parent.getBoundingClientRect().x,
+      y: e.clientY - parent.getBoundingClientRect().y,
+    });
+  };
+
   return (
     <div
-      onPointerMove={e => {
-        setPosition({
-          x: e.clientX,
-          y: e.clientY,
-        });
-      }}
+      id="parent"
+      onPointerMove={moveToCursor}
       style={{
         position: 'relative',
-        width: '100vw',
+        width: '100%',
         height: '100vh',
         backgroundColor: 'white',
         borderRadius: '10px',

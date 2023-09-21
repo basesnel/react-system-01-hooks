@@ -9,31 +9,31 @@ export default function FormWithObject() {
     email: 'bhepworth@sculpture.com',
   });
 
-  const handleFirstNameChange = e => {
-    setPerson({ ...person, firstName: e.target.value });
-  };
-
-  const handleLastNameChange = e => {
-    setPerson({ ...person, lastName: e.target.value });
-  };
-
-  const handleEmailChange = e => {
-    setPerson({ ...person, email: e.target.value });
+  const handleChange = e => {
+    setPerson({ ...person, [e.target.name]: e.target.value });
   };
 
   return (
     <>
       <label>
         First name:
-        <input value={person.firstName} onChange={handleFirstNameChange} />
+        <input
+          name="firstName"
+          value={person.firstName}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Last name:
-        <input value={person.lastName} onChange={handleLastNameChange} />
+        <input
+          name="lastName"
+          value={person.lastName}
+          onChange={handleChange}
+        />
       </label>
       <label>
         Email:
-        <input value={person.email} onChange={handleEmailChange} />
+        <input name="email" value={person.email} onChange={handleChange} />
       </label>
       <p>{`${person.firstName} ${person.lastName} ${person.email}`}</p>
     </>

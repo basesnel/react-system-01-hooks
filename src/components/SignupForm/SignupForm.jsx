@@ -72,14 +72,14 @@ export default function SignupForm() {
         inputValue={email}
         inputLabel="E-mail"
         handleChange={handleChange}
-        icon={<FiLock className={css.icon} />}
+        icon={<FiMail className={css.icon} />}
       />
       <DecoratedInput
         inputName="password"
         inputValue={password}
         inputLabel="Password"
         handleChange={handleChange}
-        icon={<FiMail className={css.icon} />}
+        icon={<FiLock className={css.icon} />}
       />
       <DecoratedSubmit caption="Register" />
     </DecoratedForm>

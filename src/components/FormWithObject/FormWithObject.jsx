@@ -1,6 +1,10 @@
+import DecoratedForm from 'components/DecoratedForm';
+import DecoratedInput from 'components/DecoratedInput';
+import { FiMail, FiEdit3 } from 'react-icons/fi';
 import { useState } from 'react';
 
-// import css from './Grid.module.css';
+import css from './FormWithObject.module.css';
+import Caption from 'components/Caption';
 
 export default function FormWithObject() {
   const [person, setPerson] = useState({
@@ -14,28 +18,31 @@ export default function FormWithObject() {
   };
 
   return (
-    <>
-      <label>
-        First name:
-        <input
-          name="firstName"
-          value={person.firstName}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Last name:
-        <input
-          name="lastName"
-          value={person.lastName}
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Email:
-        <input name="email" value={person.email} onChange={handleChange} />
-      </label>
-      <p>{`${person.firstName} ${person.lastName} ${person.email}`}</p>
-    </>
+    <DecoratedForm onSubmit={() => null}>
+      <DecoratedInput
+        inputName="firstName"
+        inputValue={person.firstName}
+        inputLabel="First name"
+        handleChange={handleChange}
+        icon={<FiEdit3 className={css.icon} />}
+      />
+      <DecoratedInput
+        inputName="lastName"
+        inputValue={person.lastName}
+        inputLabel="Last name"
+        handleChange={handleChange}
+        icon={<FiEdit3 className={css.icon} />}
+      />
+      <DecoratedInput
+        inputName="email"
+        inputValue={person.email}
+        inputLabel="E-mail"
+        handleChange={handleChange}
+        icon={<FiMail className={css.icon} />}
+      />
+      <Caption
+        text={`${person.firstName} ${person.lastName} ${person.email}`}
+      />
+    </DecoratedForm>
   );
 }

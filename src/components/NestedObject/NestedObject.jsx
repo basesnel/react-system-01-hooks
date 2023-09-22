@@ -56,39 +56,41 @@ export default function NestedObject() {
   };
 
   return (
-    <DecoratedForm onSubmit={() => null}>
-      <DecoratedInput
-        inputName="name"
-        inputValue={person.name}
-        inputLabel="Name"
-        handleChange={handleNameChange}
-        icon={<FiEdit3 className={css.icon} />}
-      />
-      <DecoratedInput
-        inputName="title"
-        inputValue={person.artwork.title}
-        inputLabel="Title"
-        handleChange={handleTitleChange}
-        icon={<FiEdit3 className={css.icon} />}
-      />
-      <DecoratedInput
-        inputName="email"
-        inputValue={person.artwork.city}
-        inputLabel="City"
-        handleChange={handleCityChange}
-        icon={<FiMail className={css.icon} />}
-      />
-      <DecoratedInput
-        inputName="image"
-        inputValue={person.artwork.image}
-        inputLabel="City"
-        handleChange={handleImageChange}
-        icon={<FiMail className={css.icon} />}
-      />
+    <>
+      <DecoratedForm onSubmit={e => e.preventDefault()}>
+        <DecoratedInput
+          inputName="name"
+          inputValue={person.name}
+          inputLabel="Name"
+          handleChange={handleNameChange}
+          icon={<FiEdit3 className={css.icon} />}
+        />
+        <DecoratedInput
+          inputName="title"
+          inputValue={person.artwork.title}
+          inputLabel="Title"
+          handleChange={handleTitleChange}
+          icon={<FiEdit3 className={css.icon} />}
+        />
+        <DecoratedInput
+          inputName="email"
+          inputValue={person.artwork.city}
+          inputLabel="City"
+          handleChange={handleCityChange}
+          icon={<FiMail className={css.icon} />}
+        />
+        <DecoratedInput
+          inputName="image"
+          inputValue={person.artwork.image}
+          inputLabel="City"
+          handleChange={handleImageChange}
+          icon={<FiMail className={css.icon} />}
+        />
+      </DecoratedForm>
       <Caption
         text={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
       />
       <img src={person.artwork.image} alt={person.artwork.title} />
-    </DecoratedForm>
+    </>
   );
 }

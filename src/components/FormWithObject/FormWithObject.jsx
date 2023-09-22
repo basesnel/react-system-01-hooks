@@ -20,31 +20,33 @@ export default function FormWithObject() {
   };
 
   return (
-    <DecoratedForm onSubmit={() => null}>
-      <DecoratedInput
-        inputName="firstName"
-        inputValue={person.firstName}
-        inputLabel="First name"
-        handleChange={handleChange}
-        icon={<FiEdit3 className={css.icon} />}
-      />
-      <DecoratedInput
-        inputName="lastName"
-        inputValue={person.lastName}
-        inputLabel="Last name"
-        handleChange={handleChange}
-        icon={<FiEdit3 className={css.icon} />}
-      />
-      <DecoratedInput
-        inputName="email"
-        inputValue={person.email}
-        inputLabel="E-mail"
-        handleChange={handleChange}
-        icon={<FiMail className={css.icon} />}
-      />
+    <>
+      <DecoratedForm onSubmit={e => e.preventDefault()}>
+        <DecoratedInput
+          inputName="firstName"
+          inputValue={person.firstName}
+          inputLabel="First name"
+          handleChange={handleChange}
+          icon={<FiEdit3 className={css.icon} />}
+        />
+        <DecoratedInput
+          inputName="lastName"
+          inputValue={person.lastName}
+          inputLabel="Last name"
+          handleChange={handleChange}
+          icon={<FiEdit3 className={css.icon} />}
+        />
+        <DecoratedInput
+          inputName="email"
+          inputValue={person.email}
+          inputLabel="E-mail"
+          handleChange={handleChange}
+          icon={<FiMail className={css.icon} />}
+        />
+      </DecoratedForm>
       <Caption
         text={`${person.firstName} ${person.lastName} ${person.email}`}
       />
-    </DecoratedForm>
+    </>
   );
 }

@@ -5,6 +5,7 @@ import ObjectInState from 'components/ObjectInState';
 import FormWithObject from 'components/FormWithObject';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import NestedObject from 'components/NestedObject';
 
 export const ObjectInStatePage = () => {
   return (
@@ -22,6 +23,10 @@ export const ObjectInStatePage = () => {
           <Card>
             <Title level={2} caption="Object: second case" />
             <ObjectInState />
+          </Card>
+          <Card>
+            <Title level={2} caption="Object: third case" />
+            <NestedObject />
           </Card>
         </Grid>
       </Container>

@@ -1,10 +1,12 @@
-import DecoratedForm from 'components/DecoratedForm';
-import DecoratedInput from 'components/DecoratedInput';
-import { FiMail, FiEdit3 } from 'react-icons/fi';
 import { useState } from 'react';
 
-import css from './FormWithObject.module.css';
+import { FiMail, FiEdit3 } from 'react-icons/fi';
+
+import DecoratedForm from 'components/DecoratedForm';
+import DecoratedInput from 'components/DecoratedInput';
 import Caption from 'components/Caption';
+
+import css from './FormWithObject.module.css';
 
 export default function FormWithObject() {
   const [person, setPerson] = useState({

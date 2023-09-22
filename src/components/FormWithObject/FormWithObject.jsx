@@ -23,6 +23,7 @@ export default function FormWithObject() {
     <>
       <DecoratedForm onSubmit={e => e.preventDefault()}>
         <DecoratedInput
+          inputType="text"
           inputName="firstName"
           inputValue={person.firstName}
           inputLabel="First name"
@@ -30,6 +31,7 @@ export default function FormWithObject() {
           icon={<FiEdit3 className={css.icon} />}
         />
         <DecoratedInput
+          inputType="text"
           inputName="lastName"
           inputValue={person.lastName}
           inputLabel="Last name"
@@ -37,6 +39,7 @@ export default function FormWithObject() {
           icon={<FiEdit3 className={css.icon} />}
         />
         <DecoratedInput
+          inputType="email"
           inputName="email"
           inputValue={person.email}
           inputLabel="E-mail"

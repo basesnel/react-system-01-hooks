@@ -68,6 +68,7 @@ export default function SignupForm() {
   return (
     <DecoratedForm onSubmit={handleSubmitForm}>
       <DecoratedInput
+        inputType="email"
         inputName="email"
         inputValue={email}
         inputLabel="E-mail"
@@ -75,6 +76,7 @@ export default function SignupForm() {
         icon={<FiMail className={css.icon} />}
       />
       <DecoratedInput
+        inputType="password"
         inputName="password"
         inputValue={password}
         inputLabel="Password"

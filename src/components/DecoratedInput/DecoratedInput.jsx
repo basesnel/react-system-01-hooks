@@ -5,6 +5,7 @@ import css from './DecoratedInput.module.css';
 // import { FiLock } from 'react-icons/fi';
 
 export default function DecoratedInput({
+  inputType,
   inputName,
   inputValue,
   inputLabel,
@@ -16,7 +17,7 @@ export default function DecoratedInput({
       <span className={css.label}>{inputLabel}</span>
       <div className={css['wrap-input']}>
         <input
-          type={inputName}
+          type={inputType}
           name={inputName}
           className={css.input}
           onChange={handleChange}
@@ -29,6 +30,7 @@ export default function DecoratedInput({
 }
 
 DecoratedInput.propTypes = {
+  inputType: PropTypes.string,
   inputName: PropTypes.string,
   inputValue: PropTypes.string,
   inputLabel: PropTypes.string,

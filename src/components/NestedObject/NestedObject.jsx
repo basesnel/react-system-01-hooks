@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FiMail, FiEdit3 } from 'react-icons/fi';
+import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
@@ -59,13 +59,15 @@ export default function NestedObject() {
     <>
       <DecoratedForm onSubmit={e => e.preventDefault()}>
         <DecoratedInput
+          inputType="text"
           inputName="name"
           inputValue={person.name}
           inputLabel="Name"
           handleChange={handleNameChange}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiUser className={css.icon} />}
         />
         <DecoratedInput
+          inputType="text"
           inputName="title"
           inputValue={person.artwork.title}
           inputLabel="Title"
@@ -73,18 +75,20 @@ export default function NestedObject() {
           icon={<FiEdit3 className={css.icon} />}
         />
         <DecoratedInput
-          inputName="email"
+          inputType="text"
+          inputName="city"
           inputValue={person.artwork.city}
           inputLabel="City"
           handleChange={handleCityChange}
-          icon={<FiMail className={css.icon} />}
+          icon={<FiEdit3 className={css.icon} />}
         />
         <DecoratedInput
+          inputType="text"
           inputName="image"
           inputValue={person.artwork.image}
           inputLabel="City"
           handleChange={handleImageChange}
-          icon={<FiMail className={css.icon} />}
+          icon={<FiImage className={css.icon} />}
         />
       </DecoratedForm>
       <Caption

@@ -28,6 +28,7 @@ export default function PokemonForm({ onFormSubmit }) {
   return (
     <DecoratedForm onSubmit={handleSubmit}>
       <DecoratedInput
+        inputType="text"
         inputName="pokemonName"
         inputValue={pokemonName}
         inputLabel="Pokemon name"

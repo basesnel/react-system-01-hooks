@@ -26,7 +26,7 @@ export default function Canvas() {
   };
 
   return (
-    <>
+    <div style={{ position: 'relative', width: '100%', height: '280px' }}>
       <select value={shape.color} onChange={handleColorChange}>
         <option value="orange">orange</option>
         <option value="lightpink">lightpink</option>
@@ -36,6 +36,6 @@ export default function Canvas() {
       <Box color={shape.color} position={shape.position} onMove={handleMove}>
         Drag me!
       </Box>
-    </>
+    </div>
   );
 }

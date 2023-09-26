@@ -16,7 +16,7 @@ export default function FixIncStateUpdates() {
   });
 
   const handlePlusClick = () => {
-    player.score++;
+    setPlayer({ ...player, score: player.score + 1 });
   };
 
   const handleFirstNameChange = e => {
@@ -28,6 +28,7 @@ export default function FixIncStateUpdates() {
 
   const handleLastNameChange = e => {
     setPlayer({
+      ...player,
       lastName: e.target.value,
     });
   };

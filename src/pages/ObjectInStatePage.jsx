@@ -7,6 +7,7 @@ import Grid from 'components/Grid';
 import Card from 'components/Card';
 import NestedObject from 'components/NestedObject';
 import NestedObjectByImmer from 'components/NestedObjectByImmer/NestedObjectByImmer';
+import FixIncStateUpdates from 'components/FixIncStateUpdates';
 
 export const ObjectInStatePage = () => {
   return (
@@ -32,6 +33,10 @@ export const ObjectInStatePage = () => {
           <Card>
             <Title level={2} caption="Object: fourth case" />
             <NestedObjectByImmer />
+          </Card>
+          <Card>
+            <Title level={2} caption="Object: first task" />
+            <FixIncStateUpdates />
           </Card>
         </Grid>
       </Container>

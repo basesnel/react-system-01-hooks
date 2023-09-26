@@ -35,10 +35,6 @@ export default function FixIncStateUpdates() {
 
   return (
     <DecoratedForm onSubmit={e => e.preventDefault()}>
-      <label>
-        Score: <b>{player.score}</b>{' '}
-        <DecoratedButton onClick={handlePlusClick} caption="+1" />
-      </label>
       <DecoratedInput
         inputType="text"
         inputName="firstName"
@@ -55,6 +51,10 @@ export default function FixIncStateUpdates() {
         handleChange={handleLastNameChange}
         icon={<FiEdit3 className={css.icon} />}
       />
+      <label className={css["label-wrap"]}>
+        Score: <b>{player.score}</b>{' '}
+        <DecoratedButton onClick={handlePlusClick} caption="+1" />
+      </label>
     </DecoratedForm>
   );
 }

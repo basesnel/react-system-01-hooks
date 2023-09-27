@@ -9,6 +9,7 @@ import NestedObject from 'components/NestedObject';
 import NestedObjectByImmer from 'components/NestedObjectByImmer/NestedObjectByImmer';
 import FixIncStateUpdates from 'components/FixIncStateUpdates';
 import Canvas from 'components/Canvas';
+import CanvasByImmer from 'components/CanvasByImmer';
 
 export const ObjectInStatePage = () => {
   return (
@@ -42,6 +43,10 @@ export const ObjectInStatePage = () => {
           <Card>
             <Title level={2} caption="Object: second task" />
             <Canvas />
+          </Card>
+          <Card>
+            <Title level={2} caption="Object: third task" />
+            <CanvasByImmer />
           </Card>
         </Grid>
       </Container>

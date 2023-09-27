@@ -22,6 +22,7 @@ export default function DecoratedInput({
           className={css.input}
           onChange={handleChange}
           value={inputValue}
+          autoComplete="off"
         />
         {icon}
       </div>

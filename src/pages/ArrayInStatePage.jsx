@@ -2,24 +2,24 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import ObjectInState from 'components/ObjectInState';
-import FormWithObject from 'components/FormWithObject';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import NestedObject from 'components/NestedObject';
-import NestedObjectByImmer from 'components/NestedObjectByImmer/NestedObjectByImmer';
+import NestedObjectByImmer from 'components/NestedObjectByImmer';
+import ArrayPractFirst from '../tasks/ArrayPractFirst';
 
 export const ArrayInStatePage = () => {
   return (
     <main>
       <Container>
         <Title level={1} caption="Array in state" />
-        <Text>Object in state of React-component case.</Text>
+        <Text>Array in state of React-component case.</Text>
       </Container>
       <Container>
         <Grid>
           <Card>
             <Title level={2} caption="Array: first case" />
-            <FormWithObject />
+            <ArrayPractFirst />
           </Card>
           <Card>
             <Title level={2} caption="Array: second case" />

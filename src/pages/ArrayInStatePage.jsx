@@ -1,12 +1,12 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import ObjectInState from 'components/ObjectInState';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import NestedObject from 'components/NestedObject';
 import NestedObjectByImmer from 'components/NestedObjectByImmer';
 import ArrayPractFirst from '../tasks/ArrayPractFirst';
+import ArrayPractSecond from 'tasks/ArrayPractSecond/ArrayPractSecond';
 
 export const ArrayInStatePage = () => {
   return (
@@ -23,7 +23,7 @@ export const ArrayInStatePage = () => {
           </Card>
           <Card>
             <Title level={2} caption="Array: second case" />
-            <ObjectInState />
+            <ArrayPractSecond />
           </Card>
           <Card>
             <Title level={2} caption="Array: third case" />

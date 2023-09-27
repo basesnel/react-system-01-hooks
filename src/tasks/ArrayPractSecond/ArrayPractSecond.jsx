@@ -38,12 +38,9 @@ export default function ArrayPractSecond() {
             <DecoratedButton
               caption="Delete"
               onClick={() => {
-                console.log(artists.indexOf(artist), idx);
+                // console.log(artists.indexOf(artist), idx);
                 setArtists(
-                  artists.filter(
-                    artist => artists.indexOf(artist) !== idx
-                    // (artist, index, array) => array.indexOf(artist) !== idx
-                  )
+                  artists.filter(artist => artists.indexOf(artist) !== idx)
                 );
               }}
             />

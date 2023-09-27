@@ -9,7 +9,7 @@ let nextId = 0;
 
 export default function ArrayPractFirst() {
   const [name, setName] = useState('');
-  const [artists] = useState([]);
+  const [artists, setArtists] = useState([]);
 
   return (
     <>
@@ -24,10 +24,8 @@ export default function ArrayPractFirst() {
       <DecoratedButton
         caption="Add"
         onClick={() => {
-          artists.push({
-            id: nextId++,
-            name: name,
-          });
+          setArtists([...artists, { id: nextId++, name: name }]);
+          setName('');
         }}
       />
       <ul>

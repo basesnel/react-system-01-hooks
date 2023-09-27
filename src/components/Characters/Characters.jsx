@@ -7,6 +7,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import DecoratedInput from 'components/DecoratedInput';
 
 import css from './Characters.module.css';
+import UnnumList from 'components/UnnumList';
 
 export default function Characters() {
   const [count, setCount] = useState(0);
@@ -42,13 +43,14 @@ export default function Characters() {
         inputValue={filter}
         icon={<FiFilter className={css.icon} />}
       />
-      <ul>
+      <UnnumList list={visibleCharacters} />
+      {/* <ul>
         {visibleCharacters.map((character, idx) => (
           <li key={idx} className={css.item}>
             {character}
           </li>
         ))}
-      </ul>
+      </ul> */}
     </div>
   );
 }

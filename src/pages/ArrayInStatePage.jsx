@@ -9,6 +9,7 @@ import ArrayPractThird from 'tasks/ArrayPractThird';
 import ArrayPractFourth from 'tasks/ArrayPractFourth';
 import ArrayPractFifth from 'tasks/ArrayPractFifth';
 import ArrayPractSixth from 'tasks/ArrayPractSixth';
+import ArrayPractSeventh from 'tasks/ArrayPractSeventh';
 
 export const ArrayInStatePage = () => {
   return (
@@ -42,6 +43,10 @@ export const ArrayInStatePage = () => {
           <Card>
             <Title level={2} caption="Array: sixth case" />
             <ArrayPractSixth />
+          </Card>
+          <Card>
+            <Title level={2} caption="Array: seventh case" />
+            <ArrayPractSeventh />
           </Card>
         </Grid>
       </Container>

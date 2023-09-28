@@ -3,10 +3,10 @@ import Title from 'components/Title';
 import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import NestedObjectByImmer from 'components/NestedObjectByImmer';
 import ArrayPractFirst from '../tasks/ArrayPractFirst';
 import ArrayPractSecond from 'tasks/ArrayPractSecond';
 import ArrayPractThird from 'tasks/ArrayPractThird';
+import ArrayPractFourth from 'tasks/ArrayPractFourth';
 
 export const ArrayInStatePage = () => {
   return (
@@ -31,7 +31,7 @@ export const ArrayInStatePage = () => {
           </Card>
           <Card>
             <Title level={2} caption="Array: fourth case" />
-            <NestedObjectByImmer />
+            <ArrayPractFourth />
           </Card>
         </Grid>
       </Container>

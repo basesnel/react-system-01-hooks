@@ -11,17 +11,35 @@ export default function ArrayPractSeventh() {
   const [yourList, setYourList] = useState(initList);
 
   function handleToggleMyList(artWorkId, nextSeen) {
-    const myNextList = [...myList];
-    const artWork = myNextList.find(a => a.id === artWorkId);
-    artWork.seen = nextSeen;
-    setMyList(myNextList);
+    setMyList(
+      myList.map(artWork => {
+        if (artWork.id === artWorkId) {
+          return { ...artWork, seen: nextSeen };
+        } else {
+          return artWork;
+        }
+      })
+    );
+    // const myNextList = [...myList];
+    // const artWork = myNextList.find(a => a.id === artWorkId);
+    // artWork.seen = nextSeen;
+    // setMyList(myNextList);
   }
 
   function handleToggleYourList(artWorkId, nextSeen) {
-    const yourNextList = [...yourList];
-    const artWork = yourNextList.find(a => a.id === artWorkId);
-    artWork.seen = nextSeen;
-    setYourList(yourNextList);
+    setYourList(
+      yourList.map(artWork => {
+        if (artWork.id === artWorkId) {
+          return { ...artWork, seen: nextSeen };
+        } else {
+          return artWork;
+        }
+      })
+    );
+    // const yourNextList = [...yourList];
+    // const artWork = yourNextList.find(a => a.id === artWorkId);
+    // artWork.seen = nextSeen;
+    // setYourList(yourNextList);
   }
 
   return (

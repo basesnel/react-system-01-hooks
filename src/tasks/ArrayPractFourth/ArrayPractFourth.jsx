@@ -1,7 +1,7 @@
 import DecoratedButton from 'components/DecoratedButton';
 import { useState } from 'react';
 
-let initialCounters = [0, 0, 0];
+const initialCounters = [0, 0, 0];
 
 export default function ArrayPractFourth() {
   const [counters, setCounters] = useState(initialCounters);

@@ -3,10 +3,11 @@ import Title from 'components/Title';
 import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import ArrayPractFirst from '../tasks/ArrayPractFirst';
+import ArrayPractFirst from 'tasks/ArrayPractFirst';
 import ArrayPractSecond from 'tasks/ArrayPractSecond';
 import ArrayPractThird from 'tasks/ArrayPractThird';
 import ArrayPractFourth from 'tasks/ArrayPractFourth';
+import ArrayPractFifth from 'tasks/ArrayPractFifth';
 
 export const ArrayInStatePage = () => {
   return (
@@ -32,6 +33,10 @@ export const ArrayInStatePage = () => {
           <Card>
             <Title level={2} caption="Array: fourth case" />
             <ArrayPractFourth />
+          </Card>
+          <Card>
+            <Title level={2} caption="Array: fifth case" />
+            <ArrayPractFifth />
           </Card>
         </Grid>
       </Container>

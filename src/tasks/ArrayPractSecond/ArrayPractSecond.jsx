@@ -1,5 +1,6 @@
-import DecoratedButton from 'components/DecoratedButton';
 import { useState } from 'react';
+
+import DecoratedButton from 'components/DecoratedButton';
 
 // let initialArtists = [
 //   { id: 0, name: 'Marta Colvin Andrade' },
@@ -7,7 +8,7 @@ import { useState } from 'react';
 //   { id: 2, name: 'Louise Nevelson' },
 // ];
 
-let initialArtists = [
+const initialArtists = [
   'Marta Colvin Andrade',
   'Lamidi Olonade Fakeye',
   'Louise Nevelson',

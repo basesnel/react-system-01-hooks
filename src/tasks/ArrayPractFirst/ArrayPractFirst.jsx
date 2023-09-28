@@ -28,7 +28,7 @@ export default function ArrayPractFirst() {
         caption="Add"
         onClick={() => {
           // setArtists([...artists, { id: nextId++, name: name }]);
-          setArtists([...artists, name]);
+          name.trim() && setArtists([...artists, name]);
           setName('');
         }}
       />

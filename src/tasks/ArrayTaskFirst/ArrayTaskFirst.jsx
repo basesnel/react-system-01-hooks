@@ -8,9 +8,18 @@ const initialProducts = [
 ];
 
 export default function ArrayTaskFirst() {
-  const [products] = useState(initialProducts);
+  const [products, setProducts] = useState(initialProducts);
 
-  const handleIncreaseClick = productId => {};
+  const handleIncreaseClick = productId => {
+    const newProducts = products.map(product => {
+      if (product.id === productId) {
+        return { ...product, count: product.count + 1 };
+      } else {
+        return product;
+      }
+    });
+    setProducts(newProducts);
+  };
 
   return (
     <ul>

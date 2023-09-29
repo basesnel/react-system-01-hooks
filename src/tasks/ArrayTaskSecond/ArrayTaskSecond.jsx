@@ -33,13 +33,15 @@ export default function ArrayTaskSecond() {
 
   const handleDecreaseClick = productId => {
     setProducts(
-      products.map(product => {
-        if (product.id === productId) {
-          return { ...product, count: product.count - 1 };
-        } else {
-          return product;
-        }
-      })
+      products
+        .map(product => {
+          if (product.id === productId) {
+            return { ...product, count: product.count - 1 };
+          } else {
+            return product;
+          }
+        })
+        .filter(product => product.count > 0)
     );
   };
 

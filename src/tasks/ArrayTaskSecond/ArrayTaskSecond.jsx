@@ -8,7 +8,7 @@ const initialProducts = [
   { id: 2, name: 'Spaghetti', count: 2 },
 ];
 
-export default function ArrayTaskFirst() {
+export default function ArrayTaskSecond() {
   const [products, setProducts] = useState(initialProducts);
 
   const handleIncreaseClick = productId => {
@@ -31,6 +31,18 @@ export default function ArrayTaskFirst() {
     // setProducts(newProducts);
   };
 
+  const handleDecreaseClick = productId => {
+    setProducts(
+      products.map(product => {
+        if (product.id === productId) {
+          return { ...product, count: product.count - 1 };
+        } else {
+          return product;
+        }
+      })
+    );
+  };
+
   return (
     <ul>
       {products.map(product => (
@@ -40,6 +52,12 @@ export default function ArrayTaskFirst() {
             caption="+"
             onClick={() => {
               handleIncreaseClick(product.id);
+            }}
+          />
+          <DecoratedButton
+            caption="-"
+            onClick={() => {
+              handleDecreaseClick(product.id);
             }}
           />
         </li>

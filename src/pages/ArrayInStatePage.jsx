@@ -11,6 +11,7 @@ import ArrayPractFifth from 'tasks/ArrayPractFifth';
 import ArrayPractSixth from 'tasks/ArrayPractSixth';
 import ArrayPractSeventh from 'tasks/ArrayPractSeventh';
 import ArrayPractEighth from 'tasks/ArrayPractEighth';
+import ArrayTaskSecond from 'tasks/ArrayTaskSecond';
 import ArrayTaskFirst from 'tasks/ArrayTaskFirst';
 
 export const ArrayInStatePage = () => {
@@ -57,6 +58,10 @@ export const ArrayInStatePage = () => {
           <Card>
             <Title level={2} caption="Array: first task" />
             <ArrayTaskFirst />
+          </Card>
+          <Card>
+            <Title level={2} caption="Array: second task" />
+            <ArrayTaskSecond />
           </Card>
         </Grid>
       </Container>

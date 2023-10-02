@@ -1,7 +1,8 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import ColorPicker from 'components/ColorPicker';
+
+import ColorPicker from 'tasks/ColorPicker';
 
 import { colorPickerOptions } from 'constants';
 

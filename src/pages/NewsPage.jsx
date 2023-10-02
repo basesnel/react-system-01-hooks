@@ -2,7 +2,8 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import VisuallyHidden from 'components/VisuallyHidden';
-import News from 'components/News/News';
+
+import News from 'tasks/News';
 
 export const NewsPage = () => {
   return (

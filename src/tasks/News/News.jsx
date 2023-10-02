@@ -3,11 +3,11 @@ import { useState, useEffect, useRef } from 'react';
 import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
 import DecoratedButton from 'components/DecoratedButton';
-
-import css from './News.module.css';
+import Grid from 'components/Grid';
 
 import { fetchArticles } from 'services/news-api';
-import Grid from 'components/Grid';
+
+import css from './News.module.css';
 
 export default function News() {
   const [articles, setArticles] = useState([]);

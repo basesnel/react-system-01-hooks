@@ -1,7 +1,8 @@
-import Clock from 'components/Clock';
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
+
+import Clock from 'tasks/Clock';
 
 export const ClockPage = () => {
   return (

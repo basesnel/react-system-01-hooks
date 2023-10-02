@@ -1,7 +1,8 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import Characters from 'components/Characters';
+
+import Characters from 'tasks/Characters';
 
 export const CharactersPage = () => {
   return (

@@ -1,8 +1,9 @@
-import { Pokemon } from 'components/Pokemon/Pokemon';
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import VisuallyHidden from 'components/VisuallyHidden';
+
+import Pokemon from 'tasks/Pokemon';
 
 export const PokemonPage = () => {
   return (

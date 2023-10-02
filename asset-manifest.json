@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/react-system-01-hooks/static/css/main.e22624ca.css",
-    "main.js": "/react-system-01-hooks/static/js/main.256ed9fa.js",
+    "main.css": "/react-system-01-hooks/static/css/main.65ef55ca.css",
+    "main.js": "/react-system-01-hooks/static/js/main.84021872.js",
     "static/media/404.png": "/react-system-01-hooks/static/media/404.2da63cd137116e34ec82.png",
     "static/media/pending.png": "/react-system-01-hooks/static/media/pending.5d0f8278d75854c2be69.png",
     "index.html": "/react-system-01-hooks/index.html",
     "static/media/search.svg": "/react-system-01-hooks/static/media/search.c32f5a98ca5c9d1af425.svg",
-    "main.e22624ca.css.map": "/react-system-01-hooks/static/css/main.e22624ca.css.map",
-    "main.256ed9fa.js.map": "/react-system-01-hooks/static/js/main.256ed9fa.js.map"
+    "main.65ef55ca.css.map": "/react-system-01-hooks/static/css/main.65ef55ca.css.map",
+    "main.84021872.js.map": "/react-system-01-hooks/static/js/main.84021872.js.map"
   },
   "entrypoints": [
-    "static/css/main.e22624ca.css",
-    "static/js/main.256ed9fa.js"
+    "static/css/main.65ef55ca.css",
+    "static/js/main.84021872.js"
   ]
 }

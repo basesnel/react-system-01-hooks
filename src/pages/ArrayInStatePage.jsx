@@ -3,18 +3,18 @@ import Title from 'components/Title';
 import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import ArrayPractFirst from 'tasks/ArrayPractFirst';
-import ArrayPractSecond from 'tasks/ArrayPractSecond';
-import ArrayPractThird from 'tasks/ArrayPractThird';
-import ArrayPractFourth from 'tasks/ArrayPractFourth';
-import ArrayPractFifth from 'tasks/ArrayPractFifth';
-import ArrayPractSixth from 'tasks/ArrayPractSixth';
-import ArrayPractSeventh from 'tasks/ArrayPractSeventh';
-import ArrayPractEighth from 'tasks/ArrayPractEighth';
-import ArrayTaskSecond from 'tasks/ArrayTaskSecond';
-import ArrayTaskFirst from 'tasks/ArrayTaskFirst';
-import ArrayTaskThird from 'tasks/ArrayTaskThird';
-import ArrayTaskFourth from 'tasks/ArrayTaskFourth';
+import ArrayPractFirst from 'tasks/arrays/ArrayPractFirst';
+import ArrayPractSecond from 'tasks/arrays/ArrayPractSecond';
+import ArrayPractThird from 'tasks/arrays/ArrayPractThird';
+import ArrayPractFourth from 'tasks/arrays/ArrayPractFourth';
+import ArrayPractFifth from 'tasks/arrays/ArrayPractFifth';
+import ArrayPractSixth from 'tasks/arrays/ArrayPractSixth';
+import ArrayPractSeventh from 'tasks/arrays/ArrayPractSeventh';
+import ArrayPractEighth from 'tasks/arrays/ArrayPractEighth';
+import ArrayTaskSecond from 'tasks/arrays/ArrayTaskSecond';
+import ArrayTaskFirst from 'tasks/arrays/ArrayTaskFirst';
+import ArrayTaskThird from 'tasks/arrays/ArrayTaskThird';
+import ArrayTaskFourth from 'tasks/arrays/ArrayTaskFourth';
 
 export const ArrayInStatePage = () => {
   return (

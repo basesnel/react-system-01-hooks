@@ -1,0 +1,11 @@
+.icon {
+  composes: icon from '../../../base-css/icon.css';
+}
+
+.label-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-text);
+}

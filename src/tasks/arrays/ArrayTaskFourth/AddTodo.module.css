@@ -1,0 +1,3 @@
+.icon {
+  composes: icon from '../../../base-css/icon.css';
+}

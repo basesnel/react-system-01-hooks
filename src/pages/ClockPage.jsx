@@ -12,7 +12,7 @@ export const ClockPage = () => {
         <Text>Clock hook case.</Text>
       </Container>
       <Container>
-        <Title level={1} caption="Clock - first case" />
+        <Title level={2} caption="Clock - first case" />
         <Clock />
       </Container>
     </main>

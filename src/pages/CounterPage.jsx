@@ -4,9 +4,10 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
 import Grid from 'components/Grid';
-import ButtonCount from 'components/ButtonCount';
 import DecoratedButton from 'components/DecoratedButton';
 import Caption from 'components/Caption';
+
+import ButtonCount from 'tasks/ButtonCount';
 
 const countReducer = (state, action) => {
   switch (action.type) {

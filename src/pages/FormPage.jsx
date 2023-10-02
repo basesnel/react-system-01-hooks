@@ -1,7 +1,8 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import SignupForm from 'components/SignupForm';
+
+import SignupForm from 'tasks/SignupForm';
 
 export const FormPage = () => {
   return (

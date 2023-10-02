@@ -1,7 +1,8 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import BigCards from 'components/BigCards';
+
+import BigCards from 'tasks/BigCards';
 
 export const BigCardsPage = () => {
   return (

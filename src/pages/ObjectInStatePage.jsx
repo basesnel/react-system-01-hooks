@@ -1,7 +1,7 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import FlexBox from 'components/FlexBox';
+import Grid from 'components/Grid';
 import Card from 'components/Card';
 
 import ObjectPractFirst from 'tasks/objects/ObjectPractFirst';
@@ -20,7 +20,7 @@ export const ObjectInStatePage = () => {
         <Text>Object in state of React-component case.</Text>
       </Container>
       <Container>
-        <FlexBox>
+        <Grid>
           <Card>
             <Title level={2} caption="Object: first case" />
             <ObjectPractFirst />
@@ -49,7 +49,7 @@ export const ObjectInStatePage = () => {
             <Title level={2} caption="Object: third task" />
             <ObjectTaskThird />
           </Card>
-        </FlexBox>
+        </Grid>
       </Container>
     </main>
   );

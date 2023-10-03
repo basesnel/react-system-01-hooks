@@ -2,7 +2,6 @@
 @value mobile, smartphone, tablet, desktop from sizes;
 
 .card {
-  width: 100%;
   padding: 10px;
   border-radius: 10px;
   background-color: var(--color-light);
@@ -14,9 +13,8 @@
     1px 4px 6px rgba(0, 0, 0, 0.06);
 }
 
-@media tablet {
+/* @media tablet {
   .card {
-    flex-basis: calc((100% - 30px) / 2);
     height: 100%;
   }
-}
+} */

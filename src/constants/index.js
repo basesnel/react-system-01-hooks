@@ -12,6 +12,8 @@ import { initialProductsList } from './initialProductsList';
 import { initialTodosList } from './initialTodosList';
 import { initialFirstPerson } from './initialFirstPerson';
 import { initialPosition } from './initialPosition';
+import { initialThirdPerson } from './initialThirdPerson';
+import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 
 export {
   sizes,
@@ -28,4 +30,6 @@ export {
   initialTodosList,
   initialFirstPerson,
   initialPosition,
+  initialThirdPerson,
+  initialTaskFirstPerson,
 };

@@ -6,14 +6,12 @@ import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
 import DecoratedButton from 'components/DecoratedButton';
 
+import { initialTaskFirstPerson } from 'constants';
+
 import css from './ObjectTaskFirst.module.css';
 
 export default function ObjectTaskFirst() {
-  const [player, setPlayer] = useState({
-    firstName: 'Ranjani',
-    lastName: 'Shettar',
-    score: 10,
-  });
+  const [player, setPlayer] = useState(initialTaskFirstPerson);
 
   const handlePlusClick = () => {
     setPlayer({ ...player, score: player.score + 1 });

@@ -6,17 +6,12 @@ import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
 import Caption from 'components/Caption';
 
+import { initialThirdPerson } from 'constants';
+
 import css from './ObjectPractThird.module.css';
 
 export default function ObjectPractThird() {
-  const [person, setPerson] = useState({
-    name: 'Nicky de Saint Phalle',
-    artwork: {
-      title: 'Blue Nana',
-      city: 'Hamburg',
-      image: 'https://i.imgur.com/Sd1AgUOm.jpg',
-    },
-  });
+  const [person, setPerson] = useState(initialThirdPerson);
 
   const handleNameChange = e => {
     setPerson({

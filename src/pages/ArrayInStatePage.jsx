@@ -26,52 +26,40 @@ export const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card>
-            <Title level={2} caption="Array: first case" />
+          <Card title={<Title level={2} caption="Array: first case" />}>
             <ArrayPractFirst />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: second case" />
+          <Card title={<Title level={2} caption="Array: second case" />}>
             <ArrayPractSecond />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: third case" />
+          <Card title={<Title level={2} caption="Array: third case" />}>
             <ArrayPractThird />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: fourth case" />
+          <Card title={<Title level={2} caption="Array: fourth case" />}>
             <ArrayPractFourth />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: fifth case" />
+          <Card title={<Title level={2} caption="Array: fifth case" />}>
             <ArrayPractFifth />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: sixth case" />
+          <Card title={<Title level={2} caption="Array: sixth case" />}>
             <ArrayPractSixth />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: seventh case" />
+          <Card title={<Title level={2} caption="Array: seventh case" />}>
             <ArrayPractSeventh />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: eighth case" />
+          <Card title={<Title level={2} caption="Array: eighth case" />}>
             <ArrayPractEighth />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: first task" />
+          <Card title={<Title level={2} caption="Array: first task" />}>
             <ArrayTaskFirst />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: second task" />
+          <Card title={<Title level={2} caption="Array: second task" />}>
             <ArrayTaskSecond />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: third task" />
+          <Card title={<Title level={2} caption="Array: third task" />}>
             <ArrayTaskThird />
           </Card>
-          <Card>
-            <Title level={2} caption="Array: fourth task" />
+          <Card title={<Title level={2} caption="Array: fourth task" />}>
             <ArrayTaskFourth />
           </Card>
         </Grid>

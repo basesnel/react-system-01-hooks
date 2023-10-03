@@ -21,7 +21,7 @@ export default function ObjectPractSecond() {
       style={{
         position: 'relative',
         width: '100%',
-        height: '400px',
+        height: '100%',
         backgroundColor: 'white',
         borderRadius: '10px',
         overflow: 'hidden',

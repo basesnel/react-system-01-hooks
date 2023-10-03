@@ -21,32 +21,25 @@ export const ObjectInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card>
-            <Title level={2} caption="Object: first case" />
+          <Card title={<Title level={2} caption="Object: first case" />}>
             <ObjectPractFirst />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: second case" />
+          <Card title={<Title level={2} caption="Object: second case" />}>
             <ObjectPractSecond />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: third case" />
+          <Card title={<Title level={2} caption="Object: third case" />}>
             <ObjectPractThird />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: fourth case" />
+          <Card title={<Title level={2} caption="Object: fourth case" />}>
             <ObjectPractFourth />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: first task" />
+          <Card title={<Title level={2} caption="Object: first task" />}>
             <ObjectTaskFirst />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: second task" />
+          <Card title={<Title level={2} caption="Object: second task" />}>
             <ObjectTaskSecond />
           </Card>
-          <Card>
-            <Title level={2} caption="Object: third task" />
+          <Card title={<Title level={2} caption="Object: third task" />}>
             <ObjectTaskThird />
           </Card>
         </Grid>

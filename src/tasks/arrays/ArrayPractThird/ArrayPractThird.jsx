@@ -1,14 +1,11 @@
-import DecoratedButton from 'components/DecoratedButton';
 import { useState } from 'react';
 
-const initialShapes = [
-  { id: 0, type: 'circle', x: 50, y: 100 },
-  { id: 1, type: 'square', x: 150, y: 100 },
-  { id: 2, type: 'circle', x: 250, y: 100 },
-];
+import DecoratedButton from 'components/DecoratedButton';
+
+import { initialShapesList } from 'constants';
 
 export default function ArrayPractThird() {
-  const [shapes, setShapes] = useState(initialShapes);
+  const [shapes, setShapes] = useState(initialShapesList);
 
   const handleClick = () => {
     const nextShapes = shapes.map(shape => {

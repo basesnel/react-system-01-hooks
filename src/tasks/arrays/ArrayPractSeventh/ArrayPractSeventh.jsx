@@ -1,14 +1,12 @@
 import { useState } from 'react';
 
-import { initialArtList } from 'constants';
-
 import Title from 'components/Title';
 
-const artList = initialArtList;
+import { initialSevenArtsList } from 'constants';
 
 export default function ArrayPractSeventh() {
-  const [myList, setMyList] = useState(artList);
-  const [yourList, setYourList] = useState(artList);
+  const [myList, setMyList] = useState(initialSevenArtsList);
+  const [yourList, setYourList] = useState(initialSevenArtsList);
 
   function handleToggleMyList(artWorkId, nextSeen) {
     setMyList(

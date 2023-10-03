@@ -5,19 +5,15 @@ import { FiEdit } from 'react-icons/fi';
 import DecoratedInput from 'components/DecoratedInput';
 import DecoratedButton from 'components/DecoratedButton';
 
+import { initialArtistsList } from 'constants';
+
 import css from './ArrayPractFifth.module.css';
 
 let nextId = 3;
 
-const initialArtists = [
-  { id: 0, name: 'Marta Colvin Andrade' },
-  { id: 1, name: 'Lamidi Olonade Fakeye' },
-  { id: 2, name: 'Louise Nevelson' },
-];
-
 export default function ArrayPractFifth() {
   const [name, setName] = useState('');
-  const [artists, setArtists] = useState(initialArtists);
+  const [artists, setArtists] = useState(initialArtistsList);
 
   const handleClick = () => {
     const insertAt = 1;

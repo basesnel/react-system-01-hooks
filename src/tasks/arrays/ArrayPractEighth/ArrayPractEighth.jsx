@@ -1,14 +1,12 @@
 import { useImmer } from 'use-immer';
 
-import { initialArtList } from 'constants';
+import { initialSevenArtsList } from 'constants';
 
 import Title from 'components/Title';
 
-const artList = initialArtList;
-
 export default function ArrayPractEighth() {
-  const [myList, updateMyList] = useImmer(artList);
-  const [yourList, updateYourList] = useImmer(artList);
+  const [myList, updateMyList] = useImmer(initialSevenArtsList);
+  const [yourList, updateYourList] = useImmer(initialSevenArtsList);
 
   function handleToggleMyList(id, nextSeen) {
     updateMyList(draft => {

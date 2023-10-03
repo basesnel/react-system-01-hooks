@@ -2,14 +2,10 @@ import { useState } from 'react';
 
 import DecoratedButton from 'components/DecoratedButton';
 
-const initialList = [
-  { id: 0, name: 'Big Bellies' },
-  { id: 1, name: 'Lunar Landscape' },
-  { id: 2, name: 'Terracota Army' },
-];
+import { initialSixArtsList } from 'constants';
 
 export default function ArrayPractSixth() {
-  const [list, setList] = useState(initialList);
+  const [list, setList] = useState(initialSixArtsList);
 
   const handleClick = () => {
     const nextList = [...list];
@@ -21,8 +17,8 @@ export default function ArrayPractSixth() {
     <>
       <DecoratedButton caption="Reverse" onClick={handleClick} />
       <ul>
-        {list.map(artWork => (
-          <li key={artWork.id}>{artWork.name}</li>
+        {list.map(art => (
+          <li key={art.id}>{art.title}</li>
         ))}
       </ul>
     </>

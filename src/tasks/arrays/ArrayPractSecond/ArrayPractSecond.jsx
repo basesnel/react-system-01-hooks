@@ -2,24 +2,14 @@ import { useState } from 'react';
 
 import DecoratedButton from 'components/DecoratedButton';
 
-// let initialArtists = [
-//   { id: 0, name: 'Marta Colvin Andrade' },
-//   { id: 1, name: 'Lamidi Olonade Fakeye' },
-//   { id: 2, name: 'Louise Nevelson' },
-// ];
-
-const initialArtists = [
-  'Marta Colvin Andrade',
-  'Lamidi Olonade Fakeye',
-  'Louise Nevelson',
-];
+import { initialArtistsList } from 'constants';
 
 export default function ArrayPractSecond() {
-  const [artists, setArtists] = useState(initialArtists);
+  const [artists, setArtists] = useState(initialArtistsList);
 
   return (
     <>
-      {/* <ul>
+      <ul>
         {artists.map(artist => (
           <li key={artist.id}>
             {artist.name}{' '}
@@ -31,15 +21,14 @@ export default function ArrayPractSecond() {
             />
           </li>
         ))}
-      </ul> */}
-      <ul>
+      </ul>
+      {/* <ul>
         {artists.map((artist, idx) => (
           <li key={idx}>
             {artist}{' '}
             <DecoratedButton
               caption="Delete"
               onClick={() => {
-                // console.log(artists.indexOf(artist), idx);
                 setArtists(
                   artists.filter(artist => artists.indexOf(artist) !== idx)
                 );
@@ -47,7 +36,7 @@ export default function ArrayPractSecond() {
             />
           </li>
         ))}
-      </ul>
+      </ul> */}
     </>
   );
 }

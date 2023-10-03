@@ -3,7 +3,11 @@ import { colorPickerOptions } from './colorPickerOptions';
 import { initialCharacters } from './characters';
 import { images } from './images';
 import { getFinalState } from './getFinalState';
-import { initialArtList } from './initialArtList';
+import { initialArtistsList } from './initialArtistsList';
+import { initialShapesList } from './initialShapesList';
+import { initialCountersList } from './initialCountersList';
+import { initialSixArtsList } from './initialSixArtsList';
+import { initialSevenArtsList } from './initialSevenArtsList';
 
 export {
   sizes,
@@ -11,5 +15,9 @@ export {
   initialCharacters,
   images,
   getFinalState,
-  initialArtList,
+  initialArtistsList,
+  initialShapesList,
+  initialCountersList,
+  initialSixArtsList,
+  initialSevenArtsList,
 };

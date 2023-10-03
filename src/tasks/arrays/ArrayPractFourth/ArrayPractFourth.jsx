@@ -1,10 +1,11 @@
-import DecoratedButton from 'components/DecoratedButton';
 import { useState } from 'react';
 
-const initialCounters = [0, 0, 0];
+import DecoratedButton from 'components/DecoratedButton';
+
+import { initialCountersList } from 'constants';
 
 export default function ArrayPractFourth() {
-  const [counters, setCounters] = useState(initialCounters);
+  const [counters, setCounters] = useState(initialCountersList);
 
   const handleIncrementalClick = index => {
     const nextCounters = counters.map((c, i) => {

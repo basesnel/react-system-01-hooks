@@ -8,6 +8,8 @@ import { initialShapesList } from './initialShapesList';
 import { initialCountersList } from './initialCountersList';
 import { initialSixArtsList } from './initialSixArtsList';
 import { initialSevenArtsList } from './initialSevenArtsList';
+import { initialProductsList } from './initialProductsList';
+import { initialTodosList } from './initialTodosList';
 
 export {
   sizes,
@@ -20,4 +22,6 @@ export {
   initialCountersList,
   initialSixArtsList,
   initialSevenArtsList,
+  initialProductsList,
+  initialTodosList,
 };

@@ -2,14 +2,10 @@ import { useState } from 'react';
 
 import DecoratedButton from 'components/DecoratedButton';
 
-const initialProducts = [
-  { id: 0, name: 'Baklava', count: 1 },
-  { id: 1, name: 'Cheese', count: 5 },
-  { id: 2, name: 'Spaghetti', count: 2 },
-];
+import { initialProductsList } from 'constants';
 
 export default function ArrayTaskSecond() {
-  const [products, setProducts] = useState(initialProducts);
+  const [products, setProducts] = useState(initialProductsList);
 
   const handleIncreaseClick = productId => {
     setProducts(

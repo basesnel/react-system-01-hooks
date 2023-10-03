@@ -3,14 +3,10 @@ import { useImmer } from 'use-immer';
 import AddTodo from './AddTodo.js';
 import TaskList from './TaskList.js';
 
-const initialTodos = [
-  { id: 0, title: 'Buy milk', done: true },
-  { id: 1, title: 'Eat tacos', done: false },
-  { id: 2, title: 'Brew tea', done: false },
-];
+import { initialTodosList } from 'constants';
 
-export default function TaskApp() {
-  const [todos, updateTodos] = useImmer(initialTodos);
+export default function ArrayTaskFourth() {
+  const [todos, updateTodos] = useImmer(initialTodosList);
 
   const handleAddTodo = title => {
     updateTodos(draft => {

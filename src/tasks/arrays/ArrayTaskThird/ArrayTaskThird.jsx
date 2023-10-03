@@ -1,15 +1,12 @@
 import { useState } from 'react';
+
 import AddTodo from './AddTodo.js';
 import TaskList from './TaskList.js';
 
-const initialTodos = [
-  { id: 0, title: 'Buy milk', done: true },
-  { id: 1, title: 'Eat tacos', done: false },
-  { id: 2, title: 'Brew tea', done: false },
-];
+import { initialTodosList } from 'constants';
 
-export default function TaskApp() {
-  const [todos, setTodos] = useState(initialTodos);
+export default function ArrayTaskThird() {
+  const [todos, setTodos] = useState(initialTodosList);
 
   const handleAddTodo = title => {
     setTodos([

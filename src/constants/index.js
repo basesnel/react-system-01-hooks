@@ -10,6 +10,8 @@ import { initialSixArtsList } from './initialSixArtsList';
 import { initialSevenArtsList } from './initialSevenArtsList';
 import { initialProductsList } from './initialProductsList';
 import { initialTodosList } from './initialTodosList';
+import { initialFirstPerson } from './initialFirstPerson';
+import { initialPosition } from './initialPosition';
 
 export {
   sizes,
@@ -24,4 +26,6 @@ export {
   initialSevenArtsList,
   initialProductsList,
   initialTodosList,
+  initialFirstPerson,
+  initialPosition,
 };

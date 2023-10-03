@@ -1,18 +1,18 @@
 import { useState } from 'react';
+
 import Background from './Background.jsx';
 import Box from './Box.jsx';
 
+import { initialPosition } from 'constants';
+
 import css from './ObjectTaskSecond.module.css';
 
-const initialPosition = {
-  x: 0,
-  y: 0,
-};
+const initPosition = { ...initialPosition };
 
 export default function ObjectTaskSecond() {
   const [shape, setShape] = useState({
     color: 'orange',
-    position: initialPosition,
+    position: initPosition,
   });
 
   const handleMove = (dx, dy) => {

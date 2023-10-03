@@ -6,14 +6,12 @@ import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
 import Caption from 'components/Caption';
 
+import { initialFirstPerson } from 'constants';
+
 import css from './ObjectPractFirst.module.css';
 
 export default function ObjectPractFirst() {
-  const [person, setPerson] = useState({
-    firstName: 'Barbara',
-    lastName: 'Hepworth',
-    email: 'bhepworth@sculpture.com',
-  });
+  const [person, setPerson] = useState(initialFirstPerson);
 
   const handleChange = e => {
     setPerson({ ...person, [e.target.name]: e.target.value });

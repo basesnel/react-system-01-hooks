@@ -3,12 +3,9 @@ import { useImmer } from 'use-immer';
 import Background from './Background.jsx';
 import Box from './Box.jsx';
 
-import css from './ObjectTaskThird.module.css';
+import { initialPosition } from 'constants';
 
-const initialPosition = {
-  x: 0,
-  y: 0,
-};
+import css from './ObjectTaskThird.module.css';
 
 export default function ObjectTaskThird() {
   const [shape, updateShape] = useImmer({

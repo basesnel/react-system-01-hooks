@@ -1,10 +1,9 @@
 import { useState } from 'react';
 
+import { initialPosition } from 'constants';
+
 export default function ObjectPractSecond() {
-  const [position, setPosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  const [position, setPosition] = useState(initialPosition);
 
   const moveToCursor = e => {
     // const parent = document.getElementById('parent');

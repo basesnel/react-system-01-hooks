@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import Text from 'components/Text';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 
 import css from './ColorPicker.module.css';
 
@@ -22,7 +22,7 @@ export default function ColorPicker({ options }) {
       <Text>
         Color is selected: <span style={{ color: color }}>{label}</span>
       </Text>
-      <Grid>
+      <FlexBox>
         {options.map(({ label, color }, index) => (
           <button
             key={label}
@@ -32,7 +32,7 @@ export default function ColorPicker({ options }) {
             onClick={() => setActiveIndexOptionIdx(index)}
           ></button>
         ))}
-      </Grid>
+      </FlexBox>
     </div>
   );
 }

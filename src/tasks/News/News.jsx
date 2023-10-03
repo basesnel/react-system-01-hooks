@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from 'react';
 import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
 import DecoratedButton from 'components/DecoratedButton';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 
 import { fetchArticles } from 'services/news-api';
 
@@ -66,24 +66,24 @@ export default function News() {
       </ul>
 
       {error && (
-        <grid>
+        <FlexBox>
           <p>Oops.. error of request!</p>
-        </grid>
+        </FlexBox>
       )}
 
       {shouldRenderLoadMoreButton && (
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption="Load more"
             onClick={() => setCurrentPage(prevPage => prevPage + 1)}
           />
-        </Grid>
+        </FlexBox>
       )}
 
       {isLoading && (
-        <Grid>
+        <FlexBox>
           <CustomLoader />
-        </Grid>
+        </FlexBox>
       )}
     </>
   );

@@ -3,7 +3,7 @@ import { useEffect, useState, useReducer } from 'react';
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Caption from 'components/Caption';
 
@@ -61,17 +61,17 @@ export const CounterPage = () => {
       </Container>
       <Container>
         <Title level={2} caption="Counter with own state" />
-        <Grid>
+        <FlexBox>
           <ButtonCount />
           <ButtonCount />
           <ButtonCount />
           <ButtonCount />
           <ButtonCount />
-        </Grid>
+        </FlexBox>
       </Container>
       <Container>
         <Title level={2} caption="Counter with general state" />
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption={`Clicked ${count} times`}
             onClick={handleClick}
@@ -80,12 +80,12 @@ export const CounterPage = () => {
             caption={`Clicked ${count} times`}
             onClick={handleClick}
           />
-        </Grid>
+        </FlexBox>
       </Container>
       <Container>
         <Title level={2} caption="CounterA and CounterB" />
         <Text>Counters with useEffect hook case.</Text>
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption={`pressed the button ${counterA} times`}
             onClick={handleCounterAIncrement}
@@ -94,11 +94,11 @@ export const CounterPage = () => {
             caption={`pressed the button ${counterB} times`}
             onClick={handleCounterBIncrement}
           />
-        </Grid>
+        </FlexBox>
       </Container>
       <Container>
         <Title level={2} caption="Counter with reducer" />
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption={`Decrease ${state.countR}`}
             onClick={() => dispatch({ type: 'decrement', payload: 1 })}
@@ -107,14 +107,14 @@ export const CounterPage = () => {
             caption={`Increase ${state.countR}`}
             onClick={() => dispatch({ type: 'increment', payload: 1 })}
           />
-        </Grid>
+        </FlexBox>
       </Container>
       <Container>
         <Title
           level={2}
           caption="Update the same counter multiple times before the next render"
         />
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption="+3"
             onClick={() => {
@@ -123,12 +123,12 @@ export const CounterPage = () => {
               setNumberA(n => n + 1);
             }}
           />
-        </Grid>
+        </FlexBox>
         <Caption text={`number A: ${numberA.toString()}`} />
       </Container>
       <Container>
         <Title level={2} caption="Update state after replacing it" />
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption="Increase the number"
             onClick={() => {
@@ -136,12 +136,12 @@ export const CounterPage = () => {
               setNumberB(n => n + 1);
             }}
           />
-        </Grid>
+        </FlexBox>
         <Caption text={`number B: ${numberB.toString()}`} />
       </Container>
       <Container>
         <Title level={2} caption="Replace state after updating it" />
-        <Grid>
+        <FlexBox>
           <DecoratedButton
             caption="Increase the number"
             onClick={() => {
@@ -150,7 +150,7 @@ export const CounterPage = () => {
               setNumberC(42);
             }}
           />
-        </Grid>
+        </FlexBox>
         <Caption text={`number C: ${numberC.toString()}`} />
       </Container>
     </main>

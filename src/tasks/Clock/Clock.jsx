@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Box from 'components/Box';
 
@@ -69,7 +69,7 @@ export default function Clock() {
         <span className={css.time}>{time.toLocaleTimeString()}</span>
       </Box>
       <Caption text="Current time" />
-      <Grid>
+      <FlexBox>
         <DecoratedButton
           caption={isTicking ? 'stop' : 'start'}
           onClick={toggle}
@@ -79,7 +79,7 @@ export default function Clock() {
           onClick={stop}
           isDisabled={!isTicking}
         /> */}
-      </Grid>
+      </FlexBox>
     </>
   );
 }

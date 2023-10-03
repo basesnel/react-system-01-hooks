@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Modal from 'components/Modal';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 
 import css from './BigCards.module.css';
 
@@ -9,11 +9,11 @@ import { images } from 'constants';
 
 const List = ({ items }) => {
   return (
-    <Grid>
+    <FlexBox>
       {items.map(item => (
         <ListItem key={item.large} item={item} />
       ))}
-    </Grid>
+    </FlexBox>
   );
 };
 

@@ -6,7 +6,7 @@ import NavBar from 'components/NavBar';
 import UserMenu from 'components/UserMenu';
 import DecoratedButton from 'components/DecoratedButton';
 import authContext from 'contexts/auth/context';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 
 import css from './AppBar.module.css';
 
@@ -22,9 +22,9 @@ export default function AppBar() {
         {isLoggedIn ? (
           <UserMenu onLogOut={onLogOut} user={user} />
         ) : (
-          <Grid>
+          <FlexBox>
             <DecoratedButton caption="Log In" onClick={onLogIn} />
-          </Grid>
+          </FlexBox>
         )}
       </Container>
     </header>

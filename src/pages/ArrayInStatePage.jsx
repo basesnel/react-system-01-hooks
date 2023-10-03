@@ -1,7 +1,7 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 import Card from 'components/Card';
 import ArrayPractFirst from 'tasks/arrays/ArrayPractFirst';
 import ArrayPractSecond from 'tasks/arrays/ArrayPractSecond';
@@ -24,7 +24,7 @@ export const ArrayInStatePage = () => {
         <Text>Array in state of React-component case.</Text>
       </Container>
       <Container>
-        <Grid>
+        <FlexBox>
           <Card>
             <Title level={2} caption="Array: first case" />
             <ArrayPractFirst />
@@ -73,7 +73,7 @@ export const ArrayInStatePage = () => {
             <Title level={2} caption="Array: fourth task" />
             <ArrayTaskFourth />
           </Card>
-        </Grid>
+        </FlexBox>
       </Container>
     </main>
   );

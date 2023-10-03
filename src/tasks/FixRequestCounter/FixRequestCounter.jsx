@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Caption from 'components/Caption';
 import DecoratedButton from 'components/DecoratedButton';
-import Grid from 'components/Grid';
+import FlexBox from 'components/FlexBox';
 
 export default function FixRequestCounter() {
   const [pending, setPending] = useState(0);
@@ -20,9 +20,9 @@ export default function FixRequestCounter() {
     <>
       <Caption text={`Pending: ${pending.toString()}`}></Caption>
       <Caption text={`Completed: ${completed.toString()}`}></Caption>
-      <Grid>
+      <FlexBox>
         <DecoratedButton onClick={handleClick} caption="Buy" />
-      </Grid>
+      </FlexBox>
     </>
   );
 }

@@ -21,25 +21,43 @@ export const ObjectInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title={<Title level={2} caption="Object: first case" />}>
+          <Card
+            title={
+              <Title
+                level={2}
+                caption="Copying objects with the spread syntax"
+              />
+            }
+          >
             <ObjectPractFirst />
           </Card>
-          <Card title={<Title level={2} caption="Object: second case" />}>
+          <Card title={<Title level={2} caption="Treat state as read-only" />}>
             <ObjectPractSecond />
           </Card>
-          <Card title={<Title level={2} caption="Object: third case" />}>
+          <Card title={<Title level={2} caption="Updating a nested object" />}>
             <ObjectPractThird />
           </Card>
-          <Card title={<Title level={2} caption="Object: fourth case" />}>
+          <Card
+            title={
+              <Title
+                level={2}
+                caption="Write concise update logic with Immer"
+              />
+            }
+          >
             <ObjectPractFourth />
           </Card>
-          <Card title={<Title level={2} caption="Object: first task" />}>
+          <Card
+            title={<Title level={2} caption="Fix incorrect state updates" />}
+          >
             <ObjectTaskFirst />
           </Card>
-          <Card title={<Title level={2} caption="Object: second task" />}>
+          <Card title={<Title level={2} caption="Find and fix the mutation" />}>
             <ObjectTaskSecond />
           </Card>
-          <Card title={<Title level={2} caption="Object: third task" />}>
+          <Card
+            title={<Title level={2} caption="Update an object with immer" />}
+          >
             <ObjectTaskThird />
           </Card>
         </Grid>

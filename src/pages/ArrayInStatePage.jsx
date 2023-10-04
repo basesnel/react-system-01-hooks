@@ -26,40 +26,72 @@ export const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title={<Title level={2} caption="Array: first case" />}>
+          <Card title={<Title level={2} caption="Adding to an array" />}>
             <ArrayPractFirst />
           </Card>
-          <Card title={<Title level={2} caption="Array: second case" />}>
+          <Card title={<Title level={2} caption="Removing from an array" />}>
             <ArrayPractSecond />
           </Card>
-          <Card title={<Title level={2} caption="Array: third case" />}>
+          <Card title={<Title level={2} caption="Transforming an array" />}>
             <ArrayPractThird />
           </Card>
-          <Card title={<Title level={2} caption="Array: fourth case" />}>
+          <Card
+            title={<Title level={2} caption="Replacing items in an array" />}
+          >
             <ArrayPractFourth />
           </Card>
-          <Card title={<Title level={2} caption="Array: fifth case" />}>
+          <Card title={<Title level={2} caption="Inserting into an array" />}>
             <ArrayPractFifth />
           </Card>
-          <Card title={<Title level={2} caption="Array: sixth case" />}>
+          <Card
+            title={
+              <Title level={2} caption="Making other changes to an array" />
+            }
+          >
             <ArrayPractSixth />
           </Card>
-          <Card title={<Title level={2} caption="Array: seventh case" />}>
+          <Card
+            title={<Title level={2} caption="Updating objects inside arrays" />}
+          >
             <ArrayPractSeventh />
           </Card>
-          <Card title={<Title level={2} caption="Array: eighth case" />}>
+          <Card
+            title={
+              <Title
+                level={2}
+                caption="Write concise update logic with immer"
+              />
+            }
+          >
             <ArrayPractEighth />
           </Card>
-          <Card title={<Title level={2} caption="Array: first task" />}>
+          <Card
+            title={
+              <Title level={2} caption="Update an item in the shopping cart" />
+            }
+          >
             <ArrayTaskFirst />
           </Card>
-          <Card title={<Title level={2} caption="Array: second task" />}>
+          <Card
+            title={
+              <Title level={2} caption="Remove an item in the shopping cart" />
+            }
+          >
             <ArrayTaskSecond />
           </Card>
-          <Card title={<Title level={2} caption="Array: third task" />}>
+          <Card
+            title={
+              <Title
+                level={2}
+                caption="Fix the mutations using non-mutative methods"
+              />
+            }
+          >
             <ArrayTaskThird />
           </Card>
-          <Card title={<Title level={2} caption="Array: fourth task" />}>
+          <Card
+            title={<Title level={2} caption="Fix the mutations using immer" />}
+          >
             <ArrayTaskFourth />
           </Card>
         </Grid>

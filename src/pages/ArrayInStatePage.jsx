@@ -21,37 +21,37 @@ export const ArrayInStatePage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Array in state" />
+        <Title level={1} caption="array in state" />
         <Text>Array in state of React-component case.</Text>
       </Container>
       <Container>
         <Grid>
-          <Card title={<Title level={2} caption="Adding to an array" />}>
+          <Card title={<Title level={2} caption="adding to an array" />}>
             <ArrayPractFirst />
           </Card>
-          <Card title={<Title level={2} caption="Removing from an array" />}>
+          <Card title={<Title level={2} caption="removing from an array" />}>
             <ArrayPractSecond />
           </Card>
-          <Card title={<Title level={2} caption="Transforming an array" />}>
+          <Card title={<Title level={2} caption="transforming an array" />}>
             <ArrayPractThird />
           </Card>
           <Card
-            title={<Title level={2} caption="Replacing items in an array" />}
+            title={<Title level={2} caption="replacing items in an array" />}
           >
             <ArrayPractFourth />
           </Card>
-          <Card title={<Title level={2} caption="Inserting into an array" />}>
+          <Card title={<Title level={2} caption="inserting into an array" />}>
             <ArrayPractFifth />
           </Card>
           <Card
             title={
-              <Title level={2} caption="Making other changes to an array" />
+              <Title level={2} caption="making other changes to an array" />
             }
           >
             <ArrayPractSixth />
           </Card>
           <Card
-            title={<Title level={2} caption="Updating objects inside arrays" />}
+            title={<Title level={2} caption="updating objects inside arrays" />}
           >
             <ArrayPractSeventh />
           </Card>
@@ -59,7 +59,7 @@ export const ArrayInStatePage = () => {
             title={
               <Title
                 level={2}
-                caption="Write concise update logic with immer"
+                caption="write concise update logic with immer"
               />
             }
           >
@@ -67,14 +67,14 @@ export const ArrayInStatePage = () => {
           </Card>
           <Card
             title={
-              <Title level={2} caption="Update an item in the shopping cart" />
+              <Title level={2} caption="update an item in the shopping cart" />
             }
           >
             <ArrayTaskFirst />
           </Card>
           <Card
             title={
-              <Title level={2} caption="Remove an item in the shopping cart" />
+              <Title level={2} caption="remove an item in the shopping cart" />
             }
           >
             <ArrayTaskSecond />
@@ -83,14 +83,14 @@ export const ArrayInStatePage = () => {
             title={
               <Title
                 level={2}
-                caption="Fix the mutations using non-mutative methods"
+                caption="fix the mutations using non-mutative methods"
               />
             }
           >
             <ArrayTaskThird />
           </Card>
           <Card
-            title={<Title level={2} caption="Fix the mutations using immer" />}
+            title={<Title level={2} caption="fix the mutations using immer" />}
           >
             <ArrayTaskFourth />
           </Card>

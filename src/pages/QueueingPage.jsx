@@ -8,11 +8,11 @@ export const QueueingPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Queueing state tasks" />
+        <Title level={1} caption="queueing state tasks" />
         <Text>Cases of queueing series states.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="Fix a request counter" />
+        <Title level={2} caption="fix a request counter" />
         <Text>
           You&apos;re working on an art marketplace app that lets the user
           submit multiple orders for an art item at the same time. Each time the
@@ -39,7 +39,7 @@ export const QueueingPage = () => {
         </Text>
       </Container>
       <Container>
-        <Title level={2} caption="Implement the state queue yourself" />
+        <Title level={2} caption="implement the state queue yourself" />
         <Text>
           In this challenge, you will reimplement a tiny part of React from
           scratch! It&apos;s not as hard as it sounds.

@@ -16,7 +16,7 @@ export const ObjectInStatePage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Object in state" />
+        <Title level={1} caption="object in state" />
         <Text>Object in state of React-component case.</Text>
       </Container>
       <Container>
@@ -25,38 +25,38 @@ export const ObjectInStatePage = () => {
             title={
               <Title
                 level={2}
-                caption="Copying objects with the spread syntax"
+                caption="copying objects with the spread syntax"
               />
             }
           >
             <ObjectPractFirst />
           </Card>
-          <Card title={<Title level={2} caption="Treat state as read-only" />}>
+          <Card title={<Title level={2} caption="treat state as read-only" />}>
             <ObjectPractSecond />
           </Card>
-          <Card title={<Title level={2} caption="Updating a nested object" />}>
+          <Card title={<Title level={2} caption="updating a nested object" />}>
             <ObjectPractThird />
           </Card>
           <Card
             title={
               <Title
                 level={2}
-                caption="Write concise update logic with Immer"
+                caption="write concise update logic with Immer"
               />
             }
           >
             <ObjectPractFourth />
           </Card>
           <Card
-            title={<Title level={2} caption="Fix incorrect state updates" />}
+            title={<Title level={2} caption="fix incorrect state updates" />}
           >
             <ObjectTaskFirst />
           </Card>
-          <Card title={<Title level={2} caption="Find and fix the mutation" />}>
+          <Card title={<Title level={2} caption="find and fix the mutation" />}>
             <ObjectTaskSecond />
           </Card>
           <Card
-            title={<Title level={2} caption="Update an object with immer" />}
+            title={<Title level={2} caption="update an object with immer" />}
           >
             <ObjectTaskThird />
           </Card>

@@ -6,7 +6,8 @@
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-caption);
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
   color: var(--color-caption);
@@ -14,19 +15,26 @@
 
 @media mobile {
   .title01 {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
 @media smartphone {
   .title01 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
 @media tablet {
   .title01 {
     text-align: left;
+    font-size: 22px;
+  }
+}
+
+@media desktop {
+  .title01 {
+    font-size: 24px;
   }
 }
 
@@ -34,36 +42,40 @@
   margin-bottom: 0;
   border-bottom: none;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
 @media mobile {
   .title02 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
 @media smartphone {
   .title02 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .title03 {
   margin-bottom: 0;
   border-bottom: none;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
 @media mobile {
   .title03 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 
 @media smartphone {
   .title03 {
-    font-size: 18px;
+    font-size: 16px;
   }
 }

@@ -27,7 +27,7 @@ export const QueueingPage = () => {
         </Text>
         <Text>Why does this happen? Fix both counters.</Text>
         <FixRequestCounter />
-        <Title level={3} caption="Solution" />
+        <Title level={3} caption="solution" />
         <Text>
           Inside the handleClick event handler, the values of pending and
           completed correspond to what they were at the time of the click event.

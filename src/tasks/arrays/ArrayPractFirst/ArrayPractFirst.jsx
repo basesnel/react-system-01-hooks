@@ -7,7 +7,6 @@ import DecoratedInput from 'components/DecoratedInput';
 import UnnumList from 'components/UnnumList';
 
 import css from './ArrayPractFirst.module.css';
-import FlexBox from 'components/FlexBox';
 
 // let nextId = 0;
 

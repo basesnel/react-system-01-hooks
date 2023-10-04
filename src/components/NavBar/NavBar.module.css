@@ -22,8 +22,8 @@
 .navlink {
   display: block;
   padding: 10px;
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 12px;
+  font-weight: 500;
   line-height: 1.25;
   text-decoration: none;
   color: var(--color-light);
@@ -42,7 +42,7 @@
 
 @media mobile {
   .navlink {
-    font-size: 20px;
+    font-size: 14px;
   }
 }
 
@@ -55,6 +55,7 @@
 @media tablet {
   .navlink {
     padding: 12px 10px 13px;
+    font-size: 16px;
   }
 }
 

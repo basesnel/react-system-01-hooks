@@ -9,7 +9,7 @@ export default function UserMenu({ user, onLogOut }) {
   return (
     <FlexBox>
       <span className={css.user}>Welcome, {user.name}</span>
-      <DecoratedButton caption="Log Out" onClick={onLogOut} />
+      <DecoratedButton caption="Log&nbsp;Out" onClick={onLogOut} />
     </FlexBox>
   );
 }

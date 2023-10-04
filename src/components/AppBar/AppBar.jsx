@@ -23,7 +23,7 @@ export default function AppBar() {
           <UserMenu onLogOut={onLogOut} user={user} />
         ) : (
           <FlexBox>
-            <DecoratedButton caption="Log In" onClick={onLogIn} />
+            <DecoratedButton caption="Log&nbsp;In" onClick={onLogIn} />
           </FlexBox>
         )}
       </Container>

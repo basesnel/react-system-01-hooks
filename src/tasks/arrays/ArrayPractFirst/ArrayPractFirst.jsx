@@ -17,24 +17,22 @@ export default function ArrayPractFirst() {
 
   return (
     <>
-      <FlexBox>
-        <DecoratedInput
-          inputType="text"
-          inputName="name"
-          inputValue={name}
-          inputLabel="name"
-          handleChange={e => setName(e.target.value)}
-          icon={<FiEdit className={css.icon} />}
-        />
-        <DecoratedButton
-          caption="Add"
-          onClick={() => {
-            // setArtists([...artists, { id: nextId++, name: name }]);
-            name.trim() && setArtists([...artists, name]);
-            setName('');
-          }}
-        />
-      </FlexBox>
+      <DecoratedInput
+        inputType="text"
+        inputName="name"
+        inputValue={name}
+        inputLabel="name"
+        handleChange={e => setName(e.target.value)}
+        icon={<FiEdit className={css.icon} />}
+      />
+      <DecoratedButton
+        caption="Add"
+        onClick={() => {
+          // setArtists([...artists, { id: nextId++, name: name }]);
+          name.trim() && setArtists([...artists, name]);
+          setName('');
+        }}
+      />
       <UnnumList list={artists} />
       {/* <ul>
         {artists.map(artist => (

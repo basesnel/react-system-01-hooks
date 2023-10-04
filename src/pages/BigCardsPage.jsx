@@ -8,7 +8,7 @@ export const BigCardsPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Big cards conception" />
+        <Title level={1} caption="big cards conception" />
         <Text>BList for big cards</Text>
       </Container>
       <Container>

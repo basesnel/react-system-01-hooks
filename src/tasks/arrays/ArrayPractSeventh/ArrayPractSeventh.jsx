@@ -42,9 +42,9 @@ export default function ArrayPractSeventh() {
 
   return (
     <>
-      <Title level={3} caption="My list of art to see:" />
+      <Title level={3} caption="my list of art to see:" />
       <ItemList artWorks={myList} onToggle={handleToggleMyList} />
-      <Title level={3} caption="Your list of art to see:" />
+      <Title level={3} caption="your list of art to see:" />
       <ItemList artWorks={yourList} onToggle={handleToggleYourList} />
     </>
   );

@@ -8,7 +8,7 @@ export const CharactersPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Characters" />
+        <Title level={1} caption="characters" />
         <Text>Character list case</Text>
       </Container>
       <Container>

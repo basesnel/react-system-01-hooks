@@ -8,11 +8,11 @@ export const ClockPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Clock" />
+        <Title level={1} caption="clock" />
         <Text>Clock hook case.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="Clock - first case" />
+        <Title level={2} caption="clock - first case" />
         <Clock />
       </Container>
     </main>

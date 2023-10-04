@@ -56,11 +56,11 @@ export const CounterPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Counter" />
+        <Title level={1} caption="counters" />
         <Text>Counter hook case.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="Counter with own state" />
+        <Title level={2} caption="counters with own state" />
         <FlexBox>
           <ButtonCount />
           <ButtonCount />
@@ -70,7 +70,7 @@ export const CounterPage = () => {
         </FlexBox>
       </Container>
       <Container>
-        <Title level={2} caption="Counter with general state" />
+        <Title level={2} caption="counter with general state" />
         <FlexBox>
           <DecoratedButton
             caption={`Clicked ${count} times`}
@@ -83,7 +83,7 @@ export const CounterPage = () => {
         </FlexBox>
       </Container>
       <Container>
-        <Title level={2} caption="CounterA and CounterB" />
+        <Title level={2} caption="counter a and counter b" />
         <Text>Counters with useEffect hook case.</Text>
         <FlexBox>
           <DecoratedButton
@@ -97,7 +97,7 @@ export const CounterPage = () => {
         </FlexBox>
       </Container>
       <Container>
-        <Title level={2} caption="Counter with reducer" />
+        <Title level={2} caption="counter with reducer" />
         <FlexBox>
           <DecoratedButton
             caption={`Decrease ${state.countR}`}
@@ -112,7 +112,7 @@ export const CounterPage = () => {
       <Container>
         <Title
           level={2}
-          caption="Update the same counter multiple times before the next render"
+          caption="update the same counter multiple times before the next render"
         />
         <FlexBox>
           <DecoratedButton
@@ -127,7 +127,7 @@ export const CounterPage = () => {
         <Caption text={`number A: ${numberA.toString()}`} />
       </Container>
       <Container>
-        <Title level={2} caption="Update state after replacing it" />
+        <Title level={2} caption="update state after replacing it" />
         <FlexBox>
           <DecoratedButton
             caption="Increase the number"
@@ -140,7 +140,7 @@ export const CounterPage = () => {
         <Caption text={`number B: ${numberB.toString()}`} />
       </Container>
       <Container>
-        <Title level={2} caption="Replace state after updating it" />
+        <Title level={2} caption="replace state after updating it" />
         <FlexBox>
           <DecoratedButton
             caption="Increase the number"

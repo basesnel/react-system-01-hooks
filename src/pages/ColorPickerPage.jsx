@@ -10,11 +10,11 @@ export const ColorPickerPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Color picker" />
+        <Title level={1} caption="color picker" />
         <Text>Color picker hook case.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="Color picker" />
+        <Title level={2} caption="color picker" />
         <ColorPicker options={colorPickerOptions} />
       </Container>
     </main>

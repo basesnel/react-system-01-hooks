@@ -10,13 +10,13 @@ export const PokemonPage = () => {
     <main>
       <VisuallyHidden>
         <Container>
-          <Title level={1} caption="Pokemon API" />
+          <Title level={1} caption="pokemon API" />
           <Text>Pokemon rest API hook case.</Text>
         </Container>
       </VisuallyHidden>
       <Container>
         <VisuallyHidden>
-          <Title level={2} caption="Pokemon - first case" />
+          <Title level={2} caption="pokemon - first case" />
         </VisuallyHidden>
         <Pokemon />
       </Container>

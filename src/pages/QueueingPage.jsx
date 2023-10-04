@@ -62,7 +62,7 @@ export const QueueingPage = () => {
           page show!
         </Text>
         <ImpStateQueue />
-        <Title level={3} caption="Solution" />
+        <Title level={3} caption="solution" />
         <Text>
           The exact algorithm described on this page that React uses to
           calculate the final state - is in the code of function

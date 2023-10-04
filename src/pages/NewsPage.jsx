@@ -10,13 +10,13 @@ export const NewsPage = () => {
     <main>
       <VisuallyHidden>
         <Container>
-          <Title level={1} caption="News" />
+          <Title level={1} caption="news" />
           <Text>News hook case.</Text>
         </Container>
       </VisuallyHidden>
       <Container>
         <VisuallyHidden>
-          <Title level={2} caption="News: first case" />
+          <Title level={2} caption="news: first case" />
         </VisuallyHidden>
         <News />
       </Container>

@@ -8,11 +8,11 @@ export const FormPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="Form" />
+        <Title level={1} caption="form" />
         <Text>Form hook case.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="Form: first case" />
+        <Title level={2} caption="form: first case" />
         <SignupForm />
       </Container>
     </main>

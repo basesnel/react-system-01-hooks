@@ -23,7 +23,7 @@ const countReducer = (state, action) => {
   }
 };
 
-export const CounterPage = () => {
+export const CountersPage = () => {
   const [count, setCount] = useState(0);
 
   const [state, dispatch] = useReducer(countReducer, { countR: 0 });

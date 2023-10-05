@@ -21,9 +21,9 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/counter"
+            to="/counters"
           >
-            Counter
+            Counters
           </NavLink>
         </li>
         <li className={css.item}>

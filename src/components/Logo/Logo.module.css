@@ -5,7 +5,7 @@
   display: block;
   padding: 10px 0;
   border-bottom: 1px solid var(--color-logolight);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
@@ -15,13 +15,13 @@
 
 @media mobile {
   .logo {
-    font-size: 22px;
+    font-size: 16px;
   }
 }
 
 @media smartphone {
   .logo {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 

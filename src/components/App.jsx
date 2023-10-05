@@ -3,7 +3,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import { HomePage } from '../pages/HomePage';
-import { CounterPage } from '../pages/CounterPage';
+import { CountersPage } from '../pages/CountersPage';
 import { SkipFirstRenderPage } from '../pages/SkipFirstRenderPage';
 import { ColorPickerPage } from '../pages/ColorPickerPage';
 import { FormPage } from '../pages/FormPage';
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/form" element={<FormPage />} />
-        <Route path="/counter" element={<CounterPage />} />
+        <Route path="/counters" element={<CountersPage />} />
         <Route path="/skip-first-render" element={<SkipFirstRenderPage />} />
         <Route path="/colorpicker" element={<ColorPickerPage />} />
         <Route path="/clock" element={<ClockPage />} />

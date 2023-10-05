@@ -6,9 +6,15 @@
   padding: 10px;
   text-align: center;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   word-break: break-all;
   color: var(--color-text);
+}
+
+@media mobile {
+  .wrapper {
+    font-size: 14px;
+  }
 }
 
 @media tablet {

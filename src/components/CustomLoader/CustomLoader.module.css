@@ -1,3 +1,6 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile, smartphone, tablet, desktop from sizes;
+
 .spinner {
   /* position: absolute;
   top: 10px;
@@ -7,24 +10,39 @@
   gap: 10px;
   justify-content: center;
   align-items: center;
-  width: 200px;
   border-radius: 6px;
-  padding: 10px 20px;
+  padding: 4px 24px;
   background-color: var(--color-text);
 }
 
 .spinner p {
   padding: 0;
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 500;
   color: var(--color-light);
 }
 
 .icon-spin {
   margin-right: 10px;
-  font-size: 32px;
+  font-size: 16px;
   color: var(--color-light);
   animation: icon-spin 2s infinite linear;
+}
+
+@media mobile {
+  .spinner p {
+    font-size: 14px;
+  }
+}
+
+@media tablet {
+  .spinner {
+    padding: 6px 24px;
+  }
+
+  .icon-spin {
+    font-size: 18px;
+  }
 }
 
 @-webkit-keyframes icon-spin {

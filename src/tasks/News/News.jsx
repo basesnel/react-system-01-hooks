@@ -26,8 +26,6 @@ export default function News() {
       return;
     }
 
-    console.log(`${query} ${currentPage}`);
-
     setIsLoading(true);
 
     setTimeout(() => {

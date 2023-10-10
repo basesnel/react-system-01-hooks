@@ -1,4 +1,20 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
 .user {
+  font-size: var(--fs-text-mobile);
   font-weight: 500;
   color: var(--color-light);
+}
+
+@media mobile-to {
+  .user {
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .user {
+    font-size: var(--fs-text-tablet);
+  }
 }

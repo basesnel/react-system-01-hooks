@@ -6,20 +6,20 @@
   padding: 10px;
   text-align: center;
   font-weight: 700;
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   word-break: break-all;
   color: var(--color-text);
 }
 
 @media mobile-to {
   .wrapper {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
   .wrapper {
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }
 

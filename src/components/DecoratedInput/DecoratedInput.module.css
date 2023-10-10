@@ -27,7 +27,7 @@
   padding: 4px 20px 4px 31px;
   border-radius: 4px;
   border: 1px solid var(--color-text);
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   color: var(--color-text);
   transition: var(--my-transition);
 }
@@ -39,13 +39,13 @@
 @media mobile-to {
   .input {
     padding: 4px 20px 4px 33px;
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
   .input {
     padding: 6px 20px 6px 35px;
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }

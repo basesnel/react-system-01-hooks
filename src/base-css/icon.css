@@ -3,7 +3,7 @@
   top: 50%;
   left: 12px;
   transform: translate(0, -50%);
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   color: var(--color-text);
   transition: var(--my-transition);
 }
@@ -14,12 +14,12 @@ input:hover + .icon {
 
 @media screen and (min-width: 320px) {
   .icon {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media screen and (min-width: 480px) {
   .icon {
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }

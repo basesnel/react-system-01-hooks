@@ -16,19 +16,19 @@
 
   --my-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) all;
 
-  --fs-text-native: 12px;
-  --fs-text-mobile: 14px;
-  --fs-text-smartphone: 16px;
+  --fs-text-mobile: 12px;
+  --fs-text-smartphone: 14px;
+  --fs-text-tablet: 16px;
 
-  --fs-title-ii-native: 14px;
-  --fs-title-ii-mobile: 16px;
-  --fs-title-ii-smartphone: 18px;
+  --fs-title-ii-mobile: 14px;
+  --fs-title-ii-smartphone: 16px;
+  --fs-title-ii-tablet: 18px;
 
-  --fs-title-i-native: 16px;
-  --fs-title-i-mobile: 18px;
-  --fs-title-i-smartphone: 20px;
-  --fs-title-i-tablet: 22px;
-  --fs-title-i-desktop: 24px;
+  --fs-title-i-mobile: 16px;
+  --fs-title-i-smartphone: 18px;
+  --fs-title-i-tablet: 20px;
+  --fs-title-i-desktop: 22px;
+  --fs-title-i-tv: 24px;
 }
 
 * {

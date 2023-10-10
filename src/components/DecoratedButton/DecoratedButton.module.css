@@ -5,7 +5,7 @@
   border: 1px solid var(--color-text);
   border-radius: 4px;
   padding: 4px 20px;
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   background-color: var(--color-text);
   color: var(--color-light);
   transition: var(--my-transition);
@@ -25,13 +25,13 @@
 
 @media mobile-to {
   .decoratedButton {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media tablet-to {
   .decoratedButton {
     padding: 6px 20px;
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }

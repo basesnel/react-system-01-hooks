@@ -22,7 +22,7 @@
 .navlink {
   display: block;
   padding: 10px;
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   font-weight: 500;
   line-height: 1.25;
   text-decoration: none;
@@ -42,14 +42,14 @@
 
 @media mobile-to {
   .navlink {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
   .navlink {
     padding: 12px 10px;
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }
 

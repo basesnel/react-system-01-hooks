@@ -6,7 +6,7 @@
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-caption);
   text-align: center;
-  font-size: var(--fs-title-i-native);
+  font-size: var(--fs-title-i-mobile);
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
@@ -15,26 +15,26 @@
 
 @media mobile-to {
   .title01 {
-    font-size: var(--fs-title-i-mobile);
+    font-size: var(--fs-title-i-smartphone);
   }
 }
 
 @media smartphone-to {
   .title01 {
-    font-size: var(--fs-title-i-smartphone);
+    font-size: var(--fs-title-i-tablet);
   }
 }
 
 @media tablet-to {
   .title01 {
     text-align: left;
-    font-size: var(--fs-title-i-tablet);
+    font-size: var(--fs-title-i-desktop);
   }
 }
 
 @media desktop-to {
   .title01 {
-    font-size: var(--fs-title-i-desktop);
+    font-size: var(--fs-title-i-tv);
   }
 }
 
@@ -42,20 +42,20 @@
   margin-bottom: 0;
   border-bottom: none;
   text-align: center;
-  font-size: var(--fs-title-ii-native);
+  font-size: var(--fs-title-ii-mobile);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 @media mobile-to {
   .title02 {
-    font-size: var(--fs-title-ii-mobile);
+    font-size: var(--fs-title-ii-smartphone);
   }
 }
 
 @media smartphone-to {
   .title02 {
-    font-size: var(--fs-title-ii-smartphone);
+    font-size: var(--fs-title-ii-tablet);
   }
 }
 
@@ -63,19 +63,19 @@
   margin-bottom: 0;
   border-bottom: none;
   text-align: center;
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 @media mobile-to {
   .title03 {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
   .title03 {
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }

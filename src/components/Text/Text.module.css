@@ -3,7 +3,7 @@
 
 .txt {
   padding-bottom: 10px;
-  font-size: var(--fs-text-native);
+  font-size: var(--fs-text-mobile);
   line-height: 1.8;
   color: var(--color-text);
 }
@@ -14,12 +14,12 @@
 
 @media mobile-to {
   .txt {
-    font-size: var(--fs-text-mobile);
+    font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
   .txt {
-    font-size: var(--fs-text-smartphone);
+    font-size: var(--fs-text-tablet);
   }
 }

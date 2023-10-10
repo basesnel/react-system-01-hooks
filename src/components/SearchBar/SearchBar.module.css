@@ -75,7 +75,7 @@
   border: none;
   outline: none;
   padding: 0 4px;
-  font-size: 12px;
+  font-size: var(--fs-text-native);
   color: var(--color-text);
 }
 
@@ -85,10 +85,10 @@
 
 @media mobile {
   .searchform__input {
-    font-size: 14px;
+    font-size: var(--fs-text-mobile);
   }
 
   .searchform__input::placeholder {
-    font-size: 14px;
+    font-size: var(--fs-text-smartphone);
   }
 }

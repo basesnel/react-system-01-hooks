@@ -63,19 +63,19 @@
   margin-bottom: 0;
   border-bottom: none;
   text-align: center;
-  font-size: 12px;
+  font-size: var(--fs-text-native);
   font-weight: 600;
   text-transform: uppercase;
 }
 
 @media mobile {
   .title03 {
-    font-size: 14px;
+    font-size: var(--fs-text-mobile);
   }
 }
 
 @media smartphone {
   .title03 {
-    font-size: 16px;
+    font-size: var(--fs-text-smartphone);
   }
 }

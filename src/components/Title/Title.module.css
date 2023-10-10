@@ -6,7 +6,7 @@
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-caption);
   text-align: center;
-  font-size: 16px;
+  font-size: var(--fs-title-i-native);
   font-weight: 700;
   line-height: 1.25;
   text-transform: uppercase;
@@ -15,26 +15,26 @@
 
 @media mobile {
   .title01 {
-    font-size: 18px;
+    font-size: var(--fs-title-i-mobile);
   }
 }
 
 @media smartphone {
   .title01 {
-    font-size: 20px;
+    font-size: var(--fs-title-i-smartphone);
   }
 }
 
 @media tablet {
   .title01 {
     text-align: left;
-    font-size: 22px;
+    font-size: var(--fs-title-i-tablet);
   }
 }
 
 @media desktop {
   .title01 {
-    font-size: 24px;
+    font-size: var(--fs-title-i-desktop);
   }
 }
 

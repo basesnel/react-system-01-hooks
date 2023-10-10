@@ -3,7 +3,7 @@
 
 .item {
   padding: 6px 10px;
-  font-size: 12px;
+  font-size: var(--fs-text-mobile);
   color: var(--color-text);
   transition: var(--my-transition);
 }
@@ -14,6 +14,12 @@
 
 @media mobile-to {
   .item {
-    font-size: 14px;
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .item {
+    font-size: var(--fs-text-tablet);
   }
 }

@@ -14,7 +14,7 @@
 }
 
 .label {
-  font-size: 12px;
+  font-size: 10px;
   color: var(--color-text);
 }
 
@@ -37,6 +37,10 @@
 }
 
 @media mobile-to {
+  .label {
+    font-size: 12px;
+  }
+
   .input {
     padding: 4px 20px 4px 33px;
     font-size: var(--fs-text-smartphone);

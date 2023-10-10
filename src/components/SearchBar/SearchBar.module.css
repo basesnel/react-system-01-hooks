@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .searchbar {
   display: flex;
@@ -13,7 +13,7 @@
   background-color: var(--color-text);
 }
 
-@media mobile {
+@media mobile-to {
   .searchbar {
     min-height: 40px;
     padding: 6px 24px;
@@ -46,7 +46,7 @@
   outline: none;
 }
 
-@media mobile {
+@media mobile-to {
   .searchform__btn {
     width: 36px;
     height: 36px;
@@ -83,7 +83,7 @@
   font-size: 12px;
 }
 
-@media mobile {
+@media mobile-to {
   .searchform__input {
     font-size: var(--fs-text-mobile);
   }

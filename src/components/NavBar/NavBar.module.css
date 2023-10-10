@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-@media smartphone {
+@media smartphone-to {
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +9,7 @@
   }
 }
 
-@media tablet {
+@media tablet-to {
   .menu {
     gap: 10px;
   }
@@ -40,20 +40,20 @@
   background-color: var(--color-light);
 }
 
-@media mobile {
+@media mobile-to {
   .navlink {
     font-size: var(--fs-text-mobile);
   }
 }
 
-@media smartphone {
+@media smartphone-to {
   .navlink {
     padding: 12px 10px;
     font-size: var(--fs-text-smartphone);
   }
 }
 
-@media tablet {
+@media tablet-to {
   .navlink {
     padding: 12px 10px 13px;
   }

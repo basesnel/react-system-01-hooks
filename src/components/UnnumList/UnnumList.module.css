@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .item {
   padding: 6px 10px;
@@ -12,7 +12,7 @@
   color: var(--color-dark);
 }
 
-@media mobile {
+@media mobile-to {
   .item {
     font-size: 14px;
   }

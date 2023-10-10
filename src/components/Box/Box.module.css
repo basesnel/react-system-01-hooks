@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .box {
   margin: 0 24px;
@@ -16,7 +16,7 @@
   font-weight: 500;
 }
 
-@media tablet {
+@media tablet-to {
   .box {
     width: 400px;
     margin: 0 auto;

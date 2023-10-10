@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .field {
   display: flex;
@@ -36,14 +36,14 @@
   color: var(--color-accent);
 }
 
-@media mobile {
+@media mobile-to {
   .input {
     padding: 4px 20px 4px 33px;
     font-size: var(--fs-text-mobile);
   }
 }
 
-@media smartphone {
+@media smartphone-to {
   .input {
     padding: 6px 20px 6px 35px;
     font-size: var(--fs-text-smartphone);

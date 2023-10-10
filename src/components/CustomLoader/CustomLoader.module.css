@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .spinner {
   /* position: absolute;
@@ -29,13 +29,13 @@
   animation: icon-spin 2s infinite linear;
 }
 
-@media mobile {
+@media mobile-to {
   .spinner p {
     font-size: 14px;
   }
 }
 
-@media tablet {
+@media tablet-to {
   .spinner {
     padding: 6px 24px;
   }

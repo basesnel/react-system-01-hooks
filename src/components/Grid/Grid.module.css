@@ -1,18 +1,18 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .grid {
   display: grid;
   gap: 20px;
 }
 
-@media tablet {
+@media tablet-to {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media desktop {
+@media desktop-to {
   .grid {
     grid-template-columns: 1fr 1fr 1fr;
   }

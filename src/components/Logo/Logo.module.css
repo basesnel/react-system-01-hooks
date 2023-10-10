@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .logo {
   display: block;
@@ -13,19 +13,19 @@
   color: var(--color-accent);
 }
 
-@media mobile {
+@media mobile-to {
   .logo {
     font-size: var(--fs-title-ii-mobile);
   }
 }
 
-@media smartphone {
+@media smartphone-to {
   .logo {
     font-size: var(--fs-title-ii-smartphone);
   }
 }
 
-@media tablet {
+@media tablet-to {
   .logo {
     border: none;
   }

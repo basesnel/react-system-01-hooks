@@ -1,24 +1,24 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .container {
   margin: 0 auto 20px;
   padding: 0 10px;
 }
 
-@media mobile {
+@media mobile-to {
   .container {
     max-width: 300px;
   }
 }
 
-@media smartphone {
+@media smartphone-to {
   .container {
     max-width: 420px;
   }
 }
 
-@media tablet {
+@media tablet-to {
   .container {
     max-width: 720px;
   }
@@ -28,14 +28,14 @@
   margin: 0 auto;
 }
 
-@media tablet {
+@media tablet-to {
   .container.navigation {
     display: flex;
     justify-content: space-between;
   }
 }
 
-@media desktop {
+@media desktop-to {
   .container {
     max-width: 1200px;
   }

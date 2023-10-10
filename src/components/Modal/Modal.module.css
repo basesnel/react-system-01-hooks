@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .backdrop {
   position: fixed;
@@ -58,7 +58,7 @@
   color: var(--color-accent);
 } */
 
-/* @media smartphone {
+/* @media smartphone-to {
   .menu {
     display: flex;
     flex-wrap: wrap;
@@ -66,7 +66,7 @@
   }
 }
 
-@media tablet {
+@media tablet-to {
   .menu {
     gap: 10px;
   }

@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile, smartphone, tablet, desktop from sizes;
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .thumb {
   border: 1px solid var(--color-text);
@@ -13,14 +13,14 @@
   width: 100%;
 }
 
-@media tablet {
+@media tablet-to {
   .thumb {
     width: 400px;
     height: 400px;
   }
 }
 
-@media desktop {
+@media desktop-to {
   .thumb {
     margin: 0;
   }

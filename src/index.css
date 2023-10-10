@@ -19,6 +19,16 @@
   --fs-text-native: 12px;
   --fs-text-mobile: 14px;
   --fs-text-smartphone: 16px;
+
+  --fs-title-ii-native: 14px;
+  --fs-title-ii-mobile: 16px;
+  --fs-title-ii-smartphone: 18px;
+
+  --fs-title-i-native: 16px;
+  --fs-title-i-mobile: 18px;
+  --fs-title-i-smartphone: 20px;
+  --fs-title-i-tablet: 22px;
+  --fs-title-i-desktop: 24px;
 }
 
 * {

@@ -11,6 +11,11 @@
   background-color: var(--color-light);
   border-radius: 4px;
   overflow: hidden;
+  transition: var(--my-transition);
+}
+
+.miniform:hover {
+  background-color: var(--color-accent);
 }
 
 @media tablet-to {

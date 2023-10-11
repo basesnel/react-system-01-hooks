@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { RiCloseCircleFill } from 'react-icons/ri';
+
 import DecoratedButton from 'components/DecoratedButton';
 
 import { initialArtistsList } from 'constants';
@@ -14,7 +16,7 @@ export default function ArrayPractSecond() {
           <li key={artist.id}>
             {artist.name}{' '}
             <DecoratedButton
-              caption="Delete"
+              caption={<RiCloseCircleFill />}
               onClick={() => {
                 setArtists(artists.filter(a => a.id !== artist.id));
               }}

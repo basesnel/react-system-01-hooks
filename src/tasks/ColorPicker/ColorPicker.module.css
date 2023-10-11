@@ -2,9 +2,16 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .options {
-  border: 1px solid var(--color-text);
+  border: 1px solid var(--color-light);
   border-radius: 10px;
   padding: 10px;
+  text-align: center;
+  background-color: var(--color-logolight);
+}
+
+.options:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.06);
 }
 
 .option {

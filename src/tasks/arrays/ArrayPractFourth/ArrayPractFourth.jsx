@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import { RiAddCircleFill } from 'react-icons/ri';
+
 import DecoratedButton from 'components/DecoratedButton';
 
 import { initialCountersList } from 'constants';
@@ -24,7 +26,7 @@ export default function ArrayPractFourth() {
         <li key={i}>
           {counter}
           <DecoratedButton
-            caption="+1"
+            caption={<RiAddCircleFill />}
             onClick={() => {
               handleIncrementalClick(i);
             }}

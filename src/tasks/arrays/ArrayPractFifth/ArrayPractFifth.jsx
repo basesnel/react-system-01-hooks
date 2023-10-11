@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FiPlusSquare } from 'react-icons/fi';
+import { RiInsertRowBottom } from 'react-icons/ri';
 
 import { initialArtistsList } from 'constants';
 
@@ -29,7 +29,7 @@ export default function ArrayPractFifth() {
       <DecoratedMiniForm
         onFormSubmit={handleClick}
         filling={`Insert element ${name}`}
-        icon={<FiPlusSquare className={css.icon} />}
+        icon={<RiInsertRowBottom className={css.icon} />}
       />
       <ul>
         {artists.map(artist => (

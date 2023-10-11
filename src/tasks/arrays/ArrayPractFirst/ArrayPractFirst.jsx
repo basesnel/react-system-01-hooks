@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { FiPlusSquare } from 'react-icons/fi';
+import { RiAddCircleFill } from 'react-icons/ri';
 
 import UnnumList from 'components/UnnumList';
 
@@ -22,7 +22,7 @@ export default function ArrayPractFirst() {
           setName('');
         }}
         filling={`Add element ${name}`}
-        icon={<FiPlusSquare className={css.icon} />}
+        icon={<RiAddCircleFill className={css.icon} />}
       />
       <UnnumList list={artists} />
       {/* <ul>

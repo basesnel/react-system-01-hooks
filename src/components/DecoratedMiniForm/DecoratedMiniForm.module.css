@@ -23,7 +23,7 @@
 .miniform-btn {
   position: relative;
   display: inline-block;
-  width: 28px;
+  width: 42px;
   height: 28px;
   /* width: 48px;
   height: 48px; */
@@ -39,7 +39,6 @@
 
 @media mobile-to {
   .miniform-btn {
-    width: 36px;
     height: 36px;
   }
 }

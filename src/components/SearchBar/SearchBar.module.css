@@ -80,7 +80,7 @@
 }
 
 .searchform__input::placeholder {
-  font-size: 12px;
+  font-size: var(--fs-text-mobile);
 }
 
 @media mobile-to {
@@ -89,6 +89,6 @@
   }
 
   .searchform__input::placeholder {
-    font-size: var(--fs-text-tablet);
+    font-size: var(--fs-text-smartphone);
   }
 }

@@ -1,0 +1,71 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.miniform {
+  display: flex;
+  gap: 1px;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 1px;
+  background-color: var(--color-light);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media tablet-to {
+  .miniform {
+    max-width: 400px;
+    margin: 0 auto 10px;
+  }
+}
+
+.miniform-btn {
+  position: relative;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  /* width: 48px;
+  height: 48px; */
+  border: 0;
+  opacity: 0.6;
+  transition: var(--my-transition);
+  outline: none;
+}
+
+.miniform-btn:hover {
+  opacity: 1;
+}
+
+@media mobile-to {
+  .miniform-btn {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+.miniform-input {
+  display: inline-block;
+  width: 100%;
+  height: 28px;
+  border: none;
+  outline: none;
+  padding: 0 8px;
+  font-size: var(--fs-text-mobile);
+  color: var(--color-text);
+}
+
+.miniform-input::placeholder {
+  font-size: var(--fs-text-mobile);
+}
+
+@media mobile-to {
+  .miniform-input {
+    height: 36px;
+    font-size: var(--fs-text-smartphone);
+  }
+
+  .miniform-input::placeholder {
+    font-size: var(--fs-text-smartphone);
+  }
+}

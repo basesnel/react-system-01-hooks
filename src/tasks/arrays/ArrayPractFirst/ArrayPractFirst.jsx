@@ -2,11 +2,10 @@ import { useState } from 'react';
 
 import { FiEdit } from 'react-icons/fi';
 
-import DecoratedButton from 'components/DecoratedButton';
-import DecoratedInput from 'components/DecoratedInput';
 import UnnumList from 'components/UnnumList';
 
 import css from './ArrayPractFirst.module.css';
+import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
 // let nextId = 0;
 
@@ -16,21 +15,14 @@ export default function ArrayPractFirst() {
 
   return (
     <>
-      <DecoratedInput
-        inputType="text"
-        inputName="name"
-        inputValue={name}
-        inputLabel="name"
-        handleChange={e => setName(e.target.value)}
-        icon={<FiEdit className={css.icon} />}
-      />
-      <DecoratedButton
-        caption="Add"
-        onClick={() => {
-          // setArtists([...artists, { id: nextId++, name: name }]);
+      <DecoratedMiniForm
+        onFormSubmit={name => {
+          setName(name);
           name.trim() && setArtists([...artists, name]);
           setName('');
         }}
+        filling={`Add element ${name}`}
+        icon={<FiEdit className={css.icon} />}
       />
       <UnnumList list={artists} />
       {/* <ul>

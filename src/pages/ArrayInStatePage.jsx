@@ -26,72 +26,40 @@ export const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title={<Title level={2} caption="adding to an array" />}>
+          <Card title="adding to an array">
             <ArrayPractFirst />
           </Card>
-          <Card title={<Title level={2} caption="removing from an array" />}>
+          <Card title="removing from an array">
             <ArrayPractSecond />
           </Card>
-          <Card title={<Title level={2} caption="transforming an array" />}>
+          <Card title="transforming an array">
             <ArrayPractThird />
           </Card>
-          <Card
-            title={<Title level={2} caption="replacing items in an array" />}
-          >
+          <Card title="replacing items in an array">
             <ArrayPractFourth />
           </Card>
-          <Card title={<Title level={2} caption="inserting into an array" />}>
+          <Card title="inserting into an array">
             <ArrayPractFifth />
           </Card>
-          <Card
-            title={
-              <Title level={2} caption="making other changes to an array" />
-            }
-          >
+          <Card title="making other changes to an array">
             <ArrayPractSixth />
           </Card>
-          <Card
-            title={<Title level={2} caption="updating objects inside arrays" />}
-          >
+          <Card title="updating objects inside arrays">
             <ArrayPractSeventh />
           </Card>
-          <Card
-            title={
-              <Title
-                level={2}
-                caption="write concise update logic with immer"
-              />
-            }
-          >
+          <Card title="write concise update logic with immer">
             <ArrayPractEighth />
           </Card>
-          <Card
-            title={
-              <Title level={2} caption="update an item in the shopping cart" />
-            }
-          >
+          <Card title="update an item in the shopping cart">
             <ArrayTaskFirst />
           </Card>
-          <Card
-            title={
-              <Title level={2} caption="remove an item in the shopping cart" />
-            }
-          >
+          <Card title="remove an item in the shopping cart">
             <ArrayTaskSecond />
           </Card>
-          <Card
-            title={
-              <Title
-                level={2}
-                caption="fix the mutations using non-mutative methods"
-              />
-            }
-          >
+          <Card title="fix the mutations using non-mutative methods">
             <ArrayTaskThird />
           </Card>
-          <Card
-            title={<Title level={2} caption="fix the mutations using immer" />}
-          >
+          <Card title="fix the mutations using immer">
             <ArrayTaskFourth />
           </Card>
         </Grid>

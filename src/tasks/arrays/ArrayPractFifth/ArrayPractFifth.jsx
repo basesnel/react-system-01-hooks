@@ -2,10 +2,11 @@ import { useState } from 'react';
 
 import { RiInsertRowBottom } from 'react-icons/ri';
 
+import DecoratedMiniForm from 'components/DecoratedMiniForm';
+
 import { initialArtistsList } from 'constants';
 
-// import css from './ArrayPractFifth.module.css';
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import css from './ArrayPractFifth.module.css';
 
 let nextId = 3;
 
@@ -33,7 +34,11 @@ export default function ArrayPractFifth() {
       />
       <ul>
         {artists.map(artist => (
-          <li key={artist.id}>{artist.name}</li>
+          <li key={artist.id} className={css.item}>
+            <div className={css['item-flex']}>
+              <span className={css['item-content']}>{artist.name}</span>
+            </div>
+          </li>
         ))}
       </ul>
     </>

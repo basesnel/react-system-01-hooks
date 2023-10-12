@@ -21,6 +21,10 @@
   color: var(--color-text);
 }
 
+.item:hover .item-content {
+  color: var(--color-dark);
+}
+
 @media mobile-to {
   .item-content {
     font-size: var(--fs-text-smartphone);

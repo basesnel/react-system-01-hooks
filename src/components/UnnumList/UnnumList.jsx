@@ -4,7 +4,7 @@ import css from './UnnumList.module.css';
 
 export default function UnnumList({ list }) {
   return (
-    <ul>
+    <ul className={css.list}>
       {list.map((item, idx) => (
         <li key={idx} className={css.item}>
           {item}

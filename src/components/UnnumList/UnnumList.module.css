@@ -1,11 +1,19 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
+.list {
+  background-color: var(--color-logolight);
+}
+
 .item {
-  padding: 6px 10px;
+  padding: 6px 8px;
   font-size: var(--fs-text-mobile);
   color: var(--color-text);
   transition: var(--my-transition);
+}
+
+.item:nth-child(odd) {
+  background-color: var(--color-light-opacity);
 }
 
 .item:hover {

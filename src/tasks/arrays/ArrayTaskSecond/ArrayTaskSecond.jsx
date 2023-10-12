@@ -1,6 +1,9 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import { RiAddCircleFill } from 'react-icons/ri';
+import { RiIndeterminateCircleFill } from 'react-icons/ri';
+
+import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialProductsList } from 'constants';
 
@@ -46,14 +49,14 @@ export default function ArrayTaskSecond() {
       {products.map(product => (
         <li key={product.id}>
           {product.name} (<b>{product.count}</b>)
-          <DecoratedButton
-            caption="+"
+          <DecoratedIconButton
+            caption={<RiAddCircleFill />}
             onClick={() => {
               handleIncreaseClick(product.id);
             }}
           />
-          <DecoratedButton
-            caption="-"
+          <DecoratedIconButton
+            caption={<RiIndeterminateCircleFill />}
             onClick={() => {
               handleDecreaseClick(product.id);
             }}

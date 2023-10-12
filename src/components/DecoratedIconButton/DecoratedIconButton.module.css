@@ -1,0 +1,46 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  font-size: var(--fs-text-tablet);
+  background-color: var(--color-text);
+  color: var(--color-light);
+  opacity: 0.38;
+  transition: var(--my-transition);
+  outline: none;
+}
+
+.btn:hover {
+  /* border: 1px solid var(--color-accent); */
+  background-color: var(--color-accent);
+  color: var(--color-logolight);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+.btn:disabled {
+  opacity: 0.15;
+}
+
+@media mobile-to {
+  .btn {
+    width: 30px;
+    height: 30px;
+    font-size: var(--fs-text-desktop);
+  }
+}
+
+@media tablet-to {
+  .decoratedButton {
+    padding: 6px 20px;
+    font-size: var(--fs-text-tablet);
+  }
+}

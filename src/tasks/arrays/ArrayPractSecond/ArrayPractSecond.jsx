@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import { RiCloseCircleFill } from 'react-icons/ri';
+import { RiIndeterminateCircleFill } from 'react-icons/ri';
 
-import DecoratedButton from 'components/DecoratedButton';
+import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialArtistsList } from 'constants';
 
@@ -15,8 +15,8 @@ export default function ArrayPractSecond() {
         {artists.map(artist => (
           <li key={artist.id}>
             {artist.name}{' '}
-            <DecoratedButton
-              caption={<RiCloseCircleFill />}
+            <DecoratedIconButton
+              caption={<RiIndeterminateCircleFill />}
               onClick={() => {
                 setArtists(artists.filter(a => a.id !== artist.id));
               }}

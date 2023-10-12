@@ -1,0 +1,18 @@
+.item {
+  padding: 6px 8px;
+}
+
+.item:nth-child(odd) {
+  background-color: var(--color-light-opacity);
+}
+
+.item-flex {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.item-content {
+  flex-grow: 1;
+  color: var(--color-text);
+}

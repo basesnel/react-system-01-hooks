@@ -8,12 +8,13 @@
   border-radius: 10px;
   padding: 1px;
   background-color: var(--color-light);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: var(--my-transition);
 }
 
 .card:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.06);
+  transform: scale(1.01);
 }
 
 .card-header {
@@ -30,7 +31,13 @@
   padding: 0;
   font-size: var(--fs-text-mobile);
   text-transform: lowercase;
-  color: var(--color-cardtitle);
+  color: var(--color-text);
+  opacity: 0.38;
+  transition: var(--my-transition);
+}
+
+.card:hover .card-title {
+  opacity: 0.85;
 }
 
 @media mobile-to {

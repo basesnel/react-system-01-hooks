@@ -12,7 +12,7 @@
   font-size: var(--fs-text-tablet);
   background-color: var(--color-text);
   color: var(--color-light);
-  opacity: 0.38;
+  opacity: 0.62;
   transition: var(--my-transition);
   outline: none;
 }

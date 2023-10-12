@@ -10,7 +10,7 @@
   padding: 1px;
   background-color: var(--color-text);
   border-radius: 4px;
-  opacity: 0.38;
+  opacity: 0.62;
   overflow: hidden;
   transition: var(--my-transition);
 }

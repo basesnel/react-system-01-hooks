@@ -4,7 +4,7 @@ import { RiInsertRowBottom } from 'react-icons/ri';
 
 import { initialArtistsList } from 'constants';
 
-import css from './ArrayPractFifth.module.css';
+// import css from './ArrayPractFifth.module.css';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
 let nextId = 3;
@@ -29,7 +29,7 @@ export default function ArrayPractFifth() {
       <DecoratedMiniForm
         onFormSubmit={handleClick}
         filling={`Insert element ${name}`}
-        icon={<RiInsertRowBottom className={css.icon} />}
+        icon={<RiInsertRowBottom />}
       />
       <ul>
         {artists.map(artist => (

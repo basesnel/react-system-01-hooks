@@ -3,7 +3,7 @@ import { RiAddCircleFill } from 'react-icons/ri';
 
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
-import css from './AddTodo.module.css';
+// import css from './AddTodo.module.css';
 
 export default function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState('');
@@ -16,7 +16,7 @@ export default function AddTodo({ onAddTodo }) {
           setTitle('');
         }}
         filling={`Add element ${title}`}
-        icon={<RiAddCircleFill className={css.icon} />}
+        icon={<RiAddCircleFill />}
       />
     </>
   );

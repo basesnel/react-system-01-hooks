@@ -6,7 +6,7 @@
 
   --color-dark: #202020;
   --color-light: #e0e0e0;
-  --color-light-opacity: #e0e0e0ad;
+  --color-light-opacity: rgba(224, 224, 224, 0.5);
 
   --color-logodark: #000;
   --color-logolight: #fff;

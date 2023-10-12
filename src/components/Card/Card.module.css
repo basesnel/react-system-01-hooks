@@ -46,6 +46,12 @@
   }
 }
 
+@media smartphone-to {
+  .card-title {
+    font-size: var(--fs-text-tablet);
+  }
+}
+
 .card-content {
   flex-grow: 1;
   border-radius: 0 0 9px 9px;

@@ -1,3 +1,6 @@
+@value sizes: "../../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
 .item {
   padding: 6px 8px;
 }
@@ -14,5 +17,18 @@
 
 .item-content {
   flex-grow: 1;
+  font-size: var(--fs-text-mobile);
   color: var(--color-text);
+}
+
+@media mobile-to {
+  .item-content {
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .item-content {
+    font-size: var(--fs-text-tablet);
+  }
 }

@@ -1,0 +1,12 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  border-radius: 4px;
+  padding: 1px;
+  background-color: var(--color-text);
+  overflow: hidden;
+}

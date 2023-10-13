@@ -1,16 +1,16 @@
 import PropTypes from 'prop-types';
+import List from 'components/List';
+import Listitem from 'components/Listitem';
 
 import css from './UnnumList.module.css';
 
 export default function UnnumList({ list }) {
   return (
-    <ul className={css.list}>
+    <List className={css.list}>
       {list.map((item, idx) => (
-        <li key={idx} className={css.item}>
-          {item}
-        </li>
+        <Listitem key={idx} content={item} />
       ))}
-    </ul>
+    </List>
   );
 }
 

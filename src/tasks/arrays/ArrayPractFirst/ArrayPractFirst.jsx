@@ -2,7 +2,8 @@ import { useState } from 'react';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import UnnumList from 'components/UnnumList';
+import List from 'components/List';
+import Listitem from 'components/Listitem';
 
 // import css from './ArrayPractFirst.module.css';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
@@ -22,7 +23,11 @@ export default function ArrayPractFirst() {
         filling={`Add element ${artist}`}
         icon={<RiAddCircleFill />}
       />
-      <UnnumList list={artists} />
+      <List>
+        {artists.map((item, idx) => (
+          <Listitem key={idx} content={item} />
+        ))}
+      </List>
     </>
   );
 }

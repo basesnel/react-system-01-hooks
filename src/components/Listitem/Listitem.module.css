@@ -2,7 +2,7 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .item {
-  padding: 6px 8px;
+  padding: 10px 12px;
 }
 
 .item:nth-child(odd) {

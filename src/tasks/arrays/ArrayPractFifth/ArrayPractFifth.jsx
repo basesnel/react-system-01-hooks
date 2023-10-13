@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { RiInsertRowBottom } from 'react-icons/ri';
 
+import List from 'components/List';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
 import { initialArtistsList } from 'constants';
@@ -32,7 +33,7 @@ export default function ArrayPractFifth() {
         filling={`Insert element ${name}`}
         icon={<RiInsertRowBottom />}
       />
-      <ul>
+      <List>
         {artists.map(artist => (
           <li key={artist.id} className={css.item}>
             <div className={css['item-flex']}>
@@ -40,7 +41,7 @@ export default function ArrayPractFifth() {
             </div>
           </li>
         ))}
-      </ul>
+      </List>
     </>
   );
 }

@@ -6,7 +6,7 @@
 }
 
 .item:nth-child(odd) {
-  background-color: var(--color-light-opacity);
+  background-color: var(--color-light);
 }
 
 .item:nth-child(even) {

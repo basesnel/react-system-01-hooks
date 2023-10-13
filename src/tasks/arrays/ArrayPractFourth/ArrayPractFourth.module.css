@@ -6,7 +6,23 @@
 }
 
 .item:nth-child(odd) {
-  background-color: var(--color-light-opacity);
+  background-color: var(--color-light);
+}
+
+.item:nth-child(even) {
+  background-color: var(--color-logolight);
+}
+
+.item:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.item:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.item:only-child {
+  border-radius: 3px;
 }
 
 .item-flex {

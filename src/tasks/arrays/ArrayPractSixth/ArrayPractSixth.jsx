@@ -5,6 +5,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import { initialSixArtsList } from 'constants';
 
 import css from './ArrayPractSixth.module.css';
+import List from 'components/List';
 
 export default function ArrayPractSixth() {
   const [list, setList] = useState(initialSixArtsList);
@@ -18,7 +19,7 @@ export default function ArrayPractSixth() {
   return (
     <>
       <DecoratedButton caption="Reverse" onClick={handleClick} />
-      <ul>
+      <List>
         {list.map(art => (
           <li key={art.id} className={css.item}>
             <div className={css['item-flex']}>
@@ -26,7 +27,7 @@ export default function ArrayPractSixth() {
             </div>
           </li>
         ))}
-      </ul>
+      </List>
     </>
   );
 }

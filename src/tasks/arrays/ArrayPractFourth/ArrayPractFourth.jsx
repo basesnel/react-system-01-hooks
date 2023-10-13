@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 
+import List from 'components/List';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialCountersList } from 'constants';
@@ -23,7 +24,7 @@ export default function ArrayPractFourth() {
   };
 
   return (
-    <ul>
+    <List>
       {counters.map((counter, i) => (
         <li key={i} className={css.item}>
           <div className={css['item-flex']}>
@@ -37,6 +38,6 @@ export default function ArrayPractFourth() {
           </div>
         </li>
       ))}
-    </ul>
+    </List>
   );
 }

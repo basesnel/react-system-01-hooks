@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import { RiIndeterminateCircleFill } from 'react-icons/ri';
 
+import List from 'components/List';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialArtistsList } from 'constants';
@@ -13,7 +14,7 @@ export default function ArrayPractSecond() {
 
   return (
     <>
-      <ul>
+      <List>
         {artists.map(artist => (
           <li key={artist.id} className={css.item}>
             <div className={css['item-flex']}>
@@ -27,7 +28,7 @@ export default function ArrayPractSecond() {
             </div>
           </li>
         ))}
-      </ul>
+      </List>
       {/* <ul>
         {artists.map((artist, idx) => (
           <li key={idx}>

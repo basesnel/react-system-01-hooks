@@ -1,0 +1,59 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.item {
+  padding: 6px 12px;
+  transition: var(--my-transition);
+}
+
+.item:nth-child(odd) {
+  background-color: var(--color-light);
+}
+
+.item:nth-child(even) {
+  background-color: var(--color-logolight);
+}
+
+.item:hover {
+  background-color: var(--color-accent-bg);
+}
+
+.item:first-child {
+  border-radius: 3px 3px 0 0;
+}
+
+.item:last-child {
+  border-radius: 0 0 3px 3px;
+}
+
+.item:only-child {
+  border-radius: 3px;
+}
+
+.item-flex {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.item-content {
+  flex-grow: 1;
+  font-size: var(--fs-text-mobile);
+  color: var(--color-text);
+}
+
+.item:hover .item-content {
+  color: var(--color-dark);
+}
+
+@media mobile-to {
+  .item-content {
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .item-content {
+    font-size: var(--fs-text-tablet);
+  }
+}

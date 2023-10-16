@@ -3,6 +3,8 @@ import { useImmer } from 'use-immer';
 import { initialSevenArtsList } from 'constants';
 
 import Title from 'components/Title';
+import List from 'components/List';
+import ListitemControlled from 'components/ListitemControlled';
 
 export default function ArrayPractEighth() {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
@@ -60,9 +62,9 @@ export default function ArrayPractEighth() {
 
 function ItemList({ artWorks, onToggle }) {
   return (
-    <ul>
+    <List message="There is no elements in list.">
       {artWorks.map(artWork => (
-        <li key={artWork.id}>
+        <ListitemControlled key={artWork.id} content={artWork.title} order={2}>
           <label>
             <input
               type="checkbox"
@@ -72,10 +74,9 @@ function ItemList({ artWorks, onToggle }) {
                 onToggle(artWork.id, e.target.checked);
               }}
             />
-            {artWork.title}
           </label>
-        </li>
+        </ListitemControlled>
       ))}
-    </ul>
+    </List>
   );
 }

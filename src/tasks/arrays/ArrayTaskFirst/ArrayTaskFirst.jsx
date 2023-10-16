@@ -1,8 +1,12 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import { RiAddCircleFill } from 'react-icons/ri';
+
+import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialProductsList } from 'constants';
+import List from 'components/List';
+import ListitemControlled from 'components/ListitemControlled';
 
 export default function ArrayTaskFirst() {
   const [products, setProducts] = useState(initialProductsList);
@@ -28,18 +32,24 @@ export default function ArrayTaskFirst() {
   };
 
   return (
-    <ul>
+    <List message="There is no elements in list.">
       {products.map(product => (
-        <li key={product.id}>
-          {product.name} (<b>{product.count}</b>)
-          <DecoratedButton
-            caption="+"
+        <ListitemControlled
+          key={product.id}
+          content={
+            <>
+              {product.name} (<b>{product.count}</b>)
+            </>
+          }
+        >
+          <DecoratedIconButton
+            caption={<RiAddCircleFill />}
             onClick={() => {
               handleIncreaseClick(product.id);
             }}
           />
-        </li>
+        </ListitemControlled>
       ))}
-    </ul>
+    </List>
   );
 }

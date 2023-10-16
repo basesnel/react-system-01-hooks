@@ -1,14 +1,27 @@
 import { useState } from 'react';
 
+import { RiSave3Fill } from 'react-icons/ri';
+import { RiFileEditFill } from 'react-icons/ri';
+import { RiDeleteBinFill } from 'react-icons/ri';
+
+import List from 'components/List';
+import ListitemII from 'components/ListitemII';
+import DecoratedIconButton from 'components/DecoratedIconButton';
+
+import css from './TaskList.module.css';
+
 export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
-    <ul>
+    <List message="There is no elements in list.">
       {todos.map(todo => (
-        <li key={todo.id}>
-          <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
-        </li>
+        <ListitemII
+          key={todo.id}
+          content={
+            <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
+          }
+        />
       ))}
-    </ul>
+    </List>
   );
 }
 
@@ -29,20 +42,26 @@ function Task({ todo, onChange, onDelete }) {
             });
           }}
         />
-        <button onClick={() => setIsEditing(false)}>Save</button>
+        <DecoratedIconButton
+          caption={<RiSave3Fill />}
+          onClick={() => setIsEditing(false)}
+        />
       </>
     );
   } else {
     todoContent = (
       <>
-        {todo.title}
-        <button onClick={() => setIsEditing(true)}>Edit</button>
+        <span className={css['item-content']}>{todo.title}</span>
+        <DecoratedIconButton
+          caption={<RiFileEditFill />}
+          onClick={() => setIsEditing(true)}
+        />
       </>
     );
   }
 
   return (
-    <label>
+    <label className={css['item-flex']}>
       <input
         type="checkbox"
         name={todo.id}
@@ -52,7 +71,10 @@ function Task({ todo, onChange, onDelete }) {
         }}
       />
       {todoContent}
-      <button onClick={() => onDelete(todo.id)}>Delete</button>
+      <DecoratedIconButton
+        caption={<RiDeleteBinFill />}
+        onClick={() => onDelete(todo.id)}
+      />
     </label>
   );
 }

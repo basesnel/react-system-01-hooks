@@ -10,3 +10,14 @@
   background-color: var(--color-text-opacity);
   overflow: hidden;
 }
+
+.message {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid var(--color-text-opacity);
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  color: var(--color-text-opacity);
+}

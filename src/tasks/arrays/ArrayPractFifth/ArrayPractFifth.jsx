@@ -33,7 +33,7 @@ export default function ArrayPractFifth() {
         filling={`Insert element ${name}`}
         icon={<RiInsertRowBottom />}
       />
-      <List>
+      <List message="There is no elements in list.">
         {artists.map(artist => (
           <li key={artist.id} className={css.item}>
             <div className={css['item-flex']}>

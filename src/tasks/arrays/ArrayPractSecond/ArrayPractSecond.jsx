@@ -14,7 +14,7 @@ export default function ArrayPractSecond() {
 
   return (
     <>
-      <List>
+      <List message="All elements were deleted.">
         {artists.map(artist => (
           <li key={artist.id} className={css.item}>
             <div className={css['item-flex']}>

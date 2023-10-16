@@ -19,7 +19,7 @@ export default function ArrayPractSixth() {
   return (
     <>
       <DecoratedButton caption="Reverse" onClick={handleClick} />
-      <List>
+      <List message="There is no elements in list.">
         {list.map(art => (
           <li key={art.id} className={css.item}>
             <div className={css['item-flex']}>

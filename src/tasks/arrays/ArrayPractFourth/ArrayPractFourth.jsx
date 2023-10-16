@@ -24,7 +24,7 @@ export default function ArrayPractFourth() {
   };
 
   return (
-    <List>
+    <List message="There is no elements in list.">
       {counters.map((counter, i) => (
         <li key={i} className={css.item}>
           <div className={css['item-flex']}>

@@ -23,7 +23,7 @@ export default function ArrayPractFirst() {
         filling={`Add element ${artist}`}
         icon={<RiAddCircleFill />}
       />
-      <List>
+      <List message="Please, add an element to list.">
         {artists.map((item, idx) => (
           <Listitem key={idx} content={item} />
         ))}

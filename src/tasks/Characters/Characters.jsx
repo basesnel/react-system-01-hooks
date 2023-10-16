@@ -44,7 +44,7 @@ export default function Characters() {
         inputValue={filter}
         icon={<FiFilter className={css.icon} />}
       />
-      <List>
+      <List message={`The list no contain elements with word: ${filter}.`}>
         {visibleCharacters.map((item, idx) => (
           <Listitem key={idx} content={item} />
         ))}

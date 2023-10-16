@@ -51,7 +51,7 @@ function Task({ todo, onChange, onDelete }) {
   } else {
     todoContent = (
       <>
-        {todo.title}
+        <span className={css['item-content']}>{todo.title}</span>
         <DecoratedIconButton
           caption={<RiFileEditFill />}
           onClick={() => setIsEditing(true)}

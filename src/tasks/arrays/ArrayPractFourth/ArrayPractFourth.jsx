@@ -3,11 +3,10 @@ import { useState } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
 import List from 'components/List';
+import ListitemControlled from 'components/ListitemControlled';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialCountersList } from 'constants';
-
-import css from './ArrayPractFourth.module.css';
 
 export default function ArrayPractFourth() {
   const [counters, setCounters] = useState(initialCountersList);
@@ -26,17 +25,14 @@ export default function ArrayPractFourth() {
   return (
     <List message="There is no elements in list.">
       {counters.map((counter, i) => (
-        <li key={i} className={css.item}>
-          <div className={css['item-flex']}>
-            <span className={css['item-content']}>{counter}</span>
-            <DecoratedIconButton
-              caption={<RiAddCircleFill />}
-              onClick={() => {
-                handleIncrementalClick(i);
-              }}
-            />
-          </div>
-        </li>
+        <ListitemControlled key={i} content={counter}>
+          <DecoratedIconButton
+            caption={<RiAddCircleFill />}
+            onClick={() => {
+              handleIncrementalClick(i);
+            }}
+          />
+        </ListitemControlled>
       ))}
     </List>
   );

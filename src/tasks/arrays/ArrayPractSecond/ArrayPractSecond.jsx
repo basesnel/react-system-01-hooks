@@ -7,7 +7,7 @@ import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialArtistsList } from 'constants';
 
-import css from './ArrayPractSecond.module.css';
+import ListitemControlled from 'components/ListitemControlled';
 
 export default function ArrayPractSecond() {
   const [artists, setArtists] = useState(initialArtistsList);
@@ -16,17 +16,14 @@ export default function ArrayPractSecond() {
     <>
       <List message="All elements were deleted.">
         {artists.map(artist => (
-          <li key={artist.id} className={css.item}>
-            <div className={css['item-flex']}>
-              <span className={css['item-content']}>{artist.name}</span>
-              <DecoratedIconButton
-                caption={<RiIndeterminateCircleFill />}
-                onClick={() => {
-                  setArtists(artists.filter(a => a.id !== artist.id));
-                }}
-              />
-            </div>
-          </li>
+          <ListitemControlled key={artist.id} content={artist.name}>
+            <DecoratedIconButton
+              caption={<RiIndeterminateCircleFill />}
+              onClick={() => {
+                setArtists(artists.filter(a => a.id !== artist.id));
+              }}
+            />
+          </ListitemControlled>
         ))}
       </List>
       {/* <ul>

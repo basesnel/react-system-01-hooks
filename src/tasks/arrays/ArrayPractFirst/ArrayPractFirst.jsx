@@ -5,7 +5,6 @@ import { RiAddCircleFill } from 'react-icons/ri';
 import List from 'components/List';
 import Listitem from 'components/Listitem';
 
-// import css from './ArrayPractFirst.module.css';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
 export default function ArrayPractFirst() {

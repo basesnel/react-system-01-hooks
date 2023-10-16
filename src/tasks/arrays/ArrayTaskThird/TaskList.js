@@ -45,6 +45,7 @@ function Task({ todo, onChange, onDelete }) {
     <label>
       <input
         type="checkbox"
+        name={todo.id}
         checked={todo.done}
         onChange={e => {
           onChange({ ...todo, done: e.target.checked });

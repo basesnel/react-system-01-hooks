@@ -58,6 +58,7 @@ function ItemList({ artWorks, onToggle }) {
           <label>
             <input
               type="checkbox"
+              name={artWork.id}
               checked={artWork.seen}
               onChange={e => {
                 onToggle(artWork.id, e.target.checked);

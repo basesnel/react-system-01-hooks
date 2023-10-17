@@ -39,7 +39,7 @@ export default function ObjectTaskFirst() {
         inputValue={player.firstName}
         inputLabel="First name"
         handleChange={handleFirstNameChange}
-        icon={<FiEdit3 className={css.icon} />}
+        icon={<FiEdit3 />}
       />
       <DecoratedInput
         inputType="text"
@@ -47,7 +47,7 @@ export default function ObjectTaskFirst() {
         inputValue={player.lastName}
         inputLabel="Last name"
         handleChange={handleLastNameChange}
-        icon={<FiEdit3 className={css.icon} />}
+        icon={<FiEdit3 />}
       />
       <label className={css['label-wrap']}>
         Score: <b>{player.score}</b>{' '}

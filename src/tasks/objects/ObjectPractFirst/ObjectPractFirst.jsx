@@ -8,8 +8,6 @@ import Caption from 'components/Caption';
 
 import { initialFirstPerson } from 'constants';
 
-// import css from './ObjectPractFirst.module.css';
-
 export default function ObjectPractFirst() {
   const [person, setPerson] = useState(initialFirstPerson);
 

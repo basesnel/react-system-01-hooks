@@ -8,8 +8,6 @@ import Caption from 'components/Caption';
 
 import { initialThirdPerson } from 'constants';
 
-import css from './ObjectPractFourth.module.css';
-
 export default function ObjectPractFourth() {
   const [person, updatePerson] = useImmer(initialThirdPerson);
 
@@ -46,7 +44,7 @@ export default function ObjectPractFourth() {
           inputValue={person.name}
           inputLabel="Name"
           handleChange={handleNameChange}
-          icon={<FiUser className={css.icon} />}
+          icon={<FiUser />}
         />
         <DecoratedInput
           inputType="text"
@@ -54,7 +52,7 @@ export default function ObjectPractFourth() {
           inputValue={person.artwork.title}
           inputLabel="Title"
           handleChange={handleTitleChange}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiEdit3 />}
         />
         <DecoratedInput
           inputType="text"
@@ -62,7 +60,7 @@ export default function ObjectPractFourth() {
           inputValue={person.artwork.city}
           inputLabel="City"
           handleChange={handleCityChange}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiEdit3 />}
         />
         <DecoratedInput
           inputType="text"
@@ -70,7 +68,7 @@ export default function ObjectPractFourth() {
           inputValue={person.artwork.image}
           inputLabel="City"
           handleChange={handleImageChange}
-          icon={<FiImage className={css.icon} />}
+          icon={<FiImage />}
         />
       </DecoratedForm>
       <Caption

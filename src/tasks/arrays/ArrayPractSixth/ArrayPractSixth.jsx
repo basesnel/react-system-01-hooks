@@ -1,8 +1,11 @@
 import { useState } from 'react';
 
-import List from 'components/List';
-import Listitem from 'components/Listitem';
+import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText';
 
 import { initialSixArtsList } from 'constants';
 
@@ -17,10 +20,16 @@ export default function ArrayPractSixth() {
 
   return (
     <>
-      <DecoratedButton caption="Reverse" onClick={handleClick} />
+      <FlexBox>
+        <DecoratedButton caption="Reverse" onClick={handleClick} />
+      </FlexBox>
       <List message="There is no elements in list.">
         {list.map(art => (
-          <Listitem key={art.id} content={art.title} />
+          <Item key={art.id}>
+            <ItemFlex>
+              <ItemText content={art.title} />
+            </ItemFlex>
+          </Item>
         ))}
       </List>
     </>

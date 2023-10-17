@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 import { RiInsertRowBottom } from 'react-icons/ri';
 
-import List from 'components/List';
-import Listitem from 'components/Listitem';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText';
 
 import { initialArtistsList } from 'constants';
 
@@ -34,7 +36,11 @@ export default function ArrayPractFifth() {
       />
       <List message="There is no elements in list.">
         {artists.map(artist => (
-          <Listitem key={artist.id} content={artist.name} />
+          <Item key={artist.id}>
+            <ItemFlex>
+              <ItemText content={artist.name} />
+            </ItemFlex>
+          </Item>
         ))}
       </List>
     </>

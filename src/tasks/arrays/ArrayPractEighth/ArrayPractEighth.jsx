@@ -68,16 +68,14 @@ function ItemList({ artWorks, onToggle }) {
       {artWorks.map(artWork => (
         <Item key={artWork.id}>
           <ItemLabel>
-            <label>
-              <input
-                type="checkbox"
-                name={artWork.id}
-                checked={artWork.seen}
-                onChange={e => {
-                  onToggle(artWork.id, e.target.checked);
-                }}
-              />
-            </label>
+            <input
+              type="checkbox"
+              name={artWork.id}
+              checked={artWork.seen}
+              onChange={e => {
+                onToggle(artWork.id, e.target.checked);
+              }}
+            />
             <ItemText content={artWork.title} />
           </ItemLabel>
         </Item>

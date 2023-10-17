@@ -7,7 +7,7 @@ import DecoratedInput from 'components/DecoratedInput';
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedSubmit from 'components/DecoratedSubmit';
 
-import css from './SignupForm.module.css';
+// import css from './SignupForm.module.css';
 
 export default function SignupForm() {
   // case lazy init state:
@@ -73,7 +73,7 @@ export default function SignupForm() {
         inputValue={email}
         inputLabel="E-mail"
         handleChange={handleChange}
-        icon={<FiMail className={css.icon} />}
+        icon={<FiMail />}
       />
       <DecoratedInput
         inputType="password"
@@ -81,7 +81,7 @@ export default function SignupForm() {
         inputValue={password}
         inputLabel="Password"
         handleChange={handleChange}
-        icon={<FiLock className={css.icon} />}
+        icon={<FiLock />}
       />
       <DecoratedSubmit caption="Register" />
     </DecoratedForm>

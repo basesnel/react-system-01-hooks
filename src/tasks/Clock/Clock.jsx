@@ -66,7 +66,9 @@ export default function Clock() {
   return (
     <>
       <Box>
-        <span className={css.time}>{time.toLocaleTimeString()}</span>
+        <div className={css['time-wrap']}>
+          <span className={css.time}>{time.toLocaleTimeString()}</span>
+        </div>
       </Box>
       <Caption text="Current time" />
       <FlexBox>

@@ -2,27 +2,15 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .box {
-  margin: 0 24px;
+  margin: 0 auto 10px;
   padding: 10px;
   border: 1px solid var(--color-text);
   border-radius: 6px;
-  text-align: center;
   background-color: var(--color-light);
-}
-
-.box * {
-  padding: 0;
-  color: var(--color-text);
-  font-weight: 500;
 }
 
 @media tablet-to {
   .box {
     width: 400px;
-    margin: 0 auto;
-  }
-
-  .box * {
-    font-size: 20px;
   }
 }

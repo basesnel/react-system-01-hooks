@@ -1,10 +1,11 @@
 import Box from 'components/Box';
-import Text from 'components/Text';
+import Caption from 'components/Caption';
+// import Text from 'components/Text';
 
 export default function PokemonIdleView() {
   return (
     <Box>
-      <Text>Please, enter pokemon name.</Text>
+      <Caption text="Please, enter pokemon name." />
     </Box>
   );
 }

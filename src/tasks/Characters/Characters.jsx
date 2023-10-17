@@ -3,6 +3,7 @@ import { useState, useMemo } from 'react';
 import { FiFilter } from 'react-icons/fi';
 
 import { initialCharacters } from 'constants';
+import Box from 'components/Box';
 import DecoratedButton from 'components/DecoratedButton';
 import DecoratedInput from 'components/DecoratedInput';
 
@@ -25,12 +26,14 @@ export default function Characters() {
     <div>
       <DecoratedButton caption={count} onClick={() => setCount(c => c + 1)} />
       <hr />
-      <DecoratedInput
-        inputLabel="Filter"
-        handleChange={e => setFilter(e.target.value)}
-        inputValue={filter}
-        icon={<FiFilter />}
-      />
+      <Box>
+        <DecoratedInput
+          inputLabel="Filter"
+          handleChange={e => setFilter(e.target.value)}
+          inputValue={filter}
+          icon={<FiFilter />}
+        />
+      </Box>
       <List message={`The list no contain elements with word: ${filter}.`}>
         {visibleCharacters.map((item, idx) => (
           <Listitem key={idx} content={item} />

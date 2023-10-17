@@ -2,11 +2,13 @@ import { useState } from 'react';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemText from 'components/ItemText';
+import ItemFlex from 'components/ItemFlex';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialProductsList } from 'constants';
-import List from 'components/List';
-import ListitemControlled from 'components/ListitemControlled';
 
 export default function ArrayTaskFirst() {
   const [products, setProducts] = useState(initialProductsList);
@@ -34,21 +36,23 @@ export default function ArrayTaskFirst() {
   return (
     <List message="There is no elements in list.">
       {products.map(product => (
-        <ListitemControlled
-          key={product.id}
-          content={
-            <>
-              {product.name} (<b>{product.count}</b>)
-            </>
-          }
-        >
-          <DecoratedIconButton
-            caption={<RiAddCircleFill />}
-            onClick={() => {
-              handleIncreaseClick(product.id);
-            }}
-          />
-        </ListitemControlled>
+        <Item key={product.id}>
+          <ItemFlex>
+            <ItemText
+              content={
+                <>
+                  {product.name} (<b>{product.count}</b>)
+                </>
+              }
+            />
+            <DecoratedIconButton
+              caption={<RiAddCircleFill />}
+              onClick={() => {
+                handleIncreaseClick(product.id);
+              }}
+            />
+          </ItemFlex>
+        </Item>
       ))}
     </List>
   );

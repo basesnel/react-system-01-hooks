@@ -4,7 +4,9 @@ import { initialSevenArtsList } from 'constants';
 
 import Title from 'components/Title';
 import List from 'components/List';
-import ListitemControlled from 'components/ListitemControlled';
+import Item from 'components/Item';
+import ItemLabel from 'components/ItemLabel';
+import ItemText from 'components/ItemText';
 
 export default function ArrayPractEighth() {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
@@ -64,18 +66,21 @@ function ItemList({ artWorks, onToggle }) {
   return (
     <List message="There is no elements in list.">
       {artWorks.map(artWork => (
-        <ListitemControlled key={artWork.id} content={artWork.title} order={2}>
-          <label>
-            <input
-              type="checkbox"
-              name={artWork.id}
-              checked={artWork.seen}
-              onChange={e => {
-                onToggle(artWork.id, e.target.checked);
-              }}
-            />
-          </label>
-        </ListitemControlled>
+        <Item key={artWork.id}>
+          <ItemLabel>
+            <label>
+              <input
+                type="checkbox"
+                name={artWork.id}
+                checked={artWork.seen}
+                onChange={e => {
+                  onToggle(artWork.id, e.target.checked);
+                }}
+              />
+            </label>
+            <ItemText content={artWork.title} />
+          </ItemLabel>
+        </Item>
       ))}
     </List>
   );

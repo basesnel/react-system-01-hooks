@@ -2,9 +2,11 @@ import { useState } from 'react';
 
 import Title from 'components/Title';
 import List from 'components/List';
+import Item from 'components/Item';
+import ItemLabel from 'components/ItemLabel';
+import ItemText from 'components/ItemText';
 
 import { initialSevenArtsList } from 'constants';
-import ListitemControlled from 'components/ListitemControlled';
 
 export default function ArrayPractSeventh() {
   const [myList, setMyList] = useState(initialSevenArtsList);
@@ -56,8 +58,8 @@ function ItemList({ artWorks, onToggle }) {
   return (
     <List message="There is no elements in list.">
       {artWorks.map(artWork => (
-        <ListitemControlled key={artWork.id} content={artWork.title} order={2}>
-          <label>
+        <Item key={artWork.id}>
+          <ItemLabel>
             <input
               type="checkbox"
               name={artWork.id}
@@ -66,8 +68,9 @@ function ItemList({ artWorks, onToggle }) {
                 onToggle(artWork.id, e.target.checked);
               }}
             />
-          </label>
-        </ListitemControlled>
+            <ItemText content={artWork.title} />
+          </ItemLabel>
+        </Item>
       ))}
     </List>
   );

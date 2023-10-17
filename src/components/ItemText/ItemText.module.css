@@ -1,12 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
-@value item from "../ListitemII/ListitemII.module.css";
-
-.item-flex {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-}
+@value item from "../Item/Item.module.css";
 
 .item-content {
   flex-grow: 1;

@@ -8,7 +8,9 @@ import DecoratedButton from 'components/DecoratedButton';
 import DecoratedInput from 'components/DecoratedInput';
 
 import List from 'components/List';
-import Listitem from 'components/Listitem';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText';
 
 export default function Characters() {
   const [count, setCount] = useState(0);
@@ -36,7 +38,11 @@ export default function Characters() {
       </Box>
       <List message={`The list no contain elements with word: ${filter}.`}>
         {visibleCharacters.map((item, idx) => (
-          <Listitem key={idx} content={item} />
+          <Item key={idx}>
+            <ItemFlex>
+              <ItemText content={item} />
+            </ItemFlex>
+          </Item>
         ))}
       </List>
     </div>

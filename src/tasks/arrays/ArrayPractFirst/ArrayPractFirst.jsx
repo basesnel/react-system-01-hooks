@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
 import List from 'components/List';
-// import Listitem from 'components/Listitem';
 import Item from 'components/Item';
 
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
@@ -27,7 +26,6 @@ export default function ArrayPractFirst() {
       />
       <List message="Please, add an element to list.">
         {artists.map((item, idx) => (
-          // <Listitem key={idx} content={item} />
           <Item key={idx}>
             <ItemFlex>
               <ItemText content={item} />

@@ -8,7 +8,7 @@ import Caption from 'components/Caption';
 
 import { initialFirstPerson } from 'constants';
 
-import css from './ObjectPractFirst.module.css';
+// import css from './ObjectPractFirst.module.css';
 
 export default function ObjectPractFirst() {
   const [person, setPerson] = useState(initialFirstPerson);
@@ -26,7 +26,7 @@ export default function ObjectPractFirst() {
           inputValue={person.firstName}
           inputLabel="First name"
           handleChange={handleChange}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiEdit3 />}
         />
         <DecoratedInput
           inputType="text"
@@ -34,7 +34,7 @@ export default function ObjectPractFirst() {
           inputValue={person.lastName}
           inputLabel="Last name"
           handleChange={handleChange}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiEdit3 />}
         />
         <DecoratedInput
           inputType="email"
@@ -42,7 +42,7 @@ export default function ObjectPractFirst() {
           inputValue={person.email}
           inputLabel="E-mail"
           handleChange={handleChange}
-          icon={<FiMail className={css.icon} />}
+          icon={<FiMail />}
         />
       </DecoratedForm>
       <Caption

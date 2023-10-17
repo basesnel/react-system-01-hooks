@@ -3,10 +3,12 @@ import { useState } from 'react';
 import { RiSave3Fill } from 'react-icons/ri';
 import { RiFileEditFill } from 'react-icons/ri';
 import { RiDeleteBinFill } from 'react-icons/ri';
+import { FiEdit3 } from 'react-icons/fi';
 
 import List from 'components/List';
 import ListitemII from 'components/ListitemII';
 import DecoratedIconButton from 'components/DecoratedIconButton';
+import DecoratedInput from 'components/DecoratedInput';
 
 import css from './TaskList.module.css';
 
@@ -33,7 +35,19 @@ function Task({ todo, onChange, onDelete }) {
   if (isEditing) {
     todoContent = (
       <>
-        <input
+        <DecoratedInput
+          inputType="text"
+          inputName={`Todo ${todo.id}`}
+          inputValue={todo.title}
+          handleChange={e => {
+            onChange({
+              ...todo,
+              title: e.target.value,
+            });
+          }}
+          icon={<FiEdit3 className={css.icon} />}
+        />
+        {/* <input
           value={todo.title}
           onChange={e => {
             onChange({
@@ -41,7 +55,7 @@ function Task({ todo, onChange, onDelete }) {
               title: e.target.value,
             });
           }}
-        />
+        /> */}
         <DecoratedIconButton
           caption={<RiSave3Fill />}
           onClick={() => setIsEditing(false)}

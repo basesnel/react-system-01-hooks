@@ -2,6 +2,9 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   width: 100%;
   border: 1px solid var(--color-text);
   border-radius: 6px;

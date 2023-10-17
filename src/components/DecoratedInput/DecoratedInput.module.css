@@ -6,11 +6,6 @@
   flex-direction: column;
   gap: 5px;
   max-width: 400px;
-  margin-bottom: 10px;
-}
-
-.field:last-child {
-  margin-bottom: 0;
 }
 
 .label {
@@ -35,6 +30,39 @@
 .input:hover {
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  display: block;
+  width: var(--fs-text-mobile);
+  height: var(--fs-text-mobile);
+  transform: translate(0, -50%);
+  font-size: var(--fs-text-mobile);
+  color: var(--color-text);
+  transition: var(--my-transition);
+}
+
+.input:hover + .icon {
+  color: var(--color-accent);
+}
+
+@media mobile-to {
+  .icon {
+    width: var(--fs-text-smartphone);
+    height: var(--fs-text-smartphone);
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .icon {
+    width: var(--fs-text-tablet);
+    height: var(--fs-text-tablet);
+    font-size: var(--fs-text-tablet);
+  }
 }
 
 @media mobile-to {

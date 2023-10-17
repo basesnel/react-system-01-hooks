@@ -1,7 +1,7 @@
 import { useImmer } from 'use-immer';
 
-import AddTodo from './AddTodo.js';
-import TaskList from './TaskList.js';
+import AddTodo from '../intendedComponents/AddTodo';
+import TaskList from '../intendedComponents/TaskList';
 
 import { initialTodosList } from 'constants';
 

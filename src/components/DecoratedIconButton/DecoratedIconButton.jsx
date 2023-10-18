@@ -17,7 +17,8 @@ export default function DecoratedIconButton({
 }
 
 DecoratedIconButton.propTypes = {
-  caption: PropTypes.any.isRequired,
+  icon: PropTypes.any.isRequired,
+  caption: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   isDisabled: PropTypes.bool,
 };

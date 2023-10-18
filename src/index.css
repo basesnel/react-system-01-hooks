@@ -105,7 +105,8 @@ button:active {
   outline: none;
 }
 
-a:hover,
-button:hover {
+a,
+button,
+input[type='checkbox'] {
   cursor: pointer;
 }

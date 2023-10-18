@@ -6,7 +6,9 @@ import { RiDeleteBinFill } from 'react-icons/ri';
 import { FiEdit3 } from 'react-icons/fi';
 
 import List from 'components/List';
-import ListitemII from 'components/ListitemII';
+import Item from 'components/Item';
+import ItemLabel from 'components/ItemLabel';
+import ItemText from 'components/ItemText';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 import DecoratedInput from 'components/DecoratedInput';
 
@@ -16,12 +18,9 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
     <List message="There is no elements in list.">
       {todos.map(todo => (
-        <ListitemII
-          key={todo.id}
-          content={
-            <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
-          }
-        />
+        <Item key={todo.id}>
+          <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
+        </Item>
       ))}
     </List>
   );
@@ -47,15 +46,6 @@ function Task({ todo, onChange, onDelete }) {
           }}
           icon={<FiEdit3 className={css.icon} />}
         />
-        {/* <input
-          value={todo.title}
-          onChange={e => {
-            onChange({
-              ...todo,
-              title: e.target.value,
-            });
-          }}
-        /> */}
         <DecoratedIconButton
           caption={<RiSave3Fill />}
           onClick={() => setIsEditing(false)}
@@ -65,7 +55,7 @@ function Task({ todo, onChange, onDelete }) {
   } else {
     todoContent = (
       <>
-        <span className={css['item-content']}>{todo.title}</span>
+        <ItemText content={todo.title} />
         <DecoratedIconButton
           caption={<RiFileEditFill />}
           onClick={() => setIsEditing(true)}
@@ -75,7 +65,7 @@ function Task({ todo, onChange, onDelete }) {
   }
 
   return (
-    <label className={css['item-flex']}>
+    <ItemLabel>
       <input
         type="checkbox"
         name={todo.id}
@@ -89,6 +79,6 @@ function Task({ todo, onChange, onDelete }) {
         caption={<RiDeleteBinFill />}
         onClick={() => onDelete(todo.id)}
       />
-    </label>
+    </ItemLabel>
   );
 }

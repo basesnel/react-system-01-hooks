@@ -2,7 +2,6 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .item {
-  padding: 6px 12px;
   transition: var(--my-transition);
 }
 

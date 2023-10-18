@@ -1,15 +1,10 @@
-.list {
-  margin-bottom: 40px;
-}
-
-.item {
-  padding: 6px 10px;
-  color: var(--color-text);
-}
+@value item from "../../components/Item/Item.module.css";
 
 .link {
+  display: block;
+  padding: 10px;
   text-decoration: none;
-  color: inherit;
+  color: var(--color-text);
   transition: var(--my-transition);
 }
 

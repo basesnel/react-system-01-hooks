@@ -8,6 +8,8 @@ import FlexBox from 'components/FlexBox';
 import { fetchArticles } from 'services/news-api';
 
 import css from './News.module.css';
+import List from 'components/List';
+import Item from 'components/Item';
 
 export default function News() {
   const [articles, setArticles] = useState([]);
@@ -48,9 +50,9 @@ export default function News() {
   return (
     <>
       <SearchBar onFormSubmit={onHandleSubmit} />
-      <ul className={css.list}>
+      <List message="Please, enter keyword for search news!">
         {articles.map(({ title, url }) => (
-          <li key={title} className={css.item}>
+          <Item key={title}>
             <a
               href={url}
               target="_blank"
@@ -59,9 +61,9 @@ export default function News() {
             >
               {title}
             </a>
-          </li>
+          </Item>
         ))}
-      </ul>
+      </List>
 
       {error && (
         <FlexBox>

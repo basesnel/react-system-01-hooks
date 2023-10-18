@@ -49,12 +49,20 @@
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
-  width: 1px;
-  height: 1px;
+  width: 24px;
+  height: 24px;
   overflow: hidden;
   border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
+  color: transparent;
+  /* clip: rect(0 0 0 0);
+  clip-path: inset(50%); */
   margin: -1px;
+}
+
+@media mobile-to {
+  .visually-hidden {
+    width: 30px;
+    height: 30px;
+  }
 }

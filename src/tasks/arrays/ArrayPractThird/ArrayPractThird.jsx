@@ -3,6 +3,7 @@ import { useState } from 'react';
 import DecoratedButton from 'components/DecoratedButton';
 
 import { initialShapesList } from 'constants';
+import FlexBox from 'components/FlexBox';
 
 export default function ArrayPractThird() {
   const [shapes, setShapes] = useState(initialShapesList);
@@ -24,7 +25,9 @@ export default function ArrayPractThird() {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: 300 }}>
-      <DecoratedButton caption="Move circles down!" onClick={handleClick} />
+      <FlexBox>
+        <DecoratedButton caption="Move circles down!" onClick={handleClick} />
+      </FlexBox>
       {shapes.map(shape => (
         <div
           key={shape.id}

@@ -12,7 +12,7 @@ import ItemText from 'components/ItemText';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 import DecoratedInput from 'components/DecoratedInput';
 
-import css from './TaskList.module.css';
+// import css from './TaskList.module.css';
 
 export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
@@ -44,12 +44,26 @@ function Task({ todo, onChange, onDelete }) {
               title: e.target.value,
             });
           }}
-          icon={<FiEdit3 className={css.icon} />}
+          icon={<FiEdit3 />}
         />
+        {/* <input
+          name={`Todo ${todo.id}`}
+          value={todo.title}
+          onChange={e => {
+            onChange({
+              ...todo,
+              title: e.target.value,
+            });
+          }}
+        /> */}
         <DecoratedIconButton
-          caption={<RiSave3Fill />}
+          icon={<RiSave3Fill />}
+          caption="save"
           onClick={() => setIsEditing(false)}
         />
+        {/* <button onClick={() => setIsEditing(false)}>
+          <RiSave3Fill />
+        </button> */}
       </>
     );
   } else {
@@ -57,9 +71,13 @@ function Task({ todo, onChange, onDelete }) {
       <>
         <ItemText content={todo.title} />
         <DecoratedIconButton
-          caption={<RiFileEditFill />}
+          icon={<RiFileEditFill />}
+          caption="edit"
           onClick={() => setIsEditing(true)}
         />
+        {/* <button onClick={() => setIsEditing(true)}>
+          <RiFileEditFill />
+        </button> */}
       </>
     );
   }
@@ -76,7 +94,8 @@ function Task({ todo, onChange, onDelete }) {
       />
       {todoContent}
       <DecoratedIconButton
-        caption={<RiDeleteBinFill />}
+        icon={<RiDeleteBinFill />}
+        caption="delete"
         onClick={() => onDelete(todo.id)}
       />
     </ItemLabel>

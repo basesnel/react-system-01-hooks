@@ -23,14 +23,6 @@ export default function ArrayTaskFirst() {
         }
       })
     );
-    // const newProducts = products.map(product => {
-    //   if (product.id === productId) {
-    //     return { ...product, count: product.count + 1 };
-    //   } else {
-    //     return product;
-    //   }
-    // });
-    // setProducts(newProducts);
   };
 
   return (
@@ -46,7 +38,8 @@ export default function ArrayTaskFirst() {
               }
             />
             <DecoratedIconButton
-              caption={<RiAddCircleFill />}
+              icon={<RiAddCircleFill />}
+              caption="add"
               onClick={() => {
                 handleIncreaseClick(product.id);
               }}

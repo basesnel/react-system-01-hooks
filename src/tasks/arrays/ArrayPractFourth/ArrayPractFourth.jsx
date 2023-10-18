@@ -31,7 +31,8 @@ export default function ArrayPractFourth() {
           <ItemFlex>
             <ItemText content={counter} />
             <DecoratedIconButton
-              caption={<RiAddCircleFill />}
+              icon={<RiAddCircleFill />}
+              caption="add"
               onClick={() => {
                 handleIncrementalClick(i);
               }}

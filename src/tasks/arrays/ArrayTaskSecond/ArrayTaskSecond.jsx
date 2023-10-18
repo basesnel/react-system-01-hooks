@@ -24,14 +24,6 @@ export default function ArrayTaskSecond() {
         }
       })
     );
-    // const newProducts = products.map(product => {
-    //   if (product.id === productId) {
-    //     return { ...product, count: product.count + 1 };
-    //   } else {
-    //     return product;
-    //   }
-    // });
-    // setProducts(newProducts);
   };
 
   const handleDecreaseClick = productId => {
@@ -61,13 +53,15 @@ export default function ArrayTaskSecond() {
               }
             />
             <DecoratedIconButton
-              caption={<RiAddCircleFill />}
+              icon={<RiAddCircleFill />}
+              caption="add"
               onClick={() => {
                 handleIncreaseClick(product.id);
               }}
             />
             <DecoratedIconButton
-              caption={<RiIndeterminateCircleFill />}
+              icon={<RiIndeterminateCircleFill />}
+              caption="subtract"
               onClick={() => {
                 handleDecreaseClick(product.id);
               }}

@@ -11,7 +11,6 @@ export default function DecoratedIconButton({
   return (
     <button className={css.btn} onClick={onClick} disabled={isDisabled}>
       {icon}
-      {/* <span>{caption}</span> */}
       <span className={css['visually-hidden']}>{caption}</span>
     </button>
   );

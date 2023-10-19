@@ -1,1 +1,6 @@
 @value item-flex from "../ItemFlex/ItemFlex.module.css";
+
+.item-label {
+  composes: item-flex;
+  cursor: pointer;
+}

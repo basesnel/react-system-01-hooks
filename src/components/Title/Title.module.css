@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.title01 {
+.title-01 {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-caption);
@@ -14,68 +14,72 @@
 }
 
 @media mobile-to {
-  .title01 {
+  .title-01 {
     font-size: var(--fs-title-i-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title01 {
+  .title-01 {
     font-size: var(--fs-title-i-tablet);
   }
 }
 
 @media tablet-to {
-  .title01 {
+  .title-01 {
     text-align: left;
     font-size: var(--fs-title-i-desktop);
   }
 }
 
 @media desktop-to {
-  .title01 {
+  .title-01 {
     font-size: var(--fs-title-i-tv);
   }
 }
 
-.title02 {
+.title-02 {
+  padding-bottom: 10px;
   margin-bottom: 0;
-  border-bottom: none;
   text-align: center;
   font-size: var(--fs-title-ii-mobile);
   font-weight: 600;
+  line-height: 1.25;
   text-transform: uppercase;
+  color: var(--color-caption);
 }
 
 @media mobile-to {
-  .title02 {
+  .title-02 {
     font-size: var(--fs-title-ii-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title02 {
+  .title-02 {
     font-size: var(--fs-title-ii-tablet);
   }
 }
 
-.title03 {
+.title-03 {
+  padding-bottom: 10px;
   margin-bottom: 0;
-  border-bottom: none;
   text-align: center;
   font-size: var(--fs-text-mobile);
   font-weight: 600;
+  line-height: 1.25;
   text-transform: uppercase;
+  color: var(--color-caption);
 }
 
 @media mobile-to {
-  .title03 {
+  .title-03 {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title03 {
+  .title-03 {
     font-size: var(--fs-text-tablet);
   }
 }

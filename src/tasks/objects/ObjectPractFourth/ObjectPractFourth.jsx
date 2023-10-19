@@ -4,7 +4,7 @@ import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
-import Caption from 'components/Caption';
+import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
 
 import { initialThirdPerson } from 'constants';
 
@@ -71,10 +71,11 @@ export default function ObjectPractFourth() {
           icon={<FiImage />}
         />
       </DecoratedForm>
-      <Caption
-        text={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
+      <DecoratedFigure
+        picture={person.artwork.image}
+        alt={person.artwork.title}
+        caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
       />
-      <img src={person.artwork.image} alt={person.artwork.title} />
     </>
   );
 }

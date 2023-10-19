@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+import Canvas from '../IntendendComponents/Canvas';
+
 import { initialPosition } from 'constants';
 
 export default function ObjectPractSecond() {
@@ -15,18 +17,7 @@ export default function ObjectPractSecond() {
   };
 
   return (
-    <div
-      data-box
-      onPointerMove={moveToCursor}
-      style={{
-        position: 'relative',
-        width: '100%',
-        height: '100%',
-        backgroundColor: 'white',
-        borderRadius: '10px',
-        overflow: 'hidden',
-      }}
-    >
+    <Canvas data-box onPointerMove={moveToCursor}>
       <div
         style={{
           position: 'absolute',
@@ -39,6 +30,6 @@ export default function ObjectPractSecond() {
           height: 20,
         }}
       />
-    </div>
+    </Canvas>
   );
 }

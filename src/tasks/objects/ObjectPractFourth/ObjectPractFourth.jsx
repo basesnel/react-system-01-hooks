@@ -7,6 +7,7 @@ import DecoratedInput from 'components/DecoratedInput';
 import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
 
 import { initialThirdPerson } from 'constants';
+import FieldOverlay from '../IntendendComponents/FieldOverlay';
 
 export default function ObjectPractFourth() {
   const [person, updatePerson] = useImmer(initialThirdPerson);
@@ -62,20 +63,22 @@ export default function ObjectPractFourth() {
           handleChange={handleCityChange}
           icon={<FiEdit3 />}
         />
-        <DecoratedInput
-          inputType="text"
-          inputName="image"
-          inputValue={person.artwork.image}
-          inputLabel="City"
-          handleChange={handleImageChange}
-          icon={<FiImage />}
+        <FieldOverlay>
+          <DecoratedInput
+            inputType="text"
+            inputName="image"
+            inputValue={person.artwork.image}
+            inputLabel="Photo"
+            handleChange={handleImageChange}
+            icon={<FiImage />}
+          />
+        </FieldOverlay>
+        <DecoratedFigure
+          picture={person.artwork.image}
+          alt={person.artwork.title}
+          caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
         />
       </DecoratedForm>
-      <DecoratedFigure
-        picture={person.artwork.image}
-        alt={person.artwork.title}
-        caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
-      />
     </>
   );
 }

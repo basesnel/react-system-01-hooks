@@ -3,6 +3,7 @@
 @value title-02, title-03 from "../Title/Title.module.css";
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 1px;

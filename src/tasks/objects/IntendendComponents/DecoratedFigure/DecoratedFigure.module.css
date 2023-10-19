@@ -1,11 +1,16 @@
 .figure {
-  position: relative;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
   max-width: 240px;
   margin: 0 auto;
-  /* padding: 10px; */
   border: 1px solid var(--color-text);
   border-radius: 10px;
   overflow: hidden;
+  opacity: 0;
+  z-index: 20;
+  transition: var(--my-transition);
 }
 
 .image {

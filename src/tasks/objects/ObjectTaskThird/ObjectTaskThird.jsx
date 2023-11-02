@@ -1,6 +1,5 @@
-// import { useState } from 'react';
 import { useImmer } from 'use-immer';
-import Background from './Background.jsx';
+import Background from '../IntendendComponents/Background';
 import Box from './Box.jsx';
 
 import { initialPosition } from 'constants';

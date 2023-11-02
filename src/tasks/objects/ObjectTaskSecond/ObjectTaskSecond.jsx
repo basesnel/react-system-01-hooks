@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Background from './Background.jsx';
+import Background from '../IntendendComponents/Background';
 import Box from './Box.jsx';
 
 import { initialPosition } from 'constants';

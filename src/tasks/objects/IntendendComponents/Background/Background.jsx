@@ -18,5 +18,5 @@ export default function Background({ position }) {
 }
 
 Background.propTypes = {
-  position: PropTypes.shape.isRequired,
+  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number }),
 };

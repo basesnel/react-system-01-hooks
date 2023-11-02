@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 
 export default function Box({ children, color, position, onMove }) {
@@ -49,3 +51,10 @@ export default function Box({ children, color, position, onMove }) {
     </div>
   );
 }
+
+Box.propTypes = {
+  children: PropTypes.any.isRequired,
+  color: PropTypes.string.isRequired,
+  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number }),
+  onMove: PropTypes.func.isRequired,
+};

@@ -1,11 +1,11 @@
 import { useState } from 'react';
+import { MdOutlineSelectAll } from 'react-icons/md';
 
 import Background from '../IntendendComponents/Background';
-import Box from './Box.jsx';
+import Box from '../IntendendComponents/Box';
+import SelectColor from '../IntendendComponents/SelectColor';
 
 import { initialPosition } from 'constants';
-
-import css from './ObjectTaskSecond.module.css';
 
 const initPosition = { ...initialPosition };
 
@@ -31,15 +31,11 @@ export default function ObjectTaskSecond() {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '300px' }}>
-      <select
-        value={shape.color}
-        onChange={handleColorChange}
-        className={css.option}
-      >
-        <option value="orange">orange</option>
-        <option value="lightpink">lightpink</option>
-        <option value="aliceblue">aliceblue</option>
-      </select>
+      <SelectColor
+        color={shape.color}
+        icon={<MdOutlineSelectAll />}
+        onHandleColorChange={handleColorChange}
+      />
       <Background position={initialPosition} />
       <Box color={shape.color} position={shape.position} onMove={handleMove}>
         Drag me!

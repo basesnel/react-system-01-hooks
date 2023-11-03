@@ -3,9 +3,10 @@ import { MdOutlineSelectAll } from 'react-icons/md';
 
 import Background from '../IntendendComponents/Background';
 import Box from '../IntendendComponents/Box';
-import SelectColor from '../IntendendComponents/SelectColor';
+import FlexBox from 'components/FlexBox';
+import DecoratedSelect from 'components/DecoratedSelect';
 
-import { initialPosition } from 'constants';
+import { initialPosition, colorOptions } from 'constants';
 
 export default function ObjectTaskThird() {
   const [shape, updateShape] = useImmer({
@@ -28,11 +29,14 @@ export default function ObjectTaskThird() {
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '300px' }}>
-      <SelectColor
-        color={shape.color}
-        icon={<MdOutlineSelectAll />}
-        onHandleColorChange={handleColorChange}
-      />
+      <FlexBox>
+        <DecoratedSelect
+          selected={shape.color}
+          list={colorOptions}
+          icon={<MdOutlineSelectAll />}
+          onHandleSelect={handleColorChange}
+        />
+      </FlexBox>
       <Background position={initialPosition} />
       <Box color={shape.color} position={shape.position} onMove={handleMove}>
         Drag me!

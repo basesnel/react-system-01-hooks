@@ -14,6 +14,7 @@ import { initialFirstPerson } from './initialFirstPerson';
 import { initialPosition } from './initialPosition';
 import { initialThirdPerson } from './initialThirdPerson';
 import { initialTaskFirstPerson } from './initialTaskFirstPerson';
+import { colorOptions } from './colorOptions';
 
 export {
   sizes,
@@ -32,4 +33,5 @@ export {
   initialPosition,
   initialThirdPerson,
   initialTaskFirstPerson,
+  colorOptions,
 };

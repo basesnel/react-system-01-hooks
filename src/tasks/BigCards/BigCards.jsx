@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { createPortal } from 'react-dom';
 
 import Modal from 'components/Modal';
 import Grid from 'components/Grid';
@@ -25,15 +26,17 @@ const ListItem = ({ item }) => {
       <div className={css.card} onClick={() => setIsModalOpen(true)}>
         <span>{item.preview}</span>
       </div>
-      {isModalOpen && (
-        <Modal
-          url={item.large}
-          onHide={event => {
-            if (event.target === event.currentTarget) setIsModalOpen(false);
-          }}
-          onClose={() => setIsModalOpen(false)}
-        />
-      )}
+      {isModalOpen &&
+        createPortal(
+          <Modal
+            url={item.large}
+            onHide={event => {
+              if (event.target === event.currentTarget) setIsModalOpen(false);
+            }}
+            onClose={() => setIsModalOpen(false)}
+          />,
+          document.body
+        )}
     </Card>
   );
 };

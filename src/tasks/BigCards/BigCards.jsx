@@ -12,9 +12,7 @@ const List = ({ items }) => {
   return (
     <Grid>
       {items.map(item => (
-        <Card>
-          <ListItem key={item.large} item={item} />
-        </Card>
+        <ListItem key={item.large} item={item} />
       ))}
     </Grid>
   );
@@ -23,7 +21,7 @@ const List = ({ items }) => {
 const ListItem = ({ item }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
-    <div>
+    <Card title={item.preview}>
       <div className={css.card} onClick={() => setIsModalOpen(true)}>
         <span>{item.preview}</span>
       </div>
@@ -36,7 +34,7 @@ const ListItem = ({ item }) => {
           onClose={() => setIsModalOpen(false)}
         />
       )}
-    </div>
+    </Card>
   );
 };
 

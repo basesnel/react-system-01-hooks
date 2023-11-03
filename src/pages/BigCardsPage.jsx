@@ -9,7 +9,7 @@ export const BigCardsPage = () => {
     <main>
       <Container>
         <Title level={1} caption="big cards conception" />
-        <Text>BList for big cards</Text>
+        <Text>List for big cards</Text>
       </Container>
       <Container>
         <BigCards />

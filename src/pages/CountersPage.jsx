@@ -8,6 +8,8 @@ import DecoratedButton from 'components/DecoratedButton';
 import Caption from 'components/Caption';
 
 import ButtonCount from 'tasks/ButtonCount';
+import Grid from 'components/Grid';
+import Card from 'components/Card';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -60,98 +62,92 @@ export const CountersPage = () => {
         <Text>Counter hook case.</Text>
       </Container>
       <Container>
-        <Title level={2} caption="counters with own state" />
-        <FlexBox>
-          <ButtonCount />
-          <ButtonCount />
-          <ButtonCount />
-          <ButtonCount />
-          <ButtonCount />
-        </FlexBox>
-      </Container>
-      <Container>
-        <Title level={2} caption="counter with general state" />
-        <FlexBox>
-          <DecoratedButton
-            caption={`Clicked ${count} times`}
-            onClick={handleClick}
-          />
-          <DecoratedButton
-            caption={`Clicked ${count} times`}
-            onClick={handleClick}
-          />
-        </FlexBox>
-      </Container>
-      <Container>
-        <Title level={2} caption="counter a and counter b" />
-        <Text>Counters with useEffect hook case.</Text>
-        <FlexBox>
-          <DecoratedButton
-            caption={`pressed the button ${counterA} times`}
-            onClick={handleCounterAIncrement}
-          />
-          <DecoratedButton
-            caption={`pressed the button ${counterB} times`}
-            onClick={handleCounterBIncrement}
-          />
-        </FlexBox>
-      </Container>
-      <Container>
-        <Title level={2} caption="counter with reducer" />
-        <FlexBox>
-          <DecoratedButton
-            caption={`Decrease ${state.countR}`}
-            onClick={() => dispatch({ type: 'decrement', payload: 1 })}
-          />
-          <DecoratedButton
-            caption={`Increase ${state.countR}`}
-            onClick={() => dispatch({ type: 'increment', payload: 1 })}
-          />
-        </FlexBox>
-      </Container>
-      <Container>
-        <Title
-          level={2}
-          caption="update the same counter multiple times before the next render"
-        />
-        <FlexBox>
-          <DecoratedButton
-            caption="+3"
-            onClick={() => {
-              setNumberA(n => n + 1);
-              setNumberA(n => n + 1);
-              setNumberA(n => n + 1);
-            }}
-          />
-        </FlexBox>
-        <Caption text={`number A: ${numberA.toString()}`} />
-      </Container>
-      <Container>
-        <Title level={2} caption="update state after replacing it" />
-        <FlexBox>
-          <DecoratedButton
-            caption="Increase the number"
-            onClick={() => {
-              setNumberB(numberB + 5);
-              setNumberB(n => n + 1);
-            }}
-          />
-        </FlexBox>
-        <Caption text={`number B: ${numberB.toString()}`} />
-      </Container>
-      <Container>
-        <Title level={2} caption="replace state after updating it" />
-        <FlexBox>
-          <DecoratedButton
-            caption="Increase the number"
-            onClick={() => {
-              setNumberC(numberC + 5);
-              setNumberC(n => n + 1);
-              setNumberC(42);
-            }}
-          />
-        </FlexBox>
-        <Caption text={`number C: ${numberC.toString()}`} />
+        <Grid>
+          <Card title="counters with own state">
+            <FlexBox>
+              <ButtonCount />
+              <ButtonCount />
+              <ButtonCount />
+              <ButtonCount />
+              <ButtonCount />
+            </FlexBox>
+          </Card>
+          <Card title="counter with general state">
+            <FlexBox>
+              <DecoratedButton
+                caption={`Clicked ${count} times`}
+                onClick={handleClick}
+              />
+              <DecoratedButton
+                caption={`Clicked ${count} times`}
+                onClick={handleClick}
+              />
+            </FlexBox>
+          </Card>
+          <Card title="counter a and counter b">
+            <Text>Counters with useEffect hook case.</Text>
+            <FlexBox>
+              <DecoratedButton
+                caption={`pressed the button ${counterA} times`}
+                onClick={handleCounterAIncrement}
+              />
+              <DecoratedButton
+                caption={`pressed the button ${counterB} times`}
+                onClick={handleCounterBIncrement}
+              />
+            </FlexBox>
+          </Card>
+          <Card title="counter with reducer">
+            <FlexBox>
+              <DecoratedButton
+                caption={`Decrease ${state.countR}`}
+                onClick={() => dispatch({ type: 'decrement', payload: 1 })}
+              />
+              <DecoratedButton
+                caption={`Increase ${state.countR}`}
+                onClick={() => dispatch({ type: 'increment', payload: 1 })}
+              />
+            </FlexBox>
+          </Card>
+          <Card title="update the same counter multiple times before the next render">
+            <FlexBox>
+              <DecoratedButton
+                caption="+3"
+                onClick={() => {
+                  setNumberA(n => n + 1);
+                  setNumberA(n => n + 1);
+                  setNumberA(n => n + 1);
+                }}
+              />
+            </FlexBox>
+            <Caption text={`number A: ${numberA.toString()}`} />
+          </Card>
+          <Card title="update state after replacing it">
+            <FlexBox>
+              <DecoratedButton
+                caption="Increase the number"
+                onClick={() => {
+                  setNumberB(numberB + 5);
+                  setNumberB(n => n + 1);
+                }}
+              />
+            </FlexBox>
+            <Caption text={`number B: ${numberB.toString()}`} />
+          </Card>
+          <Card title="replace state after updating it">
+            <FlexBox>
+              <DecoratedButton
+                caption="Increase the number"
+                onClick={() => {
+                  setNumberC(numberC + 5);
+                  setNumberC(n => n + 1);
+                  setNumberC(42);
+                }}
+              />
+            </FlexBox>
+            <Caption text={`number C: ${numberC.toString()}`} />
+          </Card>
+        </Grid>
       </Container>
     </main>
   );

@@ -1,0 +1,7 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+@value item-content from "../ItemText/ItemText.module.css";
+
+.checked {
+  text-decoration: line-through;
+}

@@ -8,11 +8,9 @@ import { FiEdit3 } from 'react-icons/fi';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemLabel from 'components/ItemLabel';
-import ItemText from 'components/ItemText';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 import DecoratedInput from 'components/DecoratedInput';
-
-// import css from './TaskList.module.css';
+import ItemCheckedText from 'components/ItemCheckedText';
 
 export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   return (
@@ -46,38 +44,22 @@ function Task({ todo, onChange, onDelete }) {
           }}
           icon={<FiEdit3 />}
         />
-        {/* <input
-          name={`Todo ${todo.id}`}
-          value={todo.title}
-          onChange={e => {
-            onChange({
-              ...todo,
-              title: e.target.value,
-            });
-          }}
-        /> */}
         <DecoratedIconButton
           icon={<RiSave3Fill />}
           caption="save"
           onClick={() => setIsEditing(false)}
         />
-        {/* <button onClick={() => setIsEditing(false)}>
-          <RiSave3Fill />
-        </button> */}
       </>
     );
   } else {
     todoContent = (
       <>
-        <ItemText content={todo.title} />
+        <ItemCheckedText content={todo.title} checked={todo.done} />
         <DecoratedIconButton
           icon={<RiFileEditFill />}
           caption="edit"
           onClick={() => setIsEditing(true)}
         />
-        {/* <button onClick={() => setIsEditing(true)}>
-          <RiFileEditFill />
-        </button> */}
       </>
     );
   }

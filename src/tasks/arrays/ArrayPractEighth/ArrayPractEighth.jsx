@@ -1,12 +1,12 @@
 import { useImmer } from 'use-immer';
 
-import { initialSevenArtsList } from 'constants';
-
 import Title from 'components/Title';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemLabel from 'components/ItemLabel';
-import ItemText from 'components/ItemText';
+import ItemCheckedText from 'components/ItemCheckedText';
+
+import { initialSevenArtsList } from 'constants';
 
 export default function ArrayPractEighth() {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
@@ -17,19 +17,6 @@ export default function ArrayPractEighth() {
       const artWork = draft.find(a => a.id === id);
       artWork.seen = nextSeen;
     });
-    // setMyList(
-    //   myList.map(artWork => {
-    //     if (artWork.id === artWorkId) {
-    //       return { ...artWork, seen: nextSeen };
-    //     } else {
-    //       return artWork;
-    //     }
-    //   })
-    // );
-    // const myNextList = [...myList];
-    // const artWork = myNextList.find(a => a.id === artWorkId);
-    // artWork.seen = nextSeen;
-    // setMyList(myNextList);
   }
 
   function handleToggleYourList(id, nextSeen) {
@@ -37,19 +24,6 @@ export default function ArrayPractEighth() {
       const artWork = draft.find(a => a.id === id);
       artWork.seen = nextSeen;
     });
-    // setYourList(
-    //   yourList.map(artWork => {
-    //     if (artWork.id === artWorkId) {
-    //       return { ...artWork, seen: nextSeen };
-    //     } else {
-    //       return artWork;
-    //     }
-    //   })
-    // );
-    // const yourNextList = [...yourList];
-    // const artWork = yourNextList.find(a => a.id === artWorkId);
-    // artWork.seen = nextSeen;
-    // setYourList(yourNextList);
   }
 
   return (
@@ -76,7 +50,7 @@ function ItemList({ artWorks, onToggle }) {
                 onToggle(artWork.id, e.target.checked);
               }}
             />
-            <ItemText content={artWork.title} />
+            <ItemCheckedText content={artWork.title} checked={artWork.seen} />
           </ItemLabel>
         </Item>
       ))}

@@ -4,7 +4,7 @@ import Title from 'components/Title';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemLabel from 'components/ItemLabel';
-import ItemText from 'components/ItemText';
+import ItemCheckedText from 'components/ItemCheckedText/ItemCheckedText';
 
 import { initialSevenArtsList } from 'constants';
 
@@ -22,10 +22,6 @@ export default function ArrayPractSeventh() {
         }
       })
     );
-    // const myNextList = [...myList];
-    // const artWork = myNextList.find(a => a.id === artWorkId);
-    // artWork.seen = nextSeen;
-    // setMyList(myNextList);
   }
 
   function handleToggleYourList(artWorkId, nextSeen) {
@@ -38,10 +34,6 @@ export default function ArrayPractSeventh() {
         }
       })
     );
-    // const yourNextList = [...yourList];
-    // const artWork = yourNextList.find(a => a.id === artWorkId);
-    // artWork.seen = nextSeen;
-    // setYourList(yourNextList);
   }
 
   return (
@@ -68,7 +60,7 @@ function ItemList({ artWorks, onToggle }) {
                 onToggle(artWork.id, e.target.checked);
               }}
             />
-            <ItemText content={artWork.title} />
+            <ItemCheckedText content={artWork.title} checked={artWork.seen} />
           </ItemLabel>
         </Item>
       ))}

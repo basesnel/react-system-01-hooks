@@ -6,6 +6,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
+import HideOverflow from 'components/HideOverflow';
 
 function createInitialTodos() {
   const initialTodos = [];
@@ -24,15 +25,6 @@ export default function LazyExample() {
 
   return (
     <>
-      {/* <input value={text} onChange={e => setText(e.target.value)} />
-      <button
-        onClick={() => {
-          setText('');
-          setTodos([{ id: todos.length, text: text }, ...todos]);
-        }}
-      >
-        Add
-      </button> */}
       <DecoratedMiniForm
         onFormSubmit={text => {
           setText(text);
@@ -42,15 +34,17 @@ export default function LazyExample() {
         filling={`Add element ${text}`}
         icon={<RiAddCircleFill />}
       />
-      <List message="Please, add an element to list.">
-        {todos.map(({ id, text }) => (
-          <Item key={id}>
-            <ItemFlex>
-              <ItemText content={text} />
-            </ItemFlex>
-          </Item>
-        ))}
-      </List>
+      <HideOverflow>
+        <List message="Please, add an element to list.">
+          {todos.map(({ id, text }) => (
+            <Item key={id}>
+              <ItemFlex>
+                <ItemText content={text} />
+              </ItemFlex>
+            </Item>
+          ))}
+        </List>
+      </HideOverflow>
     </>
   );
 }

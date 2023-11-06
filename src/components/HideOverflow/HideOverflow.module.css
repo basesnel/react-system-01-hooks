@@ -1,0 +1,8 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.hide-overflow {
+  height: 300px;
+  padding: 4px;
+  overflow: auto;
+}

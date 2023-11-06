@@ -4,6 +4,7 @@ import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import LazyExample from 'tasks/LazyInitState/LazyExample';
+import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
 
 export const LazyInitStatePage = () => {
   return (
@@ -18,7 +19,7 @@ export const LazyInitStatePage = () => {
             <LazyExample />
           </Card>
           <Card title="Passing the initial state directly">
-            <Text>No lazy example</Text>
+            <NoLazyExample />
           </Card>
         </Grid>
       </Container>

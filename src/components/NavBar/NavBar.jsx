@@ -21,9 +21,9 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/counters"
+            to="/simple-states"
           >
-            Counters
+            Simple states
           </NavLink>
         </li>
         <li className={css.item}>
@@ -124,16 +124,6 @@ export default function NavBar() {
             to="/arrays"
           >
             Arrays
-          </NavLink>
-        </li>
-        <li className={css.item}>
-          <NavLink
-            className={({ isActive }) =>
-              isActive ? css.navlinkactive : css.navlink
-            }
-            to="/lazy-initial"
-          >
-            Lazy initial
           </NavLink>
         </li>
       </ul>

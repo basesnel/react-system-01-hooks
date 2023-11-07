@@ -6,10 +6,12 @@ import Text from 'components/Text';
 import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Caption from 'components/Caption';
-
-import ButtonCount from 'tasks/ButtonCount';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+
+import ButtonCount from 'tasks/ButtonCount';
+import LazyExample from 'tasks/LazyInitState/LazyExample';
+import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -25,7 +27,7 @@ const countReducer = (state, action) => {
   }
 };
 
-export const CountersPage = () => {
+export const SimpleStatesPage = () => {
   const [count, setCount] = useState(0);
 
   const [state, dispatch] = useReducer(countReducer, { countR: 0 });
@@ -58,7 +60,7 @@ export const CountersPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="counters" />
+        <Title level={1} caption="examples of simple states" />
         <Text>Counter hook case.</Text>
       </Container>
       <Container>
@@ -146,6 +148,12 @@ export const CountersPage = () => {
               />
             </FlexBox>
             <Caption text={`number C: ${numberC.toString()}`} />
+          </Card>
+          <Card title="Passing the initializer function">
+            <LazyExample />
+          </Card>
+          <Card title="Passing the initial state directly">
+            <NoLazyExample />
           </Card>
         </Grid>
       </Container>

@@ -13,6 +13,7 @@ import ButtonCount from 'tasks/ButtonCount';
 import LazyExample from 'tasks/LazyInitState/LazyExample';
 import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
 import ResettingKey from 'tasks/ResettingKey';
+import StoringPrevState from 'tasks/StoringPrevState';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -158,6 +159,9 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="Resetting state with a key">
             <ResettingKey />
+          </Card>
+          <Card title="Storing information from previous renders">
+            <StoringPrevState />
           </Card>
         </Grid>
       </Container>

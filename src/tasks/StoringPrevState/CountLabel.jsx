@@ -14,7 +14,7 @@ export default function CountLabel({ count }) {
 
   return (
     <>
-      <Title caption={`${count}`} level={3} />
+      <Title level={3} caption={count} />
       {trend && <Text>The count is {trend}</Text>}
     </>
   );

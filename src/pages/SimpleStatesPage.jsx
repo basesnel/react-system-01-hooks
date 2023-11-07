@@ -12,6 +12,7 @@ import Card from 'components/Card';
 import ButtonCount from 'tasks/ButtonCount';
 import LazyExample from 'tasks/LazyInitState/LazyExample';
 import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
+import ResettingKey from 'tasks/ResettingKey';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -154,6 +155,9 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="Passing the initial state directly">
             <NoLazyExample />
+          </Card>
+          <Card title="Resetting state with a key">
+            <ResettingKey />
           </Card>
         </Grid>
       </Container>

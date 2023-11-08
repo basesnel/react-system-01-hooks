@@ -1,1 +1,1 @@
-@value wrap-input, input, icon from "../DecoratedInput/DecoratedInput.module.css";
+@value field, label, wrap-input, input, icon from "../DecoratedInput/DecoratedInput.module.css";

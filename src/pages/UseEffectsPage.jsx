@@ -8,6 +8,7 @@ import Text from 'components/Text';
 // import Caption from 'components/Caption';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import ChatServer from 'tasks/useEffectsCases/ChatServer';
 
 export const UseEffectsPage = () => {
   return (
@@ -19,7 +20,7 @@ export const UseEffectsPage = () => {
       <Container>
         <Grid>
           <Card title="connecting to chat server">
-            <Text>First case</Text>
+            <ChatServer />
           </Card>
           <Card title="listening to global browser event">
             <Text>Second case</Text>

@@ -16,6 +16,7 @@ import { NotFoundPage } from '../pages/NotFoundPage';
 import { QueueingPage } from '../pages/QueueingPage';
 import { ObjectInStatePage } from '../pages/ObjectInStatePage';
 import { ArrayInStatePage } from '../pages/ArrayInStatePage';
+import { UseEffectsPage } from '../pages/UseEffectsPage';
 
 import AppBar from './AppBar';
 
@@ -37,6 +38,7 @@ function App() {
         <Route path="/queueing" element={<QueueingPage />} />
         <Route path="/objects" element={<ObjectInStatePage />} />
         <Route path="/arrays" element={<ArrayInStatePage />} />
+        <Route path="/use-effects" element={<UseEffectsPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

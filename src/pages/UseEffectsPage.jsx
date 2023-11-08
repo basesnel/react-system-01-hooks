@@ -9,6 +9,7 @@ import Text from 'components/Text';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import ChatServer from 'tasks/useEffectsCases/ChatServer';
+import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
 
 export const UseEffectsPage = () => {
   return (
@@ -23,7 +24,7 @@ export const UseEffectsPage = () => {
             <ChatServer />
           </Card>
           <Card title="listening to global browser event">
-            <Text>Second case</Text>
+            <ListeningGlobalEvent />
           </Card>
           <Card title="triggering an animation">
             <Text>Third case</Text>

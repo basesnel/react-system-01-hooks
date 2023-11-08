@@ -12,4 +12,5 @@ export default function Canvas({ children, onPointerMove, ...delegated }) {
 
 Canvas.propTypes = {
   children: PropTypes.any.isRequired,
+  onPointerMove: PropTypes.func.isRequired,
 };

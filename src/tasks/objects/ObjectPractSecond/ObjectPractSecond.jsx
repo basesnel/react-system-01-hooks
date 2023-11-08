@@ -8,7 +8,6 @@ export default function ObjectPractSecond() {
   const [position, setPosition] = useState(initialPosition);
 
   const moveToCursor = e => {
-    // const parent = document.getElementById('parent');
     const parent = document.querySelector('[data-box]');
     setPosition({
       x: e.clientX - parent.getBoundingClientRect().x,

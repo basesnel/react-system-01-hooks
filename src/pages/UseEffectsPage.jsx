@@ -10,6 +10,7 @@ import Grid from 'components/Grid';
 import Card from 'components/Card';
 import ChatServer from 'tasks/useEffectsCases/ChatServer';
 import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
+import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
 
 export const UseEffectsPage = () => {
   return (
@@ -27,7 +28,7 @@ export const UseEffectsPage = () => {
             <ListeningGlobalEvent />
           </Card>
           <Card title="triggering an animation">
-            <Text>Third case</Text>
+            <TriggeringAnimation />
           </Card>
         </Grid>
       </Container>

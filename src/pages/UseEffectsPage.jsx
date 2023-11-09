@@ -12,6 +12,7 @@ import ChatServer from 'tasks/useEffectsCases/ChatServer';
 import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
 import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
 import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/ControllingModalDialog';
+import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
 
 export const UseEffectsPage = () => {
   return (
@@ -33,6 +34,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="controlling a modal dialog">
             <ControllingModalDialog />
+          </Card>
+          <Card title="tracking element visibility">
+            <TrackingElementVisibility />
           </Card>
         </Grid>
       </Container>

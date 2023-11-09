@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { FadeInAnimation } from './animation';
 
 import DecoratedButton from 'components/DecoratedButton';
+import FlexBox from 'components/FlexBox';
 
 function Welcome() {
   const ref = useRef(null);
@@ -37,11 +38,12 @@ export default function TriggeringAnimation() {
 
   return (
     <>
-      <DecoratedButton
-        caption={show ? 'Remove' : 'Show'}
-        onClick={() => setShow(!show)}
-      />
-      <hr />
+      <FlexBox>
+        <DecoratedButton
+          caption={show ? 'Remove' : 'Show'}
+          onClick={() => setShow(!show)}
+        />
+      </FlexBox>
       {show && <Welcome />}
     </>
   );

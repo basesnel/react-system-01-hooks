@@ -11,6 +11,7 @@ import Card from 'components/Card';
 import ChatServer from 'tasks/useEffectsCases/ChatServer';
 import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
 import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
+import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/ControllingModalDialog';
 
 export const UseEffectsPage = () => {
   return (
@@ -29,6 +30,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="triggering an animation">
             <TriggeringAnimation />
+          </Card>
+          <Card title="controlling a modal dialog">
+            <ControllingModalDialog />
           </Card>
         </Grid>
       </Container>

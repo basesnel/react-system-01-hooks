@@ -14,6 +14,7 @@ import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
 import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/ControllingModalDialog';
 import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
 import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
+import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
 
 export const UseEffectsPage = () => {
   return (
@@ -41,6 +42,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="custom usechatroom hook">
             <CustomUseChatRoom />
+          </Card>
+          <Card title="custom usecwindowlistener hook">
+            <CustomUseWindowListener />
           </Card>
         </Grid>
       </Container>

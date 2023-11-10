@@ -5,18 +5,19 @@ export default function ListeningGlobalEvent() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
+    const canvas = document.querySelector('[data-box]');
+
     function handleMove(e) {
-      const parent = document.querySelector('[data-box]');
       setPosition({
-        x: e.clientX - parent.getBoundingClientRect().x,
-        y: e.clientY - parent.getBoundingClientRect().y,
+        x: e.clientX - canvas.getBoundingClientRect().x,
+        y: e.clientY - canvas.getBoundingClientRect().y,
       });
     }
 
-    window.addEventListener('pointermove', handleMove);
+    canvas.addEventListener('pointermove', handleMove);
 
     return () => {
-      window.removeEventListener('pointermove', handleMove);
+      canvas.removeEventListener('pointermove', handleMove);
     };
   }, []);
 

@@ -3,9 +3,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Text from 'components/Text';
-// import FlexBox from 'components/FlexBox';
-// import DecoratedButton from 'components/DecoratedButton';
-// import Caption from 'components/Caption';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import ChatServer from 'tasks/useEffectsCases/ChatServer';

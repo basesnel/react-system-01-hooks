@@ -1,5 +1,9 @@
 import HideOverflow from 'components/HideOverflow';
 import Box from './Box';
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText';
 
 export default function TrackingElementVisibility() {
   return (
@@ -17,8 +21,14 @@ function LongSection() {
   const items = [];
 
   for (let i = 0; i < 50; i++) {
-    items.push(<li key={i}>Item #{i} (keep scrolling)</li>);
+    items.push(
+      <Item key={i}>
+        <ItemFlex>
+          <ItemText content="Item #{i} (keep scrolling)" />
+        </ItemFlex>
+      </Item>
+    );
   }
 
-  return <ul>{items}</ul>;
+  return <List message="No element is in the list...">{items}</List>;
 }

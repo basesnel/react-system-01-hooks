@@ -11,9 +11,21 @@ export default function Box() {
         if (entry.isIntersecting) {
           div.parentElement.style.backgroundColor = 'black';
           div.parentElement.style.color = 'white';
+          for (const child of div.parentElement.querySelectorAll(
+            'li div, span'
+          )) {
+            child.style.backgroundColor = 'black';
+            child.style.color = 'white';
+          }
         } else {
           div.parentElement.style.backgroundColor = 'white';
           div.parentElement.style.color = 'black';
+          for (const child of div.parentElement.querySelectorAll(
+            'li div, span'
+          )) {
+            child.style.backgroundColor = null;
+            child.style.color = null;
+          }
         }
       },
       {

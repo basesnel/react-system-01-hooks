@@ -35,7 +35,7 @@ export default function NoLazyExample() {
         icon={<RiAddCircleFill />}
       />
       <HideOverflow>
-        <List message="Please, add an element to list.">
+        <List message="No element is in the list...">
           {todos.map(({ id, text }) => (
             <Item key={id}>
               <ItemFlex>

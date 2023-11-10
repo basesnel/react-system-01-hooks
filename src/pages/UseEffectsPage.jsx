@@ -13,6 +13,7 @@ import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
 import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
 import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/ControllingModalDialog';
 import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
+import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
 
 export const UseEffectsPage = () => {
   return (
@@ -37,6 +38,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="tracking element visibility">
             <TrackingElementVisibility />
+          </Card>
+          <Card title="custom usechatroom hook">
+            <CustomUseChatRoom />
           </Card>
         </Grid>
       </Container>

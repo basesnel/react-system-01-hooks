@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { createConnection } from './chat';
+import { createConnection } from 'constants';
 
 export function useChatRoom({ serverUrl, roomId }) {
   useEffect(() => {

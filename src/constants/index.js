@@ -15,6 +15,8 @@ import { initialPosition } from './initialPosition';
 import { initialThirdPerson } from './initialThirdPerson';
 import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 import { colorOptions } from './colorOptions';
+import { chatRoom } from './chatRoom';
+import { createConnection } from './chat';
 
 export {
   sizes,
@@ -34,4 +36,6 @@ export {
   initialThirdPerson,
   initialTaskFirstPerson,
   colorOptions,
+  chatRoom,
+  createConnection,
 };

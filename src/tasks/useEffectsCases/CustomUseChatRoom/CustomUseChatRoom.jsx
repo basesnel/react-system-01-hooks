@@ -8,7 +8,7 @@ import DecoratedSelect from 'components/DecoratedSelect';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
-const chatRoom = ['general', 'travel', 'music'];
+import { chatRoom } from 'constants';
 
 function ChatRoom({ roomId }) {
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');

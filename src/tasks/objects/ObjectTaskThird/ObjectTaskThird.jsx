@@ -7,6 +7,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedSelect from 'components/DecoratedSelect';
 
 import { initialPosition, colorOptions } from 'constants';
+import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
 
 export default function ObjectTaskThird() {
   const [shape, updateShape] = useImmer({
@@ -28,7 +29,7 @@ export default function ObjectTaskThird() {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '309px' }}>
+    <DecoratedWrapper>
       <FlexBox>
         <DecoratedSelect
           selectName="color"
@@ -42,6 +43,6 @@ export default function ObjectTaskThird() {
       <Box color={shape.color} position={shape.position} onMove={handleMove}>
         Drag me!
       </Box>
-    </div>
+    </DecoratedWrapper>
   );
 }

@@ -1,4 +1,6 @@
 import { useRef, useEffect } from 'react';
+import PropTypes from 'prop-types';
+
 import { MapWidget } from './map-widget';
 
 export default function Map({ zoomLevel }) {
@@ -16,3 +18,7 @@ export default function Map({ zoomLevel }) {
 
   return <div style={{ width: '100%', height: 250 }} ref={containerRef} />;
 }
+
+Map.propTypes = {
+  zoomLevel: PropTypes.number.isRequired,
+};

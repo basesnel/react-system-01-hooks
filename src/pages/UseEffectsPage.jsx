@@ -12,6 +12,7 @@ import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/
 import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
 import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
 import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
+import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
 
 export const UseEffectsPage = () => {
   return (
@@ -42,6 +43,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="custom usecwindowlistener hook">
             <CustomUseWindowListener />
+          </Card>
+          <Card title="custom useintersectionobserver hook">
+            <CustomTrackingVisibility />
           </Card>
         </Grid>
       </Container>

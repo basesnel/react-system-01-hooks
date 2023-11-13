@@ -13,6 +13,7 @@ import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisi
 import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
 import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
 import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
+import MapWidget from 'tasks/useEffectsCases/MapWidget';
 
 export const UseEffectsPage = () => {
   return (
@@ -46,6 +47,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="custom useintersectionobserver hook">
             <CustomTrackingVisibility />
+          </Card>
+          <Card title="controlling  a non-react widget">
+            <MapWidget />
           </Card>
         </Grid>
       </Container>

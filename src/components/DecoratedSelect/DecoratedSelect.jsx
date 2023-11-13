@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import css from './DecoratedSelect.module.css';
 
 export default function DecoratedSelect({
-  inputLabel,
+  selectLabel,
+  selectName,
   selected,
   list,
   icon,
@@ -11,9 +12,10 @@ export default function DecoratedSelect({
 }) {
   return (
     <label className={css.field}>
-      {inputLabel && <span className={css.label}>{inputLabel}</span>}
+      {selectLabel && <span className={css.label}>{selectLabel}</span>}
       <div className={css['wrap-input']}>
         <select
+          name={selectName}
           value={selected}
           onChange={onHandleSelect}
           className={css.input}
@@ -31,7 +33,8 @@ export default function DecoratedSelect({
 }
 
 DecoratedSelect.propTypes = {
-  inputLabel: PropTypes.string,
+  selectLabel: PropTypes.string,
+  selectName: PropTypes.string.isRequired,
   selected: PropTypes.string.isRequired,
   list: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,

@@ -45,7 +45,8 @@ export default function ChatServer() {
     <>
       <FlexBox align="flex-end">
         <DecoratedSelect
-          inputLabel="Choose the chat room: "
+          selectLabel="Choose the chat room: "
+          selectName="Chat"
           selected={roomId}
           list={chatRoom}
           icon={<MdChat />}

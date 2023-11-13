@@ -31,9 +31,10 @@ export default function ObjectTaskSecond() {
   };
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '300px' }}>
+    <div style={{ position: 'relative', width: '100%', height: '309px' }}>
       <FlexBox>
         <DecoratedSelect
+          selectName="Color"
           selected={shape.color}
           list={colorOptions}
           icon={<MdOutlineSelectAll />}

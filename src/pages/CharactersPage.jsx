@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import Characters from 'tasks/Characters';
 
@@ -9,7 +9,7 @@ export const CharactersPage = () => {
     <main>
       <Container>
         <Title level={1} caption="characters" />
-        <Text>Character list case</Text>
+        <Paragraph>Character list case</Paragraph>
       </Container>
       <Container>
         <Characters />

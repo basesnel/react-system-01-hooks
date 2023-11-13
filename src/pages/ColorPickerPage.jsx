@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import ColorPicker from 'tasks/ColorPicker';
 
@@ -11,7 +11,7 @@ export const ColorPickerPage = () => {
     <main>
       <Container>
         <Title level={1} caption="color picker" />
-        <Text>Color picker hook case.</Text>
+        <Paragraph>Color picker hook case.</Paragraph>
       </Container>
       <Container>
         <Title level={2} caption="color picker" />

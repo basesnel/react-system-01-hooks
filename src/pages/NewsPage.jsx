@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import VisuallyHidden from 'components/VisuallyHidden';
 
 import News from 'tasks/News';
@@ -11,7 +11,7 @@ export const NewsPage = () => {
       <VisuallyHidden>
         <Container>
           <Title level={1} caption="news" />
-          <Text>News hook case.</Text>
+          <Paragraph>News hook case.</Paragraph>
         </Container>
       </VisuallyHidden>
       <Container>

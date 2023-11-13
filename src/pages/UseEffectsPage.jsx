@@ -2,7 +2,7 @@
 
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 import ChatServer from 'tasks/useEffectsCases/ChatServer';
@@ -20,7 +20,7 @@ export const UseEffectsPage = () => {
     <main>
       <Container>
         <Title level={1} caption="useeffect cases" />
-        <Text>useEffect hook cases.</Text>
+        <Paragraph>useEffect hook cases.</Paragraph>
       </Container>
       <Container>
         <Grid>

@@ -6,7 +6,7 @@ import { RiZoomOutFill } from 'react-icons/ri';
 import Map from './Map';
 
 import FlexBox from 'components/FlexBox';
-import Text from 'components/Text';
+import Span from 'components/Span';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
 export default function MapWidget() {
@@ -14,7 +14,7 @@ export default function MapWidget() {
   return (
     <>
       <FlexBox>
-        <Text>Zuum level: {zoomLevel}x</Text>
+        <Span>Zuum level: {zoomLevel}x</Span>
         <DecoratedIconButton
           icon={<RiZoomInFill />}
           caption="add"

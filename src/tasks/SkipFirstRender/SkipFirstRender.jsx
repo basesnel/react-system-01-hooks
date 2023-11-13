@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from 'react';
 import DecoratedButton from 'components/DecoratedButton';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 export default function SkipFirstRender() {
   const [count, setCount] = useState(0);
@@ -21,9 +21,9 @@ export default function SkipFirstRender() {
           setCount(c => c + 1);
         }}
       />
-      <Text>
+      <Paragraph>
         <code>useEffect</code> of this component not run on the first render.
-      </Text>
+      </Paragraph>
     </div>
   );
 }

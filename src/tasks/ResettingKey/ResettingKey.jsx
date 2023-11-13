@@ -4,7 +4,7 @@ import { FiEdit3 } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import DecoratedInput from 'components/DecoratedInput';
 
 export default function ResettingKey() {
@@ -34,7 +34,7 @@ export default function ResettingKey() {
           handleChange={e => setName(e.target.value)}
           icon={<FiEdit3 />}
         />
-        <Text>Hello, {name}.</Text>
+        <Paragraph>Hello, {name}.</Paragraph>
       </>
     );
   }

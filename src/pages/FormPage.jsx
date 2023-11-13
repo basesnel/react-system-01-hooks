@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import SignupForm from 'tasks/SignupForm';
 
@@ -9,7 +9,7 @@ export const FormPage = () => {
     <main>
       <Container>
         <Title level={1} caption="form" />
-        <Text>Form hook case.</Text>
+        <Paragraph>Form hook case.</Paragraph>
       </Container>
       <Container>
         <Title level={2} caption="form: first case" />

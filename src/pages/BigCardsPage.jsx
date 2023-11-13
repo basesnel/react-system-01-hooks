@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import BigCards from 'tasks/BigCards';
 
@@ -9,7 +9,7 @@ export const BigCardsPage = () => {
     <main>
       <Container>
         <Title level={1} caption="big cards conception" />
-        <Text>List for big cards</Text>
+        <Paragraph>List for big cards</Paragraph>
       </Container>
       <Container>
         <BigCards />

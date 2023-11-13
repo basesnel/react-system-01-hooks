@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import Clock from 'tasks/Clock';
 
@@ -9,7 +9,7 @@ export const ClockPage = () => {
     <main>
       <Container>
         <Title level={1} caption="clock" />
-        <Text>Clock hook case.</Text>
+        <Paragraph>Clock hook case.</Paragraph>
       </Container>
       <Container>
         <Title level={2} caption="clock - first case" />

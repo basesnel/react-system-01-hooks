@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
@@ -17,7 +17,7 @@ export const ObjectInStatePage = () => {
     <main>
       <Container>
         <Title level={1} caption="object in state" />
-        <Text>Object in state of React-component case.</Text>
+        <Paragraph>Object in state of React-component case.</Paragraph>
       </Container>
       <Container>
         <Grid>

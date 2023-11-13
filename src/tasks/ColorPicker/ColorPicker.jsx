@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 
 import css from './ColorPicker.module.css';
@@ -19,9 +19,9 @@ export default function ColorPicker({ options }) {
 
   return (
     <div className={css.options}>
-      <Text>
+      <Paragraph>
         Color is selected: <span style={{ color: color }}>{label}</span>
-      </Text>
+      </Paragraph>
       <FlexBox>
         {options.map(({ label, color }, index) => (
           <button

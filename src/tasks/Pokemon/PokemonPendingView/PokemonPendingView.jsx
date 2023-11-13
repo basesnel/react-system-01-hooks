@@ -4,7 +4,7 @@ import { ImSpinner } from 'react-icons/im';
 
 import pendingImage from 'assets/images/pending.png';
 import PokemonDataView from '../PokemonDataView';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import css from './PokemonPendingView.module.css';
 
@@ -24,7 +24,8 @@ export default function PokemonPendingView({ pokemonName }) {
   return (
     <div className={css.box}>
       <div className={css.spinner}>
-        <ImSpinner className={css['icon-spin']} /> <Text>Loading...</Text>
+        <ImSpinner className={css['icon-spin']} />{' '}
+        <Paragraph>Loading...</Paragraph>
       </div>
       <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>

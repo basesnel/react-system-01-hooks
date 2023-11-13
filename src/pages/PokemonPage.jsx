@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import VisuallyHidden from 'components/VisuallyHidden';
 
 import Pokemon from 'tasks/Pokemon';
@@ -11,7 +11,7 @@ export const PokemonPage = () => {
       <VisuallyHidden>
         <Container>
           <Title level={1} caption="pokemon API" />
-          <Text>Pokemon rest API hook case.</Text>
+          <Paragraph>Pokemon rest API hook case.</Paragraph>
         </Container>
       </VisuallyHidden>
       <Container>

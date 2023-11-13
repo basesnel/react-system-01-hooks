@@ -2,7 +2,7 @@ import { useEffect, useState, useReducer } from 'react';
 
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Caption from 'components/Caption';
@@ -63,7 +63,7 @@ export const SimpleStatesPage = () => {
     <main>
       <Container>
         <Title level={1} caption="examples of simple states" />
-        <Text>Counter hook case.</Text>
+        <Paragraph>Counter hook case.</Paragraph>
       </Container>
       <Container>
         <Grid>
@@ -89,7 +89,7 @@ export const SimpleStatesPage = () => {
             </FlexBox>
           </Card>
           <Card title="counter a and counter b">
-            <Text>Counters with useEffect hook case.</Text>
+            <Paragraph>Counters with useEffect hook case.</Paragraph>
             <FlexBox>
               <DecoratedButton
                 caption={`pressed the button ${counterA} times`}

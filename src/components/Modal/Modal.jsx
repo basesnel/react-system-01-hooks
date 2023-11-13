@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { MdClose } from 'react-icons/md';
 
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 import css from './Modal.module.css';
 
@@ -10,8 +10,8 @@ export default function Modal({ url, onHide, onClose }) {
   return (
     <div className={css.backdrop} onClick={onHide}>
       <div className={css.modal}>
-        <Text>Modal</Text>
-        <Text>url: {url}</Text>
+        <Paragraph>Modal</Paragraph>
+        <Paragraph>url: {url}</Paragraph>
         <button className={css['modal-close']} onClick={onClose}>
           <MdClose className={css.icon} />
         </button>

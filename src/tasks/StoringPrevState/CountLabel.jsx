@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 
 export default function CountLabel({ count }) {
   const [prevCount, setPrevCount] = useState(count);
@@ -15,7 +15,7 @@ export default function CountLabel({ count }) {
   return (
     <>
       <Title level={3} caption={count} />
-      {trend && <Text>The count is {trend}</Text>}
+      {trend && <Paragraph>The count is {trend}</Paragraph>}
     </>
   );
 }

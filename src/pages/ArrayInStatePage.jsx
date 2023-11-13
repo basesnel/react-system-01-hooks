@@ -1,6 +1,6 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
-import Text from 'components/Text';
+import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
@@ -22,7 +22,7 @@ export const ArrayInStatePage = () => {
     <main>
       <Container>
         <Title level={1} caption="array in state" />
-        <Text>Array in state of React-component case.</Text>
+        <Paragraph>Array in state of React-component case.</Paragraph>
       </Container>
       <Container>
         <Grid>

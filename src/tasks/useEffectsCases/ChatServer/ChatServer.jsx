@@ -23,7 +23,7 @@ function ChatRoom({ roomId }) {
   }, [roomId, serverUrl]);
 
   return (
-    <>
+    <FlexBox>
       <DecoratedInput
         inputType="text"
         inputName="chatroom"
@@ -33,7 +33,7 @@ function ChatRoom({ roomId }) {
         icon={<MdChat />}
       />
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
-    </>
+    </FlexBox>
   );
 }
 

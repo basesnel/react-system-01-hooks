@@ -14,6 +14,7 @@ import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
 import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
 import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
 import MapWidget from 'tasks/useEffectsCases/MapWidget';
+import FetchingData from 'tasks/useEffectsCases/FetchingData';
 
 export const UseEffectsPage = () => {
   return (
@@ -50,6 +51,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="controlling  a non-react widget">
             <MapWidget />
+          </Card>
+          <Card title="fetching data with effects">
+            <FetchingData />
           </Card>
         </Grid>
       </Container>

@@ -14,16 +14,14 @@ export default function FetchingData() {
   const [bio, setBio] = useState(null);
 
   useEffect(() => {
-    async function startFetching() {
-      setBio(null);
-      const result = await fetchBio(person);
+    let ignore = false;
+
+    setBio(null);
+    fetchBio(person).then(result => {
       if (!ignore) {
         setBio(result);
       }
-    }
-
-    let ignore = false;
-    startFetching();
+    });
 
     return () => {
       ignore = true;

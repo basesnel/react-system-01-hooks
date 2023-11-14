@@ -15,6 +15,7 @@ import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListen
 import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
 import MapWidget from 'tasks/useEffectsCases/MapWidget';
 import FetchingData from 'tasks/useEffectsCases/FetchingData';
+import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
 
 export const UseEffectsPage = () => {
   return (
@@ -54,6 +55,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="fetching data with effects">
             <FetchingData />
+          </Card>
+          <Card title="passing a dependancy array">
+            <PassingDepArray />
           </Card>
         </Grid>
       </Container>

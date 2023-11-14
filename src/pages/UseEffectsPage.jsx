@@ -18,6 +18,7 @@ import FetchingData from 'tasks/useEffectsCases/FetchingData';
 import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
 import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
 import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
+import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
 
 export const UseEffectsPage = () => {
   return (
@@ -66,6 +67,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="passing no dependancy array at all">
             <PassingNoDepArray />
+          </Card>
+          <Card title="updating state based on previous state from an effect">
+            <UpdatingBasedOnPrev />
           </Card>
         </Grid>
       </Container>

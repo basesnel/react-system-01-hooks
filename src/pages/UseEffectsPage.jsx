@@ -17,6 +17,7 @@ import MapWidget from 'tasks/useEffectsCases/MapWidget';
 import FetchingData from 'tasks/useEffectsCases/FetchingData';
 import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
 import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
+import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
 
 export const UseEffectsPage = () => {
   return (
@@ -62,6 +63,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="passing an empty dependancy array">
             <PassingEmptyDepArray />
+          </Card>
+          <Card title="passing no dependancy array at all">
+            <PassingNoDepArray />
           </Card>
         </Grid>
       </Container>

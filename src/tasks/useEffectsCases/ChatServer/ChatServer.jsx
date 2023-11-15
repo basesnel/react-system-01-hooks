@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
 import { createConnection } from 'constants';
@@ -63,3 +64,7 @@ export default function ChatServer() {
     </>
   );
 }
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+};

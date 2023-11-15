@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
 import { FiMessageCircle } from 'react-icons/fi';
@@ -72,3 +73,7 @@ export default function PassingNoDepArray() {
     </>
   );
 }
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+};

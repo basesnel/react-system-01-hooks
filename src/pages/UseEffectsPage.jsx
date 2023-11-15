@@ -1,5 +1,3 @@
-// import { useEffect, useState } from 'react';
-
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';

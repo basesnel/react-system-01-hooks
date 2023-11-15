@@ -17,6 +17,7 @@ import { QueueingPage } from '../pages/QueueingPage';
 import { ObjectInStatePage } from '../pages/ObjectInStatePage';
 import { ArrayInStatePage } from '../pages/ArrayInStatePage';
 import { UseEffectsPage } from '../pages/UseEffectsPage';
+import { EscapeHatchesPage } from 'pages/EscapeHatchesPage';
 
 import AppBar from './AppBar';
 
@@ -39,6 +40,7 @@ function App() {
         <Route path="/objects" element={<ObjectInStatePage />} />
         <Route path="/arrays" element={<ArrayInStatePage />} />
         <Route path="/use-effects" element={<UseEffectsPage />} />
+        <Route path="/escape-hatches" element={<EscapeHatchesPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

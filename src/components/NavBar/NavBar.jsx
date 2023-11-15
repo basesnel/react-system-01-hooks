@@ -136,6 +136,16 @@ export default function NavBar() {
             useEffects cases
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/escape-hatches"
+          >
+            Escape hatches
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

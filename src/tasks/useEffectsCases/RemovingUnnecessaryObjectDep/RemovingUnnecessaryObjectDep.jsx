@@ -1,50 +1,54 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
-import { FiServer } from 'react-icons/fi';
+import { FiMessageCircle } from 'react-icons/fi';
 import { createConnection } from 'constants';
 
 import DecoratedInput from 'components/DecoratedInput';
 import Title from 'components/Title';
 import DecoratedSelect from 'components/DecoratedSelect';
-import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
 import { chatRoom } from 'constants';
 
+const serverUrl = 'https://localhost:1234';
+
 function ChatRoom({ roomId }) {
-  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
-    const connection = createConnection(serverUrl, roomId);
+    const options = {
+      serverUrl: serverUrl,
+      roomId: roomId,
+    };
+
+    const connection = createConnection(options.serverUrl, options.roomId);
     connection.connect();
 
-    return () => {
-      connection.disconnect();
-    };
-  }, [roomId, serverUrl]);
+    return () => connection.disconnect();
+  }, [roomId]);
 
   return (
     <FlexBox>
+      <Title level={3} caption={`Welcome to the ${roomId} room!`} />
       <DecoratedInput
         inputType="text"
-        inputName="chatroom"
-        inputValue={serverUrl}
-        inputLabel="Server URL: "
-        handleChange={e => setServerUrl(e.target.value)}
-        icon={<FiServer />}
+        inputName="message"
+        inputValue={message}
+        inputLabel="Your message:"
+        handleChange={e => setMessage(e.target.value)}
+        icon={<FiMessageCircle />}
       />
-      <Title level={3} caption={`Welcome to the ${roomId} room!`} />
     </FlexBox>
   );
 }
 
-export default function ChatServer() {
+export default function RemovingUnnecessaryObjectDep() {
   const [roomId, setRoomId] = useState('general');
-  const [show, setShow] = useState(false);
 
   return (
     <>
-      <FlexBox align="flex-end">
+      <FlexBox>
         <DecoratedSelect
           selectLabel="Choose the chat room: "
           selectName="Chat"
@@ -53,13 +57,13 @@ export default function ChatServer() {
           icon={<MdChat />}
           onHandleSelect={e => setRoomId(e.target.value)}
         />
-        <DecoratedButton
-          onClick={() => setShow(!show)}
-          caption={show ? 'Close chat' : 'Open Chat'}
-        />
       </FlexBox>
-      {show && <hr />}
-      {show && <ChatRoom roomId={roomId} />}
+      <hr />
+      <ChatRoom roomId={roomId} />
     </>
   );
 }
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+};

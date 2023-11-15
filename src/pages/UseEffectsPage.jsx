@@ -19,6 +19,7 @@ import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
 import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
 import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
 import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
+import RemovingUnnecessaryObjectDep from 'tasks/useEffectsCases/RemovingUnnecessaryObjectDep';
 
 export const UseEffectsPage = () => {
   return (
@@ -70,6 +71,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="updating state based on previous state from an effect">
             <UpdatingBasedOnPrev />
+          </Card>
+          <Card title="removing unnecessary object dependancies">
+            <RemovingUnnecessaryObjectDep />
           </Card>
         </Grid>
       </Container>

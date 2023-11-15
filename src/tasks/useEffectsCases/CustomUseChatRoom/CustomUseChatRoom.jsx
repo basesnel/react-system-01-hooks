@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
+import { FiServer } from 'react-icons/fi';
 import { useChatRoom } from './UseChatRoom';
 
 import DecoratedInput from 'components/DecoratedInput';
@@ -26,7 +27,7 @@ function ChatRoom({ roomId }) {
         inputValue={serverUrl}
         inputLabel="Server URL: "
         handleChange={e => setServerUrl(e.target.value)}
-        icon={<MdChat />}
+        icon={<FiServer />}
       />
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
     </FlexBox>

@@ -20,6 +20,7 @@ import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
 import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
 import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
 import RemovingUnryObjectDep from 'tasks/useEffectsCases/RemovingUnryObjectDep';
+import RemovingUnryFuncDep from 'tasks/useEffectsCases/RemovingUnryFuncDep';
 
 export const UseEffectsPage = () => {
   return (
@@ -74,6 +75,9 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="removing unnecessary object dependancies">
             <RemovingUnryObjectDep />
+          </Card>
+          <Card title="removing unnecessary function dependancies">
+            <RemovingUnryFuncDep />
           </Card>
         </Grid>
       </Container>

@@ -43,7 +43,7 @@ function ChatRoom({ roomId }) {
   );
 }
 
-export default function RemovingUnnecessaryObjectDep() {
+export default function RemovingUnryObjectDep() {
   const [roomId, setRoomId] = useState('general');
 
   return (

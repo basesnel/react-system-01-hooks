@@ -3,6 +3,7 @@ import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import RefValuesByRef from 'tasks/EscapeHatches/RefValuesByRef';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -17,7 +18,7 @@ export const EscapeHatchesPage = () => {
       <Container>
         <Grid>
           <Card title="connecting to chat server">
-            <Paragraph>First case</Paragraph>
+            <RefValuesByRef />
           </Card>
           <Card title="listening to global browser event">
             <Paragraph>Second case</Paragraph>

@@ -17,7 +17,7 @@ export const EscapeHatchesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="connecting to chat server">
+          <Card title="referencing values with refs">
             <RefValuesByRef />
           </Card>
           <Card title="listening to global browser event">

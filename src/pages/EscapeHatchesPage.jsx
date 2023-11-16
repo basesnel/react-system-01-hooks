@@ -5,6 +5,7 @@ import Grid from 'components/Grid';
 import Card from 'components/Card';
 import RefValuesByRef from 'tasks/EscapeHatches/RefValuesByRef';
 import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
+import StopWatch from 'tasks/EscapeHatches/StopWatch';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -21,11 +22,11 @@ export const EscapeHatchesPage = () => {
           <Card title="referencing values with refs">
             <RefValuesByRef />
           </Card>
+          <Card title="Building a stopwatch">
+            <StopWatch />
+          </Card>
           <Card title="Manipulating the dom with refs">
             <ManipulatingDOM />
-          </Card>
-          <Card title="triggering an animation">
-            <Paragraph>Third case</Paragraph>
           </Card>
         </Grid>
       </Container>

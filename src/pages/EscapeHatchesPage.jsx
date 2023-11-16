@@ -7,6 +7,7 @@ import RefValuesByRef from 'tasks/EscapeHatches/RefValuesByRef';
 import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
 import StopWatch from 'tasks/EscapeHatches/StopWatch';
 import BuildingWatch from 'tasks/EscapeHatches/BuildingWatch';
+import CounterRef from 'tasks/EscapeHatches/CounterRef';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -28,6 +29,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="Building a stopwatch">
             <BuildingWatch />
+          </Card>
+          <Card title="Difference between refs and state">
+            <CounterRef />
           </Card>
           <Card title="Manipulating the dom with refs">
             <ManipulatingDOM />

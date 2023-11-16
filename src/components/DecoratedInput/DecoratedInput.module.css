@@ -27,7 +27,8 @@
   transition: var(--my-transition);
 }
 
-.input:hover {
+.input:hover,
+.input:focus {
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
 }
@@ -45,7 +46,8 @@
   transition: var(--my-transition);
 }
 
-.input:hover + .icon {
+.input:hover + .icon,
+.input:focus + .icon {
   color: var(--color-accent);
 }
 

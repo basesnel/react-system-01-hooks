@@ -9,6 +9,7 @@ export default function DecoratedInput({
   inputLabel,
   handleChange,
   icon,
+  inputRef,
 }) {
   return (
     <label className={css.field}>
@@ -21,6 +22,7 @@ export default function DecoratedInput({
           onChange={handleChange}
           value={inputValue}
           autoComplete="off"
+          ref={inputRef}
         />
         <span className={css.icon}>{icon}</span>
       </div>
@@ -35,4 +37,5 @@ DecoratedInput.propTypes = {
   inputLabel: PropTypes.string,
   handleChange: PropTypes.func,
   icon: PropTypes.node,
+  inputRef: PropTypes.any,
 };

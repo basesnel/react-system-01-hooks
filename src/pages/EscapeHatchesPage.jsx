@@ -8,6 +8,7 @@ import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
 import StopWatch from 'tasks/EscapeHatches/StopWatch';
 import BuildingWatch from 'tasks/EscapeHatches/BuildingWatch';
 import CounterRef from 'tasks/EscapeHatches/CounterRef';
+import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -24,16 +25,19 @@ export const EscapeHatchesPage = () => {
           <Card title="referencing values with refs">
             <RefValuesByRef />
           </Card>
-          <Card title="Starting a stopwatch">
+          <Card title="starting a stopwatch">
             <StopWatch />
           </Card>
-          <Card title="Building a stopwatch">
+          <Card title="building a stopwatch">
             <BuildingWatch />
           </Card>
-          <Card title="Difference between refs and state">
+          <Card title="difference between refs and state">
             <CounterRef />
           </Card>
-          <Card title="Manipulating the dom with refs">
+          <Card title="fix a broken chat input">
+            <FixBrockenInput />
+          </Card>
+          <Card title="manipulating the dom with refs">
             <ManipulatingDOM />
           </Card>
         </Grid>

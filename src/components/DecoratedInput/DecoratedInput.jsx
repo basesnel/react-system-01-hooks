@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import css from './DecoratedInput.module.css';
 
 export default function DecoratedInput({
+  isDisabled,
   inputType,
   inputName,
   inputValue,
@@ -16,6 +17,7 @@ export default function DecoratedInput({
       {inputLabel && <span className={css.label}>{inputLabel}</span>}
       <div className={css['wrap-input']}>
         <input
+          disabled={isDisabled}
           type={inputType}
           name={inputName}
           className={css.input}
@@ -31,6 +33,7 @@ export default function DecoratedInput({
 }
 
 DecoratedInput.propTypes = {
+  isDisabled: PropTypes.bool,
   inputType: PropTypes.string,
   inputName: PropTypes.string,
   inputValue: PropTypes.string,

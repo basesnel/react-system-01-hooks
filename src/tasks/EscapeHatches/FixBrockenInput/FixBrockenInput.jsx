@@ -2,9 +2,7 @@ import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
 
-import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
-import DecoratedSubmit from 'components/DecoratedSubmit';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
@@ -14,9 +12,8 @@ export default function FixBrockenInput() {
   const timeoutId = useRef(null);
 
   function handleSend(e) {
-    e.preventDefault();
-
     setIsSending(true);
+
     timeoutId.current = setTimeout(() => {
       toast.info(`Send text: ${text}`);
       setIsSending(false);
@@ -30,7 +27,7 @@ export default function FixBrockenInput() {
   }
 
   return (
-    <DecoratedForm onSubmit={handleSend}>
+    <>
       <DecoratedInput
         isDisabled={isSending}
         inputType="text"
@@ -39,15 +36,14 @@ export default function FixBrockenInput() {
         handleChange={e => setText(e.target.value)}
         icon={<FiEdit />}
       />
-      <DecoratedSubmit
-        caption={isSending ? 'Sending...' : 'Send'}
-        isDisabled={isSending}
-      />
-      {isSending && (
-        <FlexBox>
-          <DecoratedButton caption="Undo" onClick={handleUndo} />
-        </FlexBox>
-      )}
-    </DecoratedForm>
+      <FlexBox>
+        <DecoratedButton
+          caption={isSending ? 'Sending...' : 'Send'}
+          onClick={handleSend}
+          isDisabled={isSending}
+        />
+        {isSending && <DecoratedButton caption="Undo" onClick={handleUndo} />}
+      </FlexBox>
+    </>
   );
 }

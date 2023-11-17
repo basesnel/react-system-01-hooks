@@ -9,6 +9,7 @@ import StopWatch from 'tasks/EscapeHatches/StopWatch';
 import BuildingWatch from 'tasks/EscapeHatches/BuildingWatch';
 import CounterRef from 'tasks/EscapeHatches/CounterRef';
 import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
+import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -36,6 +37,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="fix a broken chat input">
             <FixBrockenInput />
+          </Card>
+          <Card title="fix a component failed to re-render">
+            <FixFailingRerender />
           </Card>
           <Card title="manipulating the dom with refs">
             <ManipulatingDOM />

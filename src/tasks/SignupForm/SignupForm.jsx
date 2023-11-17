@@ -46,6 +46,8 @@ export default function SignupForm() {
 
   const handleSubmitForm = event => {
     event.preventDefault();
+    setEmail('');
+    setPassword('');
 
     if (!email.trim().length && !password.trim().length) {
       return toast.error(

@@ -10,6 +10,7 @@ import BuildingWatch from 'tasks/EscapeHatches/BuildingWatch';
 import CounterRef from 'tasks/EscapeHatches/CounterRef';
 import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
 import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
+import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -40,6 +41,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="fix a component failed to re-render">
             <FixFailingRerender />
+          </Card>
+          <Card title="fix debouncing">
+            <FixDebouncing />
           </Card>
           <Card title="manipulating the dom with refs">
             <ManipulatingDOM />

@@ -2,12 +2,18 @@ import PropTypes from 'prop-types';
 
 import css from './DecoratedButton.module.css';
 
-export default function DecoratedButton({ caption, onClick, isDisabled }) {
+export default function DecoratedButton({
+  caption,
+  onClick,
+  isDisabled,
+  ...delegated
+}) {
   return (
     <button
       className={css.decoratedButton}
       onClick={onClick}
       disabled={isDisabled}
+      {...delegated}
     >
       {caption}
     </button>

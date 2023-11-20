@@ -26,13 +26,17 @@ export default function RefCallBack() {
     return itemsRef.current;
   }
 
+  const buttonsList = [];
+
+  for (let i = 0; i < length; i++) {
+    buttonsList.push(
+      <DecoratedButton key={i} caption={i} onClick={() => scrollToId(i)} />
+    );
+  }
+
   return (
     <>
-      <FlexBox>
-        <DecoratedButton caption="Tom" onClick={() => scrollToId(0)} />
-        <DecoratedButton caption="Maru" onClick={() => scrollToId(5)} />
-        <DecoratedButton caption="Jelly" onClick={() => scrollToId(9)} />
-      </FlexBox>
+      <FlexBox>{buttonsList}</FlexBox>
       <Slider>
         {catList.map(cat => (
           <Slide
@@ -54,8 +58,10 @@ export default function RefCallBack() {
   );
 }
 
+const length = 10;
+
 const catList = [];
-for (let i = 0; i < 10; i++) {
+for (let i = 0; i < length; i++) {
   catList.push({
     id: i,
     imageUrl: 'https://placekitten.com/250/200?image=' + i,

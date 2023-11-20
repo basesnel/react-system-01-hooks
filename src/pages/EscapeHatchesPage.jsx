@@ -11,6 +11,7 @@ import CounterRef from 'tasks/EscapeHatches/CounterRef';
 import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
 import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
 import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
+import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -44,6 +45,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="fix debouncing">
             <FixDebouncing />
+          </Card>
+          <Card title="read the latest state">
+            <ReadLatestState />
           </Card>
           <Card title="manipulating the dom with refs">
             <ManipulatingDOM />

@@ -12,6 +12,7 @@ import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
 import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
 import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
 import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
+import CatFriends from 'tasks/EscapeHatches/CatFriends';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -51,6 +52,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="manipulating the dom with refs">
             <ManipulatingDOM />
+          </Card>
+          <Card title="scrolling to an element">
+            <CatFriends />
           </Card>
         </Grid>
       </Container>

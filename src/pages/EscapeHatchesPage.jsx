@@ -13,6 +13,7 @@ import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
 import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
 import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
 import CatFriends from 'tasks/EscapeHatches/CatFriends';
+import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -55,6 +56,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="scrolling to an element">
             <CatFriends />
+          </Card>
+          <Card title="how to manage a list of refs using a ref callback">
+            <RefCallBack />
           </Card>
         </Grid>
       </Container>

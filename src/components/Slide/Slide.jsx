@@ -2,8 +2,12 @@ import PropTypes from 'prop-types';
 
 import css from './Slide.module.css';
 
-export default function Slide({ children }) {
-  return <li className={css.slide}>{children}</li>;
+export default function Slide({ children, itemRef, ...delegated }) {
+  return (
+    <li className={css.slide} ref={itemRef} {...delegated}>
+      {children}
+    </li>
+  );
 }
 
 Slide.propTypes = {

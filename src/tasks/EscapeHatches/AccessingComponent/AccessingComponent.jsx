@@ -1,9 +1,17 @@
+import { forwardRef, useRef, useImperativeHandle } from 'react';
+
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
-import { forwardRef, useRef } from 'react';
 
 const MyInput = forwardRef((props, ref) => {
-  return <input {...props} ref={ref} />;
+  const realInputRef = useRef(null);
+
+  useImperativeHandle(ref, () => ({
+    focus() {
+      realInputRef.current.focus();
+    },
+  }));
+  return <input {...props} ref={realInputRef} />;
 });
 
 export default function AccessingComponent() {

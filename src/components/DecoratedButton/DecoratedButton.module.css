@@ -11,7 +11,8 @@
   transition: var(--my-transition);
 }
 
-.decoratedButton:hover {
+.decoratedButton:hover:enabled,
+.decoratedButton:active:enabled {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);

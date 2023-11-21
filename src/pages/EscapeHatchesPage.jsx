@@ -14,6 +14,7 @@ import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
 import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
 import CatFriends from 'tasks/EscapeHatches/CatFriends';
 import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
+import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -59,6 +60,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="how to manage a list of refs using a ref callback">
             <RefCallBack />
+          </Card>
+          <Card title="accessing another component's dom node">
+            <AccessingComponent />
           </Card>
         </Grid>
       </Container>

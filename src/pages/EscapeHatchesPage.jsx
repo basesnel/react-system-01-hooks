@@ -16,6 +16,7 @@ import CatFriends from 'tasks/EscapeHatches/CatFriends';
 import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
 import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
 import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
+import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -67,6 +68,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="flushing state updates synchronously with flushsync">
             <FlushingStateUpdates />
+          </Card>
+          <Card title="best practices for dom manipulation with refs">
+            <ManipulationDom />
           </Card>
         </Grid>
       </Container>

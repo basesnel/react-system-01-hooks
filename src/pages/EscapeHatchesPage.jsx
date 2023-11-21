@@ -17,6 +17,7 @@ import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
 import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
 import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
 import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
+import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -71,6 +72,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="best practices for dom manipulation with refs">
             <ManipulationDom />
+          </Card>
+          <Card title="play and pause the video">
+            <VideoPlayer />
           </Card>
         </Grid>
       </Container>

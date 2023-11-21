@@ -15,6 +15,7 @@ import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
 import CatFriends from 'tasks/EscapeHatches/CatFriends';
 import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
 import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
+import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -63,6 +64,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="accessing another component's dom node">
             <AccessingComponent />
+          </Card>
+          <Card title="flushing state updates synchronously with flushsync">
+            <FlushingStateUpdates />
           </Card>
         </Grid>
       </Container>

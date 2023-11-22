@@ -10,18 +10,18 @@ export default function FocusingSearch() {
 
   return (
     <FlexBox>
-      <DecoratedButton
-        caption="Search"
-        onClick={() => {
-          searchRef.current.focus();
-        }}
-      />
       <DecoratedInput
         inputRef={searchRef}
         inputType="text"
         inputName="search"
         inputPlaceholder="Lookung for something?"
         icon={<MdSearch />}
+      />
+      <DecoratedButton
+        caption="Search"
+        onClick={() => {
+          searchRef.current.focus();
+        }}
       />
     </FlexBox>
   );

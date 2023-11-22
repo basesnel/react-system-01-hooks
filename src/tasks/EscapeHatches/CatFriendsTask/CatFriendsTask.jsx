@@ -14,6 +14,21 @@ export default function CatFriendsTask() {
 
   return (
     <>
+      <Slider>
+        {catList.map((cat, i) => (
+          <Slide key={cat.id} itemRef={index === i ? selectedRef : null}>
+            <img
+              className={
+                index === i
+                  ? `${css['img-slide']} ${css.active}`
+                  : css['img-slide']
+              }
+              src={cat.imageUrl}
+              alt={'Cat #' + cat.id}
+            />
+          </Slide>
+        ))}
+      </Slider>
       <FlexBox>
         <DecoratedButton
           caption="Next"
@@ -33,21 +48,6 @@ export default function CatFriendsTask() {
           }}
         />
       </FlexBox>
-      <Slider>
-        {catList.map((cat, i) => (
-          <Slide key={cat.id} itemRef={index === i ? selectedRef : null}>
-            <img
-              className={
-                index === i
-                  ? `${css['img-slide']} ${css.active}`
-                  : css['img-slide']
-              }
-              src={cat.imageUrl}
-              alt={'Cat #' + cat.id}
-            />
-          </Slide>
-        ))}
-      </Slider>
     </>
   );
 }

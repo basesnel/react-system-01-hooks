@@ -36,11 +36,6 @@ export default function CatFriends() {
 
   return (
     <>
-      <FlexBox>
-        <DecoratedButton caption="Tom" onClick={handleScrollToFirstCat} />
-        <DecoratedButton caption="Maru" onClick={handleScrollToSecondCat} />
-        <DecoratedButton caption="Jelly" onClick={handleScrollToThirdCat} />
-      </FlexBox>
       <Slider>
         <Slide>
           <img
@@ -64,6 +59,11 @@ export default function CatFriends() {
           />
         </Slide>
       </Slider>
+      <FlexBox>
+        <DecoratedButton caption="Tom" onClick={handleScrollToFirstCat} />
+        <DecoratedButton caption="Maru" onClick={handleScrollToSecondCat} />
+        <DecoratedButton caption="Jelly" onClick={handleScrollToThirdCat} />
+      </FlexBox>
     </>
   );
 }

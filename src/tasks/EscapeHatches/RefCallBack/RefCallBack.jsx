@@ -36,7 +36,6 @@ export default function RefCallBack() {
 
   return (
     <>
-      <FlexBox>{buttonsList}</FlexBox>
       <Slider>
         {catList.map(cat => (
           <Slide
@@ -54,6 +53,7 @@ export default function RefCallBack() {
           </Slide>
         ))}
       </Slider>
+      <FlexBox>{buttonsList}</FlexBox>
     </>
   );
 }

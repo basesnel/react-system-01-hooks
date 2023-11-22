@@ -20,6 +20,7 @@ import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
 import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
 import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
 import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
+import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -83,6 +84,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="scrolling an image carousel">
             <CatFriendsTask />
+          </Card>
+          <Card title="focusing the search field  with separate components">
+            <ForwardSepComp />
           </Card>
         </Grid>
       </Container>

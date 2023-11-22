@@ -19,6 +19,7 @@ import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
 import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
 import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
 import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
+import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -79,6 +80,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="focus the search field">
             <FocusingSearch />
+          </Card>
+          <Card title="scrolling an image carousel">
+            <CatFriendsTask />
           </Card>
         </Grid>
       </Container>

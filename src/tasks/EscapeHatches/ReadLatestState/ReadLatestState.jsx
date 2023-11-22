@@ -12,8 +12,11 @@ export default function ReadLatestState() {
   const actualText = useRef(text);
 
   function handleSend() {
+    if (!text.trim().length) return toast.warning('Please, input message!');
+
     setTimeout(() => {
-      toast.info('Sending ' + actualText.current);
+      toast.info(`Sending: "${actualText.current}"`);
+      setText('');
     }, 3000);
   }
 
@@ -28,6 +31,7 @@ export default function ReadLatestState() {
         inputType="text"
         inputName="message"
         inputValue={text}
+        inputPlaceholder="Input message"
         handleChange={e => {
           setText(e.target.value);
           actualText.current = e.target.value;

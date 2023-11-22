@@ -8,6 +8,7 @@ export default function DecoratedInput({
   inputName,
   inputValue,
   inputLabel,
+  inputPlaceholder,
   handleChange,
   icon,
   inputRef,
@@ -20,10 +21,11 @@ export default function DecoratedInput({
           disabled={isDisabled}
           type={inputType}
           name={inputName}
-          className={css.input}
-          onChange={handleChange}
           value={inputValue}
           autoComplete="off"
+          className={css.input}
+          placeholder={inputPlaceholder}
+          onChange={handleChange}
           ref={inputRef}
         />
         <span className={css.icon}>{icon}</span>
@@ -38,6 +40,7 @@ DecoratedInput.propTypes = {
   inputName: PropTypes.string,
   inputValue: PropTypes.string,
   inputLabel: PropTypes.string,
+  inputPlaceholder: PropTypes.string,
   handleChange: PropTypes.func,
   icon: PropTypes.node,
   inputRef: PropTypes.any,

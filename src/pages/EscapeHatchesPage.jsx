@@ -18,6 +18,7 @@ import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
 import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
 import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
 import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
+import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -75,6 +76,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="play and pause the video">
             <VideoPlayer />
+          </Card>
+          <Card title="focus the search field">
+            <FocusingSearch />
           </Card>
         </Grid>
       </Container>

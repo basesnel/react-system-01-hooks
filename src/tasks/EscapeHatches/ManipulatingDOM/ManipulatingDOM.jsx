@@ -18,6 +18,7 @@ export default function ManipulatingDOM() {
         inputRef={inputRef}
         inputType="text"
         inputName="ref-input"
+        inputPlaceholder="Input something"
         icon={<FiEdit />}
       />
       <DecoratedButton caption="Focus the input" onClick={handleClick} />

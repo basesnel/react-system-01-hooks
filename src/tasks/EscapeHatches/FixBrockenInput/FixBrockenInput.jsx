@@ -33,6 +33,7 @@ export default function FixBrockenInput() {
         inputType="text"
         inputName="message"
         inputValue={text}
+        inputPlaceholder="Input message"
         handleChange={e => setText(e.target.value)}
         icon={<FiEdit />}
       />

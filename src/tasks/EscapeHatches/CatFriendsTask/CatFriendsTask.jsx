@@ -6,25 +6,29 @@ import FlexBox from 'components/FlexBox';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 
+import { catList } from 'constants';
+
 import css from './CatFriendsTask.module.css';
 
 export default function CatFriendsTask() {
   const [index, setIndex] = useState(0);
   const selectedRef = useRef(null);
 
+  const kittens = catList(10);
+
   return (
     <>
       <Slider>
-        {catList.map((cat, i) => (
-          <Slide key={cat.id} itemRef={index === i ? selectedRef : null}>
+        {kittens.map((kitten, i) => (
+          <Slide key={kitten.id} itemRef={index === i ? selectedRef : null}>
             <img
               className={
                 index === i
                   ? `${css['img-slide']} ${css.active}`
                   : css['img-slide']
               }
-              src={cat.imageUrl}
-              alt={'Cat #' + cat.id}
+              src={kitten.imageUrl}
+              alt={'Cat #' + kitten.id}
             />
           </Slide>
         ))}
@@ -34,7 +38,7 @@ export default function CatFriendsTask() {
           caption="Next"
           onClick={() => {
             flushSync(() => {
-              if (index < catList.length - 1) {
+              if (index < kittens.length - 1) {
                 setIndex(index + 1);
               } else {
                 setIndex(0);
@@ -50,13 +54,4 @@ export default function CatFriendsTask() {
       </FlexBox>
     </>
   );
-}
-
-const catList = [];
-
-for (let i = 0; i < 10; i++) {
-  catList.push({
-    id: i,
-    imageUrl: 'https://placekitten.com/250/200?image=' + i,
-  });
 }

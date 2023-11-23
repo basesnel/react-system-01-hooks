@@ -3,6 +3,8 @@ import { useState, useRef, useEffect } from 'react';
 import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 
+import { videoSrc } from 'constants';
+
 function VideoPlayer({ src, isPlaying }) {
   const playerRef = useRef(null);
 
@@ -22,10 +24,7 @@ export default function DeclareAnEffect() {
 
   return (
     <FlexBox>
-      <VideoPlayer
-        isPlaying={isPlaying}
-        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-      />
+      <VideoPlayer isPlaying={isPlaying} src={videoSrc} />
       <DecoratedButton
         caption={isPlaying ? 'Pause' : 'Play'}
         onClick={() => setIsPlaying(!isPlaying)}

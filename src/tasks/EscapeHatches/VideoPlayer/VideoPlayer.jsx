@@ -3,6 +3,8 @@ import { useState, useRef } from 'react';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
+import { videoSrc } from 'constants';
+
 export default function VideoPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
@@ -21,10 +23,7 @@ export default function VideoPlayer() {
         onPlay={() => setIsPlaying(true)}
         onPause={() => setIsPlaying(false)}
       >
-        <source
-          src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
-          type="video/mp4"
-        />
+        <source src={videoSrc} type="video/mp4" />
       </video>
       <DecoratedButton
         caption={isPlaying ? 'Pause' : 'Play'}

@@ -5,8 +5,12 @@ import DecoratedButton from 'components/DecoratedButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 
+import { catList } from 'constants';
+
 export default function RefCallBack() {
   const itemsRef = useRef(null);
+
+  const kittens = catList(18);
 
   function scrollToId(itemId) {
     const map = getMap();
@@ -28,7 +32,7 @@ export default function RefCallBack() {
 
   const buttonsList = [];
 
-  for (let i = 0; i < length; i++) {
+  for (let i = 0; i < kittens.length; i++) {
     buttonsList.push(
       <DecoratedButton key={i} caption={i} onClick={() => scrollToId(i)} />
     );
@@ -37,33 +41,23 @@ export default function RefCallBack() {
   return (
     <>
       <Slider>
-        {catList.map(cat => (
+        {kittens.map(kitten => (
           <Slide
-            key={cat.id}
+            key={kitten.id}
             itemRef={node => {
               const map = getMap();
               if (node) {
-                map.set(cat.id, node);
+                map.set(kitten.id, node);
               } else {
-                map.delete(cat.id);
+                map.delete(kitten.id);
               }
             }}
           >
-            <img src={cat.imageUrl} alt={'Cat #' + cat.id} />
+            <img src={kitten.imageUrl} alt={'Cat #' + kitten.id} />
           </Slide>
         ))}
       </Slider>
       <FlexBox>{buttonsList}</FlexBox>
     </>
   );
-}
-
-const length = 10;
-
-const catList = [];
-for (let i = 0; i < length; i++) {
-  catList.push({
-    id: i,
-    imageUrl: 'https://placekitten.com/250/200?image=' + i,
-  });
 }

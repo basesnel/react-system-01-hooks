@@ -17,6 +17,8 @@ import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 import { colorOptions } from './colorOptions';
 import { chatRoom } from './chatRoom';
 import { createConnection } from './chat';
+import { videoSrc } from './videoSrc';
+import { catList } from './catList';
 
 export {
   sizes,
@@ -38,4 +40,6 @@ export {
   colorOptions,
   chatRoom,
   createConnection,
+  videoSrc,
+  catList,
 };

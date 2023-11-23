@@ -23,6 +23,7 @@ import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
 import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
 import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
 import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
+import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -95,6 +96,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="specify the effect dependancies">
             <EffectDependancies />
+          </Card>
+          <Card title="add cleanup if needed">
+            <AddCleanup />
           </Card>
         </Grid>
       </Container>

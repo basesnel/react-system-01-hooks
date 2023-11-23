@@ -21,6 +21,7 @@ import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
 import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
 import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
 import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
+import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -87,6 +88,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="focusing the search field  with separate components">
             <ForwardSepComp />
+          </Card>
+          <Card title="task: declare an effect">
+            <DeclareAnEffect />
           </Card>
         </Grid>
       </Container>

@@ -24,6 +24,7 @@ import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
 import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
 import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
 import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
+import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -99,6 +100,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="add cleanup if needed">
             <AddCleanup />
+          </Card>
+          <Card title="Putting it all together">
+            <PutAllTogether />
           </Card>
         </Grid>
       </Container>

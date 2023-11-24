@@ -25,6 +25,7 @@ import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
 import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
 import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
 import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
+import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -101,8 +102,11 @@ export const EscapeHatchesPage = () => {
           <Card title="add cleanup if needed">
             <AddCleanup />
           </Card>
-          <Card title="Putting it all together">
+          <Card title="putting it all together">
             <PutAllTogether />
+          </Card>
+          <Card title="focus on field on mount">
+            <FocusOnMount />
           </Card>
         </Grid>
       </Container>

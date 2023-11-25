@@ -4,19 +4,18 @@ import { FiEdit } from 'react-icons/fi';
 
 import DecoratedInput from 'components/DecoratedInput';
 
-export default function MyInput({ value, onChange }) {
+export default function MyInput({ shouldFocus, label, name, value, onChange }) {
   const ref = useRef(null);
 
   useEffect(() => {
-    ref.current.focus();
-  }, []);
+    shouldFocus && ref.current.focus();
+  }, [shouldFocus]);
 
   return (
     <DecoratedInput
       inputRef={ref}
-      inputLabel="Enter your name"
-      inputName="Your name"
-      inputPlaceholder="Input Your name"
+      inputLabel={label}
+      inputName={name}
       inputValue={value}
       handleChange={onChange}
       icon={<FiEdit />}
@@ -25,6 +24,7 @@ export default function MyInput({ value, onChange }) {
 }
 
 MyInput.propTypes = {
+  shouldFocus: PropTypes.bool,
   value: PropTypes.string,
   onChange: PropTypes.func,
 };

@@ -7,7 +7,12 @@ import css from './DecoratedCheckBox.module.css';
 export default function DecoratedCheckBox({ checked, onChange, label }) {
   return (
     <label className={css.field}>
-      <input type="checkbox" checked={checked} onChange={onChange} />
+      <input
+        className={css.check}
+        type="checkbox"
+        checked={checked}
+        onChange={onChange}
+      />
       <Span>{label}</Span>
     </label>
   );

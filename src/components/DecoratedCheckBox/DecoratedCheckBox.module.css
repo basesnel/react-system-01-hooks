@@ -8,3 +8,7 @@
   max-width: 400px;
   padding: 3px 14px;
 }
+
+.check {
+  transform: translateY(-1px);
+}

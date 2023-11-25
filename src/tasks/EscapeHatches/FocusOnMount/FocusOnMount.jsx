@@ -4,7 +4,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
-import Span from 'components/Span';
+import DecoratedCheckBox from 'components/DecoratedCheckBox';
 
 export default function FocusOnMount() {
   const [showForm, setShowForm] = useState(false);
@@ -21,14 +21,11 @@ export default function FocusOnMount() {
         {showForm && (
           <>
             <MyInput value={name} onChange={e => setName(e.target.value)} />
-            <label>
-              <input
-                type="checkbox"
-                checked={upper}
-                onChange={() => setUpper(!upper)}
-              />
-              <Span>Make it uppercase</Span>
-            </label>
+            <DecoratedCheckBox
+              checked={upper}
+              onChange={() => setUpper(!upper)}
+              label="Make it uppercase"
+            />
             <Paragraph>
               Hello, <b>{upper ? name.toUpperCase() : name}</b>
             </Paragraph>

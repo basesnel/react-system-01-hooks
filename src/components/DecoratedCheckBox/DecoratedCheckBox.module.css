@@ -1,0 +1,10 @@
+@value sizes: "../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+
+.field {
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  max-width: 400px;
+  padding: 3px 14px;
+}

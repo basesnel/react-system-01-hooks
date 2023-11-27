@@ -19,6 +19,7 @@ import { chatRoom } from './chatRoom';
 import { createConnection } from './chat';
 import { videoSrc } from './videoSrc';
 import { catList } from './catList';
+import { personList } from './initialPersonList';
 
 export {
   sizes,
@@ -42,4 +43,5 @@ export {
   createConnection,
   videoSrc,
   catList,
+  personList,
 };

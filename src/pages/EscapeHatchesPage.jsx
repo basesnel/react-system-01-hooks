@@ -28,6 +28,7 @@ import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
 import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
 import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
 import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
+import FixFetchingInEffect from 'tasks/EscapeHatches/FixFetchingInEffect';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -115,6 +116,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="fix an interval that fires twice">
             <FixAnInterval />
+          </Card>
+          <Card title="fix fetching inside an effect">
+            <FixFetchingInEffect />
           </Card>
         </Grid>
       </Container>

@@ -9,21 +9,19 @@ import { fetchBio } from 'services/fetchBio';
 
 import { personList } from 'constants';
 
-export default function FetchingData() {
+export default function FixFetchingInEffect() {
   const [person, setPerson] = useState('Alice');
   const [bio, setBio] = useState(null);
 
   useEffect(() => {
-    async function startFetching() {
-      setBio(null);
-      const result = await fetchBio(person);
+    let ignore = false;
+
+    setBio(null);
+    fetchBio(person).then(result => {
       if (!ignore) {
         setBio(result);
       }
-    }
-
-    let ignore = false;
-    startFetching();
+    });
 
     return () => {
       ignore = true;
@@ -42,7 +40,9 @@ export default function FetchingData() {
           onHandleSelect={e => setPerson(e.target.value)}
         />
       </FlexBox>
-      <Paragraph>{bio ?? 'Loading...'}</Paragraph>
+      <Paragraph>
+        <i>{bio ?? 'Loading...'}</i>
+      </Paragraph>
     </>
   );
 }

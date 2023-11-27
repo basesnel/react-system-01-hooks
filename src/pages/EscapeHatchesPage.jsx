@@ -27,6 +27,7 @@ import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
 import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
 import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
 import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
+import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
 
 export const EscapeHatchesPage = () => {
   return (
@@ -111,6 +112,9 @@ export const EscapeHatchesPage = () => {
           </Card>
           <Card title="focus a field conditionally">
             <FocusOnMountCond />
+          </Card>
+          <Card title="fix an interval that fires twice">
+            <FixAnInterval />
           </Card>
         </Grid>
       </Container>

@@ -9,7 +9,7 @@ import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  // <StrictMode>
+  //<StrictMode>
   <BrowserRouter basename="/react-system-01-hooks">
     <AuthProvider>
       <App />

@@ -146,6 +146,16 @@ export default function NavBar() {
             Escape hatches
           </NavLink>
         </li>
+        <li className={css.item}>
+          <NavLink
+            className={({ isActive }) =>
+              isActive ? css.navlinkactive : css.navlink
+            }
+            to="/escape-hatches-part-2"
+          >
+            Escape hatches - part 2
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

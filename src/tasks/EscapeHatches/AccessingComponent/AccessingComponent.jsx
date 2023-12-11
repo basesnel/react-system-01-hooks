@@ -1,7 +1,10 @@
 import { forwardRef, useRef, useImperativeHandle } from 'react';
 
+// import { FiEdit3 } from 'react-icons/fi';
+
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
+// import DecoratedInput from 'components/DecoratedInput';
 
 const MyInput = forwardRef((props, ref) => {
   const realInputRef = useRef(null);
@@ -12,6 +15,7 @@ const MyInput = forwardRef((props, ref) => {
     },
   }));
   return <input {...props} ref={realInputRef} />;
+  // return <DecoratedInput {...props} icon={<FiEdit3 />} ref={realInputRef} />;
 });
 
 export default function AccessingComponent() {

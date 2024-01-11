@@ -1,24 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { initialTodos, createTodo } from './todos';
 
 export default function TformDataWithoutEffect() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
-  const [activeTodos, setActiveTodos] = useState([]);
-  const [visibleTodos, setVisibleTodos] = useState([]);
-  const [footer, setFooter] = useState(null);
 
-  useEffect(() => {
-    setActiveTodos(todos.filter(todo => !todo.completed));
-  }, [todos]);
+  const visibleTodos = showActive
+    ? todos.filter(todo => !todo.completed)
+    : todos;
 
-  useEffect(() => {
-    setVisibleTodos(showActive ? activeTodos : todos);
-  }, [showActive, todos, activeTodos]);
-
-  useEffect(() => {
-    setFooter(<footer>{activeTodos.length} todos left</footer>);
-  }, [activeTodos]);
+  const countActiveTodos = todos.reduce((prevCount, todo) => {
+    return todo.completed ? prevCount + 0 : prevCount + 1;
+  }, 0);
 
   return (
     <>
@@ -38,7 +31,7 @@ export default function TformDataWithoutEffect() {
           </li>
         ))}
       </ul>
-      {footer}
+      <footer>{countActiveTodos} todos left</footer>
     </>
   );
 }

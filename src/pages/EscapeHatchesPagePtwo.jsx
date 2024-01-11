@@ -4,6 +4,8 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
+import TformDataWithoutEffect from 'tasks/EscapeHatches/TformDataWithoutEffect';
+
 export const EscapeHatchesPagePtwo = () => {
   return (
     <main>
@@ -16,7 +18,9 @@ export const EscapeHatchesPagePtwo = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="task 1">Content one</Card>
+          <Card title="task 1: transform data without effect">
+            <TformDataWithoutEffect />
+          </Card>
           <Card title="task 2">Content two</Card>
           <Card title="task 3">Content three</Card>
         </Grid>

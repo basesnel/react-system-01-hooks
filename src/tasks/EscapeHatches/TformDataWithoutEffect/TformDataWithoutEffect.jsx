@@ -1,9 +1,21 @@
 import { useState } from 'react';
 import { initialTodos, createTodo } from './todos';
 
+import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText/ItemText';
+
+import { RiAddCircleFill } from 'react-icons/ri';
+import Paragraph from 'components/Paragraph';
+import DecoratedCheckBox from 'components/DecoratedCheckBox';
+
 export default function TformDataWithoutEffect() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
+
+  console.log(`render: ${Date.now()}`);
 
   const visibleTodos = showActive
     ? todos.filter(todo => !todo.completed)
@@ -15,23 +27,34 @@ export default function TformDataWithoutEffect() {
 
   return (
     <>
-      <label>
+      {/* <label>
         <input
           type="checkbox"
           checked={showActive}
           onChange={e => setShowActive(e.target.checked)}
         />
         Show only active todos
-      </label>
+      </label> */}
+      <DecoratedCheckBox
+        checked={showActive}
+        onChange={e => setShowActive(e.target.checked)}
+        label="Show only active todos"
+      />
       <NewTodo onAdd={newTodo => setTodos([...todos, newTodo])} />
-      <ul>
+      <List message="There no element in list.">
         {visibleTodos.map(todo => (
-          <li key={todo.id}>
-            {todo.completed ? <s>{todo.text}</s> : todo.text}
-          </li>
+          <Item key={todo.id}>
+            <ItemFlex>
+              <ItemText
+                content={todo.completed ? <s>{todo.text}</s> : todo.text}
+              />
+            </ItemFlex>
+          </Item>
         ))}
-      </ul>
-      <footer>{countActiveTodos} todos left</footer>
+      </List>
+      <footer>
+        <Paragraph>{countActiveTodos} todos left</Paragraph>
+      </footer>
     </>
   );
 }
@@ -39,17 +62,18 @@ export default function TformDataWithoutEffect() {
 function NewTodo({ onAdd }) {
   const [text, setText] = useState('');
 
-  function handleAddClick() {
+  function handleAddClick(text) {
     setText('');
     onAdd(createTodo(text));
   }
 
   return (
     <>
-      <input value={text} onChange={e => setText(e.target.value)} />
-      <button type="button" onClick={handleAddClick}>
-        Add
-      </button>
+      <DecoratedMiniForm
+        onFormSubmit={handleAddClick}
+        filling={`Add todo-element ${text}`}
+        icon={<RiAddCircleFill />}
+      />
     </>
   );
 }

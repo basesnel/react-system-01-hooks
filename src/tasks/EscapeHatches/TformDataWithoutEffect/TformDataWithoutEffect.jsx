@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { initialTodos, createTodo } from './todos';
 
+import PropTypes from 'prop-types';
+
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 import List from 'components/List';
 import Item from 'components/Item';
@@ -15,8 +17,6 @@ export default function TformDataWithoutEffect() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
 
-  console.log(`render: ${Date.now()}`);
-
   const visibleTodos = showActive
     ? todos.filter(todo => !todo.completed)
     : todos;
@@ -27,14 +27,6 @@ export default function TformDataWithoutEffect() {
 
   return (
     <>
-      {/* <label>
-        <input
-          type="checkbox"
-          checked={showActive}
-          onChange={e => setShowActive(e.target.checked)}
-        />
-        Show only active todos
-      </label> */}
       <DecoratedCheckBox
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}
@@ -77,3 +69,7 @@ function NewTodo({ onAdd }) {
     </>
   );
 }
+
+NewTodo.propTypes = {
+  onAdd: PropTypes.func.isRequired,
+};

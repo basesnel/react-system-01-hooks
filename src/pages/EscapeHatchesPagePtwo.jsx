@@ -5,12 +5,13 @@ import Grid from 'components/Grid';
 import Card from 'components/Card';
 
 import TformDataWithoutEffect from 'tasks/EscapeHatches/TformDataWithoutEffect';
+import CacheCalcWithEffect from 'tasks/EscapeHatches/CacheCalcWithEffect';
 
 export const EscapeHatchesPagePtwo = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="escape hatches: part 2" />
+        <Title level={1} caption="escape hatches ii" />
         <Paragraph>
           Escape hatches cases that may need to control and synchronize with
           system outside of React.
@@ -18,10 +19,12 @@ export const EscapeHatchesPagePtwo = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="task 1: transform data without effect">
+          <Card title="escape hatches ii - task 1: transform data without effects">
             <TformDataWithoutEffect />
           </Card>
-          <Card title="task 2">Content two</Card>
+          <Card title="escape hatches ii - task 2: cache a calculation without effects">
+            <CacheCalcWithEffect />
+          </Card>
           <Card title="task 3">Content three</Card>
         </Grid>
       </Container>

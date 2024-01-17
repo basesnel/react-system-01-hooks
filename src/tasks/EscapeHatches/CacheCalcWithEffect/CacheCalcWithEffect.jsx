@@ -1,15 +1,20 @@
-import { useState, useEffect } from 'react';
+import { useState, useMemo } from 'react';
 import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
 
 export default function CacheCalcWithEffect() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
   const [text, setText] = useState('');
-  const [visibleTodos, setVisibleTodos] = useState([]);
 
-  useEffect(() => {
-    setVisibleTodos(getVisibleTodos(todos, showActive));
-  }, [todos, showActive]);
+  const visibleTodos = useMemo(
+    () => getVisibleTodos(todos, showActive),
+    [todos, showActive]
+  );
+  // const [visibleTodos, setVisibleTodos] = useState([]);
+
+  // useEffect(() => {
+  //   setVisibleTodos(getVisibleTodos(todos, showActive));
+  // }, [todos, showActive]);
 
   function handleAddClick() {
     setText('');

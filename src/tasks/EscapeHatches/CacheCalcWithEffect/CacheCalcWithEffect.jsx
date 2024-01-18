@@ -1,3 +1,10 @@
+import DecoratedCheckBox from 'components/DecoratedCheckBox/DecoratedCheckBox.jsx';
+import DecoratedMiniForm from 'components/DecoratedMiniForm/DecoratedMiniForm.jsx';
+import List from 'components/List';
+import Item from 'components/Item';
+import ItemFlex from 'components/ItemFlex';
+import ItemText from 'components/ItemText/ItemText';
+import { RiAddCircleFill } from 'react-icons/ri';
 import { useState, useMemo } from 'react';
 import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
 
@@ -10,36 +17,36 @@ export default function CacheCalcWithEffect() {
     () => getVisibleTodos(todos, showActive),
     [todos, showActive]
   );
-  // const [visibleTodos, setVisibleTodos] = useState([]);
 
-  // useEffect(() => {
-  //   setVisibleTodos(getVisibleTodos(todos, showActive));
-  // }, [todos, showActive]);
-
-  function handleAddClick() {
+  function handleAddClick(text) {
     setText('');
     setTodos([...todos, createTodo(text)]);
   }
 
   return (
     <>
-      <label>
-        <input
-          type="checkbox"
-          checked={showActive}
-          onChange={e => setShowActive(e.target.checked)}
-        />
-        Show only active todos
-      </label>
-      <input value={text} onChange={e => setText(e.target.value)} />
-      <button onClick={handleAddClick}>Add</button>
-      <ul>
+      <DecoratedCheckBox
+        checked={showActive}
+        onChange={e => setShowActive(e.target.checked)}
+        label="Show only active todos"
+      />
+
+      <DecoratedMiniForm
+        onFormSubmit={handleAddClick}
+        filling={`Add todo-element ${text}`}
+        icon={<RiAddCircleFill />}
+      />
+      <List message="There no element in list.">
         {visibleTodos.map(todo => (
-          <li key={todo.id}>
-            {todo.completed ? <s>{todo.text}</s> : todo.text}
-          </li>
+          <Item key={todo.id}>
+            <ItemFlex>
+              <ItemText
+                content={todo.completed ? <s>{todo.text}</s> : todo.text}
+              />
+            </ItemFlex>
+          </Item>
         ))}
-      </ul>
+      </List>
     </>
   );
 }

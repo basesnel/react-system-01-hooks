@@ -6,6 +6,7 @@ import Card from 'components/Card';
 
 import TformDataWithoutEffect from 'tasks/EscapeHatches/TformDataWithoutEffect';
 import CacheCalcWithEffect from 'tasks/EscapeHatches/CacheCalcWithEffect';
+import ContactManager from 'tasks/EscapeHatchesPartII/ContactManager';
 
 export const EscapeHatchesPagePtwo = () => {
   return (
@@ -25,7 +26,10 @@ export const EscapeHatchesPagePtwo = () => {
           <Card title="escape hatches ii - task 2: cache a calculation without effects">
             <CacheCalcWithEffect />
           </Card>
-          <Card title="task 3">Content three</Card>
+          <Card title="escape hatches ii - task 3: reset state without effects">
+            <ContactManager />
+          </Card>
+          <Card title="task 4">Content three</Card>
         </Grid>
       </Container>
     </main>

@@ -23,7 +23,7 @@ export default function ContactManager() {
       <ContactList
         contacts={contacts}
         selectedId={selectedId}
-        onSelect={is => setSelectedId}
+        onSelect={id => setSelectedId(id)}
       />
       <hr />
       <EditContact savedContact={selectedContact} onSave={handleSave} />

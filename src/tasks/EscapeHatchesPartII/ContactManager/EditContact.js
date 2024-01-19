@@ -1,5 +1,13 @@
 import { useState } from 'react';
 
+import { FiUser, FiMail } from 'react-icons/fi';
+
+import FlexBox from 'components/FlexBox';
+
+import DecoratedButton from 'components/DecoratedButton';
+import DecoratedForm from 'components/DecoratedForm';
+import DecoratedInput from 'components/DecoratedInput';
+
 export default function EditContact(props) {
   return <FormContact {...props} key={props.savedContact.id} />;
 }
@@ -9,45 +17,45 @@ function FormContact({ savedContact, onSave }) {
   const [email, setEmail] = useState(savedContact.email);
 
   return (
-    <section>
-      <label>
-        Name:
-        <input
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
+    <DecoratedForm onSubmit={onSave}>
+      <DecoratedInput
+        inputType="text"
+        inputName="name"
+        inputValue={name}
+        inputLabel="Name"
+        handleChange={e => setName(e.target.value)}
+        icon={<FiUser />}
+      />
+      <DecoratedInput
+        inputType="email"
+        inputName="email"
+        inputValue={email}
+        inputLabel="E-mail"
+        handleChange={e => setEmail(e.target.value)}
+        icon={<FiMail />}
+      />
+      <FlexBox>
+        <DecoratedButton
+          type="submit"
+          caption="Save"
+          onClick={e => {
+            e.preventDefault();
+            const updatedData = {
+              id: savedContact.id,
+              name: name,
+              email: email,
+            };
+            onSave(updatedData);
+          }}
         />
-      </label>
-      <label>
-        Email:
-        <input
-          type="email"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
+        <DecoratedButton
+          caption="Reset"
+          onClick={() => {
+            setName(savedContact.name);
+            setEmail(savedContact.email);
+          }}
         />
-      </label>
-      <button
-        type="button"
-        onClick={() => {
-          const updatedData = {
-            id: savedContact.id,
-            name: name,
-            email: email,
-          };
-          onSave(updatedData);
-        }}
-      >
-        Save
-      </button>
-      <button
-        type="button"
-        onClick={() => {
-          setName(savedContact.name);
-          setEmail(savedContact.email);
-        }}
-      >
-        Reset
-      </button>
-    </section>
+      </FlexBox>
+    </DecoratedForm>
   );
 }

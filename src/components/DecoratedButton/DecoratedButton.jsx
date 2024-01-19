@@ -13,6 +13,7 @@ export default function DecoratedButton({
       className={css.decoratedButton}
       onClick={onClick}
       disabled={isDisabled}
+      type="button"
       {...delegated}
     >
       {caption}

@@ -1,19 +1,20 @@
+import DecoratedButton from 'components/DecoratedButton';
+import FlexBox from 'components/FlexBox';
+
 export default function ContactList({ contacts, selectedId, onSelect }) {
   return (
-    <section>
-      <ul>
-        {contacts.map(contact => (
-          <li key={contact.id}>
-            <button
-              onClick={() => {
-                onSelect(contact.id);
-              }}
-            >
-              {contact.id === selectedId ? <b>{contact.name}</b> : contact.name}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </section>
+    <FlexBox>
+      {contacts.map(contact => (
+        <DecoratedButton
+          key={contact.id}
+          caption={
+            contact.id === selectedId ? <b>{contact.name}</b> : contact.name
+          }
+          onClick={() => {
+            onSelect(contact.id);
+          }}
+        />
+      ))}
+    </FlexBox>
   );
 }

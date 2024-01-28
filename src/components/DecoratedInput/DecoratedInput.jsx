@@ -14,13 +14,18 @@ export default function DecoratedInput({
   inputRef,
 }) {
   return (
-    <label className={css.field}>
-      {inputLabel && <span className={css.label}>{inputLabel}</span>}
+    <div className={css.field}>
+      {inputLabel && (
+        <label className={css.label} htmlFor={inputName}>
+          {inputLabel}
+        </label>
+      )}
       <div className={css['wrap-input']}>
         <input
           disabled={isDisabled}
           type={inputType}
           name={inputName}
+          id={inputName}
           value={inputValue}
           autoComplete="off"
           className={css.input}
@@ -30,7 +35,7 @@ export default function DecoratedInput({
         />
         <span className={css.icon}>{icon}</span>
       </div>
-    </label>
+    </div>
   );
 }
 

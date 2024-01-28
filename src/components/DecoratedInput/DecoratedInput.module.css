@@ -11,6 +11,12 @@
 .label {
   font-size: 10px;
   color: var(--color-text);
+  transition: var(--my-transition);
+}
+
+.field:hover .label,
+.field:focus .label {
+  color: var(--color-accent);
 }
 
 .wrap-input {
@@ -27,8 +33,8 @@
   transition: var(--my-transition);
 }
 
-.input:hover,
-.input:focus {
+.field:hover .input,
+.field:focus .input {
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
 }
@@ -51,8 +57,8 @@
   transition: var(--my-transition);
 }
 
-.input:hover + .icon,
-.input:focus + .icon {
+.field:hover .icon,
+.field:focus .icon {
   color: var(--color-accent);
 }
 

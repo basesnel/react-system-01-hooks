@@ -74,6 +74,7 @@ export default function SignupForm() {
         inputName="email"
         inputValue={email}
         inputLabel="E-mail"
+        inputPlaceholder="Input e-mail"
         handleChange={handleChange}
         icon={<FiMail />}
       />
@@ -82,6 +83,7 @@ export default function SignupForm() {
         inputName="password"
         inputValue={password}
         inputLabel="Password"
+        inputPlaceholder="Input password"
         handleChange={handleChange}
         icon={<FiLock />}
       />

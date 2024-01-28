@@ -11,6 +11,7 @@
 .label {
   font-size: 10px;
   color: var(--color-text);
+  cursor: pointer;
   transition: var(--my-transition);
 }
 
@@ -33,15 +34,15 @@
   transition: var(--my-transition);
 }
 
-.field:hover .input,
-.field:focus .input {
+.field:hover .input:not(:disabled),
+.field:focus .input:not(:disabled) {
   color: var(--color-accent);
   border: 1px solid var(--color-accent);
 }
 
 .input:disabled {
-  color: var(--color-light-opacity);
-  border: 1px solid var(--color-light-opacity);
+  color: var(--color-text-opacity);
+  border: 1px solid var(--color-text-opacity);
 }
 
 .icon {
@@ -63,7 +64,11 @@
 }
 
 .input:disabled + .icon {
-  color: var(--color-light-opacity);
+  color: var(--color-text-opacity);
+}
+
+.input:disabled ~ .label {
+  color: var(--color-text-opacity);
 }
 
 @media mobile-to {

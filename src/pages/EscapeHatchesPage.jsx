@@ -42,22 +42,22 @@ export const EscapeHatchesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="referencing values with refs">
+          <Card title="pract 1: referencing values with refs">
             <RefValuesByRef />
           </Card>
-          <Card title="starting a stopwatch">
+          <Card title="pract 2: starting a stopwatch">
             <StopWatch />
           </Card>
-          <Card title="building a stopwatch">
+          <Card title="pract 3: building a stopwatch">
             <BuildingWatch />
           </Card>
-          <Card title="difference between refs and state">
+          <Card title="pract 4: difference between refs and state">
             <CounterRef />
           </Card>
-          <Card title="fix a broken chat input">
+          <Card title="pract 5: fix a broken chat input">
             <FixBrockenInput />
           </Card>
-          <Card title="fix a component failed to re-render">
+          <Card title="pract 6: fix a component failed to re-render">
             <FixFailingRerender />
           </Card>
           <Card title="fix debouncing">

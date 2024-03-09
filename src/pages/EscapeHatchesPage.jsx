@@ -54,16 +54,16 @@ export const EscapeHatchesPage = () => {
           <Card title="pract 4: difference between refs and state">
             <CounterRef />
           </Card>
-          <Card title="pract 5: fix a broken chat input">
+          <Card title="task 1: fix a broken chat input">
             <FixBrockenInput />
           </Card>
-          <Card title="pract 6: fix a component failed to re-render">
+          <Card title="task 2: fix a component failed to re-render">
             <FixFailingRerender />
           </Card>
-          <Card title="fix debouncing">
+          <Card title="task 3: fix debouncing">
             <FixDebouncing />
           </Card>
-          <Card title="read the latest state">
+          <Card title="task 4: read the latest state">
             <ReadLatestState />
           </Card>
           <Card title="manipulating the dom with refs">

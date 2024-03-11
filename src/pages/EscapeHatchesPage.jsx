@@ -42,58 +42,58 @@ export const EscapeHatchesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="pract 1: referencing values with refs">
+          <Card title="pract 01: referencing values with refs">
             <RefValuesByRef />
           </Card>
-          <Card title="pract 2: starting a stopwatch">
+          <Card title="pract 02: starting a stopwatch">
             <StopWatch />
           </Card>
-          <Card title="pract 3: building a stopwatch">
+          <Card title="pract 03: building a stopwatch">
             <BuildingWatch />
           </Card>
-          <Card title="pract 4: difference between refs and state">
+          <Card title="pract 04: difference between refs and state">
             <CounterRef />
           </Card>
-          <Card title="task 1: fix a broken chat input">
+          <Card title="task 01: fix a broken chat input">
             <FixBrockenInput />
           </Card>
-          <Card title="task 2: fix a component failed to re-render">
+          <Card title="task 02: fix a component failed to re-render">
             <FixFailingRerender />
           </Card>
-          <Card title="task 3: fix debouncing">
+          <Card title="task 03: fix debouncing">
             <FixDebouncing />
           </Card>
-          <Card title="task 4: read the latest state">
+          <Card title="task 04: read the latest state">
             <ReadLatestState />
           </Card>
-          <Card title="manipulating the dom with refs">
+          <Card title="pract 05: manipulating the dom with refs">
             <ManipulatingDOM />
           </Card>
-          <Card title="scrolling to an element">
+          <Card title="pract 06: scrolling to an element">
             <CatFriends />
           </Card>
-          <Card title="how to manage a list of refs using a ref callback">
+          <Card title="pract 07: how to manage a list of refs using a ref callback">
             <RefCallBack />
           </Card>
-          <Card title="accessing another component's dom node">
+          <Card title="pract 08: accessing another component's dom node">
             <AccessingComponent />
           </Card>
-          <Card title="flushing state updates synchronously with flushsync">
+          <Card title="pract 09: flushing state updates synchronously with flushsync">
             <FlushingStateUpdates />
           </Card>
-          <Card title="best practices for dom manipulation with refs">
+          <Card title="pract 10: best practices for dom manipulation with refs">
             <ManipulationDom />
           </Card>
-          <Card title="play and pause the video">
+          <Card title="task 05: play and pause the video">
             <VideoPlayer />
           </Card>
-          <Card title="focus the search field">
+          <Card title="task 06: focus the search field">
             <FocusingSearch />
           </Card>
-          <Card title="scrolling an image carousel">
+          <Card title="task 07: scrolling an image carousel">
             <CatFriendsTask />
           </Card>
-          <Card title="focusing the search field  with separate components">
+          <Card title="task 08: focusing the search field  with separate components">
             <ForwardSepComp />
           </Card>
           <Card title="task: declare an effect">

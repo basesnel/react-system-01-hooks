@@ -25,6 +25,7 @@ export default function DecoratedInput({
           disabled={isDisabled}
           type={inputType}
           name={inputName}
+          id={inputName}
           value={inputValue}
           autoComplete="off"
           className={css.input}

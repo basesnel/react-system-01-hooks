@@ -35,7 +35,7 @@ function ChatRoom({ roomId }) {
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
       <DecoratedInput
         inputType="text"
-        inputName="message"
+        inputName="funcMessage"
         inputValue={message}
         inputLabel="Your message:"
         handleChange={e => setMessage(e.target.value)}

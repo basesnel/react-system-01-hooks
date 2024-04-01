@@ -29,52 +29,52 @@ export const UseEffectsPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="pract 01: connecting to chat server">
+          <Card title="prac 01: connecting to chat server">
             <ChatServer />
           </Card>
-          <Card title="pract 02: listening to global browser event">
+          <Card title="prac 02: listening to global browser event">
             <ListeningGlobalEvent />
           </Card>
-          <Card title="pract 03: triggering an animation">
+          <Card title="prac 03: triggering an animation">
             <TriggeringAnimation />
           </Card>
-          <Card title="pract 04: controlling a modal dialog">
+          <Card title="prac 04: controlling a modal dialog">
             <ControllingModalDialog />
           </Card>
-          <Card title="pract 05: tracking element visibility">
+          <Card title="prac 05: tracking element visibility">
             <TrackingElementVisibility />
           </Card>
-          <Card title="pract 06: custom usechatroom hook">
+          <Card title="prac 06: custom usechatroom hook">
             <CustomUseChatRoom />
           </Card>
-          <Card title="pract 07: custom usecwindowlistener hook">
+          <Card title="prac 07: custom usecwindowlistener hook">
             <CustomUseWindowListener />
           </Card>
-          <Card title="pract 08: custom useintersectionobserver hook">
+          <Card title="prac 08: custom useintersectionobserver hook">
             <CustomTrackingVisibility />
           </Card>
-          <Card title="pract 09: controlling  a non-react widget">
+          <Card title="prac 09: controlling  a non-react widget">
             <MapWidget />
           </Card>
-          <Card title="pract 10: fetching data with effects">
+          <Card title="prac 10: fetching data with effects">
             <FetchingData />
           </Card>
-          <Card title="pract 11: passing a dependancy array">
+          <Card title="prac 11: passing a dependancy array">
             <PassingDepArray />
           </Card>
-          <Card title="pract 12: passing an empty dependancy array">
+          <Card title="prac 12: passing an empty dependancy array">
             <PassingEmptyDepArray />
           </Card>
-          <Card title="pract 13: passing no dependancy array at all">
+          <Card title="prac 13: passing no dependancy array at all">
             <PassingNoDepArray />
           </Card>
-          <Card title="pract 14: updating state based on previous state from an effect">
+          <Card title="prac 14: updating state based on previous state from an effect">
             <UpdatingBasedOnPrev />
           </Card>
-          <Card title="pract 15: removing unnecessary object dependancies">
+          <Card title="prac 15: removing unnecessary object dependancies">
             <RemovingUnryObjectDep />
           </Card>
-          <Card title="pract 16: removing unnecessary function dependancies">
+          <Card title="prac 16: removing unnecessary function dependancies">
             <RemovingUnryFuncDep />
           </Card>
         </Grid>

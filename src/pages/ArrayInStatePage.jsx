@@ -26,40 +26,40 @@ export const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="adding to an array">
+          <Card title="prac 01: adding to an array">
             <ArrayPractFirst />
           </Card>
-          <Card title="removing from an array">
+          <Card title="prac 02: removing from an array">
             <ArrayPractSecond />
           </Card>
-          <Card title="transforming an array">
+          <Card title="prac 03: transforming an array">
             <ArrayPractThird />
           </Card>
-          <Card title="replacing items in an array">
+          <Card title="prac 04: replacing items in an array">
             <ArrayPractFourth />
           </Card>
-          <Card title="inserting into an array">
+          <Card title="prac 05: inserting into an array">
             <ArrayPractFifth />
           </Card>
-          <Card title="making other changes to an array">
+          <Card title="prac 06: making other changes to an array">
             <ArrayPractSixth />
           </Card>
-          <Card title="updating objects inside arrays">
+          <Card title="prac 07: updating objects inside arrays">
             <ArrayPractSeventh />
           </Card>
-          <Card title="write concise update logic with immer">
+          <Card title="prac 08: write concise update logic with immer">
             <ArrayPractEighth />
           </Card>
-          <Card title="update an item in the shopping cart">
+          <Card title="task 01: update an item in the shopping cart">
             <ArrayTaskFirst />
           </Card>
-          <Card title="remove an item in the shopping cart">
+          <Card title="task 02: remove an item in the shopping cart">
             <ArrayTaskSecond />
           </Card>
-          <Card title="fix the mutations using non-mutative methods">
+          <Card title="task 03: fix the mutations using non-mutative methods">
             <ArrayTaskThird />
           </Card>
-          <Card title="fix the mutations using immer">
+          <Card title="task 04: fix the mutations using immer">
             <ArrayTaskFourth />
           </Card>
         </Grid>

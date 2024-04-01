@@ -42,16 +42,16 @@ export const EscapeHatchesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="pract 01: referencing values with refs">
+          <Card title="prac 01: referencing values with refs">
             <RefValuesByRef />
           </Card>
-          <Card title="pract 02: starting a stopwatch">
+          <Card title="prac 02: starting a stopwatch">
             <StopWatch />
           </Card>
-          <Card title="pract 03: building a stopwatch">
+          <Card title="prac 03: building a stopwatch">
             <BuildingWatch />
           </Card>
-          <Card title="pract 04: difference between refs and state">
+          <Card title="prac 04: difference between refs and state">
             <CounterRef />
           </Card>
           <Card title="task 01: fix a broken chat input">
@@ -66,22 +66,22 @@ export const EscapeHatchesPage = () => {
           <Card title="task 04: read the latest state">
             <ReadLatestState />
           </Card>
-          <Card title="pract 05: manipulating the dom with refs">
+          <Card title="prac 05: manipulating the dom with refs">
             <ManipulatingDOM />
           </Card>
-          <Card title="pract 06: scrolling to an element">
+          <Card title="prac 06: scrolling to an element">
             <CatFriends />
           </Card>
-          <Card title="pract 07: how to manage a list of refs using a ref callback">
+          <Card title="prac 07: how to manage a list of refs using a ref callback">
             <RefCallBack />
           </Card>
-          <Card title="pract 08: accessing another component's dom node">
+          <Card title="prac 08: accessing another component's dom node">
             <AccessingComponent />
           </Card>
-          <Card title="pract 09: flushing state updates synchronously with flushsync">
+          <Card title="prac 09: flushing state updates synchronously with flushsync">
             <FlushingStateUpdates />
           </Card>
-          <Card title="pract 10: best practices for dom manipulation with refs">
+          <Card title="prac 10: best pracices for dom manipulation with refs">
             <ManipulationDom />
           </Card>
           <Card title="task 05: play and pause the video">
@@ -96,16 +96,16 @@ export const EscapeHatchesPage = () => {
           <Card title="task 08: focusing the search field  with separate components">
             <ForwardSepComp />
           </Card>
-          <Card title="pract 11: declare an effect">
+          <Card title="prac 11: declare an effect">
             <DeclareAnEffect />
           </Card>
-          <Card title="pract 12: specify the effect dependancies">
+          <Card title="prac 12: specify the effect dependancies">
             <EffectDependancies />
           </Card>
-          <Card title="pract 13: add cleanup if needed">
+          <Card title="prac 13: add cleanup if needed">
             <AddCleanup />
           </Card>
-          <Card title="pract 14: putting it all together">
+          <Card title="prac 14: putting it all together">
             <PutAllTogether />
           </Card>
           <Card title="task 09: focus on field on mount">

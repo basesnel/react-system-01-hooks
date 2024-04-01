@@ -96,28 +96,28 @@ export const EscapeHatchesPage = () => {
           <Card title="task 08: focusing the search field  with separate components">
             <ForwardSepComp />
           </Card>
-          <Card title="task: declare an effect">
+          <Card title="pract 11: declare an effect">
             <DeclareAnEffect />
           </Card>
-          <Card title="specify the effect dependancies">
+          <Card title="pract 12: specify the effect dependancies">
             <EffectDependancies />
           </Card>
-          <Card title="add cleanup if needed">
+          <Card title="pract 13: add cleanup if needed">
             <AddCleanup />
           </Card>
-          <Card title="putting it all together">
+          <Card title="pract 14: putting it all together">
             <PutAllTogether />
           </Card>
-          <Card title="focus on field on mount">
+          <Card title="task 09: focus on field on mount">
             <FocusOnMount />
           </Card>
-          <Card title="focus a field conditionally">
+          <Card title="task 10: focus a field conditionally">
             <FocusOnMountCond />
           </Card>
-          <Card title="fix an interval that fires twice">
+          <Card title="task 11: fix an interval that fires twice">
             <FixAnInterval />
           </Card>
-          <Card title="fix fetching inside an effect">
+          <Card title="task 12: fix fetching inside an effect">
             <FixFetchingInEffect />
           </Card>
         </Grid>

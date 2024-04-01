@@ -34,7 +34,7 @@ export const EscapeHatchesPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="escape hatches" />
+        <Title level={1} caption="escape hatches - part 1" />
         <Paragraph>
           Escape hatches cases that may need to control and synchronize with
           system outside of React.

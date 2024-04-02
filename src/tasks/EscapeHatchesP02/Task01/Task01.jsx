@@ -13,7 +13,7 @@ import { RiAddCircleFill } from 'react-icons/ri';
 import Paragraph from 'components/Paragraph';
 import DecoratedCheckBox from 'components/DecoratedCheckBox';
 
-export default function TformDataWithoutEffect() {
+export default function Task01() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
 
@@ -28,6 +28,7 @@ export default function TformDataWithoutEffect() {
   return (
     <>
       <DecoratedCheckBox
+        name="Task01 act"
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}
         label="Show only active todos"

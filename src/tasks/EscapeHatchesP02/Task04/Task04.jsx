@@ -35,6 +35,7 @@ export default function Task04() {
   return (
     <form onSubmit={handleSubmit}>
       <textarea
+        name="Task04 message"
         placeholder="Message"
         value={message}
         onChange={e => setMessage(e.target.value)}

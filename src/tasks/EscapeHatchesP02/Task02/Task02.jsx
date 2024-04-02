@@ -8,7 +8,7 @@ import { RiAddCircleFill } from 'react-icons/ri';
 import { useState, useMemo } from 'react';
 import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
 
-export default function CacheCalcWithEffect() {
+export default function Task02() {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
   const [text, setText] = useState('');
@@ -26,6 +26,7 @@ export default function CacheCalcWithEffect() {
   return (
     <>
       <DecoratedCheckBox
+        name="Task02 act"
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}
         label="Show only active todos"

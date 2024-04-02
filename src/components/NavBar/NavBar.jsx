@@ -141,9 +141,9 @@ export default function NavBar() {
             className={({ isActive }) =>
               isActive ? css.navlinkactive : css.navlink
             }
-            to="/escape-hatches"
+            to="/escape-hatches-part-1"
           >
-            Escape hatches
+            Escape hatches - part I
           </NavLink>
         </li>
         <li className={css.item}>
@@ -153,7 +153,7 @@ export default function NavBar() {
             }
             to="/escape-hatches-part-2"
           >
-            Escape hatches - part 2
+            Escape hatches - part II
           </NavLink>
         </li>
       </ul>

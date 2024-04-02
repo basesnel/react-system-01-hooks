@@ -21,16 +21,16 @@ export const EscapeHatchesPagePtwo = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="task 1: transform data without effects">
+          <Card title="task 01: transform data without effects">
             <TformDataWithoutEffect />
           </Card>
-          <Card title="task 2: cache a calculation without effects">
+          <Card title="task 02: cache a calculation without effects">
             <CacheCalcWithEffect />
           </Card>
-          <Card title="task 3: reset state without effects">
+          <Card title="task 03: reset state without effects">
             <ContactManager />
           </Card>
-          <Card title="task 4: submit a form without effects">
+          <Card title="task 04: submit a form without effects">
             <SubmitWithoutEffect />
           </Card>
         </Grid>

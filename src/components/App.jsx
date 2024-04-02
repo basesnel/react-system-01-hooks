@@ -41,7 +41,7 @@ function App() {
         <Route path="/objects" element={<ObjectInStatePage />} />
         <Route path="/arrays" element={<ArrayInStatePage />} />
         <Route path="/use-effects" element={<UseEffectsPage />} />
-        <Route path="/escape-hatches" element={<EscapeHatchesPage />} />
+        <Route path="/escape-hatches-part-1" element={<EscapeHatchesPage />} />
         <Route
           path="/escape-hatches-part-2"
           element={<EscapeHatchesPagePtwo />}

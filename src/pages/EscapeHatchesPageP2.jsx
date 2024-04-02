@@ -4,10 +4,10 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import TformDataWithoutEffect from 'tasks/EscapeHatches/TformDataWithoutEffect';
-import CacheCalcWithEffect from 'tasks/EscapeHatches/CacheCalcWithEffect';
-import ContactManager from 'tasks/EscapeHatchesPartII/ContactManager';
-import SubmitWithoutEffect from 'tasks/EscapeHatchesPartII/SubmitWithoutEffect';
+import Task01 from 'tasks/EscapeHatchesP02/Task01';
+import Task02 from 'tasks/EscapeHatchesP02/Task02';
+import Task03 from 'tasks/EscapeHatchesP02/Task03';
+import Task04 from 'tasks/EscapeHatchesP02/Task04';
 
 export const EscapeHatchesPageP2 = () => {
   return (
@@ -22,16 +22,16 @@ export const EscapeHatchesPageP2 = () => {
       <Container>
         <Grid>
           <Card title="task 01: transform data without effects">
-            <TformDataWithoutEffect />
+            <Task01 />
           </Card>
           <Card title="task 02: cache a calculation without effects">
-            <CacheCalcWithEffect />
+            <Task02 />
           </Card>
           <Card title="task 03: reset state without effects">
-            <ContactManager />
+            <Task03 />
           </Card>
           <Card title="task 04: submit a form without effects">
-            <SubmitWithoutEffect />
+            <Task04 />
           </Card>
         </Grid>
       </Container>

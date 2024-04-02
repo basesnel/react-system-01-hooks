@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ContactList from './ContactList';
 import EditContact from './EditContact';
 
-export default function ContactManager() {
+export default function Task03() {
   const [contacts, setContacts] = useState(initialContacts);
   const [selectedId, setSelectedId] = useState(0);
   const selectedContact = contacts.find(c => c.id === selectedId);

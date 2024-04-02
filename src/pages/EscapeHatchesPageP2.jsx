@@ -9,7 +9,7 @@ import CacheCalcWithEffect from 'tasks/EscapeHatches/CacheCalcWithEffect';
 import ContactManager from 'tasks/EscapeHatchesPartII/ContactManager';
 import SubmitWithoutEffect from 'tasks/EscapeHatchesPartII/SubmitWithoutEffect';
 
-export const EscapeHatchesPagePtwo = () => {
+export const EscapeHatchesPageP2 = () => {
   return (
     <main>
       <Container>

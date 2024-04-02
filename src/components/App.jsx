@@ -17,8 +17,8 @@ import { QueueingPage } from '../pages/QueueingPage';
 import { ObjectInStatePage } from '../pages/ObjectInStatePage';
 import { ArrayInStatePage } from '../pages/ArrayInStatePage';
 import { UseEffectsPage } from '../pages/UseEffectsPage';
-import { EscapeHatchesPage } from 'pages/EscapeHatchesPage';
-import { EscapeHatchesPagePtwo } from 'pages/EscapeHatchesPagePtwo';
+import { EscapeHatchesPageP1 } from 'pages/EscapeHatchesPageP1';
+import { EscapeHatchesPageP2 } from 'pages/EscapeHatchesPageP2';
 
 import AppBar from './AppBar';
 
@@ -41,10 +41,13 @@ function App() {
         <Route path="/objects" element={<ObjectInStatePage />} />
         <Route path="/arrays" element={<ArrayInStatePage />} />
         <Route path="/use-effects" element={<UseEffectsPage />} />
-        <Route path="/escape-hatches-part-1" element={<EscapeHatchesPage />} />
+        <Route
+          path="/escape-hatches-part-1"
+          element={<EscapeHatchesPageP1 />}
+        />
         <Route
           path="/escape-hatches-part-2"
-          element={<EscapeHatchesPagePtwo />}
+          element={<EscapeHatchesPageP2 />}
         />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

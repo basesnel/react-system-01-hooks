@@ -30,7 +30,7 @@ import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
 import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
 import FixFetchingInEffect from 'tasks/EscapeHatches/FixFetchingInEffect';
 
-export const EscapeHatchesPage = () => {
+export const EscapeHatchesPageP1 = () => {
   return (
     <main>
       <Container>

@@ -4,7 +4,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Title from 'components/Title';
 
-export default function BuildingWatch() {
+export default function Prac03() {
   const [startTime, setStartTime] = useState(null);
   const [now, setNow] = useState(null);
   const intervalRef = useRef(null);

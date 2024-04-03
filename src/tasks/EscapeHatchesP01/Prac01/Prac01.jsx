@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
-export default function RefValuesByRef() {
+export default function Prac01() {
   let ref = useRef(0);
 
   function handleClick() {

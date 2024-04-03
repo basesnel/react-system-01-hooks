@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
-export default function CounterRef() {
+export default function Prac04() {
   const [counterState, setCounterState] = useState(0);
   const counterRef = useRef(0);
 

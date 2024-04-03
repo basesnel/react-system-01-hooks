@@ -4,7 +4,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Title from 'components/Title';
 
-export default function StopWatch() {
+export default function Prac02() {
   const [startTime, setStartTime] = useState(null);
   const [now, setNow] = useState(null);
 

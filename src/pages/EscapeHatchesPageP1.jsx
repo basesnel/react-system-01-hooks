@@ -3,32 +3,32 @@ import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import RefValuesByRef from 'tasks/EscapeHatches/RefValuesByRef';
-import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
-import StopWatch from 'tasks/EscapeHatches/StopWatch';
-import BuildingWatch from 'tasks/EscapeHatches/BuildingWatch';
-import CounterRef from 'tasks/EscapeHatches/CounterRef';
-import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
-import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
-import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
-import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
-import CatFriends from 'tasks/EscapeHatches/CatFriends';
-import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
-import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
-import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
-import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
-import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
-import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
-import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
-import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
-import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
-import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
-import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
-import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
-import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
-import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
-import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
-import FixFetchingInEffect from 'tasks/EscapeHatches/FixFetchingInEffect';
+import Prac01 from 'tasks/EscapeHatchesP01/Prac01';
+import Prac02 from 'tasks/EscapeHatchesP01/Prac02';
+import Prac03 from 'tasks/EscapeHatchesP01/Prac03';
+import Prac04 from 'tasks/EscapeHatchesP01/Prac04';
+// import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
+// import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
+// import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
+// import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
+// import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
+// import CatFriends from 'tasks/EscapeHatches/CatFriends';
+// import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
+// import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
+// import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
+// import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
+// import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
+// import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
+// import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
+// import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
+// import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
+// import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
+// import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
+// import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
+// import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
+// import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
+// import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
+// import FixFetchingInEffect from 'tasks/EscapeHatches/FixFetchingInEffect';
 
 export const EscapeHatchesPageP1 = () => {
   return (
@@ -43,18 +43,18 @@ export const EscapeHatchesPageP1 = () => {
       <Container>
         <Grid>
           <Card title="prac 01: referencing values with refs">
-            <RefValuesByRef />
+            <Prac01 />
           </Card>
           <Card title="prac 02: starting a stopwatch">
-            <StopWatch />
+            <Prac02 />
           </Card>
           <Card title="prac 03: building a stopwatch">
-            <BuildingWatch />
+            <Prac03 />
           </Card>
           <Card title="prac 04: difference between refs and state">
-            <CounterRef />
+            <Prac04 />
           </Card>
-          <Card title="task 01: fix a broken chat input">
+          {/* <Card title="task 01: fix a broken chat input">
             <FixBrockenInput />
           </Card>
           <Card title="task 02: fix a component failed to re-render">
@@ -119,7 +119,7 @@ export const EscapeHatchesPageP1 = () => {
           </Card>
           <Card title="task 12: fix fetching inside an effect">
             <FixFetchingInEffect />
-          </Card>
+          </Card> */}
         </Grid>
       </Container>
     </main>

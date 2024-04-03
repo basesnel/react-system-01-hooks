@@ -18,7 +18,7 @@ const MyInput = forwardRef((props, ref) => {
   // return <DecoratedInput {...props} icon={<FiEdit3 />} ref={realInputRef} />;
 });
 
-export default function AccessingComponent() {
+export default function Prac08() {
   const inputRef = useRef(null);
 
   function handleClick() {

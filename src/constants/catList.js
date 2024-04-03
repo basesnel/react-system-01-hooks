@@ -4,7 +4,7 @@ export function catList(length) {
   for (let i = 0; i < length; i++) {
     list.push({
       id: i,
-      imageUrl: 'https://placekitten.com/250/200?image=' + i,
+      imageUrl: 'https://plchldr.co/i/336x280',
     });
   }
 

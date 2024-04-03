@@ -11,10 +11,10 @@ import Task01 from 'tasks/EscapeHatchesP01/Task01';
 import Task02 from 'tasks/EscapeHatchesP01/Task02';
 import Task03 from 'tasks/EscapeHatchesP01/Task03';
 import Task04 from 'tasks/EscapeHatchesP01/Task04';
-// import ManipulatingDOM from 'tasks/EscapeHatchesP01/ManipulatingDOM';
-// import CatFriends from 'tasks/EscapeHatches/CatFriends';
-// import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
-// import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
+import Prac05 from 'tasks/EscapeHatchesP01/Prac05';
+import Prac06 from 'tasks/EscapeHatchesP01/Prac06';
+import Prac07 from 'tasks/EscapeHatchesP01/Prac07';
+import Prac08 from 'tasks/EscapeHatchesP01/Prac08';
 // import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
 // import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
 // import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
@@ -66,19 +66,19 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="task 04: read the latest state">
             <Task04 />
           </Card>
-          {/* <Card title="prac 05: manipulating the dom with refs">
-            <ManipulatingDOM />
+          <Card title="prac 05: manipulating the dom with refs">
+            <Prac05 />
           </Card>
           <Card title="prac 06: scrolling to an element">
-            <CatFriends />
+            <Prac06 />
           </Card>
           <Card title="prac 07: how to manage a list of refs using a ref callback">
-            <RefCallBack />
+            <Prac07 />
           </Card>
           <Card title="prac 08: accessing another component's dom node">
-            <AccessingComponent />
+            <Prac08 />
           </Card>
-          <Card title="prac 09: flushing state updates synchronously with flushsync">
+          {/* <Card title="prac 09: flushing state updates synchronously with flushsync">
             <FlushingStateUpdates />
           </Card>
           <Card title="prac 10: best pracices for dom manipulation with refs">

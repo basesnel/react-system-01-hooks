@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import DecoratedInput from 'components/DecoratedInput';
 
-export default function ManipulatingDOM() {
+export default function Prac05() {
   const inputRef = useRef(null);
 
   function handleClick() {

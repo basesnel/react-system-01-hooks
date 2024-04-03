@@ -7,10 +7,10 @@ import Slide from 'components/Slide';
 
 import { catList } from 'constants';
 
-export default function RefCallBack() {
+export default function Prac07() {
   const itemsRef = useRef(null);
 
-  const kittens = catList(18);
+  const kittens = catList(10);
 
   function scrollToId(itemId) {
     const map = getMap();

@@ -5,7 +5,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 
-export default function CatFriends() {
+export default function Prac06() {
   const firstCatRef = useRef(null);
   const secondCatRef = useRef(null);
   const thirdCatRef = useRef(null);
@@ -38,22 +38,18 @@ export default function CatFriends() {
     <>
       <Slider>
         <Slide>
-          <img
-            src="https://placekitten.com/g/200/200"
-            alt="Tom"
-            ref={firstCatRef}
-          />
+          <img src="https://plchldr.co/i/336x280" alt="Tom" ref={firstCatRef} />
         </Slide>
         <Slide>
           <img
-            src="https://placekitten.com/g/300/200"
+            src="https://plchldr.co/i/336x280"
             alt="Maru"
             ref={secondCatRef}
           />
         </Slide>
         <Slide>
           <img
-            src="https://placekitten.com/g/250/200"
+            src="https://plchldr.co/i/336x280"
             alt="Jellylorum"
             ref={thirdCatRef}
           />

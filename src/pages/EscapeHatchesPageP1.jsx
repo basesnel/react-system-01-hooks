@@ -7,11 +7,11 @@ import Prac01 from 'tasks/EscapeHatchesP01/Prac01';
 import Prac02 from 'tasks/EscapeHatchesP01/Prac02';
 import Prac03 from 'tasks/EscapeHatchesP01/Prac03';
 import Prac04 from 'tasks/EscapeHatchesP01/Prac04';
-// import ManipulatingDOM from 'tasks/EscapeHatches/ManipulatingDOM';
-// import FixBrockenInput from 'tasks/EscapeHatches/FixBrockenInput';
-// import FixFailingRerender from 'tasks/EscapeHatches/FixFailingRerender';
-// import FixDebouncing from 'tasks/EscapeHatches/FixDebouncing';
-// import ReadLatestState from 'tasks/EscapeHatches/ReadLatestState';
+import Task01 from 'tasks/EscapeHatchesP01/Task01';
+import Task02 from 'tasks/EscapeHatchesP01/Task02';
+import Task03 from 'tasks/EscapeHatchesP01/Task03';
+import Task04 from 'tasks/EscapeHatchesP01/Task04';
+// import ManipulatingDOM from 'tasks/EscapeHatchesP01/ManipulatingDOM';
 // import CatFriends from 'tasks/EscapeHatches/CatFriends';
 // import RefCallBack from 'tasks/EscapeHatches/RefCallBack';
 // import AccessingComponent from 'tasks/EscapeHatches/AccessingComponent';
@@ -54,19 +54,19 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="prac 04: difference between refs and state">
             <Prac04 />
           </Card>
-          {/* <Card title="task 01: fix a broken chat input">
-            <FixBrockenInput />
+          <Card title="task 01: fix a broken chat input">
+            <Task01 />
           </Card>
           <Card title="task 02: fix a component failed to re-render">
-            <FixFailingRerender />
+            <Task02 />
           </Card>
           <Card title="task 03: fix debouncing">
-            <FixDebouncing />
+            <Task03 />
           </Card>
           <Card title="task 04: read the latest state">
-            <ReadLatestState />
+            <Task04 />
           </Card>
-          <Card title="prac 05: manipulating the dom with refs">
+          {/* <Card title="prac 05: manipulating the dom with refs">
             <ManipulatingDOM />
           </Card>
           <Card title="prac 06: scrolling to an element">

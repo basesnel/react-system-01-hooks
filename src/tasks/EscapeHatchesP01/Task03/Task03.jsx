@@ -22,7 +22,7 @@ function DebouncedButton({ onClick, caption }) {
   );
 }
 
-export default function FixDebouncing() {
+export default function Task03() {
   return (
     <FlexBox>
       <DebouncedButton

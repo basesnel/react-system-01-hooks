@@ -6,7 +6,7 @@ import DecoratedInput from 'components/DecoratedInput';
 import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 
-export default function FixBrockenInput() {
+export default function Task01() {
   const [text, setText] = useState('');
   const [isSending, setIsSending] = useState(false);
   const timeoutId = useRef(null);

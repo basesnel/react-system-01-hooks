@@ -7,7 +7,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 // import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
-export default function ReadLatestState() {
+export default function Task04() {
   const [text, setText] = useState('');
   const actualText = useRef(text);
 

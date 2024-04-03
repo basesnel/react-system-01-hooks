@@ -31,7 +31,7 @@ export default function Task01() {
       <DecoratedInput
         isDisabled={isSending}
         inputType="text"
-        inputName="message"
+        inputName="Task01message"
         inputValue={text}
         inputPlaceholder="Input message"
         handleChange={e => setText(e.target.value)}

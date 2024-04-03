@@ -29,7 +29,7 @@ export default function Task04() {
       /> */}
       <DecoratedInput
         inputType="text"
-        inputName="message"
+        inputName="Task04message"
         inputValue={text}
         inputPlaceholder="Input message"
         handleChange={e => {

@@ -5,7 +5,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 import DecoratedInput from 'components/DecoratedInput';
 
-export default function FocusingSearch() {
+export default function Task06() {
   const searchRef = useRef(null);
 
   return (

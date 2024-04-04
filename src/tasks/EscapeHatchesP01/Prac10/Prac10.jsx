@@ -4,7 +4,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 
-export default function ManipulationDom() {
+export default function Prac10() {
   const [show, setShow] = useState(true);
   const [isBlocked, setIsBlocked] = useState(false);
   const ref = useRef(null);

@@ -15,10 +15,10 @@ import Prac05 from 'tasks/EscapeHatchesP01/Prac05';
 import Prac06 from 'tasks/EscapeHatchesP01/Prac06';
 import Prac07 from 'tasks/EscapeHatchesP01/Prac07';
 import Prac08 from 'tasks/EscapeHatchesP01/Prac08';
-// import FlushingStateUpdates from 'tasks/EscapeHatches/FlushingStateUpdates';
-// import ManipulationDom from 'tasks/EscapeHatches/ManipulationDom';
-// import VideoPlayer from 'tasks/EscapeHatches/VideoPlayer';
-// import FocusingSearch from 'tasks/EscapeHatches/FocusingSearch';
+import Prac09 from 'tasks/EscapeHatchesP01/Prac09';
+import Prac10 from 'tasks/EscapeHatchesP01/Prac10';
+import Task05 from 'tasks/EscapeHatchesP01/Task05';
+import Task06 from 'tasks/EscapeHatchesP01/Task06';
 // import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
 // import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
 // import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
@@ -78,19 +78,19 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="prac 08: accessing another component's dom node">
             <Prac08 />
           </Card>
-          {/* <Card title="prac 09: flushing state updates synchronously with flushsync">
-            <FlushingStateUpdates />
+          <Card title="prac 09: flushing state updates synchronously with flushsync">
+            <Prac09 />
           </Card>
           <Card title="prac 10: best pracices for dom manipulation with refs">
-            <ManipulationDom />
+            <Prac10 />
           </Card>
           <Card title="task 05: play and pause the video">
-            <VideoPlayer />
+            <Task05 />
           </Card>
           <Card title="task 06: focus the search field">
-            <FocusingSearch />
+            <Task06 />
           </Card>
-          <Card title="task 07: scrolling an image carousel">
+          {/* <Card title="task 07: scrolling an image carousel">
             <CatFriendsTask />
           </Card>
           <Card title="task 08: focusing the search field  with separate components">

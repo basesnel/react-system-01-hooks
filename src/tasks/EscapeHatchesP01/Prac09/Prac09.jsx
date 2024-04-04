@@ -9,7 +9,7 @@ import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
 import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
-export default function FlushingStateUpdates() {
+export default function Prac09() {
   const listRef = useRef(null);
   const [text, setText] = useState('');
   const [todos, setTodos] = useState(initialTodos);

@@ -27,7 +27,7 @@ export default function Prac08() {
 
   return (
     <FlexBox>
-      <MyInput ref={inputRef} />
+      <MyInput name="Prac08input" ref={inputRef} />
       <DecoratedButton caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );

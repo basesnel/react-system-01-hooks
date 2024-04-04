@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 
 import { videoSrc } from 'constants';
 
-export default function VideoPlayer() {
+export default function Task05() {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 

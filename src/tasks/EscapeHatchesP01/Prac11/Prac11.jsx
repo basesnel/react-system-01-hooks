@@ -19,7 +19,7 @@ function VideoPlayer({ src, isPlaying }) {
   return <video ref={playerRef} width="250" src={src} loop playsInline />;
 }
 
-export default function DeclareAnEffect() {
+export default function Prac11() {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (

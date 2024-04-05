@@ -22,7 +22,7 @@ function VideoPlayer({ src, isPlaying }) {
   return <video ref={playerRef} width="250" src={src} loop playsInline />;
 }
 
-export default function EffectDependancies() {
+export default function Prac12() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [text, setText] = useState('');
 

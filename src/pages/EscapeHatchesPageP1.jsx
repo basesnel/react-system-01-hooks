@@ -19,10 +19,10 @@ import Prac09 from 'tasks/EscapeHatchesP01/Prac09';
 import Prac10 from 'tasks/EscapeHatchesP01/Prac10';
 import Task05 from 'tasks/EscapeHatchesP01/Task05';
 import Task06 from 'tasks/EscapeHatchesP01/Task06';
-// import CatFriendsTask from 'tasks/EscapeHatches/CatFriendsTask';
-// import ForwardSepComp from 'tasks/EscapeHatches/ForwardSepComp';
-// import DeclareAnEffect from 'tasks/EscapeHatches/DeclareAnEffect';
-// import EffectDependancies from 'tasks/EscapeHatches/EffectDependancies';
+import Task07 from 'tasks/EscapeHatchesP01/Task07';
+import Task08 from 'tasks/EscapeHatchesP01/Task08';
+import Prac11 from 'tasks/EscapeHatchesP01/Prac11';
+import Prac12 from 'tasks/EscapeHatchesP01/Prac12';
 // import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
 // import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
 // import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
@@ -90,19 +90,19 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="task 06: focus the search field">
             <Task06 />
           </Card>
-          {/* <Card title="task 07: scrolling an image carousel">
-            <CatFriendsTask />
+          <Card title="task 07: scrolling an image carousel">
+            <Task07 />
           </Card>
           <Card title="task 08: focusing the search field  with separate components">
-            <ForwardSepComp />
+            <Task08 />
           </Card>
           <Card title="prac 11: declare an effect">
-            <DeclareAnEffect />
+            <Prac11 />
           </Card>
           <Card title="prac 12: specify the effect dependancies">
-            <EffectDependancies />
+            <Prac12 />
           </Card>
-          <Card title="prac 13: add cleanup if needed">
+          {/* <Card title="prac 13: add cleanup if needed">
             <AddCleanup />
           </Card>
           <Card title="prac 14: putting it all together">

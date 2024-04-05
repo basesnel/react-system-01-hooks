@@ -8,9 +8,9 @@ import Slide from 'components/Slide';
 
 import { catList } from 'constants';
 
-import css from './CatFriendsTask.module.css';
+import css from './Task07.module.css';
 
-export default function CatFriendsTask() {
+export default function Task07() {
   const [index, setIndex] = useState(0);
   const selectedRef = useRef(null);
 

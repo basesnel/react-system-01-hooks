@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import DecoratedInputWithRef from 'components/DecoratedInputWithRef';
 
-export default function ForwardSepComp() {
+export default function Task08() {
   const inputRef = useRef(null);
   return (
     <FlexBox>

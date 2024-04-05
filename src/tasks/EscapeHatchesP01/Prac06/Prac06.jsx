@@ -38,18 +38,22 @@ export default function Prac06() {
     <>
       <Slider>
         <Slide>
-          <img src="https://plchldr.co/i/336x280" alt="Tom" ref={firstCatRef} />
+          <img
+            src={require(`../../../assets/images/kittens/kitten02.jpg`)}
+            alt="Tom"
+            ref={firstCatRef}
+          />
         </Slide>
         <Slide>
           <img
-            src="https://plchldr.co/i/336x280"
+            src={require(`../../../assets/images/kittens/kitten03.jpg`)}
             alt="Maru"
             ref={secondCatRef}
           />
         </Slide>
         <Slide>
           <img
-            src="https://plchldr.co/i/336x280"
+            src={require(`../../../assets/images/kittens/kitten05.jpg`)}
             alt="Jellylorum"
             ref={thirdCatRef}
           />

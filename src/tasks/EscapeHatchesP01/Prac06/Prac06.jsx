@@ -39,21 +39,21 @@ export default function Prac06() {
       <Slider>
         <Slide>
           <img
-            src={require(`../../../assets/images/kittens/kitten02.jpg`)}
+            src={require(`../../../assets/images/kittens/kitten-960-02.jpg`)}
             alt="Tom"
             ref={firstCatRef}
           />
         </Slide>
         <Slide>
           <img
-            src={require(`../../../assets/images/kittens/kitten03.jpg`)}
+            src={require(`../../../assets/images/kittens/kitten-960-03.jpg`)}
             alt="Maru"
             ref={secondCatRef}
           />
         </Slide>
         <Slide>
           <img
-            src={require(`../../../assets/images/kittens/kitten05.jpg`)}
+            src={require(`../../../assets/images/kittens/kitten-960-05.jpg`)}
             alt="Jellylorum"
             ref={thirdCatRef}
           />

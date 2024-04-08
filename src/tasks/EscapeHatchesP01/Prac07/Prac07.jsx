@@ -33,8 +33,9 @@ export default function Prac07() {
   const buttonsList = [];
 
   for (let i = 0; i < kittens.length; i++) {
+    const id = i < 9 ? `0${i + 1}` : `${i + 1}`;
     buttonsList.push(
-      <DecoratedButton key={i} caption={i} onClick={() => scrollToId(i)} />
+      <DecoratedButton key={i} caption={id} onClick={() => scrollToId(i)} />
     );
   }
 
@@ -53,7 +54,6 @@ export default function Prac07() {
               }
             }}
           >
-            {/* <img src={kitten.imageUrl} alt={'Cat #' + kitten.id} /> */}
             <picture>
               <source
                 srcSet={`

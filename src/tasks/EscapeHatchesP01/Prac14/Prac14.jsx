@@ -39,7 +39,7 @@ function Playground() {
   );
 }
 
-export default function PutAllTogether() {
+export default function Prac14() {
   const [show, setShow] = useState(false);
 
   return (

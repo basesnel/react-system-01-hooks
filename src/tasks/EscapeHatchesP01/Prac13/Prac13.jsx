@@ -6,7 +6,7 @@ import Title from 'components/Title';
 const serverURL = 'https://localhost:1234';
 const roomID = 'general';
 
-export default function AddCleanup() {
+export default function Prac13() {
   useEffect(() => {
     const connection = createConnection(serverURL, roomID);
     connection.connect();

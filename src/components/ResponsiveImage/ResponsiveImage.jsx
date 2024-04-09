@@ -10,12 +10,6 @@ export default function ResponsiveImage({
   image1280,
 }) {
   return (
-    // <p
-    //   className={centered ? `${css.txt} ${css.centered}` : css.txt}
-    //   ref={paragraphRef}
-    // >
-    //   {children}
-    // </p>
     <picture>
       <source
         srcSet={`

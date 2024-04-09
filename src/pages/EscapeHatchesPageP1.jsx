@@ -23,8 +23,8 @@ import Task07 from 'tasks/EscapeHatchesP01/Task07';
 import Task08 from 'tasks/EscapeHatchesP01/Task08';
 import Prac11 from 'tasks/EscapeHatchesP01/Prac11';
 import Prac12 from 'tasks/EscapeHatchesP01/Prac12';
-// import AddCleanup from 'tasks/EscapeHatches/AddCleanup';
-// import PutAllTogether from 'tasks/EscapeHatches/PutAllTogether';
+import Prac13 from 'tasks/EscapeHatchesP01/Prac13';
+import Prac14 from 'tasks/EscapeHatchesP01/Prac14';
 // import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
 // import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
 // import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
@@ -102,13 +102,13 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="prac 12: specify the effect dependancies">
             <Prac12 />
           </Card>
-          {/* <Card title="prac 13: add cleanup if needed">
-            <AddCleanup />
+          <Card title="prac 13: add cleanup if needed">
+            <Prac13 />
           </Card>
           <Card title="prac 14: putting it all together">
-            <PutAllTogether />
+            <Prac14 />
           </Card>
-          <Card title="task 09: focus on field on mount">
+          {/* <Card title="task 09: focus on field on mount">
             <FocusOnMount />
           </Card>
           <Card title="task 10: focus a field conditionally">

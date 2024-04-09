@@ -4,6 +4,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 import { catList } from 'constants';
 
@@ -54,30 +55,13 @@ export default function Prac07() {
               }
             }}
           >
-            <picture>
-              <source
-                srcSet={`
-                ${require(`../../../assets/images/kittens/${kitten.image320}.webp`)}   320w,
-                ${require(`../../../assets/images/kittens/${kitten.image640}.webp`)}   640w,
-                ${require(`../../../assets/images/kittens/${kitten.image960}.webp`)}   960w,
-                ${require(`../../../assets/images/kittens/${kitten.image1280}.webp`)} 1280w
-              `}
-                type="image/webp"
-                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
-              <img
-                loading="lazy"
-                srcSet={`
-                ${require(`../../../assets/images/kittens/${kitten.image320}.jpg`)}   320w,
-                ${require(`../../../assets/images/kittens/${kitten.image640}.jpg`)}  640w,
-                ${require(`../../../assets/images/kittens/${kitten.image960}.jpg`)}   960w,
-                ${require(`../../../assets/images/kittens/${kitten.image1280}.jpg`)} 1280w
-              `}
-                src={require(`../../../assets/images/kittens/${kitten.image320}.jpg`)}
-                alt={`Kittens ${kitten.id}`}
-                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
-            </picture>
+            <ResponsiveImage
+              id={kitten.id}
+              image320={kitten.image320}
+              image640={kitten.image640}
+              image960={kitten.image960}
+              image1280={kitten.image1280}
+            />
           </Slide>
         ))}
       </Slider>

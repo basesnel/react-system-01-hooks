@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 
 import Counter from './Counter';
 
-export default function FixAnInterval() {
+export default function Task11() {
   const [isCounterVisible, setIsCounterVisible] = useState(false);
   return (
     <FlexBox>

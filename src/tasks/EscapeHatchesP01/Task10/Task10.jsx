@@ -5,7 +5,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
 
-export default function FocusOnMount() {
+export default function Task10() {
   const [showForm, setShowForm] = useState(false);
   const [firstName, setFirstName] = useState('Taylor');
   const [lastName, setLastName] = useState('Swift');

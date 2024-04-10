@@ -25,10 +25,10 @@ import Prac11 from 'tasks/EscapeHatchesP01/Prac11';
 import Prac12 from 'tasks/EscapeHatchesP01/Prac12';
 import Prac13 from 'tasks/EscapeHatchesP01/Prac13';
 import Prac14 from 'tasks/EscapeHatchesP01/Prac14';
-// import FocusOnMount from 'tasks/EscapeHatches/FocusOnMount';
-// import FocusOnMountCond from 'tasks/EscapeHatches/FocusOnMountCond';
-// import FixAnInterval from 'tasks/EscapeHatches/FixAnInterval';
-// import FixFetchingInEffect from 'tasks/EscapeHatches/FixFetchingInEffect';
+import Task09 from 'tasks/EscapeHatchesP01/Task09';
+import Task10 from 'tasks/EscapeHatchesP01/Task10';
+import Task11 from 'tasks/EscapeHatchesP01/Task11';
+import Task12 from 'tasks/EscapeHatchesP01/Task12';
 
 export const EscapeHatchesPageP1 = () => {
   return (
@@ -108,18 +108,18 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="prac 14: putting it all together">
             <Prac14 />
           </Card>
-          {/* <Card title="task 09: focus on field on mount">
-            <FocusOnMount />
+          <Card title="task 09: focus on field on mount">
+            <Task09 />
           </Card>
           <Card title="task 10: focus a field conditionally">
-            <FocusOnMountCond />
+            <Task10 />
           </Card>
           <Card title="task 11: fix an interval that fires twice">
-            <FixAnInterval />
+            <Task11 />
           </Card>
           <Card title="task 12: fix fetching inside an effect">
-            <FixFetchingInEffect />
-          </Card> */}
+            <Task12 />
+          </Card>
         </Grid>
       </Container>
     </main>

@@ -61,9 +61,6 @@ export default function Prac07() {
               image640={kitten.image640}
               image960={kitten.image960}
               image1280={kitten.image1280}
-              styled={false}
-              index={0}
-              i={0}
             />
           </Slide>
         ))}

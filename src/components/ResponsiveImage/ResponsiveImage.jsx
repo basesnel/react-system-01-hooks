@@ -41,7 +41,4 @@ ResponsiveImage.propTypes = {
   image640: PropTypes.string.isRequired,
   image960: PropTypes.string.isRequired,
   image1280: PropTypes.string.isRequired,
-  styled: PropTypes.bool.isRequired,
-  index: PropTypes.any.isRequired,
-  i: PropTypes.any.isRequired,
 };

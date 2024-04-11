@@ -7,10 +7,10 @@ import Prac01 from 'tasks/useEffectsCases/Prac01';
 import Prac02 from 'tasks/useEffectsCases/Prac02';
 import Prac03 from 'tasks/useEffectsCases/Prac03';
 import Prac04 from 'tasks/useEffectsCases/Prac04';
-// import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
-// import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
-// import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
-// import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
+import Prac05 from 'tasks/useEffectsCases/Prac05';
+import Prac06 from 'tasks/useEffectsCases/Prac06';
+import Prac07 from 'tasks/useEffectsCases/Prac07';
+import Prac08 from 'tasks/useEffectsCases/Prac08';
 // import MapWidget from 'tasks/useEffectsCases/MapWidget';
 // import FetchingData from 'tasks/useEffectsCases/FetchingData';
 // import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
@@ -41,19 +41,19 @@ export const UseEffectsPage = () => {
           <Card title="prac 04: controlling a modal dialog">
             <Prac04 />
           </Card>
-          {/* <Card title="prac 05: tracking element visibility">
-            <TrackingElementVisibility />
+          <Card title="prac 05: tracking element visibility">
+            <Prac05 />
           </Card>
           <Card title="prac 06: custom usechatroom hook">
-            <CustomUseChatRoom />
+            <Prac06 />
           </Card>
           <Card title="prac 07: custom usecwindowlistener hook">
-            <CustomUseWindowListener />
+            <Prac07 />
           </Card>
           <Card title="prac 08: custom useintersectionobserver hook">
-            <CustomTrackingVisibility />
+            <Prac08 />
           </Card>
-          <Card title="prac 09: controlling  a non-react widget">
+          {/* <Card title="prac 09: controlling  a non-react widget">
             <MapWidget />
           </Card>
           <Card title="prac 10: fetching data with effects">

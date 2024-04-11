@@ -3,7 +3,7 @@ import Box from './Box';
 
 import LongSection from '../IntendendComponents/LongSection';
 
-export default function TrackingElementVisibility() {
+export default function Prac05() {
   return (
     <HideOverflow>
       <LongSection />

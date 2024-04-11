@@ -4,7 +4,7 @@ import ModalDialog from './ModalDialog';
 import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 
-export default function ControllingModalDialog() {
+export default function Prac04() {
   const [show, setShow] = useState(false);
 
   return (

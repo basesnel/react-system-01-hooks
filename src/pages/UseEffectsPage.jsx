@@ -3,22 +3,22 @@ import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
-import ChatServer from 'tasks/useEffectsCases/ChatServer';
-import ListeningGlobalEvent from 'tasks/useEffectsCases/ListeningGlobalEvent';
-import TriggeringAnimation from 'tasks/useEffectsCases/TriggeringAnimation';
-import ControllingModalDialog from 'tasks/useEffectsCases/ContollingModalDialog/ControllingModalDialog';
-import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
-import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
-import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
-import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
-import MapWidget from 'tasks/useEffectsCases/MapWidget';
-import FetchingData from 'tasks/useEffectsCases/FetchingData';
-import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
-import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
-import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
-import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
-import RemovingUnryObjectDep from 'tasks/useEffectsCases/RemovingUnryObjectDep';
-import RemovingUnryFuncDep from 'tasks/useEffectsCases/RemovingUnryFuncDep';
+import Prac01 from 'tasks/useEffectsCases/Prac01';
+import Prac02 from 'tasks/useEffectsCases/Prac02';
+import Prac03 from 'tasks/useEffectsCases/Prac03';
+import Prac04 from 'tasks/useEffectsCases/Prac04';
+// import TrackingElementVisibility from 'tasks/useEffectsCases/TrackingElementVisibility';
+// import CustomUseChatRoom from 'tasks/useEffectsCases/CustomUseChatRoom';
+// import CustomUseWindowListener from 'tasks/useEffectsCases/CustomUseWindowListener';
+// import CustomTrackingVisibility from 'tasks/useEffectsCases/CustomTrackingVisibility';
+// import MapWidget from 'tasks/useEffectsCases/MapWidget';
+// import FetchingData from 'tasks/useEffectsCases/FetchingData';
+// import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
+// import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
+// import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
+// import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
+// import RemovingUnryObjectDep from 'tasks/useEffectsCases/RemovingUnryObjectDep';
+// import RemovingUnryFuncDep from 'tasks/useEffectsCases/RemovingUnryFuncDep';
 
 export const UseEffectsPage = () => {
   return (
@@ -30,18 +30,18 @@ export const UseEffectsPage = () => {
       <Container>
         <Grid>
           <Card title="prac 01: connecting to chat server">
-            <ChatServer />
+            <Prac01 />
           </Card>
           <Card title="prac 02: listening to global browser event">
-            <ListeningGlobalEvent />
+            <Prac02 />
           </Card>
           <Card title="prac 03: triggering an animation">
-            <TriggeringAnimation />
+            <Prac03 />
           </Card>
           <Card title="prac 04: controlling a modal dialog">
-            <ControllingModalDialog />
+            <Prac04 />
           </Card>
-          <Card title="prac 05: tracking element visibility">
+          {/* <Card title="prac 05: tracking element visibility">
             <TrackingElementVisibility />
           </Card>
           <Card title="prac 06: custom usechatroom hook">
@@ -76,7 +76,7 @@ export const UseEffectsPage = () => {
           </Card>
           <Card title="prac 16: removing unnecessary function dependancies">
             <RemovingUnryFuncDep />
-          </Card>
+          </Card> */}
         </Grid>
       </Container>
     </main>

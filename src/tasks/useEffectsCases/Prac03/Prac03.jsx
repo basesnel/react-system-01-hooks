@@ -33,7 +33,7 @@ function Welcome() {
   );
 }
 
-export default function TriggeringAnimation() {
+export default function Prac03() {
   const [show, setShow] = useState(false);
 
   return (

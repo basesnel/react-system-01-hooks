@@ -39,7 +39,7 @@ function ChatRoom({ roomId }) {
   );
 }
 
-export default function ChatServer() {
+export default function Prac01() {
   const [roomId, setRoomId] = useState('general');
   const [show, setShow] = useState(false);
 

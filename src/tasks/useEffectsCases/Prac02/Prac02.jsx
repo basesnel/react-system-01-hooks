@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Canvas from 'tasks/useEffectsCases/IntendendComponents/Canvas';
 
-export default function ListeningGlobalEvent() {
+export default function Prac02() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {

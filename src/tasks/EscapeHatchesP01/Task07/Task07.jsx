@@ -8,7 +8,7 @@ import Slide from 'components/Slide';
 
 import { catList } from 'constants';
 
-// import css from './Task07.module.css';
+import css from './Task07.module.css';
 import ResponsiveImage from 'components/ResponsiveImage';
 
 export default function Task07() {
@@ -22,16 +22,21 @@ export default function Task07() {
       <Slider>
         {kittens.map((kitten, i) => (
           <Slide key={kitten.id} itemRef={index === i ? selectedRef : null}>
-            <ResponsiveImage
-              id={kitten.id}
-              image320={kitten.image320}
-              image640={kitten.image640}
-              image960={kitten.image960}
-              image1280={kitten.image1280}
-              styled={true}
-              index={index}
-              i={i}
-            />
+            <div
+              className={
+                index === i
+                  ? `${css['img-slide']} ${css.active}`
+                  : css['img-slide']
+              }
+            >
+              <ResponsiveImage
+                id={kitten.id}
+                image320={kitten.image320}
+                image640={kitten.image640}
+                image960={kitten.image960}
+                image1280={kitten.image1280}
+              />
+            </div>
           </Slide>
         ))}
       </Slider>

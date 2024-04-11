@@ -1,8 +1,0 @@
-.img-slide {
-  padding: 10px;
-  transition: var(--my-transition);
-}
-
-.active {
-  background: rgba(0, 100, 150, 0.4);
-}

@@ -1,23 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './ResponsiveImage.module.css';
-
 export default function ResponsiveImage({
   id,
   image320,
   image640,
   image960,
   image1280,
-  styled,
-  index,
-  i,
 }) {
-  const style = styled
-    ? index === i
-      ? `${css['img-slide']} ${css.active}`
-      : css['img-slide']
-    : null;
-
   return (
     <picture>
       <source
@@ -32,7 +21,6 @@ export default function ResponsiveImage({
       />
       <img
         loading="lazy"
-        className={style}
         srcSet={`
                 ${require(`../../assets/images/kittens/${image320}.jpg`)}   320w,
                 ${require(`../../assets/images/kittens/${image640}.jpg`)}  640w,

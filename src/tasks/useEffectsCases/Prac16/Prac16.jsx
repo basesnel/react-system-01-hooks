@@ -17,14 +17,16 @@ function ChatRoom({ roomId }) {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
-    const options = {
-      serverUrl: serverUrl,
-      roomId: roomId,
-    };
+    function createOptions() {
+      return {
+        serverUrl: serverUrl,
+        roomId: roomId,
+      };
+    }
 
+    const options = createOptions();
     const connection = createConnection(options.serverUrl, options.roomId);
     connection.connect();
-
     return () => connection.disconnect();
   }, [roomId]);
 
@@ -33,7 +35,7 @@ function ChatRoom({ roomId }) {
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
       <DecoratedInput
         inputType="text"
-        inputName="obMessage"
+        inputName="funcMessage"
         inputValue={message}
         inputLabel="Your message:"
         handleChange={e => setMessage(e.target.value)}
@@ -43,7 +45,11 @@ function ChatRoom({ roomId }) {
   );
 }
 
-export default function RemovingUnryObjectDep() {
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+};
+
+export default function Prac16() {
   const [roomId, setRoomId] = useState('general');
 
   return (
@@ -63,7 +69,3 @@ export default function RemovingUnryObjectDep() {
     </>
   );
 }
-
-ChatRoom.propTypes = {
-  roomId: PropTypes.string.isRequired,
-};

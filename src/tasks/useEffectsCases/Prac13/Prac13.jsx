@@ -48,7 +48,7 @@ function ChatRoom({ roomId }) {
   );
 }
 
-export default function PassingNoDepArray() {
+export default function Prac13() {
   const [show, setShow] = useState(false);
   const [roomId, setRoomId] = useState('general');
 

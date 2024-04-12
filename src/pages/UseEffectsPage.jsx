@@ -15,10 +15,10 @@ import Prac09 from 'tasks/useEffectsCases/Prac09';
 import Prac10 from 'tasks/useEffectsCases/Prac10';
 import Prac11 from 'tasks/useEffectsCases/Prac11';
 import Prac12 from 'tasks/useEffectsCases/Prac12';
-// import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
-// import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
-// import RemovingUnryObjectDep from 'tasks/useEffectsCases/RemovingUnryObjectDep';
-// import RemovingUnryFuncDep from 'tasks/useEffectsCases/RemovingUnryFuncDep';
+import Prac13 from 'tasks/useEffectsCases/Prac13';
+import Prac14 from 'tasks/useEffectsCases/Prac14';
+import Prac15 from 'tasks/useEffectsCases/Prac15';
+import Prac16 from 'tasks/useEffectsCases/Prac16';
 
 export const UseEffectsPage = () => {
   return (
@@ -65,18 +65,18 @@ export const UseEffectsPage = () => {
           <Card title="prac 12: passing an empty dependancy array">
             <Prac12 />
           </Card>
-          {/* <Card title="prac 13: passing no dependancy array at all">
-            <PassingNoDepArray />
+          <Card title="prac 13: passing no dependancy array at all">
+            <Prac13 />
           </Card>
           <Card title="prac 14: updating state based on previous state from an effect">
-            <UpdatingBasedOnPrev />
+            <Prac14 />
           </Card>
           <Card title="prac 15: removing unnecessary object dependancies">
-            <RemovingUnryObjectDep />
+            <Prac15 />
           </Card>
           <Card title="prac 16: removing unnecessary function dependancies">
-            <RemovingUnryFuncDep />
-          </Card> */}
+            <Prac16 />
+          </Card>
         </Grid>
       </Container>
     </main>

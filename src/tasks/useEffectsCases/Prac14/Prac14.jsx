@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import FlexBox from 'components/FlexBox';
 import Span from 'components/Span';
 
-export default function UpdatingBasedOnPrev() {
+export default function Prac14() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {

@@ -5,23 +5,25 @@ import FlexBox from 'components/FlexBox';
 import DecoratedSelect from 'components/DecoratedSelect';
 import Paragraph from 'components/Paragraph';
 
-import { fetchBio } from './api';
+import { fetchBio } from 'services/fetchBio';
 
-const personList = ['Alice', 'Bob', 'Taylor'];
+import { personList } from 'constants';
 
-export default function FetchingData() {
+export default function Prac10() {
   const [person, setPerson] = useState('Alice');
   const [bio, setBio] = useState(null);
 
   useEffect(() => {
-    let ignore = false;
-
-    setBio(null);
-    fetchBio(person).then(result => {
+    async function startFetching() {
+      setBio(null);
+      const result = await fetchBio(person);
       if (!ignore) {
         setBio(result);
       }
-    });
+    }
+
+    let ignore = false;
+    startFetching();
 
     return () => {
       ignore = true;

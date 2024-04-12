@@ -11,10 +11,10 @@ import Prac05 from 'tasks/useEffectsCases/Prac05';
 import Prac06 from 'tasks/useEffectsCases/Prac06';
 import Prac07 from 'tasks/useEffectsCases/Prac07';
 import Prac08 from 'tasks/useEffectsCases/Prac08';
-// import MapWidget from 'tasks/useEffectsCases/MapWidget';
-// import FetchingData from 'tasks/useEffectsCases/FetchingData';
-// import PassingDepArray from 'tasks/useEffectsCases/PassingDepArray';
-// import PassingEmptyDepArray from 'tasks/useEffectsCases/PassingEmptyDepArray';
+import Prac09 from 'tasks/useEffectsCases/Prac09';
+import Prac10 from 'tasks/useEffectsCases/Prac10';
+import Prac11 from 'tasks/useEffectsCases/Prac11';
+import Prac12 from 'tasks/useEffectsCases/Prac12';
 // import PassingNoDepArray from 'tasks/useEffectsCases/PassingNoDepArray/PassingNoDepArray';
 // import UpdatingBasedOnPrev from 'tasks/useEffectsCases/UpdatingBasedOnPrev';
 // import RemovingUnryObjectDep from 'tasks/useEffectsCases/RemovingUnryObjectDep';
@@ -53,19 +53,19 @@ export const UseEffectsPage = () => {
           <Card title="prac 08: custom useintersectionobserver hook">
             <Prac08 />
           </Card>
-          {/* <Card title="prac 09: controlling  a non-react widget">
-            <MapWidget />
+          <Card title="prac 09: controlling  a non-react widget">
+            <Prac09 />
           </Card>
           <Card title="prac 10: fetching data with effects">
-            <FetchingData />
+            <Prac10 />
           </Card>
           <Card title="prac 11: passing a dependancy array">
-            <PassingDepArray />
+            <Prac11 />
           </Card>
           <Card title="prac 12: passing an empty dependancy array">
-            <PassingEmptyDepArray />
+            <Prac12 />
           </Card>
-          <Card title="prac 13: passing no dependancy array at all">
+          {/* <Card title="prac 13: passing no dependancy array at all">
             <PassingNoDepArray />
           </Card>
           <Card title="prac 14: updating state based on previous state from an effect">

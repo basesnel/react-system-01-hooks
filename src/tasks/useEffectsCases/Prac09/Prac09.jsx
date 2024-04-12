@@ -9,7 +9,7 @@ import FlexBox from 'components/FlexBox';
 import Span from 'components/Span';
 import DecoratedIconButton from 'components/DecoratedIconButton';
 
-export default function MapWidget() {
+export default function Prac09() {
   const [zoomLevel, setZoomLevel] = useState(0);
   return (
     <>

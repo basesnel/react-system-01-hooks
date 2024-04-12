@@ -35,7 +35,7 @@ function ChatRoom() {
   );
 }
 
-export default function PassingEmptyDepArray() {
+export default function Prac12() {
   const [show, setShow] = useState(false);
 
   return (

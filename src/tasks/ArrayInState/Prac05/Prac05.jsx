@@ -12,7 +12,7 @@ import { initialArtistsList } from 'constants';
 
 let nextId = 3;
 
-export default function ArrayPractFifth() {
+export default function Prac05() {
   const [name, setName] = useState('');
   const [artists, setArtists] = useState(initialArtistsList);
 

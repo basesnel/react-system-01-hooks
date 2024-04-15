@@ -8,7 +8,7 @@ import ItemCheckedText from 'components/ItemCheckedText/ItemCheckedText';
 
 import { initialSevenArtsList } from 'constants';
 
-export default function ArrayPractSeventh() {
+export default function Prac07() {
   const [myList, setMyList] = useState(initialSevenArtsList);
   const [yourList, setYourList] = useState(initialSevenArtsList);
 

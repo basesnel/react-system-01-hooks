@@ -8,7 +8,7 @@ import ItemCheckedText from 'components/ItemCheckedText';
 
 import { initialSevenArtsList } from 'constants';
 
-export default function ArrayPractEighth() {
+export default function Prac08() {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
   const [yourList, updateYourList] = useImmer(initialSevenArtsList);
 

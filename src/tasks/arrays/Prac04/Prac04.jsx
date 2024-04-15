@@ -10,7 +10,7 @@ import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialCountersList } from 'constants';
 
-export default function ArrayPractFourth() {
+export default function Prac04() {
   const [counters, setCounters] = useState(initialCountersList);
 
   const handleIncrementalClick = index => {

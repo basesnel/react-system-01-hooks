@@ -10,7 +10,7 @@ import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialArtistsList } from 'constants';
 
-export default function ArrayPractSecond() {
+export default function Prac02() {
   const [artists, setArtists] = useState(initialArtistsList);
 
   return (

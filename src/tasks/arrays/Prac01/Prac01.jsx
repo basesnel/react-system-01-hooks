@@ -8,7 +8,7 @@ import ItemText from 'components/ItemText/ItemText';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 
-export default function ArrayPractFirst() {
+export default function Prac01() {
   const [artist, setArtist] = useState('');
   const [artists, setArtists] = useState([]);
 

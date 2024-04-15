@@ -5,7 +5,7 @@ import DecoratedButton from 'components/DecoratedButton';
 import { initialShapesList } from 'constants';
 import FlexBox from 'components/FlexBox';
 
-export default function ArrayPractThird() {
+export default function Prac03() {
   const [shapes, setShapes] = useState(initialShapesList);
 
   const handleClick = () => {

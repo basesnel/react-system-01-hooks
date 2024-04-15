@@ -4,18 +4,18 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import ArrayPractFirst from 'tasks/arrays/ArrayPractFirst';
-import ArrayPractSecond from 'tasks/arrays/ArrayPractSecond';
-import ArrayPractThird from 'tasks/arrays/ArrayPractThird';
-import ArrayPractFourth from 'tasks/arrays/ArrayPractFourth';
-import ArrayPractFifth from 'tasks/arrays/ArrayPractFifth';
-import ArrayPractSixth from 'tasks/arrays/ArrayPractSixth';
-import ArrayPractSeventh from 'tasks/arrays/ArrayPractSeventh';
-import ArrayPractEighth from 'tasks/arrays/ArrayPractEighth';
-import ArrayTaskSecond from 'tasks/arrays/ArrayTaskSecond';
-import ArrayTaskFirst from 'tasks/arrays/ArrayTaskFirst';
-import ArrayTaskThird from 'tasks/arrays/ArrayTaskThird';
-import ArrayTaskFourth from 'tasks/arrays/ArrayTaskFourth';
+import Prac01 from 'tasks/arrays/Prac01';
+import Prac02 from 'tasks/arrays/Prac02';
+import Prac03 from 'tasks/arrays/Prac03';
+import Prac04 from 'tasks/arrays/Prac04';
+// import ArrayPractFifth from 'tasks/arrays/ArrayPractFifth';
+// import ArrayPractSixth from 'tasks/arrays/ArrayPractSixth';
+// import ArrayPractSeventh from 'tasks/arrays/ArrayPractSeventh';
+// import ArrayPractEighth from 'tasks/arrays/ArrayPractEighth';
+// import ArrayTaskSecond from 'tasks/arrays/ArrayTaskSecond';
+// import ArrayTaskFirst from 'tasks/arrays/ArrayTaskFirst';
+// import ArrayTaskThird from 'tasks/arrays/ArrayTaskThird';
+// import ArrayTaskFourth from 'tasks/arrays/ArrayTaskFourth';
 
 export const ArrayInStatePage = () => {
   return (
@@ -27,18 +27,18 @@ export const ArrayInStatePage = () => {
       <Container>
         <Grid>
           <Card title="prac 01: adding to an array">
-            <ArrayPractFirst />
+            <Prac01 />
           </Card>
           <Card title="prac 02: removing from an array">
-            <ArrayPractSecond />
+            <Prac02 />
           </Card>
           <Card title="prac 03: transforming an array">
-            <ArrayPractThird />
+            <Prac03 />
           </Card>
           <Card title="prac 04: replacing items in an array">
-            <ArrayPractFourth />
+            <Prac04 />
           </Card>
-          <Card title="prac 05: inserting into an array">
+          {/* <Card title="prac 05: inserting into an array">
             <ArrayPractFifth />
           </Card>
           <Card title="prac 06: making other changes to an array">
@@ -61,7 +61,7 @@ export const ArrayInStatePage = () => {
           </Card>
           <Card title="task 04: fix the mutations using immer">
             <ArrayTaskFourth />
-          </Card>
+          </Card> */}
         </Grid>
       </Container>
     </main>

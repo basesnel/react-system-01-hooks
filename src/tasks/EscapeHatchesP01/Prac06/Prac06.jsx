@@ -4,6 +4,7 @@ import FlexBox from 'components/FlexBox';
 import DecoratedButton from 'components/DecoratedButton';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 export default function Prac06() {
   const firstCatRef = useRef(null);
@@ -37,8 +38,15 @@ export default function Prac06() {
   return (
     <>
       <Slider>
-        <Slide>
-          <picture ref={firstCatRef}>
+        <Slide itemRef={firstCatRef}>
+          <ResponsiveImage
+            id={2}
+            image320="kitten-320-02"
+            image640="kitten-640-02"
+            image960="kitten-960-02"
+            image1280="kitten-1280-02"
+          />
+          {/* <picture>
             <source
               srcSet={`
                 ${require(`../../../assets/images/kittens/kitten-320-02.webp`)}   320w,
@@ -61,10 +69,17 @@ export default function Prac06() {
               alt="Tom"
               sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
             />
-          </picture>
+          </picture> */}
         </Slide>
-        <Slide>
-          <picture ref={secondCatRef}>
+        <Slide itemRef={secondCatRef}>
+          <ResponsiveImage
+            id={3}
+            image320="kitten-320-03"
+            image640="kitten-640-03"
+            image960="kitten-960-03"
+            image1280="kitten-1280-03"
+          />
+          {/* <picture>
             <source
               srcSet={`
                 ${require(`../../../assets/images/kittens/kitten-320-03.webp`)}   320w,
@@ -87,10 +102,17 @@ export default function Prac06() {
               alt="Maru"
               sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
             />
-          </picture>
+          </picture> */}
         </Slide>
-        <Slide>
-          <picture ref={thirdCatRef}>
+        <Slide itemRef={thirdCatRef}>
+          <ResponsiveImage
+            id={5}
+            image320="kitten-320-05"
+            image640="kitten-640-05"
+            image960="kitten-960-05"
+            image1280="kitten-1280-05"
+          />
+          {/* <picture>
             <source
               srcSet={`
                 ${require(`../../../assets/images/kittens/kitten-320-05.webp`)}   320w,
@@ -113,7 +135,7 @@ export default function Prac06() {
               alt="Jellylorum"
               sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
             />
-          </picture>
+          </picture> */}
         </Slide>
       </Slider>
       <FlexBox>

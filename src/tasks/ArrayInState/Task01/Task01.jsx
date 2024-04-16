@@ -10,7 +10,7 @@ import DecoratedIconButton from 'components/DecoratedIconButton';
 
 import { initialProductsList } from 'constants';
 
-export default function ArrayTaskFirst() {
+export default function Task01() {
   const [products, setProducts] = useState(initialProductsList);
 
   const handleIncreaseClick = productId => {

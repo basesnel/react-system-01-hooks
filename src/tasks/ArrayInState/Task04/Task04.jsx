@@ -5,7 +5,7 @@ import TaskList from '../intendedComponents/TaskList';
 
 import { initialTodosList } from 'constants';
 
-export default function ArrayTaskFourth() {
+export default function Task04() {
   const [todos, updateTodos] = useImmer(initialTodosList);
 
   const handleAddTodo = title => {

@@ -12,10 +12,10 @@ import Prac05 from 'tasks/ArrayInState/Prac05';
 import Prac06 from 'tasks/ArrayInState/Prac06';
 import Prac07 from 'tasks/ArrayInState/Prac07';
 import Prac08 from 'tasks/ArrayInState/Prac08';
-// import ArrayTaskSecond from 'tasks/arrays/ArrayTaskSecond';
-// import ArrayTaskFirst from 'tasks/arrays/ArrayTaskFirst';
-// import ArrayTaskThird from 'tasks/arrays/ArrayTaskThird';
-// import ArrayTaskFourth from 'tasks/arrays/ArrayTaskFourth';
+import Task01 from 'tasks/ArrayInState/Task01';
+import Task02 from 'tasks/ArrayInState/Task02';
+import Task03 from 'tasks/ArrayInState/Task03';
+import Task04 from 'tasks/ArrayInState/Task04';
 
 export const ArrayInStatePage = () => {
   return (
@@ -50,18 +50,18 @@ export const ArrayInStatePage = () => {
           <Card title="prac 08: write concise update logic with immer">
             <Prac08 />
           </Card>
-          {/* <Card title="task 01: update an item in the shopping cart">
-            <ArrayTaskFirst />
+          <Card title="task 01: update an item in the shopping cart">
+            <Task01 />
           </Card>
           <Card title="task 02: remove an item in the shopping cart">
-            <ArrayTaskSecond />
+            <Task02 />
           </Card>
           <Card title="task 03: fix the mutations using non-mutative methods">
-            <ArrayTaskThird />
+            <Task03 />
           </Card>
           <Card title="task 04: fix the mutations using immer">
-            <ArrayTaskFourth />
-          </Card> */}
+            <Task04 />
+          </Card>
         </Grid>
       </Container>
     </main>

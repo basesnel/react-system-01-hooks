@@ -5,7 +5,7 @@ import TaskList from '../intendedComponents/TaskList';
 
 import { initialTodosList } from 'constants';
 
-export default function ArrayTaskThird() {
+export default function Task03() {
   const [todos, setTodos] = useState(initialTodosList);
 
   const handleAddTodo = title => {

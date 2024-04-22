@@ -36,9 +36,7 @@ export default function Task07() {
                 image960={`kittens/${kitten.image960}`}
                 image1280={`kittens/${kitten.image1280}`}
                 sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
-                alt={`Kittens ${
-                  kitten.id < 9 ? `0${kitten.id + 1}` : `${kitten.id + 1}`
-                }`}
+                alt={`Kittens ${(kitten.id + 1).toString().padStart(2, '0')}`}
               />
             </div>
           </Slide>

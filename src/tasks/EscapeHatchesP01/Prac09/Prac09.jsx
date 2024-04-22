@@ -55,6 +55,6 @@ const initialTodos = [];
 for (let i = 0; i < 20; i++) {
   initialTodos.push({
     id: nextId++,
-    text: 'Todo #' + (i + 1),
+    text: 'Todo #' + (i + 1).toString().padStart(2, '0'),
   });
 }

@@ -20,6 +20,7 @@ import { createConnection } from './chat';
 import { videoSrc } from './videoSrc';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
+import { imageSizes } from './imageSizes';
 
 export {
   sizes,
@@ -44,4 +45,5 @@ export {
   videoSrc,
   catList,
   personList,
+  imageSizes,
 };

@@ -10,7 +10,11 @@ export default function LongSection() {
     items.push(
       <Item key={i}>
         <ItemFlex>
-          <ItemText content={`Item #${i} (keep scrolling)`} />
+          <ItemText
+            content={`Item #${(i + 1)
+              .toString()
+              .padStart(2, '0')} (keep scrolling)`}
+          />
         </ItemFlex>
       </Item>
     );

@@ -7,6 +7,7 @@ import Slide from 'components/Slide';
 import ResponsiveImage from 'components/ResponsiveImage';
 
 import { catList } from 'constants';
+import { imageSizes } from 'constants';
 
 export default function Prac07() {
   const itemsRef = useRef(null);
@@ -61,7 +62,7 @@ export default function Prac07() {
               image640={`kittens/${kitten.image640}`}
               image960={`kittens/${kitten.image960}`}
               image1280={`kittens/${kitten.image1280}`}
-              sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+              sizes={imageSizes}
               alt={`Kittens ${(kitten.id + 1).toString().padStart(2, '0')}`}
             />
           </Slide>

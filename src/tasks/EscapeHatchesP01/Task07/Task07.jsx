@@ -5,11 +5,12 @@ import DecoratedButton from 'components/DecoratedButton';
 import FlexBox from 'components/FlexBox';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
+import ResponsiveImage from 'components/ResponsiveImage';
 
 import { catList } from 'constants';
+import { imageSizes } from 'constants';
 
 import css from './Task07.module.css';
-import ResponsiveImage from 'components/ResponsiveImage';
 
 export default function Task07() {
   const [index, setIndex] = useState(0);
@@ -35,7 +36,7 @@ export default function Task07() {
                 image640={`kittens/${kitten.image640}`}
                 image960={`kittens/${kitten.image960}`}
                 image1280={`kittens/${kitten.image1280}`}
-                sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+                sizes={imageSizes}
                 alt={`Kittens ${(kitten.id + 1).toString().padStart(2, '0')}`}
               />
             </div>

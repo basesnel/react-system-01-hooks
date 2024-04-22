@@ -6,6 +6,8 @@ import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 import ResponsiveImage from 'components/ResponsiveImage';
 
+import { imageSizes } from 'constants';
+
 export default function Prac06() {
   const firstCatRef = useRef(null);
   const secondCatRef = useRef(null);
@@ -45,7 +47,7 @@ export default function Prac06() {
             image640="kittens/kitten-640-02"
             image960="kittens/kitten-960-02"
             image1280="kittens/kitten-1280-02"
-            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            sizes={imageSizes}
             alt="Tom"
           />
         </Slide>
@@ -56,7 +58,7 @@ export default function Prac06() {
             image640="kittens/kitten-640-03"
             image960="kittens/kitten-960-03"
             image1280="kittens/kitten-1280-03"
-            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            sizes={imageSizes}
             alt="Mary"
           />
         </Slide>
@@ -67,7 +69,7 @@ export default function Prac06() {
             image640="kittens/kitten-640-05"
             image960="kittens/kitten-960-05"
             image1280="kittens/kitten-1280-05"
-            sizes="(min-width: 1280px) 33vw, (min-width: 768px) 50vw, 100vw"
+            sizes={imageSizes}
             alt="Jellylorum"
           />
         </Slide>

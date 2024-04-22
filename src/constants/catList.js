@@ -2,7 +2,7 @@ export function catList(length) {
   const list = [];
 
   for (let i = 0; i < length; i++) {
-    const id = i < 9 ? `0${i + 1}` : `${i + 1}`;
+    const id = (i + 1).toString().padStart(2, '0');
     list.push({
       id: i,
       image320: `kitten-320-${id}`,

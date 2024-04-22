@@ -1,4 +1,4 @@
-import { useImmer } from 'use-immer';
+import { useState } from 'react';
 
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
@@ -9,30 +9,43 @@ import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
 import { initialThirdPerson } from 'constants';
 import FieldOverlay from '../IntendendComponents/FieldOverlay';
 
-export default function ObjectPractFourth() {
-  const [person, updatePerson] = useImmer(initialThirdPerson);
+export default function Prac03() {
+  const [person, setPerson] = useState(initialThirdPerson);
 
   const handleNameChange = e => {
-    updatePerson(draft => {
-      draft.name = e.target.value;
+    setPerson({
+      ...person,
+      name: e.target.value,
     });
   };
 
   const handleTitleChange = e => {
-    updatePerson(draft => {
-      draft.artwork.title = e.target.value;
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        title: e.target.value,
+      },
     });
   };
 
   const handleCityChange = e => {
-    updatePerson(draft => {
-      draft.artwork.city = e.target.value;
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        city: e.target.value,
+      },
     });
   };
 
   const handleImageChange = e => {
-    updatePerson(draft => {
-      draft.artwork.image = e.target.value;
+    setPerson({
+      ...person,
+      artwork: {
+        ...person.artwork,
+        image: e.target.value,
+      },
     });
   };
 

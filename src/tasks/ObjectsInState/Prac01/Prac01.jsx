@@ -8,7 +8,7 @@ import Caption from 'components/Caption';
 
 import { initialFirstPerson } from 'constants';
 
-export default function ObjectPractFirst() {
+export default function Prac01() {
   const [person, setPerson] = useState(initialFirstPerson);
 
   const handleChange = e => {

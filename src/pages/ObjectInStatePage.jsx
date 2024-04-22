@@ -4,13 +4,13 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import ObjectPractFirst from 'tasks/objects/ObjectPractFirst';
-import ObjectPractSecond from 'tasks/objects/ObjectPractSecond/ObjectPractSecond';
-import ObjectPractThird from 'tasks/objects/ObjectPractThird/ObjectPractThird';
-import ObjectPractFourth from 'tasks/objects/ObjectPractFourth/ObjectPractFourth';
-import ObjectTaskFirst from 'tasks/objects/ObjectTaskFirst/ObjectTaskFirst';
-import ObjectTaskSecond from 'tasks/objects/ObjectTaskSecond';
-import ObjectTaskThird from 'tasks/objects/ObjectTaskThird';
+import Prac01 from 'tasks/ObjectsInState/Prac01';
+import Prac02 from 'tasks/ObjectsInState/Prac02';
+import Prac03 from 'tasks/ObjectsInState/Prac03';
+import Prac04 from 'tasks/ObjectsInState/Prac04';
+// import ObjectTaskFirst from 'tasks/ObjectsInState/ObjectTaskFirst/ObjectTaskFirst';
+// import ObjectTaskSecond from 'tasks/ObjectsInState/ObjectTaskSecond';
+// import ObjectTaskThird from 'tasks/ObjectsInState/ObjectTaskThird';
 
 export const ObjectInStatePage = () => {
   return (
@@ -22,18 +22,18 @@ export const ObjectInStatePage = () => {
       <Container>
         <Grid>
           <Card title="prac 01: copying objects with the spread syntax">
-            <ObjectPractFirst />
+            <Prac01 />
           </Card>
           <Card title="prac 02: treat state as read-only">
-            <ObjectPractSecond />
+            <Prac02 />
           </Card>
           <Card title="prac 03: updating a nested object">
-            <ObjectPractThird />
+            <Prac03 />
           </Card>
           <Card title="prac 04: write concise update logic with Immer">
-            <ObjectPractFourth />
+            <Prac04 />
           </Card>
-          <Card title="task 01: fix incorrect state updates">
+          {/* <Card title="task 01: fix incorrect state updates">
             <ObjectTaskFirst />
           </Card>
           <Card title="task 02: find and fix the mutation">
@@ -41,7 +41,7 @@ export const ObjectInStatePage = () => {
           </Card>
           <Card title="task 03: update an object with immer">
             <ObjectTaskThird />
-          </Card>
+          </Card> */}
         </Grid>
       </Container>
     </main>

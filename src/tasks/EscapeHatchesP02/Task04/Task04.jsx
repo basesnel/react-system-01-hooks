@@ -1,8 +1,12 @@
+import { useState } from 'react';
+
 import DecoratedButton from 'components/DecoratedButton';
 import DecoratedForm from 'components/DecoratedForm';
 import FlexBox from 'components/FlexBox';
+import TextArea from 'components/TextArea';
 import Title from 'components/Title';
-import { useState } from 'react';
+
+import { MdChat } from 'react-icons/md';
 
 export default function Task04() {
   const [showForm, setShowForm] = useState(false);
@@ -34,11 +38,18 @@ export default function Task04() {
 
   return (
     <DecoratedForm onSubmit={handleSubmit}>
-      <textarea
+      {/* <textarea
         name="Task04 message"
         placeholder="Message"
         value={message}
         onChange={e => setMessage(e.target.value)}
+      /> */}
+      <TextArea
+        textAreaName="Task04 message"
+        textAreaPlaceholder="Message"
+        textAreaValue={message}
+        handleChange={e => setMessage(e.target.value)}
+        icon={<MdChat />}
       />
       <FlexBox>
         <DecoratedButton

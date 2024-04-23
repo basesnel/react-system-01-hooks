@@ -1,30 +1,33 @@
-import { useImmer } from 'use-immer';
+import { useState } from 'react';
 import { MdOutlineSelectAll } from 'react-icons/md';
 
+import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
 import Background from '../IntendendComponents/Background';
 import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
 import DecoratedSelect from 'components/DecoratedSelect';
 
 import { initialPosition, colorOptions } from 'constants';
-import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
 
-export default function ObjectTaskThird() {
-  const [shape, updateShape] = useImmer({
+const initPosition = { ...initialPosition };
+
+export default function Task02() {
+  const [shape, setShape] = useState({
     color: 'orange',
-    position: initialPosition,
+    position: initPosition,
   });
 
   const handleMove = (dx, dy) => {
-    updateShape(draft => {
-      draft.position.x += dx;
-      draft.position.y += dy;
+    setShape({
+      ...shape,
+      position: { x: (shape.position.x += dx), y: (shape.position.y += dy) },
     });
   };
 
   const handleColorChange = e => {
-    updateShape(draft => {
-      draft.color = e.target.value;
+    setShape({
+      ...shape,
+      color: e.target.value,
     });
   };
 
@@ -32,7 +35,7 @@ export default function ObjectTaskThird() {
     <DecoratedWrapper>
       <FlexBox>
         <DecoratedSelect
-          selectName="color"
+          selectName="Color"
           selected={shape.color}
           list={colorOptions}
           icon={<MdOutlineSelectAll />}

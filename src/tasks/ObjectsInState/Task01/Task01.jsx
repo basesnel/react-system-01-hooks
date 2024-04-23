@@ -8,9 +8,9 @@ import DecoratedButton from 'components/DecoratedButton';
 
 import { initialTaskFirstPerson } from 'constants';
 
-import css from './ObjectTaskFirst.module.css';
+import css from './Task01.module.css';
 
-export default function ObjectTaskFirst() {
+export default function Task01() {
   const [player, setPlayer] = useState(initialTaskFirstPerson);
 
   const handlePlusClick = () => {

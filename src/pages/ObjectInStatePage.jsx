@@ -8,9 +8,9 @@ import Prac01 from 'tasks/ObjectsInState/Prac01';
 import Prac02 from 'tasks/ObjectsInState/Prac02';
 import Prac03 from 'tasks/ObjectsInState/Prac03';
 import Prac04 from 'tasks/ObjectsInState/Prac04';
-// import ObjectTaskFirst from 'tasks/ObjectsInState/ObjectTaskFirst/ObjectTaskFirst';
-// import ObjectTaskSecond from 'tasks/ObjectsInState/ObjectTaskSecond';
-// import ObjectTaskThird from 'tasks/ObjectsInState/ObjectTaskThird';
+import Task01 from 'tasks/ObjectsInState/Task01';
+import Task02 from 'tasks/ObjectsInState/Task02';
+import Task03 from 'tasks/ObjectsInState/Task03';
 
 export const ObjectInStatePage = () => {
   return (
@@ -33,15 +33,15 @@ export const ObjectInStatePage = () => {
           <Card title="prac 04: write concise update logic with Immer">
             <Prac04 />
           </Card>
-          {/* <Card title="task 01: fix incorrect state updates">
-            <ObjectTaskFirst />
+          <Card title="task 01: fix incorrect state updates">
+            <Task01 />
           </Card>
           <Card title="task 02: find and fix the mutation">
-            <ObjectTaskSecond />
+            <Task02 />
           </Card>
           <Card title="task 03: update an object with immer">
-            <ObjectTaskThird />
-          </Card> */}
+            <Task03 />
+          </Card>
         </Grid>
       </Container>
     </main>

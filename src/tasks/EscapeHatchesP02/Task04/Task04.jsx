@@ -1,12 +1,12 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
+import { MdChat } from 'react-icons/md';
 
 import DecoratedButton from 'components/DecoratedButton';
 import DecoratedForm from 'components/DecoratedForm';
 import FlexBox from 'components/FlexBox';
 import TextArea from 'components/TextArea';
 import Title from 'components/Title';
-
-import { MdChat } from 'react-icons/md';
 
 export default function Task04() {
   const [showForm, setShowForm] = useState(false);
@@ -38,12 +38,6 @@ export default function Task04() {
 
   return (
     <DecoratedForm onSubmit={handleSubmit}>
-      {/* <textarea
-        name="Task04 message"
-        placeholder="Message"
-        value={message}
-        onChange={e => setMessage(e.target.value)}
-      /> */}
       <TextArea
         textAreaName="Task04 message"
         textAreaPlaceholder="Message"
@@ -63,5 +57,5 @@ export default function Task04() {
 }
 
 function sendMessage(message) {
-  console.log('Sending message: ' + message);
+  toast.info(`Sending message: ${message}`);
 }

@@ -1,3 +1,7 @@
+import DecoratedButton from 'components/DecoratedButton';
+import DecoratedForm from 'components/DecoratedForm';
+import FlexBox from 'components/FlexBox';
+import Title from 'components/Title';
 import { useState } from 'react';
 
 export default function Task04() {
@@ -13,32 +17,37 @@ export default function Task04() {
   if (!showForm) {
     return (
       <>
-        <h3>Thanks for using our services!</h3>
-        <button
-          type="button"
-          onClick={() => {
-            setMessage('');
-            setShowForm(true);
-          }}
-        >
-          Open chat
-        </button>
+        <Title level={3} caption="Thanks for using our services!" />
+        <FlexBox>
+          <DecoratedButton
+            type="button"
+            caption="Open chat"
+            onClick={() => {
+              setMessage('');
+              setShowForm(true);
+            }}
+          />
+        </FlexBox>
       </>
     );
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <DecoratedForm onSubmit={handleSubmit}>
       <textarea
         name="Task04 message"
         placeholder="Message"
         value={message}
         onChange={e => setMessage(e.target.value)}
       />
-      <button type="submit" disabled={message === ''}>
-        Send
-      </button>
-    </form>
+      <FlexBox>
+        <DecoratedButton
+          type="submit"
+          disabled={message === ''}
+          caption="Send"
+        />
+      </FlexBox>
+    </DecoratedForm>
   );
 }
 

@@ -15,3 +15,7 @@ Container.propTypes = {
   variant: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
+
+Container.defaultProps = {
+  variant: null,
+};

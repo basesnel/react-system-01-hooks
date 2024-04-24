@@ -12,3 +12,7 @@ FlexBox.propTypes = {
   children: PropTypes.node.isRequired,
   align: PropTypes.oneOf(['stretch', 'flex-start', 'flex-end', 'baseline']),
 };
+
+FlexBox.defaultProps = {
+  align: null,
+};

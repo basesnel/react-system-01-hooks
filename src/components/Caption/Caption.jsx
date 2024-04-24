@@ -11,5 +11,5 @@ export default function Caption({ text }) {
 }
 
 Caption.propTypes = {
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };

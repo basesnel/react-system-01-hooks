@@ -14,3 +14,7 @@ Span.propTypes = {
   children: PropTypes.node.isRequired,
   centered: PropTypes.bool,
 };
+
+Span.defaultProps = {
+  centered: null,
+};

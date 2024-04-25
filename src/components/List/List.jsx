@@ -17,3 +17,8 @@ List.propTypes = {
   message: PropTypes.string.isRequired,
   listRef: PropTypes.any,
 };
+
+List.defaultProps = {
+  children: null,
+  listRef: null,
+};

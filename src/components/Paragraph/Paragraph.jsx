@@ -18,3 +18,8 @@ Paragraph.propTypes = {
   centered: PropTypes.bool,
   paragraphRef: PropTypes.any,
 };
+
+Paragraph.defaultProps = {
+  centered: null,
+  paragraphRef: null,
+};

@@ -20,5 +20,5 @@ export default function Title({ level, caption }) {
 
 Title.propTypes = {
   level: PropTypes.number.isRequired,
-  caption: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  caption: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };

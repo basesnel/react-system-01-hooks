@@ -12,4 +12,9 @@ export default function Slide({ children, itemRef, ...delegated }) {
 
 Slide.propTypes = {
   children: PropTypes.node.isRequired,
+  delegated: PropTypes.any,
+};
+
+Slide.defaultProps = {
+  delegated: null,
 };

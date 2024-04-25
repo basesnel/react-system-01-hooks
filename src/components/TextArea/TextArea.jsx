@@ -50,3 +50,15 @@ TextArea.propTypes = {
   icon: PropTypes.node,
   textAreaRef: PropTypes.any,
 };
+
+TextArea.defaultProps = {
+  isDisabled: null,
+  textAreaType: null,
+  textAreaName: null,
+  textAreaValue: null,
+  textAreaLabel: null,
+  textAreaPlaceholder: null,
+  handleChange: null,
+  icon: null,
+  textAreaRef: null,
+};

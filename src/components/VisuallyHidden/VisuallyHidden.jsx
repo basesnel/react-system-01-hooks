@@ -14,3 +14,7 @@ VisuallyHidden.propTypes = {
   children: PropTypes.node.isRequired,
   delegated: PropTypes.any,
 };
+
+VisuallyHidden.defaultProps = {
+  delegated: null,
+};

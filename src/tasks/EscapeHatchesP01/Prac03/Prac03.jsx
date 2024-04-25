@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Title from 'components/Title';
 
 export default function Prac03() {
@@ -33,8 +33,8 @@ export default function Prac03() {
     <>
       <Title level={3} caption={`Time passed: ${secondPassed.toFixed(3)}`} />
       <FlexBox>
-        <DecoratedButton caption="Start" onClick={handleStart} />
-        <DecoratedButton caption="Stop" onClick={handleStop} />
+        <Button caption="Start" onClick={handleStart} />
+        <Button caption="Stop" onClick={handleStop} />
       </FlexBox>
     </>
   );

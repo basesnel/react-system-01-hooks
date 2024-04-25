@@ -2,7 +2,7 @@ import { forwardRef, useRef, useImperativeHandle } from 'react';
 
 // import { FiEdit3 } from 'react-icons/fi';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 // import DecoratedInput from 'components/DecoratedInput';
 
@@ -28,7 +28,7 @@ export default function Prac08() {
   return (
     <FlexBox>
       <MyInput name="Prac08input" ref={inputRef} />
-      <DecoratedButton caption="Focus the input" onClick={handleClick} />
+      <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );
 }

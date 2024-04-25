@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import { videoSrc } from 'constants';
 
@@ -25,7 +25,7 @@ export default function Prac11() {
   return (
     <FlexBox>
       <VideoPlayer isPlaying={isPlaying} src={videoSrc} />
-      <DecoratedButton
+      <Button
         caption={isPlaying ? 'Pause' : 'Play'}
         onClick={() => setIsPlaying(!isPlaying)}
       />

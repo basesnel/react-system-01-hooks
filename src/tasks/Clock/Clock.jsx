@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Box from 'components/Box';
 
 import Caption from 'components/Caption';
@@ -72,11 +72,8 @@ export default function Clock() {
       </Box>
       <Caption text="Current time" />
       <FlexBox>
-        <DecoratedButton
-          caption={isTicking ? 'stop' : 'start'}
-          onClick={toggle}
-        />
-        {/* <DecoratedButton
+        <Button caption={isTicking ? 'stop' : 'start'} onClick={toggle} />
+        {/* <Button
           caption="Stop"
           onClick={stop}
           isDisabled={!isTicking}

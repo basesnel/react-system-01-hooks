@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import css from './News.module.css';
 
@@ -106,7 +106,7 @@ export default function News() {
 
       {shouldRenderLoadMoreButton && (
         <div className={css.wrapper}>
-          <DecoratedButton
+          <Button
             caption="Load more"
             onClick={() =>
               setCurrentPage(prevCurrentPage => prevCurrentPage + 1)

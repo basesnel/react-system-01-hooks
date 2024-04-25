@@ -1,4 +1,4 @@
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import { useState } from 'react';
 
 const Modal = ({ url, onClose }) => {
@@ -6,7 +6,7 @@ const Modal = ({ url, onClose }) => {
     <div>
       <p>Modal</p>
       <p>url: {url}</p>
-      <DecoratedButton caption="Close" onClick={onClose} />
+      <Button caption="Close" onClick={onClose} />
     </div>
   );
 };

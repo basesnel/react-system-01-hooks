@@ -7,7 +7,7 @@ import Logo from 'components/Logo';
 import NavBar from 'components/NavBar';
 import UserMenu from 'components/UserMenu';
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import css from './AppBar.module.css';
 
@@ -24,7 +24,7 @@ export default function AppBar() {
           <UserMenu onLogOut={onLogOut} user={user} />
         ) : (
           <FlexBox>
-            <DecoratedButton caption="Log&nbsp;In" onClick={onLogIn} />
+            <Button caption="Log&nbsp;In" onClick={onLogIn} />
           </FlexBox>
         )}
       </Container>

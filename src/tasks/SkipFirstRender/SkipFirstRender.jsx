@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 
 export default function SkipFirstRender() {
@@ -15,7 +15,7 @@ export default function SkipFirstRender() {
   });
   return (
     <div>
-      <DecoratedButton
+      <Button
         caption={count}
         onClick={() => {
           setCount(c => c + 1);

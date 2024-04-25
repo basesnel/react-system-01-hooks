@@ -4,7 +4,7 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Caption from 'components/Caption';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
@@ -78,11 +78,11 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="counter with general state">
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption={`Clicked ${count} times`}
                 onClick={handleClick}
               />
-              <DecoratedButton
+              <Button
                 caption={`Clicked ${count} times`}
                 onClick={handleClick}
               />
@@ -91,11 +91,11 @@ export const SimpleStatesPage = () => {
           <Card title="counter a and counter b">
             <Paragraph>Counters with useEffect hook case.</Paragraph>
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption={`pressed the button ${counterA} times`}
                 onClick={handleCounterAIncrement}
               />
-              <DecoratedButton
+              <Button
                 caption={`pressed the button ${counterB} times`}
                 onClick={handleCounterBIncrement}
               />
@@ -103,11 +103,11 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="counter with reducer">
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption={`Decrease ${state.countR}`}
                 onClick={() => dispatch({ type: 'decrement', payload: 1 })}
               />
-              <DecoratedButton
+              <Button
                 caption={`Increase ${state.countR}`}
                 onClick={() => dispatch({ type: 'increment', payload: 1 })}
               />
@@ -115,7 +115,7 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="update the same counter multiple times before the next render">
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption="+3"
                 onClick={() => {
                   setNumberA(n => n + 1);
@@ -128,7 +128,7 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="update state after replacing it">
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption="Increase the number"
                 onClick={() => {
                   setNumberB(numberB + 5);
@@ -140,7 +140,7 @@ export const SimpleStatesPage = () => {
           </Card>
           <Card title="replace state after updating it">
             <FlexBox>
-              <DecoratedButton
+              <Button
                 caption="Increase the number"
                 onClick={() => {
                   setNumberC(numberC + 5);

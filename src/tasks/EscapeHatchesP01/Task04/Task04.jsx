@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
 import DecoratedInput from 'components/DecoratedInput';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 // import DecoratedMiniForm from 'components/DecoratedMiniForm';
 
@@ -38,7 +38,7 @@ export default function Task04() {
         }}
         icon={<MdChat />}
       />
-      <DecoratedButton onClick={handleSend} caption="Send" />
+      <Button onClick={handleSend} caption="Send" />
     </FlexBox>
   );
 }

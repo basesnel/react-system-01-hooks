@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
@@ -44,7 +44,7 @@ export default function Task07() {
         ))}
       </Slider>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption="Next"
           onClick={() => {
             flushSync(() => {

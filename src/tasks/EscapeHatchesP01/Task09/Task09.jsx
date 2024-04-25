@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
@@ -14,7 +14,7 @@ export default function Task09() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption={`${showForm ? 'Hide' : 'Show'} form`}
           onClick={() => setShowForm(!showForm)}
         />

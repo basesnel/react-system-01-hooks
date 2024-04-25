@@ -4,7 +4,7 @@ import { FiEdit3 } from 'react-icons/fi';
 
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import { initialTaskFirstPerson } from 'constants';
 
@@ -51,7 +51,7 @@ export default function Task01() {
       />
       <label className={css['label-wrap']}>
         Score: <b>{player.score}</b>{' '}
-        <DecoratedButton onClick={handlePlusClick} caption="+1" />
+        <Button onClick={handlePlusClick} caption="+1" />
       </label>
     </DecoratedForm>
   );

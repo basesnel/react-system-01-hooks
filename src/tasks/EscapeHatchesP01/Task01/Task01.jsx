@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
 
 import DecoratedInput from 'components/DecoratedInput';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 export default function Task01() {
@@ -38,12 +38,12 @@ export default function Task01() {
         icon={<FiEdit />}
       />
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption={isSending ? 'Sending...' : 'Send'}
           onClick={handleSend}
           isDisabled={isSending}
         />
-        {isSending && <DecoratedButton caption="Undo" onClick={handleUndo} />}
+        {isSending && <Button caption="Undo" onClick={handleUndo} />}
       </FlexBox>
     </>
   );

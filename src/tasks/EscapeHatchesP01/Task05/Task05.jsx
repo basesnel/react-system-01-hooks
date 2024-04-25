@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 import { videoSrc } from 'constants';
@@ -25,10 +25,7 @@ export default function Task05() {
       >
         <source src={videoSrc} type="video/mp4" />
       </video>
-      <DecoratedButton
-        caption={isPlaying ? 'Pause' : 'Play'}
-        onClick={handleClick}
-      />
+      <Button caption={isPlaying ? 'Pause' : 'Play'} onClick={handleClick} />
     </FlexBox>
   );
 }

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 
@@ -12,14 +12,14 @@ export default function Prac10() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption="Toggle with state"
           onClick={() => {
             setShow(!show);
           }}
           isDisabled={isBlocked}
         />
-        <DecoratedButton
+        <Button
           caption="Remove from the DOM"
           onClick={() => {
             setIsBlocked(true);

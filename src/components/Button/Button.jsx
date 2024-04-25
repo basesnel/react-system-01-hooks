@@ -1,16 +1,11 @@
 import PropTypes from 'prop-types';
 
-import css from './DecoratedButton.module.css';
+import css from './Button.module.css';
 
-export default function DecoratedButton({
-  caption,
-  onClick,
-  isDisabled,
-  ...delegated
-}) {
+export default function Button({ caption, onClick, isDisabled, ...delegated }) {
   return (
     <button
-      className={css.decoratedButton}
+      className={css.Button}
       onClick={onClick}
       disabled={isDisabled}
       type="button"
@@ -21,8 +16,15 @@ export default function DecoratedButton({
   );
 }
 
-DecoratedButton.propTypes = {
+Button.propTypes = {
   caption: PropTypes.any.isRequired,
   onClick: PropTypes.func,
   isDisabled: PropTypes.bool,
+  delegated: PropTypes.any,
+};
+
+Button.defaultProps = {
+  onClick: null,
+  isDisabled: null,
+  delegated: null,
 };

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 
 import SearchBar from 'components/SearchBar';
 import CustomLoader from 'components/CustomLoader';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 import { fetchArticles } from 'services/news-api';
@@ -73,7 +73,7 @@ export default function News() {
 
       {shouldRenderLoadMoreButton && (
         <FlexBox>
-          <DecoratedButton
+          <Button
             caption="Load more"
             onClick={() => setCurrentPage(prevPage => prevPage + 1)}
           />

@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 import ResponsiveImage from 'components/ResponsiveImage';
@@ -37,7 +37,7 @@ export default function Prac07() {
   for (let i = 0; i < kittens.length; i++) {
     const id = (i + 1).toString().padStart(2, '0');
     buttonsList.push(
-      <DecoratedButton key={i} caption={id} onClick={() => scrollToId(i)} />
+      <Button key={i} caption={id} onClick={() => scrollToId(i)} />
     );
   }
 

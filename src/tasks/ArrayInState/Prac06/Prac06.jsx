@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -21,7 +21,7 @@ export default function Prac06() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton caption="Reverse" onClick={handleClick} />
+        <Button caption="Reverse" onClick={handleClick} />
       </FlexBox>
       <List message="There is no elements in list.">
         {list.map(art => (

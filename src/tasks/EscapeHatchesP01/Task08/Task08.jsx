@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { MdSearch } from 'react-icons/md';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import DecoratedInputWithRef from 'components/DecoratedInputWithRef';
 
 export default function Task08() {
@@ -16,7 +16,7 @@ export default function Task08() {
         icon={<MdSearch />}
         ref={inputRef}
       />
-      <DecoratedButton
+      <Button
         caption="Search"
         onClick={() => {
           inputRef.current.focus();

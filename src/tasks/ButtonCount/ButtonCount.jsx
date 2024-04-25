@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 export default function ButtonCount() {
   const [count, setCount] = useState(0);
@@ -9,7 +9,5 @@ export default function ButtonCount() {
     setCount(count + 1);
   }
 
-  return (
-    <DecoratedButton caption={`Clicked ${count} times`} onClick={handleClick} />
-  );
+  return <Button caption={`Clicked ${count} times`} onClick={handleClick} />;
 }

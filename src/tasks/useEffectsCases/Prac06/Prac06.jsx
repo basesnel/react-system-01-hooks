@@ -7,7 +7,7 @@ import { useChatRoom } from './UseChatRoom';
 import DecoratedInput from 'components/DecoratedInput';
 import Title from 'components/Title';
 import DecoratedSelect from 'components/DecoratedSelect';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 import { chatRoom } from 'constants';
@@ -50,7 +50,7 @@ export default function Prac06() {
           icon={<MdChat />}
           onHandleSelect={e => setRoomId(e.target.value)}
         />
-        <DecoratedButton
+        <Button
           onClick={() => setShow(!show)}
           caption={show ? 'Close chat' : 'Open Chat'}
         />

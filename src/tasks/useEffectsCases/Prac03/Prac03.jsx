@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { FadeInAnimation } from './animation';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 function Welcome() {
@@ -39,7 +39,7 @@ export default function Prac03() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption={show ? 'Remove' : 'Show'}
           onClick={() => setShow(!show)}
         />

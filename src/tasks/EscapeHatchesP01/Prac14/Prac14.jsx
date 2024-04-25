@@ -4,7 +4,7 @@ import { MdTask } from 'react-icons/md';
 import DecoratedInput from 'components/DecoratedInput';
 import FlexBox from 'components/FlexBox';
 import Title from 'components/Title';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 function Playground() {
   const [text, setText] = useState('a');
@@ -45,7 +45,7 @@ export default function Prac14() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption={`${show ? 'Unmount' : 'Mount'} the component`}
           onClick={() => setShow(!show)}
         />

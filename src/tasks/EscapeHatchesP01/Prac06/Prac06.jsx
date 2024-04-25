@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 import ResponsiveImage from 'components/ResponsiveImage';
@@ -75,9 +75,9 @@ export default function Prac06() {
         </Slide>
       </Slider>
       <FlexBox>
-        <DecoratedButton caption="Tom" onClick={handleScrollToFirstCat} />
-        <DecoratedButton caption="Maru" onClick={handleScrollToSecondCat} />
-        <DecoratedButton caption="Jelly" onClick={handleScrollToThirdCat} />
+        <Button caption="Tom" onClick={handleScrollToFirstCat} />
+        <Button caption="Maru" onClick={handleScrollToSecondCat} />
+        <Button caption="Jelly" onClick={handleScrollToThirdCat} />
       </FlexBox>
     </>
   );

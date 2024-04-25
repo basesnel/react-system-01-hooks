@@ -3,7 +3,7 @@ import { useState, useMemo } from 'react';
 import { FiFilter } from 'react-icons/fi';
 
 import Box from 'components/Box';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import DecoratedInput from 'components/DecoratedInput';
 import List from 'components/List';
 import Item from 'components/Item';
@@ -26,7 +26,7 @@ export default function Characters() {
 
   return (
     <div>
-      <DecoratedButton caption={count} onClick={() => setCount(c => c + 1)} />
+      <Button caption={count} onClick={() => setCount(c => c + 1)} />
       <hr />
       <Box>
         <DecoratedInput

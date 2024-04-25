@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ModalDialog from './ModalDialog';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 export default function Prac04() {
   const [show, setShow] = useState(false);
@@ -10,7 +10,7 @@ export default function Prac04() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           caption="Open dialog"
           onClick={() => {
             setShow(true);
@@ -20,7 +20,7 @@ export default function Prac04() {
       <ModalDialog isOpen={show}>
         Hello here!
         <hr />
-        <DecoratedButton
+        <Button
           caption="Close"
           onClick={() => {
             setShow(false);

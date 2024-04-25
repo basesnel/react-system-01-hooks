@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import DecoratedInput from 'components/DecoratedInput';
 import FlexBox from 'components/FlexBox';
 import { videoSrc } from 'constants';
@@ -29,7 +29,7 @@ export default function Prac12() {
   return (
     <FlexBox>
       <VideoPlayer isPlaying={isPlaying} src={videoSrc} />
-      <DecoratedButton
+      <Button
         caption={isPlaying ? 'Pause' : 'Play'}
         onClick={() => setIsPlaying(!isPlaying)}
       />

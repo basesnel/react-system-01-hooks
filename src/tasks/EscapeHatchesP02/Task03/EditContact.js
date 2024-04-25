@@ -4,7 +4,7 @@ import { FiUser, FiMail } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedInput from 'components/DecoratedInput';
 
@@ -35,7 +35,7 @@ function FormContact({ savedContact, onSave }) {
         icon={<FiMail />}
       />
       <FlexBox>
-        <DecoratedButton
+        <Button
           type="submit"
           caption="Save"
           onClick={e => {
@@ -48,7 +48,7 @@ function FormContact({ savedContact, onSave }) {
             onSave(updatedData);
           }}
         />
-        <DecoratedButton
+        <Button
           caption="Reset"
           onClick={() => {
             setName(savedContact.name);

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 export default function Prac04() {
@@ -17,11 +17,11 @@ export default function Prac04() {
 
   return (
     <FlexBox>
-      <DecoratedButton
+      <Button
         caption={`You clicked on state-button ${counterState} times`}
         onClick={handleStateClick}
       />
-      <DecoratedButton
+      <Button
         caption={`You clicked on ref-button ${counterRef.current} times`}
         onClick={handleRefClick}
       />

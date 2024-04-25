@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import { toast } from 'react-toastify';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 export default function Prac01() {
@@ -14,7 +14,7 @@ export default function Prac01() {
 
   return (
     <FlexBox>
-      <DecoratedButton caption="Click me!" onClick={handleClick} />
+      <Button caption="Click me!" onClick={handleClick} />
     </FlexBox>
   );
 }

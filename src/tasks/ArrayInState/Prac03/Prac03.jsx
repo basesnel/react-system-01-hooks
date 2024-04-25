@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import { initialShapesList } from 'constants';
 import FlexBox from 'components/FlexBox';
@@ -26,7 +26,7 @@ export default function Prac03() {
   return (
     <div style={{ position: 'relative', width: '100%', height: 200 }}>
       <FlexBox>
-        <DecoratedButton caption="Move circles down!" onClick={handleClick} />
+        <Button caption="Move circles down!" onClick={handleClick} />
       </FlexBox>
       {shapes.map(shape => (
         <div

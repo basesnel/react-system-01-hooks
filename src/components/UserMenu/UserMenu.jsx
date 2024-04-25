@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
 import css from './UserMenu.module.css';
@@ -9,7 +9,7 @@ export default function UserMenu({ user, onLogOut }) {
   return (
     <FlexBox>
       <span className={css.user}>Welcome, {user.name}</span>
-      <DecoratedButton caption="Log&nbsp;Out" onClick={onLogOut} />
+      <Button caption="Log&nbsp;Out" onClick={onLogOut} />
     </FlexBox>
   );
 }

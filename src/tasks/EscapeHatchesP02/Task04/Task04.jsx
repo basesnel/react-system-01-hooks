@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import DecoratedForm from 'components/DecoratedForm';
 import FlexBox from 'components/FlexBox';
 import TextArea from 'components/TextArea';
@@ -23,7 +23,7 @@ export default function Task04() {
       <>
         <Title level={3} caption="Thanks for using our services!" />
         <FlexBox>
-          <DecoratedButton
+          <Button
             type="button"
             caption="Open chat"
             onClick={() => {
@@ -46,11 +46,7 @@ export default function Task04() {
         icon={<MdChat />}
       />
       <FlexBox>
-        <DecoratedButton
-          type="submit"
-          disabled={message === ''}
-          caption="Send"
-        />
+        <Button type="submit" disabled={message === ''} caption="Send" />
       </FlexBox>
     </DecoratedForm>
   );

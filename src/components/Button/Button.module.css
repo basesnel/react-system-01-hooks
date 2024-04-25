@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.decoratedButton {
+.Button {
   border: 1px solid var(--color-text);
   border-radius: 4px;
   padding: 4px 20px;
@@ -11,8 +11,8 @@
   transition: var(--my-transition);
 }
 
-.decoratedButton:hover:enabled,
-.decoratedButton:active:enabled {
+.Button:hover:enabled,
+.Button:active:enabled {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
@@ -20,18 +20,18 @@
   transform: scale(1.02);
 }
 
-.decoratedButton:disabled {
+.Button:disabled {
   opacity: 0.15;
 }
 
 @media mobile-to {
-  .decoratedButton {
+  .Button {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media tablet-to {
-  .decoratedButton {
+  .Button {
     padding: 6px 20px;
     font-size: var(--fs-text-tablet);
   }

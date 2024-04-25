@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { toast } from 'react-toastify';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 // let timeoutID;
 
@@ -10,7 +10,7 @@ function DebouncedButton({ onClick, caption }) {
   const timeoutID = useRef(null);
 
   return (
-    <DecoratedButton
+    <Button
       onClick={() => {
         clearTimeout(timeoutID.current);
         timeoutID.current = setTimeout(() => {

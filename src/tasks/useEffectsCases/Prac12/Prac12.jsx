@@ -4,7 +4,7 @@ import { createConnection } from 'constants';
 
 import DecoratedInput from 'components/DecoratedInput';
 import Title from 'components/Title';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 
 import FlexBox from 'components/FlexBox';
 
@@ -41,7 +41,7 @@ export default function Prac12() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
+        <Button
           onClick={() => setShow(!show)}
           caption={show ? 'Close chat' : 'Open Chat'}
         />

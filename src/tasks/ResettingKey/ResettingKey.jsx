@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import DecoratedInput from 'components/DecoratedInput';
 
@@ -16,7 +16,7 @@ export default function ResettingKey() {
 
   return (
     <FlexBox>
-      <DecoratedButton caption="Reset" onClick={handleReset} />
+      <Button caption="Reset" onClick={handleReset} />
       <Form key={version} />
     </FlexBox>
   );

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import DecoratedButton from 'components/DecoratedButton';
+import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 import CountLabel from './CountLabel';
 
@@ -10,14 +10,8 @@ export default function StoringPrevState() {
   return (
     <>
       <FlexBox>
-        <DecoratedButton
-          caption="Increment"
-          onClick={() => setCount(count + 1)}
-        />
-        <DecoratedButton
-          caption="Decrement"
-          onClick={() => setCount(count - 1)}
-        />
+        <Button caption="Increment" onClick={() => setCount(count + 1)} />
+        <Button caption="Decrement" onClick={() => setCount(count - 1)} />
       </FlexBox>
       <CountLabel count={count} />
     </>

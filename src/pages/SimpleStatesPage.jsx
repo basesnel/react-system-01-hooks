@@ -1,4 +1,4 @@
-import { useEffect, useState, useReducer } from 'react';
+import { useState, useReducer } from 'react';
 
 import Container from 'components/Container';
 import Title from 'components/Title';
@@ -16,6 +16,7 @@ import StoringPrevState from 'tasks/StoringPrevState';
 
 import Prac01 from 'tasks/SimpleStates/Prac01';
 import Prac02 from 'tasks/SimpleStates/Prac02';
+import Prac03 from 'tasks/SimpleStates/Prac03';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -34,26 +35,9 @@ const countReducer = (state, action) => {
 export const SimpleStatesPage = () => {
   const [state, dispatch] = useReducer(countReducer, { countR: 0 });
 
-  const [counterA, setCounterA] = useState(0);
-  const [counterB, setCounterB] = useState(0);
-
   const [numberA, setNumberA] = useState(0);
   const [numberB, setNumberB] = useState(0);
   const [numberC, setNumberC] = useState(0);
-
-  useEffect(() => {
-    const totalCount = counterA + counterB;
-    document.title = `You are clicked ${totalCount} times`;
-    console.log('useEffect is triggered ' + Date.now());
-  }, [counterA, counterB]);
-
-  const handleCounterAIncrement = () => {
-    setCounterA(state => state + 1);
-  };
-
-  const handleCounterBIncrement = () => {
-    setCounterB(state => state + 1);
-  };
 
   return (
     <main>
@@ -66,21 +50,11 @@ export const SimpleStatesPage = () => {
           <Card title="prac01: counters with own state">
             <Prac01 />
           </Card>
-          <Card title="counter with general state">
+          <Card title="prac02: counter with general state">
             <Prac02 />
           </Card>
-          <Card title="counter a and counter b">
-            <Paragraph>Counters with useEffect hook case.</Paragraph>
-            <FlexBox>
-              <Button
-                caption={`pressed the button ${counterA} times`}
-                onClick={handleCounterAIncrement}
-              />
-              <Button
-                caption={`pressed the button ${counterB} times`}
-                onClick={handleCounterBIncrement}
-              />
-            </FlexBox>
+          <Card title="prac03: counter a and counter b">
+            <Prac03 />
           </Card>
           <Card title="counter with reducer">
             <FlexBox>

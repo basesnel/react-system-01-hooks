@@ -9,11 +9,12 @@ import Caption from 'components/Caption';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import ButtonCount from 'tasks/ButtonCount';
 import LazyExample from 'tasks/LazyInitState/LazyExample';
 import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
 import ResettingKey from 'tasks/ResettingKey';
 import StoringPrevState from 'tasks/StoringPrevState';
+
+import Prac01 from 'tasks/SimpleStates/Prac01';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -67,14 +68,8 @@ export const SimpleStatesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="counters with own state">
-            <FlexBox>
-              <ButtonCount />
-              <ButtonCount />
-              <ButtonCount />
-              <ButtonCount />
-              <ButtonCount />
-            </FlexBox>
+          <Card title="prac01: counters with own state">
+            <Prac01 />
           </Card>
           <Card title="counter with general state">
             <FlexBox>

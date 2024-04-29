@@ -1,4 +1,4 @@
-import { useState, useReducer } from 'react';
+import { useState } from 'react';
 
 import Container from 'components/Container';
 import Title from 'components/Title';
@@ -17,24 +17,9 @@ import StoringPrevState from 'tasks/StoringPrevState';
 import Prac01 from 'tasks/SimpleStates/Prac01';
 import Prac02 from 'tasks/SimpleStates/Prac02';
 import Prac03 from 'tasks/SimpleStates/Prac03';
-
-const countReducer = (state, action) => {
-  switch (action.type) {
-    case 'increment':
-      return { ...state, countR: state.countR + action.payload };
-
-    case 'decrement':
-      return { ...state, countR: state.countR - action.payload };
-
-    default:
-      throw new Error(`Unsupported action type ${action.type}`);
-    // return state;
-  }
-};
+import Prac04 from 'tasks/SimpleStates/Prac04';
 
 export const SimpleStatesPage = () => {
-  const [state, dispatch] = useReducer(countReducer, { countR: 0 });
-
   const [numberA, setNumberA] = useState(0);
   const [numberB, setNumberB] = useState(0);
   const [numberC, setNumberC] = useState(0);
@@ -56,17 +41,8 @@ export const SimpleStatesPage = () => {
           <Card title="prac03: counter a and counter b">
             <Prac03 />
           </Card>
-          <Card title="counter with reducer">
-            <FlexBox>
-              <Button
-                caption={`Decrease ${state.countR}`}
-                onClick={() => dispatch({ type: 'decrement', payload: 1 })}
-              />
-              <Button
-                caption={`Increase ${state.countR}`}
-                onClick={() => dispatch({ type: 'increment', payload: 1 })}
-              />
-            </FlexBox>
+          <Card title="prac04: counter with reducer">
+            <Prac04 />
           </Card>
           <Card title="update the same counter multiple times before the next render">
             <FlexBox>

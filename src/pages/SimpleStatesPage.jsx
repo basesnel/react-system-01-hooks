@@ -15,6 +15,7 @@ import ResettingKey from 'tasks/ResettingKey';
 import StoringPrevState from 'tasks/StoringPrevState';
 
 import Prac01 from 'tasks/SimpleStates/Prac01';
+import Prac02 from 'tasks/SimpleStates/Prac02';
 
 const countReducer = (state, action) => {
   switch (action.type) {
@@ -31,8 +32,6 @@ const countReducer = (state, action) => {
 };
 
 export const SimpleStatesPage = () => {
-  const [count, setCount] = useState(0);
-
   const [state, dispatch] = useReducer(countReducer, { countR: 0 });
 
   const [counterA, setCounterA] = useState(0);
@@ -47,10 +46,6 @@ export const SimpleStatesPage = () => {
     document.title = `You are clicked ${totalCount} times`;
     console.log('useEffect is triggered ' + Date.now());
   }, [counterA, counterB]);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
 
   const handleCounterAIncrement = () => {
     setCounterA(state => state + 1);
@@ -72,16 +67,7 @@ export const SimpleStatesPage = () => {
             <Prac01 />
           </Card>
           <Card title="counter with general state">
-            <FlexBox>
-              <Button
-                caption={`Clicked ${count} times`}
-                onClick={handleClick}
-              />
-              <Button
-                caption={`Clicked ${count} times`}
-                onClick={handleClick}
-              />
-            </FlexBox>
+            <Prac02 />
           </Card>
           <Card title="counter a and counter b">
             <Paragraph>Counters with useEffect hook case.</Paragraph>

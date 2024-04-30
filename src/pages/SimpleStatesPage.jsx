@@ -4,8 +4,6 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import LazyExample from 'tasks/LazyInitState/LazyExample';
-import NoLazyExample from 'tasks/LazyInitState/NoLazyExample';
 import ResettingKey from 'tasks/ResettingKey';
 import StoringPrevState from 'tasks/StoringPrevState';
 
@@ -16,6 +14,8 @@ import Prac04 from 'tasks/SimpleStates/Prac04';
 import Prac05 from 'tasks/SimpleStates/Prac05';
 import Prac06 from 'tasks/SimpleStates/Prac06';
 import Prac07 from 'tasks/SimpleStates/Prac07';
+import Prac08 from 'tasks/SimpleStates/Prac08';
+import Prac09 from 'tasks/SimpleStates/Prac09';
 
 export const SimpleStatesPage = () => {
   return (
@@ -47,11 +47,11 @@ export const SimpleStatesPage = () => {
           <Card title="prac07: replace state after updating it">
             <Prac07 />
           </Card>
-          <Card title="Passing the initializer function">
-            <LazyExample />
+          <Card title="prac08: passing the initializer function">
+            <Prac08 />
           </Card>
-          <Card title="Passing the initial state directly">
-            <NoLazyExample />
+          <Card title="prac09: passing the initial state directly">
+            <Prac09 />
           </Card>
           <Card title="Resetting state with a key">
             <ResettingKey />

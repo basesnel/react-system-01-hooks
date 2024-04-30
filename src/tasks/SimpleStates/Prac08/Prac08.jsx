@@ -19,8 +19,8 @@ function createInitialTodos() {
   return initialTodos;
 }
 
-export default function NoLazyExample() {
-  const [todos, setTodos] = useState(createInitialTodos());
+export default function Prac08() {
+  const [todos, setTodos] = useState(createInitialTodos);
   const [text, setText] = useState('');
 
   return (

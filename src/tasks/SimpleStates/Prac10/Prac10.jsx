@@ -7,7 +7,7 @@ import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import DecoratedInput from 'components/DecoratedInput';
 
-export default function ResettingKey() {
+export default function Prac10() {
   const [version, setVersion] = useState(0);
 
   function handleReset() {

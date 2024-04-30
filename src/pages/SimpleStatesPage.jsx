@@ -4,9 +4,6 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import ResettingKey from 'tasks/ResettingKey';
-import StoringPrevState from 'tasks/StoringPrevState';
-
 import Prac01 from 'tasks/SimpleStates/Prac01';
 import Prac02 from 'tasks/SimpleStates/Prac02';
 import Prac03 from 'tasks/SimpleStates/Prac03';
@@ -16,6 +13,8 @@ import Prac06 from 'tasks/SimpleStates/Prac06';
 import Prac07 from 'tasks/SimpleStates/Prac07';
 import Prac08 from 'tasks/SimpleStates/Prac08';
 import Prac09 from 'tasks/SimpleStates/Prac09';
+import Prac10 from 'tasks/SimpleStates/Prac10';
+import Prac11 from 'tasks/SimpleStates/Prac11';
 
 export const SimpleStatesPage = () => {
   return (
@@ -53,11 +52,11 @@ export const SimpleStatesPage = () => {
           <Card title="prac09: passing the initial state directly">
             <Prac09 />
           </Card>
-          <Card title="Resetting state with a key">
-            <ResettingKey />
+          <Card title="prac10: resetting state with a key">
+            <Prac10 />
           </Card>
-          <Card title="Storing information from previous renders">
-            <StoringPrevState />
+          <Card title="prac11: storing information from previous renders">
+            <Prac11 />
           </Card>
         </Grid>
       </Container>

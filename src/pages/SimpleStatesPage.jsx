@@ -18,9 +18,9 @@ import Prac01 from 'tasks/SimpleStates/Prac01';
 import Prac02 from 'tasks/SimpleStates/Prac02';
 import Prac03 from 'tasks/SimpleStates/Prac03';
 import Prac04 from 'tasks/SimpleStates/Prac04';
+import Prac05 from 'tasks/SimpleStates/Prac05';
 
 export const SimpleStatesPage = () => {
-  const [numberA, setNumberA] = useState(0);
   const [numberB, setNumberB] = useState(0);
   const [numberC, setNumberC] = useState(0);
 
@@ -44,18 +44,8 @@ export const SimpleStatesPage = () => {
           <Card title="prac04: counter with reducer">
             <Prac04 />
           </Card>
-          <Card title="update the same counter multiple times before the next render">
-            <FlexBox>
-              <Button
-                caption="+3"
-                onClick={() => {
-                  setNumberA(n => n + 1);
-                  setNumberA(n => n + 1);
-                  setNumberA(n => n + 1);
-                }}
-              />
-            </FlexBox>
-            <Caption text={`number A: ${numberA.toString()}`} />
+          <Card title="prac05: update the same counter multiple times before the next render">
+            <Prac05 />
           </Card>
           <Card title="update state after replacing it">
             <FlexBox>

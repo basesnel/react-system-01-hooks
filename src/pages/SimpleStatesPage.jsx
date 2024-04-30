@@ -1,11 +1,6 @@
-import { useState } from 'react';
-
 import Container from 'components/Container';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import Caption from 'components/Caption';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
@@ -20,10 +15,9 @@ import Prac03 from 'tasks/SimpleStates/Prac03';
 import Prac04 from 'tasks/SimpleStates/Prac04';
 import Prac05 from 'tasks/SimpleStates/Prac05';
 import Prac06 from 'tasks/SimpleStates/Prac06';
+import Prac07 from 'tasks/SimpleStates/Prac07';
 
 export const SimpleStatesPage = () => {
-  const [numberC, setNumberC] = useState(0);
-
   return (
     <main>
       <Container>
@@ -50,18 +44,8 @@ export const SimpleStatesPage = () => {
           <Card title="prac06: update state after replacing it">
             <Prac06 />
           </Card>
-          <Card title="replace state after updating it">
-            <FlexBox>
-              <Button
-                caption="Increase the number"
-                onClick={() => {
-                  setNumberC(numberC + 5);
-                  setNumberC(n => n + 1);
-                  setNumberC(42);
-                }}
-              />
-            </FlexBox>
-            <Caption text={`number C: ${numberC.toString()}`} />
+          <Card title="prac07: replace state after updating it">
+            <Prac07 />
           </Card>
           <Card title="Passing the initializer function">
             <LazyExample />

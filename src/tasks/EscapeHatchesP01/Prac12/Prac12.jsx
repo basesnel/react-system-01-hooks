@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
 import Button from 'components/Button';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import FlexBox from 'components/FlexBox';
 import { videoSrc } from 'constants';
 
@@ -33,7 +33,7 @@ export default function Prac12() {
         caption={isPlaying ? 'Pause' : 'Play'}
         onClick={() => setIsPlaying(!isPlaying)}
       />
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="text"
         inputValue={text}

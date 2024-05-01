@@ -5,7 +5,7 @@ import { FiServer } from 'react-icons/fi';
 import { FiMessageCircle } from 'react-icons/fi';
 import { createConnection } from 'constants';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Title from 'components/Title';
 import DecoratedSelect from 'components/DecoratedSelect';
 import Button from 'components/Button';
@@ -27,7 +27,7 @@ function ChatRoom({ roomId }) {
 
   return (
     <FlexBox>
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="server"
         inputValue={serverUrl}
@@ -36,7 +36,7 @@ function ChatRoom({ roomId }) {
         icon={<FiServer />}
       />
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="message"
         inputValue={message}

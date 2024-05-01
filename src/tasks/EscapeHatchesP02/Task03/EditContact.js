@@ -6,7 +6,7 @@ import FlexBox from 'components/FlexBox';
 
 import Button from 'components/Button';
 import DecoratedForm from 'components/DecoratedForm';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 
 export default function EditContact(props) {
   return <FormContact {...props} key={props.savedContact.id} />;
@@ -18,7 +18,7 @@ function FormContact({ savedContact, onSave }) {
 
   return (
     <DecoratedForm onSubmit={onSave}>
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="name"
         inputValue={name}
@@ -26,7 +26,7 @@ function FormContact({ savedContact, onSave }) {
         handleChange={e => setName(e.target.value)}
         icon={<FiUser />}
       />
-      <DecoratedInput
+      <Input
         inputType="email"
         inputName="email"
         inputValue={email}

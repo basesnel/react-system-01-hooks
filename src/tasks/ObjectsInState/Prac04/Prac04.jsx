@@ -3,7 +3,7 @@ import { useImmer } from 'use-immer';
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
 import DecoratedForm from 'components/DecoratedForm';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
 
 import { initialThirdPerson } from 'constants';
@@ -39,7 +39,7 @@ export default function Prac04() {
   return (
     <>
       <DecoratedForm onSubmit={e => e.preventDefault()}>
-        <DecoratedInput
+        <Input
           inputType="text"
           inputName="name"
           inputValue={person.name}
@@ -47,7 +47,7 @@ export default function Prac04() {
           handleChange={handleNameChange}
           icon={<FiUser />}
         />
-        <DecoratedInput
+        <Input
           inputType="text"
           inputName="title"
           inputValue={person.artwork.title}
@@ -55,7 +55,7 @@ export default function Prac04() {
           handleChange={handleTitleChange}
           icon={<FiEdit3 />}
         />
-        <DecoratedInput
+        <Input
           inputType="text"
           inputName="city"
           inputValue={person.artwork.city}
@@ -64,7 +64,7 @@ export default function Prac04() {
           icon={<FiEdit3 />}
         />
         <FieldOverlay>
-          <DecoratedInput
+          <Input
             inputType="text"
             inputName="image"
             inputValue={person.artwork.image}

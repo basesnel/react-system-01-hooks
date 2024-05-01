@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 
 export default function MyInput({ shouldFocus, label, name, value, onChange }) {
   const ref = useRef(null);
@@ -12,7 +12,7 @@ export default function MyInput({ shouldFocus, label, name, value, onChange }) {
   }, [shouldFocus]);
 
   return (
-    <DecoratedInput
+    <Input
       inputRef={ref}
       inputLabel={label}
       inputName={name}

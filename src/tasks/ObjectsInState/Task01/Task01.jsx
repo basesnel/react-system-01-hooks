@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
 import DecoratedForm from 'components/DecoratedForm';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Button from 'components/Button';
 
 import { initialTaskFirstPerson } from 'constants';
@@ -33,7 +33,7 @@ export default function Task01() {
 
   return (
     <DecoratedForm onSubmit={e => e.preventDefault()}>
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="firstName"
         inputValue={player.firstName}
@@ -41,7 +41,7 @@ export default function Task01() {
         handleChange={handleFirstNameChange}
         icon={<FiEdit3 />}
       />
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="lastName"
         inputValue={player.lastName}

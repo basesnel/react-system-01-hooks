@@ -4,7 +4,7 @@ import { MdChat } from 'react-icons/md';
 import { FiMessageCircle } from 'react-icons/fi';
 import { createConnection } from 'constants';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Title from 'components/Title';
 import DecoratedSelect from 'components/DecoratedSelect';
 import FlexBox from 'components/FlexBox';
@@ -33,7 +33,7 @@ function ChatRoom({ roomId }) {
   return (
     <FlexBox>
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="funcMessage"
         inputValue={message}

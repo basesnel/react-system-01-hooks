@@ -4,7 +4,7 @@ import { FiFilter } from 'react-icons/fi';
 
 import Box from 'components/Box';
 import Button from 'components/Button';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -29,7 +29,7 @@ export default function Characters() {
       <Button caption={count} onClick={() => setCount(c => c + 1)} />
       <hr />
       <Box>
-        <DecoratedInput
+        <Input
           inputLabel="Filter"
           handleChange={e => setFilter(e.target.value)}
           inputValue={filter}

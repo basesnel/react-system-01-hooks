@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import css from './DecoratedInput.module.css';
+import css from './Input.module.css';
 
-export default function DecoratedInput({
+export default function Input({
   isDisabled,
   inputType,
   inputName,
@@ -39,7 +39,7 @@ export default function DecoratedInput({
   );
 }
 
-DecoratedInput.propTypes = {
+Input.propTypes = {
   isDisabled: PropTypes.bool,
   inputType: PropTypes.string,
   inputName: PropTypes.string,
@@ -49,4 +49,16 @@ DecoratedInput.propTypes = {
   handleChange: PropTypes.func,
   icon: PropTypes.node,
   inputRef: PropTypes.any,
+};
+
+Input.defaultProps = {
+  isDisabled: null,
+  inputType: null,
+  inputName: null,
+  inputValue: null,
+  inputLabel: null,
+  inputPlaceholder: null,
+  handleChange: null,
+  icon: null,
+  inputRef: null,
 };

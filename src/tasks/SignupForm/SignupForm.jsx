@@ -3,7 +3,7 @@ import { FiLock } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import DecoratedForm from 'components/DecoratedForm';
 import DecoratedSubmit from 'components/DecoratedSubmit';
 
@@ -69,7 +69,7 @@ export default function SignupForm() {
 
   return (
     <DecoratedForm onSubmit={handleSubmitForm}>
-      <DecoratedInput
+      <Input
         inputType="email"
         inputName="email"
         inputValue={email}
@@ -78,7 +78,7 @@ export default function SignupForm() {
         handleChange={handleChange}
         icon={<FiMail />}
       />
-      <DecoratedInput
+      <Input
         inputType="password"
         inputName="password"
         inputValue={password}

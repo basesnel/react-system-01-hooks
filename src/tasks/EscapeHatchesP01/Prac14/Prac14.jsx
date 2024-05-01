@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { MdTask } from 'react-icons/md';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import FlexBox from 'components/FlexBox';
 import Title from 'components/Title';
 import Button from 'components/Button';
@@ -25,7 +25,7 @@ function Playground() {
 
   return (
     <FlexBox>
-      <DecoratedInput
+      <Input
         inputLabel="What to log:"
         inputName="shedule"
         inputType="text"

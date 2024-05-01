@@ -5,7 +5,7 @@ import { FiEdit3 } from 'react-icons/fi';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 
 export default function Prac10() {
   const [version, setVersion] = useState(0);
@@ -26,7 +26,7 @@ export default function Prac10() {
 
     return (
       <>
-        <DecoratedInput
+        <Input
           inputType="text"
           inputName="name"
           inputValue={name}

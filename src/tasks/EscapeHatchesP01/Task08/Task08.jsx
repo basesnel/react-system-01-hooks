@@ -3,13 +3,13 @@ import { MdSearch } from 'react-icons/md';
 
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
-import DecoratedInputWithRef from 'components/DecoratedInputWithRef';
+import InputWithRef from 'components/InputWithRef';
 
 export default function Task08() {
   const inputRef = useRef(null);
   return (
     <FlexBox>
-      <DecoratedInputWithRef
+      <InputWithRef
         inputType="text"
         inputName="search"
         inputPlaceholder="Lookung for something?"

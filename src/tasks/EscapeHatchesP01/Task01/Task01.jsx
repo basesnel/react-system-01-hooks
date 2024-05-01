@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
@@ -28,7 +28,7 @@ export default function Task01() {
 
   return (
     <>
-      <DecoratedInput
+      <Input
         isDisabled={isSending}
         inputType="text"
         inputName="Task01message"

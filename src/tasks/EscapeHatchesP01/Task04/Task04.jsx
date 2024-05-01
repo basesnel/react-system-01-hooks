@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 // import DecoratedMiniForm from 'components/DecoratedMiniForm';
@@ -27,7 +27,7 @@ export default function Task04() {
         filling={`Send ${text}`}
         icon={<RiInsertRowBottom />}
       /> */}
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="Task04message"
         inputValue={text}

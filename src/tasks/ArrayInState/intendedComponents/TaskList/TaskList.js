@@ -9,7 +9,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemLabel from 'components/ItemLabel';
 import DecoratedIconButton from 'components/DecoratedIconButton';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import ItemCheckedText from 'components/ItemCheckedText';
 
 export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
@@ -32,7 +32,7 @@ function Task({ todo, onChange, onDelete }) {
   if (isEditing) {
     todoContent = (
       <>
-        <DecoratedInput
+        <Input
           inputType="text"
           inputName={`Todo ${todo.id}`}
           inputValue={todo.title}

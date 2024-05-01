@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { toast } from 'react-toastify';
 
 import DecoratedForm from 'components/DecoratedForm';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import DecoratedSubmit from 'components/DecoratedSubmit';
 
 export default function PokemonForm({ onFormSubmit }) {
@@ -27,7 +27,7 @@ export default function PokemonForm({ onFormSubmit }) {
 
   return (
     <DecoratedForm onSubmit={handleSubmit}>
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="pokemonName"
         inputValue={pokemonName}

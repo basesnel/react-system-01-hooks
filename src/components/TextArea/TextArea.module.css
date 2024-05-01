@@ -1,11 +1,11 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-@value field from "../DecoratedInput/DecoratedInput.module.css";
-@value label from "../DecoratedInput/DecoratedInput.module.css";
-@value wrap-input from "../DecoratedInput/DecoratedInput.module.css";
-@value input from "../DecoratedInput/DecoratedInput.module.css";
-@value icon from "../DecoratedInput/DecoratedInput.module.css";
+@value field from "../Input/Input.module.css";
+@value label from "../Input/Input.module.css";
+@value wrap-input from "../Input/Input.module.css";
+@value input from "../Input/Input.module.css";
+@value icon from "../Input/Input.module.css";
 
 .icon-textarea {
   top: 12px;

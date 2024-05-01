@@ -1,9 +1,9 @@
 import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
-import css from './DecoratedInputWithRef.module.css';
+import css from './InputWithRef.module.css';
 
-const DecoratedInputWithRef = forwardRef((props, ref) => {
+const InputWithRef = forwardRef((props, ref) => {
   const {
     isDisabled,
     inputType,
@@ -36,9 +36,9 @@ const DecoratedInputWithRef = forwardRef((props, ref) => {
   );
 });
 
-export default DecoratedInputWithRef;
+export default InputWithRef;
 
-DecoratedInputWithRef.propTypes = {
+InputWithRef.propTypes = {
   isDisabled: PropTypes.bool,
   inputType: PropTypes.string,
   inputName: PropTypes.string,

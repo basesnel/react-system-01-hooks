@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
 import { createConnection } from 'constants';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Title from 'components/Title';
 import Button from 'components/Button';
 
@@ -23,7 +23,7 @@ function ChatRoom() {
   return (
     <>
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="message"
         inputValue={message}

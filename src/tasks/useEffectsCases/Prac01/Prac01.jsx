@@ -4,7 +4,7 @@ import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
 import { createConnection } from 'constants';
 
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 import Title from 'components/Title';
 import DecoratedSelect from 'components/DecoratedSelect';
 import Button from 'components/Button';
@@ -26,7 +26,7 @@ function ChatRoom({ roomId }) {
 
   return (
     <FlexBox>
-      <DecoratedInput
+      <Input
         inputType="text"
         inputName="chatroom"
         inputValue={serverUrl}

@@ -3,7 +3,7 @@ import { FiEdit } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
-import DecoratedInput from 'components/DecoratedInput';
+import Input from 'components/Input';
 
 export default function Prac05() {
   const inputRef = useRef(null);
@@ -14,7 +14,7 @@ export default function Prac05() {
 
   return (
     <FlexBox>
-      <DecoratedInput
+      <Input
         inputRef={inputRef}
         inputType="text"
         inputName="ref-input"

@@ -4,7 +4,7 @@ import { forwardRef, useRef, useImperativeHandle } from 'react';
 
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
-// import DecoratedInput from 'components/DecoratedInput';
+// import Input from 'components/Input';
 
 const MyInput = forwardRef((props, ref) => {
   const realInputRef = useRef(null);
@@ -15,7 +15,7 @@ const MyInput = forwardRef((props, ref) => {
     },
   }));
   return <input {...props} ref={realInputRef} />;
-  // return <DecoratedInput {...props} icon={<FiEdit3 />} ref={realInputRef} />;
+  // return <Input {...props} icon={<FiEdit3 />} ref={realInputRef} />;
 });
 
 export default function Prac08() {

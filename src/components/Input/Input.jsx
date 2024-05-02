@@ -13,6 +13,15 @@ export default function Input({
   icon,
   inputRef,
 }) {
+  const valueProps = {
+    ...(inputValue === null
+      ? { defaultValue: '', readOnly: true }
+      : { value: inputValue, onChange: handleChange }),
+  };
+
+  // console.log(valueProps);
+  // console.log(inputValue);
+
   return (
     <div className={css.field}>
       {inputLabel && (
@@ -26,11 +35,10 @@ export default function Input({
           type={inputType}
           name={inputName}
           id={inputName}
-          value={inputValue}
+          {...valueProps}
           autoComplete="off"
           className={css.input}
           placeholder={inputPlaceholder}
-          onChange={handleChange}
           ref={inputRef}
         />
         <span className={css.icon}>{icon}</span>
@@ -55,7 +63,7 @@ Input.defaultProps = {
   isDisabled: null,
   inputType: null,
   inputName: null,
-  inputValue: '',
+  inputValue: null,
   inputLabel: null,
   inputPlaceholder: null,
   handleChange: null,

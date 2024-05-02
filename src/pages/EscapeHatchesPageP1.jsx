@@ -11,14 +11,14 @@ import Task01 from 'tasks/EscapeHatchesP01/Task01';
 import Task02 from 'tasks/EscapeHatchesP01/Task02';
 import Task03 from 'tasks/EscapeHatchesP01/Task03';
 import Task04 from 'tasks/EscapeHatchesP01/Task04';
-// import Prac05 from 'tasks/EscapeHatchesP01/Prac05';
+import Prac05 from 'tasks/EscapeHatchesP01/Prac05';
 import Prac06 from 'tasks/EscapeHatchesP01/Prac06';
 import Prac07 from 'tasks/EscapeHatchesP01/Prac07';
 import Prac08 from 'tasks/EscapeHatchesP01/Prac08';
 import Prac09 from 'tasks/EscapeHatchesP01/Prac09';
 import Prac10 from 'tasks/EscapeHatchesP01/Prac10';
 import Task05 from 'tasks/EscapeHatchesP01/Task05';
-// import Task06 from 'tasks/EscapeHatchesP01/Task06';
+import Task06 from 'tasks/EscapeHatchesP01/Task06';
 import Task07 from 'tasks/EscapeHatchesP01/Task07';
 import Task08 from 'tasks/EscapeHatchesP01/Task08';
 import Prac11 from 'tasks/EscapeHatchesP01/Prac11';
@@ -66,9 +66,9 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="task 04: read the latest state">
             <Task04 />
           </Card>
-          {/* <Card title="prac 05: manipulating the dom with refs">
+          <Card title="prac 05: manipulating the dom with refs">
             <Prac05 />
-          </Card> */}
+          </Card>
           <Card title="prac 06: scrolling to an element">
             <Prac06 />
           </Card>
@@ -87,9 +87,9 @@ export const EscapeHatchesPageP1 = () => {
           <Card title="task 05: play and pause the video">
             <Task05 />
           </Card>
-          {/* <Card title="task 06: focus the search field">
+          <Card title="task 06: focus the search field">
             <Task06 />
-          </Card> */}
+          </Card>
           <Card title="task 07: scrolling an image carousel">
             <Task07 />
           </Card>

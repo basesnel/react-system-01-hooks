@@ -55,7 +55,7 @@ Input.defaultProps = {
   isDisabled: null,
   inputType: null,
   inputName: null,
-  inputValue: null,
+  inputValue: '',
   inputLabel: null,
   inputPlaceholder: null,
   handleChange: null,

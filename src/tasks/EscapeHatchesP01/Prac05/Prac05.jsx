@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
 import { FiEdit } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
@@ -6,6 +6,7 @@ import Button from 'components/Button';
 import Input from 'components/Input';
 
 export default function Prac05() {
+  const [inputValue, setInputValue] = useState('');
   const inputRef = useRef(null);
 
   function handleClick() {
@@ -18,6 +19,8 @@ export default function Prac05() {
         inputRef={inputRef}
         inputType="text"
         inputName="ref-input"
+        inputValue={inputValue}
+        handleChange={e => setInputValue(e.target.value)}
         inputPlaceholder="Input something"
         icon={<FiEdit />}
       />

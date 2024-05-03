@@ -31,6 +31,8 @@ export default function Characters() {
       <Box>
         <Input
           inputLabel="Filter"
+          inputType="text"
+          inputName="Character"
           handleChange={e => setFilter(e.target.value)}
           inputValue={filter}
           icon={<FiFilter />}

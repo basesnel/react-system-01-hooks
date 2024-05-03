@@ -48,13 +48,11 @@ export default function Prac08() {
 }
 
 MyInput.propTypes = {
-  name: PropTypes.string,
-  type: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   icon: PropTypes.node,
 };
 
 MyInput.defaultProps = {
-  name: null,
-  type: null,
   icon: null,
 };

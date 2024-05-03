@@ -51,16 +51,14 @@ export default function Task08() {
 }
 
 InputWithRef.propTypes = {
-  inputType: PropTypes.string,
-  inputName: PropTypes.string,
+  inputType: PropTypes.string.isRequired,
+  inputName: PropTypes.string.isRequired,
   inputLabel: PropTypes.string,
   inputPlaceholder: PropTypes.string,
   icon: PropTypes.node,
 };
 
 InputWithRef.defaultProps = {
-  inputType: null,
-  inputName: null,
   inputLabel: null,
   inputPlaceholder: null,
   icon: null,

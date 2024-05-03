@@ -46,8 +46,8 @@ export default function Input({
 
 Input.propTypes = {
   isDisabled: PropTypes.bool,
-  inputType: PropTypes.string,
-  inputName: PropTypes.string,
+  inputType: PropTypes.string.isRequired,
+  inputName: PropTypes.string.isRequired,
   inputValue: PropTypes.string,
   inputLabel: PropTypes.string,
   inputPlaceholder: PropTypes.string,
@@ -58,8 +58,6 @@ Input.propTypes = {
 
 Input.defaultProps = {
   isDisabled: null,
-  inputType: null,
-  inputName: null,
   inputValue: null,
   inputLabel: null,
   inputPlaceholder: null,

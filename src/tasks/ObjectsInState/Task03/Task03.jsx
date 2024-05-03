@@ -4,7 +4,7 @@ import { MdOutlineSelectAll } from 'react-icons/md';
 import Background from '../IntendendComponents/Background';
 import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
-import DecoratedSelect from 'components/DecoratedSelect';
+import Select from 'components/Select';
 
 import { initialPosition, colorOptions } from 'constants';
 import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
@@ -31,7 +31,7 @@ export default function Task03() {
   return (
     <DecoratedWrapper>
       <FlexBox>
-        <DecoratedSelect
+        <Select
           selectName="color"
           selected={shape.color}
           list={colorOptions}

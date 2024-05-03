@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import css from './DecoratedSelect.module.css';
+import css from './Select.module.css';
 
-export default function DecoratedSelect({
+export default function Select({
   selectLabel,
   selectName,
   selected,
@@ -32,11 +32,16 @@ export default function DecoratedSelect({
   );
 }
 
-DecoratedSelect.propTypes = {
+Select.propTypes = {
   selectLabel: PropTypes.string,
   selectName: PropTypes.string.isRequired,
   selected: PropTypes.string.isRequired,
-  list: PropTypes.arrayOf(PropTypes.string),
+  list: PropTypes.arrayOf(PropTypes.string).isRequired,
   icon: PropTypes.node,
   onHandleSelect: PropTypes.func.isRequired,
+};
+
+Select.defaultProps = {
+  selectLabel: null,
+  icon: null,
 };

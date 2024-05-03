@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiUser } from 'react-icons/fi';
 
 import FlexBox from 'components/FlexBox';
-import DecoratedSelect from 'components/DecoratedSelect';
+import Select from 'components/Select';
 import Paragraph from 'components/Paragraph';
 
 import { fetchBio } from 'services/fetchBio';
@@ -31,7 +31,7 @@ export default function Task12() {
   return (
     <>
       <FlexBox>
-        <DecoratedSelect
+        <Select
           selectLabel="Choose the person: "
           selectName="Person"
           selected={person}

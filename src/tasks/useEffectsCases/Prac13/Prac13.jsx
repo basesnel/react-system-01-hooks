@@ -8,7 +8,7 @@ import { createConnection } from 'constants';
 import FlexBox from 'components/FlexBox';
 import Input from 'components/Input';
 import Title from 'components/Title';
-import DecoratedSelect from 'components/DecoratedSelect';
+import Select from 'components/Select';
 import Button from 'components/Button';
 
 import { chatRoom } from 'constants';
@@ -55,7 +55,7 @@ export default function Prac13() {
   return (
     <>
       <FlexBox align="flex-end">
-        <DecoratedSelect
+        <Select
           selectLabel="Choose the chat room: "
           selectName="Chat"
           selected={roomId}

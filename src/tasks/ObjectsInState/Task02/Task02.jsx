@@ -5,7 +5,7 @@ import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
 import Background from '../IntendendComponents/Background';
 import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
-import DecoratedSelect from 'components/DecoratedSelect';
+import Select from 'components/Select';
 
 import { initialPosition, colorOptions } from 'constants';
 
@@ -34,7 +34,7 @@ export default function Task02() {
   return (
     <DecoratedWrapper>
       <FlexBox>
-        <DecoratedSelect
+        <Select
           selectName="Color"
           selected={shape.color}
           list={colorOptions}

@@ -14,13 +14,10 @@ export default function Input({
   inputRef,
 }) {
   const valueProps = {
-    ...(inputValue === null
+    ...(inputValue === null || handleChange === null
       ? { defaultValue: '', readOnly: true }
       : { value: inputValue, onChange: handleChange }),
   };
-
-  // console.log(valueProps);
-  // console.log(inputValue);
 
   return (
     <div className={css.field}>

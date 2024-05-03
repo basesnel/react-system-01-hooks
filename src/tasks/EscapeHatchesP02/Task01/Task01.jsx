@@ -11,7 +11,7 @@ import ItemText from 'components/ItemText/ItemText';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 import Paragraph from 'components/Paragraph';
-import DecoratedCheckBox from 'components/DecoratedCheckBox';
+import CheckBox from 'components/CheckBox';
 
 export default function Task01() {
   const [todos, setTodos] = useState(initialTodos);
@@ -27,7 +27,7 @@ export default function Task01() {
 
   return (
     <>
-      <DecoratedCheckBox
+      <CheckBox
         name="Task01 act"
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}

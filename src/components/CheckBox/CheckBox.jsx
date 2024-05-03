@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 
 import Span from 'components/Span';
 
-import css from './DecoratedCheckBox.module.css';
+import css from './CheckBox.module.css';
 
-export default function DecoratedCheckBox({ name, checked, onChange, label }) {
+export default function CheckBox({ name, checked, onChange, label }) {
   return (
     <label className={css.field}>
       <input
@@ -19,7 +19,7 @@ export default function DecoratedCheckBox({ name, checked, onChange, label }) {
   );
 }
 
-DecoratedCheckBox.propTypes = {
+CheckBox.propTypes = {
   name: PropTypes.string.isRequired,
   checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,

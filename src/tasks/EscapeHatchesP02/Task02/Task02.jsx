@@ -1,4 +1,4 @@
-import DecoratedCheckBox from 'components/DecoratedCheckBox/DecoratedCheckBox.jsx';
+import CheckBox from 'components/CheckBox/CheckBox.jsx';
 import DecoratedMiniForm from 'components/DecoratedMiniForm/DecoratedMiniForm.jsx';
 import List from 'components/List';
 import Item from 'components/Item';
@@ -25,7 +25,7 @@ export default function Task02() {
 
   return (
     <>
-      <DecoratedCheckBox
+      <CheckBox
         name="Task02 act"
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}

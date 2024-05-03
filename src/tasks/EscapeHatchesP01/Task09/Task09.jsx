@@ -4,7 +4,7 @@ import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
-import DecoratedCheckBox from 'components/DecoratedCheckBox';
+import CheckBox from 'components/CheckBox';
 
 export default function Task09() {
   const [showForm, setShowForm] = useState(false);
@@ -21,7 +21,7 @@ export default function Task09() {
         {showForm && (
           <>
             <MyInput value={name} onChange={e => setName(e.target.value)} />
-            <DecoratedCheckBox
+            <CheckBox
               checked={upper}
               onChange={() => setUpper(!upper)}
               label="Make it uppercase"

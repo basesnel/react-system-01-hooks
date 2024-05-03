@@ -1,10 +1,12 @@
 import { forwardRef, useRef, useImperativeHandle } from 'react';
+import PropTypes from 'prop-types';
 
-// import { FiEdit3 } from 'react-icons/fi';
+import { FiEdit3 } from 'react-icons/fi';
 
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
-// import Input from 'components/Input';
+
+import css from './Prac08.module.css';
 
 const MyInput = forwardRef((props, ref) => {
   const realInputRef = useRef(null);
@@ -14,8 +16,15 @@ const MyInput = forwardRef((props, ref) => {
       realInputRef.current.focus();
     },
   }));
-  return <input {...props} ref={realInputRef} />;
-  // return <Input {...props} icon={<FiEdit3 />} ref={realInputRef} />;
+
+  return (
+    <div className={css.field}>
+      <div className={css['wrap-input']}>
+        <input {...props} className={css.input} ref={realInputRef} />
+        <span className={css.icon}>{props.icon}</span>
+      </div>
+    </div>
+  );
 });
 
 export default function Prac08() {
@@ -27,8 +36,18 @@ export default function Prac08() {
 
   return (
     <FlexBox>
-      <MyInput name="Prac08input" ref={inputRef} />
+      <MyInput name="Prac08input" icon={<FiEdit3 />} ref={inputRef} />
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );
 }
+
+MyInput.propTypes = {
+  name: PropTypes.string,
+  icon: PropTypes.node,
+};
+
+MyInput.defaultProps = {
+  name: null,
+  icon: null,
+};

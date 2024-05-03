@@ -1,6 +1,6 @@
-import { forwardRef, useRef, useImperativeHandle } from 'react';
 import PropTypes from 'prop-types';
 
+import { forwardRef, useRef, useImperativeHandle } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
 import Button from 'components/Button';
@@ -36,7 +36,12 @@ export default function Prac08() {
 
   return (
     <FlexBox>
-      <MyInput name="Prac08input" icon={<FiEdit3 />} ref={inputRef} />
+      <MyInput
+        name="Prac08input"
+        type="text"
+        icon={<FiEdit3 />}
+        ref={inputRef}
+      />
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );
@@ -44,10 +49,12 @@ export default function Prac08() {
 
 MyInput.propTypes = {
   name: PropTypes.string,
+  type: PropTypes.string,
   icon: PropTypes.node,
 };
 
 MyInput.defaultProps = {
   name: null,
+  type: null,
   icon: null,
 };

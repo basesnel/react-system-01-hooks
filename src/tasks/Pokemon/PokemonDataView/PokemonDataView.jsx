@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import DecoratedImg from 'components/DecoratedImg';
+import Image from 'components/Image';
 import Title from 'components/Title';
 
 import css from './PokemonDataView.module.css';
@@ -10,7 +10,7 @@ export default function PokemonDataView({ pokemon, ...delegated }) {
 
   return (
     <div className={css.box} {...delegated}>
-      <DecoratedImg
+      <Image
         src={sprites.other['official-artwork'].front_default}
         name={name}
       />

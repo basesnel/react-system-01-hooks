@@ -7,10 +7,10 @@ import css from './Card.module.css';
 export default function Card({ title, children }) {
   return (
     <div className={css.card}>
-      <div className={css['card-header']}>
+      <div className={css.cardHeader}>
         <Title level={2} caption={title} />
       </div>
-      <div className={css['card-content']}>{children}</div>
+      <div className={css.cardContent}>{children}</div>
     </div>
   );
 }

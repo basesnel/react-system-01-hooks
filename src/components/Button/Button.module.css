@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.Button {
+.button {
   border: 1px solid var(--color-text);
   border-radius: 4px;
   padding: 4px 20px;
@@ -11,8 +11,8 @@
   transition: var(--my-transition);
 }
 
-.Button:hover:enabled,
-.Button:active:enabled {
+.button:hover:enabled,
+.button:active:enabled {
   border: 1px solid var(--color-accent);
   background-color: var(--color-accent);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
@@ -20,18 +20,18 @@
   transform: scale(1.02);
 }
 
-.Button:disabled {
+.button:disabled {
   opacity: 0.15;
 }
 
 @media mobile-to {
-  .Button {
+  .button {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media tablet-to {
-  .Button {
+  .button {
     padding: 6px 20px;
     font-size: var(--fs-text-tablet);
   }

@@ -2,10 +2,6 @@
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
 .spinner {
-  /* position: absolute;
-  top: 10px;
-  left: 50%;
-  transform: translate(-50%, 0); */
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -22,7 +18,7 @@
   color: var(--color-light);
 }
 
-.icon-spin {
+.iconSpin {
   margin-right: 10px;
   font-size: 16px;
   color: var(--color-light);
@@ -40,7 +36,7 @@
     padding: 6px 24px;
   }
 
-  .icon-spin {
+  .iconSpin {
     font-size: 18px;
   }
 }

@@ -5,7 +5,7 @@ import css from './FlexBox.module.css';
 export default function FlexBox({ children, align }) {
   const alignItems = align ? `${css[align]}` : '';
 
-  return <div className={`${css.FlexBox} ${alignItems}`}>{children}</div>;
+  return <div className={`${css.flexBox} ${alignItems}`}>{children}</div>;
 }
 
 FlexBox.propTypes = {

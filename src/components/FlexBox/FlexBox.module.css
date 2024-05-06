@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.FlexBox {
+.flexBox {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -28,7 +28,7 @@
 }
 
 @media smartphone-to {
-  .FlexBox {
+  .flexBox {
     flex-direction: row;
     justify-content: center;
     align-items: center;

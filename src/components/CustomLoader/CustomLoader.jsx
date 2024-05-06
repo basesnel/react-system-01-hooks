@@ -7,8 +7,7 @@ import css from './CustomLoader.module.css';
 export default function CustomLoader() {
   return (
     <div className={css.spinner}>
-      <ImSpinner className={css['icon-spin']} />{' '}
-      <Paragraph>Loading...</Paragraph>
+      <ImSpinner className={css.iconSpin} /> <Paragraph>Loading...</Paragraph>
     </div>
   );
 }

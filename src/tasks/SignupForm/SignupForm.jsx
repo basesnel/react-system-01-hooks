@@ -3,9 +3,10 @@ import { FiLock } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
-import Input from 'components/Input';
 import Form from 'components/Form';
-import DecoratedSubmit from 'components/DecoratedSubmit';
+import Input from 'components/Input';
+import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
 
 // import css from './SignupForm.module.css';
 
@@ -87,7 +88,9 @@ export default function SignupForm() {
         handleChange={handleChange}
         icon={<FiLock />}
       />
-      <DecoratedSubmit caption="Register" />
+      <FlexBox>
+        <Button type="submit" caption="Register" />
+      </FlexBox>
     </Form>
   );
 }

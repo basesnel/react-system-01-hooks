@@ -7,7 +7,7 @@ import Map from './Map';
 
 import FlexBox from 'components/FlexBox';
 import Span from 'components/Span';
-import DecoratedIconButton from 'components/DecoratedIconButton';
+import IconButton from 'components/IconButton';
 
 export default function Prac09() {
   const [zoomLevel, setZoomLevel] = useState(0);
@@ -15,14 +15,14 @@ export default function Prac09() {
     <>
       <FlexBox>
         <Span>Zuum level: {zoomLevel}x</Span>
-        <DecoratedIconButton
+        <IconButton
           icon={<RiZoomInFill />}
           caption="add"
           onClick={() => {
             setZoomLevel(zoomLevel + 1);
           }}
         />
-        <DecoratedIconButton
+        <IconButton
           icon={<RiZoomOutFill />}
           caption="subtract"
           onClick={() => {

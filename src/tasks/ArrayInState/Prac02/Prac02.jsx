@@ -6,7 +6,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
-import DecoratedIconButton from 'components/DecoratedIconButton';
+import IconButton from 'components/IconButton';
 
 import { initialArtistsList } from 'constants';
 
@@ -20,7 +20,7 @@ export default function Prac02() {
           <Item key={artist.id}>
             <ItemFlex>
               <ItemText content={artist.name} />
-              <DecoratedIconButton
+              <IconButton
                 icon={<RiIndeterminateCircleFill />}
                 caption="subtract"
                 onClick={() => {

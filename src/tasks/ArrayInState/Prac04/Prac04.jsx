@@ -6,7 +6,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
-import DecoratedIconButton from 'components/DecoratedIconButton';
+import IconButton from 'components/IconButton';
 
 import { initialCountersList } from 'constants';
 
@@ -30,7 +30,7 @@ export default function Prac04() {
         <Item key={i}>
           <ItemFlex>
             <ItemText content={counter} />
-            <DecoratedIconButton
+            <IconButton
               icon={<RiAddCircleFill />}
               caption="add"
               onClick={() => {

@@ -6,7 +6,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemText from 'components/ItemText';
 import ItemFlex from 'components/ItemFlex';
-import DecoratedIconButton from 'components/DecoratedIconButton';
+import IconButton from 'components/IconButton';
 
 import { initialProductsList } from 'constants';
 
@@ -37,7 +37,7 @@ export default function Task01() {
                 </>
               }
             />
-            <DecoratedIconButton
+            <IconButton
               icon={<RiAddCircleFill />}
               caption="add"
               onClick={() => {

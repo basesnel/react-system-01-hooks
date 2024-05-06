@@ -8,7 +8,7 @@ import { FiEdit3 } from 'react-icons/fi';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemLabel from 'components/ItemLabel';
-import DecoratedIconButton from 'components/DecoratedIconButton';
+import IconButton from 'components/IconButton';
 import Input from 'components/Input';
 import ItemCheckedText from 'components/ItemCheckedText';
 
@@ -44,7 +44,7 @@ function Task({ todo, onChange, onDelete }) {
           }}
           icon={<FiEdit3 />}
         />
-        <DecoratedIconButton
+        <IconButton
           icon={<RiSave3Fill />}
           caption="save"
           onClick={() => setIsEditing(false)}
@@ -55,7 +55,7 @@ function Task({ todo, onChange, onDelete }) {
     todoContent = (
       <>
         <ItemCheckedText content={todo.title} checked={todo.done} />
-        <DecoratedIconButton
+        <IconButton
           icon={<RiFileEditFill />}
           caption="edit"
           onClick={() => setIsEditing(true)}
@@ -75,7 +75,7 @@ function Task({ todo, onChange, onDelete }) {
         }}
       />
       {todoContent}
-      <DecoratedIconButton
+      <IconButton
         icon={<RiDeleteBinFill />}
         caption="delete"
         onClick={() => onDelete(todo.id)}

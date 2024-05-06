@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { RiInsertRowBottom } from 'react-icons/ri';
 
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import MiniForm from 'components/MiniForm';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -29,7 +29,7 @@ export default function Prac05() {
 
   return (
     <>
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={handleClick}
         filling={`Insert element ${name}`}
         icon={<RiInsertRowBottom />}

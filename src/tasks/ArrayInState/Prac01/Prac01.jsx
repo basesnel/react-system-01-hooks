@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import MiniForm from 'components/MiniForm';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -14,7 +14,7 @@ export default function Prac01() {
 
   return (
     <>
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={name => {
           setArtist(name);
           name.trim() && setArtists([...artists, name]);

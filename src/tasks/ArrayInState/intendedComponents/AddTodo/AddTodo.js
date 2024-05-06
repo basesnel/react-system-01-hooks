@@ -3,14 +3,14 @@ import { RiAddCircleFill } from 'react-icons/ri';
 
 import PropTypes from 'prop-types';
 
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import MiniForm from 'components/MiniForm';
 
 export default function AddTodo({ onAddTodo }) {
   const [title, setTitle] = useState('');
 
   return (
     <>
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={title => {
           onAddTodo(title);
           setTitle('');

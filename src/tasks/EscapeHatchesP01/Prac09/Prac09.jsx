@@ -7,7 +7,7 @@ import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import MiniForm from 'components/MiniForm';
 
 export default function Prac09() {
   const listRef = useRef(null);
@@ -30,7 +30,7 @@ export default function Prac09() {
 
   return (
     <>
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={text => handleAdd(text)}
         filling={`Add element ${text}`}
         icon={<RiAddCircleFill />}

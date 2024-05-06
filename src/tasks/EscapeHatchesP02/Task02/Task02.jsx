@@ -1,5 +1,5 @@
 import CheckBox from 'components/CheckBox/CheckBox.jsx';
-import DecoratedMiniForm from 'components/DecoratedMiniForm/DecoratedMiniForm.jsx';
+import MiniForm from 'components/MiniForm/MiniForm.jsx';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -32,7 +32,7 @@ export default function Task02() {
         label="Show only active todos"
       />
 
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={handleAddClick}
         filling={`Add todo-element ${text}`}
         icon={<RiAddCircleFill />}

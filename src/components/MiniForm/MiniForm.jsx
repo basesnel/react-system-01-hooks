@@ -3,13 +3,9 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import css from './DecoratedMiniForm.module.css';
+import css from './MiniForm.module.css';
 
-export default function DecoratedMiniForm({
-  onFormSubmit,
-  filling = null,
-  icon,
-}) {
+export default function MiniForm({ onFormSubmit, filling, icon }) {
   const [field, setField] = useState('');
 
   const handleInputChange = event => {
@@ -46,8 +42,12 @@ export default function DecoratedMiniForm({
   );
 }
 
-DecoratedMiniForm.propTypes = {
+MiniForm.propTypes = {
   onFormSubmit: PropTypes.func.isRequired,
   filling: PropTypes.string,
   icon: PropTypes.node.isRequired,
+};
+
+MiniForm.defaultProps = {
+  filling: null,
 };

@@ -3,7 +3,7 @@ import { initialTodos, createTodo } from './todos';
 
 import PropTypes from 'prop-types';
 
-import DecoratedMiniForm from 'components/DecoratedMiniForm';
+import MiniForm from 'components/MiniForm';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
@@ -62,7 +62,7 @@ function NewTodo({ onAdd }) {
 
   return (
     <>
-      <DecoratedMiniForm
+      <MiniForm
         onFormSubmit={handleAddClick}
         filling={`Add todo-element ${text}`}
         icon={<RiAddCircleFill />}

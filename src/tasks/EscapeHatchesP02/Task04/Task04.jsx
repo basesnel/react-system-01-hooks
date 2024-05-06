@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
 import Button from 'components/Button';
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import FlexBox from 'components/FlexBox';
 import TextArea from 'components/TextArea';
 import Title from 'components/Title';
@@ -37,7 +37,7 @@ export default function Task04() {
   }
 
   return (
-    <DecoratedForm onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit}>
       <TextArea
         textAreaName="Task04 message"
         textAreaPlaceholder="Message"
@@ -48,7 +48,7 @@ export default function Task04() {
       <FlexBox>
         <Button type="submit" disabled={message === ''} caption="Send" />
       </FlexBox>
-    </DecoratedForm>
+    </Form>
   );
 }
 

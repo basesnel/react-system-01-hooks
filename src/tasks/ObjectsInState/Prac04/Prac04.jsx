@@ -2,7 +2,7 @@ import { useImmer } from 'use-immer';
 
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import Input from 'components/Input';
 import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
 
@@ -38,7 +38,7 @@ export default function Prac04() {
 
   return (
     <>
-      <DecoratedForm onSubmit={e => e.preventDefault()}>
+      <Form onSubmit={e => e.preventDefault()}>
         <Input
           inputType="text"
           inputName="name"
@@ -78,7 +78,7 @@ export default function Prac04() {
           alt={person.artwork.title}
           caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}
         />
-      </DecoratedForm>
+      </Form>
     </>
   );
 }

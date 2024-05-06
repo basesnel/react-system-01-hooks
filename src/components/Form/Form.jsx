@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 
-import css from './DecoratedForm.module.css';
+import css from './Form.module.css';
 
-export default function DecoratedForm({ children, onSubmit }) {
+export default function Form({ children, onSubmit }) {
   return (
     <form className={css.form} onSubmit={onSubmit} autoComplete="off">
       {children}
@@ -10,7 +10,7 @@ export default function DecoratedForm({ children, onSubmit }) {
   );
 }
 
-DecoratedForm.propTypes = {
+Form.propTypes = {
   children: PropTypes.node.isRequired,
   onSubmit: PropTypes.func.isRequired,
 };

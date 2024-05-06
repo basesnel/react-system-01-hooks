@@ -4,7 +4,7 @@ import { FiMail } from 'react-icons/fi';
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
 import Input from 'components/Input';
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import DecoratedSubmit from 'components/DecoratedSubmit';
 
 // import css from './SignupForm.module.css';
@@ -68,7 +68,7 @@ export default function SignupForm() {
   };
 
   return (
-    <DecoratedForm onSubmit={handleSubmitForm}>
+    <Form onSubmit={handleSubmitForm}>
       <Input
         inputType="email"
         inputName="email"
@@ -88,6 +88,6 @@ export default function SignupForm() {
         icon={<FiLock />}
       />
       <DecoratedSubmit caption="Register" />
-    </DecoratedForm>
+    </Form>
   );
 }

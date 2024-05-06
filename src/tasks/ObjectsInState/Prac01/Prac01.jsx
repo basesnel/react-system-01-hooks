@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { FiMail, FiEdit3 } from 'react-icons/fi';
 
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import Input from 'components/Input';
 import Caption from 'components/Caption';
 
@@ -17,7 +17,7 @@ export default function Prac01() {
 
   return (
     <>
-      <DecoratedForm onSubmit={e => e.preventDefault()}>
+      <Form onSubmit={e => e.preventDefault()}>
         <Input
           inputType="text"
           inputName="firstName"
@@ -42,7 +42,7 @@ export default function Prac01() {
           handleChange={handleChange}
           icon={<FiMail />}
         />
-      </DecoratedForm>
+      </Form>
       <Caption
         text={`${person.firstName} ${person.lastName} ${person.email}`}
       />

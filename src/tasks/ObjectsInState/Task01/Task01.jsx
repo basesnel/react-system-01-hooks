@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { FiEdit3 } from 'react-icons/fi';
 
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import Input from 'components/Input';
 import Button from 'components/Button';
 
@@ -32,7 +32,7 @@ export default function Task01() {
   };
 
   return (
-    <DecoratedForm onSubmit={e => e.preventDefault()}>
+    <Form onSubmit={e => e.preventDefault()}>
       <Input
         inputType="text"
         inputName="firstName"
@@ -53,6 +53,6 @@ export default function Task01() {
         Score: <b>{player.score}</b>{' '}
         <Button onClick={handlePlusClick} caption="+1" />
       </label>
-    </DecoratedForm>
+    </Form>
   );
 }

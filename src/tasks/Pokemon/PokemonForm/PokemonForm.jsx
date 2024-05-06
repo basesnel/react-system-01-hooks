@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import Input from 'components/Input';
 import DecoratedSubmit from 'components/DecoratedSubmit';
 
@@ -26,7 +26,7 @@ export default function PokemonForm({ onFormSubmit }) {
   };
 
   return (
-    <DecoratedForm onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit}>
       <Input
         inputType="text"
         inputName="pokemonName"
@@ -35,7 +35,7 @@ export default function PokemonForm({ onFormSubmit }) {
         handleChange={handleNameChange}
       />
       <DecoratedSubmit caption="Search" />
-    </DecoratedForm>
+    </Form>
   );
 }
 

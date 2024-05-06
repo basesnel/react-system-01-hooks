@@ -5,7 +5,7 @@ import { FiUser, FiMail } from 'react-icons/fi';
 import FlexBox from 'components/FlexBox';
 
 import Button from 'components/Button';
-import DecoratedForm from 'components/DecoratedForm';
+import Form from 'components/Form';
 import Input from 'components/Input';
 
 export default function EditContact(props) {
@@ -17,7 +17,7 @@ function FormContact({ savedContact, onSave }) {
   const [email, setEmail] = useState(savedContact.email);
 
   return (
-    <DecoratedForm onSubmit={onSave}>
+    <Form onSubmit={onSave}>
       <Input
         inputType="text"
         inputName="name"
@@ -56,6 +56,6 @@ function FormContact({ savedContact, onSave }) {
           }}
         />
       </FlexBox>
-    </DecoratedForm>
+    </Form>
   );
 }

@@ -2,17 +2,19 @@ import PropTypes from 'prop-types';
 
 import css from './Input.module.css';
 
-export default function Input({
-  isDisabled,
-  inputType,
-  inputName,
-  inputValue,
-  inputLabel,
-  inputPlaceholder,
-  handleChange,
-  icon,
-  inputRef,
-}) {
+export default function Input(props) {
+  const {
+    isDisabled,
+    inputType,
+    inputName,
+    inputValue,
+    inputLabel,
+    inputPlaceholder,
+    handleChange,
+    icon,
+    inputRef,
+  } = props;
+  const { field, label, wrapInput, input, iconInput } = css;
   const valueProps = {
     ...(inputValue === null || handleChange === null
       ? { defaultValue: '', readOnly: true }
@@ -20,13 +22,13 @@ export default function Input({
   };
 
   return (
-    <div className={css.field}>
+    <div className={field}>
       {inputLabel && (
-        <label className={css.label} htmlFor={inputName}>
+        <label className={label} htmlFor={inputName}>
           {inputLabel}
         </label>
       )}
-      <div className={css['wrap-input']}>
+      <div className={wrapInput}>
         <input
           disabled={isDisabled}
           type={inputType}
@@ -34,11 +36,11 @@ export default function Input({
           id={inputName}
           {...valueProps}
           autoComplete="off"
-          className={css.input}
+          className={input}
           placeholder={inputPlaceholder}
           ref={inputRef}
         />
-        <span className={css.icon}>{icon}</span>
+        <span className={iconInput}>{icon}</span>
       </div>
     </div>
   );

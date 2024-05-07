@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 
 import css from './ItemLabel.module.css';
 
-export default function ItemLabel({ children }) {
-  return <label className={css['item-label']}>{children}</label>;
+export default function ItemLabel(props) {
+  const { children } = props;
+  const { itemLabel } = css;
+
+  return <label className={itemLabel}>{children}</label>;
 }
 
 ItemLabel.propTypes = {

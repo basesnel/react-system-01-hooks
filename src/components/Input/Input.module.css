@@ -20,7 +20,7 @@
   color: var(--color-accent);
 }
 
-.wrap-input {
+.wrapInput {
   position: relative;
 }
 
@@ -45,7 +45,7 @@
   border: 1px solid var(--color-text-opacity);
 }
 
-.icon {
+.iconInput {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -58,12 +58,12 @@
   transition: var(--my-transition);
 }
 
-.field:hover .icon,
-.field:focus .icon {
+.field:hover .iconInput,
+.field:focus .iconInput {
   color: var(--color-accent);
 }
 
-.input:disabled + .icon {
+.input:disabled + .iconInput {
   color: var(--color-text-opacity);
 }
 
@@ -72,7 +72,7 @@
 }
 
 @media mobile-to {
-  .icon {
+  .iconInput {
     width: var(--fs-text-smartphone);
     height: var(--fs-text-smartphone);
     font-size: var(--fs-text-smartphone);
@@ -80,7 +80,7 @@
 }
 
 @media smartphone-to {
-  .icon {
+  .iconInput {
     width: var(--fs-text-tablet);
     height: var(--fs-text-tablet);
     font-size: var(--fs-text-tablet);

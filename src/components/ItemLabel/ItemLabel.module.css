@@ -1,6 +1,6 @@
-@value item-flex from "../ItemFlex/ItemFlex.module.css";
+@value itemFlex from "../ItemFlex/ItemFlex.module.css";
 
-.item-label {
-  composes: item-flex;
+.itemLabel {
+  composes: itemFlex;
   cursor: pointer;
 }

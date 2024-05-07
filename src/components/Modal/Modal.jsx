@@ -6,14 +6,17 @@ import Paragraph from 'components/Paragraph';
 
 import css from './Modal.module.css';
 
-export default function Modal({ url, onHide, onClose }) {
+export default function Modal(props) {
+  const { url, onHide, onClose } = props;
+  const { backdrop, modal, modalClose, icon } = css;
+
   return (
-    <div className={css.backdrop} onClick={onHide}>
-      <div className={css.modal}>
+    <div className={backdrop} onClick={onHide}>
+      <div className={modal}>
         <Paragraph>Modal</Paragraph>
         <Paragraph>url: {url}</Paragraph>
-        <button className={css['modal-close']} onClick={onClose}>
-          <MdClose className={css.icon} />
+        <button className={modalClose} onClick={onClose}>
+          <MdClose className={icon} />
         </button>
       </div>
     </div>

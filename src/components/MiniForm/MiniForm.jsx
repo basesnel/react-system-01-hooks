@@ -5,7 +5,10 @@ import { toast } from 'react-toastify';
 
 import css from './MiniForm.module.css';
 
-export default function MiniForm({ onFormSubmit, filling, icon }) {
+export default function MiniForm(props) {
+  const { onFormSubmit, filling, icon } = props;
+  const { miniform, miniformButton, miniformInput } = css;
+
   const [field, setField] = useState('');
 
   const handleInputChange = event => {
@@ -24,20 +27,16 @@ export default function MiniForm({ onFormSubmit, filling, icon }) {
   };
 
   return (
-    <form
-      className={css['miniform']}
-      onSubmit={handleSubmit}
-      autoComplete="off"
-    >
+    <form className={miniform} onSubmit={handleSubmit} autoComplete="off">
       <input
         type="text"
         name="field"
         placeholder={filling}
         value={field}
         onChange={handleInputChange}
-        className={css['miniform-input']}
+        className={miniformInput}
       />
-      <button className={css['miniform-btn']}>{icon}</button>
+      <button className={miniformButton}>{icon}</button>
     </form>
   );
 }

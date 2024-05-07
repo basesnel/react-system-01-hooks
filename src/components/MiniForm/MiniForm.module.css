@@ -22,7 +22,7 @@
   opacity: 1;
 }
 
-.miniform-btn {
+.miniformButton {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,20 +37,20 @@
   outline: none;
 }
 
-.miniform:hover .miniform-btn {
+.miniform:hover .miniformButton {
   color: var(--color-logolight);
   background-color: var(--color-accent);
 }
 
 @media mobile-to {
-  .miniform-btn {
+  .miniformButton {
     width: 36px;
     height: 36px;
     font-size: var(--fs-text-desktop);
   }
 }
 
-.miniform-input {
+.miniformInput {
   display: inline-block;
   width: 100%;
   height: 28px;
@@ -62,17 +62,17 @@
   color: var(--color-text);
 }
 
-.miniform-input::placeholder {
+.miniformInput::placeholder {
   font-size: var(--fs-text-mobile);
 }
 
 @media mobile-to {
-  .miniform-input {
+  .miniformInput {
     height: 36px;
     font-size: var(--fs-text-smartphone);
   }
 
-  .miniform-input::placeholder {
+  .miniformInput::placeholder {
     font-size: var(--fs-text-smartphone);
   }
 }

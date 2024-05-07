@@ -2,10 +2,12 @@ import PropTypes from 'prop-types';
 
 import css from './Paragraph.module.css';
 
-export default function Paragraph({ children, centered, paragraphRef }) {
+export default function Paragraph(props) {
+  const { centered, paragraphRef, children } = props;
+  const { text, centeredText } = css;
   return (
     <p
-      className={centered ? `${css.txt} ${css.centered}` : css.txt}
+      className={centered ? `${text} ${centeredText}` : text}
       ref={paragraphRef}
     >
       {children}
@@ -14,9 +16,9 @@ export default function Paragraph({ children, centered, paragraphRef }) {
 }
 
 Paragraph.propTypes = {
-  children: PropTypes.node.isRequired,
   centered: PropTypes.bool,
   paragraphRef: PropTypes.any,
+  children: PropTypes.node.isRequired,
 };
 
 Paragraph.defaultProps = {

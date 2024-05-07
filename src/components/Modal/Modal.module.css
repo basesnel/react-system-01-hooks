@@ -28,7 +28,7 @@
   background-color: var(--color-logolight);
 }
 
-.modal-close {
+.modalClose {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -55,21 +55,3 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   transform: scale(1.1);
 }
-
-/* .modal-close:hover .icon {
-  color: var(--color-accent);
-} */
-
-/* @media smartphone-to {
-  .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-}
-
-@media tablet-to {
-  .menu {
-    gap: 10px;
-  }
-} */

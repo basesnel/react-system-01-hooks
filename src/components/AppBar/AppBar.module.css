@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.appbar {
+.appBar {
   margin-bottom: 30px;
   background-color: var(--color-dark);
 }

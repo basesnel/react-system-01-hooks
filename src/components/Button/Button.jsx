@@ -2,16 +2,13 @@ import PropTypes from 'prop-types';
 
 import css from './Button.module.css';
 
-export default function Button({
-  type,
-  caption,
-  onClick,
-  isDisabled,
-  ...delegated
-}) {
+export default function Button(props) {
+  const { type, caption, onClick, isDisabled, ...delegated } = props;
+  const { button } = css;
+
   return (
     <button
-      className={css.button}
+      className={button}
       type={type}
       onClick={onClick}
       disabled={isDisabled}

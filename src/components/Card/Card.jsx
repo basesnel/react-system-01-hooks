@@ -4,13 +4,16 @@ import Title from 'components/Title';
 
 import css from './Card.module.css';
 
-export default function Card({ title, children }) {
+export default function Card(props) {
+  const { title, children } = props;
+  const { card, cardHeader, cardContent } = css;
+
   return (
-    <div className={css.card}>
-      <div className={css.cardHeader}>
+    <div className={card}>
+      <div className={cardHeader}>
         <Title level={2} caption={title} />
       </div>
-      <div className={css.cardContent}>{children}</div>
+      <div className={cardContent}>{children}</div>
     </div>
   );
 }

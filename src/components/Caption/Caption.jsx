@@ -2,9 +2,12 @@ import PropTypes from 'prop-types';
 
 import css from './Caption.module.css';
 
-export default function Caption({ text }) {
+export default function Caption(props) {
+  const { text } = props;
+  const { wrapper } = css;
+
   return (
-    <div className={css.wrapper}>
+    <div className={wrapper}>
       <span>{text}</span>
     </div>
   );

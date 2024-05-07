@@ -13,9 +13,10 @@ import css from './AppBar.module.css';
 
 export default function AppBar() {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
+  const { appBar } = css;
 
   return (
-    <header className={css.appbar}>
+    <header className={appBar}>
       <Container variant="navigation">
         <Logo text="WebForge" />
         <NavBar />

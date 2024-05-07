@@ -12,7 +12,7 @@ export default function PokemonDataView({ pokemon, ...delegated }) {
     <div className={css.box} {...delegated}>
       <Image
         src={sprites.other['official-artwork'].front_default}
-        name={name}
+        desc={name}
       />
       <div className={css.thumb}>
         <Title level={3} caption={name} />

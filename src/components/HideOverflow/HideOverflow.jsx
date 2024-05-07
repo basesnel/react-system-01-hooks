@@ -2,8 +2,11 @@ import PropTypes from 'prop-types';
 
 import css from './HideOverflow.module.css';
 
-export default function HideOverflow({ children }) {
-  return <div className={css['hide-overflow']}>{children}</div>;
+export default function HideOverflow(props) {
+  const { children } = props;
+  const { HideOverflow } = css;
+
+  return <div className={HideOverflow}>{children}</div>;
 }
 
 HideOverflow.propTypes = {

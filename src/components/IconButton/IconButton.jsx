@@ -2,11 +2,14 @@ import PropTypes from 'prop-types';
 
 import css from './IconButton.module.css';
 
-export default function IconButton({ icon, caption, onClick, isDisabled }) {
+export default function IconButton(props) {
+  const { icon, caption, onClick, isDisabled } = props;
+  const { button, visuallyHidden } = css;
+
   return (
-    <button className={css.btn} onClick={onClick} disabled={isDisabled}>
+    <button className={button} onClick={onClick} disabled={isDisabled}>
       {icon}
-      <span className={css['visually-hidden']}>{caption}</span>
+      <span className={visuallyHidden}>{caption}</span>
     </button>
   );
 }

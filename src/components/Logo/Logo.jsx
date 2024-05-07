@@ -4,11 +4,14 @@ import { Link } from 'react-router-dom';
 
 import css from './Logo.module.css';
 
-export default function Logo({ text }) {
+export default function Logo(props) {
+  const { text } = props;
+  const { logo, decor } = css;
+
   return (
-    <Link className={css.logo} to="/">
+    <Link className={logo} to="/">
       {text.substr(0, 3)}
-      <span className={css.decor}>{text.substr(3)}</span>
+      <span className={decor}>{text.substr(3)}</span>
     </Link>
   );
 }

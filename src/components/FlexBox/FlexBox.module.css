@@ -12,18 +12,22 @@
 }
 
 .stretch {
+  justify-content: space-around;
   align-items: stretch;
 }
 
 .flex-start {
+  justify-content: flex-start;
   align-items: flex-start;
 }
 
 .flex-end {
+  justify-content: flex-end;
   align-items: flex-end;
 }
 
 .baseline {
+  justify-content: baseline;
   align-items: baseline;
 }
 
@@ -35,18 +39,22 @@
   }
 
   .stretch {
+    justify-content: space-around;
     align-items: stretch;
   }
 
   .flex-start {
+    justify-content: flex-start;
     align-items: flex-start;
   }
 
   .flex-end {
+    justify-content: flex-end;
     align-items: flex-end;
   }
 
   .baseline {
+    justify-content: baseline;
     align-items: baseline;
   }
 }

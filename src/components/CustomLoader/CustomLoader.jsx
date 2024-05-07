@@ -5,9 +5,11 @@ import Paragraph from 'components/Paragraph';
 import css from './CustomLoader.module.css';
 
 export default function CustomLoader() {
+  const { spinner, iconSpin } = css;
+
   return (
-    <div className={css.spinner}>
-      <ImSpinner className={css.iconSpin} /> <Paragraph>Loading...</Paragraph>
+    <div className={spinner}>
+      <ImSpinner className={iconSpin} /> <Paragraph>Loading...</Paragraph>
     </div>
   );
 }

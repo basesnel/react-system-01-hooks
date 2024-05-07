@@ -2,15 +2,18 @@ import PropTypes from 'prop-types';
 
 import css from './Form.module.css';
 
-export default function Form({ children, onSubmit }) {
+export default function Form(props) {
+  const { onSubmit, children } = props;
+  const { form } = css;
+
   return (
-    <form className={css.form} onSubmit={onSubmit} autoComplete="off">
+    <form className={form} onSubmit={onSubmit} autoComplete="off">
       {children}
     </form>
   );
 }
 
 Form.propTypes = {
-  children: PropTypes.node.isRequired,
   onSubmit: PropTypes.func.isRequired,
+  children: PropTypes.node.isRequired,
 };

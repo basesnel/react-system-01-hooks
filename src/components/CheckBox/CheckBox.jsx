@@ -4,11 +4,14 @@ import Span from 'components/Span';
 
 import css from './CheckBox.module.css';
 
-export default function CheckBox({ name, checked, onChange, label }) {
+export default function CheckBox(props) {
+  const { name, checked, onChange, label } = props;
+  const { field, check } = css;
+
   return (
-    <label className={css.field}>
+    <label className={field}>
       <input
-        className={css.check}
+        className={check}
         type="checkbox"
         name={name}
         checked={checked}

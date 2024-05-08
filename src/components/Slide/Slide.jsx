@@ -5,6 +5,7 @@ import css from './Slide.module.css';
 export default function Slide(props) {
   const { slideRef, children, ...delegated } = props;
   const { slide } = css;
+
   return (
     <li className={slide} ref={slideRef} {...delegated}>
       {children}

@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.title-01 {
+.title01 {
   padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid var(--color-caption);
@@ -14,31 +14,31 @@
 }
 
 @media mobile-to {
-  .title-01 {
+  .title01 {
     font-size: var(--fs-title-i-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title-01 {
+  .title01 {
     font-size: var(--fs-title-i-tablet);
   }
 }
 
 @media tablet-to {
-  .title-01 {
+  .title01 {
     text-align: left;
     font-size: var(--fs-title-i-desktop);
   }
 }
 
 @media desktop-to {
-  .title-01 {
+  .title01 {
     font-size: var(--fs-title-i-tv);
   }
 }
 
-.title-02 {
+.title02 {
   padding-bottom: 10px;
   margin-bottom: 0;
   text-align: center;
@@ -50,18 +50,18 @@
 }
 
 @media mobile-to {
-  .title-02 {
+  .title02 {
     font-size: var(--fs-title-ii-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title-02 {
+  .title02 {
     font-size: var(--fs-title-ii-tablet);
   }
 }
 
-.title-03 {
+.title03 {
   padding-bottom: 10px;
   margin-bottom: 0;
   text-align: center;
@@ -73,13 +73,13 @@
 }
 
 @media mobile-to {
-  .title-03 {
+  .title03 {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .title-03 {
+  .title03 {
     font-size: var(--fs-text-tablet);
   }
 }

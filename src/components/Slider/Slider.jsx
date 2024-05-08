@@ -2,10 +2,13 @@ import PropTypes from 'prop-types';
 
 import css from './Slider.module.css';
 
-export default function Slider({ children }) {
+export default function Slider(props) {
+  const { children } = props;
+  const { slider, list } = css;
+
   return (
-    <div className={css.slider}>
-      <ul className={css.list}>{children}</ul>
+    <div className={slider}>
+      <ul className={list}>{children}</ul>
     </div>
   );
 }

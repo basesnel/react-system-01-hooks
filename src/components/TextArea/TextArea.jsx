@@ -2,25 +2,28 @@ import PropTypes from 'prop-types';
 
 import css from './TextArea.module.css';
 
-export default function TextArea({
-  isDisabled,
-  textAreaType,
-  textAreaName,
-  textAreaValue,
-  textAreaLabel,
-  textAreaPlaceholder,
-  handleChange,
-  icon,
-  textAreaRef,
-}) {
+export default function TextArea(props) {
+  const {
+    isDisabled,
+    textAreaType,
+    textAreaName,
+    textAreaValue,
+    textAreaLabel,
+    textAreaPlaceholder,
+    handleChange,
+    icon,
+    textAreaRef,
+  } = props;
+  const { field, label, wrapInput, input, iconInput, iconTextarea } = css;
+
   return (
-    <div className={css.field}>
+    <div className={field}>
       {textAreaLabel && (
-        <label className={css.label} htmlFor={textAreaName}>
+        <label className={label} htmlFor={textAreaName}>
           {textAreaLabel}
         </label>
       )}
-      <div className={css['wrap-input']}>
+      <div className={wrapInput}>
         <textarea
           disabled={isDisabled}
           type={textAreaType}
@@ -28,12 +31,12 @@ export default function TextArea({
           id={textAreaName}
           value={textAreaValue}
           autoComplete="off"
-          className={css.input}
+          className={input}
           placeholder={textAreaPlaceholder}
           onChange={handleChange}
           ref={textAreaRef}
         />
-        <span className={`${css.icon} ${css['icon-textarea']}`}>{icon}</span>
+        <span className={`${iconInput} ${iconTextarea}`}>{icon}</span>
       </div>
     </div>
   );

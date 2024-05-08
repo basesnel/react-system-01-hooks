@@ -1,13 +1,9 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-@value field from "../Input/Input.module.css";
-@value label from "../Input/Input.module.css";
-@value wrap-input from "../Input/Input.module.css";
-@value input from "../Input/Input.module.css";
-@value icon from "../Input/Input.module.css";
+@value field, label, wrapInput, input, iconInput from "../Input/Input.module.css";
 
-.icon-textarea {
+.iconTextarea {
   top: 12px;
   transform: translate(0, 0);
 }

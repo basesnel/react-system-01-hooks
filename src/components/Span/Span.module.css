@@ -1,24 +1,24 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.txt {
+.text {
   font-size: var(--fs-text-mobile);
   line-height: 1.8;
   color: var(--color-text);
 }
 
-.txt.centered {
+.text.centeredText {
   text-align: center;
 }
 
 @media mobile-to {
-  .txt {
+  .text {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .txt {
+  .text {
     font-size: var(--fs-text-tablet);
   }
 }

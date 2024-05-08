@@ -22,7 +22,7 @@ export default function Task07() {
     <>
       <Slider>
         {kittens.map((kitten, i) => (
-          <Slide key={kitten.id} itemRef={index === i ? selectedRef : null}>
+          <Slide key={kitten.id} slideRef={index === i ? selectedRef : null}>
             <div
               className={
                 index === i

@@ -47,7 +47,7 @@ export default function Prac07() {
         {kittens.map(kitten => (
           <Slide
             key={kitten.id}
-            itemRef={node => {
+            slideRef={node => {
               const map = getMap();
               if (node) {
                 map.set(kitten.id, node);

@@ -40,7 +40,7 @@ export default function Prac06() {
   return (
     <>
       <Slider>
-        <Slide itemRef={firstCatRef}>
+        <Slide slideRef={firstCatRef}>
           <ResponsiveImage
             isLazy="lazy"
             image320="kittens/kitten-320-02"
@@ -51,7 +51,7 @@ export default function Prac06() {
             alt="Tom"
           />
         </Slide>
-        <Slide itemRef={secondCatRef}>
+        <Slide slideRef={secondCatRef}>
           <ResponsiveImage
             isLazy="lazy"
             image320="kittens/kitten-320-03"
@@ -62,7 +62,7 @@ export default function Prac06() {
             alt="Mary"
           />
         </Slide>
-        <Slide itemRef={thirdCatRef}>
+        <Slide slideRef={thirdCatRef}>
           <ResponsiveImage
             isLazy="lazy"
             image320="kittens/kitten-320-05"

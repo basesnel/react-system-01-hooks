@@ -4,7 +4,10 @@ import { toast } from 'react-toastify';
 
 import css from './SearchBar.module.css';
 
-export default function SearchBar({ onFormSubmit, query }) {
+export default function SearchBar(props) {
+  const { onFormSubmit, query } = props;
+  const { searchBar, searchForm, searchButton, searchLabel, searchInput } = css;
+
   const [searchQuery, setSearchQuery] = useState('');
 
   const handleInputChange = event => {
@@ -23,14 +26,10 @@ export default function SearchBar({ onFormSubmit, query }) {
   };
 
   return (
-    <section className={css.searchbar}>
-      <form
-        onSubmit={handleSubmit}
-        className={css.searchform}
-        autoComplete="off"
-      >
-        <button className={css.searchform__btn}>
-          <span className={css.searchform__label}>Search</span>
+    <section className={searchBar}>
+      <form onSubmit={handleSubmit} className={searchForm} autoComplete="off">
+        <button className={searchButton}>
+          <span className={searchLabel}>Search</span>
         </button>
         <input
           type="text"
@@ -38,7 +37,7 @@ export default function SearchBar({ onFormSubmit, query }) {
           placeholder={query ? `Search ${query}...` : 'Search...'}
           value={searchQuery}
           onChange={handleInputChange}
-          className={css.searchform__input}
+          className={searchInput}
         />
       </form>
     </section>

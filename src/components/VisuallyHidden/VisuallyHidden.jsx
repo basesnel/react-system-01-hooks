@@ -2,9 +2,12 @@ import PropTypes from 'prop-types';
 
 import css from './VisuallyHidden.module.css';
 
-export default function VisuallyHidden({ children, ...delegated }) {
+export default function VisuallyHidden(props) {
+  const { children, ...delegated } = props;
+  const { visuallyHidden } = css;
+
   return (
-    <span className={css['visually-hidden']} {...delegated}>
+    <span className={visuallyHidden} {...delegated}>
       {children}
     </span>
   );

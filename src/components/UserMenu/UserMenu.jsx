@@ -5,10 +5,13 @@ import FlexBox from 'components/FlexBox';
 
 import css from './UserMenu.module.css';
 
-export default function UserMenu({ user, onLogOut }) {
+export default function UserMenu(props) {
+  const { user, onLogOut } = props;
+  const { userName } = css;
+
   return (
     <FlexBox>
-      <span className={css.user}>Welcome, {user.name}</span>
+      <span className={userName}>Welcome, {user.name}</span>
       <Button caption="Log&nbsp;Out" onClick={onLogOut} />
     </FlexBox>
   );

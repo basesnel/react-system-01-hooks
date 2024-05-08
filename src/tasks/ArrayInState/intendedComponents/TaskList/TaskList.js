@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 
 import { RiSave3Fill } from 'react-icons/ri';
@@ -12,7 +14,9 @@ import IconButton from 'components/IconButton';
 import Input from 'components/Input';
 import ItemCheckedText from 'components/ItemCheckedText';
 
-export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
+export default function TaskList(props) {
+  const { todos, onChangeTodo, onDeleteTodo } = props;
+
   return (
     <List message="There is no elements in list.">
       {todos.map(todo => (
@@ -24,7 +28,9 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   );
 }
 
-function Task({ todo, onChange, onDelete }) {
+function Task(props) {
+  const { todo, onChange, onDelete } = props;
+
   const [isEditing, setIsEditing] = useState(false);
 
   let todoContent;
@@ -83,3 +89,25 @@ function Task({ todo, onChange, onDelete }) {
     </ItemLabel>
   );
 }
+
+TaskList.propTypes = {
+  todos: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      title: PropTypes.string.isRequired,
+      done: PropTypes.bool.isRequired,
+    }).isRequired
+  ).isRequired,
+  onChangeTodo: PropTypes.func.isRequired,
+  onDeleteTodo: PropTypes.func.isRequired,
+};
+
+Task.propTypes = {
+  todo: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    done: PropTypes.bool.isRequired,
+  }).isRequired,
+  onChange: PropTypes.func.isRequired,
+  onDelete: PropTypes.func.isRequired,
+};

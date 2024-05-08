@@ -1,7 +1,12 @@
+import PropTypes from 'prop-types';
+
 import { useState, useMemo } from 'react';
+
 import authContext from './context';
 
-export default function Provider({ children }) {
+export default function Provider(props) {
+  const { children } = props;
+
   const [user, setUser] = useState(null);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -25,3 +30,7 @@ export default function Provider({ children }) {
     </authContext.Provider>
   );
 }
+
+Provider.propTypes = {
+  children: PropTypes.node.isRequired,
+};

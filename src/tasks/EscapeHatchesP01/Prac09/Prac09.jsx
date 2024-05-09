@@ -52,6 +52,7 @@ export default function Prac09() {
 
 let nextId = 0;
 const initialTodos = [];
+
 for (let i = 0; i < 20; i++) {
   initialTodos.push({
     id: nextId++,

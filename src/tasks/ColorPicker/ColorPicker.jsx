@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import PropTypes from 'prop-types';
+
+import { useState } from 'react';
 
 import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
@@ -43,6 +44,6 @@ ColorPicker.propTypes = {
     PropTypes.shape({
       label: PropTypes.string.isRequired,
       color: PropTypes.string.isRequired,
-    })
-  ),
+    }).isRequired
+  ).isRequired,
 };

@@ -9,6 +9,9 @@ import FlexBox from 'components/FlexBox';
 import css from './Prac08.module.css';
 
 const MyInput = forwardRef((props, ref) => {
+  const { icon } = props;
+  const { field, wrapInput, input, iconInput } = css;
+
   const realInputRef = useRef(null);
 
   useImperativeHandle(ref, () => ({
@@ -18,10 +21,10 @@ const MyInput = forwardRef((props, ref) => {
   }));
 
   return (
-    <div className={css.field}>
-      <div className={css['wrap-input']}>
-        <input {...props} className={css.input} ref={realInputRef} />
-        <span className={css.icon}>{props.icon}</span>
+    <div className={field}>
+      <div className={wrapInput}>
+        <input {...props} className={input} ref={realInputRef} />
+        <span className={iconInput}>{icon}</span>
       </div>
     </div>
   );

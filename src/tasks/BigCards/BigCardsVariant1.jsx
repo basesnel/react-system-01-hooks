@@ -1,7 +1,14 @@
-import Button from 'components/Button';
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 
-const Modal = ({ url, onClose }) => {
+import Button from 'components/Button';
+
+import { images } from 'constants';
+
+const Modal = props => {
+  const { url, onClose } = props;
+
   return (
     <div>
       <p>Modal</p>
@@ -11,33 +18,25 @@ const Modal = ({ url, onClose }) => {
   );
 };
 
-const List = ({ items, onSelect }) => {
+const List = props => {
+  const { items, onSelect } = props;
+
   return (
     <div>
       {items.map(item => (
-        <ListItem key={item.large} item={item} onSelect={onSelect} />
+        <Item key={item.large} item={item} onSelect={onSelect} />
       ))}
     </div>
   );
 };
 
-const ListItem = ({ item, onSelect }) => {
+const Item = props => {
+  const { item, onSelect } = props;
+
   return <div onClick={() => onSelect(item.large)}>{item.large}</div>;
 };
 
 export default function BigCards() {
-  // const [images, setImages] = useState([
-  //   { preview: 'preview-1', large: 'large-1' },
-  //   { preview: 'preview-2', large: 'large-2' },
-  //   { preview: 'preview-3', large: 'large-3' },
-  // ]);
-
-  const images = [
-    { preview: 'preview-1', large: 'large-1' },
-    { preview: 'preview-2', large: 'large-2' },
-    { preview: 'preview-3', large: 'large-3' },
-  ];
-
   const [selectImageUrl, setSelectImageUrl] = useState(null);
 
   return (
@@ -49,3 +48,26 @@ export default function BigCards() {
     </section>
   );
 }
+
+List.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      preview: PropTypes.string.isRequired,
+      large: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
+
+Item.propTypes = {
+  item: PropTypes.shape({
+    preview: PropTypes.string.isRequired,
+    large: PropTypes.string.isRequired,
+  }).isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
+
+Modal.propTypes = {
+  url: PropTypes.string.isRequired,
+  onClose: PropTypes.func.isRequired,
+};

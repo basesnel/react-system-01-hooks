@@ -28,10 +28,6 @@ export default function Task04() {
 
   const handleDeleteTodo = todoId => {
     updateTodos(draft => draft.filter(t => t.id !== todoId));
-    // updateTodos(draft => {
-    //   const index = draft.findIndex(t => t.id === todoId);
-    //   draft.splice(index, 1);
-    // });
   };
 
   return (

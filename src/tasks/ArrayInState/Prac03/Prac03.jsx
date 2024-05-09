@@ -1,9 +1,9 @@
 import { useState } from 'react';
 
+import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
 import { initialShapesList } from 'constants';
-import FlexBox from 'components/FlexBox';
 
 export default function Prac03() {
   const [shapes, setShapes] = useState(initialShapesList);

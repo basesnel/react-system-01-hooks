@@ -1,6 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
-@value title-02, title-03 from "../Title/Title.module.css";
+@value title02, title03 from "../Title/Title.module.css";
 
 .card {
   position: relative;
@@ -36,7 +36,7 @@
   background-color: var(--color-logolight);
 }
 
-.card .title-02 {
+.card .title02 {
   padding: 0;
   font-size: var(--fs-text-mobile);
   font-weight: 700;
@@ -47,23 +47,23 @@
   transition: var(--my-transition);
 }
 
-.card:hover .title-02 {
+.card:hover .title02 {
   opacity: 1;
 }
 
 @media mobile-to {
-  .card .title-02 {
+  .card .title02 {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .card .title-02 {
+  .card .title02 {
     font-size: var(--fs-text-tablet);
   }
 }
 
-.card .title-03 {
+.card .title03 {
   padding: 0;
   margin-bottom: 10px;
   font-size: var(--fs-text-mobile);
@@ -75,18 +75,18 @@
   transition: var(--my-transition);
 }
 
-.card:hover .title-03 {
+.card:hover .title03 {
   opacity: 1;
 }
 
 @media mobile-to {
-  .card .title-03 {
+  .card .title03 {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .card .title-03 {
+  .card .title03 {
     font-size: var(--fs-text-tablet);
   }
 }

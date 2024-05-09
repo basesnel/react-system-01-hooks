@@ -1,29 +1,37 @@
+import PropTypes from 'prop-types';
+
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 
-import Modal from 'components/Modal';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
+import Modal from 'components/Modal';
 
 import css from './BigCards.module.css';
 
 import { images } from 'constants';
 
-const List = ({ items }) => {
+const List = props => {
+  const { items } = props;
+
   return (
     <Grid>
       {items.map(item => (
-        <ListItem key={item.large} item={item} />
+        <Item key={item.large} item={item} />
       ))}
     </Grid>
   );
 };
 
-const ListItem = ({ item }) => {
+const Item = props => {
+  const { item } = props;
+  const { card } = css;
+
   const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <Card title={item.preview}>
-      <div className={css.card} onClick={() => setIsModalOpen(true)}>
+      <div className={card} onClick={() => setIsModalOpen(true)}>
         <span>{item.preview}</span>
       </div>
       {isModalOpen &&
@@ -41,9 +49,23 @@ const ListItem = ({ item }) => {
   );
 };
 
-export default function BigCards() {
-  // const [initImages, setInitImages] = useState(images);
+List.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      preview: PropTypes.string.isRequired,
+      large: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+};
 
+Item.propTypes = {
+  item: PropTypes.shape({
+    preview: PropTypes.string.isRequired,
+    large: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default function BigCards() {
   return (
     <section>
       <List items={images} />

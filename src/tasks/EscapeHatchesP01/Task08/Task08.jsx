@@ -10,20 +10,21 @@ import css from './Task08.module.css';
 
 const InputWithRef = forwardRef((props, ref) => {
   const { inputType, inputName, inputLabel, inputPlaceholder, icon } = props;
+  const { field, label, wrapInput, input, iconInput } = css;
 
   return (
-    <label className={css.field}>
-      {inputLabel && <span className={css.label}>{inputLabel}</span>}
-      <div className={css['wrap-input']}>
+    <label className={field}>
+      {inputLabel && <span className={label}>{inputLabel}</span>}
+      <div className={wrapInput}>
         <input
           type={inputType}
           name={inputName}
           autoComplete="off"
-          className={css.input}
+          className={input}
           placeholder={inputPlaceholder}
           ref={ref}
         />
-        <span className={css.icon}>{icon}</span>
+        <span className={iconInput}>{icon}</span>
       </div>
     </label>
   );
@@ -31,6 +32,7 @@ const InputWithRef = forwardRef((props, ref) => {
 
 export default function Task08() {
   const inputRef = useRef(null);
+
   return (
     <FlexBox>
       <InputWithRef

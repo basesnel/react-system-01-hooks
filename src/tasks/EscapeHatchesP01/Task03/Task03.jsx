@@ -1,12 +1,13 @@
+import PropTypes from 'prop-types';
 import { useRef } from 'react';
 import { toast } from 'react-toastify';
 
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-// let timeoutID;
+function DebouncedButton(props) {
+  const { onClick, caption } = props;
 
-function DebouncedButton({ onClick, caption }) {
   const timeoutID = useRef(null);
 
   return (
@@ -21,6 +22,11 @@ function DebouncedButton({ onClick, caption }) {
     />
   );
 }
+
+DebouncedButton.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  caption: PropTypes.string.isRequired,
+};
 
 export default function Task03() {
   return (

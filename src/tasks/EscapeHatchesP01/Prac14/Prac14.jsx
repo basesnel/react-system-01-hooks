@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { MdTask } from 'react-icons/md';
 
-import Input from 'components/Input';
 import FlexBox from 'components/FlexBox';
+import Input from 'components/Input';
 import Title from 'components/Title';
 import Button from 'components/Button';
 

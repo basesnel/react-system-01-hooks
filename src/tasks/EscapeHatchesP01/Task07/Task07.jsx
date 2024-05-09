@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
 
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
 import Slider from 'components/Slider';
 import Slide from 'components/Slide';
 import ResponsiveImage from 'components/ResponsiveImage';
+import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
 
 import { catList } from 'constants';
 import { imageSizes } from 'constants';
@@ -13,6 +13,8 @@ import { imageSizes } from 'constants';
 import css from './Task07.module.css';
 
 export default function Task07() {
+  const { imageSlide, active } = css;
+
   const [index, setIndex] = useState(0);
   const selectedRef = useRef(null);
 
@@ -24,11 +26,7 @@ export default function Task07() {
         {kittens.map((kitten, i) => (
           <Slide key={kitten.id} slideRef={index === i ? selectedRef : null}>
             <div
-              className={
-                index === i
-                  ? `${css['img-slide']} ${css.active}`
-                  : css['img-slide']
-              }
+              className={index === i ? `${imageSlide} ${active}` : imageSlide}
             >
               <ResponsiveImage
                 isLazy="lazy"

@@ -1,7 +1,8 @@
 import { useEffect } from 'react';
 
-import { createConnection } from 'constants';
 import Title from 'components/Title';
+
+import { createConnection } from 'constants';
 
 const serverURL = 'https://localhost:1234';
 const roomID = 'general';

@@ -2,10 +2,9 @@ import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
+import FlexBox from 'components/FlexBox';
 import Input from 'components/Input';
 import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
-// import MiniForm from 'components/MiniForm';
 
 export default function Task04() {
   const [text, setText] = useState('');
@@ -22,11 +21,6 @@ export default function Task04() {
 
   return (
     <FlexBox>
-      {/* <MiniForm
-        onFormSubmit={handleSend}
-        filling={`Send ${text}`}
-        icon={<RiInsertRowBottom />}
-      /> */}
       <Input
         inputType="text"
         inputName="Task04message"

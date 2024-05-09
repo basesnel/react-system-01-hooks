@@ -9,6 +9,8 @@ import Caption from 'components/Caption';
 import css from './Clock.module.css';
 
 export default function Clock() {
+  const { timeDisplay, timeWrap } = css;
+
   const [time, setTime] = useState(() => new Date());
   const [isTicking, setIsTicking] = useState(true);
 
@@ -25,20 +27,6 @@ export default function Clock() {
       stop();
     };
   }, []);
-
-  // this is example for clear effect by return () => {func}
-  // useEffect(() => {
-  // setInterval(() => {
-  //   console.log('This interval every 3000ms ' + Date.now());
-  //   setTime(new Date());
-  // }, 3000);
-
-  //   console.log(time);
-
-  //   return () => {
-  //     console.log('This is function for clear to next effect trigger');
-  //   };
-  // }, []);
 
   const start = () => {
     setIsTicking(true);
@@ -66,18 +54,13 @@ export default function Clock() {
   return (
     <>
       <Box>
-        <div className={css['time-wrap']}>
-          <span className={css.time}>{time.toLocaleTimeString()}</span>
+        <div className={timeWrap}>
+          <span className={timeDisplay}>{time.toLocaleTimeString()}</span>
         </div>
       </Box>
       <Caption text="Current time" />
       <FlexBox>
         <Button caption={isTicking ? 'stop' : 'start'} onClick={toggle} />
-        {/* <Button
-          caption="Stop"
-          onClick={stop}
-          isDisabled={!isTicking}
-        /> */}
       </FlexBox>
     </>
   );

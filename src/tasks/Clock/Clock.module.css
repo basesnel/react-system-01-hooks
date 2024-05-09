@@ -1,11 +1,11 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.time-wrap {
+.timeDisplayWrap {
   text-align: center;
 }
 
-.time {
+.timeDisplay {
   font-family: monospace;
   font-size: 18px;
   font-weight: 700;
@@ -13,13 +13,13 @@
 }
 
 @media tablet-to {
-  .time {
+  .timeDisplay {
     font-size: 30px;
   }
 }
 
 @media desktop-to {
-  .time {
+  .timeDisplay {
     font-size: 50px;
   }
 }

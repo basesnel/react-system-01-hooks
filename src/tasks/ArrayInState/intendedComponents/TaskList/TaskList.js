@@ -93,7 +93,7 @@ function Task(props) {
 TaskList.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
       title: PropTypes.string.isRequired,
       done: PropTypes.bool.isRequired,
     }).isRequired
@@ -104,7 +104,7 @@ TaskList.propTypes = {
 
 Task.propTypes = {
   todo: PropTypes.shape({
-    id: PropTypes.number.isRequired,
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     title: PropTypes.string.isRequired,
     done: PropTypes.bool.isRequired,
   }).isRequired,

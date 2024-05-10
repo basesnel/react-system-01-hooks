@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 
 import AddTodo from '../intendedComponents/AddTodo';
 import TaskList from '../intendedComponents/TaskList';
@@ -12,7 +13,7 @@ export default function Task03() {
     setTodos([
       ...todos,
       {
-        id: todos.length,
+        id: nanoid(),
         title: title,
         done: false,
       },

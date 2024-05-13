@@ -12,7 +12,7 @@ import ItemText from 'components/ItemText';
 
 import { initialCharacters } from 'constants';
 
-export default function Characters() {
+const Characters = () => {
   const [count, setCount] = useState(0);
   const [characters] = useState(initialCharacters);
   const [filter, setFilter] = useState('');
@@ -49,4 +49,6 @@ export default function Characters() {
       </List>
     </div>
   );
-}
+};
+
+export default Characters;

@@ -8,7 +8,7 @@ import Caption from 'components/Caption';
 
 import css from './Clock.module.css';
 
-export default function Clock() {
+const Clock = () => {
   const { timeDisplay, timeWrap } = css;
 
   const [time, setTime] = useState(() => new Date());
@@ -64,4 +64,6 @@ export default function Clock() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Clock;

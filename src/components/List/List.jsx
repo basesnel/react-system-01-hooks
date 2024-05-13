@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './List.module.css';
 
-export default function List(props) {
+const List = props => {
   const { message, listRef, children } = props;
   const { list, messageList } = css;
 
@@ -13,7 +13,7 @@ export default function List(props) {
   ) : (
     <span className={messageList}>{message}</span>
   );
-}
+};
 
 List.propTypes = {
   message: PropTypes.string.isRequired,
@@ -25,3 +25,5 @@ List.defaultProps = {
   listRef: null,
   children: null,
 };
+
+export default List;

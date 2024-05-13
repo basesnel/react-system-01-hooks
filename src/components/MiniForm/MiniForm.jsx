@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 import css from './MiniForm.module.css';
 
-export default function MiniForm(props) {
+const MiniForm = props => {
   const { onFormSubmit, filling, icon } = props;
   const { miniform, miniformButton, miniformInput } = css;
 
@@ -39,7 +39,7 @@ export default function MiniForm(props) {
       <button className={miniformButton}>{icon}</button>
     </form>
   );
-}
+};
 
 MiniForm.propTypes = {
   onFormSubmit: PropTypes.func.isRequired,
@@ -50,3 +50,5 @@ MiniForm.propTypes = {
 MiniForm.defaultProps = {
   filling: null,
 };
+
+export default MiniForm;

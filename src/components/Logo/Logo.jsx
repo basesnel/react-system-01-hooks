@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import css from './Logo.module.css';
 
-export default function Logo(props) {
+const Logo = props => {
   const { text } = props;
   const { logo, decor } = css;
 
@@ -14,8 +14,10 @@ export default function Logo(props) {
       <span className={decor}>{text.substr(3)}</span>
     </Link>
   );
-}
+};
 
 Logo.propTypes = {
   text: PropTypes.string.isRequired,
 };
+
+export default Logo;

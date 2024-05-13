@@ -7,7 +7,7 @@ import FlexBox from 'components/FlexBox';
 
 import css from './ColorPicker.module.css';
 
-export default function ColorPicker(props) {
+const ColorPicker = props => {
   const { options } = props;
   const { setOfOptions, option, activeOption } = css;
 
@@ -37,7 +37,7 @@ export default function ColorPicker(props) {
       </FlexBox>
     </div>
   );
-}
+};
 
 ColorPicker.propTypes = {
   options: PropTypes.arrayOf(
@@ -47,3 +47,5 @@ ColorPicker.propTypes = {
     }).isRequired
   ).isRequired,
 };
+
+export default ColorPicker;

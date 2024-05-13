@@ -5,7 +5,7 @@ import Button from 'components/Button';
 
 import { initialShapesList } from 'constants';
 
-export default function Prac03() {
+const Prac03 = () => {
   const [shapes, setShapes] = useState(initialShapesList);
 
   const handleClick = () => {
@@ -44,4 +44,6 @@ export default function Prac03() {
       ))}
     </div>
   );
-}
+};
+
+export default Prac03;

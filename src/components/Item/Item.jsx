@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Item.module.css';
 
-export default function Item(props) {
+const Item = props => {
   const { children, ...delegated } = props;
   const { item } = css;
 
@@ -11,7 +11,7 @@ export default function Item(props) {
       {children}
     </li>
   );
-}
+};
 
 Item.propTypes = {
   children: PropTypes.node.isRequired,
@@ -21,3 +21,5 @@ Item.propTypes = {
 Item.defaultProps = {
   delegated: null,
 };
+
+export default Item;

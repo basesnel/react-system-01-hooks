@@ -8,7 +8,7 @@ import ItemCheckedText from 'components/ItemCheckedText';
 
 import { initialSevenArtsList } from 'constants';
 
-export default function Prac08() {
+const Prac08 = () => {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
   const [yourList, updateYourList] = useImmer(initialSevenArtsList);
 
@@ -34,7 +34,7 @@ export default function Prac08() {
       <ItemList artWorks={yourList} onToggle={handleToggleYourList} />
     </>
   );
-}
+};
 
 function ItemList({ artWorks, onToggle }) {
   return (
@@ -57,3 +57,5 @@ function ItemList({ artWorks, onToggle }) {
     </List>
   );
 }
+
+export default Prac08;

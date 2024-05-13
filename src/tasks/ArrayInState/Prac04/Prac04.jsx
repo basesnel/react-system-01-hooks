@@ -10,7 +10,7 @@ import IconButton from 'components/IconButton';
 
 import { initialCountersList } from 'constants';
 
-export default function Prac04() {
+const Prac04 = () => {
   const [counters, setCounters] = useState(initialCountersList);
 
   const handleIncrementalClick = index => {
@@ -42,4 +42,6 @@ export default function Prac04() {
       ))}
     </List>
   );
-}
+};
+
+export default Prac04;

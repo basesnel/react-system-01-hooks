@@ -65,10 +65,12 @@ Item.propTypes = {
   }).isRequired,
 };
 
-export default function BigCards() {
+const BigCards = () => {
   return (
     <section>
       <List items={images} />
     </section>
   );
-}
+};
+
+export default BigCards;

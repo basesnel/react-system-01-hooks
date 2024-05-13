@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Input.module.css';
 
-export default function Input(props) {
+const Input = props => {
   const {
     isDisabled,
     inputType,
@@ -15,6 +15,7 @@ export default function Input(props) {
     inputRef,
   } = props;
   const { field, label, wrapInput, input, iconInput } = css;
+
   const valueProps = {
     ...(inputValue === null || handleChange === null
       ? { defaultValue: '', readOnly: true }
@@ -44,7 +45,7 @@ export default function Input(props) {
       </div>
     </div>
   );
-}
+};
 
 Input.propTypes = {
   isDisabled: PropTypes.bool,
@@ -67,3 +68,5 @@ Input.defaultProps = {
   icon: null,
   inputRef: null,
 };
+
+export default Input;

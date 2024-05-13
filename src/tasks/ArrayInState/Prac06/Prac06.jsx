@@ -9,7 +9,7 @@ import ItemText from 'components/ItemText';
 
 import { initialSixArtsList } from 'constants';
 
-export default function Prac06() {
+const Prac06 = () => {
   const [list, setList] = useState(initialSixArtsList);
 
   const handleClick = () => {
@@ -34,4 +34,6 @@ export default function Prac06() {
       </List>
     </>
   );
-}
+};
+
+export default Prac06;

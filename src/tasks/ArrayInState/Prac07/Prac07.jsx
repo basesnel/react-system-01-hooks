@@ -8,7 +8,7 @@ import ItemCheckedText from 'components/ItemCheckedText/ItemCheckedText';
 
 import { initialSevenArtsList } from 'constants';
 
-export default function Prac07() {
+const Prac07 = () => {
   const [myList, setMyList] = useState(initialSevenArtsList);
   const [yourList, setYourList] = useState(initialSevenArtsList);
 
@@ -44,7 +44,7 @@ export default function Prac07() {
       <ItemList artWorks={yourList} onToggle={handleToggleYourList} />
     </>
   );
-}
+};
 
 function ItemList({ artWorks, onToggle }) {
   return (
@@ -67,3 +67,5 @@ function ItemList({ artWorks, onToggle }) {
     </List>
   );
 }
+
+export default Prac07;

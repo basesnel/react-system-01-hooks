@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Image.module.css';
 
-export default function Image(props) {
+const Image = props => {
   const { src, desc, width } = props;
   const { thumb } = css;
 
@@ -11,7 +11,7 @@ export default function Image(props) {
       <img src={src} alt={desc} width={width} />
     </div>
   );
-}
+};
 
 Image.propTypes = {
   src: PropTypes.string.isRequired,
@@ -22,3 +22,5 @@ Image.propTypes = {
 Image.defaultProps = {
   width: null,
 };
+
+export default Image;

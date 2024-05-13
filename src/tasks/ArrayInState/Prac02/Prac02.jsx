@@ -10,7 +10,7 @@ import IconButton from 'components/IconButton';
 
 import { initialArtistsList } from 'constants';
 
-export default function Prac02() {
+const Prac02 = () => {
   const [artists, setArtists] = useState(initialArtistsList);
 
   return (
@@ -33,4 +33,6 @@ export default function Prac02() {
       </List>
     </>
   );
-}
+};
+
+export default Prac02;

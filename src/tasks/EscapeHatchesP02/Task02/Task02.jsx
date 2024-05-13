@@ -1,14 +1,16 @@
+import { useState, useMemo } from 'react';
+import { RiAddCircleFill } from 'react-icons/ri';
+
 import CheckBox from 'components/CheckBox/CheckBox.jsx';
 import MiniForm from 'components/MiniForm/MiniForm.jsx';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText/ItemText';
-import { RiAddCircleFill } from 'react-icons/ri';
-import { useState, useMemo } from 'react';
+
 import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
 
-export default function Task02() {
+const Task02 = () => {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
   const [text, setText] = useState('');
@@ -50,4 +52,6 @@ export default function Task02() {
       </List>
     </>
   );
-}
+};
+
+export default Task02;

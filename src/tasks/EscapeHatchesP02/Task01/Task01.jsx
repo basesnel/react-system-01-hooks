@@ -1,19 +1,18 @@
-import { useState } from 'react';
-import { initialTodos, createTodo } from './todos';
-
 import PropTypes from 'prop-types';
+import { useState } from 'react';
+import { RiAddCircleFill } from 'react-icons/ri';
 
-import MiniForm from 'components/MiniForm';
+import CheckBox from 'components/CheckBox';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText/ItemText';
-
-import { RiAddCircleFill } from 'react-icons/ri';
 import Paragraph from 'components/Paragraph';
-import CheckBox from 'components/CheckBox';
+import MiniForm from 'components/MiniForm';
 
-export default function Task01() {
+import { initialTodos, createTodo } from './todos';
+
+const Task01 = () => {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
 
@@ -50,9 +49,11 @@ export default function Task01() {
       </footer>
     </>
   );
-}
+};
 
-function NewTodo({ onAdd }) {
+const NewTodo = props => {
+  const { onAdd } = props;
+
   const [text, setText] = useState('');
 
   function handleAddClick(text) {
@@ -69,8 +70,10 @@ function NewTodo({ onAdd }) {
       />
     </>
   );
-}
+};
 
 NewTodo.propTypes = {
   onAdd: PropTypes.func.isRequired,
 };
+
+export default Task01;

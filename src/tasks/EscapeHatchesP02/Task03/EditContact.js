@@ -1,18 +1,20 @@
+import PropTypes from 'prop-types';
 import { useState } from 'react';
 
 import { FiUser, FiMail } from 'react-icons/fi';
 
-import FlexBox from 'components/FlexBox';
-
-import Button from 'components/Button';
 import Form from 'components/Form';
 import Input from 'components/Input';
+import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
 
-export default function EditContact(props) {
+const EditContact = props => {
   return <FormContact {...props} key={props.savedContact.id} />;
-}
+};
 
-function FormContact({ savedContact, onSave }) {
+const FormContact = props => {
+  const { savedContact, onSave } = props;
+
   const [name, setName] = useState(savedContact.name);
   const [email, setEmail] = useState(savedContact.email);
 
@@ -58,4 +60,15 @@ function FormContact({ savedContact, onSave }) {
       </FlexBox>
     </Form>
   );
-}
+};
+
+FormContact.propTypes = {
+  savedContact: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }).isRequired,
+  onSave: PropTypes.func.isRequired,
+};
+
+export default EditContact;

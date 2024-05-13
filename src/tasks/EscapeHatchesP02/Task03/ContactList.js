@@ -1,7 +1,11 @@
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
+import PropTypes from 'prop-types';
 
-export default function ContactList({ contacts, selectedId, onSelect }) {
+import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
+
+const ContactList = props => {
+  const { contacts, selectedId, onSelect } = props;
+
   return (
     <FlexBox>
       {contacts.map(contact => (
@@ -17,4 +21,19 @@ export default function ContactList({ contacts, selectedId, onSelect }) {
       ))}
     </FlexBox>
   );
-}
+};
+
+ContactList.propTypes = {
+  contacts: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      name: PropTypes.string.isRequired,
+      email: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  selectedId: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+  onSelect: PropTypes.func.isRequired,
+};
+
+export default ContactList;

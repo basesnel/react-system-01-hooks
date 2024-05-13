@@ -3,7 +3,7 @@ import { useState, useRef } from 'react';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
-export default function Prac04() {
+const Prac04 = () => {
   const [counterState, setCounterState] = useState(0);
   const counterRef = useRef(0);
 
@@ -27,4 +27,6 @@ export default function Prac04() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Prac04;

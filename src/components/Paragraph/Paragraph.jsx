@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Paragraph.module.css';
 
-export default function Paragraph(props) {
+const Paragraph = props => {
   const { centered, paragraphRef, children } = props;
   const { text, centeredText } = css;
   return (
@@ -13,7 +13,7 @@ export default function Paragraph(props) {
       {children}
     </p>
   );
-}
+};
 
 Paragraph.propTypes = {
   centered: PropTypes.bool,
@@ -25,3 +25,5 @@ Paragraph.defaultProps = {
   centered: null,
   paragraphRef: null,
 };
+
+export default Paragraph;

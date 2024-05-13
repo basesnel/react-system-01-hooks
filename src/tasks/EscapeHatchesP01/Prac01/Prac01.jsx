@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
-export default function Prac01() {
+const Prac01 = () => {
   let ref = useRef(0);
 
   function handleClick() {
@@ -17,4 +17,6 @@ export default function Prac01() {
       <Button caption="Click me!" onClick={handleClick} />
     </FlexBox>
   );
-}
+};
+
+export default Prac01;

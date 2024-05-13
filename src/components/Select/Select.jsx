@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Select.module.css';
 
-export default function Select(props) {
+const Select = props => {
   const { selectLabel, selectName, selected, list, icon, onHandleSelect } =
     props;
   const { field, label, wrapInput, input, iconInput } = css;
@@ -27,7 +27,7 @@ export default function Select(props) {
       </div>
     </label>
   );
-}
+};
 
 Select.propTypes = {
   selectLabel: PropTypes.string,
@@ -42,3 +42,5 @@ Select.defaultProps = {
   selectLabel: null,
   icon: null,
 };
+
+export default Select;

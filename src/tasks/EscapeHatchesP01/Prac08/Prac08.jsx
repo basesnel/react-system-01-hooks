@@ -30,7 +30,7 @@ const MyInput = forwardRef((props, ref) => {
   );
 });
 
-export default function Prac08() {
+const Prac08 = () => {
   const inputRef = useRef(null);
 
   function handleClick() {
@@ -48,7 +48,7 @@ export default function Prac08() {
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );
-}
+};
 
 MyInput.propTypes = {
   name: PropTypes.string.isRequired,
@@ -59,3 +59,5 @@ MyInput.propTypes = {
 MyInput.defaultProps = {
   icon: null,
 };
+
+export default Prac08;

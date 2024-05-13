@@ -4,7 +4,7 @@ import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 import Title from 'components/Title';
 
-export default function Prac02() {
+const Prac02 = () => {
   const [startTime, setStartTime] = useState(null);
   const [now, setNow] = useState(null);
 
@@ -31,4 +31,6 @@ export default function Prac02() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Prac02;

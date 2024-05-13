@@ -6,7 +6,7 @@ import Paragraph from 'components/Paragraph';
 
 import css from './Modal.module.css';
 
-export default function Modal(props) {
+const Modal = props => {
   const { url, onHide, onClose } = props;
   const { backdrop, modal, modalClose, icon } = css;
 
@@ -21,10 +21,12 @@ export default function Modal(props) {
       </div>
     </div>
   );
-}
+};
 
 Modal.propTypes = {
   url: PropTypes.string.isRequired,
   onHide: PropTypes.func.isRequired,
   onClose: PropTypes.func.isRequired,
 };
+
+export default Modal;

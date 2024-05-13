@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 
 import css from './NavBar.module.css';
 
-export default function NavBar() {
+const NavBar = () => {
   const { menu, item, navlink, navlinkActive } = css;
 
   return (
@@ -131,4 +131,6 @@ export default function NavBar() {
       </ul>
     </nav>
   );
-}
+};
+
+export default NavBar;

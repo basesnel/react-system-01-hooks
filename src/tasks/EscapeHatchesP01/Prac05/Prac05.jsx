@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 import Input from 'components/Input';
 
-export default function Prac05() {
+const Prac05 = () => {
   const [inputValue, setInputValue] = useState('');
   const inputRef = useRef(null);
 
@@ -27,4 +27,6 @@ export default function Prac05() {
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );
-}
+};
+
+export default Prac05;

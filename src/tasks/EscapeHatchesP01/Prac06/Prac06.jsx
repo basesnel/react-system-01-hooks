@@ -8,7 +8,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 
 import { imageSizes } from 'constants';
 
-export default function Prac06() {
+const Prac06 = () => {
   const firstCatRef = useRef(null);
   const secondCatRef = useRef(null);
   const thirdCatRef = useRef(null);
@@ -81,4 +81,6 @@ export default function Prac06() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Prac06;

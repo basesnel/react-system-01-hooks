@@ -9,7 +9,7 @@ import ResponsiveImage from 'components/ResponsiveImage';
 import { catList } from 'constants';
 import { imageSizes } from 'constants';
 
-export default function Prac07() {
+const Prac07 = () => {
   const itemsRef = useRef(null);
 
   const kittens = catList(10);
@@ -71,4 +71,6 @@ export default function Prac07() {
       <FlexBox>{buttonsList}</FlexBox>
     </>
   );
-}
+};
+
+export default Prac07;

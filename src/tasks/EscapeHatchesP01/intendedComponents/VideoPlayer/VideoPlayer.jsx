@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useRef, useEffect } from 'react';
 
-export default function VideoPlayer(props) {
+const VideoPlayer = props => {
   const { src, isPlaying } = props;
 
   const playerRef = useRef(null);
@@ -15,9 +15,11 @@ export default function VideoPlayer(props) {
   });
 
   return <video ref={playerRef} width="250" src={src} loop playsInline />;
-}
+};
 
 VideoPlayer.propTypes = {
   src: PropTypes.string.isRequired,
   isPlaying: PropTypes.bool.isRequired,
 };
+
+export default VideoPlayer;

@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 import css from './SearchBar.module.css';
 
-export default function SearchBar(props) {
+const SearchBar = props => {
   const { onFormSubmit, query } = props;
   const { searchBar, searchForm, searchButton, searchLabel, searchInput } = css;
 
@@ -42,7 +42,7 @@ export default function SearchBar(props) {
       </form>
     </section>
   );
-}
+};
 
 SearchBar.propTypes = {
   onFormSubmit: PropTypes.func.isRequired,
@@ -52,3 +52,5 @@ SearchBar.propTypes = {
 SearchBar.defaultProps = {
   query: null,
 };
+
+export default SearchBar;

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-export default function ResponsiveImage(props) {
+const ResponsiveImage = props => {
   const {
     isLazy,
     image320,
@@ -39,7 +39,7 @@ export default function ResponsiveImage(props) {
       />
     </picture>
   );
-}
+};
 
 ResponsiveImage.propTypes = {
   isLazy: PropTypes.oneOf(['lazy']),
@@ -56,3 +56,5 @@ ResponsiveImage.defaultProps = {
   isLazy: null,
   cssName: null,
 };
+
+export default ResponsiveImage;

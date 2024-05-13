@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Slide.module.css';
 
-export default function Slide(props) {
+const Slide = props => {
   const { slideRef, children, ...delegated } = props;
   const { slide } = css;
 
@@ -11,7 +11,7 @@ export default function Slide(props) {
       {children}
     </li>
   );
-}
+};
 
 Slide.propTypes = {
   slideRef: PropTypes.any,
@@ -23,3 +23,5 @@ Slide.defaultProps = {
   slideRef: null,
   delegated: null,
 };
+
+export default Slide;

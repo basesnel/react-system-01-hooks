@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 import Input from 'components/Input';
 import Button from 'components/Button';
 
-export default function Task06() {
+const Task06 = () => {
   const [inputValue, setInputValue] = useState('');
   const searchRef = useRef(null);
 
@@ -28,4 +28,6 @@ export default function Task06() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Task06;

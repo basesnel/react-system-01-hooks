@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 
 import Counter from './Counter';
 
-export default function Task11() {
+const Task11 = () => {
   const [isCounterVisible, setIsCounterVisible] = useState(false);
   return (
     <FlexBox>
@@ -16,4 +16,6 @@ export default function Task11() {
       {isCounterVisible && <Counter />}
     </FlexBox>
   );
-}
+};
+
+export default Task11;

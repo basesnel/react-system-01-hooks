@@ -3,7 +3,7 @@ import { useState } from 'react';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-export default function Task02() {
+const Task02 = () => {
   const [isOne, setIsOne] = useState(false);
 
   return (
@@ -16,4 +16,6 @@ export default function Task02() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Task02;

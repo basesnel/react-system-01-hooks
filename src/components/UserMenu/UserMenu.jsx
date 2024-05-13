@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 
 import css from './UserMenu.module.css';
 
-export default function UserMenu(props) {
+const UserMenu = props => {
   const { user, onLogOut } = props;
   const { userName } = css;
 
@@ -15,7 +15,7 @@ export default function UserMenu(props) {
       <Button caption="Log&nbsp;Out" onClick={onLogOut} />
     </FlexBox>
   );
-}
+};
 
 UserMenu.propTypes = {
   user: PropTypes.shape({
@@ -23,3 +23,5 @@ UserMenu.propTypes = {
   }),
   onLogOut: PropTypes.func.isRequired,
 };
+
+export default UserMenu;

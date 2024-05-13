@@ -9,7 +9,7 @@ import { fetchBio } from 'services/fetchBio';
 
 import { personList } from 'constants';
 
-export default function Task12() {
+const Task12 = () => {
   const [person, setPerson] = useState('Alice');
   const [bio, setBio] = useState(null);
 
@@ -45,4 +45,6 @@ export default function Task12() {
       </Paragraph>
     </>
   );
-}
+};
+
+export default Task12;

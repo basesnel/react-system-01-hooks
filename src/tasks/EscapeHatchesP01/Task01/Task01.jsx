@@ -6,7 +6,7 @@ import Input from 'components/Input';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
-export default function Task01() {
+const Task01 = () => {
   const [text, setText] = useState('');
   const [isSending, setIsSending] = useState(false);
   const timeoutId = useRef(null);
@@ -47,4 +47,6 @@ export default function Task01() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Task01;

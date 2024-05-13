@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Title.module.css';
 
-export default function Title(props) {
+const Title = props => {
   const { level, caption } = props;
   const { title01, title02, title03 } = css;
 
@@ -19,9 +19,11 @@ export default function Title(props) {
     default:
       return null;
   }
-}
+};
 
 Title.propTypes = {
   level: PropTypes.number.isRequired,
   caption: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
+
+export default Title;

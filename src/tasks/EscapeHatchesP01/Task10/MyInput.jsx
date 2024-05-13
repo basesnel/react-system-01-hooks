@@ -4,7 +4,9 @@ import { FiEdit } from 'react-icons/fi';
 
 import Input from 'components/Input';
 
-export default function MyInput({ shouldFocus, label, name, value, onChange }) {
+const MyInput = props => {
+  const { shouldFocus, label, name, value, onChange } = props;
+
   const ref = useRef(null);
 
   useEffect(() => {
@@ -21,10 +23,12 @@ export default function MyInput({ shouldFocus, label, name, value, onChange }) {
       icon={<FiEdit />}
     />
   );
-}
+};
 
 MyInput.propTypes = {
   shouldFocus: PropTypes.bool,
   value: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+export default MyInput;

@@ -7,7 +7,7 @@ import { createConnection } from 'constants';
 const serverURL = 'https://localhost:1234';
 const roomID = 'general';
 
-export default function Prac13() {
+const Prac13 = () => {
   useEffect(() => {
     const connection = createConnection(serverURL, roomID);
     connection.connect();
@@ -15,4 +15,6 @@ export default function Prac13() {
   }, []);
 
   return <Title level={3} caption="Welcome to the chat!" />;
-}
+};
+
+export default Prac13;

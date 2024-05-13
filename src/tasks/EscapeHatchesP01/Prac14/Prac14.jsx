@@ -6,7 +6,7 @@ import Input from 'components/Input';
 import Title from 'components/Title';
 import Button from 'components/Button';
 
-function Playground() {
+const Playground = () => {
   const [text, setText] = useState('a');
 
   useEffect(() => {
@@ -37,9 +37,9 @@ function Playground() {
       <Title level={3} caption={text} />
     </FlexBox>
   );
-}
+};
 
-export default function Prac14() {
+const Prac14 = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -53,4 +53,6 @@ export default function Prac14() {
       {show && <Playground />}
     </>
   );
-}
+};
+
+export default Prac14;

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './TextArea.module.css';
 
-export default function TextArea(props) {
+const TextArea = props => {
   const {
     isDisabled,
     textAreaType,
@@ -40,7 +40,7 @@ export default function TextArea(props) {
       </div>
     </div>
   );
-}
+};
 
 TextArea.propTypes = {
   isDisabled: PropTypes.bool,
@@ -65,3 +65,5 @@ TextArea.defaultProps = {
   icon: null,
   textAreaRef: null,
 };
+
+export default TextArea;

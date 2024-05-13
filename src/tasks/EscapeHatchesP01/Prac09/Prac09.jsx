@@ -9,7 +9,7 @@ import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
 import MiniForm from 'components/MiniForm';
 
-export default function Prac09() {
+const Prac09 = () => {
   const listRef = useRef(null);
   const [text, setText] = useState('');
   const [todos, setTodos] = useState(initialTodos);
@@ -48,7 +48,7 @@ export default function Prac09() {
       </HideOverflow>
     </>
   );
-}
+};
 
 let nextId = 0;
 const initialTodos = [];
@@ -59,3 +59,5 @@ for (let i = 0; i < 20; i++) {
     text: 'Todo #' + (i + 1).toString().padStart(2, '0'),
   });
 }
+
+export default Prac09;

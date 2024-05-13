@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-function DebouncedButton(props) {
+const DebouncedButton = props => {
   const { onClick, caption } = props;
 
   const timeoutID = useRef(null);
@@ -21,14 +21,14 @@ function DebouncedButton(props) {
       caption={caption}
     />
   );
-}
+};
 
 DebouncedButton.propTypes = {
   onClick: PropTypes.func.isRequired,
   caption: PropTypes.string.isRequired,
 };
 
-export default function Task03() {
+const Task03 = () => {
   return (
     <FlexBox>
       <DebouncedButton
@@ -51,4 +51,6 @@ export default function Task03() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Task03;

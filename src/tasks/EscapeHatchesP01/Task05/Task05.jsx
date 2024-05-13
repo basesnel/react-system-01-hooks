@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 
 import { videoSrc } from 'constants';
 
-export default function Task05() {
+const Task05 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -28,4 +28,6 @@ export default function Task05() {
       <Button caption={isPlaying ? 'Pause' : 'Play'} onClick={handleClick} />
     </FlexBox>
   );
-}
+};
+
+export default Task05;

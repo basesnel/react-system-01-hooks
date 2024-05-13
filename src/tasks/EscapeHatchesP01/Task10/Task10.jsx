@@ -5,7 +5,7 @@ import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
 
-export default function Task10() {
+const Task10 = () => {
   const [showForm, setShowForm] = useState(false);
   const [firstName, setFirstName] = useState('Taylor');
   const [lastName, setLastName] = useState('Swift');
@@ -41,4 +41,6 @@ export default function Task10() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Task10;

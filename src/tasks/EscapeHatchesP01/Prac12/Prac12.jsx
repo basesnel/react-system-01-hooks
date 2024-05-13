@@ -9,7 +9,7 @@ import VideoPlayer from '../intendedComponents/VideoPlayer';
 
 import { videoSrc } from 'constants';
 
-export default function Prac12() {
+const Prac12 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [text, setText] = useState('');
 
@@ -29,4 +29,6 @@ export default function Prac12() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Prac12;

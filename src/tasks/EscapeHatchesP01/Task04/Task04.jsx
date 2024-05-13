@@ -6,7 +6,7 @@ import FlexBox from 'components/FlexBox';
 import Input from 'components/Input';
 import Button from 'components/Button';
 
-export default function Task04() {
+const Task04 = () => {
   const [text, setText] = useState('');
   const actualText = useRef(text);
 
@@ -35,4 +35,6 @@ export default function Task04() {
       <Button onClick={handleSend} caption="Send" />
     </FlexBox>
   );
-}
+};
+
+export default Task04;

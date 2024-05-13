@@ -2,15 +2,16 @@ import PropTypes from 'prop-types';
 
 import css from './Span.module.css';
 
-export default function Span(props) {
+const Span = props => {
   const { centered, children } = props;
   const { text, centeredText } = css;
+
   return (
     <span className={centered ? `${text} ${centeredText}` : text}>
       {children}
     </span>
   );
-}
+};
 
 Span.propTypes = {
   centered: PropTypes.bool,
@@ -20,3 +21,5 @@ Span.propTypes = {
 Span.defaultProps = {
   centered: null,
 };
+
+export default Span;

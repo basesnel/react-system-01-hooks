@@ -1,12 +1,12 @@
 import { useState } from 'react';
 
-import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
+import CheckBox from 'components/CheckBox';
 import Paragraph from 'components/Paragraph';
 import MyInput from './MyInput';
-import CheckBox from 'components/CheckBox';
 
-export default function Task09() {
+const Task09 = () => {
   const [showForm, setShowForm] = useState(false);
   const [name, setName] = useState('Taylor');
   const [upper, setUpper] = useState(false);
@@ -34,4 +34,6 @@ export default function Task09() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Task09;

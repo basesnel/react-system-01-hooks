@@ -1,10 +1,12 @@
-import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useRef, useEffect } from 'react';
 import { FiEdit } from 'react-icons/fi';
 
 import Input from 'components/Input';
 
-export default function MyInput({ value, onChange }) {
+const MyInput = props => {
+  const { value, onChange } = props;
+
   const ref = useRef(null);
 
   useEffect(() => {
@@ -22,9 +24,11 @@ export default function MyInput({ value, onChange }) {
       icon={<FiEdit />}
     />
   );
-}
+};
 
 MyInput.propTypes = {
   value: PropTypes.string,
   onChange: PropTypes.func,
 };
+
+export default MyInput;

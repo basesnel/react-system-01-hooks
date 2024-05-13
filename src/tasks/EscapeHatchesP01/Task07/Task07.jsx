@@ -12,7 +12,7 @@ import { imageSizes } from 'constants';
 
 import css from './Task07.module.css';
 
-export default function Task07() {
+const Task07 = () => {
   const { imageSlide, active } = css;
 
   const [index, setIndex] = useState(0);
@@ -62,4 +62,6 @@ export default function Task07() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Task07;

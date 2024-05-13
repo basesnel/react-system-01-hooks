@@ -4,7 +4,7 @@ import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 
-export default function Prac10() {
+const Prac10 = () => {
   const [show, setShow] = useState(true);
   const [isBlocked, setIsBlocked] = useState(false);
   const ref = useRef(null);
@@ -35,4 +35,6 @@ export default function Prac10() {
       )}
     </>
   );
-}
+};
+
+export default Prac10;

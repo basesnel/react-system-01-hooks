@@ -30,7 +30,7 @@ const InputWithRef = forwardRef((props, ref) => {
   );
 });
 
-export default function Task08() {
+const Task08 = () => {
   const inputRef = useRef(null);
 
   return (
@@ -50,7 +50,7 @@ export default function Task08() {
       />
     </FlexBox>
   );
-}
+};
 
 InputWithRef.propTypes = {
   inputType: PropTypes.string.isRequired,
@@ -65,3 +65,5 @@ InputWithRef.defaultProps = {
   inputPlaceholder: null,
   icon: null,
 };
+
+export default Task08;

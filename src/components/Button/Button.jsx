@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Button.module.css';
 
-export default function Button(props) {
+const Button = props => {
   const { type, caption, onClick, isDisabled, ...delegated } = props;
   const { button } = css;
 
@@ -17,7 +17,7 @@ export default function Button(props) {
       {caption}
     </button>
   );
-}
+};
 
 Button.propTypes = {
   type: PropTypes.oneOf(['button', 'submit']),
@@ -33,3 +33,5 @@ Button.defaultProps = {
   isDisabled: null,
   delegated: null,
 };
+
+export default Button;

@@ -5,7 +5,7 @@ import { RiAddCircleFill } from 'react-icons/ri';
 
 import MiniForm from 'components/MiniForm';
 
-export default function AddTodo(props) {
+const AddTodo = props => {
   const { onAddTodo } = props;
 
   const [title, setTitle] = useState('');
@@ -22,8 +22,10 @@ export default function AddTodo(props) {
       />
     </>
   );
-}
+};
 
 AddTodo.propTypes = {
   onAddTodo: PropTypes.func.isRequired,
 };
+
+export default AddTodo;

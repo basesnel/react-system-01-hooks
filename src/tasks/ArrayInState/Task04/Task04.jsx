@@ -1,17 +1,18 @@
 import { useImmer } from 'use-immer';
+import { nanoid } from 'nanoid';
 
 import AddTodo from '../intendedComponents/AddTodo';
 import TaskList from '../intendedComponents/TaskList';
 
 import { initialTodosList } from 'constants';
 
-export default function Task04() {
+const Task04 = () => {
   const [todos, updateTodos] = useImmer(initialTodosList);
 
   const handleAddTodo = title => {
     updateTodos(draft => {
       draft.push({
-        id: todos.length,
+        id: nanoid(),
         title: title,
         done: false,
       });
@@ -40,4 +41,6 @@ export default function Task04() {
       />
     </>
   );
-}
+};
+
+export default Task04;

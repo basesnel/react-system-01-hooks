@@ -14,7 +14,7 @@ import IconButton from 'components/IconButton';
 import Input from 'components/Input';
 import ItemCheckedText from 'components/ItemCheckedText';
 
-export default function TaskList(props) {
+const TaskList = props => {
   const { todos, onChangeTodo, onDeleteTodo } = props;
 
   return (
@@ -26,9 +26,9 @@ export default function TaskList(props) {
       ))}
     </List>
   );
-}
+};
 
-function Task(props) {
+const Task = props => {
   const { todo, onChange, onDelete } = props;
 
   const [isEditing, setIsEditing] = useState(false);
@@ -88,7 +88,7 @@ function Task(props) {
       />
     </ItemLabel>
   );
-}
+};
 
 TaskList.propTypes = {
   todos: PropTypes.arrayOf(
@@ -111,3 +111,5 @@ Task.propTypes = {
   onChange: PropTypes.func.isRequired,
   onDelete: PropTypes.func.isRequired,
 };
+
+export default TaskList;

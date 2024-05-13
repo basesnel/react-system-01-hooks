@@ -11,7 +11,7 @@ import IconButton from 'components/IconButton';
 
 import { initialProductsList } from 'constants';
 
-export default function Task02() {
+const Task02 = () => {
   const [products, setProducts] = useState(initialProductsList);
 
   const handleIncreaseClick = productId => {
@@ -71,4 +71,6 @@ export default function Task02() {
       ))}
     </List>
   );
-}
+};
+
+export default Task02;

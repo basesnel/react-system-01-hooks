@@ -4,7 +4,7 @@ import Span from 'components/Span';
 
 import css from './CheckBox.module.css';
 
-export default function CheckBox(props) {
+const CheckBox = props => {
   const { name, checked, onChange, label } = props;
   const { field, check } = css;
 
@@ -20,7 +20,7 @@ export default function CheckBox(props) {
       <Span>{label}</Span>
     </label>
   );
-}
+};
 
 CheckBox.propTypes = {
   name: PropTypes.string.isRequired,
@@ -28,3 +28,5 @@ CheckBox.propTypes = {
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
 };
+
+export default CheckBox;

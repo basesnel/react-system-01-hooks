@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import css from './CustomLoader.module.css';
 
-export default function CustomLoader() {
+const CustomLoader = () => {
   const { spinner, iconSpin } = css;
 
   return (
@@ -12,4 +12,6 @@ export default function CustomLoader() {
       <ImSpinner className={iconSpin} /> <Paragraph>Loading...</Paragraph>
     </div>
   );
-}
+};
+
+export default CustomLoader;

@@ -11,7 +11,7 @@ import Button from 'components/Button';
 
 import css from './AppBar.module.css';
 
-export default function AppBar() {
+const AppBar = () => {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
   const { appBar } = css;
 
@@ -31,4 +31,6 @@ export default function AppBar() {
       </Container>
     </header>
   );
-}
+};
+
+export default AppBar;

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import css from './Container.module.css';
 
-export default function Container(props) {
+const Container = props => {
   const { variant, children } = props;
   const { container } = css;
   const variation = variant ? `${css[variant]}` : '';
@@ -12,7 +12,7 @@ export default function Container(props) {
       {children}
     </div>
   );
-}
+};
 
 Container.propTypes = {
   variant: PropTypes.string,
@@ -22,3 +22,5 @@ Container.propTypes = {
 Container.defaultProps = {
   variant: null,
 };
+
+export default Container;

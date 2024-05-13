@@ -4,7 +4,7 @@ import Title from 'components/Title';
 
 import css from './Card.module.css';
 
-export default function Card(props) {
+const Card = props => {
   const { title, children } = props;
   const { card, cardHeader, cardContent } = css;
 
@@ -16,9 +16,11 @@ export default function Card(props) {
       <div className={cardContent}>{children}</div>
     </div>
   );
-}
+};
 
 Card.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.any.isRequired,
 };
+
+export default Card;

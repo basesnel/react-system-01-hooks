@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import PokemonInfo from 'tasks/Pokemon/PokemonInfo';
 import SearchBar from 'components/SearchBar';
+import PokemonInfo from 'tasks/Pokemon/PokemonInfo';
 
 const Pokemon = () => {
   const [pokemonName, setPokemonName] = useState('');

@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import Caption from 'components/Caption';
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
 
-export default function FixRequestCounter() {
+import Caption from 'components/Caption';
+import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
+
+const FixRequestCounter = () => {
   const [pending, setPending] = useState(0);
   const [completed, setCompleted] = useState(0);
-
-  // Task is completed.
 
   async function handleClick() {
     setPending(p => p + 1);
@@ -25,10 +24,12 @@ export default function FixRequestCounter() {
       </FlexBox>
     </>
   );
-}
+};
 
 function delay(ms) {
   return new Promise(resolve => {
     setTimeout(resolve, ms);
   });
 }
+
+export default FixRequestCounter;

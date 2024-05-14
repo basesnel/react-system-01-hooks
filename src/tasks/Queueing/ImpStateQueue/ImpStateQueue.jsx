@@ -7,7 +7,7 @@ function increment(n) {
 }
 increment.toString = () => 'n => n+1';
 
-export default function ImpStateQueue() {
+const ImpStateQueue = () => {
   return (
     <>
       <TestCase baseState={0} queue={[1, 1, 1]} expected={1} />
@@ -23,9 +23,11 @@ export default function ImpStateQueue() {
       <TestCase baseState={0} queue={[5, increment, 42]} expected={42} />
     </>
   );
-}
+};
 
-function TestCase({ baseState, queue, expected }) {
+const TestCase = props => {
+  const { baseState, queue, expected } = props;
+
   const actual = getFinalState(baseState, queue);
 
   return (
@@ -45,10 +47,16 @@ function TestCase({ baseState, queue, expected }) {
       </p>
     </>
   );
-}
+};
 
 TestCase.propTypes = {
-  baseState: PropTypes.number,
-  queue: PropTypes.arrayOf(any),
+  baseState: PropTypes.number.isRequired,
+  queue: PropTypes.arrayOf(any).isRequired,
   expect: PropTypes.number,
 };
+
+TestCase.defaultProps = {
+  expect: null,
+};
+
+export default ImpStateQueue;

@@ -8,9 +8,7 @@ import Input from 'components/Input';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-// import css from './SignupForm.module.css';
-
-export default function SignupForm() {
+const SignupForm = () => {
   // case lazy init state:
   // ===================================================================
   // const localStorageState = () => {
@@ -93,4 +91,6 @@ export default function SignupForm() {
       </FlexBox>
     </Form>
   );
-}
+};
+
+export default SignupForm;

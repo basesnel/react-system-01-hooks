@@ -6,6 +6,9 @@ import CustomLoader from 'components/CustomLoader';
 import Button from 'components/Button';
 
 import css from './News.module.css';
+import List from 'components/List';
+import Item from 'components/Item';
+import FlexBox from 'components/FlexBox';
 
 axios.defaults.headers.common['Authorization'] =
   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';
@@ -22,7 +25,9 @@ const fetchArticles = ({
     .then(response => response.data.articles);
 };
 
-export default function News() {
+const News = () => {
+  const { link } = css;
+
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -83,43 +88,45 @@ export default function News() {
   return (
     <>
       <SearchBar onFormSubmit={onHandleSubmit} />
-      <ul className={css.list}>
+      <List>
         {articles.map(({ title, url }) => (
-          <li key={title} className={css.item}>
+          <Item key={title}>
             <a
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={css.link}
+              className={link}
             >
               {title}
             </a>
-          </li>
+          </Item>
         ))}
-      </ul>
+      </List>
 
       {error && (
-        <div className={css.wrapper}>
+        <FlexBox>
           <p>Oops.. error of request!</p>
-        </div>
+        </FlexBox>
       )}
 
       {shouldRenderLoadMoreButton && (
-        <div className={css.wrapper}>
+        <FlexBox>
           <Button
             caption="Load more"
             onClick={() =>
               setCurrentPage(prevCurrentPage => prevCurrentPage + 1)
             }
           />
-        </div>
+        </FlexBox>
       )}
 
       {isLoading && (
-        <div className={css.wrapper}>
+        <FlexBox>
           <CustomLoader />
-        </div>
+        </FlexBox>
       )}
     </>
   );
-}
+};
+
+export default News;

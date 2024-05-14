@@ -11,11 +11,3 @@
 .item:hover .link {
   color: var(--color-accent);
 }
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 20px 0;
-}

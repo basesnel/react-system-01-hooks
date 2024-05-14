@@ -8,7 +8,7 @@ import FlexBox from 'components/FlexBox';
 import TextArea from 'components/TextArea';
 import Title from 'components/Title';
 
-export default function Task04() {
+const Task04 = () => {
   const [showForm, setShowForm] = useState(false);
   const [message, setMessage] = useState('');
 
@@ -50,8 +50,10 @@ export default function Task04() {
       </FlexBox>
     </Form>
   );
-}
+};
 
 function sendMessage(message) {
   toast.info(`Sending message: ${message}`);
 }
+
+export default Task04;

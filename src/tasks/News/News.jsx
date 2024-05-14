@@ -1,17 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
 
 import SearchBar from 'components/SearchBar';
-import CustomLoader from 'components/CustomLoader';
-import Button from 'components/Button';
+import List from 'components/List';
+import Item from 'components/Item';
 import FlexBox from 'components/FlexBox';
+import Button from 'components/Button';
+import CustomLoader from 'components/CustomLoader';
 
 import { fetchArticles } from 'services/news-api';
 
 import css from './News.module.css';
-import List from 'components/List';
-import Item from 'components/Item';
 
-export default function News() {
+const News = () => {
+  const { link } = css;
+
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -57,7 +59,7 @@ export default function News() {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={css.link}
+              className={link}
             >
               {title}
             </a>
@@ -87,4 +89,6 @@ export default function News() {
       )}
     </>
   );
-}
+};
+
+export default News;

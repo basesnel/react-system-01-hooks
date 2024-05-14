@@ -4,7 +4,7 @@ import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
 import Form from 'components/Form';
 import Input from 'components/Input';
-import DecoratedFigure from '../IntendendComponents/DecoratedFigure';
+import Figure from '../IntendendComponents/Figure';
 
 import { initialThirdPerson } from 'constants';
 import FieldOverlay from '../IntendendComponents/FieldOverlay';
@@ -86,7 +86,7 @@ export default function Prac03() {
             icon={<FiImage />}
           />
         </FieldOverlay>
-        <DecoratedFigure
+        <Figure
           picture={person.artwork.image}
           alt={person.artwork.title}
           caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}

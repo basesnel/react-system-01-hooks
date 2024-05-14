@@ -2,10 +2,15 @@ import PropTypes from 'prop-types';
 
 import css from './FieldOverlay.module.css';
 
-export default function FieldOverlay({ children }) {
-  return <div className={css['field-overlay']}>{children}</div>;
-}
+const FieldOverlay = props => {
+  const { children } = props;
+  const { fieldOverlay } = css;
+
+  return <div className={fieldOverlay}>{children}</div>;
+};
 
 FieldOverlay.propTypes = {
   children: PropTypes.any.isRequired,
 };
+
+export default FieldOverlay;

@@ -1,6 +1,6 @@
-@value figure from "../DecoratedFigure/DecoratedFigure.module.css";
+@value figure from "../Figure/Figure.module.css";
 
-.field-overlay:hover ~ .figure {
+.fieldOverlay:hover ~ .figure {
   transform: translate(-50%, -70%) scale(1);
   visibility: visible;
   opacity: 1;

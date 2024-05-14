@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { MdOutlineSelectAll } from 'react-icons/md';
 
-import DecoratedWrapper from '../IntendendComponents/DecoratedWrapper';
+import Wrapper from '../IntendendComponents/Wrapper';
 import Background from '../IntendendComponents/Background';
 import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
@@ -32,7 +32,7 @@ const Task02 = () => {
   };
 
   return (
-    <DecoratedWrapper>
+    <Wrapper>
       <FlexBox>
         <Select
           selectName="Color"
@@ -46,7 +46,7 @@ const Task02 = () => {
       <Box color={shape.color} position={shape.position} onMove={handleMove}>
         Drag me!
       </Box>
-    </DecoratedWrapper>
+    </Wrapper>
   );
 };
 

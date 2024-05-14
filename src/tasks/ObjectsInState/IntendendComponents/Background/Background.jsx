@@ -2,7 +2,10 @@ import PropTypes from 'prop-types';
 
 import css from './Background.module.css';
 
-export default function Background({ position }) {
+const Background = props => {
+  const { position } = props;
+  const { background } = css;
+
   return (
     <div
       style={{
@@ -12,11 +15,14 @@ export default function Background({ position }) {
         height: 250,
         backgroundColor: 'rgba(200, 200, 0, 0.2)',
       }}
-      className={css.background}
+      className={background}
     />
   );
-}
+};
 
 Background.propTypes = {
-  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number }),
+  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number })
+    .isRequired,
 };
+
+export default Background;

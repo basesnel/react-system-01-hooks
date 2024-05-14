@@ -2,7 +2,9 @@ import PropTypes from 'prop-types';
 
 import { useState } from 'react';
 
-export default function Box({ children, color, position, onMove }) {
+const Box = props => {
+  const { children, color, position, onMove } = props;
+
   const [lastCoordinates, setLastCoordinates] = useState(null);
 
   const handlePointerDown = e => {
@@ -50,11 +52,14 @@ export default function Box({ children, color, position, onMove }) {
       {children}
     </div>
   );
-}
+};
 
 Box.propTypes = {
   children: PropTypes.any.isRequired,
   color: PropTypes.string.isRequired,
-  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number }),
+  position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number })
+    .isRequired,
   onMove: PropTypes.func.isRequired,
 };
+
+export default Box;

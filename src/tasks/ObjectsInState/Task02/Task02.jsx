@@ -11,7 +11,7 @@ import { initialPosition, colorOptions } from 'constants';
 
 const initPosition = { ...initialPosition };
 
-export default function Task02() {
+const Task02 = () => {
   const [shape, setShape] = useState({
     color: 'orange',
     position: initPosition,
@@ -48,4 +48,6 @@ export default function Task02() {
       </Box>
     </DecoratedWrapper>
   );
-}
+};
+
+export default Task02;

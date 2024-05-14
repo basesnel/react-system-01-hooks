@@ -6,10 +6,11 @@ import Form from 'components/Form';
 import Input from 'components/Input';
 import Figure from '../IntendendComponents/Figure';
 
-import { initialThirdPerson } from 'constants';
 import FieldOverlay from '../IntendendComponents/FieldOverlay';
 
-export default function Prac03() {
+import { initialThirdPerson } from 'constants';
+
+const Prac03 = () => {
   const [person, setPerson] = useState(initialThirdPerson);
 
   const handleNameChange = e => {
@@ -94,4 +95,6 @@ export default function Prac03() {
       </Form>
     </>
   );
-}
+};
+
+export default Prac03;

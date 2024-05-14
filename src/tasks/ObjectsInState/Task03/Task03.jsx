@@ -6,10 +6,11 @@ import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
 import Select from 'components/Select';
 
-import { initialPosition, colorOptions } from 'constants';
 import Wrapper from '../IntendendComponents/Wrapper';
 
-export default function Task03() {
+import { initialPosition, colorOptions } from 'constants';
+
+const Task03 = () => {
   const [shape, updateShape] = useImmer({
     color: 'orange',
     position: initialPosition,
@@ -45,4 +46,6 @@ export default function Task03() {
       </Box>
     </Wrapper>
   );
-}
+};
+
+export default Task03;

@@ -6,10 +6,11 @@ import Form from 'components/Form';
 import Input from 'components/Input';
 import Figure from '../IntendendComponents/Figure';
 
-import { initialThirdPerson } from 'constants';
 import FieldOverlay from '../IntendendComponents/FieldOverlay';
 
-export default function Prac04() {
+import { initialThirdPerson } from 'constants';
+
+const Prac04 = () => {
   const [person, updatePerson] = useImmer(initialThirdPerson);
 
   const handleNameChange = e => {
@@ -81,4 +82,6 @@ export default function Prac04() {
       </Form>
     </>
   );
-}
+};
+
+export default Prac04;

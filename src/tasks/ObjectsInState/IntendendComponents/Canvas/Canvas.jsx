@@ -16,6 +16,11 @@ const Canvas = props => {
 Canvas.propTypes = {
   children: PropTypes.any.isRequired,
   onPointerMove: PropTypes.func.isRequired,
+  delegated: PropTypes.any,
+};
+
+Canvas.defaultProps = {
+  delegated: null,
 };
 
 export default Canvas;

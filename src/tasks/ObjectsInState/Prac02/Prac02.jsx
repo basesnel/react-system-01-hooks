@@ -4,7 +4,7 @@ import Canvas from '../IntendendComponents/Canvas';
 
 import { initialPosition } from 'constants';
 
-export default function Prac02() {
+const Prac02 = () => {
   const [position, setPosition] = useState(initialPosition);
 
   const moveToCursor = e => {
@@ -31,4 +31,6 @@ export default function Prac02() {
       />
     </Canvas>
   );
-}
+};
+
+export default Prac02;

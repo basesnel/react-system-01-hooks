@@ -10,7 +10,9 @@ import { initialTaskFirstPerson } from 'constants';
 
 import css from './Task01.module.css';
 
-export default function Task01() {
+const Task01 = () => {
+  const { labelWrap} = css;
+
   const [player, setPlayer] = useState(initialTaskFirstPerson);
 
   const handlePlusClick = () => {
@@ -49,10 +51,12 @@ export default function Task01() {
         handleChange={handleLastNameChange}
         icon={<FiEdit3 />}
       />
-      <label className={css['label-wrap']}>
+      <label className={labelWrap}>
         Score: <b>{player.score}</b>{' '}
         <Button onClick={handlePlusClick} caption="+1" />
       </label>
     </Form>
   );
-}
+};
+
+export default Task01;

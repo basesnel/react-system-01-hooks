@@ -3,7 +3,7 @@ import { useState } from 'react';
 import PokemonInfo from 'tasks/Pokemon/PokemonInfo';
 import SearchBar from 'components/SearchBar';
 
-export default function Pokemon() {
+const Pokemon = () => {
   const [pokemonName, setPokemonName] = useState('');
 
   return (
@@ -12,4 +12,6 @@ export default function Pokemon() {
       <PokemonInfo pokemonName={pokemonName} />
     </>
   );
-}
+};
+
+export default Pokemon;

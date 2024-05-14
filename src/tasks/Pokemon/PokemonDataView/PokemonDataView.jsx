@@ -5,16 +5,19 @@ import Title from 'components/Title';
 
 import css from './PokemonDataView.module.css';
 
-export default function PokemonDataView({ pokemon, ...delegated }) {
+const PokemonDataView = props => {
+  const { pokemon, ...delegated } = props;
+  const { box, thumb } = css;
+
   const { sprites, name, stats } = pokemon;
 
   return (
-    <div className={css.box} {...delegated}>
+    <div className={box} {...delegated}>
       <Image
         src={sprites.other['official-artwork'].front_default}
         desc={name}
       />
-      <div className={css.thumb}>
+      <div className={thumb}>
         <Title level={3} caption={name} />
         <ul>
           {stats.map(entry => (
@@ -26,9 +29,15 @@ export default function PokemonDataView({ pokemon, ...delegated }) {
       </div>
     </div>
   );
-}
+};
 
 PokemonDataView.propTypes = {
   pokemon: PropTypes.object.isRequired,
   delegated: PropTypes.any,
 };
+
+PokemonDataView.defaultProps = {
+  delegated: null,
+};
+
+export default PokemonDataView;

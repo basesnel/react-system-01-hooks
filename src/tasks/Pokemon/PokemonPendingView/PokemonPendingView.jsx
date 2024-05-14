@@ -8,7 +8,10 @@ import Paragraph from 'components/Paragraph';
 
 import css from './PokemonPendingView.module.css';
 
-export default function PokemonPendingView({ pokemonName }) {
+const PokemonPendingView = props => {
+  const { pokemonName } = props;
+  const { box, spinner, iconSpin } = css;
+
   const pokemon = {
     name: pokemonName,
     sprites: {
@@ -22,16 +25,17 @@ export default function PokemonPendingView({ pokemonName }) {
   };
 
   return (
-    <div className={css.box}>
-      <div className={css.spinner}>
-        <ImSpinner className={css['icon-spin']} />{' '}
-        <Paragraph>Loading...</Paragraph>
+    <div className={box}>
+      <div className={spinner}>
+        <ImSpinner className={iconSpin} /> <Paragraph>Loading...</Paragraph>
       </div>
       <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>
   );
-}
+};
 
 PokemonPendingView.propTypes = {
   pokemonName: PropTypes.string.isRequired,
 };
+
+export default PokemonPendingView;

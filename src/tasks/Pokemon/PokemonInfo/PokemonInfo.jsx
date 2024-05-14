@@ -16,7 +16,9 @@ const Status = {
   REJECTED: 'rejected',
 };
 
-export default function PokemonInfo({ pokemonName }) {
+const PokemonInfo = props => {
+  const { pokemonName } = props;
+
   const [pokemon, setPokemon] = useState(null);
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(Status.IDLE);
@@ -57,8 +59,10 @@ export default function PokemonInfo({ pokemonName }) {
     default:
       return null;
   }
-}
+};
 
 PokemonInfo.propTypes = {
   pokemonName: PropTypes.string.isRequired,
 };
+
+export default PokemonInfo;

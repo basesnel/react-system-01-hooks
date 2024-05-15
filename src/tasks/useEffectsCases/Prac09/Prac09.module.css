@@ -1,0 +1,5 @@
+.wrapper {
+  position: absolute;
+  z-index: 1999;
+  width: calc(100% - 20px);
+}

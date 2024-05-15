@@ -1,17 +1,17 @@
 import { useState, useEffect } from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
-import { createConnection } from 'constants';
 
+import FlexBox from 'components/FlexBox';
 import Input from 'components/Input';
 import Title from 'components/Title';
 import Button from 'components/Button';
 
-import FlexBox from 'components/FlexBox';
+import { createConnection } from 'constants';
 
 const serverUrl = 'http://localhost:1234';
 const roomId = 'music';
 
-function ChatRoom() {
+const ChatRoom = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -33,9 +33,9 @@ function ChatRoom() {
       />
     </>
   );
-}
+};
 
-export default function Prac12() {
+const Prac12 = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -50,4 +50,6 @@ export default function Prac12() {
       {show && <ChatRoom />}
     </>
   );
-}
+};
+
+export default Prac12;

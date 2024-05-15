@@ -9,7 +9,7 @@ import { fetchBio } from 'services/fetchBio';
 
 import { personList } from 'constants';
 
-export default function Prac10() {
+const Prac10 = () => {
   const [person, setPerson] = useState('Alice');
   const [bio, setBio] = useState(null);
 
@@ -45,4 +45,6 @@ export default function Prac10() {
       <Paragraph>{bio ?? 'Loading...'}</Paragraph>
     </>
   );
-}
+};
+
+export default Prac10;

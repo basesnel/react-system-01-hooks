@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Canvas from '../IntendendComponents/Canvas';
+import Canvas from 'components/Canvas';
 
 import { initialPosition } from 'constants';
 

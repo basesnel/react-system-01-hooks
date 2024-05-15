@@ -1,8 +1,9 @@
 import { useEffect, useState, useRef } from 'react';
+
 import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 
-export default function SkipFirstRender() {
+const SkipFirstRender = () => {
   const [count, setCount] = useState(0);
   const isFirstRender = useRef(true);
 
@@ -26,4 +27,6 @@ export default function SkipFirstRender() {
       </Paragraph>
     </div>
   );
-}
+};
+
+export default SkipFirstRender;

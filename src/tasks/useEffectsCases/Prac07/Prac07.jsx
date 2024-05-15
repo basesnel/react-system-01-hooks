@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useWindowListener } from './useWindowListener';
-import Canvas from 'tasks/useEffectsCases/IntendendComponents/Canvas';
+import Canvas from 'components/Canvas';
 
 export default function Prac07() {
   const [position, setPosition] = useState({ x: 0, y: 0 });

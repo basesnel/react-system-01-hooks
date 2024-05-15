@@ -15,11 +15,12 @@ const Canvas = props => {
 
 Canvas.propTypes = {
   children: PropTypes.any.isRequired,
-  onPointerMove: PropTypes.func.isRequired,
+  onPointerMove: PropTypes.func,
   delegated: PropTypes.any,
 };
 
 Canvas.defaultProps = {
+  onPointerMove: null,
   delegated: null,
 };
 

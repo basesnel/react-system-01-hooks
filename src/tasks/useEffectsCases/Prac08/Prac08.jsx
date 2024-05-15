@@ -3,7 +3,7 @@ import Box from './Box';
 
 import LongSection from '../IntendendComponents/LongSection';
 
-export default function Prac08() {
+const Prac08 = () => {
   return (
     <HideOverflow>
       <LongSection />
@@ -13,20 +13,6 @@ export default function Prac08() {
       <LongSection />
     </HideOverflow>
   );
-}
+};
 
-// function LongSection() {
-//   const items = [];
-
-//   for (let i = 0; i < 50; i++) {
-//     items.push(
-//       <Item key={i}>
-//         <ItemFlex>
-//           <ItemText content="Item #{i} (keep scrolling)" />
-//         </ItemFlex>
-//       </Item>
-//     );
-//   }
-
-//   return <List message="No element is in the list...">{items}</List>;
-// }
+export default Prac08;

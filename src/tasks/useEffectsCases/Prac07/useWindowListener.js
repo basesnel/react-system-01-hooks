@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export function useWindowListener(eventType, listener) {
+export const useWindowListener = (eventType, listener) => {
   useEffect(() => {
     const canvas = document.querySelector('[data-xob]');
     canvas.addEventListener(eventType, listener);
@@ -9,4 +9,4 @@ export function useWindowListener(eventType, listener) {
       canvas.removeEventListener(eventType, listener);
     };
   }, [eventType, listener]);
-}
+};

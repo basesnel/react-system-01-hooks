@@ -3,7 +3,7 @@ import Box from './Box';
 
 import LongSection from '../IntendendComponents/LongSection';
 
-export default function Prac05() {
+const Prac05 = () => {
   return (
     <HideOverflow>
       <LongSection />
@@ -13,4 +13,6 @@ export default function Prac05() {
       <LongSection />
     </HideOverflow>
   );
-}
+};
+
+export default Prac05;

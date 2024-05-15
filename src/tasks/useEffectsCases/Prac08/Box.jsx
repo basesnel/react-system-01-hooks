@@ -1,7 +1,8 @@
 import { useEffect, useRef } from 'react';
+
 import { useIntersectionObserver } from './useIntersectionObserver';
 
-export default function Box() {
+const Box = () => {
   const ref = useRef(null);
   const isIntersecting = useIntersectionObserver(ref);
 
@@ -36,4 +37,6 @@ export default function Box() {
       }}
     />
   );
-}
+};
+
+export default Box;

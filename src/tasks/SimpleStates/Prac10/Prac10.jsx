@@ -7,21 +7,14 @@ import Button from 'components/Button';
 import Paragraph from 'components/Paragraph';
 import Input from 'components/Input';
 
-export default function Prac10() {
+const Prac10 = () => {
   const [version, setVersion] = useState(0);
 
-  function handleReset() {
+  const handleReset = () => {
     setVersion(version + 1);
-  }
+  };
 
-  return (
-    <FlexBox>
-      <Button caption="Reset" onClick={handleReset} />
-      <Form key={version} />
-    </FlexBox>
-  );
-
-  function Form() {
+  const Form = () => {
     const [name, setName] = useState('Taylor');
 
     return (
@@ -37,5 +30,14 @@ export default function Prac10() {
         <Paragraph>Hello, {name}.</Paragraph>
       </>
     );
-  }
-}
+  };
+
+  return (
+    <FlexBox>
+      <Button caption="Reset" onClick={handleReset} />
+      <Form key={version} />
+    </FlexBox>
+  );
+};
+
+export default Prac10;

@@ -16,7 +16,7 @@ const countReducer = (state, action) => {
   }
 };
 
-export default function Prac04() {
+const Prac04 = () => {
   const [state, dispatch] = useReducer(countReducer, { countR: 0 });
 
   return (
@@ -31,4 +31,6 @@ export default function Prac04() {
       />
     </FlexBox>
   );
-}
+};
+
+export default Prac04;

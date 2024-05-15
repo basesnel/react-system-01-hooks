@@ -4,7 +4,7 @@ import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 import Caption from 'components/Caption';
 
-export default function Prac06() {
+const Prac06 = () => {
   const [numberB, setNumberB] = useState(0);
 
   return (
@@ -21,4 +21,6 @@ export default function Prac06() {
       <Caption text={`number B: ${numberB.toString()}`} />
     </>
   );
-}
+};
+
+export default Prac06;

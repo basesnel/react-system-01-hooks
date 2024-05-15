@@ -3,7 +3,7 @@ import { useState } from 'react';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-export default function Prac01() {
+const Prac01 = () => {
   return (
     <FlexBox>
       <ButtonCount />
@@ -13,9 +13,9 @@ export default function Prac01() {
       <ButtonCount />
     </FlexBox>
   );
-}
+};
 
-function ButtonCount() {
+const ButtonCount = () => {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -23,4 +23,6 @@ function ButtonCount() {
   }
 
   return <Button caption={`Clicked ${count} times`} onClick={handleClick} />;
-}
+};
+
+export default Prac01;

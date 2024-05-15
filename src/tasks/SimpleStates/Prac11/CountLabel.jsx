@@ -3,7 +3,9 @@ import { useState } from 'react';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 
-export default function CountLabel({ count }) {
+const CountLabel = props => {
+  const { count } = props;
+
   const [prevCount, setPrevCount] = useState(count);
   const [trend, setTrend] = useState(null);
 
@@ -18,4 +20,6 @@ export default function CountLabel({ count }) {
       {trend && <Paragraph>The count is {trend}</Paragraph>}
     </>
   );
-}
+};
+
+export default CountLabel;

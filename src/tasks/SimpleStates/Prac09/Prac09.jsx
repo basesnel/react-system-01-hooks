@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
 import MiniForm from 'components/MiniForm';
+import HideOverflow from 'components/HideOverflow';
 import List from 'components/List';
 import Item from 'components/Item';
 import ItemFlex from 'components/ItemFlex';
 import ItemText from 'components/ItemText';
-import HideOverflow from 'components/HideOverflow';
 
 function createInitialTodos() {
   const initialTodos = [];
@@ -19,7 +19,7 @@ function createInitialTodos() {
   return initialTodos;
 }
 
-export default function Prac09() {
+const Prac09 = () => {
   const [todos, setTodos] = useState(createInitialTodos());
   const [text, setText] = useState('');
 
@@ -47,4 +47,6 @@ export default function Prac09() {
       </HideOverflow>
     </>
   );
-}
+};
+
+export default Prac09;

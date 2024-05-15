@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-export default function Prac03() {
+const Prac03 = () => {
   const [counterA, setCounterA] = useState(0);
   const [counterB, setCounterB] = useState(0);
 
@@ -37,4 +37,6 @@ export default function Prac03() {
       </FlexBox>
     </>
   );
-}
+};
+
+export default Prac03;

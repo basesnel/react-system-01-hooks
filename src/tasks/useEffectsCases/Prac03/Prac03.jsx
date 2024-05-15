@@ -4,7 +4,7 @@ import { FadeInAnimation } from './animation';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
-function Welcome() {
+const Welcome = () => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -33,7 +33,7 @@ function Welcome() {
   );
 }
 
-export default function Prac03() {
+const Prac03 = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -48,3 +48,5 @@ export default function Prac03() {
     </>
   );
 }
+
+export default Prac03;

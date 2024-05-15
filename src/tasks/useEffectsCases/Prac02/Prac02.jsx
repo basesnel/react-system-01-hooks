@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
+
 import Canvas from 'components/Canvas';
 
-export default function Prac02() {
+const Prac02 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -39,4 +40,6 @@ export default function Prac02() {
       />
     </Canvas>
   );
-}
+};
+
+export default Prac02;

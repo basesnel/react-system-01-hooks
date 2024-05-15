@@ -4,7 +4,7 @@ import ModalDialog from './ModalDialog';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-export default function Prac04() {
+const Prac04 = () => {
   const [show, setShow] = useState(false);
 
   return (
@@ -29,4 +29,6 @@ export default function Prac04() {
       </ModalDialog>
     </>
   );
-}
+};
+
+export default Prac04;

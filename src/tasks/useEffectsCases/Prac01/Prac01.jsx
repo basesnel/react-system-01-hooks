@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
+
 import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
-import { createConnection } from 'constants';
 
 import Input from 'components/Input';
 import Title from 'components/Title';
@@ -10,9 +10,12 @@ import Select from 'components/Select';
 import Button from 'components/Button';
 import FlexBox from 'components/FlexBox';
 
+import { createConnection } from 'constants';
 import { chatRoom } from 'constants';
 
-function ChatRoom({ roomId }) {
+const ChatRoom = props => {
+  const { roomId } = props;
+
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');
 
   useEffect(() => {
@@ -37,9 +40,9 @@ function ChatRoom({ roomId }) {
       <Title level={3} caption={`Welcome to the ${roomId} room!`} />
     </FlexBox>
   );
-}
+};
 
-export default function Prac01() {
+const Prac01 = () => {
   const [roomId, setRoomId] = useState('general');
   const [show, setShow] = useState(false);
 
@@ -63,8 +66,10 @@ export default function Prac01() {
       {show && <ChatRoom roomId={roomId} />}
     </>
   );
-}
+};
 
 ChatRoom.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
+
+export default Prac01;

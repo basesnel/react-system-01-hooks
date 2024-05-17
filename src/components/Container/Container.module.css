@@ -24,6 +24,12 @@
   }
 }
 
+@media desktop-to {
+  .container {
+    max-width: 1200px;
+  }
+}
+
 .container.navigation {
   margin: 0 auto;
 }
@@ -32,11 +38,5 @@
   .container.navigation {
     display: flex;
     justify-content: space-between;
-  }
-}
-
-@media desktop-to {
-  .container {
-    max-width: 1200px;
   }
 }

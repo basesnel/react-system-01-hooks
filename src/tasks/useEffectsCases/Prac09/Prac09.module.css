@@ -1,5 +1,16 @@
-.wrapper {
+/* .wrapper {
   position: absolute;
   z-index: 1999;
   width: calc(100% - 20px);
+} */
+
+.wrapControls {
+  position: relative;
+  content: '';
+  z-index: 1999;
+}
+
+.wrapper {
+  position: absolute;
+  width: 100%;
 }

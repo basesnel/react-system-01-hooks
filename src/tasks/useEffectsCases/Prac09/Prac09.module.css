@@ -1,16 +1,11 @@
-/* .wrapper {
-  position: absolute;
-  z-index: 1999;
-  width: calc(100% - 20px);
-} */
-
-.wrapControls {
+.wrapper {
   position: relative;
-  content: '';
-  z-index: 1999;
+  height: 100%;
 }
 
-.wrapper {
+.wrapControls {
   position: absolute;
+  z-index: 1999;
   width: 100%;
+  background-color: #e0e0e080;
 }

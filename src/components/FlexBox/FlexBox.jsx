@@ -5,6 +5,7 @@ import css from './FlexBox.module.css';
 const FlexBox = props => {
   const { align, children } = props;
   const { flexBox } = css;
+
   const alignItems = align ? `${css[align]}` : '';
 
   return <div className={`${flexBox} ${alignItems}`}>{children}</div>;

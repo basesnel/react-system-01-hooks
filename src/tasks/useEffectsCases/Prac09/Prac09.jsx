@@ -12,7 +12,7 @@ import Map from './Map';
 import css from './Prac09.module.css';
 
 const Prac09 = () => {
-  const { wrapper, wrapControls } = css;
+  const { wrapper, wrapControls, wrapMap } = css;
 
   const [zoomLevel, setZoomLevel] = useState(0);
   return (
@@ -36,7 +36,9 @@ const Prac09 = () => {
           />
         </FlexBox>
       </div>
-      <Map zoomLevel={zoomLevel} />
+      <div className={wrapMap}>
+        <Map zoomLevel={zoomLevel} />
+      </div>
     </div>
   );
 };

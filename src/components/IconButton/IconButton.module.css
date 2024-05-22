@@ -1,5 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+@value mobile-to from sizes;
+@value visuallyHidden from "../../cssutils/utils.module.css";
 
 .button {
   position: relative;
@@ -38,16 +39,9 @@
   }
 }
 
-.visuallyHidden {
-  position: absolute;
-  white-space: nowrap;
+.button .visuallyHidden {
   width: 24px;
   height: 24px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  color: transparent;
-  margin: -1px;
 }
 
 @media mobile-to {

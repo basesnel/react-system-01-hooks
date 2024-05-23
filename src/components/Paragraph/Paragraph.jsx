@@ -5,6 +5,7 @@ import css from './Paragraph.module.css';
 const Paragraph = props => {
   const { centered, paragraphRef, children } = props;
   const { text, centeredText } = css;
+
   return (
     <p
       className={centered ? `${text} ${centeredText}` : text}

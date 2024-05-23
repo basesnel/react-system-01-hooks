@@ -24,6 +24,10 @@
 
   --overlay: rgba(0, 0, 0, 0.2);
 
+  --box-shadow1: rgba(0, 0, 0, 0.12);
+  --box-shadow2: rgba(0, 0, 0, 0.14);
+  --box-shadow3: rgba(0, 0, 0, 0.2);
+
   --my-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1) all;
 
   --fs-text-mobile: 12px;

@@ -1,13 +1,13 @@
 import { useContext } from 'react';
 
-import authContext from 'contexts/auth/context';
-
 import Container from 'components/Container';
 import Logo from 'components/Logo';
 import NavBar from 'components/NavBar';
 import UserMenu from 'components/UserMenu';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
+
+import authContext from 'contexts/auth/context';
 
 import css from './AppBar.module.css';
 

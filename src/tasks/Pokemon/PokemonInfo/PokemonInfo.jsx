@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
-
 import { useEffect, useState } from 'react';
 
-import pokemonAPI from 'services/pokemon-api';
+import PropTypes from 'prop-types';
+
+import { fetchPokemon } from 'services/pokemon-api';
 
 import PokemonIdleView from '../PokemonIdleView';
 import PokemonPendingView from '../PokemonPendingView';
@@ -30,8 +30,7 @@ const PokemonInfo = props => {
 
     setStatus(Status.PENDING);
     setTimeout(() => {
-      pokemonAPI
-        .fetchPokemon(pokemonName)
+      fetchPokemon(pokemonName)
         .then(pokemon => {
           setPokemon(pokemon);
           setStatus(Status.RESOlVED);

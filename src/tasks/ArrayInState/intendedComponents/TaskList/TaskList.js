@@ -1,6 +1,6 @@
-import PropTypes from 'prop-types';
-
 import { useState } from 'react';
+
+import PropTypes from 'prop-types';
 
 import { RiSave3Fill } from 'react-icons/ri';
 import { RiFileEditFill } from 'react-icons/ri';

@@ -1,4 +1,4 @@
-export function catList(length) {
+const catList = length => {
   const list = [];
 
   for (let i = 0; i < length; i++) {
@@ -13,4 +13,6 @@ export function catList(length) {
   }
 
   return list;
-}
+};
+
+export { catList };

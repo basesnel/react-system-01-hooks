@@ -1,4 +1,4 @@
-export const initialCharacters = [
+const initialCharacters = [
   '(I Noldor) Finwe Noldoran',
   '(I Noldor) Miriel Perinde Serinde',
   '(I Noldor) Mahtan Aulendir (Urundil, Rusco)',
@@ -101,3 +101,5 @@ export const initialCharacters = [
   'Gandalf Olorin, Mithrandir, Incfanus, Tharkun, Greyhame, Old Greybeard, The Grey Pilgrim, Stormcrow, White Rider, Lathspell, the Wandering Wizard',
   'Gimli Elf-friend, Lockbearer',
 ];
+
+export { initialCharacters };

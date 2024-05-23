@@ -1,4 +1,4 @@
-export function createConnection(serverUrl, roomId) {
+const createConnection = (serverUrl, roomId) => {
   return {
     connect() {
       console.log(
@@ -9,4 +9,6 @@ export function createConnection(serverUrl, roomId) {
       console.log('❌ Disconnected from "' + roomId + '" room at ' + serverUrl);
     },
   };
-}
+};
+
+export { createConnection };

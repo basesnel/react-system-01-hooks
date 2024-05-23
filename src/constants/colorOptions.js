@@ -1,4 +1,4 @@
-export const colorOptions = [
+const colorOptions = [
   'orange',
   'lightpink',
   'aliceblue',
@@ -9,3 +9,5 @@ export const colorOptions = [
   'pink',
   'indigo',
 ];
+
+export { colorOptions };

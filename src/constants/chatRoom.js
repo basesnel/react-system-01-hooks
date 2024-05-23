@@ -1,1 +1,3 @@
-export const chatRoom = ['general', 'travel', 'music'];
+const chatRoom = ['general', 'travel', 'music'];
+
+export { chatRoom };

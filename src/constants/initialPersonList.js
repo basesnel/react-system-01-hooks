@@ -1,1 +1,3 @@
-export const personList = ['Alice', 'Bob', 'Taylor'];
+const personList = ['Alice', 'Bob', 'Taylor'];
+
+export { personList };

@@ -1,1 +1,3 @@
-export const initialCountersList = [0, 0, 0];
+const initialCountersList = [0, 0, 0];
+
+export { initialCountersList };

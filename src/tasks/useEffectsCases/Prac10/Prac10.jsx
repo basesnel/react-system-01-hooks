@@ -5,7 +5,7 @@ import FlexBox from 'components/FlexBox';
 import Select from 'components/Select';
 import Paragraph from 'components/Paragraph';
 
-import { fetchBio } from 'services/fetchBio';
+import { fetchBio } from 'services';
 
 import { personList } from 'constants';
 

@@ -1,3 +1,5 @@
-export const mobile = '360px';
-export const tablet = '768px';
-export const desktop = '1280px';
+const mobile = '360px';
+const tablet = '768px';
+const desktop = '1280px';
+
+export { mobile, tablet, desktop };

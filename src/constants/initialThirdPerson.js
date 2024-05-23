@@ -1,4 +1,4 @@
-export const initialThirdPerson = {
+const initialThirdPerson = {
   name: 'Nicky de Saint Phalle',
   artwork: {
     title: 'Blue Nana',
@@ -6,3 +6,5 @@ export const initialThirdPerson = {
     image: 'https://i.imgur.com/Sd1AgUOm.jpg',
   },
 };
+
+export { initialThirdPerson };

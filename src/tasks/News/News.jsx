@@ -7,7 +7,7 @@ import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 import CustomLoader from 'components/CustomLoader';
 
-import { fetchArticles } from 'services/news-api';
+import { fetchArticles } from 'services';
 
 import css from './News.module.css';
 

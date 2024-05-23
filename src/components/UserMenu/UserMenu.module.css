@@ -1,5 +1,5 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+@value mobile-to, smartphone-to from sizes;
 
 .userName {
   font-size: var(--fs-text-mobile);

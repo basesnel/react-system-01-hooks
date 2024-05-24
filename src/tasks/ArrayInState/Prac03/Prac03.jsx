@@ -46,4 +46,4 @@ const Prac03 = () => {
   );
 };
 
-export { Prac03 };
+export default Prac03;

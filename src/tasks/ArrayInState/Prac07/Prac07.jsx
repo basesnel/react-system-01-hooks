@@ -68,4 +68,4 @@ function ItemList({ artWorks, onToggle }) {
   );
 }
 
-export { Prac07 };
+export default Prac07;

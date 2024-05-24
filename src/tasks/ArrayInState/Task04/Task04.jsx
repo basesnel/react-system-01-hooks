@@ -2,8 +2,8 @@ import { useImmer } from 'use-immer';
 
 import { nanoid } from 'nanoid';
 
-import AddTodo from '../intendedComponents/AddTodo';
-import TaskList from '../intendedComponents/TaskList';
+import { AddTodo } from '../intendedComponents';
+import { TaskList } from '../intendedComponents';
 
 import { initialTodosList } from 'constants';
 

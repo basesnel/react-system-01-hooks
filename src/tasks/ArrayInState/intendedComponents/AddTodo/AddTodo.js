@@ -29,4 +29,4 @@ AddTodo.propTypes = {
   onAddTodo: PropTypes.func.isRequired,
 };
 
-export default AddTodo;
+export { AddTodo };

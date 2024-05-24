@@ -73,4 +73,4 @@ const Task02 = () => {
   );
 };
 
-export default Task02;
+export { Task02 };

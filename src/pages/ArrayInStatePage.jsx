@@ -4,18 +4,18 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import Prac01 from 'tasks/ArrayInState/Prac01';
-import Prac02 from 'tasks/ArrayInState/Prac02';
-import Prac03 from 'tasks/ArrayInState/Prac03';
-import Prac04 from 'tasks/ArrayInState/Prac04';
-import Prac05 from 'tasks/ArrayInState/Prac05';
-import Prac06 from 'tasks/ArrayInState/Prac06';
-import Prac07 from 'tasks/ArrayInState/Prac07';
-import Prac08 from 'tasks/ArrayInState/Prac08';
-import Task01 from 'tasks/ArrayInState/Task01';
-import Task02 from 'tasks/ArrayInState/Task02';
-import Task03 from 'tasks/ArrayInState/Task03';
-import Task04 from 'tasks/ArrayInState/Task04';
+import { Prac01 } from 'tasks/ArrayInState';
+import { Prac02 } from 'tasks/ArrayInState';
+import { Prac03 } from 'tasks/ArrayInState';
+import { Prac04 } from 'tasks/ArrayInState';
+import { Prac05 } from 'tasks/ArrayInState';
+import { Prac06 } from 'tasks/ArrayInState';
+import { Prac07 } from 'tasks/ArrayInState';
+import { Prac08 } from 'tasks/ArrayInState';
+import { Task01 } from 'tasks/ArrayInState';
+import { Task02 } from 'tasks/ArrayInState';
+import { Task03 } from 'tasks/ArrayInState';
+import { Task04 } from 'tasks/ArrayInState';
 
 const ArrayInStatePage = () => {
   return (

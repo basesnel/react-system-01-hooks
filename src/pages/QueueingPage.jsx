@@ -5,7 +5,7 @@ import Paragraph from 'components/Paragraph';
 import FixRequestCounter from 'tasks/Queueing/FixRequestCounter';
 import ImpStateQueue from 'tasks/Queueing/ImpStateQueue';
 
-export const QueueingPage = () => {
+const QueueingPage = () => {
   return (
     <main>
       <Container>
@@ -73,3 +73,5 @@ export const QueueingPage = () => {
     </main>
   );
 };
+
+export { QueueingPage };

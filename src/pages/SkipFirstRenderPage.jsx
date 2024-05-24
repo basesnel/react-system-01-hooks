@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import SkipFirstRender from 'tasks/SkipFirstRender';
 
-export const SkipFirstRenderPage = () => {
+const SkipFirstRenderPage = () => {
   return (
     <main>
       <Container>
@@ -18,3 +18,5 @@ export const SkipFirstRenderPage = () => {
     </main>
   );
 };
+
+export { SkipFirstRenderPage };

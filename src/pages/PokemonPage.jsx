@@ -5,7 +5,7 @@ import VisuallyHidden from 'components/VisuallyHidden';
 
 import Pokemon from 'tasks/Pokemon';
 
-export const PokemonPage = () => {
+const PokemonPage = () => {
   return (
     <main>
       <VisuallyHidden>
@@ -23,3 +23,5 @@ export const PokemonPage = () => {
     </main>
   );
 };
+
+export { PokemonPage };

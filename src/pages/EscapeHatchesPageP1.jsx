@@ -31,7 +31,7 @@ import Task10 from 'tasks/EscapeHatchesP01/Task10';
 import Task11 from 'tasks/EscapeHatchesP01/Task11';
 import Task12 from 'tasks/EscapeHatchesP01/Task12';
 
-export const EscapeHatchesPageP1 = () => {
+const EscapeHatchesPageP1 = () => {
   return (
     <main>
       <Container>
@@ -126,3 +126,5 @@ export const EscapeHatchesPageP1 = () => {
     </main>
   );
 };
+
+export { EscapeHatchesPageP1 };

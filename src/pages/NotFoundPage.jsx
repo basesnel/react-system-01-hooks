@@ -1,7 +1,7 @@
 import Container from 'components/Container';
 import Title from 'components/Title';
 
-export const NotFoundPage = () => {
+const NotFoundPage = () => {
   return (
     <main>
       <Container>
@@ -11,3 +11,5 @@ export const NotFoundPage = () => {
     </main>
   );
 };
+
+export { NotFoundPage };

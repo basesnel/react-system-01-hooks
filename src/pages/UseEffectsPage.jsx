@@ -21,7 +21,7 @@ import Prac14 from 'tasks/useEffectsCases/Prac14';
 import Prac15 from 'tasks/useEffectsCases/Prac15';
 import Prac16 from 'tasks/useEffectsCases/Prac16';
 
-export const UseEffectsPage = () => {
+const UseEffectsPage = () => {
   return (
     <main>
       <Container>
@@ -83,3 +83,5 @@ export const UseEffectsPage = () => {
     </main>
   );
 };
+
+export { UseEffectsPage };

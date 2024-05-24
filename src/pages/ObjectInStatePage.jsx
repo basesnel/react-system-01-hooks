@@ -12,7 +12,7 @@ import Task01 from 'tasks/ObjectsInState/Task01';
 import Task02 from 'tasks/ObjectsInState/Task02';
 import Task03 from 'tasks/ObjectsInState/Task03';
 
-export const ObjectInStatePage = () => {
+const ObjectInStatePage = () => {
   return (
     <main>
       <Container>
@@ -47,3 +47,5 @@ export const ObjectInStatePage = () => {
     </main>
   );
 };
+
+export { ObjectInStatePage };

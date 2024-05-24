@@ -2,7 +2,7 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 
-export const HomePage = () => {
+const HomePage = () => {
   return (
     <main>
       <Container>
@@ -12,3 +12,5 @@ export const HomePage = () => {
     </main>
   );
 };
+
+export { HomePage };

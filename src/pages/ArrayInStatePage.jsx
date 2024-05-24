@@ -17,7 +17,7 @@ import Task02 from 'tasks/ArrayInState/Task02';
 import Task03 from 'tasks/ArrayInState/Task03';
 import Task04 from 'tasks/ArrayInState/Task04';
 
-export const ArrayInStatePage = () => {
+const ArrayInStatePage = () => {
   return (
     <main>
       <Container>
@@ -67,3 +67,5 @@ export const ArrayInStatePage = () => {
     </main>
   );
 };
+
+export { ArrayInStatePage };

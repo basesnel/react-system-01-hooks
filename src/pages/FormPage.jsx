@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import SignupForm from 'tasks/SignupForm';
 
-export const FormPage = () => {
+const FormPage = () => {
   return (
     <main>
       <Container>
@@ -18,3 +18,5 @@ export const FormPage = () => {
     </main>
   );
 };
+
+export { FormPage };

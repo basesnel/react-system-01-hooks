@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import Clock from 'tasks/Clock';
 
-export const ClockPage = () => {
+const ClockPage = () => {
   return (
     <main>
       <Container>
@@ -18,3 +18,5 @@ export const ClockPage = () => {
     </main>
   );
 };
+
+export { ClockPage };

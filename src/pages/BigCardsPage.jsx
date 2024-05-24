@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import BigCards from 'tasks/BigCards';
 
-export const BigCardsPage = () => {
+const BigCardsPage = () => {
   return (
     <main>
       <Container>
@@ -17,3 +17,5 @@ export const BigCardsPage = () => {
     </main>
   );
 };
+
+export { BigCardsPage };

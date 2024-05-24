@@ -16,7 +16,7 @@ import Prac09 from 'tasks/SimpleStates/Prac09';
 import Prac10 from 'tasks/SimpleStates/Prac10';
 import Prac11 from 'tasks/SimpleStates/Prac11';
 
-export const SimpleStatesPage = () => {
+const SimpleStatesPage = () => {
   return (
     <main>
       <Container>
@@ -63,3 +63,5 @@ export const SimpleStatesPage = () => {
     </main>
   );
 };
+
+export { SimpleStatesPage };

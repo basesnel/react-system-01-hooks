@@ -6,7 +6,7 @@ import ColorPicker from 'tasks/ColorPicker';
 
 import { colorPickerOptions } from 'constants';
 
-export const ColorPickerPage = () => {
+const ColorPickerPage = () => {
   return (
     <main>
       <Container>
@@ -20,3 +20,5 @@ export const ColorPickerPage = () => {
     </main>
   );
 };
+
+export { ColorPickerPage };

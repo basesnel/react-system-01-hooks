@@ -4,7 +4,7 @@ import Paragraph from 'components/Paragraph';
 
 import Characters from 'tasks/Characters';
 
-export const CharactersPage = () => {
+const CharactersPage = () => {
   return (
     <main>
       <Container>
@@ -17,3 +17,5 @@ export const CharactersPage = () => {
     </main>
   );
 };
+
+export { CharactersPage };

@@ -5,7 +5,7 @@ import VisuallyHidden from 'components/VisuallyHidden';
 
 import News from 'tasks/News';
 
-export const NewsPage = () => {
+const NewsPage = () => {
   return (
     <main>
       <VisuallyHidden>
@@ -23,3 +23,5 @@ export const NewsPage = () => {
     </main>
   );
 };
+
+export { NewsPage };

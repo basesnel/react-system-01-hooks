@@ -112,4 +112,4 @@ Task.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-export { TaskList };
+export default TaskList;

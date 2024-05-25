@@ -4,10 +4,10 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import Task01 from 'tasks/EscapeHatchesP02/Task01';
-import Task02 from 'tasks/EscapeHatchesP02/Task02';
-import Task03 from 'tasks/EscapeHatchesP02/Task03';
-import Task04 from 'tasks/EscapeHatchesP02/Task04';
+import { Task01 } from 'tasks/EscapeHatchesP02';
+import { Task02 } from 'tasks/EscapeHatchesP02';
+import { Task03 } from 'tasks/EscapeHatchesP02';
+import { Task04 } from 'tasks/EscapeHatchesP02';
 
 const EscapeHatchesPageP2 = () => {
   return (

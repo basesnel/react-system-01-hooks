@@ -5,6 +5,7 @@ import { ImSpinner } from 'react-icons/im';
 import Paragraph from 'components/Paragraph';
 
 import PokemonDataView from '../PokemonDataView';
+
 import pendingImage from 'assets/images/pending.png';
 
 import css from './PokemonPendingView.module.css';

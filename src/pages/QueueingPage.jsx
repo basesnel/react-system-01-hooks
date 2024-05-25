@@ -2,8 +2,8 @@ import Container from 'components/Container';
 import Title from 'components/Title';
 import Paragraph from 'components/Paragraph';
 
-import FixRequestCounter from 'tasks/Queueing/FixRequestCounter';
-import ImpStateQueue from 'tasks/Queueing/ImpStateQueue';
+import { FixRequestCounter } from 'tasks/Queueing';
+import { ImpStateQueue } from 'tasks/Queueing';
 
 const QueueingPage = () => {
   return (

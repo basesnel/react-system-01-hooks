@@ -3,7 +3,7 @@ import { useState } from 'react';
 import FlexBox from 'components/FlexBox';
 import Button from 'components/Button';
 
-import VideoPlayer from '../intendedComponents/VideoPlayer';
+import { VideoPlayer } from '../intendedComponents';
 
 import { videoSrc } from 'constants';
 

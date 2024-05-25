@@ -5,7 +5,7 @@ import Button from 'components/Button';
 import Input from 'components/Input';
 import FlexBox from 'components/FlexBox';
 
-import VideoPlayer from '../intendedComponents/VideoPlayer';
+import { VideoPlayer } from '../intendedComponents';
 
 import { videoSrc } from 'constants';
 

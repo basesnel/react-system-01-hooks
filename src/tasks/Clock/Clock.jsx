@@ -1,10 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 
 import FlexBox from 'components/FlexBox';
+import Caption from 'components/Caption';
 import Button from 'components/Button';
 import Box from 'components/Box';
-
-import Caption from 'components/Caption';
 
 import css from './Clock.module.css';
 

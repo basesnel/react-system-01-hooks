@@ -4,17 +4,17 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import Prac01 from 'tasks/SimpleStates/Prac01';
-import Prac02 from 'tasks/SimpleStates/Prac02';
-import Prac03 from 'tasks/SimpleStates/Prac03';
-import Prac04 from 'tasks/SimpleStates/Prac04';
-import Prac05 from 'tasks/SimpleStates/Prac05';
-import Prac06 from 'tasks/SimpleStates/Prac06';
-import Prac07 from 'tasks/SimpleStates/Prac07';
-import Prac08 from 'tasks/SimpleStates/Prac08';
-import Prac09 from 'tasks/SimpleStates/Prac09';
-import Prac10 from 'tasks/SimpleStates/Prac10';
-import Prac11 from 'tasks/SimpleStates/Prac11';
+import { Prac01 } from 'tasks/SimpleStates';
+import { Prac02 } from 'tasks/SimpleStates';
+import { Prac03 } from 'tasks/SimpleStates';
+import { Prac04 } from 'tasks/SimpleStates';
+import { Prac05 } from 'tasks/SimpleStates';
+import { Prac06 } from 'tasks/SimpleStates';
+import { Prac07 } from 'tasks/SimpleStates';
+import { Prac08 } from 'tasks/SimpleStates';
+import { Prac09 } from 'tasks/SimpleStates';
+import { Prac10 } from 'tasks/SimpleStates';
+import { Prac11 } from 'tasks/SimpleStates';
 
 const SimpleStatesPage = () => {
   return (

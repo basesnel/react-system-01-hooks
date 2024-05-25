@@ -1,6 +1,7 @@
 import { toast } from 'react-toastify';
 import { FiLock } from 'react-icons/fi';
 import { FiMail } from 'react-icons/fi';
+
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
 import Form from 'components/Form';

@@ -1,12 +1,12 @@
 import { useImmer } from 'use-immer';
 import { MdOutlineSelectAll } from 'react-icons/md';
 
-import Background from '../IntendendComponents/Background';
-import Box from '../IntendendComponents/Box';
 import FlexBox from 'components/FlexBox';
 import Select from 'components/Select';
 
-import Wrapper from '../IntendendComponents/Wrapper';
+import { Wrapper } from '../IntendendComponents';
+import { Background } from '../IntendendComponents';
+import { Box } from '../IntendendComponents';
 
 import { initialPosition, colorOptions } from 'constants';
 

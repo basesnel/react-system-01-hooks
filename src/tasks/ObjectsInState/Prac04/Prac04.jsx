@@ -4,9 +4,9 @@ import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
 import Form from 'components/Form';
 import Input from 'components/Input';
-import Figure from '../IntendendComponents/Figure';
 
-import FieldOverlay from '../IntendendComponents/FieldOverlay';
+import { FieldOverlay } from '../IntendendComponents';
+import { Figure } from '../IntendendComponents';
 
 import { initialThirdPerson } from 'constants';
 

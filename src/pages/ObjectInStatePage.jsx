@@ -4,13 +4,13 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import Prac01 from 'tasks/ObjectsInState/Prac01';
-import Prac02 from 'tasks/ObjectsInState/Prac02';
-import Prac03 from 'tasks/ObjectsInState/Prac03';
-import Prac04 from 'tasks/ObjectsInState/Prac04';
-import Task01 from 'tasks/ObjectsInState/Task01';
-import Task02 from 'tasks/ObjectsInState/Task02';
-import Task03 from 'tasks/ObjectsInState/Task03';
+import { Prac01 } from 'tasks/ObjectsInState';
+import { Prac02 } from 'tasks/ObjectsInState';
+import { Prac03 } from 'tasks/ObjectsInState';
+import { Prac04 } from 'tasks/ObjectsInState';
+import { Task01 } from 'tasks/ObjectsInState';
+import { Task02 } from 'tasks/ObjectsInState';
+import { Task03 } from 'tasks/ObjectsInState';
 
 const ObjectInStatePage = () => {
   return (

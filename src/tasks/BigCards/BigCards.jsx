@@ -1,15 +1,15 @@
-import PropTypes from 'prop-types';
-
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 
-import Grid from 'components/Grid';
-import Card from 'components/Card';
-import Modal from 'components/Modal';
+import PropTypes from 'prop-types';
 
-import css from './BigCards.module.css';
+import { Grid } from 'components';
+import { Card } from 'components';
+import { Modal } from 'components';
 
 import { images } from 'constants';
+
+import css from './BigCards.module.css';
 
 const List = props => {
   const { items } = props;

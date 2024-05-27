@@ -2,8 +2,8 @@ import { useState } from 'react';
 
 import PropTypes from 'prop-types';
 
-import Paragraph from 'components/Paragraph';
-import FlexBox from 'components/FlexBox';
+import { Paragraph } from 'components';
+import { FlexBox } from 'components';
 
 import css from './ColorPicker.module.css';
 

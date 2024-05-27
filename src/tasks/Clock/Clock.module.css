@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value tablet-to, desktop-to from sizes;
 
-.timeDisplayWrap {
+.timeWrap {
   text-align: center;
 }
 

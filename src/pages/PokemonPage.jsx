@@ -1,7 +1,7 @@
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Paragraph from 'components/Paragraph';
-import VisuallyHidden from 'components/VisuallyHidden';
+import { Container } from 'components';
+import { Title } from 'components';
+import { Paragraph } from 'components';
+import { VisuallyHidden } from 'components';
 
 import Pokemon from 'tasks/Pokemon';
 

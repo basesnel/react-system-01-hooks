@@ -1,8 +1,8 @@
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Paragraph from 'components/Paragraph';
-import Grid from 'components/Grid';
-import Card from 'components/Card';
+import { Container } from 'components';
+import { Title } from 'components';
+import { Paragraph } from 'components';
+import { Grid } from 'components';
+import { Card } from 'components';
 
 import { Prac01 } from 'tasks/EscapeHatchesP01';
 import { Prac02 } from 'tasks/EscapeHatchesP01';

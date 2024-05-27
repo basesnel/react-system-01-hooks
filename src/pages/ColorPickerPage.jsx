@@ -1,10 +1,10 @@
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Paragraph from 'components/Paragraph';
-
-import ColorPicker from 'tasks/ColorPicker';
+import { Container } from 'components';
+import { Title } from 'components';
+import { Paragraph } from 'components';
 
 import { colorPickerOptions } from 'constants';
+
+import ColorPicker from 'tasks/ColorPicker';
 
 const ColorPickerPage = () => {
   return (

@@ -1,6 +1,6 @@
-import Container from 'components/Container';
-import Title from 'components/Title';
-import Paragraph from 'components/Paragraph';
+import { Container } from 'components';
+import { Title } from 'components';
+import { Paragraph } from 'components';
 
 import Characters from 'tasks/Characters';
 

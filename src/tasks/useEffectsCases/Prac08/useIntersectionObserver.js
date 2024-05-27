@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export function useIntersectionObserver(ref) {
+const useIntersectionObserver = ref => {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
   useEffect(() => {
@@ -21,4 +21,6 @@ export function useIntersectionObserver(ref) {
   }, [ref]);
 
   return isIntersecting;
-}
+};
+
+export { useIntersectionObserver };

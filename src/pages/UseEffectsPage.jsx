@@ -4,22 +4,22 @@ import Paragraph from 'components/Paragraph';
 import Grid from 'components/Grid';
 import Card from 'components/Card';
 
-import Prac01 from 'tasks/useEffectsCases/Prac01';
-import Prac02 from 'tasks/useEffectsCases/Prac02';
-import Prac03 from 'tasks/useEffectsCases/Prac03';
-import Prac04 from 'tasks/useEffectsCases/Prac04';
-import Prac05 from 'tasks/useEffectsCases/Prac05';
-import Prac06 from 'tasks/useEffectsCases/Prac06';
-import Prac07 from 'tasks/useEffectsCases/Prac07';
-import Prac08 from 'tasks/useEffectsCases/Prac08';
-import Prac09 from 'tasks/useEffectsCases/Prac09';
-import Prac10 from 'tasks/useEffectsCases/Prac10';
-import Prac11 from 'tasks/useEffectsCases/Prac11';
-import Prac12 from 'tasks/useEffectsCases/Prac12';
-import Prac13 from 'tasks/useEffectsCases/Prac13';
-import Prac14 from 'tasks/useEffectsCases/Prac14';
-import Prac15 from 'tasks/useEffectsCases/Prac15';
-import Prac16 from 'tasks/useEffectsCases/Prac16';
+import { Prac01 } from 'tasks/useEffectsCases';
+import { Prac02 } from 'tasks/useEffectsCases';
+import { Prac03 } from 'tasks/useEffectsCases';
+import { Prac04 } from 'tasks/useEffectsCases';
+import { Prac05 } from 'tasks/useEffectsCases';
+import { Prac06 } from 'tasks/useEffectsCases';
+import { Prac07 } from 'tasks/useEffectsCases';
+import { Prac08 } from 'tasks/useEffectsCases';
+import { Prac09 } from 'tasks/useEffectsCases';
+import { Prac10 } from 'tasks/useEffectsCases';
+import { Prac11 } from 'tasks/useEffectsCases';
+import { Prac12 } from 'tasks/useEffectsCases';
+import { Prac13 } from 'tasks/useEffectsCases';
+import { Prac14 } from 'tasks/useEffectsCases';
+import { Prac15 } from 'tasks/useEffectsCases';
+import { Prac16 } from 'tasks/useEffectsCases';
 
 const UseEffectsPage = () => {
   return (

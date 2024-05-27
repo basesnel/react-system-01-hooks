@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 import { initialShapesList } from 'constants';
 

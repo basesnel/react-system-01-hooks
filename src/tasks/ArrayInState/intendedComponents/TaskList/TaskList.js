@@ -7,12 +7,12 @@ import { RiFileEditFill } from 'react-icons/ri';
 import { RiDeleteBinFill } from 'react-icons/ri';
 import { FiEdit3 } from 'react-icons/fi';
 
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemLabel from 'components/ItemLabel';
-import IconButton from 'components/IconButton';
-import Input from 'components/Input';
-import ItemCheckedText from 'components/ItemCheckedText';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemLabel } from 'components';
+import { IconButton } from 'components';
+import { Input } from 'components';
+import { ItemCheckedText } from 'components';
 
 const TaskList = props => {
   const { todos, onChangeTodo, onDeleteTodo } = props;

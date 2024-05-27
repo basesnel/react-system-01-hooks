@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import MiniForm from 'components/MiniForm';
+import { MiniForm } from 'components';
 
 const AddTodo = props => {
   const { onAddTodo } = props;

@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemFlex from 'components/ItemFlex';
-import ItemText from 'components/ItemText';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemFlex } from 'components';
+import { ItemText } from 'components';
 
 import { initialSixArtsList } from 'constants';
 

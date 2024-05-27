@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import Title from 'components/Title';
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemLabel from 'components/ItemLabel';
-import ItemCheckedText from 'components/ItemCheckedText/ItemCheckedText';
+import { Title } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemLabel } from 'components';
+import { ItemCheckedText } from 'components';
 
 import { initialSevenArtsList } from 'constants';
 

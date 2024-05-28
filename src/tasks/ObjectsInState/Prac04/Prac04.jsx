@@ -2,8 +2,8 @@ import { useImmer } from 'use-immer';
 
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
-import Form from 'components/Form';
-import Input from 'components/Input';
+import { Form } from 'components';
+import { Input } from 'components';
 
 import { FieldOverlay } from '../IntendendComponents';
 import { Figure } from '../IntendendComponents';

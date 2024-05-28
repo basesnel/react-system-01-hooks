@@ -2,16 +2,16 @@ import { useState } from 'react';
 
 import { FiEdit3 } from 'react-icons/fi';
 
-import Form from 'components/Form';
-import Input from 'components/Input';
-import Button from 'components/Button';
+import { Form } from 'components';
+import { Input } from 'components';
+import { Button } from 'components';
 
 import { initialTaskFirstPerson } from 'constants';
 
 import css from './Task01.module.css';
 
 const Task01 = () => {
-  const { labelWrap} = css;
+  const { labelWrap } = css;
 
   const [player, setPlayer] = useState(initialTaskFirstPerson);
 

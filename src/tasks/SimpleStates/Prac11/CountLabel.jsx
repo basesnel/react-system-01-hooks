@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
-import Title from 'components/Title';
-import Paragraph from 'components/Paragraph';
+import { Title } from 'components';
+import { Paragraph } from 'components';
 
 const CountLabel = props => {
   const { count } = props;

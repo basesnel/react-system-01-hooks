@@ -2,10 +2,10 @@ import { useState } from 'react';
 
 import { FiEdit3 } from 'react-icons/fi';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import Paragraph from 'components/Paragraph';
-import Input from 'components/Input';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+import { Paragraph } from 'components';
+import { Input } from 'components';
 
 const Prac10 = () => {
   const [version, setVersion] = useState(0);

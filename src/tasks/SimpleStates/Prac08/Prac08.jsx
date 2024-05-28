@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import MiniForm from 'components/MiniForm';
-import HideOverflow from 'components/HideOverflow';
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemFlex from 'components/ItemFlex';
-import ItemText from 'components/ItemText';
+import { MiniForm } from 'components';
+import { HideOverflow } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemFlex } from 'components';
+import { ItemText } from 'components';
 
 function createInitialTodos() {
   const initialTodos = [];

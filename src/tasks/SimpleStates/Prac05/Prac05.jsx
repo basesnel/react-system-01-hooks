@@ -1,8 +1,8 @@
 import { useState } from 'react';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import Caption from 'components/Caption';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+import { Caption } from 'components';
 
 const Prac05 = () => {
   const [numberA, setNumberA] = useState(0);

@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 const countReducer = (state, action) => {
   switch (action.type) {

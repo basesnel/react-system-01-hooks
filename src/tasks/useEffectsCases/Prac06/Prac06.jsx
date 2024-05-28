@@ -1,13 +1,15 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+
+import PropTypes from 'prop-types';
+
 import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
 
-import Input from 'components/Input';
-import Title from 'components/Title';
-import Select from 'components/Select';
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
+import { Input } from 'components';
+import { Title } from 'components';
+import { Select } from 'components';
+import { Button } from 'components';
+import { FlexBox } from 'components';
 
 import { chatRoom } from 'constants';
 

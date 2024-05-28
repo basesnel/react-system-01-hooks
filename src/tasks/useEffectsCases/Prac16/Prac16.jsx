@@ -1,13 +1,14 @@
+import { useState, useEffect } from 'react';
+
 import PropTypes from 'prop-types';
 
-import { useState, useEffect } from 'react';
 import { MdChat } from 'react-icons/md';
 import { FiMessageCircle } from 'react-icons/fi';
 
-import Input from 'components/Input';
-import Title from 'components/Title';
-import Select from 'components/Select';
-import FlexBox from 'components/FlexBox';
+import { FlexBox } from 'components';
+import { Title } from 'components';
+import { Input } from 'components';
+import { Select } from 'components';
 
 import { createConnection } from 'constants';
 import { chatRoom } from 'constants';
@@ -47,7 +48,7 @@ const ChatRoom = props => {
       />
     </FlexBox>
   );
-}
+};
 
 ChatRoom.propTypes = {
   roomId: PropTypes.string.isRequired,
@@ -72,6 +73,6 @@ const Prac16 = () => {
       <ChatRoom roomId={roomId} />
     </>
   );
-}
+};
 
 export default Prac16;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Canvas from 'components/Canvas';
+import { Canvas } from 'components';
 
 import { useWindowListener } from './useWindowListener';
 

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+
 import { createConnection } from 'constants';
 
 export const useChatRoom = ({ serverUrl, roomId }) => {

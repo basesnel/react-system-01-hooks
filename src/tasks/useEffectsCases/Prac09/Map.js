@@ -1,5 +1,6 @@
-import PropTypes from 'prop-types';
 import { useRef, useEffect } from 'react';
+
+import PropTypes from 'prop-types';
 
 import { MapWidget } from './map-widget';
 

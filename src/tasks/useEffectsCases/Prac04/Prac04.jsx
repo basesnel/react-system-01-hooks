@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import ModalDialog from './ModalDialog';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+
+import ModalDialog from './ModalDialog';
 
 const Prac04 = () => {
   const [show, setShow] = useState(false);

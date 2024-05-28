@@ -1,10 +1,11 @@
 import { useState, useEffect } from 'react';
+
 import { FiMessageCircle } from 'react-icons/fi';
 
-import FlexBox from 'components/FlexBox';
-import Input from 'components/Input';
-import Title from 'components/Title';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Input } from 'components';
+import { Title } from 'components';
+import { Button } from 'components';
 
 import { createConnection } from 'constants';
 

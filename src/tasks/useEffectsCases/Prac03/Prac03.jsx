@@ -1,8 +1,9 @@
 import { useState, useEffect, useRef } from 'react';
-import { FadeInAnimation } from './animation';
 
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
+import { Button } from 'components';
+import { FlexBox } from 'components';
+
+import { FadeInAnimation } from './animation';
 
 const Welcome = () => {
   const ref = useRef(null);
@@ -31,7 +32,7 @@ const Welcome = () => {
       Welcome
     </h3>
   );
-}
+};
 
 const Prac03 = () => {
   const [show, setShow] = useState(false);
@@ -47,6 +48,6 @@ const Prac03 = () => {
       {show && <Welcome />}
     </>
   );
-}
+};
 
 export default Prac03;

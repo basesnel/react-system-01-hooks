@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Canvas from 'components/Canvas';
+import { Canvas } from 'components';
 
 const Prac02 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

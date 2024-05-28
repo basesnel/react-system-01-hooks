@@ -1,7 +1,7 @@
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemFlex from 'components/ItemFlex';
-import ItemText from 'components/ItemText';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemFlex } from 'components';
+import { ItemText } from 'components';
 
 const LongSection = () => {
   const items = [];

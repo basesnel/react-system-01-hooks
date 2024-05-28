@@ -3,9 +3,9 @@ import { useState } from 'react';
 import { RiZoomInFill } from 'react-icons/ri';
 import { RiZoomOutFill } from 'react-icons/ri';
 
-import FlexBox from 'components/FlexBox';
-import Span from 'components/Span';
-import IconButton from 'components/IconButton';
+import { FlexBox } from 'components';
+import { Span } from 'components';
+import { IconButton } from 'components';
 
 import Map from './Map';
 

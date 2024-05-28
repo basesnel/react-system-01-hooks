@@ -1,12 +1,12 @@
 import { useState, useMemo } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import CheckBox from 'components/CheckBox/CheckBox.jsx';
-import MiniForm from 'components/MiniForm/MiniForm.jsx';
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemFlex from 'components/ItemFlex';
-import ItemText from 'components/ItemText/ItemText';
+import { CheckBox } from 'components';
+import { MiniForm } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemFlex } from 'components';
+import { ItemText } from 'components';
 
 import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
 

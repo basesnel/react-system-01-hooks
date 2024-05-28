@@ -1,14 +1,16 @@
-import PropTypes from 'prop-types';
 import { useState } from 'react';
+
+import PropTypes from 'prop-types';
+
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import CheckBox from 'components/CheckBox';
-import List from 'components/List';
-import Item from 'components/Item';
-import ItemFlex from 'components/ItemFlex';
-import ItemText from 'components/ItemText/ItemText';
-import Paragraph from 'components/Paragraph';
-import MiniForm from 'components/MiniForm';
+import { CheckBox } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { ItemFlex } from 'components';
+import { ItemText } from 'components';
+import { Paragraph } from 'components';
+import { MiniForm } from 'components';
 
 import { initialTodos, createTodo } from './todos';
 

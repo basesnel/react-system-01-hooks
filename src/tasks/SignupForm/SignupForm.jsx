@@ -4,10 +4,10 @@ import { FiMail } from 'react-icons/fi';
 
 import { useLocalStorage } from 'hooks/useLocalStorage';
 
-import Form from 'components/Form';
-import Input from 'components/Input';
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { Form } from 'components';
+import { Input } from 'components';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 const SignupForm = () => {
   // case lazy init state:

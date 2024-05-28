@@ -1,14 +1,14 @@
 import { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-import SearchBar from 'components/SearchBar';
-import CustomLoader from 'components/CustomLoader';
-import Button from 'components/Button';
+import { SearchBar } from 'components';
+import { List } from 'components';
+import { Item } from 'components';
+import { FlexBox } from 'components';
+import { CustomLoader } from 'components';
+import { Button } from 'components';
 
 import css from './News.module.css';
-import List from 'components/List';
-import Item from 'components/Item';
-import FlexBox from 'components/FlexBox';
 
 axios.defaults.headers.common['Authorization'] =
   'Bearer 12bb4d5829d14b34ac0d67e4ed8ca6bf';

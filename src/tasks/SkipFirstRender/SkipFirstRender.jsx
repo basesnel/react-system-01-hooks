@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 
-import Button from 'components/Button';
-import Paragraph from 'components/Paragraph';
+import { Button } from 'components';
+import { Paragraph } from 'components';
 
 const SkipFirstRender = () => {
   const [count, setCount] = useState(0);

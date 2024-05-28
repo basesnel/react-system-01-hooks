@@ -1,10 +1,11 @@
+import { forwardRef, useRef, useImperativeHandle } from 'react';
+
 import PropTypes from 'prop-types';
 
-import { forwardRef, useRef, useImperativeHandle } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
+import { Button } from 'components';
+import { FlexBox } from 'components';
 
 import css from './Prac08.module.css';
 

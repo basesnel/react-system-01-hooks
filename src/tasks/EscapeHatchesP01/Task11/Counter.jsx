@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Caption from 'components/Caption';
+import { Caption } from 'components';
 
 const Counter = () => {
   const [count, setCount] = useState(0);

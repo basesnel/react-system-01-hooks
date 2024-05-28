@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import Title from 'components/Title';
+import { Title } from 'components';
 
 import { createConnection } from 'constants';
 

@@ -1,10 +1,11 @@
+import { useRef, forwardRef } from 'react';
+
 import PropTypes from 'prop-types';
 
-import { useRef, forwardRef } from 'react';
 import { MdSearch } from 'react-icons/md';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 import css from './Task08.module.css';
 

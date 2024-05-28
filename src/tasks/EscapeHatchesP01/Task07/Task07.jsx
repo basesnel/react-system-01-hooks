@@ -1,11 +1,11 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
 
-import Slider from 'components/Slider';
-import Slide from 'components/Slide';
-import ResponsiveImage from 'components/ResponsiveImage';
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { Slider } from 'components';
+import { Slide } from 'components';
+import { ResponsiveImage } from 'components';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 import { catList } from 'constants';
 import { imageSizes } from 'constants';

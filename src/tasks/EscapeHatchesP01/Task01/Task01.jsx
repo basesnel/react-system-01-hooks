@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react';
+
 import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
 
-import Input from 'components/Input';
-import Button from 'components/Button';
-import FlexBox from 'components/FlexBox';
+import { Input } from 'components';
+import { Button } from 'components';
+import { FlexBox } from 'components';
 
 const Task01 = () => {
   const [text, setText] = useState('');

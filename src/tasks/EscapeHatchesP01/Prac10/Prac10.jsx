@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react';
 
-import Button from 'components/Button';
-import Paragraph from 'components/Paragraph';
-import FlexBox from 'components/FlexBox';
+import { Button } from 'components';
+import { Paragraph } from 'components';
+import { FlexBox } from 'components';
 
 const Prac10 = () => {
   const [show, setShow] = useState(true);

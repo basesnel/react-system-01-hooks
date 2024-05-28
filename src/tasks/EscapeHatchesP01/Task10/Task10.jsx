@@ -1,8 +1,9 @@
 import { useState } from 'react';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import Paragraph from 'components/Paragraph';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+import { Paragraph } from 'components';
+
 import MyInput from './MyInput';
 
 const Task10 = () => {

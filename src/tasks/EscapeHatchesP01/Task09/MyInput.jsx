@@ -1,8 +1,10 @@
-import PropTypes from 'prop-types';
 import { useRef, useEffect } from 'react';
+
+import PropTypes from 'prop-types';
+
 import { FiEdit } from 'react-icons/fi';
 
-import Input from 'components/Input';
+import { Input } from 'components';
 
 const MyInput = props => {
   const { value, onChange } = props;

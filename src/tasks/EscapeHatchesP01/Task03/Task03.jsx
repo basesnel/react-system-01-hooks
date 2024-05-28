@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+
 import { useRef } from 'react';
 import { toast } from 'react-toastify';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Button } from 'components';
 
 const DebouncedButton = props => {
   const { onClick, caption } = props;

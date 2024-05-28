@@ -1,9 +1,10 @@
 import { useState, useRef } from 'react';
+
 import { FiEdit } from 'react-icons/fi';
 
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
-import Input from 'components/Input';
+import { FlexBox } from 'components';
+import { Button } from 'components';
+import { Input } from 'components';
 
 const Prac05 = () => {
   const [inputValue, setInputValue] = useState('');

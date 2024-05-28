@@ -1,10 +1,11 @@
 import { useState, useRef } from 'react';
+
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 
-import FlexBox from 'components/FlexBox';
-import Input from 'components/Input';
-import Button from 'components/Button';
+import { FlexBox } from 'components';
+import { Input } from 'components';
+import { Button } from 'components';
 
 const Task04 = () => {
   const [text, setText] = useState('');

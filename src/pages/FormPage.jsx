@@ -2,7 +2,7 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import SignupForm from 'tasks/SignupForm';
+import { SignupForm } from 'tasks';
 
 const FormPage = () => {
   return (

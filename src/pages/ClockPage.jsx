@@ -2,7 +2,7 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import Clock from 'tasks/Clock';
+import { Clock } from 'tasks';
 
 const ClockPage = () => {
   return (

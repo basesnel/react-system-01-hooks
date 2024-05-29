@@ -4,7 +4,7 @@ import { Paragraph } from 'components';
 
 import { colorPickerOptions } from 'constants';
 
-import ColorPicker from 'tasks/ColorPicker';
+import { ColorPicker } from 'tasks';
 
 const ColorPickerPage = () => {
   return (

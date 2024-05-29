@@ -3,7 +3,7 @@ import { Title } from 'components';
 import { Paragraph } from 'components';
 import { VisuallyHidden } from 'components';
 
-import Pokemon from 'tasks/Pokemon';
+import { Pokemon } from 'tasks';
 
 const PokemonPage = () => {
   return (

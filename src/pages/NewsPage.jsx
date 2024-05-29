@@ -3,7 +3,7 @@ import { Title } from 'components';
 import { Paragraph } from 'components';
 import { VisuallyHidden } from 'components';
 
-import News from 'tasks/News';
+import { News } from 'tasks';
 
 const NewsPage = () => {
   return (

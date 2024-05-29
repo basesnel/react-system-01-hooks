@@ -2,7 +2,7 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import BigCards from 'tasks/BigCards';
+import { BigCards } from 'tasks';
 
 const BigCardsPage = () => {
   return (

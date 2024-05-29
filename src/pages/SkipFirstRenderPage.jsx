@@ -2,7 +2,7 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import SkipFirstRender from 'tasks/SkipFirstRender';
+import { SkipFirstRender } from 'tasks';
 
 const SkipFirstRenderPage = () => {
   return (

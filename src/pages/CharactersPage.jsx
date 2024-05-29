@@ -2,7 +2,7 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import Characters from 'tasks/Characters';
+import { Characters } from 'tasks';
 
 const CharactersPage = () => {
   return (

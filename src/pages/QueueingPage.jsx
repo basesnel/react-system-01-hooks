@@ -2,10 +2,11 @@ import { Container } from 'components';
 import { Title } from 'components';
 import { Paragraph } from 'components';
 
-import { FixRequestCounter } from 'tasks/Queueing';
-import { ImpStateQueue } from 'tasks/Queueing';
+import { queueing } from 'tasks';
 
 const QueueingPage = () => {
+  const { FixRequestCounter, ImpStateQueue } = queueing;
+
   return (
     <main>
       <Container>

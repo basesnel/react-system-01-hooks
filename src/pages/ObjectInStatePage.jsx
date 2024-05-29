@@ -4,15 +4,12 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Prac01 } from 'tasks/ObjectsInState';
-import { Prac02 } from 'tasks/ObjectsInState';
-import { Prac03 } from 'tasks/ObjectsInState';
-import { Prac04 } from 'tasks/ObjectsInState';
-import { Task01 } from 'tasks/ObjectsInState';
-import { Task02 } from 'tasks/ObjectsInState';
-import { Task03 } from 'tasks/ObjectsInState';
+import { objectsInState } from 'tasks';
 
 const ObjectInStatePage = () => {
+  const { Prac01, Prac02, Prac03, Prac04, Task01, Task02, Task03 } =
+    objectsInState;
+
   return (
     <main>
       <Container>

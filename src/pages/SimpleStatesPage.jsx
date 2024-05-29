@@ -4,19 +4,23 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Prac01 } from 'tasks/SimpleStates';
-import { Prac02 } from 'tasks/SimpleStates';
-import { Prac03 } from 'tasks/SimpleStates';
-import { Prac04 } from 'tasks/SimpleStates';
-import { Prac05 } from 'tasks/SimpleStates';
-import { Prac06 } from 'tasks/SimpleStates';
-import { Prac07 } from 'tasks/SimpleStates';
-import { Prac08 } from 'tasks/SimpleStates';
-import { Prac09 } from 'tasks/SimpleStates';
-import { Prac10 } from 'tasks/SimpleStates';
-import { Prac11 } from 'tasks/SimpleStates';
+import { simpleStates } from 'tasks';
 
 const SimpleStatesPage = () => {
+  const {
+    Prac01,
+    Prac02,
+    Prac03,
+    Prac04,
+    Prac05,
+    Prac06,
+    Prac07,
+    Prac08,
+    Prac09,
+    Prac10,
+    Prac11,
+  } = simpleStates;
+
   return (
     <main>
       <Container>

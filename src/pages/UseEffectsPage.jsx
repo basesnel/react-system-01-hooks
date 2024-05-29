@@ -4,24 +4,28 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Prac01 } from 'tasks/useEffectsCases';
-import { Prac02 } from 'tasks/useEffectsCases';
-import { Prac03 } from 'tasks/useEffectsCases';
-import { Prac04 } from 'tasks/useEffectsCases';
-import { Prac05 } from 'tasks/useEffectsCases';
-import { Prac06 } from 'tasks/useEffectsCases';
-import { Prac07 } from 'tasks/useEffectsCases';
-import { Prac08 } from 'tasks/useEffectsCases';
-import { Prac09 } from 'tasks/useEffectsCases';
-import { Prac10 } from 'tasks/useEffectsCases';
-import { Prac11 } from 'tasks/useEffectsCases';
-import { Prac12 } from 'tasks/useEffectsCases';
-import { Prac13 } from 'tasks/useEffectsCases';
-import { Prac14 } from 'tasks/useEffectsCases';
-import { Prac15 } from 'tasks/useEffectsCases';
-import { Prac16 } from 'tasks/useEffectsCases';
+import { useEffectsCases } from 'tasks';
 
 const UseEffectsPage = () => {
+  const {
+    Prac01,
+    Prac02,
+    Prac03,
+    Prac04,
+    Prac05,
+    Prac06,
+    Prac07,
+    Prac08,
+    Prac09,
+    Prac10,
+    Prac11,
+    Prac12,
+    Prac13,
+    Prac14,
+    Prac15,
+    Prac16,
+  } = useEffectsCases;
+
   return (
     <main>
       <Container>

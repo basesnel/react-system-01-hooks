@@ -1,7 +1,4 @@
-import { Container } from 'components';
-import { Title } from 'components';
-import { Paragraph } from 'components';
-import { VisuallyHidden } from 'components';
+import { Container, Title, Paragraph, VisuallyHidden } from 'components';
 
 import { Pokemon } from 'tasks';
 

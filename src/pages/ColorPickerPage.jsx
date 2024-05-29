@@ -1,6 +1,4 @@
-import { Container } from 'components';
-import { Title } from 'components';
-import { Paragraph } from 'components';
+import { Container, Title, Paragraph } from 'components';
 
 import { colorPickerOptions } from 'constants';
 

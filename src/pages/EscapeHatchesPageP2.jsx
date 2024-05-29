@@ -1,8 +1,4 @@
-import { Container } from 'components';
-import { Title } from 'components';
-import { Paragraph } from 'components';
-import { Grid } from 'components';
-import { Card } from 'components';
+import { Container, Title, Paragraph, Grid, Card } from 'components';
 
 import { escapeHatchesP02 } from 'tasks';
 

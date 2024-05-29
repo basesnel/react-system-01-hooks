@@ -1,11 +1,6 @@
 import { useContext } from 'react';
 
-import Container from 'components/Container';
-import Logo from 'components/Logo';
-import NavBar from 'components/NavBar';
-import UserMenu from 'components/UserMenu';
-import FlexBox from 'components/FlexBox';
-import Button from 'components/Button';
+import { Container, Logo, NavBar, UserMenu, FlexBox, Button } from 'components';
 
 import authContext from 'contexts/auth/context';
 

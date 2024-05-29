@@ -1,6 +1,6 @@
 import { ImSpinner } from 'react-icons/im';
 
-import Paragraph from 'components/Paragraph';
+import { Paragraph } from 'components';
 
 import css from './CustomLoader.module.css';
 

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { MdClose } from 'react-icons/md';
 
-import Paragraph from 'components/Paragraph';
+import { Paragraph } from 'components';
 
 import css from './Modal.module.css';
 

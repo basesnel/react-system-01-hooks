@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import Title from 'components/Title';
+import { Title } from 'components';
 
 import css from './Card.module.css';
 

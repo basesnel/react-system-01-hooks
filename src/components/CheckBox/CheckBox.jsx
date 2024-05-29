@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import Span from 'components/Span';
+import { Span } from 'components';
 
 import css from './CheckBox.module.css';
 

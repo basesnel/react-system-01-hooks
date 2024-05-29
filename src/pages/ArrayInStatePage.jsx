@@ -4,20 +4,24 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Prac01 } from 'tasks/ArrayInState';
-import { Prac02 } from 'tasks/ArrayInState';
-import { Prac03 } from 'tasks/ArrayInState';
-import { Prac04 } from 'tasks/ArrayInState';
-import { Prac05 } from 'tasks/ArrayInState';
-import { Prac06 } from 'tasks/ArrayInState';
-import { Prac07 } from 'tasks/ArrayInState';
-import { Prac08 } from 'tasks/ArrayInState';
-import { Task01 } from 'tasks/ArrayInState';
-import { Task02 } from 'tasks/ArrayInState';
-import { Task03 } from 'tasks/ArrayInState';
-import { Task04 } from 'tasks/ArrayInState';
+import { arrayInState } from 'tasks';
 
 const ArrayInStatePage = () => {
+  const {
+    Prac01,
+    Prac02,
+    Prac03,
+    Prac04,
+    Prac05,
+    Prac06,
+    Prac07,
+    Prac08,
+    Task01,
+    Task02,
+    Task03,
+    Task04,
+  } = arrayInState;
+
   return (
     <main>
       <Container>

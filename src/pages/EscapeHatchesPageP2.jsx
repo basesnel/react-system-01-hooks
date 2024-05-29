@@ -4,12 +4,11 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Task01 } from 'tasks/EscapeHatchesP02';
-import { Task02 } from 'tasks/EscapeHatchesP02';
-import { Task03 } from 'tasks/EscapeHatchesP02';
-import { Task04 } from 'tasks/EscapeHatchesP02';
+import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
+  const { Task01, Task02, Task03, Task04 } = escapeHatchesP02;
+
   return (
     <main>
       <Container>

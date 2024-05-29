@@ -4,34 +4,38 @@ import { Paragraph } from 'components';
 import { Grid } from 'components';
 import { Card } from 'components';
 
-import { Prac01 } from 'tasks/EscapeHatchesP01';
-import { Prac02 } from 'tasks/EscapeHatchesP01';
-import { Prac03 } from 'tasks/EscapeHatchesP01';
-import { Prac04 } from 'tasks/EscapeHatchesP01';
-import { Task01 } from 'tasks/EscapeHatchesP01';
-import { Task02 } from 'tasks/EscapeHatchesP01';
-import { Task03 } from 'tasks/EscapeHatchesP01';
-import { Task04 } from 'tasks/EscapeHatchesP01';
-import { Prac05 } from 'tasks/EscapeHatchesP01';
-import { Prac06 } from 'tasks/EscapeHatchesP01';
-import { Prac07 } from 'tasks/EscapeHatchesP01';
-import { Prac08 } from 'tasks/EscapeHatchesP01';
-import { Prac09 } from 'tasks/EscapeHatchesP01';
-import { Prac10 } from 'tasks/EscapeHatchesP01';
-import { Task05 } from 'tasks/EscapeHatchesP01';
-import { Task06 } from 'tasks/EscapeHatchesP01';
-import { Task07 } from 'tasks/EscapeHatchesP01';
-import { Task08 } from 'tasks/EscapeHatchesP01';
-import { Prac11 } from 'tasks/EscapeHatchesP01';
-import { Prac12 } from 'tasks/EscapeHatchesP01';
-import { Prac13 } from 'tasks/EscapeHatchesP01';
-import { Prac14 } from 'tasks/EscapeHatchesP01';
-import { Task09 } from 'tasks/EscapeHatchesP01';
-import { Task10 } from 'tasks/EscapeHatchesP01';
-import { Task11 } from 'tasks/EscapeHatchesP01';
-import { Task12 } from 'tasks/EscapeHatchesP01';
+import { escapeHatchesP01 } from 'tasks';
 
 const EscapeHatchesPageP1 = () => {
+  const {
+    Prac01,
+    Prac02,
+    Prac03,
+    Prac04,
+    Prac05,
+    Prac06,
+    Prac07,
+    Prac08,
+    Prac09,
+    Prac10,
+    Prac11,
+    Prac12,
+    Prac13,
+    Prac14,
+    Task01,
+    Task02,
+    Task03,
+    Task04,
+    Task05,
+    Task06,
+    Task07,
+    Task08,
+    Task09,
+    Task10,
+    Task11,
+    Task12,
+  } = escapeHatchesP01;
+
   return (
     <main>
       <Container>

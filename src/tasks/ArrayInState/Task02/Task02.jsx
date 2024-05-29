@@ -1,13 +1,8 @@
 import { useState } from 'react';
 
-import { RiAddCircleFill } from 'react-icons/ri';
-import { RiIndeterminateCircleFill } from 'react-icons/ri';
+import { RiAddCircleFill, RiIndeterminateCircleFill } from 'react-icons/ri';
 
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemText } from 'components';
-import { ItemFlex } from 'components';
-import { IconButton } from 'components';
+import { List, Item, ItemFlex, ItemText, IconButton } from 'components';
 
 import { initialProductsList } from 'constants';
 

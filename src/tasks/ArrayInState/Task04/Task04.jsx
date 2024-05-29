@@ -2,10 +2,9 @@ import { useImmer } from 'use-immer';
 
 import { nanoid } from 'nanoid';
 
-import { AddTodo } from '../intendedComponents';
-import { TaskList } from '../intendedComponents';
-
 import { initialTodosList } from 'constants';
+
+import { AddTodo, TaskList } from '../intendedComponents';
 
 const Task04 = () => {
   const [todos, updateTodos] = useImmer(initialTodosList);

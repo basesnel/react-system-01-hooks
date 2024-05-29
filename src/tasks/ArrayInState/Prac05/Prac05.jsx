@@ -2,11 +2,7 @@ import { useState } from 'react';
 
 import { RiInsertRowBottom } from 'react-icons/ri';
 
-import { MiniForm } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components';
+import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
 
 import { initialArtistsList } from 'constants';
 

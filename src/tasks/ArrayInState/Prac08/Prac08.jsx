@@ -1,10 +1,6 @@
 import { useImmer } from 'use-immer';
 
-import { Title } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemLabel } from 'components';
-import { ItemCheckedText } from 'components';
+import { Title, List, Item, ItemLabel, ItemCheckedText } from 'components';
 
 import { initialSevenArtsList } from 'constants';
 

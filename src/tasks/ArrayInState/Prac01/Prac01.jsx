@@ -1,10 +1,6 @@
 import { useState } from 'react';
 
-import { MiniForm } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components/';
+import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
 
 import { RiAddCircleFill } from 'react-icons/ri';
 

@@ -1,14 +1,9 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
 
-import { Slider } from 'components';
-import { Slide } from 'components';
-import { ResponsiveImage } from 'components';
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
 
-import { catList } from 'constants';
-import { imageSizes } from 'constants';
+import { catList, imageSizes } from 'constants';
 
 import css from './Task07.module.css';
 

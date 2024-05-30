@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 
 import { MdSearch } from 'react-icons/md';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { FlexBox, Button } from 'components';
 
 import css from './Task08.module.css';
 

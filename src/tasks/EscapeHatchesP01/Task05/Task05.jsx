@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { FlexBox, Button } from 'components';
 
 import { videoSrc } from 'constants';
 

@@ -18,6 +18,7 @@ const MyInput = props => {
   return (
     <Input
       inputRef={ref}
+      inputType="text"
       inputLabel="Enter your name"
       inputName="Your name"
       inputPlaceholder="Input Your name"
@@ -29,8 +30,8 @@ const MyInput = props => {
 };
 
 MyInput.propTypes = {
-  value: PropTypes.string,
-  onChange: PropTypes.func,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default MyInput;

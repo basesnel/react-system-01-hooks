@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 import { FiEdit } from 'react-icons/fi';
 
-import {Input} from 'components';
+import { Input } from 'components';
 
-const MyInput = props => {
+const MyFocusedInput = props => {
   const { shouldFocus, label, name, value, onChange } = props;
 
   const ref = useRef(null);
@@ -18,6 +18,7 @@ const MyInput = props => {
   return (
     <Input
       inputRef={ref}
+      inputType="text"
       inputLabel={label}
       inputName={name}
       inputValue={value}
@@ -27,10 +28,12 @@ const MyInput = props => {
   );
 };
 
-MyInput.propTypes = {
-  shouldFocus: PropTypes.bool,
-  value: PropTypes.string,
+MyFocusedInput.propTypes = {
+  shouldFocus: PropTypes.bool.isRequired,
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
   onChange: PropTypes.func,
 };
 
-export default MyInput;
+export default MyFocusedInput;

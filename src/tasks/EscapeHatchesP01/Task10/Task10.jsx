@@ -1,10 +1,8 @@
 import { useState } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { Paragraph } from 'components';
+import { FlexBox, Button, Paragraph } from 'components';
 
-import MyInput from './MyInput';
+import { MyFocusedInput } from '../intendedComponents';
 
 const Task10 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -20,14 +18,14 @@ const Task10 = () => {
         />
         {showForm && (
           <>
-            <MyInput
+            <MyFocusedInput
               shouldFocus={false}
               label="Enter first name"
               name="firstName"
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
             />
-            <MyInput
+            <MyFocusedInput
               shouldFocus={true}
               label="Enter last name"
               name="lastName"

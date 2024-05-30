@@ -1,11 +1,8 @@
 import { useState } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { CheckBox } from 'components';
-import { Paragraph } from 'components';
+import { FlexBox, Button, CheckBox, Paragraph } from 'components';
 
-import MyInput from './MyInput';
+import { MyInput } from '../intendedComponents';
 
 const Task09 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -23,6 +20,7 @@ const Task09 = () => {
           <>
             <MyInput value={name} onChange={e => setName(e.target.value)} />
             <CheckBox
+              name="isUppercase"
               checked={upper}
               onChange={() => setUpper(!upper)}
               label="Make it uppercase"

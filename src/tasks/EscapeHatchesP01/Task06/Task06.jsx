@@ -1,9 +1,8 @@
 import { useState, useRef } from 'react';
+
 import { MdSearch } from 'react-icons/md';
 
-import { FlexBox } from 'components';
-import { Input } from 'components';
-import { Button } from 'components';
+import { FlexBox, Input, Button } from 'components';
 
 const Task06 = () => {
   const [inputValue, setInputValue] = useState('');

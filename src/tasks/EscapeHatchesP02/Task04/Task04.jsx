@@ -4,11 +4,7 @@ import { toast } from 'react-toastify';
 
 import { MdChat } from 'react-icons/md';
 
-import { Button } from 'components';
-import { Form } from 'components';
-import { FlexBox } from 'components';
-import { TextArea } from 'components';
-import { Title } from 'components';
+import { Form, TextArea, Button, Title, FlexBox } from 'components';
 
 const Task04 = () => {
   const [showForm, setShowForm] = useState(false);

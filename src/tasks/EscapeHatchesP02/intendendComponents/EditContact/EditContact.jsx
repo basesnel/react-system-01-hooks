@@ -1,13 +1,10 @@
-import PropTypes from 'prop-types';
-
 import { useState } from 'react';
+
+import PropTypes from 'prop-types';
 
 import { FiUser, FiMail } from 'react-icons/fi';
 
-import { Form } from 'components';
-import { Input } from 'components';
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { Form, Input, FlexBox, Button } from 'components';
 
 const EditContact = props => {
   return <FormContact {...props} key={props.savedContact.id} />;

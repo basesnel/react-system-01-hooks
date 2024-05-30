@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { FlexBox, Button } from 'components';
 
 const ContactList = props => {
   const { contacts, selectedId, onSelect } = props;

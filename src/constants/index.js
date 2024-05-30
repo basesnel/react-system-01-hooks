@@ -4,6 +4,7 @@ import { initialCharacters } from './characters';
 import { images } from './images';
 import { getFinalState } from './getFinalState';
 import { initialArtistsList } from './initialArtistsList';
+import { initialContacts } from './initialContacts';
 import { initialShapesList } from './initialShapesList';
 import { initialCountersList } from './initialCountersList';
 import { initialSixArtsList } from './initialSixArtsList';
@@ -30,6 +31,7 @@ export {
   images,
   getFinalState,
   initialArtistsList,
+  initialContacts,
   initialShapesList,
   initialCountersList,
   initialSixArtsList,

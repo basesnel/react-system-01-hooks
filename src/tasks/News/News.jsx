@@ -1,11 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-import { SearchBar } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { CustomLoader } from 'components';
+import { SearchBar, List, Item, FlexBox, Button, CustomLoader } from 'components';
 
 import { fetchArticles } from 'services';
 

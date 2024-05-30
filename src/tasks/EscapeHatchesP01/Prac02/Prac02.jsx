@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { Title } from 'components';
+import { Title, FlexBox, Button } from 'components';
 
 const Prac02 = () => {
   const [startTime, setStartTime] = useState(null);

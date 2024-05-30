@@ -1,10 +1,6 @@
 import { useRef } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { Slider } from 'components';
-import { Slide } from 'components';
-import { ResponsiveImage } from 'components';
+import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
 
 import { imageSizes } from 'constants';
 

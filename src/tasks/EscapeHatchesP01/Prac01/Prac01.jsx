@@ -1,8 +1,8 @@
 import { useRef } from 'react';
+
 import { toast } from 'react-toastify';
 
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { FlexBox, Button } from 'components';
 
 const Prac01 = () => {
   let ref = useRef(0);

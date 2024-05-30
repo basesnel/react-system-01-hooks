@@ -1,9 +1,8 @@
 import { useState } from 'react';
+
 import { FiEdit3 } from 'react-icons/fi';
 
-import { Button } from 'components';
-import { Input } from 'components';
-import { FlexBox } from 'components';
+import { FlexBox, Button, Input } from 'components';
 
 import { VideoPlayer } from '../intendedComponents';
 

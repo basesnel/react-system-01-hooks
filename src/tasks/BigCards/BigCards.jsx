@@ -3,9 +3,7 @@ import { createPortal } from 'react-dom';
 
 import PropTypes from 'prop-types';
 
-import { Grid } from 'components';
-import { Card } from 'components';
-import { Modal } from 'components';
+import { Grid, Card, Modal } from 'components';
 
 import { images } from 'constants';
 

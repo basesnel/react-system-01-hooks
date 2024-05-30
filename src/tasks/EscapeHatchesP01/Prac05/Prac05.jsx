@@ -2,9 +2,7 @@ import { useState, useRef } from 'react';
 
 import { FiEdit } from 'react-icons/fi';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
-import { Input } from 'components';
+import { FlexBox, Input, Button } from 'components';
 
 const Prac05 = () => {
   const [inputValue, setInputValue] = useState('');

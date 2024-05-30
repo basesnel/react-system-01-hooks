@@ -1,7 +1,6 @@
 import { useState } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { FlexBox, Button } from 'components';
 
 const Task02 = () => {
   const [isOne, setIsOne] = useState(false);

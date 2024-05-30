@@ -2,13 +2,7 @@ import { useState, useMemo } from 'react';
 
 import { FiFilter } from 'react-icons/fi';
 
-import { Box } from 'components';
-import { Button } from 'components';
-import { Input } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components';
+import { Box, Button, Input, List, Item, ItemFlex, ItemText } from 'components';
 
 import { initialCharacters } from 'constants';
 

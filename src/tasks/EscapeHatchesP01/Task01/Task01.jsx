@@ -3,9 +3,7 @@ import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
 
-import { Input } from 'components';
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { Input, FlexBox, Button } from 'components';
 
 const Task01 = () => {
   const [text, setText] = useState('');

@@ -1,10 +1,8 @@
 import { useState, useEffect } from 'react';
+
 import { MdTask } from 'react-icons/md';
 
-import { FlexBox } from 'components';
-import { Input } from 'components';
-import { Title } from 'components';
-import { Button } from 'components';
+import { FlexBox, Input, Title, Button } from 'components';
 
 const Playground = () => {
   const [text, setText] = useState('a');

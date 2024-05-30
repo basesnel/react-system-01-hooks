@@ -1,3 +1,4 @@
 import VideoPlayer from './VideoPlayer';
+import DebouncedButton from './DebouncedButton';
 
-export { VideoPlayer };
+export { VideoPlayer, DebouncedButton };

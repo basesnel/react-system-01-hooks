@@ -1,7 +1,6 @@
 import { useState, useRef } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { FlexBox, Button } from 'components';
 
 const Prac04 = () => {
   const [counterState, setCounterState] = useState(0);

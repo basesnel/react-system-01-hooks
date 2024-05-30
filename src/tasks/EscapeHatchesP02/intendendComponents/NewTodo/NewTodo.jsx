@@ -8,9 +8,10 @@ import { MiniForm } from 'components';
 
 import { myTodos } from 'constants';
 
+const { createTodo } = myTodos;
+
 const NewTodo = props => {
   const { onAdd } = props;
-  const { createTodo } = myTodos;
 
   const [text, setText] = useState('');
 

@@ -1,9 +1,5 @@
 import { useState } from 'react';
 
-// import PropTypes from 'prop-types';
-
-// import { RiAddCircleFill } from 'react-icons/ri';
-
 import {
   CheckBox,
   List,
@@ -17,9 +13,9 @@ import { myTodos } from 'constants';
 
 import { NewTodo } from '../intendendComponents';
 
-const Task01 = () => {
-  const { initialTodos } = myTodos;
+const { initialTodos } = myTodos;
 
+const Task01 = () => {
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
 
@@ -57,30 +53,5 @@ const Task01 = () => {
     </>
   );
 };
-
-// const NewTodo = props => {
-//   const { onAdd } = props;
-
-//   const [text, setText] = useState('');
-
-//   function handleAddClick(text) {
-//     setText('');
-//     onAdd(createTodo(text));
-//   }
-
-//   return (
-//     <>
-//       <MiniForm
-//         onFormSubmit={handleAddClick}
-//         filling={`Add todo-element ${text}`}
-//         icon={<RiAddCircleFill />}
-//       />
-//     </>
-//   );
-// };
-
-// NewTodo.propTypes = {
-//   onAdd: PropTypes.func.isRequired,
-// };
 
 export default Task01;

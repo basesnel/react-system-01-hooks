@@ -1,14 +1,12 @@
 import { useState, useMemo } from 'react';
+
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import { CheckBox } from 'components';
-import { MiniForm } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components';
+import { CheckBox, MiniForm, List, Item, ItemFlex, ItemText } from 'components';
 
-import { initialTodos, createTodo, getVisibleTodos } from './todos.js';
+import { myTodos } from 'constants';
+
+const { initialTodos, createTodo, getVisibleTodos } = myTodos;
 
 const Task02 = () => {
   const [todos, setTodos] = useState(initialTodos);

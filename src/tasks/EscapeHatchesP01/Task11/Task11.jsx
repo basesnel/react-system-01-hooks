@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { FlexBox, Button } from 'components';
 
-import Counter from './Counter';
+import { Counter } from '../intendedComponents';
 
 const Task11 = () => {
   const [isCounterVisible, setIsCounterVisible] = useState(false);

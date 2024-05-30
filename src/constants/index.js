@@ -17,10 +17,11 @@ import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 import { colorOptions } from './colorOptions';
 import { chatRoom } from './chatRoom';
 import { createConnection } from './chat';
-import { videoSrc } from './videoSrc';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
 import { imageSizes } from './imageSizes';
+import * as myTodos from './todos';
+import { videoSrc } from './videoSrc';
 
 export {
   sizes,
@@ -42,8 +43,9 @@ export {
   colorOptions,
   chatRoom,
   createConnection,
-  videoSrc,
   catList,
   personList,
   imageSizes,
+  myTodos,
+  videoSrc,
 };

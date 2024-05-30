@@ -1,20 +1,25 @@
 import { useState } from 'react';
 
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
-import { RiAddCircleFill } from 'react-icons/ri';
+// import { RiAddCircleFill } from 'react-icons/ri';
 
-import { CheckBox } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components';
-import { Paragraph } from 'components';
-import { MiniForm } from 'components';
+import {
+  CheckBox,
+  List,
+  Item,
+  ItemFlex,
+  ItemText,
+  Paragraph,
+} from 'components';
 
-import { initialTodos, createTodo } from './todos';
+import { myTodos } from 'constants';
+
+import { NewTodo } from '../intendendComponents';
 
 const Task01 = () => {
+  const { initialTodos } = myTodos;
+
   const [todos, setTodos] = useState(initialTodos);
   const [showActive, setShowActive] = useState(false);
 
@@ -53,29 +58,29 @@ const Task01 = () => {
   );
 };
 
-const NewTodo = props => {
-  const { onAdd } = props;
+// const NewTodo = props => {
+//   const { onAdd } = props;
 
-  const [text, setText] = useState('');
+//   const [text, setText] = useState('');
 
-  function handleAddClick(text) {
-    setText('');
-    onAdd(createTodo(text));
-  }
+//   function handleAddClick(text) {
+//     setText('');
+//     onAdd(createTodo(text));
+//   }
 
-  return (
-    <>
-      <MiniForm
-        onFormSubmit={handleAddClick}
-        filling={`Add todo-element ${text}`}
-        icon={<RiAddCircleFill />}
-      />
-    </>
-  );
-};
+//   return (
+//     <>
+//       <MiniForm
+//         onFormSubmit={handleAddClick}
+//         filling={`Add todo-element ${text}`}
+//         icon={<RiAddCircleFill />}
+//       />
+//     </>
+//   );
+// };
 
-NewTodo.propTypes = {
-  onAdd: PropTypes.func.isRequired,
-};
+// NewTodo.propTypes = {
+//   onAdd: PropTypes.func.isRequired,
+// };
 
 export default Task01;

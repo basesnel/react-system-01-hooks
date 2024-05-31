@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { Paragraph } from 'components';
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { Paragraph, FlexBox, Button } from 'components';
 
 const Prac03 = () => {
   const [counterA, setCounterA] = useState(0);

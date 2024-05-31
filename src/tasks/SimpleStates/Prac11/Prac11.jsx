@@ -1,9 +1,8 @@
 import { useState } from 'react';
 
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { FlexBox, Button } from 'components';
 
-import CountLabel from './CountLabel';
+import { CountLabel } from '../intendedComponents';
 
 const Prac11 = () => {
   const [count, setCount] = useState(0);

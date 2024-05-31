@@ -1,14 +1,13 @@
 import { useState } from 'react';
 
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { FlexBox, Button } from 'components';
 
 const Prac02 = () => {
   const [count, setCount] = useState(0);
 
-  function handleClick() {
+  const handleClick = () => {
     setCount(count + 1);
-  }
+  };
 
   return (
     <FlexBox>

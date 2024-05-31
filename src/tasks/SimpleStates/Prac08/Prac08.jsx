@@ -1,14 +1,17 @@
 import { useState } from 'react';
+
 import { RiAddCircleFill } from 'react-icons/ri';
 
-import { MiniForm } from 'components';
-import { HideOverflow } from 'components';
-import { List } from 'components';
-import { Item } from 'components';
-import { ItemFlex } from 'components';
-import { ItemText } from 'components';
+import {
+  MiniForm,
+  HideOverflow,
+  List,
+  Item,
+  ItemFlex,
+  ItemText,
+} from 'components';
 
-function createInitialTodos() {
+const createInitialTodos = () => {
   const initialTodos = [];
   for (let i = 0; i < 50; i++) {
     initialTodos.push({
@@ -17,7 +20,7 @@ function createInitialTodos() {
     });
   }
   return initialTodos;
-}
+};
 
 const Prac08 = () => {
   const [todos, setTodos] = useState(createInitialTodos);

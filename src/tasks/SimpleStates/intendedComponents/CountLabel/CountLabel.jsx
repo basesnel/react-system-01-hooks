@@ -1,7 +1,8 @@
 import { useState } from 'react';
 
-import { Title } from 'components';
-import { Paragraph } from 'components';
+import PropTypes from 'prop-types';
+
+import { Title, Paragraph } from 'components';
 
 const CountLabel = props => {
   const { count } = props;
@@ -20,6 +21,10 @@ const CountLabel = props => {
       {trend && <Paragraph>The count is {trend}</Paragraph>}
     </>
   );
+};
+
+CountLabel.propTypes = {
+  count: PropTypes.number.isRequired,
 };
 
 export default CountLabel;

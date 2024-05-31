@@ -5,11 +5,7 @@ import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { FiServer } from 'react-icons/fi';
 
-import { Input } from 'components';
-import { Title } from 'components';
-import { Select } from 'components';
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { Input, Title, Select, Button, FlexBox } from 'components';
 
 import { chatRoom } from 'constants';
 

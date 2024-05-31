@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 
 import { useIntersectionObserver } from './useIntersectionObserver';
 
-const Box = () => {
+const InterBox = () => {
   const ref = useRef(null);
   const isIntersecting = useIntersectionObserver(ref);
 
@@ -39,4 +39,4 @@ const Box = () => {
   );
 };
 
-export default Box;
+export default InterBox;

@@ -2,15 +2,15 @@ import { HideOverflow } from 'components';
 
 import { LongSection } from '../IntendendComponents';
 
-import Box from './Box';
+import { InterBox } from '../IntendendComponents';
 
 const Prac08 = () => {
   return (
     <HideOverflow>
       <LongSection />
-      <Box />
+      <InterBox />
       <LongSection />
-      <Box />
+      <InterBox />
       <LongSection />
     </HideOverflow>
   );

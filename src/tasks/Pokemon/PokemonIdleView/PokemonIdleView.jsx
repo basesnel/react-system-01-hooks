@@ -1,5 +1,4 @@
-import Box from 'components/Box';
-import Caption from 'components/Caption';
+import { Box, Caption } from 'components';
 
 const PokemonIdleView = () => {
   return (

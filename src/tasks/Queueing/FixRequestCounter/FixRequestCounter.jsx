@@ -1,8 +1,6 @@
 import { useState } from 'react';
 
-import { Caption } from 'components';
-import { FlexBox } from 'components';
-import { Button } from 'components';
+import { Caption, FlexBox, Button } from 'components';
 
 const FixRequestCounter = () => {
   const [pending, setPending] = useState(0);

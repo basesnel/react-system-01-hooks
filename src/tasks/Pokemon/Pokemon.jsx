@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import SearchBar from 'components/SearchBar';
+import { SearchBar } from 'components';
 
 import PokemonInfo from 'tasks/Pokemon/PokemonInfo';
 

@@ -2,9 +2,7 @@ import { useState } from 'react';
 
 import { FiEdit3 } from 'react-icons/fi';
 
-import { Form } from 'components';
-import { Input } from 'components';
-import { Button } from 'components';
+import { Form, Input, Button } from 'components';
 
 import { initialTaskFirstPerson } from 'constants';
 

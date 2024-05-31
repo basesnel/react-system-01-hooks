@@ -2,11 +2,9 @@ import { useImmer } from 'use-immer';
 
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 
-import { Form } from 'components';
-import { Input } from 'components';
+import { Form, Input } from 'components';
 
-import { FieldOverlay } from '../IntendendComponents';
-import { Figure } from '../IntendendComponents';
+import { FieldOverlay, Figure } from '../IntendendComponents';
 
 import { initialThirdPerson } from 'constants';
 

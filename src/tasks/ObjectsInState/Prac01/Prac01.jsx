@@ -2,9 +2,7 @@ import { useState } from 'react';
 
 import { FiMail, FiEdit3 } from 'react-icons/fi';
 
-import { Form } from 'components';
-import { Input } from 'components';
-import { Caption } from 'components';
+import { Form, Input, Caption } from 'components';
 
 import { initialFirstPerson } from 'constants';
 

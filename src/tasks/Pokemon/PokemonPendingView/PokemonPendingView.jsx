@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { ImSpinner } from 'react-icons/im';
 
-import Paragraph from 'components/Paragraph';
+import { Paragraph } from 'components';
 
 import PokemonDataView from '../PokemonDataView';
 

@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 
-import { Button } from 'components';
-import { FlexBox } from 'components';
+import { Button, FlexBox } from 'components';
 
 import { FadeInAnimation } from './animation';
 

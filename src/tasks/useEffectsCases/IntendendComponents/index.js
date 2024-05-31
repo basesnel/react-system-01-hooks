@@ -1,3 +1,4 @@
 import LongSection from './LongSection';
+import ModalDialog from './ModalDialog';
 
-export { LongSection };
+export { LongSection, ModalDialog };

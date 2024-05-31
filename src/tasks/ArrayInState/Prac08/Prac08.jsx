@@ -1,8 +1,10 @@
 import { useImmer } from 'use-immer';
 
-import { Title, List, Item, ItemLabel, ItemCheckedText } from 'components';
+import { Title } from 'components';
 
 import { initialSevenArtsList } from 'constants';
+
+import { ItemList } from '../intendedComponents';
 
 const Prac08 = () => {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
@@ -31,27 +33,5 @@ const Prac08 = () => {
     </>
   );
 };
-
-function ItemList({ artWorks, onToggle }) {
-  return (
-    <List message="There is no elements in list.">
-      {artWorks.map(artWork => (
-        <Item key={artWork.id}>
-          <ItemLabel>
-            <input
-              type="checkbox"
-              name={artWork.id}
-              checked={artWork.seen}
-              onChange={e => {
-                onToggle(artWork.id, e.target.checked);
-              }}
-            />
-            <ItemCheckedText content={artWork.title} checked={artWork.seen} />
-          </ItemLabel>
-        </Item>
-      ))}
-    </List>
-  );
-}
 
 export default Prac08;

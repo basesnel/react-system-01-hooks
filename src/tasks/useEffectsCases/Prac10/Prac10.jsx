@@ -2,9 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { FiUser } from 'react-icons/fi';
 
-import { FlexBox } from 'components';
-import { Select } from 'components';
-import { Paragraph } from 'components';
+import { FlexBox, Select, Paragraph } from 'components';
 
 import { fetchBio } from 'services';
 

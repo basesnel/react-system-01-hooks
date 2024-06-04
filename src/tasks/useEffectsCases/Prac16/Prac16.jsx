@@ -5,13 +5,9 @@ import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { FiMessageCircle } from 'react-icons/fi';
 
-import { FlexBox } from 'components';
-import { Title } from 'components';
-import { Input } from 'components';
-import { Select } from 'components';
+import { FlexBox, Title, Input, Select } from 'components';
 
-import { createConnection } from 'constants';
-import { chatRoom } from 'constants';
+import { createConnection, chatRoom } from 'constants';
 
 const serverUrl = 'https://localhost:1234';
 

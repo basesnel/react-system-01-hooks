@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import { FlexBox } from 'components';
-import { Span } from 'components';
+import { FlexBox, Span } from 'components';
 
 const Prac14 = () => {
   const [count, setCount] = useState(0);

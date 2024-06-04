@@ -3,18 +3,11 @@ import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 
 import { MdChat } from 'react-icons/md';
-import { FiServer } from 'react-icons/fi';
-import { FiMessageCircle } from 'react-icons/fi';
+import { FiServer, FiMessageCircle } from 'react-icons/fi';
 
-import { FlexBox } from 'components';
-import { Input } from 'components';
-import { Title } from 'components';
-import { Select } from 'components';
-import { Button } from 'components';
+import { FlexBox, Input, Title, Select, Button } from 'components';
 
-import { createConnection } from 'constants';
-
-import { chatRoom } from 'constants';
+import { createConnection, chatRoom } from 'constants';
 
 const ChatRoom = props => {
   const { roomId } = props;

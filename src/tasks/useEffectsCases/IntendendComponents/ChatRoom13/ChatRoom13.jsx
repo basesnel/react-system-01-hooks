@@ -8,7 +8,7 @@ import { FlexBox, Input, Title } from 'components';
 
 import { createConnection } from 'constants';
 
-const ChatRoomWithId = props => {
+const ChatRoom13 = props => {
   const { roomId } = props;
 
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');
@@ -17,11 +17,10 @@ const ChatRoomWithId = props => {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
-
     return () => {
       connection.disconnect();
     };
-  }, [serverUrl, roomId]);
+  });
 
   return (
     <FlexBox>
@@ -46,8 +45,8 @@ const ChatRoomWithId = props => {
   );
 };
 
-ChatRoomWithId.propTypes = {
+ChatRoom13.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoomWithId;
+export default ChatRoom13;

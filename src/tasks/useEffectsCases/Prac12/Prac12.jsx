@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { FlexBox, Button } from 'components';
-
 import { ChatRoom } from '../IntendendComponents';
 
 const Prac12 = () => {

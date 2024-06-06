@@ -1,8 +1,5 @@
 import { HideOverflow } from 'components';
-
-import { LongSection } from '../IntendendComponents';
-
-import { Box } from '../IntendendComponents';
+import { LongSection, Box } from '../IntendendComponents';
 
 const Prac05 = () => {
   return (

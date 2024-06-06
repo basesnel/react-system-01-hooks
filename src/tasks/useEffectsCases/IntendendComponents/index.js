@@ -1,5 +1,6 @@
 import Box from './Box';
 import ChatRoom from './ChatRoom';
+import ChatRoom06 from './ChatRoom06';
 import ChatRoom13 from './ChatRoom13';
 import ChatRoom15 from './ChatRoom15';
 import ChatRoom16 from './ChatRoom16';
@@ -12,6 +13,7 @@ import ModalDialog from './ModalDialog';
 export {
   Box,
   ChatRoom,
+  ChatRoom06,
   ChatRoom13,
   ChatRoom15,
   ChatRoom16,

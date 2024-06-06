@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
-
 import { FiUser } from 'react-icons/fi';
-
 import { FlexBox, Select, Paragraph } from 'components';
-
 import { fetchBio } from 'services';
-
 import { personList } from 'constants';
 
 const Prac10 = () => {

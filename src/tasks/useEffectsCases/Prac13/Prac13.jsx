@@ -1,11 +1,7 @@
 import { useState } from 'react';
-
 import { MdChat } from 'react-icons/md';
-
 import { FlexBox, Select, Button } from 'components';
-
 import { chatRoom } from 'constants';
-
 import { ChatRoom13 } from '../IntendendComponents';
 
 const Prac13 = () => {

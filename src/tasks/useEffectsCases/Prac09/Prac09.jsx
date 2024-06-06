@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { RiZoomInFill, RiZoomOutFill } from 'react-icons/ri';
-
 import { FlexBox, Span, IconButton } from 'components';
-
 import { Map } from '../IntendendComponents';
 
 import css from './Prac09.module.css';

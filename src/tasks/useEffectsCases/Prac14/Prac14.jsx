@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { FlexBox, Span } from 'components';
 
 const Prac14 = () => {

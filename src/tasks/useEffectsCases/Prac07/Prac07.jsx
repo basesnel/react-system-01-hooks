@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { Canvas } from 'components';
-
 import { useWindowListener } from './useWindowListener';
 
 const Prac07 = () => {

@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { Canvas } from 'components';
 
 const Prac02 = () => {

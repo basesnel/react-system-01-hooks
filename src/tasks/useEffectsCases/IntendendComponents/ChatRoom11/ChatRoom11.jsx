@@ -4,7 +4,7 @@ import { FiServer, FiMessageCircle } from 'react-icons/fi';
 import { FlexBox, Input, Title } from 'components';
 import { createConnection } from 'constants';
 
-const ChatRoom13 = props => {
+const ChatRoom11 = props => {
   const { roomId } = props;
 
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');
@@ -13,10 +13,11 @@ const ChatRoom13 = props => {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
+
     return () => {
       connection.disconnect();
     };
-  });
+  }, [serverUrl, roomId]);
 
   return (
     <FlexBox>
@@ -41,8 +42,8 @@ const ChatRoom13 = props => {
   );
 };
 
-ChatRoom13.propTypes = {
+ChatRoom11.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoom13;
+export default ChatRoom11;

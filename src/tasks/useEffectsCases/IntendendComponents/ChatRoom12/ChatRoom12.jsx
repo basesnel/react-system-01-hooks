@@ -1,15 +1,12 @@
 import { useState, useEffect } from 'react';
-
 import { FiMessageCircle } from 'react-icons/fi';
-
 import { Input, Title } from 'components';
-
 import { createConnection } from 'constants';
 
 const serverUrl = 'http://localhost:1234';
 const roomId = 'music';
 
-const ChatRoom = () => {
+const ChatRoom12 = () => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -34,4 +31,4 @@ const ChatRoom = () => {
   );
 };
 
-export default ChatRoom;
+export default ChatRoom12;

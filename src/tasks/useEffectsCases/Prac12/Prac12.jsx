@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { ChatRoom } from '../IntendendComponents';
+import { ChatRoom12 } from '../IntendendComponents';
 
 const Prac12 = () => {
   const [show, setShow] = useState(false);
@@ -14,7 +14,7 @@ const Prac12 = () => {
         />
       </FlexBox>
       {show && <hr />}
-      {show && <ChatRoom />}
+      {show && <ChatRoom12 />}
     </>
   );
 };

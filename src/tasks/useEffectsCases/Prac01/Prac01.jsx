@@ -1,42 +1,8 @@
-import { useState, useEffect } from 'react';
-
-import PropTypes from 'prop-types';
-
+import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
-import { FiServer } from 'react-icons/fi';
-
-import { FlexBox, Input, Title, Select, Button } from 'components';
-
-import { createConnection, chatRoom } from 'constants';
-
-const ChatRoom = props => {
-  const { roomId } = props;
-
-  const [serverUrl, setServerUrl] = useState('https://localhost:1234');
-
-  useEffect(() => {
-    const connection = createConnection(serverUrl, roomId);
-    connection.connect();
-
-    return () => {
-      connection.disconnect();
-    };
-  }, [roomId, serverUrl]);
-
-  return (
-    <FlexBox>
-      <Input
-        inputType="text"
-        inputName="chatroom"
-        inputValue={serverUrl}
-        inputLabel="Server URL: "
-        handleChange={e => setServerUrl(e.target.value)}
-        icon={<FiServer />}
-      />
-      <Title level={3} caption={`Welcome to the ${roomId} room!`} />
-    </FlexBox>
-  );
-};
+import { FlexBox, Select, Button } from 'components';
+import { chatRoom } from 'constants';
+import { ChatRoom01 } from '../IntendendComponents';
 
 const Prac01 = () => {
   const [roomId, setRoomId] = useState('general');
@@ -59,13 +25,9 @@ const Prac01 = () => {
         />
       </FlexBox>
       {show && <hr />}
-      {show && <ChatRoom roomId={roomId} />}
+      {show && <ChatRoom01 roomId={roomId} />}
     </>
   );
-};
-
-ChatRoom.propTypes = {
-  roomId: PropTypes.string.isRequired,
 };
 
 export default Prac01;

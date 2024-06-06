@@ -1,11 +1,7 @@
 import { useState, useEffect } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { FiMessageCircle } from 'react-icons/fi';
-
 import { Input, Title, FlexBox } from 'components';
-
 import { createConnection } from 'constants';
 
 const serverUrl = 'https://localhost:1234';

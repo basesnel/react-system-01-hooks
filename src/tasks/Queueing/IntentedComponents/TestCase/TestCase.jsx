@@ -1,5 +1,4 @@
 import PropTypes, { any } from 'prop-types';
-
 import { getFinalState } from 'constants';
 
 const TestCase = props => {

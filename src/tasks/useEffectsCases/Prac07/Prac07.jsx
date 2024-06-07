@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Canvas } from 'components';
-import { useWindowListener } from './useWindowListener';
+import { useWindowListener } from 'hooks';
 
 const Prac07 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });

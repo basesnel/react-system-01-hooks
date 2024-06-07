@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { FiEdit3 } from 'react-icons/fi';
-
 import { Form, Input, Button } from 'components';
-
 import { initialTaskFirstPerson } from 'constants';
 
 import css from './Task01.module.css';

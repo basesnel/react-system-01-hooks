@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { FiMail, FiEdit3 } from 'react-icons/fi';
-
 import { Form, Input, Caption } from 'components';
-
 import { initialFirstPerson } from 'constants';
 
 const Prac01 = () => {

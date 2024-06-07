@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { Canvas } from 'components';
-
 import { initialPosition } from 'constants';
 
 const Prac02 = () => {

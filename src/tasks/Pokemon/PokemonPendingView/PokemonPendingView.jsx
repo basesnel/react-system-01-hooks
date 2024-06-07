@@ -1,11 +1,7 @@
 import PropTypes from 'prop-types';
-
 import { ImSpinner } from 'react-icons/im';
-
 import { Paragraph } from 'components';
-
 import PokemonDataView from '../PokemonDataView';
-
 import pendingImage from 'assets/images/pending.png';
 
 import css from './PokemonPendingView.module.css';

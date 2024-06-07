@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types';
-
 import PokemonDataView from '../PokemonDataView';
-
 import errorImage from 'assets/images/404.png';
 
 const PokemonErrorView = props => {

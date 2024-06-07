@@ -1,11 +1,7 @@
 import { useState } from 'react';
-
 import { MdOutlineSelectAll } from 'react-icons/md';
-
 import { FlexBox, Select } from 'components';
-
 import { initialPosition, colorOptions } from 'constants';
-
 import { Wrapper, Background, Box } from '../IntendendComponents';
 
 const initPosition = { ...initialPosition };

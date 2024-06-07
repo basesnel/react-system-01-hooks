@@ -1,7 +1,7 @@
 import { toast } from 'react-toastify';
 import { FiLock, FiMail } from 'react-icons/fi';
 import { Form, Input, FlexBox, Button } from 'components';
-import { useLocalStorage } from 'hooks/useLocalStorage';
+import { useLocalStorage } from 'hooks';
 
 const SignupForm = () => {
   // case lazy init state:

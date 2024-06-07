@@ -1,7 +1,12 @@
 import { useState, useEffect, useRef } from 'react';
-
-import { SearchBar, List, Item, FlexBox, Button, CustomLoader } from 'components';
-
+import {
+  SearchBar,
+  List,
+  Item,
+  FlexBox,
+  Button,
+  CustomLoader,
+} from 'components';
 import { fetchArticles } from 'services';
 
 import css from './News.module.css';

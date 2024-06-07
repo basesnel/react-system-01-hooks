@@ -1,11 +1,7 @@
 import { useImmer } from 'use-immer';
-
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
-
 import { Form, Input } from 'components';
-
 import { FieldOverlay, Figure } from '../IntendendComponents';
-
 import { initialThirdPerson } from 'constants';
 
 const Prac04 = () => {

@@ -1,9 +1,6 @@
 import { useEffect, useState } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { fetchPokemon } from 'services';
-
 import PokemonIdleView from '../PokemonIdleView';
 import PokemonPendingView from '../PokemonPendingView';
 import PokemonDataView from '../PokemonDataView';

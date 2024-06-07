@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { Image, Title } from 'components';
 
 import css from './PokemonDataView.module.css';

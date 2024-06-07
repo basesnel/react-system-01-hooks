@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { SearchBar } from 'components';
-
 import PokemonInfo from 'tasks/Pokemon/PokemonInfo';
 
 const Pokemon = () => {

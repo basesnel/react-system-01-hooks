@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { Paragraph, FlexBox, Button } from 'components';
 
 const Prac03 = () => {

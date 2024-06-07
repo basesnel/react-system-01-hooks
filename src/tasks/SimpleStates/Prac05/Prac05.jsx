@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import { FlexBox, Button, Caption } from 'components';
 
 const Prac05 = () => {

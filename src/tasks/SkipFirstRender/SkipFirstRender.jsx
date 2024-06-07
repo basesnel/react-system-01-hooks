@@ -1,5 +1,4 @@
 import { useEffect, useState, useRef } from 'react';
-
 import { Button, Paragraph } from 'components';
 
 const SkipFirstRender = () => {

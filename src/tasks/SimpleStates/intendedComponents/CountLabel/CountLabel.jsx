@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { Title, Paragraph } from 'components';
 
 const CountLabel = props => {

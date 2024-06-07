@@ -1,5 +1,4 @@
 import { FlexBox } from 'components';
-
 import { ButtonCount } from '../intendedComponents';
 
 const Prac01 = () => {

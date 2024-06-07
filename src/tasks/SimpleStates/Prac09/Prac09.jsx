@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { RiAddCircleFill } from 'react-icons/ri';
-
 import {
   MiniForm,
   HideOverflow,
@@ -10,17 +8,7 @@ import {
   ItemFlex,
   ItemText,
 } from 'components';
-
-const createInitialTodos = () => {
-  const initialTodos = [];
-  for (let i = 0; i < 50; i++) {
-    initialTodos.push({
-      id: i,
-      text: 'Item ' + (i + 1),
-    });
-  }
-  return initialTodos;
-};
+import { createInitialTodos } from 'constants';
 
 const Prac09 = () => {
   const [todos, setTodos] = useState(createInitialTodos());

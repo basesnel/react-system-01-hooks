@@ -18,6 +18,7 @@ import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 import { colorOptions } from './colorOptions';
 import { chatRoom } from './chatRoom';
 import { createConnection } from './chat';
+import { createInitialTodos } from './createInitialTodos';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
 import { imageSizes } from './imageSizes';
@@ -45,6 +46,7 @@ export {
   colorOptions,
   chatRoom,
   createConnection,
+  createInitialTodos,
   catList,
   personList,
   imageSizes,

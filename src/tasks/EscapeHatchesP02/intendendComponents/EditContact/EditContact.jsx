@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { FiUser, FiMail } from 'react-icons/fi';
-
 import { Form, Input, FlexBox, Button } from 'components';
 
 const EditContact = props => {

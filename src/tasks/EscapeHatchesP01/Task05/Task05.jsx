@@ -1,7 +1,5 @@
 import { useState, useRef } from 'react';
-
 import { FlexBox, Button } from 'components';
-
 import { videoSrc } from 'constants';
 
 const Task05 = () => {

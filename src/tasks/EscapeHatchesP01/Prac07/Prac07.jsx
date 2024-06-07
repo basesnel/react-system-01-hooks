@@ -1,9 +1,6 @@
 import { useRef } from 'react';
-
 import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
-
-import { catList } from 'constants';
-import { imageSizes } from 'constants';
+import { catList, imageSizes } from 'constants';
 
 const Prac07 = () => {
   const itemsRef = useRef(null);

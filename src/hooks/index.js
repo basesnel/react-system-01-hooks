@@ -1,4 +1,5 @@
+import { useChatRoom } from './useChatRoom';
 import { useLocalStorage } from './useLocalStorage';
 import { useWindowListener } from './useWindowListener';
 
-export { useLocalStorage, useWindowListener };
+export { useChatRoom, useLocalStorage, useWindowListener };

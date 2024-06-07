@@ -1,10 +1,7 @@
 import { useState } from 'react';
-
 import { FlexBox, Button } from 'components';
-
-import { VideoPlayer } from '../intendedComponents';
-
 import { videoSrc } from 'constants';
+import { VideoPlayer } from '../intendedComponents';
 
 const Prac11 = () => {
   const [isPlaying, setIsPlaying] = useState(false);

@@ -1,5 +1,4 @@
 import { useState } from 'react';
-
 import {
   CheckBox,
   List,
@@ -8,9 +7,7 @@ import {
   ItemText,
   Paragraph,
 } from 'components';
-
 import { myTodos } from 'constants';
-
 import { NewTodo } from '../intendendComponents';
 
 const { initialTodos } = myTodos;

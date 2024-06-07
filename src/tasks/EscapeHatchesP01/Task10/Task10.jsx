@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { FlexBox, Button, Paragraph } from 'components';
-
 import { MyFocusedInput } from '../intendedComponents';
 
 const Task10 = () => {

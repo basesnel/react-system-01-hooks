@@ -1,7 +1,5 @@
 import { toast } from 'react-toastify';
-
 import { FlexBox } from 'components';
-
 import { DebouncedButton } from '../intendedComponents';
 
 const Task03 = () => {

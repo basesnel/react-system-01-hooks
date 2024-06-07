@@ -1,7 +1,5 @@
 import { useState, useRef } from 'react';
-
 import { MdSearch } from 'react-icons/md';
-
 import { FlexBox, Input, Button } from 'components';
 
 const Task06 = () => {

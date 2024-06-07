@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { initialContacts } from 'constants';
-
 import { ContactList, EditContact } from '../intendendComponents';
 
 const Task03 = () => {

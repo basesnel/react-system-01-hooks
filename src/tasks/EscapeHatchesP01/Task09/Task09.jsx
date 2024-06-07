@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { FlexBox, Button, CheckBox, Paragraph } from 'components';
-
 import { MyInput } from '../intendedComponents';
 
 const Task09 = () => {

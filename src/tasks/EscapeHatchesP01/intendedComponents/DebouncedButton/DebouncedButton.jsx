@@ -1,7 +1,5 @@
 import { useRef } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { Button } from 'components';
 
 const DebouncedButton = props => {

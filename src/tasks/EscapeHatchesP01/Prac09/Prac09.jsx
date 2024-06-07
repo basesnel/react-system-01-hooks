@@ -1,8 +1,6 @@
 import { useState, useRef } from 'react';
 import { flushSync } from 'react-dom';
-
 import { RiAddCircleFill } from 'react-icons/ri';
-
 import {
   MiniForm,
   HideOverflow,

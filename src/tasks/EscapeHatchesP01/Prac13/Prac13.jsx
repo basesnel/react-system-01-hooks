@@ -1,7 +1,5 @@
 import { useEffect } from 'react';
-
 import { Title } from 'components';
-
 import { createConnection } from 'constants';
 
 const serverURL = 'https://localhost:1234';

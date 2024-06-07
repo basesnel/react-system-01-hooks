@@ -1,9 +1,6 @@
 import { useState, useMemo } from 'react';
-
 import { RiAddCircleFill } from 'react-icons/ri';
-
 import { CheckBox, MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-
 import { myTodos } from 'constants';
 
 const { initialTodos, createTodo, getVisibleTodos } = myTodos;

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiServer } from 'react-icons/fi';
 import { Input, Title, FlexBox } from 'components';
-import { useChatRoom } from './UseChatRoom';
+import { useChatRoom } from 'hooks';
 
 const ChatRoom06 = props => {
   const { roomId } = props;

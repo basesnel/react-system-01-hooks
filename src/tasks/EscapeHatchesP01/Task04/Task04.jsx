@@ -1,8 +1,6 @@
 import { useState, useRef } from 'react';
-
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
-
 import { FlexBox, Input, Button } from 'components';
 
 const Task04 = () => {

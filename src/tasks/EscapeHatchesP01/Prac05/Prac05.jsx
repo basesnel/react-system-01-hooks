@@ -1,7 +1,5 @@
 import { useState, useRef } from 'react';
-
 import { FiEdit } from 'react-icons/fi';
-
 import { FlexBox, Input, Button } from 'components';
 
 const Prac05 = () => {

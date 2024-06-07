@@ -1,7 +1,5 @@
 import { useRef } from 'react';
-
 import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
-
 import { imageSizes } from 'constants';
 
 const Prac06 = () => {

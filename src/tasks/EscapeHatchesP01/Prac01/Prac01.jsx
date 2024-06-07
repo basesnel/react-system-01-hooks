@@ -1,7 +1,5 @@
 import { useRef } from 'react';
-
 import { toast } from 'react-toastify';
-
 import { FlexBox, Button } from 'components';
 
 const Prac01 = () => {

@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react';
-
 import PropTypes from 'prop-types';
 
 const VideoPlayer = props => {

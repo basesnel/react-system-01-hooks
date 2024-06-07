@@ -1,12 +1,8 @@
 import { useState } from 'react';
-
 import { FiEdit3 } from 'react-icons/fi';
-
 import { FlexBox, Button, Input } from 'components';
-
-import { VideoPlayer } from '../intendedComponents';
-
 import { videoSrc } from 'constants';
+import { VideoPlayer } from '../intendedComponents';
 
 const Prac12 = () => {
   const [isPlaying, setIsPlaying] = useState(false);

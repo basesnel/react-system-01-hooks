@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 
 import { createConnection } from 'constants';
 
-export const useChatRoom = ({ serverUrl, roomId }) => {
+const useChatRoom = ({ serverUrl, roomId }) => {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
@@ -12,3 +12,5 @@ export const useChatRoom = ({ serverUrl, roomId }) => {
     };
   }, [roomId, serverUrl]);
 };
+
+export { useChatRoom };

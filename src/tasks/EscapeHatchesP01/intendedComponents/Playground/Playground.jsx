@@ -1,7 +1,5 @@
 import { useState, useEffect } from 'react';
-
 import { MdTask } from 'react-icons/md';
-
 import { FlexBox, Input, Title } from 'components';
 
 const Playground = () => {

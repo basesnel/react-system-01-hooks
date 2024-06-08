@@ -1,10 +1,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
-
 import PropTypes from 'prop-types';
-
 import { Grid, Card, Modal } from 'components';
-
 import { images } from 'constants';
 
 import css from './BigCards.module.css';

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-
 import { List, Item, ItemLabel, ItemCheckedText } from 'components';
 
 const ItemList = props => {

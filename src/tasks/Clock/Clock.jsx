@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-
 import { FlexBox, Caption, Button, Box } from 'components';
 
 import css from './Clock.module.css';

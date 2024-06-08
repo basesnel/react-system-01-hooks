@@ -1,9 +1,6 @@
 import { useState, useMemo } from 'react';
-
 import { FiFilter } from 'react-icons/fi';
-
 import { Box, Button, Input, List, Item, ItemFlex, ItemText } from 'components';
-
 import { initialCharacters } from 'constants';
 
 const Characters = () => {

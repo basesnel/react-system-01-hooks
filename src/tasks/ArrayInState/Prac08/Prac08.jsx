@@ -1,28 +1,25 @@
 import { useImmer } from 'use-immer';
-
 import { Title } from 'components';
-
 import { initialSevenArtsList } from 'constants';
-
 import { ItemList } from '../intendedComponents';
 
 const Prac08 = () => {
   const [myList, updateMyList] = useImmer(initialSevenArtsList);
   const [yourList, updateYourList] = useImmer(initialSevenArtsList);
 
-  function handleToggleMyList(id, nextSeen) {
+  const handleToggleMyList = (id, nextSeen) => {
     updateMyList(draft => {
       const artWork = draft.find(a => a.id === id);
       artWork.seen = nextSeen;
     });
-  }
+  };
 
-  function handleToggleYourList(id, nextSeen) {
+  const handleToggleYourList = (id, nextSeen) => {
     updateYourList(draft => {
       const artWork = draft.find(a => a.id === id);
       artWork.seen = nextSeen;
     });
-  }
+  };
 
   return (
     <>

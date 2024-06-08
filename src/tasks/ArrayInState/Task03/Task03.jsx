@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { nanoid } from 'nanoid';
-
 import { initialTodosList } from 'constants';
-
 import { AddTodo, TaskList } from '../intendedComponents';
 
 const Task03 = () => {

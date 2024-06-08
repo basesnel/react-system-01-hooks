@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { RiInsertRowBottom } from 'react-icons/ri';
-
 import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-
 import { initialArtistsList } from 'constants';
 
 let nextId = 3;

@@ -1,10 +1,7 @@
 import { useState } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { RiSave3Fill, RiFileEditFill, RiDeleteBinFill } from 'react-icons/ri';
 import { FiEdit3 } from 'react-icons/fi';
-
 import {
   List,
   Item,

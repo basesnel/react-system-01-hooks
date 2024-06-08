@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { RiAddCircleFill, RiIndeterminateCircleFill } from 'react-icons/ri';
-
 import { List, Item, ItemFlex, ItemText, IconButton } from 'components';
-
 import { initialProductsList } from 'constants';
 
 const Task02 = () => {

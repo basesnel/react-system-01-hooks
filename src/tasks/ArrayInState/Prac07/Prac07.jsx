@@ -1,16 +1,13 @@
 import { useState } from 'react';
-
 import { Title } from 'components';
-
 import { initialSevenArtsList } from 'constants';
-
 import { ItemList } from '../intendedComponents';
 
 const Prac07 = () => {
   const [myList, setMyList] = useState(initialSevenArtsList);
   const [yourList, setYourList] = useState(initialSevenArtsList);
 
-  function handleToggleMyList(artWorkId, nextSeen) {
+  const handleToggleMyList = (artWorkId, nextSeen) => {
     setMyList(
       myList.map(artWork => {
         if (artWork.id === artWorkId) {
@@ -20,9 +17,9 @@ const Prac07 = () => {
         }
       })
     );
-  }
+  };
 
-  function handleToggleYourList(artWorkId, nextSeen) {
+  const handleToggleYourList = (artWorkId, nextSeen) => {
     setYourList(
       yourList.map(artWork => {
         if (artWork.id === artWorkId) {
@@ -32,7 +29,7 @@ const Prac07 = () => {
         }
       })
     );
-  }
+  };
 
   return (
     <>

@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { RiAddCircleFill } from 'react-icons/ri';
-
 import { List, Item, ItemFlex, ItemText, IconButton } from 'components';
-
 import { initialCountersList } from 'constants';
 
 const Prac04 = () => {

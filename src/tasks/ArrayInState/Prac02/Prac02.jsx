@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import { RiIndeterminateCircleFill } from 'react-icons/ri';
-
 import { List, Item, ItemFlex, ItemText, IconButton } from 'components';
-
 import { initialArtistsList } from 'constants';
 
 const Prac02 = () => {

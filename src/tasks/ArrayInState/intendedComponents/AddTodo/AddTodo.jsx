@@ -1,9 +1,6 @@
 import { useState } from 'react';
-
 import PropTypes from 'prop-types';
-
 import { RiAddCircleFill } from 'react-icons/ri';
-
 import { MiniForm } from 'components';
 
 const AddTodo = props => {

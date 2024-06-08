@@ -1,7 +1,5 @@
 import { useState } from 'react';
-
 import { FlexBox, Button, List, Item, ItemFlex, ItemText } from 'components';
-
 import { initialSixArtsList } from 'constants';
 
 const Prac06 = () => {

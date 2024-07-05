@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { Title, Select, Button, FlexBox } from 'components';
 import { chatRoom, createConnection } from 'constants';
@@ -39,6 +40,10 @@ const Prac01 = () => {
       {show && <ChatRoom roomId={roomId} />}
     </>
   );
+};
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
 };
 
 export default Prac01;

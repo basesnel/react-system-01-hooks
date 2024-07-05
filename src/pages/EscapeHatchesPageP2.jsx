@@ -3,7 +3,7 @@ import { Container, Title, Paragraph, Grid, Card } from 'components';
 import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
-  const { Task01, Task02, Task03, Task04, Prac01 } = escapeHatchesP02;
+  const { Task01, Task02, Task03, Task04, Prac01, Prac02 } = escapeHatchesP02;
 
   return (
     <main>
@@ -30,6 +30,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 01: submit a form without effects">
             <Prac01 />
+          </Card>
+          <Card title="prac 02: submit a form without effects">
+            <Prac02 />
           </Card>
         </Grid>
       </Container>

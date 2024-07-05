@@ -3,7 +3,8 @@ import { Container, Title, Paragraph, Grid, Card } from 'components';
 import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
-  const { Task01, Task02, Task03, Task04, Prac01, Prac02 } = escapeHatchesP02;
+  const { Task01, Task02, Task03, Task04, Prac01, Prac02, Prac03 } =
+    escapeHatchesP02;
 
   return (
     <main>
@@ -28,11 +29,14 @@ const EscapeHatchesPageP2 = () => {
           <Card title="task 04: submit a form without effects">
             <Task04 />
           </Card>
-          <Card title="prac 01: submit a form without effects">
+          <Card title="prac 01: re-synchonize effect">
             <Prac01 />
           </Card>
-          <Card title="prac 02: submit a form without effects">
+          <Card title="prac 02: effects to reactive values">
             <Prac02 />
+          </Card>
+          <Card title="prac 03: effects to reactive values">
+            <Prac03 />
           </Card>
         </Grid>
       </Container>

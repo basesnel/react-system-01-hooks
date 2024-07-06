@@ -32,7 +32,7 @@ const ChatRoom = ({ roomId }) => {
   );
 };
 
-const Prac05 = () => {
+const Task05 = () => {
   const [roomId, setRoomId] = useState('general');
 
   return (
@@ -62,4 +62,4 @@ ChatRoom.defaultProps = {
   selectedServerUrl: null,
 };
 
-export default Prac05;
+export default Task05;

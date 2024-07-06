@@ -3,8 +3,17 @@ import { Container, Title, Paragraph, Grid, Card } from 'components';
 import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
-  const { Task01, Task02, Task03, Task04, Prac01, Prac02, Prac03, Prac04 } =
-    escapeHatchesP02;
+  const {
+    Task01,
+    Task02,
+    Task03,
+    Task04,
+    Prac01,
+    Prac02,
+    Prac03,
+    Prac04,
+    Prac05,
+  } = escapeHatchesP02;
 
   return (
     <main>
@@ -40,6 +49,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 04: react verifies values as dependancy">
             <Prac04 />
+          </Card>
+          <Card title="prac 05: variables is reactive">
+            <Prac05 />
           </Card>
         </Grid>
       </Container>

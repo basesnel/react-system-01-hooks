@@ -9,16 +9,17 @@ const Task06 = () => {
     const canvas = document.querySelector('[data-box]');
 
     const handleMove = e => {
-      setPosition({
-        x: e.clientX - canvas.getBoundingClientRect().x,
-        y: e.clientY - canvas.getBoundingClientRect().y,
-      });
+      canMove &&
+        setPosition({
+          x: e.clientX - canvas.getBoundingClientRect().x,
+          y: e.clientY - canvas.getBoundingClientRect().y,
+        });
     };
 
     canvas.addEventListener('pointermove', handleMove);
 
     return () => canvas.removeEventListener('pointermove', handleMove);
-  }, []);
+  }, [canMove]);
 
   return (
     <Canvas data-box>

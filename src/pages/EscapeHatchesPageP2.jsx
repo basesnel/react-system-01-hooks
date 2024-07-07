@@ -15,6 +15,7 @@ const EscapeHatchesPageP2 = () => {
     Prac05,
     Task05,
     Task06,
+    Task07,
   } = escapeHatchesP02;
 
   return (
@@ -60,6 +61,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="task 06: switch synchronisztion on and off">
             <Task06 />
+          </Card>
+          <Card title="task 07: switch synchronisztion on and off">
+            <Task07 />
           </Card>
         </Grid>
       </Container>

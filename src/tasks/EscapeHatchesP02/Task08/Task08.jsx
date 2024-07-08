@@ -3,10 +3,6 @@ import { MdChat } from 'react-icons/md';
 import { FlexBox, Select, CheckBox } from 'components';
 import { chatRoom } from 'constants';
 import ChatRoom from './ChatRoom.js';
-import {
-  createEncryptedConnection,
-  createUnencryptedConnection,
-} from './chat.js';
 
 const Task08 = () => {
   const [roomId, setRoomId] = useState('general');
@@ -31,12 +27,7 @@ const Task08 = () => {
         />
       </FlexBox>
       <hr />
-      <ChatRoom
-        roomId={roomId}
-        createConnection={
-          isEncrypted ? createEncryptedConnection : createUnencryptedConnection
-        }
-      />
+      <ChatRoom roomId={roomId} isEncrypted={isEncrypted} />
     </>
   );
 };

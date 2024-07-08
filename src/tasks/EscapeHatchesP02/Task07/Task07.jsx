@@ -5,23 +5,43 @@ const Task07 = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [canMove, setCanMove] = useState(true);
 
-  function handleMove(e) {
-    canMove &&
-      setPosition({
-        x: e.clientX - this.getBoundingClientRect().x,
-        y: e.clientY - this.getBoundingClientRect().y,
-      });
-  }
+  // I method:
+  // function handleMove(e) {
+  //   canMove &&
+  //     setPosition({
+  //       x: e.clientX - this.getBoundingClientRect().x,
+  //       y: e.clientY - this.getBoundingClientRect().y,
+  //     });
+  // }
 
+  // useEffect(() => {
+  //   const canvas = document.querySelector('[data-xob]');
+
+  //   console.log('subsctibing');
+
+  //   canvas.addEventListener('pointermove', handleMove);
+
+  //   return () => canvas.removeEventListener('pointermove', handleMove);
+  // });
+
+  // II method:
   useEffect(() => {
     const canvas = document.querySelector('[data-xob]');
+
+    function handleMove(e) {
+      canMove &&
+        setPosition({
+          x: e.clientX - this.getBoundingClientRect().x,
+          y: e.clientY - this.getBoundingClientRect().y,
+        });
+    }
+
+    console.log('subsctibing');
 
     canvas.addEventListener('pointermove', handleMove);
 
     return () => canvas.removeEventListener('pointermove', handleMove);
-
-    // eslint-disable-next-line
-  }, []);
+  }, [canMove]);
 
   return (
     <Canvas data-xob>

@@ -39,7 +39,7 @@ async function fetchPlanets() {
 }
 
 async function fetchPlaces(planetId) {
-  if (typeof planetId === 'string') {
+  if (typeof planetId !== 'string') {
     throw Error(
       'fetchPlaces(planetId) expects a string argument.' +
         'Instead received: ' +

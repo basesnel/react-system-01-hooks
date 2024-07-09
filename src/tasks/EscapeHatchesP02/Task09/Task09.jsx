@@ -31,7 +31,7 @@ export default function Task09() {
         <select
           value={planetId}
           onChange={e => {
-            setPlaceId(e.target.value);
+            setPlanetId(e.target.value);
           }}
         >
           {planetList.map(planet => (
@@ -54,7 +54,7 @@ export default function Task09() {
         <select
           value={placeId}
           onChange={e => {
-            setPlanetId(e.target.value);
+            setPlaceId(e.target.value);
           }}
         >
           {placeList.map(place => (

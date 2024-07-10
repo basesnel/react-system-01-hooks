@@ -7,7 +7,7 @@ export default function Task09() {
   const [planetList, setPlanetList] = useState([]);
   const [planetId, setPlanetId] = useState('');
 
-  const [placeList] = useState([]);
+  const [placeList, setPlaceList] = useState([]);
   const [placeId, setPlaceId] = useState('');
 
   useEffect(() => {
@@ -23,6 +23,24 @@ export default function Task09() {
       ignore = true;
     };
   }, []);
+
+  useEffect(() => {
+    if (planetId === '') {
+      return;
+    }
+
+    let ignore = false;
+    fetchData('/planets/' + planetId + '/places').then(result => {
+      if (!ignore) {
+        console.log('Fetched a list of places on "' + planetId + '".');
+        setPlaceList(result);
+        setPlaceId(result[0].id);
+      }
+    });
+    return () => {
+      ignore = true;
+    };
+  }, [planetId]);
 
   return (
     <>

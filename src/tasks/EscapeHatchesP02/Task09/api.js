@@ -1,7 +1,7 @@
 export function fetchData(url) {
   if (url === '/planets') {
     return fetchPlanets();
-  } else if (url.startWith('/planets')) {
+  } else if (url.startsWith('/planets')) {
     const match = url.match(/^\/planets\/([\w-]+)\/places(\/)?$/);
     if (!match || !match[1] || !match[1].length) {
       throw Error(

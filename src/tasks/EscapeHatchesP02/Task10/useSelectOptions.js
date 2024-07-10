@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { fetchData } from './api';
 
-export function useSelectOptions(url) {
+const useSelectOptions = url => {
   const [list, setList] = useState(null);
-  const [selectedId, setSelectId] = useState('');
+  const [selected, setSelect] = useState('');
 
   useEffect(() => {
     if (url === null) {
@@ -14,12 +14,14 @@ export function useSelectOptions(url) {
     fetchData(url).then(result => {
       if (!ignore) {
         setList(result);
-        setSelectId(result[0].id);
+        setSelect(result[0]);
       }
     });
     return () => {
       ignore = true;
     };
   }, [url]);
-  return [list, selectedId, setSelectId];
-}
+  return [list, selected, setSelect];
+};
+
+export { useSelectOptions };

@@ -17,7 +17,7 @@ const Select = props => {
           onChange={onHandleSelect}
           className={input}
         >
-          {list.map(item => (
+          {list?.map(item => (
             <option key={item} value={item}>
               {item}
             </option>
@@ -32,14 +32,16 @@ const Select = props => {
 Select.propTypes = {
   selectLabel: PropTypes.string,
   selectName: PropTypes.string.isRequired,
-  selected: PropTypes.string.isRequired,
-  list: PropTypes.arrayOf(PropTypes.string).isRequired,
+  selected: PropTypes.string,
+  list: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,
   onHandleSelect: PropTypes.func.isRequired,
 };
 
 Select.defaultProps = {
   selectLabel: null,
+  selected: '',
+  laist: null,
   icon: null,
 };
 

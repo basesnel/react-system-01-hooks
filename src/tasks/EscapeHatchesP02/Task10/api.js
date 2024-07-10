@@ -20,81 +20,29 @@ export function fetchData(url) {
 async function fetchPlanets() {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve([
-        {
-          id: 'earth',
-          name: 'Earth',
-        },
-        {
-          id: 'venus',
-          name: 'Venus',
-        },
-        {
-          id: 'mars',
-          name: 'Mars',
-        },
-      ]);
+      resolve(['Earth', 'Venus', 'Mars']);
     }, 1000);
   });
 }
 
-async function fetchPlaces(planetId) {
-  if (typeof planetId !== 'string') {
+async function fetchPlaces(planet) {
+  if (typeof planet !== 'string') {
     throw Error(
       'fetchPlaces(planetId) expects a string argument.' +
         'Instead received: ' +
-        planetId +
+        planet +
         '.'
     );
   }
   return new Promise(resolve => {
     setTimeout(() => {
-      if (planetId === 'earth') {
-        resolve([
-          {
-            id: 'laos',
-            name: 'Laos',
-          },
-          {
-            id: 'spain',
-            name: 'Spain',
-          },
-          {
-            id: 'vietnam',
-            name: 'Vietnam',
-          },
-        ]);
-      } else if (planetId === 'venus') {
-        resolve([
-          {
-            id: 'aurelua',
-            name: 'Aurelia',
-          },
-          {
-            id: 'diana-chasma',
-            name: 'Diana Chasma',
-          },
-          {
-            id: 'kumsong-vallis',
-            name: 'Kumsong Vallis',
-          },
-        ]);
-      } else if (planetId === 'mars') {
-        resolve([
-          {
-            id: 'aluminium-city',
-            name: 'Aluminium City',
-          },
-          {
-            id: 'new-new-york',
-            name: 'New Nwe York',
-          },
-          {
-            id: 'vishniac',
-            name: 'Vishniac',
-          },
-        ]);
-      } else throw Error('Uncnown planet ID: ' + planetId);
+      if (planet === 'Earth') {
+        resolve(['Laos', 'Spain', 'Vietnam']);
+      } else if (planet === 'Venus') {
+        resolve(['Aurelia', 'Diana Chasma', 'Kumsong Vallis']);
+      } else if (planet === 'Mars') {
+        resolve(['Aluminium City', 'New New York', 'Vishniac']);
+      } else throw Error('Uncnown planet: ' + planet);
     }, 1000);
   });
 }

@@ -1,16 +1,18 @@
-// import { MdChat } from 'react-icons/md';
-import { Paragraph } from 'components';
+import { PiPlanetFill } from 'react-icons/pi';
+import { MdPlace } from 'react-icons/md';
+import { FlexBox, Select, Paragraph } from 'components';
 import { useSelectOptions } from './useSelectOptions';
 
-export default function Task10() {
-  const [planetList, planetId, setPlanetId] = useSelectOptions('/planets');
-  const [placeList, placeId, setPlaceId] = useSelectOptions(
-    planetId ? `/planets/${planetId}/places` : null
+const Task10 = () => {
+  const [planetList, planet, setPlanet] = useSelectOptions('/planets');
+  const [placeList, place, setPlace] = useSelectOptions(
+    planet ? `/planets/${planet}/places` : null
   );
 
   return (
     <>
-      <label>
+      <FlexBox>
+        {/* <label>
         Pick a planet:
         <select
           value={planetId}
@@ -24,16 +26,16 @@ export default function Task10() {
             </option>
           ))}
         </select>
-      </label>
-      {/* <Select
-        selectLabel="Pick a planet: "
-        selectName="Planet09"
-        selected={planetId}
-        list={planetList}
-        icon={<MdChat />}
-        onHandleSelect={e => setPlanetId(e.target.value)}
-      /> */}
-      <label>
+      </label> */}
+        <Select
+          selectLabel="Pick a planet: "
+          selectName="Planet09"
+          selected={planet}
+          list={planetList}
+          icon={<PiPlanetFill />}
+          onHandleSelect={e => setPlanet(e.target.value)}
+        />
+        {/* <label>
         Pick a place:
         <select
           value={placeId}
@@ -47,19 +49,22 @@ export default function Task10() {
             </option>
           ))}
         </select>
-      </label>
-      {/* <Select
-        selectLabel="Pick a place: "
-        selectName="Place09"
-        selected={placeId}
-        list={placeList}
-        icon={<MdChat />}
-        onHandleSelect={e => setPlaceId(e.target.value)}
-      /> */}
+      </label> */}
+        <Select
+          selectLabel="Pick a place: "
+          selectName="Place09"
+          selected={place}
+          list={placeList}
+          icon={<MdPlace />}
+          onHandleSelect={e => setPlace(e.target.value)}
+        />
+      </FlexBox>
       <hr />
       <Paragraph>
-        You are going to: {placeId || '???'} on {planetId || '???'}
+        You are going to: {place || '???'} on {planet || '???'}
       </Paragraph>
     </>
   );
-}
+};
+
+export default Task10;

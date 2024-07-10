@@ -18,6 +18,7 @@ const EscapeHatchesPageP2 = () => {
     Task07,
     Task08,
     Task09,
+    Task10,
   } = escapeHatchesP02;
 
   return (
@@ -72,6 +73,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="task 09: populate a chain of selected boxes">
             <Task09 />
+          </Card>
+          <Card title="task 10: populate a chain of selected boxes (custom hook)">
+            <Task10 />
           </Card>
         </Grid>
       </Container>

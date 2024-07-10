@@ -12,6 +12,7 @@ import Task06 from './Task06';
 import Task07 from './Task07';
 import Task08 from './Task08';
 import Task09 from './Task09';
+import Task10 from './Task10';
 
 export {
   Task01,
@@ -28,4 +29,5 @@ export {
   Task07,
   Task08,
   Task09,
+  Task10,
 };

@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react';
-// import { MdChat } from 'react-icons/md';
-import { Paragraph } from 'components';
+import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
+import { FlexBox, Select, Paragraph } from 'components';
 import { fetchData } from './api';
 
 export default function Task09() {
   const [planetList, setPlanetList] = useState([]);
-  const [planetId, setPlanetId] = useState('');
+  const [planet, setPlanet] = useState('');
 
   const [placeList, setPlaceList] = useState([]);
-  const [placeId, setPlaceId] = useState('');
+  const [place, setPlace] = useState('');
 
   useEffect(() => {
     let ignore = false;
@@ -16,7 +16,7 @@ export default function Task09() {
       if (!ignore) {
         console.log('Fetched a list of planets.');
         setPlanetList(result);
-        setPlanetId(result[0].id);
+        setPlanet(result[0]);
       }
     });
     return () => {
@@ -25,74 +25,46 @@ export default function Task09() {
   }, []);
 
   useEffect(() => {
-    if (planetId === '') {
+    if (planet === '') {
       return;
     }
 
     let ignore = false;
-    fetchData('/planets/' + planetId + '/places').then(result => {
+    fetchData('/planets/' + planet + '/places').then(result => {
       if (!ignore) {
-        console.log('Fetched a list of places on "' + planetId + '".');
+        console.log('Fetched a list of places on "' + planet + '".');
         setPlaceList(result);
-        setPlaceId(result[0].id);
+        setPlace(result[0]);
       }
     });
     return () => {
       ignore = true;
     };
-  }, [planetId]);
+  }, [planet]);
 
   return (
     <>
-      <label>
-        Pick a planet:
-        <select
-          value={planetId}
-          onChange={e => {
-            setPlanetId(e.target.value);
-          }}
-        >
-          {planetList.map(planet => (
-            <option key={planet.id} value={planet.id}>
-              {planet.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      {/* <Select
-        selectLabel="Pick a planet: "
-        selectName="Planet09"
-        selected={planetId}
-        list={planetList}
-        icon={<MdChat />}
-        onHandleSelect={e => setPlanetId(e.target.value)}
-      /> */}
-      <label>
-        Pick a place:
-        <select
-          value={placeId}
-          onChange={e => {
-            setPlaceId(e.target.value);
-          }}
-        >
-          {placeList.map(place => (
-            <option key={place.id} value={place.id}>
-              {place.name}
-            </option>
-          ))}
-        </select>
-      </label>
-      {/* <Select
-        selectLabel="Pick a place: "
-        selectName="Place09"
-        selected={placeId}
-        list={placeList}
-        icon={<MdChat />}
-        onHandleSelect={e => setPlaceId(e.target.value)}
-      /> */}
+      <FlexBox>
+        <Select
+          selectLabel="Pick a planet: "
+          selectName="Planet09"
+          selected={planet}
+          list={planetList}
+          icon={<MdOutlineLanguage />}
+          onHandleSelect={e => setPlanet(e.target.value)}
+        />
+        <Select
+          selectLabel="Pick a place: "
+          selectName="Place09"
+          selected={place}
+          list={placeList}
+          icon={<MdPlace />}
+          onHandleSelect={e => setPlace(e.target.value)}
+        />
+      </FlexBox>
       <hr />
       <Paragraph>
-        You are going to: {placeId || '???'} on {planetId || '???'}
+        You are going to: {place || '???'} on {planet || '???'}
       </Paragraph>
     </>
   );

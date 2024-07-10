@@ -1,4 +1,4 @@
-export function fetchData(url) {
+const fetchData = url => {
   if (url === '/planets') {
     return fetchPlanets();
   } else if (url.startsWith('/planets')) {
@@ -15,7 +15,7 @@ export function fetchData(url) {
         url +
         '".'
     );
-}
+};
 
 async function fetchPlanets() {
   return new Promise(resolve => {
@@ -46,3 +46,5 @@ async function fetchPlaces(planet) {
     }, 1000);
   });
 }
+
+export { fetchData };

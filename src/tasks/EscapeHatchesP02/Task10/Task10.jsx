@@ -1,5 +1,4 @@
-import { PiPlanetFill } from 'react-icons/pi';
-import { MdPlace } from 'react-icons/md';
+import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
 import { FlexBox, Select, Paragraph } from 'components';
 import { useSelectOptions } from './useSelectOptions';
 
@@ -12,44 +11,14 @@ const Task10 = () => {
   return (
     <>
       <FlexBox>
-        {/* <label>
-        Pick a planet:
-        <select
-          value={planetId}
-          onChange={e => {
-            setPlanetId(e.target.value);
-          }}
-        >
-          {planetList?.map(planet => (
-            <option key={planet.id} value={planet.id}>
-              {planet.name}
-            </option>
-          ))}
-        </select>
-      </label> */}
         <Select
           selectLabel="Pick a planet: "
           selectName="Planet09"
           selected={planet}
           list={planetList}
-          icon={<PiPlanetFill />}
+          icon={<MdOutlineLanguage />}
           onHandleSelect={e => setPlanet(e.target.value)}
         />
-        {/* <label>
-        Pick a place:
-        <select
-          value={placeId}
-          onChange={e => {
-            setPlaceId(e.target.value);
-          }}
-        >
-          {placeList?.map(place => (
-            <option key={place.id} value={place.id}>
-              {place.name}
-            </option>
-          ))}
-        </select>
-      </label> */}
         <Select
           selectLabel="Pick a place: "
           selectName="Place09"

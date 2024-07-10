@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
 import { FlexBox, Select, Paragraph } from 'components';
-import { fetchData } from './api';
+import { fetchData } from 'services';
 
-export default function Task09() {
+const Task09 = () => {
   const [planetList, setPlanetList] = useState([]);
   const [planet, setPlanet] = useState('');
 
@@ -68,4 +68,6 @@ export default function Task09() {
       </Paragraph>
     </>
   );
-}
+};
+
+export default Task09;

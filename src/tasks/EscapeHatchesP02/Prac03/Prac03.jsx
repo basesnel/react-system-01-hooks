@@ -1,19 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Button, Title, FlexBox } from 'components';
-import { createConnection } from 'constants';
-
-const serverUrl = 'https://localhost:1234';
-const roomId = 'general';
-
-const ChatRoom = () => {
-  useEffect(() => {
-    const connection = createConnection(serverUrl, roomId);
-    connection.connect();
-    return () => connection.disconnect();
-  }, []);
-
-  return <Title level={3} caption={`welcome to the ${roomId} room!`} />;
-};
+import { useState } from 'react';
+import { Button, FlexBox } from 'components';
+import { ChatRoom03 } from '../intendendComponents';
 
 const Prac03 = () => {
   const [show, setShow] = useState(false);
@@ -27,7 +14,7 @@ const Prac03 = () => {
         />
       </FlexBox>
       {show && <hr />}
-      {show && <ChatRoom roomId={roomId} />}
+      {show && <ChatRoom03 />}
     </>
   );
 };

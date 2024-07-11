@@ -8,13 +8,13 @@ const Task06 = () => {
   useEffect(() => {
     const canvas = document.querySelector('[data-box]');
 
-    const handleMove = e => {
+    function handleMove(e) {
       canMove &&
         setPosition({
-          x: e.clientX - canvas.getBoundingClientRect().x,
-          y: e.clientY - canvas.getBoundingClientRect().y,
+          x: e.clientX - this.getBoundingClientRect().x,
+          y: e.clientY - this.getBoundingClientRect().y,
         });
-    };
+    }
 
     canvas.addEventListener('pointermove', handleMove);
 

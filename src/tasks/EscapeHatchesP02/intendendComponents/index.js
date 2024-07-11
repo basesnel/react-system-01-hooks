@@ -6,6 +6,7 @@ import ChatRoom02 from './ChatRoom02';
 import ChatRoom03 from './ChatRoom03';
 import ChatRoom04 from './ChatRoom04';
 import ChatRoom05 from './ChatRoom05';
+import ChatRoom06 from './ChatRoom06';
 
 export {
   NewTodo,
@@ -16,4 +17,5 @@ export {
   ChatRoom03,
   ChatRoom04,
   ChatRoom05,
+  ChatRoom06,
 };

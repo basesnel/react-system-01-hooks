@@ -4,6 +4,7 @@ import EditContact from './EditContact';
 import ChatRoom01 from './ChatRoom01';
 import ChatRoom02 from './ChatRoom02';
 import ChatRoom03 from './ChatRoom03';
+import ChatRoom04 from './ChatRoom04';
 import ChatRoom05 from './ChatRoom05';
 
 export {
@@ -13,5 +14,6 @@ export {
   ChatRoom01,
   ChatRoom02,
   ChatRoom03,
+  ChatRoom04,
   ChatRoom05,
 };

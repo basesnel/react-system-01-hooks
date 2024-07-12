@@ -44,7 +44,7 @@ const Task09 = () => {
 
   return (
     <>
-      <FlexBox>
+      <FlexBox direction="column" align="flex-start">
         <Select
           selectLabel="Pick a planet: "
           selectName="Planet09"

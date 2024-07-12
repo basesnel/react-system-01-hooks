@@ -18,6 +18,10 @@ import { initialTaskFirstPerson } from './initialTaskFirstPerson';
 import { colorOptions } from './colorOptions';
 import { chatRoom } from './chatRoom';
 import { createConnection } from './chat';
+import {
+  createEncryptedConnection,
+  createUnencryptedConnection,
+} from './chatEncrypted';
 import { createInitialTodos } from './createInitialTodos';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
@@ -46,6 +50,8 @@ export {
   colorOptions,
   chatRoom,
   createConnection,
+  createEncryptedConnection,
+  createUnencryptedConnection,
   createInitialTodos,
   catList,
   personList,

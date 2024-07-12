@@ -1,11 +1,12 @@
 import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Title } from 'components';
 import {
   createEncryptedConnection,
   createUnencryptedConnection,
-} from './chat.js';
+} from 'constants';
 
-const ChatRoom = ({ roomId, isEncrypted }) => {
+const ChatRoom07 = ({ roomId, isEncrypted }) => {
   useEffect(() => {
     const createConnection = isEncrypted
       ? createEncryptedConnection
@@ -18,4 +19,9 @@ const ChatRoom = ({ roomId, isEncrypted }) => {
   return <Title level={3} caption={`welcome to the ${roomId} room!`} />;
 };
 
-export default ChatRoom;
+ChatRoom07.propTypes = {
+  roomId: PropTypes.string.isRequired,
+  isEncrypted: PropTypes.bool.isRequired,
+};
+
+export default ChatRoom07;

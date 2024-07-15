@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { Select, FlexBox, Title, CheckBox } from 'components';
 import { chatRoom } from 'constants';
@@ -46,6 +47,15 @@ const Prac07 = () => {
       <ChatRoom roomId={roomId} theme={isDark ? 'dark' : 'light'} />
     </>
   );
+};
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
+  theme: PropTypes.oneOf(['dark', 'light']),
+};
+
+ChatRoom.defaultProps = {
+  theme: null,
 };
 
 export default Prac07;

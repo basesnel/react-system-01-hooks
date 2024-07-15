@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
-import { createConnection, sendMessage } from './chat';
+import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
 import { FiMessageCircle } from 'react-icons/fi';
 import { Select, Button, FlexBox, Title, Input } from 'components';
 import { chatRoom } from 'constants';
+import { createConnection, sendMessage } from './chat';
 
 const serverUrl = 'https://localhost:1234';
 
@@ -60,6 +61,10 @@ const Prac06 = () => {
       {show && <ChatRoom roomId={roomId} />}
     </>
   );
+};
+
+ChatRoom.propTypes = {
+  roomId: PropTypes.string.isRequired,
 };
 
 export default Prac06;

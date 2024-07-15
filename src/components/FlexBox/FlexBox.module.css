@@ -36,16 +36,6 @@
 }
 
 @media smartphone-to {
-  /* .flexBox {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .column {
-    flex-direction: column;
-  } */
-
   .stretch {
     justify-content: space-around;
     align-items: stretch;

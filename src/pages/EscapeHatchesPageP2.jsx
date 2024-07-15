@@ -20,6 +20,7 @@ const EscapeHatchesPageP2 = () => {
     Task09,
     Task10,
     Prac06,
+    Prac07,
   } = escapeHatchesP02;
 
   return (
@@ -80,6 +81,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 06: effects run whenever sync is needed">
             <Prac06 />
+          </Card>
+          <Card title="prac 07: extracting non-reactive logic out of Effects">
+            <Prac07 />
           </Card>
         </Grid>
       </Container>

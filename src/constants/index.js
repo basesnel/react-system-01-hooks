@@ -22,6 +22,7 @@ import {
   createEncryptedConnection,
   createUnencryptedConnection,
 } from './chatEncrypted';
+import { sendMessage } from './sendMessage';
 import { createInitialTodos } from './createInitialTodos';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
@@ -52,6 +53,7 @@ export {
   createConnection,
   createEncryptedConnection,
   createUnencryptedConnection,
+  sendMessage,
   createInitialTodos,
   catList,
   personList,

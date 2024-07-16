@@ -4,14 +4,13 @@ import { Container, Logo, NavBar, UserMenu, FlexBox, Button } from 'components';
 
 import authContext from 'contexts/auth/context';
 
-import css from './AppBar.module.css';
+import styles from './styles.module.css';
 
 const AppBar = () => {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
-  const { appBar } = css;
 
   return (
-    <header className={appBar}>
+    <header className={styles.appBar}>
       <Container variant="navigation">
         <Logo text="WebForge" />
         <NavBar />

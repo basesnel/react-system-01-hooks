@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from './Button.module.css';
+import styles from './styles.module.css';
 
 const Button = props => {
   const { type, caption, onClick, isDisabled, ...delegated } = props;
-  const { button } = css;
 
   return (
     <button
-      className={button}
+      className={styles.button}
       type={type}
       onClick={onClick}
       disabled={isDisabled}

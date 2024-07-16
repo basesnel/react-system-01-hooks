@@ -13,8 +13,7 @@ const Task11 = () => {
     return () => {
       clearInterval(id);
     };
-    // eslint-disable-next-line
-  }, []);
+  }, [increment]);
 
   return (
     <>

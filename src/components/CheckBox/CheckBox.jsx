@@ -2,16 +2,15 @@ import PropTypes from 'prop-types';
 
 import { Span } from 'components';
 
-import css from './CheckBox.module.css';
+import styles from './styles.module.css';
 
 const CheckBox = props => {
   const { name, checked, onChange, label } = props;
-  const { field, check } = css;
 
   return (
-    <label className={field}>
+    <label className={styles.field}>
       <input
-        className={check}
+        className={styles.check}
         type="checkbox"
         name={name}
         checked={checked}

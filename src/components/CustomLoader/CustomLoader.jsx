@@ -2,14 +2,13 @@ import { ImSpinner } from 'react-icons/im';
 
 import { Paragraph } from 'components';
 
-import css from './CustomLoader.module.css';
+import styles from './styles.module.css';
 
 const CustomLoader = () => {
-  const { spinner, iconSpin } = css;
-
   return (
-    <div className={spinner}>
-      <ImSpinner className={iconSpin} /> <Paragraph>Loading...</Paragraph>
+    <div className={styles.spinner}>
+      <ImSpinner className={styles.iconSpin} />{' '}
+      <Paragraph>Loading...</Paragraph>
     </div>
   );
 };

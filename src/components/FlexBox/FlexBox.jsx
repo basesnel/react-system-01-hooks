@@ -1,16 +1,15 @@
 import PropTypes from 'prop-types';
 
-import css from './FlexBox.module.css';
+import styles from './styles.module.css';
 
 const FlexBox = props => {
   const { direction, align, children } = props;
-  const { flexBox } = css;
 
-  const alignItems = align ? `${css[align]}` : '';
-  const directionItems = direction ? `${css[direction]}` : '';
+  const alignItems = align ? `${styles[align]}` : '';
+  const directionItems = direction ? `${styles[direction]}` : '';
 
   return (
-    <div className={`${flexBox} ${directionItems} ${alignItems}`}>
+    <div className={`${styles.flexBox} ${directionItems} ${alignItems}`}>
       {children}
     </div>
   );

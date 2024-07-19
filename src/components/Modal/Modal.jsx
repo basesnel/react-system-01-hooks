@@ -4,19 +4,18 @@ import { MdClose } from 'react-icons/md';
 
 import { Paragraph } from 'components';
 
-import css from './Modal.module.css';
+import styles from './styles.module.css';
 
 const Modal = props => {
   const { url, onHide, onClose } = props;
-  const { backdrop, modal, modalClose, icon } = css;
 
   return (
-    <div className={backdrop} onClick={onHide}>
-      <div className={modal}>
+    <div className={styles.backdrop} onClick={onHide}>
+      <div className={styles.modal}>
         <Paragraph>Modal</Paragraph>
         <Paragraph>url: {url}</Paragraph>
-        <button className={modalClose} onClick={onClose}>
-          <MdClose className={icon} />
+        <button className={styles.modalClose} onClick={onClose}>
+          <MdClose className={styles.icon} />
         </button>
       </div>
     </div>

@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 
 import { toast } from 'react-toastify';
 
-import css from './MiniForm.module.css';
+import styles from './styles.module.css';
 
 const MiniForm = props => {
   const { onFormSubmit, filling, icon } = props;
-  const { miniform, miniformButton, miniformInput } = css;
 
   const [field, setField] = useState('');
 
@@ -28,16 +27,20 @@ const MiniForm = props => {
   };
 
   return (
-    <form className={miniform} onSubmit={handleSubmit} autoComplete="off">
+    <form
+      className={styles.miniform}
+      onSubmit={handleSubmit}
+      autoComplete="off"
+    >
       <input
         type="text"
         name="field"
         placeholder={filling}
         value={field}
         onChange={handleInputChange}
-        className={miniformInput}
+        className={styles.miniformInput}
       />
-      <button className={miniformButton}>{icon}</button>
+      <button className={styles.miniformButton}>{icon}</button>
     </form>
   );
 };

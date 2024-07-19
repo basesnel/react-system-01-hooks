@@ -1,9 +1,9 @@
 import { NavLink } from 'react-router-dom';
 
-import css from './NavBar.module.css';
+import styles from './styles.module.css';
 
 const NavBar = () => {
-  const { menu, item, navlink, navlinkActive } = css;
+  const { menu, item, navlink, navlinkActive } = styles;
 
   return (
     <nav>

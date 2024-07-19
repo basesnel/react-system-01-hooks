@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import css from './Input.module.css';
+import styles from './styles.module.css';
 
 const Input = props => {
   const {
@@ -14,7 +14,6 @@ const Input = props => {
     icon,
     inputRef,
   } = props;
-  const { field, label, wrapInput, input, iconInput } = css;
 
   const valueProps = {
     ...(inputValue === null || handleChange === null
@@ -23,13 +22,13 @@ const Input = props => {
   };
 
   return (
-    <div className={field}>
+    <div className={styles.field}>
       {inputLabel && (
-        <label className={label} htmlFor={inputName}>
+        <label className={styles.label} htmlFor={inputName}>
           {inputLabel}
         </label>
       )}
-      <div className={wrapInput}>
+      <div className={styles.wrapInput}>
         <input
           disabled={isDisabled}
           type={inputType}
@@ -37,11 +36,11 @@ const Input = props => {
           id={inputName}
           {...valueProps}
           autoComplete="off"
-          className={input}
+          className={styles.input}
           placeholder={inputPlaceholder}
           ref={inputRef}
         />
-        <span className={iconInput}>{icon}</span>
+        <span className={styles.iconInput}>{icon}</span>
       </div>
     </div>
   );

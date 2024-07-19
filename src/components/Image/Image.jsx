@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Image.module.css';
+import styles from './styles.module.css';
 
 const Image = props => {
   const { isLazy, src, desc, width } = props;
-  const { thumb } = css;
 
   return (
-    <div className={thumb}>
+    <div className={styles.thumb}>
       <img loading={isLazy} src={src} alt={desc} width={width} />
     </div>
   );

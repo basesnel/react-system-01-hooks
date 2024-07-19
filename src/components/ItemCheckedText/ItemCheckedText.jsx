@@ -1,13 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from './ItemCheckedText.module.css';
+import styles from './styles.module.css';
 
 const ItemCheckedText = props => {
   const { content, checked = false } = props;
-  const { itemContent } = css;
-  const done = checked ? `${css.checked}` : '';
 
-  return <span className={`${itemContent} ${done}`}>{content}</span>;
+  const done = checked ? `${styles.checked}` : '';
+
+  return <span className={`${styles.itemContent} ${done}`}>{content}</span>;
 };
 
 ItemCheckedText.propTypes = {

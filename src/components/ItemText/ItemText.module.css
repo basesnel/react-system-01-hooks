@@ -1,6 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to from sizes;
-@value item from "../Item/Item.module.css";
+@value item from "../Item/styles.module.css";
 
 .itemContent {
   flex-grow: 1;

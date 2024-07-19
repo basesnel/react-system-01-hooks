@@ -1,4 +1,4 @@
-@value item from "../../components/Item/Item.module.css";
+@value item from "../../components/Item/styles.module.css";
 
 .link {
   display: block;

@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Item.module.css';
+import styles from './styles.module.css';
 
 const Item = props => {
   const { children, ...delegated } = props;
-  const { item } = css;
 
   return (
-    <li className={item} {...delegated}>
+    <li className={styles.item} {...delegated}>
       {children}
     </li>
   );

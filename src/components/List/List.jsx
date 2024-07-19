@@ -1,17 +1,16 @@
 import PropTypes from 'prop-types';
 
-import css from './List.module.css';
+import styles from './styles.module.css';
 
 const List = props => {
   const { message, listRef, children } = props;
-  const { list, messageList } = css;
 
   return children.length ? (
-    <ul className={list} ref={listRef}>
+    <ul className={styles.list} ref={listRef}>
       {children}
     </ul>
   ) : (
-    <span className={messageList}>{message}</span>
+    <span className={styles.messageList}>{message}</span>
   );
 };
 

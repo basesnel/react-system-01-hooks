@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 
-import css from './ItemText.module.css';
+import styles from './styles.module.css';
 
 const ItemText = props => {
   const { content } = props;
-  const { itemContent } = css;
 
-  return <span className={itemContent}>{content}</span>;
+  return <span className={styles.itemContent}>{content}</span>;
 };
 
 ItemText.propTypes = {

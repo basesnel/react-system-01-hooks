@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 
-import css from './ItemFlex.module.css';
+import styles from './styles.module.css';
 
 const ItemFlex = props => {
   const { children } = props;
-  const { itemFlex } = css;
 
-  return <div className={itemFlex}>{children}</div>;
+  return <div className={styles.itemFlex}>{children}</div>;
 };
 
 ItemFlex.propTypes = {

@@ -1,4 +1,4 @@
-@value itemFlex from "../ItemFlex/ItemFlex.module.css";
+@value itemFlex from "../ItemFlex/styles.module.css";
 
 .itemLabel {
   composes: itemFlex;

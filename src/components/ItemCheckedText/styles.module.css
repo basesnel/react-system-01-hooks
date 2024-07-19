@@ -1,4 +1,4 @@
-@value itemContent from "../ItemText/ItemText.module.css";
+@value itemContent from "../ItemText/styles.module.css";
 
 .checked {
   text-decoration: line-through;

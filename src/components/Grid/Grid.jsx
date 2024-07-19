@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 
-import css from './Grid.module.css';
+import styles from './styles.module.css';
 
 const Grid = props => {
   const { children } = props;
-  const { grid } = css;
 
-  return <section className={grid}>{children}</section>;
+  return <section className={styles.grid}>{children}</section>;
 };
 
 Grid.propTypes = {

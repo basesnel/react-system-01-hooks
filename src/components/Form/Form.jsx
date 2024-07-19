@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Form.module.css';
+import styles from './styles.module.css';
 
 const Form = props => {
   const { onSubmit, children } = props;
-  const { form } = css;
 
   return (
-    <form className={form} onSubmit={onSubmit} autoComplete="off">
+    <form className={styles.form} onSubmit={onSubmit} autoComplete="off">
       {children}
     </form>
   );

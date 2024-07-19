@@ -1,12 +1,11 @@
 import PropTypes from 'prop-types';
 
-import css from './HideOverflow.module.css';
+import styles from './styles.module.css';
 
 const HideOverflow = props => {
   const { children } = props;
-  const { hideOverflow } = css;
 
-  return <div className={hideOverflow}>{children}</div>;
+  return <div className={styles.hideOverflow}>{children}</div>;
 };
 
 HideOverflow.propTypes = {

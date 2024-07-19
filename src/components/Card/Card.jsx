@@ -2,18 +2,17 @@ import PropTypes from 'prop-types';
 
 import { Title } from 'components';
 
-import css from './Card.module.css';
+import styles from './styles.module.css';
 
 const Card = props => {
   const { title, children } = props;
-  const { card, cardHeader, cardContent } = css;
 
   return (
-    <div className={card}>
-      <div className={cardHeader}>
+    <div className={styles.card}>
+      <div className={styles.cardHeader}>
         <Title level={2} caption={title} />
       </div>
-      <div className={cardContent}>{children}</div>
+      <div className={styles.cardContent}>{children}</div>
     </div>
   );
 };

@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Canvas.module.css';
+import styles from './styles.module.css';
 
 const Canvas = props => {
   const { children, onPointerMove, ...delegated } = props;
-  const { canvas } = css;
 
   return (
-    <div onPointerMove={onPointerMove} className={canvas} {...delegated}>
+    <div onPointerMove={onPointerMove} className={styles.canvas} {...delegated}>
       {children}
     </div>
   );

@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Caption.module.css';
+import styles from './styles.module.css';
 
 const Caption = props => {
   const { text } = props;
-  const { wrapper } = css;
 
   return (
-    <div className={wrapper}>
+    <div className={styles.wrapper}>
       <span>{text}</span>
     </div>
   );

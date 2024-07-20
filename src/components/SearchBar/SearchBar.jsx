@@ -4,11 +4,10 @@ import PropTypes from 'prop-types';
 
 import { toast } from 'react-toastify';
 
-import css from './SearchBar.module.css';
+import styles from './styles.module.css';
 
 const SearchBar = props => {
   const { onFormSubmit, query } = props;
-  const { searchBar, searchForm, searchButton, searchLabel, searchInput } = css;
 
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -28,10 +27,14 @@ const SearchBar = props => {
   };
 
   return (
-    <section className={searchBar}>
-      <form onSubmit={handleSubmit} className={searchForm} autoComplete="off">
-        <button className={searchButton}>
-          <span className={searchLabel}>Search</span>
+    <section className={styles.searchBar}>
+      <form
+        onSubmit={handleSubmit}
+        className={styles.searchForm}
+        autoComplete="off"
+      >
+        <button className={styles.searchButton}>
+          <span className={styles.searchLabel}>Search</span>
         </button>
         <input
           type="text"
@@ -39,7 +42,7 @@ const SearchBar = props => {
           placeholder={query ? `Search ${query}...` : 'Search...'}
           value={searchQuery}
           onChange={handleInputChange}
-          className={searchInput}
+          className={styles.searchInput}
         />
       </form>
     </section>

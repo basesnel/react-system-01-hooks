@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types';
 
-import css from './Paragraph.module.css';
+import styles from './styles.module.css';
 
 const Paragraph = props => {
   const { centered, paragraphRef, children } = props;
-  const { text, centeredText } = css;
 
   return (
     <p
-      className={centered ? `${text} ${centeredText}` : text}
+      className={
+        centered ? `${styles.text} ${styles.centeredText}` : styles.text
+      }
       ref={paragraphRef}
     >
       {children}

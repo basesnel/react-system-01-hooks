@@ -1,21 +1,20 @@
 import PropTypes from 'prop-types';
 
-import css from './Select.module.css';
+import styles from './styles.module.css';
 
 const Select = props => {
   const { selectLabel, selectName, selected, list, icon, onHandleSelect } =
     props;
-  const { field, label, wrapInput, input, iconInput } = css;
 
   return (
-    <label className={field}>
-      {selectLabel && <span className={label}>{selectLabel}</span>}
-      <div className={wrapInput}>
+    <label className={styles.field}>
+      {selectLabel && <span className={styles.label}>{selectLabel}</span>}
+      <div className={styles.wrapInput}>
         <select
           name={selectName}
           value={selected}
           onChange={onHandleSelect}
-          className={input}
+          className={styles.input}
         >
           {list?.map(item => (
             <option key={item} value={item}>
@@ -23,7 +22,7 @@ const Select = props => {
             </option>
           ))}
         </select>
-        <span className={iconInput}>{icon}</span>
+        <span className={styles.iconInput}>{icon}</span>
       </div>
     </label>
   );

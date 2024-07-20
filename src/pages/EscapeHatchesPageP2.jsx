@@ -22,6 +22,7 @@ const EscapeHatchesPageP2 = () => {
     Prac06,
     Prac07,
     Task11,
+    Prac08,
   } = escapeHatchesP02;
 
   return (
@@ -88,6 +89,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="task 11: fix variable that doesn't update">
             <Task11 />
+          </Card>
+          <Card title="prac 08: experiment with effect dependancy">
+            <Prac08 />
           </Card>
         </Grid>
       </Container>

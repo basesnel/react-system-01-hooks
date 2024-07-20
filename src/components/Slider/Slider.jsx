@@ -1,14 +1,13 @@
 import PropTypes from 'prop-types';
 
-import css from './Slider.module.css';
+import styles from './styles.module.css';
 
 const Slider = props => {
   const { children } = props;
-  const { slider, list } = css;
 
   return (
-    <div className={slider}>
-      <ul className={list}>{children}</ul>
+    <div className={styles.slider}>
+      <ul className={styles.list}>{children}</ul>
     </div>
   );
 };

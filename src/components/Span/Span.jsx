@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
 
-import css from './Span.module.css';
+import styles from './styles.module.css';
 
 const Span = props => {
   const { centered, children } = props;
-  const { text, centeredText } = css;
 
   return (
-    <span className={centered ? `${text} ${centeredText}` : text}>
+    <span
+      className={
+        centered ? `${styles.text} ${styles.centeredText}` : styles.text
+      }
+    >
       {children}
     </span>
   );

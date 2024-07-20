@@ -1,13 +1,12 @@
 import PropTypes from 'prop-types';
 
-import css from './Slide.module.css';
+import styles from './styles.module.css';
 
 const Slide = props => {
   const { slideRef, children, ...delegated } = props;
-  const { slide } = css;
 
   return (
-    <li className={slide} ref={slideRef} {...delegated}>
+    <li className={styles.slide} ref={slideRef} {...delegated}>
       {children}
     </li>
   );

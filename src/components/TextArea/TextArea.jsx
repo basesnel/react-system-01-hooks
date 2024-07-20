@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import css from './TextArea.module.css';
+import styles from './styles.module.css';
 
 const TextArea = props => {
   const {
@@ -14,16 +14,15 @@ const TextArea = props => {
     icon,
     textAreaRef,
   } = props;
-  const { field, label, wrapInput, input, iconInput, iconTextarea } = css;
 
   return (
-    <div className={field}>
+    <div className={styles.field}>
       {textAreaLabel && (
-        <label className={label} htmlFor={textAreaName}>
+        <label className={styles.label} htmlFor={textAreaName}>
           {textAreaLabel}
         </label>
       )}
-      <div className={wrapInput}>
+      <div className={styles.wrapInput}>
         <textarea
           disabled={isDisabled}
           type={textAreaType}
@@ -31,12 +30,14 @@ const TextArea = props => {
           id={textAreaName}
           value={textAreaValue}
           autoComplete="off"
-          className={input}
+          className={styles.input}
           placeholder={textAreaPlaceholder}
           onChange={handleChange}
           ref={textAreaRef}
         />
-        <span className={`${iconInput} ${iconTextarea}`}>{icon}</span>
+        <span className={`${styles.iconInput} ${styles.iconTextarea}`}>
+          {icon}
+        </span>
       </div>
     </div>
   );

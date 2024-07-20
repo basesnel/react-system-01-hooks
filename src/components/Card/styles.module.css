@@ -1,6 +1,6 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to from sizes;
-@value title02, title03 from "../Title/Title.module.css";
+@value title02, title03 from "../Title/styles.module.css";
 
 .card {
   position: relative;

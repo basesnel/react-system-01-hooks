@@ -2,15 +2,14 @@ import PropTypes from 'prop-types';
 
 import { Button, FlexBox } from 'components';
 
-import css from './UserMenu.module.css';
+import styles from './styles.module.css';
 
 const UserMenu = props => {
   const { user, onLogOut } = props;
-  const { userName } = css;
 
   return (
     <FlexBox>
-      <span className={userName}>Welcome, {user.name}</span>
+      <span className={styles.userName}>Welcome, {user.name}</span>
       <Button caption="Log&nbsp;Out" onClick={onLogOut} />
     </FlexBox>
   );

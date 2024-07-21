@@ -2,23 +2,25 @@ import { Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-import { HomePage } from '../pages';
-import { SimpleStatesPage } from '../pages';
-import { SkipFirstRenderPage } from '../pages';
-import { ColorPickerPage } from '../pages';
-import { FormPage } from '../pages';
-import { ClockPage } from '../pages';
-import { PokemonPage } from '../pages';
-import { CharactersPage } from '../pages';
-import { NewsPage } from '../pages';
-import { BigCardsPage } from '../pages';
-import { NotFoundPage } from '../pages';
-import { QueueingPage } from '../pages';
-import { ObjectInStatePage } from '../pages';
-import { ArrayInStatePage } from '../pages';
-import { UseEffectsPage } from '../pages';
-import { EscapeHatchesPageP1 } from 'pages';
-import { EscapeHatchesPageP2 } from 'pages';
+import {
+  HomePage,
+  SimpleStatesPage,
+  SkipFirstRenderPage,
+  ColorPickerPage,
+  FormPage,
+  ClockPage,
+  PokemonPage,
+  CharactersPage,
+  NewsPage,
+  BigCardsPage,
+  NotFoundPage,
+  QueueingPage,
+  ObjectInStatePage,
+  ArrayInStatePage,
+  UseEffectsPage,
+  EscapeHatchesPageP1,
+  EscapeHatchesPageP2,
+} from 'pages';
 
 import AppBar from './AppBar';
 

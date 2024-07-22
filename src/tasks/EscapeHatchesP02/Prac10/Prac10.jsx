@@ -12,7 +12,7 @@ const Prac10 = () => {
       <FlexBox align="flex-end">
         <Select
           selectLabel="Choose the chat room: "
-          selectName="Chat"
+          selectName="ChatPrac10"
           selected={roomId}
           list={chatRoom}
           icon={<MdChat />}

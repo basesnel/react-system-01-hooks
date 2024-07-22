@@ -24,6 +24,7 @@ const EscapeHatchesPageP2 = () => {
     Task11,
     Prac08,
     Prac09,
+    Prac10,
   } = escapeHatchesP02;
 
   return (
@@ -96,6 +97,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 09: does some reactive value change unintentionally?">
             <Prac09 />
+          </Card>
+          <Card title="prac 10: move static object outside component">
+            <Prac10 />
           </Card>
         </Grid>
       </Container>

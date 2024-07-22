@@ -24,7 +24,7 @@ const ChatRoom13 = ({ roomId }) => {
       <Title caption={`Welcome to the ${roomId} room!`} level={2} />
       <Input
         inputType="text"
-        inputName="messageP06"
+        inputName="messageP12"
         inputValue={message}
         inputLabel="Your message:"
         handleChange={e => setMessage(e.target.value)}

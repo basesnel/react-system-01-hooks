@@ -28,7 +28,7 @@ const ChatRoom12 = () => {
       />
       <Input
         inputType="text"
-        inputName="messageP06"
+        inputName="messageP11"
         inputValue={message}
         inputLabel="Your message:"
         handleChange={e => setMessage(e.target.value)}

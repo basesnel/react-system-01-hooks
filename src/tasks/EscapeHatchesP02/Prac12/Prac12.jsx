@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
 import { Select, FlexBox } from 'components';
 import { chatRoom } from 'constants';
-import { ChatRoom12 } from '../intendendComponents';
+import { ChatRoom13 } from '../intendendComponents';
 
-const Prac11 = () => {
+const Prac12 = () => {
   const [roomId, setRoomId] = useState('general');
 
   return (
@@ -20,9 +20,9 @@ const Prac11 = () => {
         />
       </FlexBox>
       <hr />
-      <ChatRoom12 />
+      <ChatRoom13 roomId={roomId} />
     </>
   );
 };
 
-export default Prac11;
+export default Prac12;

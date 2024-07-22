@@ -25,6 +25,7 @@ const EscapeHatchesPageP2 = () => {
     Prac08,
     Prac09,
     Prac10,
+    Prac11,
   } = escapeHatchesP02;
 
   return (
@@ -100,6 +101,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 10: move static object outside component">
             <Prac10 />
+          </Card>
+          <Card title="prac 11: object works as function">
+            <Prac11 />
           </Card>
         </Grid>
       </Container>

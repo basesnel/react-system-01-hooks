@@ -1,6 +1,5 @@
-import { Title } from 'components';
-
 import { useState, useEffect } from 'react';
+import { FlexBox, Caption } from 'components';
 
 const Task12 = () => {
   const [count, setCount] = useState(0);
@@ -19,9 +18,9 @@ const Task12 = () => {
   }, []);
 
   return (
-    <>
-      <Title caption={`Counter: ${count}`} level={2} />
-    </>
+    <FlexBox>
+      <Caption text={`Counter: ${count}`} />
+    </FlexBox>
   );
 };
 

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FiMessageCircle } from 'react-icons/fi';
-import { Input, Title } from 'components';
+import { Input, Caption } from 'components';
 import { createConnection } from 'constants';
 
 const serverUrl = 'http://localhost:1234';
@@ -18,7 +18,7 @@ const ChatRoom12 = () => {
 
   return (
     <>
-      <Title level={3} caption={`Welcome to the ${roomId} room!`} />
+      <Caption text={`Welcome to the ${roomId} room!`} />
       <Input
         inputType="text"
         inputName="message"

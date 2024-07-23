@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Title } from 'components';
+import { Caption } from 'components';
 import { createConnection } from 'constants';
 
 const ChatRoom04 = ({ roomId }) => {
@@ -15,7 +15,7 @@ const ChatRoom04 = ({ roomId }) => {
     // eslint-disable-next-line
   }, []);
 
-  return <Title level={3} caption={`welcome to the ${roomId} room!`} />;
+  return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
 ChatRoom04.propTypes = {

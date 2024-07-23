@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Title } from 'components';
+import { Caption } from 'components';
 import {
   createEncryptedConnection,
   createUnencryptedConnection,
@@ -16,7 +16,7 @@ const ChatRoom07 = ({ roomId, isEncrypted }) => {
     return () => connection.disconnect();
   }, [roomId, isEncrypted]);
 
-  return <Title level={3} caption={`welcome to the ${roomId} room!`} />;
+  return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
 ChatRoom07.propTypes = {

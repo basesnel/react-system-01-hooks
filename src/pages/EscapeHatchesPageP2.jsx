@@ -27,6 +27,7 @@ const EscapeHatchesPageP2 = () => {
     Prac10,
     Prac11,
     Prac12,
+    Prac13,
   } = escapeHatchesP02;
 
   return (
@@ -108,6 +109,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="prac 12: move dynamic objecct inside effect">
             <Prac12 />
+          </Card>
+          <Card title="prac 13: move dynamic objecct inside effect (by function)">
+            <Prac13 />
           </Card>
         </Grid>
       </Container>

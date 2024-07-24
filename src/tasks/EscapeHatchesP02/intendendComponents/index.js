@@ -2,8 +2,8 @@ import NewTodo from './NewTodo';
 import ContactList from './ContactList';
 import EditContact from './EditContact';
 import ChatRoomP01 from './ChatRoomP01';
-import ChatRoom02 from './ChatRoom02';
-import ChatRoom03 from './ChatRoom03';
+import ChatRoomP02 from './ChatRoomP02';
+import ChatRoomP03 from './ChatRoomP03';
 import ChatRoom04 from './ChatRoom04';
 import ChatRoom05 from './ChatRoom05';
 import ChatRoom06 from './ChatRoom06';
@@ -21,8 +21,8 @@ export {
   ContactList,
   EditContact,
   ChatRoomP01,
-  ChatRoom02,
-  ChatRoom03,
+  ChatRoomP02,
+  ChatRoomP03,
   ChatRoom04,
   ChatRoom05,
   ChatRoom06,

@@ -5,7 +5,7 @@ import { createConnection } from 'constants';
 const serverUrl = 'https://localhost:1234';
 const roomId = 'general';
 
-const ChatRoom03 = () => {
+const ChatRoomP03 = () => {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
@@ -15,4 +15,4 @@ const ChatRoom03 = () => {
   return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
-export default ChatRoom03;
+export default ChatRoomP03;

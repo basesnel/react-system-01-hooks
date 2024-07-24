@@ -1,25 +1,8 @@
-import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
-import { Select, FlexBox, Title, CheckBox } from 'components';
+import { Select, FlexBox, CheckBox } from 'components';
 import { chatRoom } from 'constants';
-import { createConnection } from './chat';
-import { showNotification } from './notifications';
-
-const serverUrl = 'https://localhost:1234';
-
-const ChatRoom = ({ roomId, theme }) => {
-  useEffect(() => {
-    const connection = createConnection(serverUrl, roomId);
-    connection.on('connected', () => {
-      showNotification('Connected!', theme);
-    });
-    connection.connect();
-    return () => connection.disconnect();
-  }, [roomId, theme]);
-
-  return <Title caption={`Welcome to the ${roomId} room!`} level={2} />;
-};
+import { ChatRoomP07 } from '../intendendComponents';
 
 const Prac07 = () => {
   const [roomId, setRoomId] = useState('general');
@@ -44,18 +27,9 @@ const Prac07 = () => {
         />
       </FlexBox>
       <hr />
-      <ChatRoom roomId={roomId} theme={isDark ? 'dark' : 'light'} />
+      <ChatRoomP07 roomId={roomId} theme={isDark ? 'dark' : 'light'} />
     </>
   );
-};
-
-ChatRoom.propTypes = {
-  roomId: PropTypes.string.isRequired,
-  theme: PropTypes.oneOf(['dark', 'light']),
-};
-
-ChatRoom.defaultProps = {
-  theme: null,
 };
 
 export default Prac07;

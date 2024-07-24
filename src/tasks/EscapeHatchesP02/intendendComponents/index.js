@@ -9,6 +9,7 @@ import ChatRoomP05 from './ChatRoomP05';
 import ChatRoom06 from './ChatRoom06';
 import ChatRoom07 from './ChatRoom07';
 import ChatRoomP06 from './ChatRoomP06';
+import ChatRoomP07 from './ChatRoomP07';
 import ChatRoomP08 from './ChatRoomP08';
 import ChatRoom10 from './ChatRoom10';
 import ChatRoom11 from './ChatRoom11';
@@ -28,6 +29,7 @@ export {
   ChatRoom06,
   ChatRoom07,
   ChatRoomP06,
+  ChatRoomP07,
   ChatRoomP08,
   ChatRoom10,
   ChatRoom11,

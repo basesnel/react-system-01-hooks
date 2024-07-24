@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Caption } from 'components';
 import { createConnection } from 'constants';
 
-const ChatRoom04 = ({ roomId }) => {
+const ChatRoomP04 = ({ roomId }) => {
   const [serverUrl] = useState('https://localhost:1234');
   // const [serverUrl, setServerUrl] = useState('https://localhost:1234');
 
@@ -18,8 +18,8 @@ const ChatRoom04 = ({ roomId }) => {
   return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
-ChatRoom04.propTypes = {
+ChatRoomP04.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoom04;
+export default ChatRoomP04;

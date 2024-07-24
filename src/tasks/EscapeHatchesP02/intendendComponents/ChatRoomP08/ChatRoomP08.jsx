@@ -6,7 +6,7 @@ import { createConnection } from 'constants';
 const serverUrl = 'https://localhost:1234';
 const roomId = 'music';
 
-const ChatRoom09 = () => {
+const ChatRoomP08 = () => {
   useEffect(() => {
     const connection = createConnection(serverUrl, roomId);
     connection.connect();
@@ -16,8 +16,8 @@ const ChatRoom09 = () => {
   return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
-ChatRoom09.propTypes = {
+ChatRoomP08.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoom09;
+export default ChatRoomP08;

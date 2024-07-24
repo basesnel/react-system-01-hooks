@@ -4,12 +4,12 @@ import EditContact from './EditContact';
 import ChatRoomP01 from './ChatRoomP01';
 import ChatRoomP02 from './ChatRoomP02';
 import ChatRoomP03 from './ChatRoomP03';
-import ChatRoom04 from './ChatRoom04';
-import ChatRoom05 from './ChatRoom05';
+import ChatRoomP04 from './ChatRoomP04';
+import ChatRoomP05 from './ChatRoomP05';
 import ChatRoom06 from './ChatRoom06';
 import ChatRoom07 from './ChatRoom07';
-import ChatRoom08 from './ChatRoom08';
-import ChatRoom09 from './ChatRoom09';
+import ChatRoomP06 from './ChatRoomP06';
+import ChatRoomP08 from './ChatRoomP08';
 import ChatRoom10 from './ChatRoom10';
 import ChatRoom11 from './ChatRoom11';
 import ChatRoom12 from './ChatRoom12';
@@ -23,12 +23,12 @@ export {
   ChatRoomP01,
   ChatRoomP02,
   ChatRoomP03,
-  ChatRoom04,
-  ChatRoom05,
+  ChatRoomP04,
+  ChatRoomP05,
   ChatRoom06,
   ChatRoom07,
-  ChatRoom08,
-  ChatRoom09,
+  ChatRoomP06,
+  ChatRoomP08,
   ChatRoom10,
   ChatRoom11,
   ChatRoom12,

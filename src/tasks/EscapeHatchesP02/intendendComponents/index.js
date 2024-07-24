@@ -11,10 +11,10 @@ import ChatRoom07 from './ChatRoom07';
 import ChatRoomP06 from './ChatRoomP06';
 import ChatRoomP07 from './ChatRoomP07';
 import ChatRoomP08 from './ChatRoomP08';
-import ChatRoom10 from './ChatRoom10';
-import ChatRoom11 from './ChatRoom11';
-import ChatRoom12 from './ChatRoom12';
-import ChatRoom13 from './ChatRoom13';
+import ChatRoomP09 from './ChatRoomP09';
+import ChatRoomP10 from './ChatRoomP10';
+import ChatRoomP11 from './ChatRoomP11';
+import ChatRoomP12 from './ChatRoomP12';
 import ChatRoom14 from './ChatRoom14';
 
 export {
@@ -31,9 +31,9 @@ export {
   ChatRoomP06,
   ChatRoomP07,
   ChatRoomP08,
-  ChatRoom10,
-  ChatRoom11,
-  ChatRoom12,
-  ChatRoom13,
+  ChatRoomP09,
+  ChatRoomP10,
+  ChatRoomP11,
+  ChatRoomP12,
   ChatRoom14,
 };

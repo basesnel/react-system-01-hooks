@@ -6,7 +6,7 @@ import { createConnection } from 'constants';
 
 const serverUrl = 'https://localhost:1234';
 
-const ChatRoom13 = ({ roomId }) => {
+const ChatRoomP12 = ({ roomId }) => {
   const [message, setMessage] = useState('');
 
   useEffect(() => {
@@ -34,8 +34,8 @@ const ChatRoom13 = ({ roomId }) => {
   );
 };
 
-ChatRoom13.propTypes = {
+ChatRoomP12.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoom13;
+export default ChatRoomP12;

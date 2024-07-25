@@ -57,6 +57,15 @@ const FormContact = props => {
   );
 };
 
+FormContact.propTypes = {
+  savedContact: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }).isRequired,
+  onSave: PropTypes.func.isRequired,
+};
+
 EditContactT03.propTypes = {
   savedContact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,

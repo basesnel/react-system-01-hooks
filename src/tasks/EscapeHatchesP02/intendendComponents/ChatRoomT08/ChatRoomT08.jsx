@@ -6,7 +6,7 @@ import {
   createUnencryptedConnection,
 } from 'constants';
 
-const ChatRoom07 = ({ roomId, isEncrypted }) => {
+const ChatRoomT08 = ({ roomId, isEncrypted }) => {
   useEffect(() => {
     const createConnection = isEncrypted
       ? createEncryptedConnection
@@ -19,9 +19,9 @@ const ChatRoom07 = ({ roomId, isEncrypted }) => {
   return <Caption text={`Welcome to the ${roomId} room!`} />;
 };
 
-ChatRoom07.propTypes = {
+ChatRoomT08.propTypes = {
   roomId: PropTypes.string.isRequired,
   isEncrypted: PropTypes.bool.isRequired,
 };
 
-export default ChatRoom07;
+export default ChatRoomT08;

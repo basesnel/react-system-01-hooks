@@ -6,8 +6,8 @@ import ChatRoomP02 from './ChatRoomP02';
 import ChatRoomP03 from './ChatRoomP03';
 import ChatRoomP04 from './ChatRoomP04';
 import ChatRoomP05 from './ChatRoomP05';
-import ChatRoom06 from './ChatRoom06';
-import ChatRoom07 from './ChatRoom07';
+import ChatRoomT05 from './ChatRoomT05';
+import ChatRoomT08 from './ChatRoomT08';
 import ChatRoomP06 from './ChatRoomP06';
 import ChatRoomP07 from './ChatRoomP07';
 import ChatRoomP08 from './ChatRoomP08';
@@ -26,8 +26,8 @@ export {
   ChatRoomP03,
   ChatRoomP04,
   ChatRoomP05,
-  ChatRoom06,
-  ChatRoom07,
+  ChatRoomT05,
+  ChatRoomT08,
   ChatRoomP06,
   ChatRoomP07,
   ChatRoomP08,

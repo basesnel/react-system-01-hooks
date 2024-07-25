@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FiUser, FiMail } from 'react-icons/fi';
 import { Form, Input, FlexBox, Button } from 'components';
 
-const EditContact = props => {
+const EditContactT03 = props => {
   return <FormContact {...props} key={props.savedContact.id} />;
 };
 
@@ -57,7 +57,7 @@ const FormContact = props => {
   );
 };
 
-FormContact.propTypes = {
+EditContactT03.propTypes = {
   savedContact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
@@ -66,4 +66,4 @@ FormContact.propTypes = {
   onSave: PropTypes.func.isRequired,
 };
 
-export default EditContact;
+export default EditContactT03;

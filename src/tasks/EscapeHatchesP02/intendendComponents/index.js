@@ -1,6 +1,6 @@
-import NewTodo from './NewTodo';
-import ContactList from './ContactList';
-import EditContact from './EditContact';
+import NewTodoT01 from './NewTodoT01';
+import ContactListT03 from './ContactListT03';
+import EditContactT03 from './EditContactT03';
 import ChatRoomP01 from './ChatRoomP01';
 import ChatRoomP02 from './ChatRoomP02';
 import ChatRoomP03 from './ChatRoomP03';
@@ -15,12 +15,12 @@ import ChatRoomP09 from './ChatRoomP09';
 import ChatRoomP10 from './ChatRoomP10';
 import ChatRoomP11 from './ChatRoomP11';
 import ChatRoomP12 from './ChatRoomP12';
-import ChatRoom14 from './ChatRoom14';
+import ChatRoomP13 from './ChatRoomP13';
 
 export {
-  NewTodo,
-  ContactList,
-  EditContact,
+  NewTodoT01,
+  ContactListT03,
+  EditContactT03,
   ChatRoomP01,
   ChatRoomP02,
   ChatRoomP03,
@@ -35,5 +35,5 @@ export {
   ChatRoomP10,
   ChatRoomP11,
   ChatRoomP12,
-  ChatRoom14,
+  ChatRoomP13,
 };

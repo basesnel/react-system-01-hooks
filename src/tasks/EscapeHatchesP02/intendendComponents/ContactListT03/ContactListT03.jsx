@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { FlexBox, Button } from 'components';
 
-const ContactList = props => {
+const ContactListT03 = props => {
   const { contacts, selectedId, onSelect } = props;
 
   return (
@@ -21,7 +21,7 @@ const ContactList = props => {
   );
 };
 
-ContactList.propTypes = {
+ContactListT03.propTypesT03 = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
@@ -34,4 +34,4 @@ ContactList.propTypes = {
   onSelect: PropTypes.func.isRequired,
 };
 
-export default ContactList;
+export default ContactListT03;

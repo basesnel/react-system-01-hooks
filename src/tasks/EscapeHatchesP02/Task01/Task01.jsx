@@ -8,7 +8,7 @@ import {
   Paragraph,
 } from 'components';
 import { myTodos } from 'constants';
-import { NewTodo } from '../intendendComponents';
+import { NewTodoT01 } from '../intendendComponents';
 
 const { initialTodos } = myTodos;
 
@@ -32,7 +32,7 @@ const Task01 = () => {
         onChange={e => setShowActive(e.target.checked)}
         label="Show only active todos"
       />
-      <NewTodo onAdd={newTodo => setTodos([...todos, newTodo])} />
+      <NewTodoT01 onAdd={newTodo => setTodos([...todos, newTodo])} />
       <List message="There no element in list.">
         {visibleTodos.map(todo => (
           <Item key={todo.id}>

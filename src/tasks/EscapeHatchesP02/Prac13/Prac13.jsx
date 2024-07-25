@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
 import { Select, FlexBox } from 'components';
 import { chatRoom } from 'constants';
-import { ChatRoom14 } from '../intendendComponents';
+import { ChatRoomP13 } from '../intendendComponents';
 
 const Prac13 = () => {
   const [roomId, setRoomId] = useState('general');
@@ -20,7 +20,7 @@ const Prac13 = () => {
         />
       </FlexBox>
       <hr />
-      <ChatRoom14 roomId={roomId} />
+      <ChatRoomP13 roomId={roomId} />
     </>
   );
 };

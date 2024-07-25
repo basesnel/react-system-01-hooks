@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { initialContacts } from 'constants';
-import { ContactList, EditContact } from '../intendendComponents';
+import { ContactListT03, EditContactT03 } from '../intendendComponents';
 
 const Task03 = () => {
   const [contacts, setContacts] = useState(initialContacts);
@@ -21,13 +21,13 @@ const Task03 = () => {
 
   return (
     <div>
-      <ContactList
+      <ContactListT03
         contacts={contacts}
         selectedId={selectedId}
         onSelect={id => setSelectedId(id)}
       />
       <hr />
-      <EditContact savedContact={selectedContact} onSave={handleSave} />
+      <EditContactT03 savedContact={selectedContact} onSave={handleSave} />
     </div>
   );
 };

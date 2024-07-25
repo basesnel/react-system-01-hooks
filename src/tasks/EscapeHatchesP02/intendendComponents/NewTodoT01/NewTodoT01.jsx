@@ -6,7 +6,7 @@ import { myTodos } from 'constants';
 
 const { createTodo } = myTodos;
 
-const NewTodo = props => {
+const NewTodoT01 = props => {
   const { onAdd } = props;
 
   const [text, setText] = useState('');
@@ -27,8 +27,8 @@ const NewTodo = props => {
   );
 };
 
-NewTodo.propTypes = {
+NewTodoT01.propTypes = {
   onAdd: PropTypes.func.isRequired,
 };
 
-export default NewTodo;
+export default NewTodoT01;

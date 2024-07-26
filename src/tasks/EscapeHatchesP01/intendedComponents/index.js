@@ -1,6 +1,6 @@
-import VideoPlayer from './VideoPlayer';
+import VideoPlayer from './VideoPlayerP11P12';
 import DebouncedButton from './DebouncedButton';
-import Playground from './Playground';
+import PlaygroundP14 from './PlaygroundP14';
 import MyInput from './MyInput';
 import MyFocusedInput from './MyFocusedInput';
 import Counter from './Counter';
@@ -8,7 +8,7 @@ import Counter from './Counter';
 export {
   VideoPlayer,
   DebouncedButton,
-  Playground,
+  PlaygroundP14,
   MyInput,
   MyFocusedInput,
   Counter,

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { MdTask } from 'react-icons/md';
 import { FlexBox, Input, Title } from 'components';
 
-const Playground = () => {
+const PlaygroundP14 = () => {
   const [text, setText] = useState('a');
 
   useEffect(() => {
@@ -35,4 +35,4 @@ const Playground = () => {
   );
 };
 
-export default Playground;
+export default PlaygroundP14;

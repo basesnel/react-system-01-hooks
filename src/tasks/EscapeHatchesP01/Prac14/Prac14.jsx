@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { Playground } from '../intendedComponents';
+import { PlaygroundP14 } from '../intendedComponents';
 
 const Prac14 = () => {
   const [show, setShow] = useState(false);
@@ -13,7 +13,7 @@ const Prac14 = () => {
           onClick={() => setShow(!show)}
         />
       </FlexBox>
-      {show && <Playground />}
+      {show && <PlaygroundP14 />}
     </>
   );
 };

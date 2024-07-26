@@ -3,11 +3,10 @@ import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
 import { FlexBox, Button } from 'components';
 
-import css from './Prac08.module.css';
+import styles from './styles.module.css';
 
 const MyInput = forwardRef((props, ref) => {
   const { icon } = props;
-  const { field, wrapInput, input, iconInput } = css;
 
   const realInputRef = useRef(null);
 
@@ -18,10 +17,10 @@ const MyInput = forwardRef((props, ref) => {
   }));
 
   return (
-    <div className={field}>
-      <div className={wrapInput}>
-        <input {...props} className={input} ref={realInputRef} />
-        <span className={iconInput}>{icon}</span>
+    <div className={styles.field}>
+      <div className={styles.wrapInput}>
+        <input {...props} className={styles.input} ref={realInputRef} />
+        <span className={styles.iconInput}>{icon}</span>
       </div>
     </div>
   );

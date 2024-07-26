@@ -1,17 +1,16 @@
 import { useState } from 'react';
 import { RiZoomInFill, RiZoomOutFill } from 'react-icons/ri';
 import { FlexBox, Span, IconButton } from 'components';
-import { Map } from '../IntendendComponents';
+import { MapP09 } from '../IntendendComponents';
 
-import css from './Prac09.module.css';
+import styles from './styles.module.css';
 
 const Prac09 = () => {
-  const { wrapper, wrapControls, wrapMap } = css;
-
   const [zoomLevel, setZoomLevel] = useState(0);
+
   return (
-    <div className={wrapper}>
-      <div className={wrapControls}>
+    <div className={styles.wrapper}>
+      <div className={styles.wrapControls}>
         <FlexBox>
           <Span>Zuum level: {zoomLevel}x</Span>
           <IconButton
@@ -30,8 +29,8 @@ const Prac09 = () => {
           />
         </FlexBox>
       </div>
-      <div className={wrapMap}>
-        <Map zoomLevel={zoomLevel} />
+      <div className={styles.wrapMap}>
+        <MapP09 zoomLevel={zoomLevel} />
       </div>
     </div>
   );

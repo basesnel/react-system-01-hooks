@@ -1,6 +1,6 @@
 import { List, Item, ItemFlex, ItemText } from 'components';
 
-const LongSectionP05 = () => {
+const LongSectionP05P08 = () => {
   const items = [];
 
   for (let i = 0; i < 50; i++) {
@@ -20,4 +20,4 @@ const LongSectionP05 = () => {
   return <List message="No element is in the list...">{items}</List>;
 };
 
-export default LongSectionP05;
+export default LongSectionP05P08;

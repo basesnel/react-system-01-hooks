@@ -2,7 +2,7 @@ import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { MapWidget } from './map-widget';
 
-const Map = props => {
+const MapP09 = props => {
   const { zoomLevel } = props;
   const containerRef = useRef(null);
   const mapRef = useRef(null);
@@ -24,8 +24,8 @@ const Map = props => {
   );
 };
 
-Map.propTypes = {
+MapP09.propTypes = {
   zoomLevel: PropTypes.number.isRequired,
 };
 
-export default Map;
+export default MapP09;

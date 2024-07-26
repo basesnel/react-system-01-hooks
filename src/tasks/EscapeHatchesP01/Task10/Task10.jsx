@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button, Paragraph } from 'components';
-import { MyFocusedInput } from '../intendedComponents';
+import { MyFocusedInputT10 } from '../intendedComponents';
 
 const Task10 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -16,14 +16,14 @@ const Task10 = () => {
         />
         {showForm && (
           <>
-            <MyFocusedInput
+            <MyFocusedInputT10
               shouldFocus={false}
               label="Enter first name"
               name="firstName"
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
             />
-            <MyFocusedInput
+            <MyFocusedInputT10
               shouldFocus={true}
               label="Enter last name"
               name="lastName"

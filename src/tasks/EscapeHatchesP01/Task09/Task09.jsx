@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button, CheckBox, Paragraph } from 'components';
-import { MyInput } from '../intendedComponents';
+import { MyInputT09 } from '../intendedComponents';
 
 const Task09 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -16,7 +16,7 @@ const Task09 = () => {
         />
         {showForm && (
           <>
-            <MyInput value={name} onChange={e => setName(e.target.value)} />
+            <MyInputT09 value={name} onChange={e => setName(e.target.value)} />
             <CheckBox
               name="isUppercase"
               checked={upper}

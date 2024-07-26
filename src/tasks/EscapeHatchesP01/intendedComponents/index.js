@@ -1,15 +1,15 @@
 import VideoPlayer from './VideoPlayerP11P12';
 import DebouncedButtonT03 from './DebouncedButtonT03';
 import PlaygroundP14 from './PlaygroundP14';
-import MyInput from './MyInput';
-import MyFocusedInput from './MyFocusedInput';
-import Counter from './Counter';
+import MyInputT09 from './MyInputT09';
+import MyFocusedInputT10 from './MyFocusedInputT10';
+import CounterT11 from './CounterT11';
 
 export {
   VideoPlayer,
   DebouncedButtonT03,
   PlaygroundP14,
-  MyInput,
-  MyFocusedInput,
-  Counter,
+  MyInputT09,
+  MyFocusedInputT10,
+  CounterT11,
 };

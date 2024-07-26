@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { Counter } from '../intendedComponents';
+import { CounterT11 } from '../intendedComponents';
 
 const Task11 = () => {
   const [isCounterVisible, setIsCounterVisible] = useState(false);
@@ -10,7 +10,7 @@ const Task11 = () => {
         caption={isCounterVisible ? 'Hide counter' : 'Show counter'}
         onClick={() => setIsCounterVisible(!isCounterVisible)}
       />
-      {isCounterVisible && <Counter />}
+      {isCounterVisible && <CounterT11 />}
     </FlexBox>
   );
 };

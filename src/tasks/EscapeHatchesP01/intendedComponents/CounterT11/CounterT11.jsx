@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Caption } from 'components';
 
-const Counter = () => {
+const CounterT11 = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
@@ -17,4 +17,4 @@ const Counter = () => {
   return <Caption text={count} />;
 };
 
-export default Counter;
+export default CounterT11;

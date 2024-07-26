@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
 import { Input } from 'components';
 
-const MyInput = props => {
+const MyInputT09 = props => {
   const { value, onChange } = props;
 
   const ref = useRef(null);
@@ -26,9 +26,9 @@ const MyInput = props => {
   );
 };
 
-MyInput.propTypes = {
+MyInputT09.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };
 
-export default MyInput;
+export default MyInputT09;

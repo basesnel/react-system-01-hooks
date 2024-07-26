@@ -1,14 +1,14 @@
 import { HideOverflow } from 'components';
-import { LongSection, InterBox } from '../IntendendComponents';
+import { LongSectionP05, InterBox } from '../IntendendComponents';
 
 const Prac08 = () => {
   return (
     <HideOverflow>
-      <LongSection />
+      <LongSectionP05 />
       <InterBox />
-      <LongSection />
+      <LongSectionP05 />
       <InterBox />
-      <LongSection />
+      <LongSectionP05 />
     </HideOverflow>
   );
 };

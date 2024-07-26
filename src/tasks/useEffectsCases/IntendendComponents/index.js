@@ -1,5 +1,6 @@
-import Box from './Box';
-import ChatRoom01 from './ChatRoom01';
+import BoxP05 from './BoxP05';
+import ChatRoomP01 from './ChatRoomP01';
+import WelcomeP03 from './WelcomeP03';
 import ChatRoom06 from './ChatRoom06';
 import ChatRoom11 from './ChatRoom11';
 import ChatRoom12 from './ChatRoom12';
@@ -7,13 +8,14 @@ import ChatRoom13 from './ChatRoom13';
 import ChatRoom15 from './ChatRoom15';
 import ChatRoom16 from './ChatRoom16';
 import InterBox from './InterBox';
-import LongSection from './LongSection';
+import LongSectionP05 from './LongSectionP05';
 import Map from './Map';
-import ModalDialog from './ModalDialog';
+import ModalDialogP04 from './ModalDialogP04';
 
 export {
-  Box,
-  ChatRoom01,
+  BoxP05,
+  ChatRoomP01,
+  WelcomeP03,
   ChatRoom06,
   ChatRoom11,
   ChatRoom12,
@@ -21,7 +23,7 @@ export {
   ChatRoom15,
   ChatRoom16,
   InterBox,
-  LongSection,
+  LongSectionP05,
   Map,
-  ModalDialog,
+  ModalDialogP04,
 };

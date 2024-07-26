@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 
-const Box = () => {
+const BoxP05 = () => {
   const ref = useRef(null);
 
   useEffect(() => {
@@ -52,4 +52,4 @@ const Box = () => {
   );
 }
 
-export default Box;
+export default BoxP05;

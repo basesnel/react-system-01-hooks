@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 
-const ModalDialog = props => {
+const ModalDialogP04 = props => {
   const { isOpen, children } = props;
 
   const ref = useRef();
@@ -21,9 +21,9 @@ const ModalDialog = props => {
   return <dialog ref={ref}>{children}</dialog>;
 };
 
-ModalDialog.propTypes = {
+ModalDialogP04.propTypes = {
   children: PropTypes.any.isRequired,
   isOpen: PropTypes.bool.isRequired,
 };
 
-export default ModalDialog;
+export default ModalDialogP04;

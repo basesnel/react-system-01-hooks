@@ -4,7 +4,7 @@ import { FiServer } from 'react-icons/fi';
 import { FlexBox, Input, Caption } from 'components';
 import { createConnection } from 'constants';
 
-const ChatRoom01 = props => {
+const ChatRoomP01 = props => {
   const { roomId } = props;
 
   const [serverUrl, setServerUrl] = useState('https://localhost:1234');
@@ -33,8 +33,8 @@ const ChatRoom01 = props => {
   );
 };
 
-ChatRoom01.propTypes = {
+ChatRoomP01.propTypes = {
   roomId: PropTypes.string.isRequired,
 };
 
-export default ChatRoom01;
+export default ChatRoomP01;

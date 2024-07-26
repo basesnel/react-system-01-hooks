@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { ModalDialog } from '../IntendendComponents';
+import { ModalDialogP04 } from '../IntendendComponents';
 
 const Prac04 = () => {
   const [show, setShow] = useState(false);
@@ -15,7 +15,7 @@ const Prac04 = () => {
           }}
         />
       </FlexBox>
-      <ModalDialog isOpen={show}>
+      <ModalDialogP04 isOpen={show}>
         Hello here!
         <hr />
         <Button
@@ -24,7 +24,7 @@ const Prac04 = () => {
             setShow(false);
           }}
         />
-      </ModalDialog>
+      </ModalDialogP04>
     </>
   );
 };

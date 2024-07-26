@@ -1,23 +1,23 @@
 import { toast } from 'react-toastify';
 import { FlexBox } from 'components';
-import { DebouncedButton } from '../intendedComponents';
+import { DebouncedButtonT03 } from '../intendedComponents';
 
 const Task03 = () => {
   return (
     <FlexBox>
-      <DebouncedButton
+      <DebouncedButtonT03
         onClick={() => {
           return toast.info('Spaceship launched!');
         }}
         caption="Launch the spiceship"
       />
-      <DebouncedButton
+      <DebouncedButtonT03
         onClick={() => {
           return toast.info('Soup boiled!');
         }}
         caption="Boil the soup"
       />
-      <DebouncedButton
+      <DebouncedButtonT03
         onClick={() => {
           return toast.info('Lullaby sung!');
         }}

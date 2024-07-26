@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import PropTypes from 'prop-types';
 import { Button } from 'components';
 
-const DebouncedButton = props => {
+const DebouncedButtonT03 = props => {
   const { onClick, caption } = props;
 
   const timeoutID = useRef(null);
@@ -20,9 +20,9 @@ const DebouncedButton = props => {
   );
 };
 
-DebouncedButton.propTypes = {
+DebouncedButtonT03.propTypes = {
   onClick: PropTypes.func.isRequired,
   caption: PropTypes.string.isRequired,
 };
 
-export default DebouncedButton;
+export default DebouncedButtonT03;

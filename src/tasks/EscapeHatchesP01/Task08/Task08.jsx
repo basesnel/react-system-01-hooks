@@ -3,25 +3,24 @@ import PropTypes from 'prop-types';
 import { MdSearch } from 'react-icons/md';
 import { FlexBox, Button } from 'components';
 
-import css from './Task08.module.css';
+import styles from './styles.module.css';
 
 const InputWithRef = forwardRef((props, ref) => {
   const { inputType, inputName, inputLabel, inputPlaceholder, icon } = props;
-  const { field, label, wrapInput, input, iconInput } = css;
 
   return (
-    <label className={field}>
-      {inputLabel && <span className={label}>{inputLabel}</span>}
-      <div className={wrapInput}>
+    <label className={styles.field}>
+      {inputLabel && <span className={styles.label}>{inputLabel}</span>}
+      <div className={styles.wrapInput}>
         <input
           type={inputType}
           name={inputName}
           autoComplete="off"
-          className={input}
+          className={styles.input}
           placeholder={inputPlaceholder}
           ref={ref}
         />
-        <span className={iconInput}>{icon}</span>
+        <span className={styles.iconInput}>{icon}</span>
       </div>
     </label>
   );

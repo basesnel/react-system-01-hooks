@@ -3,10 +3,10 @@ import { flushSync } from 'react-dom';
 import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
 import { catList, imageSizes } from 'constants';
 
-import css from './Task07.module.css';
+import styles from './styles.module.css';
 
 const Task07 = () => {
-  const { imageSlide, active } = css;
+  const { imageSlide, active } = styles;
 
   const [index, setIndex] = useState(0);
   const selectedRef = useRef(null);

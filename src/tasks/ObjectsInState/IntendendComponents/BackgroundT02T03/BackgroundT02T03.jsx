@@ -1,10 +1,9 @@
 import PropTypes from 'prop-types';
 
-import css from './Background.module.css';
+import styles from './styles.module.css';
 
-const Background = props => {
+const BackgroundT02T03 = props => {
   const { position } = props;
-  const { background } = css;
 
   return (
     <div
@@ -15,14 +14,14 @@ const Background = props => {
         height: 250,
         backgroundColor: 'rgba(200, 200, 0, 0.2)',
       }}
-      className={background}
+      className={styles.background}
     />
   );
 };
 
-Background.propTypes = {
+BackgroundT02T03.propTypes = {
   position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number })
     .isRequired,
 };
 
-export default Background;
+export default BackgroundT02T03;

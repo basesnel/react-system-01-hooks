@@ -2,7 +2,11 @@ import { useState } from 'react';
 import { MdOutlineSelectAll } from 'react-icons/md';
 import { FlexBox, Select } from 'components';
 import { initialPosition, colorOptions } from 'constants';
-import { Wrapper, Background, Box } from '../IntendendComponents';
+import {
+  WrapperT02T03,
+  BackgroundT02T03,
+  BoxT02T03,
+} from '../IntendendComponents';
 
 const initPosition = { ...initialPosition };
 
@@ -27,7 +31,7 @@ const Task02 = () => {
   };
 
   return (
-    <Wrapper>
+    <WrapperT02T03>
       <FlexBox>
         <Select
           selectName="Color"
@@ -37,11 +41,15 @@ const Task02 = () => {
           onHandleSelect={handleColorChange}
         />
       </FlexBox>
-      <Background position={initialPosition} />
-      <Box color={shape.color} position={shape.position} onMove={handleMove}>
+      <BackgroundT02T03 position={initialPosition} />
+      <BoxT02T03
+        color={shape.color}
+        position={shape.position}
+        onMove={handleMove}
+      >
         Drag me!
-      </Box>
-    </Wrapper>
+      </BoxT02T03>
+    </WrapperT02T03>
   );
 };
 

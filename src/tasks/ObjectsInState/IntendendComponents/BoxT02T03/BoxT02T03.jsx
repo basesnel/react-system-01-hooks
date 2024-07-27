@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-const Box = props => {
+const BoxT02T03 = props => {
   const { children, color, position, onMove } = props;
 
   const [lastCoordinates, setLastCoordinates] = useState(null);
@@ -53,7 +53,7 @@ const Box = props => {
   );
 };
 
-Box.propTypes = {
+BoxT02T03.propTypes = {
   children: PropTypes.any.isRequired,
   color: PropTypes.string.isRequired,
   position: PropTypes.shape({ x: PropTypes.number, y: PropTypes.number })
@@ -61,4 +61,4 @@ Box.propTypes = {
   onMove: PropTypes.func.isRequired,
 };
 
-export default Box;
+export default BoxT02T03;

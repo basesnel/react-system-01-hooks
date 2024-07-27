@@ -1,25 +1,24 @@
 import PropTypes from 'prop-types';
 
-import css from './Wrapper.module.css';
+import styles from './styles.module.css';
 
-const Wrapper = props => {
+const WrapperT02T03 = props => {
   const { children, ...delegated } = props;
-  const { wrapper } = css;
 
   return (
-    <div className={wrapper} {...delegated}>
+    <div className={styles.wrapper} {...delegated}>
       {children}
     </div>
   );
 };
 
-Wrapper.propTypes = {
+WrapperT02T03.propTypes = {
   children: PropTypes.any.isRequired,
   delegated: PropTypes.any,
 };
 
-Wrapper.defaultProps = {
+WrapperT02T03.defaultProps = {
   delegated: null,
 };
 
-export default Wrapper;
+export default WrapperT02T03;

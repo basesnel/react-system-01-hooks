@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Grid, Card, Modal } from 'components';
 import { images } from 'constants';
 
-import css from './BigCards.module.css';
+import styles from './styles.module.css';
 
 const List = props => {
   const { items } = props;
@@ -20,13 +20,12 @@ const List = props => {
 
 const Item = props => {
   const { item } = props;
-  const { card } = css;
 
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
     <Card title={item.preview}>
-      <div className={card} onClick={() => setIsModalOpen(true)}>
+      <div className={styles.card} onClick={() => setIsModalOpen(true)}>
         <span>{item.preview}</span>
       </div>
       {isModalOpen &&

@@ -1,8 +1,8 @@
 import { useImmer } from 'use-immer';
 import { MdOutlineSelectAll } from 'react-icons/md';
 import { FlexBox, Select } from 'components';
-import { Wrapper, Background, Box } from '../IntendendComponents';
 import { initialPosition, colorOptions } from 'constants';
+import { Wrapper, Background, Box } from '../IntendendComponents';
 
 const Task03 = () => {
   const [shape, updateShape] = useImmer({

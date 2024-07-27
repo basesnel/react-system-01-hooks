@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
 import { Form, Input } from 'components';
-import { FieldOverlay, Figure } from '../IntendendComponents';
 import { initialThirdPerson } from 'constants';
+import { FieldOverlayP03P04, FigureP03P04 } from '../IntendendComponents';
 
 const Prac03 = () => {
   const [person, setPerson] = useState(initialThirdPerson);
@@ -71,7 +71,7 @@ const Prac03 = () => {
           handleChange={handleCityChange}
           icon={<FiEdit3 />}
         />
-        <FieldOverlay>
+        <FieldOverlayP03P04>
           <Input
             inputType="text"
             inputName="image"
@@ -80,8 +80,8 @@ const Prac03 = () => {
             handleChange={handleImageChange}
             icon={<FiImage />}
           />
-        </FieldOverlay>
-        <Figure
+        </FieldOverlayP03P04>
+        <FigureP03P04
           picture={person.artwork.image}
           alt={person.artwork.title}
           caption={`${person.artwork.title} by ${person.name} (located in ${person.artwork.city})`}

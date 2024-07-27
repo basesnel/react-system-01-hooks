@@ -1,7 +1,7 @@
 import Background from './Background';
 import Box from './Box';
-import FieldOverlay from './FieldOverlay';
-import Figure from './Figure';
+import FieldOverlayP03P04 from './FieldOverlayP03P04';
+import FigureP03P04 from './FigureP03P04';
 import Wrapper from './Wrapper';
 
-export { Background, Box, FieldOverlay, Figure, Wrapper };
+export { Background, Box, FieldOverlayP03P04, FigureP03P04, Wrapper };

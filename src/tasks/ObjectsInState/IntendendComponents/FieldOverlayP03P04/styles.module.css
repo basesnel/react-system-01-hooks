@@ -1,4 +1,4 @@
-@value figure from "../Figure/Figure.module.css";
+@value figure from "../FigureP03P04/styles.module.css";
 
 .fieldOverlay:hover ~ .figure {
   transform: translate(-50%, -70%) scale(1);

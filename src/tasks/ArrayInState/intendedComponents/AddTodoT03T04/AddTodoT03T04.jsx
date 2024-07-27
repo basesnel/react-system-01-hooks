@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { RiAddCircleFill } from 'react-icons/ri';
 import { MiniForm } from 'components';
 
-const AddTodo = props => {
+const AddTodoT03T04 = props => {
   const { onAddTodo } = props;
 
   const [title, setTitle] = useState('');
@@ -22,8 +22,8 @@ const AddTodo = props => {
   );
 };
 
-AddTodo.propTypes = {
+AddTodoT03T04.propTypes = {
   onAddTodo: PropTypes.func.isRequired,
 };
 
-export default AddTodo;
+export default AddTodoT03T04;

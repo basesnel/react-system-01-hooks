@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { List, Item, ItemLabel, ItemCheckedText } from 'components';
 
-const ItemList = props => {
+const ItemListP0708 = props => {
   const { artWorks, onToggle } = props;
 
   return (
@@ -25,7 +25,7 @@ const ItemList = props => {
   );
 };
 
-ItemList.propTypes = {
+ItemListP0708.propTypes = {
   artWorks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
@@ -36,4 +36,4 @@ ItemList.propTypes = {
   onToggle: PropTypes.func.isRequired,
 };
 
-export default ItemList;
+export default ItemListP0708;

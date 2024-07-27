@@ -1,7 +1,7 @@
 import { useImmer } from 'use-immer';
 import { nanoid } from 'nanoid';
 import { initialTodosList } from 'constants';
-import { AddTodo, TaskList } from '../intendedComponents';
+import { AddTodoT03T04, TaskListT03T04 } from '../intendedComponents';
 
 const Task04 = () => {
   const [todos, updateTodos] = useImmer(initialTodosList);
@@ -30,8 +30,8 @@ const Task04 = () => {
 
   return (
     <>
-      <AddTodo onAddTodo={handleAddTodo} />
-      <TaskList
+      <AddTodoT03T04 onAddTodo={handleAddTodo} />
+      <TaskListT03T04
         todos={todos}
         onChangeTodo={handleChangeTodo}
         onDeleteTodo={handleDeleteTodo}

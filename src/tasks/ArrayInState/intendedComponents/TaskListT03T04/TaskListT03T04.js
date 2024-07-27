@@ -11,7 +11,7 @@ import {
   ItemCheckedText,
 } from 'components';
 
-const TaskList = props => {
+const TaskListT03T04 = props => {
   const { todos, onChangeTodo, onDeleteTodo } = props;
 
   return (
@@ -87,7 +87,7 @@ const Task = props => {
   );
 };
 
-TaskList.propTypes = {
+TaskListT03T04.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
@@ -109,4 +109,4 @@ Task.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-export default TaskList;
+export default TaskListT03T04;

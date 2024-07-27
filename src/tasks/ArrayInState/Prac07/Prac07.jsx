@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Title } from 'components';
 import { initialSevenArtsList } from 'constants';
-import { ItemList } from '../intendedComponents';
+import { ItemListP07P08 } from '../intendedComponents';
 
 const Prac07 = () => {
   const [myList, setMyList] = useState(initialSevenArtsList);
@@ -34,9 +34,9 @@ const Prac07 = () => {
   return (
     <>
       <Title level={3} caption="my list of art to see:" />
-      <ItemList artWorks={myList} onToggle={handleToggleMyList} />
+      <ItemListP07P08 artWorks={myList} onToggle={handleToggleMyList} />
       <Title level={3} caption="your list of art to see:" />
-      <ItemList artWorks={yourList} onToggle={handleToggleYourList} />
+      <ItemListP07P08 artWorks={yourList} onToggle={handleToggleYourList} />
     </>
   );
 };

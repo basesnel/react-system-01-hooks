@@ -9,11 +9,9 @@ import {
 } from 'components';
 import { fetchArticles } from 'services';
 
-import css from './News.module.css';
+import styles from './styles.module.css';
 
 const News = () => {
-  const { link } = css;
-
   const [articles, setArticles] = useState([]);
   const [query, setQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
@@ -59,7 +57,7 @@ const News = () => {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={link}
+              className={styles.link}
             >
               {title}
             </a>

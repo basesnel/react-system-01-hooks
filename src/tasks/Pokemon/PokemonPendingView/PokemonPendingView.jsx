@@ -4,11 +4,10 @@ import { Paragraph } from 'components';
 import PokemonDataView from '../PokemonDataView';
 import pendingImage from 'assets/images/pending.png';
 
-import css from './PokemonPendingView.module.css';
+import styles from './styles.module.css';
 
 const PokemonPendingView = props => {
   const { pokemonName } = props;
-  const { box, spinner, iconSpin } = css;
 
   const pokemon = {
     name: pokemonName,
@@ -23,9 +22,10 @@ const PokemonPendingView = props => {
   };
 
   return (
-    <div className={box}>
-      <div className={spinner}>
-        <ImSpinner className={iconSpin} /> <Paragraph>Loading...</Paragraph>
+    <div className={styles.box}>
+      <div className={styles.spinner}>
+        <ImSpinner className={styles.iconSpin} />{' '}
+        <Paragraph>Loading...</Paragraph>
       </div>
       <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>

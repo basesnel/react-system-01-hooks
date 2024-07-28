@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import { FlexBox, Caption, Button, Box } from 'components';
 
-import css from './Clock.module.css';
+import styles from './styles.module.css';
 
 const Clock = () => {
-  const { timeDisplay, timeWrap } = css;
-
   const [time, setTime] = useState(() => new Date());
   const [isTicking, setIsTicking] = useState(true);
 
@@ -49,8 +47,10 @@ const Clock = () => {
   return (
     <>
       <Box>
-        <div className={timeWrap}>
-          <span className={timeDisplay}>{time.toLocaleTimeString()}</span>
+        <div className={styles.timeWrap}>
+          <span className={styles.timeDisplay}>
+            {time.toLocaleTimeString()}
+          </span>
         </div>
       </Box>
       <Caption text="Current time" />

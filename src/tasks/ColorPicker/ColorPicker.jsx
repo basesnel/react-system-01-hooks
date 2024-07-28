@@ -2,22 +2,23 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Paragraph, FlexBox } from 'components';
 
-import css from './ColorPicker.module.css';
+import styles from './styles.module.css';
 
 const ColorPicker = props => {
   const { options } = props;
-  const { setOfOptions, option, activeOption } = css;
 
   const [activeOptionIdx, setActiveOptionIdx] = useState(0);
 
   const makeOptionClassName = index => {
-    return index === activeOptionIdx ? `${option} ${activeOption}` : option;
+    return index === activeOptionIdx
+      ? `${styles.option} ${styles.activeOption}`
+      : styles.option;
   };
 
   const { label, color } = options[activeOptionIdx];
 
   return (
-    <div className={setOfOptions}>
+    <div className={styles.setOfOptions}>
       <Paragraph>
         Color is selected: <span style={{ color: color }}>{label}</span>
       </Paragraph>

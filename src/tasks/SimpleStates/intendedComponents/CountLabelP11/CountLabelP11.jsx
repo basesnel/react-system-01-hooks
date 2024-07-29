@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Title, Paragraph } from 'components';
 
-const CountLabel = props => {
+const CountLabelP11 = props => {
   const { count } = props;
 
   const [prevCount, setPrevCount] = useState(count);
@@ -21,8 +21,8 @@ const CountLabel = props => {
   );
 };
 
-CountLabel.propTypes = {
+CountLabelP11.propTypes = {
   count: PropTypes.number.isRequired,
 };
 
-export default CountLabel;
+export default CountLabelP11;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { CountLabel } from '../intendedComponents';
+import { CountLabelP11 } from '../intendedComponents';
 
 const Prac11 = () => {
   const [count, setCount] = useState(0);
@@ -11,7 +11,7 @@ const Prac11 = () => {
         <Button caption="Increment" onClick={() => setCount(count + 1)} />
         <Button caption="Decrement" onClick={() => setCount(count - 1)} />
       </FlexBox>
-      <CountLabel count={count} />
+      <CountLabelP11 count={count} />
     </>
   );
 };

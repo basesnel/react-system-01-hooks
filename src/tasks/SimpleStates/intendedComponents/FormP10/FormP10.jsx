@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
 import { Input, Paragraph } from 'components';
 
-const Form = () => {
+const FormP10 = () => {
   const [name, setName] = useState('Taylor');
 
   return (
@@ -20,4 +20,4 @@ const Form = () => {
   );
 };
 
-export default Form;
+export default FormP10;

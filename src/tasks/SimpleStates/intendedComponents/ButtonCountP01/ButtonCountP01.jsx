@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button } from 'components';
 
-const ButtonCount = () => {
+const ButtonCountP01 = () => {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
@@ -11,4 +11,4 @@ const ButtonCount = () => {
   return <Button caption={`Clicked ${count} times`} onClick={handleClick} />;
 };
 
-export default ButtonCount;
+export default ButtonCountP01;

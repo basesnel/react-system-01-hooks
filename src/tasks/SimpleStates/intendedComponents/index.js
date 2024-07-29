@@ -1,5 +1,5 @@
-import ButtonCount from './ButtonCount';
-import Form from './Form';
-import CountLabel from './CountLabel';
+import ButtonCountP01 from './ButtonCountP01';
+import FormP10 from './FormP10';
+import CountLabelP11 from './CountLabelP11';
 
-export { ButtonCount, Form, CountLabel };
+export { ButtonCountP01, FormP10, CountLabelP11 };

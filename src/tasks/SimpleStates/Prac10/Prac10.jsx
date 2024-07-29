@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FlexBox, Button } from 'components';
-import { Form } from '../intendedComponents';
+import { FormP10 } from '../intendedComponents';
 
 const Prac10 = () => {
   const [version, setVersion] = useState(0);
@@ -12,7 +12,7 @@ const Prac10 = () => {
   return (
     <FlexBox>
       <Button caption="Reset" onClick={handleReset} />
-      <Form key={version} />
+      <FormP10 key={version} />
     </FlexBox>
   );
 };

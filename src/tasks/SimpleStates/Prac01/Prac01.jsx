@@ -1,14 +1,14 @@
 import { FlexBox } from 'components';
-import { ButtonCount } from '../intendedComponents';
+import { ButtonCountP01 } from '../intendedComponents';
 
 const Prac01 = () => {
   return (
     <FlexBox>
-      <ButtonCount />
-      <ButtonCount />
-      <ButtonCount />
-      <ButtonCount />
-      <ButtonCount />
+      <ButtonCountP01 />
+      <ButtonCountP01 />
+      <ButtonCountP01 />
+      <ButtonCountP01 />
+      <ButtonCountP01 />
     </FlexBox>
   );
 };

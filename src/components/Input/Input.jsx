@@ -28,7 +28,7 @@ const Input = props => {
           {inputLabel}
         </label>
       )}
-      <div className={styles.wrapInput}>
+      <div className={styles.wrap}>
         <input
           disabled={isDisabled}
           type={inputType}
@@ -40,7 +40,7 @@ const Input = props => {
           placeholder={inputPlaceholder}
           ref={inputRef}
         />
-        <span className={styles.iconInput}>{icon}</span>
+        <span className={styles.icon}>{icon}</span>
       </div>
     </div>
   );

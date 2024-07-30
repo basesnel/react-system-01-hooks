@@ -20,7 +20,7 @@
   color: var(--color-accent);
 }
 
-.wrapInput {
+.wrap {
   position: relative;
 }
 
@@ -45,7 +45,7 @@
   border: 1px solid var(--color-text-opacity);
 }
 
-.iconInput {
+.icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -58,33 +58,17 @@
   transition: var(--my-transition);
 }
 
-.field:hover .iconInput,
-.field:focus .iconInput {
+.field:hover .icon,
+.field:focus .icon {
   color: var(--color-accent);
 }
 
-.input:disabled + .iconInput {
+.input:disabled + .icon {
   color: var(--color-text-opacity);
 }
 
 .input:disabled ~ .label {
   color: var(--color-text-opacity);
-}
-
-@media mobile-to {
-  .iconInput {
-    width: var(--fs-text-smartphone);
-    height: var(--fs-text-smartphone);
-    font-size: var(--fs-text-smartphone);
-  }
-}
-
-@media smartphone-to {
-  .iconInput {
-    width: var(--fs-text-tablet);
-    height: var(--fs-text-tablet);
-    font-size: var(--fs-text-tablet);
-  }
 }
 
 @media mobile-to {
@@ -96,11 +80,23 @@
     padding: 4px 20px 4px 33px;
     font-size: var(--fs-text-smartphone);
   }
+
+  .icon {
+    width: var(--fs-text-smartphone);
+    height: var(--fs-text-smartphone);
+    font-size: var(--fs-text-smartphone);
+  }
 }
 
 @media smartphone-to {
   .input {
     padding: 6px 20px 6px 35px;
+    font-size: var(--fs-text-tablet);
+  }
+
+  .icon {
+    width: var(--fs-text-tablet);
+    height: var(--fs-text-tablet);
     font-size: var(--fs-text-tablet);
   }
 }

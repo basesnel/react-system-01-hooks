@@ -2,24 +2,24 @@
 @value mobile-to, smartphone-to from sizes;
 @value item from "../Item/styles.module.css";
 
-.itemContent {
+.content {
   flex-grow: 1;
   font-size: var(--fs-text-mobile);
   color: var(--color-text);
 }
 
-.item:hover .itemContent {
+.item:hover .content {
   color: var(--color-dark);
 }
 
 @media mobile-to {
-  .itemContent {
+  .content {
     font-size: var(--fs-text-smartphone);
   }
 }
 
 @media smartphone-to {
-  .itemContent {
+  .content {
     font-size: var(--fs-text-tablet);
   }
 }

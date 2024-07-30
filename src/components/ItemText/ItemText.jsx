@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const ItemText = props => {
   const { content } = props;
 
-  return <span className={styles.itemContent}>{content}</span>;
+  return <span className={styles.content}>{content}</span>;
 };
 
 ItemText.propTypes = {

@@ -9,10 +9,10 @@ const Card = props => {
 
   return (
     <div className={styles.card}>
-      <div className={styles.cardHeader}>
+      <div className={styles.header}>
         <Title level={2} caption={title} />
       </div>
-      <div className={styles.cardContent}>{children}</div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

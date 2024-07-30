@@ -20,7 +20,7 @@
   z-index: 200;
 }
 
-.cardHeader {
+.header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,7 +30,7 @@
   background-color: var(--color-logolight);
 }
 
-.cardContent {
+.content {
   flex-grow: 1;
   border-radius: 0 0 9px 9px;
   padding: 9px;

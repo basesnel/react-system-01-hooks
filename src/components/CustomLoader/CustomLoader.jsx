@@ -7,8 +7,7 @@ import styles from './styles.module.css';
 const CustomLoader = () => {
   return (
     <div className={styles.spinner}>
-      <ImSpinner className={styles.iconSpin} />{' '}
-      <Paragraph>Loading...</Paragraph>
+      <ImSpinner className={styles.icon} /> <Paragraph>Loading...</Paragraph>
     </div>
   );
 };

@@ -9,7 +9,7 @@ const FlexBox = props => {
   const directionItems = direction ? `${styles[direction]}` : '';
 
   return (
-    <div className={`${styles.flexBox} ${directionItems} ${alignItems}`}>
+    <div className={`${styles.flexed} ${directionItems} ${alignItems}`}>
       {children}
     </div>
   );

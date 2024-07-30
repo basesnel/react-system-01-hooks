@@ -18,7 +18,7 @@
   color: var(--color-light);
 }
 
-.iconSpin {
+.icon {
   margin-right: 10px;
   font-size: 16px;
   color: var(--color-light);
@@ -36,7 +36,7 @@
     padding: 6px 24px;
   }
 
-  .iconSpin {
+  .icon {
     font-size: 18px;
   }
 }

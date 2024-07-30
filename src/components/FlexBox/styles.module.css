@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value smartphone-to from sizes;
 
-.flexBox {
+.flexed {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

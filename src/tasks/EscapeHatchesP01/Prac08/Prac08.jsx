@@ -18,9 +18,9 @@ const MyInput = forwardRef((props, ref) => {
 
   return (
     <div className={styles.field}>
-      <div className={styles.wrapInput}>
+      <div className={styles.wrap}>
         <input {...props} className={styles.input} ref={realInputRef} />
-        <span className={styles.iconInput}>{icon}</span>
+        <span className={styles.icon}>{icon}</span>
       </div>
     </div>
   );

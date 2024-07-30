@@ -11,7 +11,7 @@ const InputWithRef = forwardRef((props, ref) => {
   return (
     <label className={styles.field}>
       {inputLabel && <span className={styles.label}>{inputLabel}</span>}
-      <div className={styles.wrapInput}>
+      <div className={styles.wrap}>
         <input
           type={inputType}
           name={inputName}
@@ -20,7 +20,7 @@ const InputWithRef = forwardRef((props, ref) => {
           placeholder={inputPlaceholder}
           ref={ref}
         />
-        <span className={styles.iconInput}>{icon}</span>
+        <span className={styles.icon}>{icon}</span>
       </div>
     </label>
   );

@@ -9,7 +9,7 @@ const Select = props => {
   return (
     <label className={styles.field}>
       {selectLabel && <span className={styles.label}>{selectLabel}</span>}
-      <div className={styles.wrapInput}>
+      <div className={styles.wrap}>
         <select
           name={selectName}
           value={selected}
@@ -22,7 +22,7 @@ const Select = props => {
             </option>
           ))}
         </select>
-        <span className={styles.iconInput}>{icon}</span>
+        <span className={styles.icon}>{icon}</span>
       </div>
     </label>
   );

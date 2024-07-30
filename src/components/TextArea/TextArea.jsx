@@ -22,7 +22,7 @@ const TextArea = props => {
           {textAreaLabel}
         </label>
       )}
-      <div className={styles.wrapInput}>
+      <div className={styles.wrap}>
         <textarea
           disabled={isDisabled}
           type={textAreaType}
@@ -35,9 +35,7 @@ const TextArea = props => {
           onChange={handleChange}
           ref={textAreaRef}
         />
-        <span className={`${styles.iconInput} ${styles.iconTextarea}`}>
-          {icon}
-        </span>
+        <span className={`${styles.icon} ${styles.iconTextarea}`}>{icon}</span>
       </div>
     </div>
   );

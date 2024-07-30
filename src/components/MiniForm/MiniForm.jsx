@@ -38,9 +38,9 @@ const MiniForm = props => {
         placeholder={filling}
         value={field}
         onChange={handleInputChange}
-        className={styles.miniformInput}
+        className={styles.input}
       />
-      <button className={styles.miniformButton}>{icon}</button>
+      <button className={styles.button}>{icon}</button>
     </form>
   );
 };

@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const ItemFlex = props => {
   const { children } = props;
 
-  return <div className={styles.itemFlex}>{children}</div>;
+  return <div className={styles.flexed}>{children}</div>;
 };
 
 ItemFlex.propTypes = {

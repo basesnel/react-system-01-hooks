@@ -22,7 +22,7 @@
   opacity: 1;
 }
 
-.miniformButton {
+.button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -37,20 +37,20 @@
   outline: none;
 }
 
-.miniform:hover .miniformButton {
+.miniform:hover .button {
   color: var(--color-logolight);
   background-color: var(--color-accent);
 }
 
 @media mobile-to {
-  .miniformButton {
+  .button {
     width: 36px;
     height: 36px;
     font-size: var(--fs-text-desktop);
   }
 }
 
-.miniformInput {
+.input {
   display: inline-block;
   width: 100%;
   height: 28px;
@@ -62,17 +62,17 @@
   color: var(--color-text);
 }
 
-.miniformInput::placeholder {
+.input::placeholder {
   font-size: var(--fs-text-mobile);
 }
 
 @media mobile-to {
-  .miniformInput {
+  .input {
     height: 36px;
     font-size: var(--fs-text-smartphone);
   }
 
-  .miniformInput::placeholder {
+  .input::placeholder {
     font-size: var(--fs-text-smartphone);
   }
 }

@@ -10,7 +10,7 @@ const List = props => {
       {children}
     </ul>
   ) : (
-    <span className={styles.messageList}>{message}</span>
+    <span className={styles.message}>{message}</span>
   );
 };
 

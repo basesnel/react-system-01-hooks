@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const ItemLabel = props => {
   const { children } = props;
 
-  return <label className={styles.itemLabel}>{children}</label>;
+  return <label className={styles.label}>{children}</label>;
 };
 
 ItemLabel.propTypes = {

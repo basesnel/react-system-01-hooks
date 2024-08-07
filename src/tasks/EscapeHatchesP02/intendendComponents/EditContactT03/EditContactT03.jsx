@@ -17,7 +17,7 @@ const FormContact = props => {
     <Form onSubmit={onSave}>
       <Input
         inputType="text"
-        inputName="name"
+        inputName="nameT03"
         inputValue={name}
         inputLabel="Name"
         handleChange={e => setName(e.target.value)}
@@ -25,7 +25,7 @@ const FormContact = props => {
       />
       <Input
         inputType="email"
-        inputName="email"
+        inputName="emailT03"
         inputValue={email}
         inputLabel="E-mail"
         handleChange={e => setEmail(e.target.value)}

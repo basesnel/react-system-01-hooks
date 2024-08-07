@@ -17,7 +17,7 @@ const ChatRoomP02 = ({ roomId }) => {
     <FlexBox>
       <Input
         inputType="text"
-        inputName="chatroom"
+        inputName="serverP02"
         inputValue={serverUrl}
         inputLabel="Server URL: "
         handleChange={e => setServerUrl(e.target.value)}

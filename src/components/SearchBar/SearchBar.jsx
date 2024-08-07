@@ -27,14 +27,14 @@ const SearchBar = props => {
   };
 
   return (
-    <section className={styles.searchBar}>
+    <section className={styles.bar}>
       <form
         onSubmit={handleSubmit}
-        className={styles.searchForm}
+        className={styles.form}
         autoComplete="off"
       >
-        <button className={styles.searchButton}>
-          <span className={styles.searchLabel}>Search</span>
+        <button className={styles.button}>
+          <span className={styles.label}>Search</span>
         </button>
         <input
           type="text"
@@ -42,7 +42,7 @@ const SearchBar = props => {
           placeholder={query ? `Search ${query}...` : 'Search...'}
           value={searchQuery}
           onChange={handleInputChange}
-          className={styles.searchInput}
+          className={styles.input}
         />
       </form>
     </section>

@@ -1,7 +1,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to from sizes;
 
-.searchBar {
+.bar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,13 +13,13 @@
 }
 
 @media mobile-to {
-  .searchBar {
+  .bar {
     min-height: 40px;
     padding: 6px 24px;
   }
 }
 
-.searchForm {
+.form {
   display: flex;
   align-items: center;
   width: 100%;
@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.searchButton {
+.button {
   display: inline-block;
   width: 28px;
   height: 28px;
@@ -44,17 +44,17 @@
 }
 
 @media mobile-to {
-  .searchButton {
+  .button {
     width: 36px;
     height: 36px;
   }
 }
 
-.searchButton:hover {
+.button:hover {
   opacity: 1;
 }
 
-.searchLabel {
+.label {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -66,7 +66,7 @@
   border: 0;
 }
 
-.searchInput {
+.input {
   display: inline-block;
   width: 100%;
   border: none;
@@ -76,16 +76,16 @@
   color: var(--color-text);
 }
 
-.searchInput::placeholder {
+.input::placeholder {
   font-size: var(--fs-text-mobile);
 }
 
 @media mobile-to {
-  .searchInput {
+  .input {
     font-size: var(--fs-text-smartphone);
   }
 
-  .searchInput::placeholder {
+  .input::placeholder {
     font-size: var(--fs-text-smartphone);
   }
 }

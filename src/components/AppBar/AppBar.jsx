@@ -10,7 +10,7 @@ const AppBar = () => {
   const { isLoggedIn, user, onLogIn, onLogOut } = useContext(authContext);
 
   return (
-    <header className={styles.appBar}>
+    <header className={styles.bar}>
       <Container variant="navigation">
         <Logo text="WebForge" />
         <NavBar />

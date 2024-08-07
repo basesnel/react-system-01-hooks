@@ -14,7 +14,7 @@ const Modal = props => {
       <div className={styles.modal}>
         <Paragraph>Modal</Paragraph>
         <Paragraph>url: {url}</Paragraph>
-        <button className={styles.modalClose} onClick={onClose}>
+        <button className={styles.close} onClick={onClose}>
           <MdClose className={styles.icon} />
         </button>
       </div>

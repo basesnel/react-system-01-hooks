@@ -4,11 +4,16 @@ import { Caption } from 'components';
 import createConnection from './chat.js';
 
 const ChatRoomT13 = ({ options }) => {
+  const { roomId, serverUrl } = options;
+
   useEffect(() => {
-    const connection = createConnection(options);
+    const connection = createConnection({
+      roomId: roomId,
+      serverUrl: serverUrl,
+    });
     connection.connect();
     return () => connection.disconnect();
-  }, [options]);
+  }, [roomId, serverUrl]);
 
   return (
     <>

@@ -30,6 +30,7 @@ const EscapeHatchesPageP2 = () => {
     Prac13,
     Task12,
     Task13,
+    Task14,
   } = escapeHatchesP02;
 
   return (
@@ -120,6 +121,9 @@ const EscapeHatchesPageP2 = () => {
           </Card>
           <Card title="task 13: fix a reconnecting chat">
             <Task13 />
+          </Card>
+          <Card title="task 14: fix a reconnecting chat II variant">
+            <Task14 />
           </Card>
         </Grid>
       </Container>

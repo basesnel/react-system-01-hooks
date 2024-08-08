@@ -47,7 +47,7 @@ const Task09 = () => {
       <FlexBox direction="column" align="flex-start">
         <Select
           selectLabel="Pick a planet: "
-          selectName="Planet09"
+          selectName="PlanetT09"
           selected={planet}
           list={planetList}
           icon={<MdOutlineLanguage />}
@@ -55,7 +55,7 @@ const Task09 = () => {
         />
         <Select
           selectLabel="Pick a place: "
-          selectName="Place09"
+          selectName="PlaceT09"
           selected={place}
           list={placeList}
           icon={<MdPlace />}

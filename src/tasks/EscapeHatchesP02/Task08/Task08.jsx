@@ -13,14 +13,14 @@ const Task08 = () => {
       <FlexBox>
         <Select
           selectLabel="Choose the chat room: "
-          selectName="Chat"
+          selectName="ChatT08"
           selected={roomId}
           list={chatRoom}
           icon={<MdChat />}
           onHandleSelect={e => setRoomId(e.target.value)}
         />
         <CheckBox
-          name="isEncrypted08"
+          name="isEncryptedT08"
           checked={isEncrypted}
           onChange={e => setIsEncrypted(e.target.checked)}
           label="Enable encryption"

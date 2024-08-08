@@ -27,7 +27,7 @@ const Task01 = () => {
   return (
     <>
       <CheckBox
-        name="Task01 act"
+        name="activeTasksT01"
         checked={showActive}
         onChange={e => setShowActive(e.target.checked)}
         label="Show only active todos"

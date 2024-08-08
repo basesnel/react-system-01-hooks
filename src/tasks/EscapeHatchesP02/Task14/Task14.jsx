@@ -23,7 +23,7 @@ const Task13 = () => {
         <Button caption="Toggle Theme" onClick={() => setIsDark(!isDark)} />
         <Input
           inputType="text"
-          inputName="serverT13"
+          inputName="serverT14"
           inputValue={serverUrl}
           inputLabel="Server URL: "
           handleChange={e => setServerUrl(e.target.value)}
@@ -31,7 +31,7 @@ const Task13 = () => {
         />
         <Select
           selectLabel="Choose the chat room: "
-          selectName="ChatP07"
+          selectName="ChatT14"
           selected={roomId}
           list={chatRoom}
           icon={<MdChat />}

@@ -47,7 +47,7 @@ const Task07 = () => {
     <Canvas data-xob>
       <FlexBox>
         <CheckBox
-          name="canMove07"
+          name="canMoveT07"
           checked={canMove}
           onChange={e => setCanMove(e.target.checked)}
           label="The dot is allowed to move"

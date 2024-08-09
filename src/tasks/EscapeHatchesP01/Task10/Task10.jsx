@@ -19,14 +19,14 @@ const Task10 = () => {
             <MyFocusedInputT10
               shouldFocus={false}
               label="Enter first name"
-              name="firstName"
+              name="firstNameT10"
               value={firstName}
               onChange={e => setFirstName(e.target.value)}
             />
             <MyFocusedInputT10
               shouldFocus={true}
               label="Enter last name"
-              name="lastName"
+              name="lastNameT10"
               value={lastName}
               onChange={e => setLastName(e.target.value)}
             />

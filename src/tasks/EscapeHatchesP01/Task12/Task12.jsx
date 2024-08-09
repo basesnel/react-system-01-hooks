@@ -28,7 +28,7 @@ const Task12 = () => {
       <FlexBox>
         <Select
           selectLabel="Choose the person: "
-          selectName="Person"
+          selectName="PersonT12"
           selected={person}
           list={personList}
           icon={<FiUser />}

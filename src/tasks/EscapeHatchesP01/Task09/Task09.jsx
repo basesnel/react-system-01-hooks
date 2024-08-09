@@ -18,7 +18,7 @@ const Task09 = () => {
           <>
             <MyInputT09 value={name} onChange={e => setName(e.target.value)} />
             <CheckBox
-              name="isUppercase"
+              name="isUppercaseT09"
               checked={upper}
               onChange={() => setUpper(!upper)}
               label="Make it uppercase"

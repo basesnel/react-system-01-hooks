@@ -33,7 +33,7 @@ const Task08 = () => {
     <FlexBox>
       <InputWithRef
         inputType="text"
-        inputName="search"
+        inputName="searchT08"
         inputPlaceholder="Lookung for something?"
         icon={<MdSearch />}
         ref={inputRef}

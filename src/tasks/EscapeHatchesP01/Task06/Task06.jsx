@@ -11,7 +11,7 @@ const Task06 = () => {
       <Input
         inputRef={searchRef}
         inputType="text"
-        inputName="search"
+        inputName="searchT06"
         inputValue={inputValue}
         handleChange={e => setInputValue(e.target.value)}
         inputPlaceholder="Lookung for something?"

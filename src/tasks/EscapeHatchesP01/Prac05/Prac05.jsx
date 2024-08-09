@@ -15,7 +15,7 @@ const Prac05 = () => {
       <Input
         inputRef={inputRef}
         inputType="text"
-        inputName="ref-input"
+        inputName="ref-inputP05"
         inputValue={inputValue}
         handleChange={e => setInputValue(e.target.value)}
         inputPlaceholder="Input something"

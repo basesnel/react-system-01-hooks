@@ -17,7 +17,7 @@ const Prac12 = () => {
       />
       <Input
         inputType="text"
-        inputName="text"
+        inputName="textP12"
         inputValue={text}
         handleChange={e => setText(e.target.value)}
         icon={<FiEdit3 />}

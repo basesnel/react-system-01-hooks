@@ -23,7 +23,7 @@ const PlaygroundP14 = () => {
     <FlexBox>
       <Input
         inputLabel="What to log:"
-        inputName="shedule"
+        inputName="sheduleP14"
         inputType="text"
         inputPlaceholder="type a shedule name"
         inputValue={text}

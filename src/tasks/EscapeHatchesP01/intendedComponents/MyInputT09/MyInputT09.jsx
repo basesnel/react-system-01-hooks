@@ -17,7 +17,7 @@ const MyInputT09 = props => {
       inputRef={ref}
       inputType="text"
       inputLabel="Enter your name"
-      inputName="Your name"
+      inputName="nameT09"
       inputPlaceholder="Input Your name"
       inputValue={value}
       handleChange={onChange}

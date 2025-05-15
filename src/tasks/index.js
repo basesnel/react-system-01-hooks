@@ -5,6 +5,7 @@ import Clock from './Clock';
 import ColorPicker from './ColorPicker';
 import * as escapeHatchesP01 from './EscapeHatchesP01';
 import * as escapeHatchesP02 from './EscapeHatchesP02';
+import * as managingState from './ManagingState';
 import News from './News';
 import * as objectsInState from './ObjectsInState';
 import Pokemon from './Pokemon';
@@ -22,6 +23,7 @@ export {
   ColorPicker,
   escapeHatchesP01,
   escapeHatchesP02,
+  managingState,
   News,
   objectsInState,
   Pokemon,

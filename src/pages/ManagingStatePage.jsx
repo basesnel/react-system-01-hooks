@@ -1,22 +1,22 @@
 import { Container, Title, Paragraph, Grid, Card } from 'components';
 
-// import { arrayInState } from 'tasks';
+import { managingState } from 'tasks';
 
 const ManagingStatePage = () => {
-  // const {
-  //   Prac01,
-  //   Prac02,
-  //   Prac03,
-  //   Prac04,
-  //   Prac05,
-  //   Prac06,
-  //   Prac07,
-  //   Prac08,
-  //   Task01,
-  //   Task02,
-  //   Task03,
-  //   Task04,
-  // } = arrayInState;
+  const {
+    Prac01,
+    //   Prac02,
+    //   Prac03,
+    //   Prac04,
+    //   Prac05,
+    //   Prac06,
+    //   Prac07,
+    //   Prac08,
+    //   Task01,
+    //   Task02,
+    //   Task03,
+    //   Task04,
+  } = managingState;
 
   return (
     <main>
@@ -27,8 +27,7 @@ const ManagingStatePage = () => {
       <Container>
         <Grid>
           <Card title="prac 01: reacting to input with state">
-            {/* <Prac01 /> */}
-            <p>It's first card in this page.</p>
+            <Prac01 />
           </Card>
           {/* <Card title="prac 02: removing from an array">
             <Prac02 />

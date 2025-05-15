@@ -5,7 +5,7 @@ import { managingState } from 'tasks';
 const ManagingStatePage = () => {
   const {
     Prac01,
-    //   Prac02,
+    Prac02,
     //   Prac03,
     //   Prac04,
     //   Prac05,
@@ -29,10 +29,10 @@ const ManagingStatePage = () => {
           <Card title="prac 01: reacting to input with state">
             <Prac01 />
           </Card>
-          {/* <Card title="prac 02: removing from an array">
+          <Card title="prac 02: removing from an array">
             <Prac02 />
           </Card>
-          <Card title="prac 03: transforming an array">
+          {/* <Card title="prac 03: transforming an array">
             <Prac03 />
           </Card>
           <Card title="prac 04: replacing items in an array">

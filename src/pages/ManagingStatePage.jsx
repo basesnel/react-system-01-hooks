@@ -6,7 +6,7 @@ const ManagingStatePage = () => {
   const {
     Prac01,
     Prac02,
-    //   Prac03,
+    Prac03,
     //   Prac04,
     //   Prac05,
     //   Prac06,
@@ -29,13 +29,13 @@ const ManagingStatePage = () => {
           <Card title="prac 01: reacting to input with state">
             <Prac01 />
           </Card>
-          <Card title="prac 02: removing from an array">
+          <Card title="prac 02: mocking up from">
             <Prac02 />
           </Card>
-          {/* <Card title="prac 03: transforming an array">
+          <Card title="prac 03: form diffrent states">
             <Prac03 />
           </Card>
-          <Card title="prac 04: replacing items in an array">
+          {/* <Card title="prac 04: replacing items in an array">
             <Prac04 />
           </Card>
           <Card title="prac 05: inserting into an array">

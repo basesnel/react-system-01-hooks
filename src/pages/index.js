@@ -7,6 +7,7 @@ import { EscapeHatchesPageP1 } from './EscapeHatchesPageP1';
 import { EscapeHatchesPageP2 } from './EscapeHatchesPageP2';
 import { FormPage } from './FormPage';
 import { HomePage } from './HomePage';
+import { ManagingStatePage } from './ManagingStatePage';
 import { NewsPage } from './NewsPage';
 import { NotFoundPage } from './NotFoundPage';
 import { ObjectInStatePage } from './ObjectInStatePage';
@@ -26,6 +27,7 @@ export {
   EscapeHatchesPageP2,
   FormPage,
   HomePage,
+  ManagingStatePage,
   NewsPage,
   NotFoundPage,
   ObjectInStatePage,

@@ -128,6 +128,14 @@ const NavBar = () => {
             Escape hatches - part II
           </NavLink>
         </li>
+        <li className={item}>
+          <NavLink
+            className={({ isActive }) => (isActive ? navlinkActive : navlink)}
+            to="/managing-state"
+          >
+            Managing state
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

@@ -2,7 +2,7 @@
 // import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
 // import { RiAddCircleFill } from 'react-icons/ri';
 
-const Prac02 = ({ status = 'empty' }) => {
+const Prac02 = ({ status = 'error' }) => {
   if (status === 'success') return <h1>That's right!</h1>;
 
   return (
@@ -12,8 +12,12 @@ const Prac02 = ({ status = 'empty' }) => {
         In which city is there a billboard that runs air into drinkable water
       </p>
       <form>
-        <textarea />
-        <button>Submit</button>
+        <textarea disabled={status === 'submitting'} />
+        <br />
+        <button disabled={status === 'empty' || status === 'submitting'}>
+          Submit
+        </button>
+        {status === 'error' && <p>Good guess but a wrong answer. Try again!</p>}
       </form>
     </>
   );

@@ -1,16 +1,16 @@
 import { useState } from 'react';
-// import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-// import { RiAddCircleFill } from 'react-icons/ri';
+
+import styles from './styles.module.css';
 
 const Task01 = () => {
   const [isActive, setIsActive] = useState(false);
 
-  let backgroundClassName = 'background';
-  let pictureClassName = 'picture';
+  let backgroundClassName = `${styles.background}`;
+  let pictureClassName = `${styles.picture}`;
   if (isActive) {
-    pictureClassName += ' picture--active';
+    pictureClassName += ` ${styles.pictureActive}`;
   } else {
-    backgroundClassName += ' background--active';
+    backgroundClassName += ` ${styles.backgroundActive}`;
   }
 
   return (

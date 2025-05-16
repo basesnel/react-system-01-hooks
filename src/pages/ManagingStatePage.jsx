@@ -32,7 +32,7 @@ const ManagingStatePage = () => {
           <Card title="prac 02: mocking up from">
             <Prac02 />
           </Card>
-          <Card title="prac 03: form diffrent states">
+          <Card title="prac 03: “living styleguides” or “storybooks”">
             <Prac03 />
           </Card>
           <Card title="task 01: add and remove a css class">

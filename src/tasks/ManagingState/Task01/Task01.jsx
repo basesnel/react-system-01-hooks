@@ -5,19 +5,23 @@ import { useState } from 'react';
 const Task01 = () => {
   const [isActive, setIsActive] = useState(false);
 
+  let backgroundClassName = 'background';
+  let pictureClassName = 'picture';
+  if (isActive) {
+    pictureClassName += ' picture--active';
+  } else {
+    backgroundClassName += ' background--active';
+  }
+
   return (
-    <div
-      className={!isActive ? 'background background--active' : 'background'}
-      onClick={e => {
-        if (e.target === e.currentTarget) setIsActive(false);
-      }}
-    >
+    <div className={backgroundClassName} onClick={() => setIsActive(false)}>
       <img
-        className={isActive ? 'picture picture--active' : 'picture'}
+        className={pictureClassName}
         alt="Rainbow houses in Kampung Pelengi, Indonesia"
         src="https://i.imgur.com/5qwVYb1.jpg"
         onClick={e => {
-          if (e.target === e.currentTarget) setIsActive(true);
+          e.stopPropagation();
+          setIsActive(true);
         }}
       />
     </div>

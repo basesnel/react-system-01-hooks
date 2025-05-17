@@ -1,8 +1,5 @@
-// import { useState } from 'react';
-// import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-// import { RiAddCircleFill } from 'react-icons/ri';
-
-import Form from './Form';
+import { Title } from 'components';
+import StateForm from './StateForm';
 
 const Prac03 = () => {
   const statuses = ['empty', 'typing', 'submitting', 'success', 'error'];
@@ -11,8 +8,8 @@ const Prac03 = () => {
     <>
       {statuses.map(status => (
         <section key={status}>
-          <h4>Form ({status}):</h4>
-          <Form status={status} />
+          <Title level={3} caption={`Form (${status}):`} />
+          <StateForm status={status} />
         </section>
       ))}
     </>

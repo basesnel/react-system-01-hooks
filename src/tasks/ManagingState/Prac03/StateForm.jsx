@@ -1,4 +1,4 @@
-import { Form, Button, TextArea, Paragraph } from 'components';
+import { Form, Button, TextArea, Paragraph, FlexBox } from 'components';
 import { useState } from 'react';
 
 const StateForm = ({ status }) => {
@@ -13,10 +13,12 @@ const StateForm = ({ status }) => {
           textAreaValue={quiz}
           handleChange={setQuiz}
         />
-        <Button
-          isDisabled={status === 'empty' || status === 'submitting'}
-          caption="Submit"
-        />
+        <FlexBox>
+          <Button
+            isDisabled={status === 'empty' || status === 'submitting'}
+            caption="Submit"
+          />
+        </FlexBox>
         {status === 'error' && (
           <Paragraph>Good guess but a wrong answer. Try again!</Paragraph>
         )}

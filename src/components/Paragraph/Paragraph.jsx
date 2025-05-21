@@ -3,15 +3,26 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Paragraph = props => {
-  const { centered, paragraphRef, children } = props;
+  const { centered, warned, paragraphRef, children } = props;
+
+  const styledText = () => {
+    if (centered && warned) {
+      return `${styles.text} ${styles.centeredText} ${styles.redText}`;
+    }
+
+    if (centered) {
+      return `${styles.text} ${styles.centeredText}`;
+    }
+
+    if (warned) {
+      return `${styles.text} ${styles.redText}`;
+    }
+
+    return `${styles.text}`;
+  };
 
   return (
-    <p
-      className={
-        centered ? `${styles.text} ${styles.centeredText}` : styles.text
-      }
-      ref={paragraphRef}
-    >
+    <p className={styledText()} ref={paragraphRef}>
       {children}
     </p>
   );
@@ -19,12 +30,14 @@ const Paragraph = props => {
 
 Paragraph.propTypes = {
   centered: PropTypes.bool,
+  warned: PropTypes.bool,
   paragraphRef: PropTypes.any,
   children: PropTypes.node.isRequired,
 };
 
 Paragraph.defaultProps = {
   centered: null,
+  warned: null,
   paragraphRef: null,
 };
 

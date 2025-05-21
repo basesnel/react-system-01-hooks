@@ -20,7 +20,9 @@ const StateForm = ({ status }) => {
           />
         </FlexBox>
         {status === 'error' && (
-          <Paragraph>Good guess but a wrong answer. Try again!</Paragraph>
+          <Paragraph warned centered>
+            Good guess but a wrong answer. Try again!
+          </Paragraph>
         )}
       </Form>
     </>

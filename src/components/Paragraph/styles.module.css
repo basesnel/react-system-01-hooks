@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.text.redText {
+  color: red;
+}
+
 @media mobile-to {
   .text {
     font-size: var(--fs-text-smartphone);

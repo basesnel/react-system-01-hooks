@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Paragraph = props => {
-  const { centered, warned, paragraphRef, children } = props;
+  const { centered, warned, succeeded, paragraphRef, children } = props;
 
   const styledText = () => {
+    if (centered && succeeded) {
+      return `${styles.text} ${styles.centeredText} ${styles.greenText}`;
+    }
+
     if (centered && warned) {
       return `${styles.text} ${styles.centeredText} ${styles.redText}`;
     }

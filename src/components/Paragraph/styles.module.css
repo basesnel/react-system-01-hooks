@@ -16,6 +16,10 @@
   color: red;
 }
 
+.text.greenText {
+  color: green;
+}
+
 @media mobile-to {
   .text {
     font-size: var(--fs-text-smartphone);

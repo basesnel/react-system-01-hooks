@@ -8,7 +8,11 @@ const Prac01 = () => {
   const [status, setStatus] = useState('typing');
 
   if (status === 'success')
-    return <Paragraph centered>That's right!</Paragraph>;
+    return (
+      <Paragraph centered succeeded>
+        That's right!
+      </Paragraph>
+    );
 
   async function handleSubmit(e) {
     e.preventDefault();

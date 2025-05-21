@@ -1,24 +1,28 @@
-// import { useState } from 'react';
-// import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-// import { RiAddCircleFill } from 'react-icons/ri';
+import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
 
 const Prac02 = ({ status = 'error' }) => {
   if (status === 'success') return <h1>That's right!</h1>;
 
   return (
     <>
-      <h2>city quiz</h2>
-      <p>
+      <Title level={3} caption="city quiz" />
+      <Paragraph>
         In which city is there a billboard that runs air into drinkable water
-      </p>
-      <form>
-        <textarea disabled={status === 'submitting'} />
-        <br />
-        <button disabled={status === 'empty' || status === 'submitting'}>
-          Submit
-        </button>
-        {status === 'error' && <p>Good guess but a wrong answer. Try again!</p>}
-      </form>
+      </Paragraph>
+      <Form onSubmit={() => {}}>
+        <TextArea isDisabled={status === 'submitting'} />
+        <FlexBox>
+          <Button
+            isDisabled={status === 'empty' || status === 'submitting'}
+            caption="Submit"
+          />
+        </FlexBox>
+        {status === 'error' && (
+          <Paragraph centered warned>
+            Good guess but a wrong answer. Try again!
+          </Paragraph>
+        )}
+      </Form>
     </>
   );
 };

@@ -1,13 +1,14 @@
 import { useState } from 'react';
-// import { MiniForm, List, Item, ItemFlex, ItemText } from 'components';
-// import { RiAddCircleFill } from 'react-icons/ri';
+import { FiEdit3 } from 'react-icons/fi';
+import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
 
 const Prac01 = () => {
   const [answer, setAnswer] = useState('');
   const [error, setError] = useState(null);
   const [status, setStatus] = useState('typing');
 
-  if (status === 'success') return <h1>That's right!</h1>;
+  if (status === 'success')
+    return <Paragraph centered>That's right!</Paragraph>;
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -27,21 +28,30 @@ const Prac01 = () => {
 
   return (
     <>
-      <h2>city quiz</h2>
-      <p>
+      <Title level={3} caption="city quiz" />
+      <Paragraph>
         In which city is there a billboard that runs air into drinkable water
-      </p>
-      <form onSubmit={handleSubmit}>
-        <textarea
-          value={answer}
-          onChange={handleTextareaChange}
-          disabled={status === 'submitting'}
+      </Paragraph>
+      <Form onSubmit={handleSubmit}>
+        <TextArea
+          isDisabled={status === 'submitting'}
+          textAreaValue={answer}
+          handleChange={handleTextareaChange}
+          icon={<FiEdit3 />}
         />
-        <button disabled={answer.length === 0 || status === 'submitting'}>
-          Submit
-        </button>
-        {error !== null && <p>{error.message}</p>}
-      </form>
+        <FlexBox>
+          <Button
+            type="submit"
+            isDisabled={status === 'empty' || status === 'submitting'}
+            caption="Submit"
+          />
+        </FlexBox>
+        {error !== null && (
+          <Paragraph warned centered>
+            {error.message}
+          </Paragraph>
+        )}
+      </Form>
     </>
   );
 };

@@ -1,8 +1,13 @@
 import { useState } from 'react';
+import { FiEdit3 } from 'react-icons/fi';
 import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
 
 const Prac02 = ({ status = 'error' }) => {
-  const [quiz, setQuiz] = useState('');
+  const [answer, setAnswer] = useState('');
+
+  function handleTextareaChange(e) {
+    setAnswer(e.target.value);
+  }
 
   if (status === 'success') return <h1>That's right!</h1>;
 
@@ -15,8 +20,9 @@ const Prac02 = ({ status = 'error' }) => {
       <Form onSubmit={() => {}}>
         <TextArea
           isDisabled={status === 'submitting'}
-          textAreaValue={quiz}
-          handleChange={e => setQuiz(e.target.value)}
+          textAreaValue={answer}
+          handleChange={handleTextareaChange}
+          icon={<FiEdit3 />}
         />
         <FlexBox>
           <Button

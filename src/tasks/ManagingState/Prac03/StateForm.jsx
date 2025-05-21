@@ -3,7 +3,11 @@ import { FiEdit3 } from 'react-icons/fi';
 import { Form, Button, TextArea, Paragraph, FlexBox } from 'components';
 
 const StateForm = ({ status }) => {
-  const [quiz, setQuiz] = useState('');
+  const [answer, setAnswer] = useState('');
+
+  function handleTextareaChange(e) {
+    setAnswer(e.target.value);
+  }
 
   if (status === 'success') return <h1>That's right!</h1>;
 
@@ -12,8 +16,8 @@ const StateForm = ({ status }) => {
       <Form onSubmit={() => {}}>
         <TextArea
           isDisabled={status === 'submitting'}
-          textAreaValue={quiz}
-          handleChange={setQuiz}
+          textAreaValue={answer}
+          handleChange={handleTextareaChange}
           icon={<FiEdit3 />}
         />
         <FlexBox>

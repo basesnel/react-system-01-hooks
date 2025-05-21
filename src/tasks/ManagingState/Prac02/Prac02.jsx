@@ -1,6 +1,9 @@
+import { useState } from 'react';
 import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
 
 const Prac02 = ({ status = 'error' }) => {
+  const [quiz, setQuiz] = useState('');
+
   if (status === 'success') return <h1>That's right!</h1>;
 
   return (
@@ -10,7 +13,11 @@ const Prac02 = ({ status = 'error' }) => {
         In which city is there a billboard that runs air into drinkable water
       </Paragraph>
       <Form onSubmit={() => {}}>
-        <TextArea isDisabled={status === 'submitting'} />
+        <TextArea
+          isDisabled={status === 'submitting'}
+          textAreaValue={quiz}
+          handleChange={setQuiz}
+        />
         <FlexBox>
           <Button
             isDisabled={status === 'empty' || status === 'submitting'}

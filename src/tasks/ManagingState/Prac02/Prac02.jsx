@@ -16,7 +16,7 @@ const Prac02 = ({ status = 'error' }) => {
         <TextArea
           isDisabled={status === 'submitting'}
           textAreaValue={quiz}
-          handleChange={setQuiz}
+          handleChange={e => setQuiz(e.target.value)}
         />
         <FlexBox>
           <Button

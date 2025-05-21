@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FiEdit3 } from 'react-icons/fi';
 import { Form, Button, TextArea, Paragraph, FlexBox } from 'components';
 
 const StateForm = ({ status }) => {
@@ -13,6 +14,7 @@ const StateForm = ({ status }) => {
           isDisabled={status === 'submitting'}
           textAreaValue={quiz}
           handleChange={setQuiz}
+          icon={<FiEdit3 />}
         />
         <FlexBox>
           <Button

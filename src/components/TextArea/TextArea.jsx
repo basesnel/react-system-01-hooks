@@ -15,6 +15,12 @@ const TextArea = props => {
     textAreaRef,
   } = props;
 
+  const valueProps = {
+    ...(textAreaValue === null || handleChange === null
+      ? { defaultValue: '', readOnly: true }
+      : { value: textAreaValue, onChange: handleChange }),
+  };
+
   return (
     <div className={styles.field}>
       {textAreaLabel && (
@@ -28,11 +34,10 @@ const TextArea = props => {
           type={textAreaType}
           name={textAreaName}
           id={textAreaName}
-          value={textAreaValue}
+          {...valueProps}
           autoComplete="off"
           className={styles.input}
           placeholder={textAreaPlaceholder}
-          onChange={handleChange}
           ref={textAreaRef}
         />
         <span className={`${styles.icon} ${styles.iconTextarea}`}>{icon}</span>

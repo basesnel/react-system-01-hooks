@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
 import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
 
@@ -20,7 +21,10 @@ const Prac02 = ({ status = 'error' }) => {
       <Form onSubmit={() => {}}>
         <TextArea
           isDisabled={status === 'submitting'}
+          textAreaName="prac02textarea"
           textAreaValue={answer}
+          textAreaLabel="Your answer:"
+          textAreaPlaceholder="Type your answer..."
           handleChange={handleTextareaChange}
           icon={<FiEdit3 />}
         />
@@ -38,6 +42,14 @@ const Prac02 = ({ status = 'error' }) => {
       </Form>
     </>
   );
+};
+
+Prac02.propTypes = {
+  status: PropTypes.string,
+};
+
+Prac02.defaultProps = {
+  status: 'error',
 };
 
 export default Prac02;

@@ -35,6 +35,7 @@ const Paragraph = props => {
 Paragraph.propTypes = {
   centered: PropTypes.bool,
   warned: PropTypes.bool,
+  succeeded: PropTypes.bool,
   paragraphRef: PropTypes.any,
   children: PropTypes.node.isRequired,
 };
@@ -42,6 +43,7 @@ Paragraph.propTypes = {
 Paragraph.defaultProps = {
   centered: null,
   warned: null,
+  succeeded: null,
   paragraphRef: null,
 };
 

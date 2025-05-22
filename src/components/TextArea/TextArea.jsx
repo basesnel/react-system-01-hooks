@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 const TextArea = props => {
   const {
     isDisabled,
-    textAreaType,
     textAreaName,
     textAreaValue,
     textAreaLabel,
@@ -31,8 +30,6 @@ const TextArea = props => {
       <div className={styles.wrap}>
         <textarea
           disabled={isDisabled}
-          type={textAreaType}
-          name={textAreaName}
           id={textAreaName}
           {...valueProps}
           autoComplete="off"
@@ -48,7 +45,6 @@ const TextArea = props => {
 
 TextArea.propTypes = {
   isDisabled: PropTypes.bool,
-  textAreaType: PropTypes.string,
   textAreaName: PropTypes.string,
   textAreaValue: PropTypes.string,
   textAreaLabel: PropTypes.string,
@@ -60,7 +56,6 @@ TextArea.propTypes = {
 
 TextArea.defaultProps = {
   isDisabled: null,
-  textAreaType: null,
   textAreaName: null,
   textAreaValue: null,
   textAreaLabel: null,

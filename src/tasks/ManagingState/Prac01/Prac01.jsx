@@ -39,7 +39,10 @@ const Prac01 = () => {
       <Form onSubmit={handleSubmit}>
         <TextArea
           isDisabled={status === 'submitting'}
+          textAreaName="prac01textarea"
           textAreaValue={answer}
+          textAreaLabel="Your answer:"
+          textAreaPlaceholder="Type your answer..."
           handleChange={handleTextareaChange}
           icon={<FiEdit3 />}
         />

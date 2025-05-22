@@ -13,7 +13,7 @@ const ManagingStatePage = () => {
     //   Prac07,
     //   Prac08,
     Task01,
-    //   Task02,
+    Task02,
     //   Task03,
     //   Task04,
   } = managingState;
@@ -38,10 +38,10 @@ const ManagingStatePage = () => {
           <Card title="task 01: add and remove a css class">
             <Task01 />
           </Card>
-          {/* <Card title="prac 05: inserting into an array">
-            <Prac05 />
+          <Card title="task 02: profile editor">
+            <Task02 />
           </Card>
-          <Card title="prac 06: making other changes to an array">
+          {/* <Card title="prac 06: making other changes to an array">
             <Prac06 />
           </Card>
           <Card title="prac 07: updating objects inside arrays">

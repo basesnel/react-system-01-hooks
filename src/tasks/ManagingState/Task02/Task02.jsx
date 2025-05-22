@@ -7,39 +7,39 @@ const Task02 = () => {
   const [lastName, setLastName] = useState('Jacobs');
   const [isProfileEditing, setIsProfileEditing] = useState(false);
 
+  const handleFormSubmit = e => {
+    e.preventDefault();
+    setIsProfileEditing(!isProfileEditing);
+  };
+
   const handleFirstNameChange = e => {
     setFirstName(e.target.value);
   };
+
   const handleLastNameChange = e => {
     setLastName(e.target.value);
   };
 
   return (
-    <form>
+    <form onSubmit={handleFormSubmit}>
       <label>
         First name:
-        {!isProfileEditing ? (
-          <b>{firstName}</b>
-        ) : (
+        {isProfileEditing ? (
           <input value={firstName} onChange={handleFirstNameChange} />
+        ) : (
+          <b>{firstName}</b>
         )}
       </label>
       <label>
         Last name:{' '}
-        {!isProfileEditing ? (
-          <b>{lastName}</b>
-        ) : (
+        {isProfileEditing ? (
           <input value={lastName} onChange={handleLastNameChange} />
+        ) : (
+          <b>{lastName}</b>
         )}
       </label>
-      <button
-        type="submit"
-        onClick={e => {
-          e.preventDefault();
-          setIsProfileEditing(!isProfileEditing);
-        }}
-      >
-        {!isProfileEditing ? 'Edit profile' : 'Save profile'}
+      <button type="submit">
+        {isProfileEditing ? 'Save' : 'Edit'} Profile
       </button>
       <p>
         <i>{`Hello, ${firstName} ${lastName}!`}</i>

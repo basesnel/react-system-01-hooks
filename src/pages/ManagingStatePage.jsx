@@ -14,7 +14,7 @@ const ManagingStatePage = () => {
     //   Prac08,
     Task01,
     Task02,
-    //   Task03,
+    Task03,
     //   Task04,
   } = managingState;
 
@@ -41,10 +41,10 @@ const ManagingStatePage = () => {
           <Card title="task 02: profile editor">
             <Task02 />
           </Card>
-          {/* <Card title="prac 06: making other changes to an array">
-            <Prac06 />
+          <Card title="task 03: profile editor without react">
+            <Task03 />
           </Card>
-          <Card title="prac 07: updating objects inside arrays">
+          {/* <Card title="prac 07: updating objects inside arrays">
             <Prac07 />
           </Card>
           <Card title="prac 08: write concise update logic with immer">

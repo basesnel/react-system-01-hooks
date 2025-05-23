@@ -77,21 +77,33 @@ const Task03 = () => {
       <label>
         First name:
         <b id="firstNameText">Jane</b>
-        <input
+        {/* <input
           id="firstNameInput"
           value="Jane"
           style={{ display: 'none' }}
           onChange={() => {}}
+        /> */}
+        <input
+          id="firstNameInput"
+          style={{ display: 'none' }}
+          name="firstNameInput"
+          placeholder="Jane"
         />
       </label>
       <label>
         Last name:
         <b id="lastNameText">Jacobs</b>
-        <input
+        {/* <input
           id="lastNameInput"
           value="Jacobs"
           style={{ display: 'none' }}
           onChange={() => {}}
+        /> */}
+        <input
+          id="lastNameInput"
+          style={{ display: 'none' }}
+          name="lastNameInput"
+          placeholder="Jacobs"
         />
       </label>
       <button type="submit" id="editButton">

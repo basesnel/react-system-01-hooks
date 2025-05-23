@@ -39,25 +39,34 @@ const Task03 = () => {
     const updateDOM = () => {
       if (isEditing.current) {
         editButton.textContent = 'Save profile';
+        hide(firstNameInput);
+        hide(lastNameInput);
+        show(firstNameText);
+        show(lastNameText);
       } else {
         editButton.textContent = 'Edit profile';
+        hide(firstNameText);
+        hide(lastNameText);
+        show(firstNameInput);
+        show(lastNameInput);
       }
     };
 
-    // function hide(el) {
-    //   el.style.display = 'none';
-    // }
+    function hide(el) {
+      console.log(el);
+      el.style.display = 'none';
+    }
 
-    // function show(el) {
-    //   el.style.display = '';
-    // }
+    function show(el) {
+      el.style.display = '';
+    }
 
     let form = document.getElementById('form');
     let editButton = document.getElementById('editButton');
     let firstNameInput = document.getElementById('firstNameInput');
-    // let firstNameText = document.getElementById('firstNameText');
+    let firstNameText = document.getElementById('firstNameText');
     let lastNameInput = document.getElementById('lastNameInput');
-    // let lastNameText = document.getElementById('lastNameText');
+    let lastNameText = document.getElementById('lastNameText');
     // let helloText = document.getElementById('helloText');
     form.onsubmit = handleFormSubmit;
     firstNameInput.oninput = handleFirstNameChange;
@@ -78,7 +87,7 @@ const Task03 = () => {
       </label>
       <label>
         Last name:
-        <b id="firstNameText">Jacobs</b>
+        <b id="lastNameText">Jacobs</b>
         <input
           id="lastNameInput"
           value="Jacobs"

@@ -12,17 +12,15 @@ const Task03 = () => {
       e.preventDefault();
       setIsEditing(!isEditing.current);
 
-      formData.forEach((value, name) => console.log(`${name}: ${value}`));
+      // formData.forEach((value, name) => console.log(`${name}: ${value}`));
     };
 
     const handleFirstNameChange = e => {
       setFirstName(e.target.value);
-      // formData.set('firstName', e.target.value);
     };
 
     const handleLastNameChange = e => {
       setLastName(e.target.value);
-      // formData.set('lastName', e.target.value);
     };
 
     const setFirstName = value => {
@@ -56,6 +54,7 @@ const Task03 = () => {
       }
       formData.set('firstName', firstName.current);
       formData.set('lastName', lastName.current);
+      helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
     };
 
     function hide(el) {
@@ -72,13 +71,14 @@ const Task03 = () => {
     let firstNameText = document.getElementById('firstNameText');
     let lastNameInput = document.getElementById('lastNameInput');
     let lastNameText = document.getElementById('lastNameText');
-    // let helloText = document.getElementById('helloText');
+    let helloText = document.getElementById('helloText');
 
     form.onsubmit = handleFormSubmit;
     firstNameInput.value = firstName.current;
     firstNameInput.oninput = handleFirstNameChange;
     lastNameInput.value = lastName.current;
     lastNameInput.oninput = handleLastNameChange;
+    helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
 
     const formData = new FormData(form);
   }, []);

@@ -10,7 +10,7 @@ const Task03 = () => {
   useEffect(() => {
     const handleFormSubmit = e => {
       e.preventDefault();
-      setIsEditing(!isEditing);
+      setIsEditing(!isEditing.current);
     };
 
     const handleFirstNameChange = e => {
@@ -37,7 +37,7 @@ const Task03 = () => {
     };
 
     const updateDOM = () => {
-      if (isEditing) {
+      if (isEditing.current) {
         editButton.textContent = 'Save profile';
       } else {
         editButton.textContent = 'Edit profile';

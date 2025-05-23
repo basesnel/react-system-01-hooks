@@ -39,21 +39,20 @@ const Task03 = () => {
     const updateDOM = () => {
       if (isEditing.current) {
         editButton.textContent = 'Save profile';
-        hide(firstNameInput);
-        hide(lastNameInput);
-        show(firstNameText);
-        show(lastNameText);
-      } else {
-        editButton.textContent = 'Edit profile';
         hide(firstNameText);
         hide(lastNameText);
         show(firstNameInput);
         show(lastNameInput);
+      } else {
+        editButton.textContent = 'Edit profile';
+        hide(firstNameInput);
+        hide(lastNameInput);
+        show(firstNameText);
+        show(lastNameText);
       }
     };
 
     function hide(el) {
-      console.log(el);
       el.style.display = 'none';
     }
 

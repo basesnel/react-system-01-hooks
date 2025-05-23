@@ -11,14 +11,18 @@ const Task03 = () => {
     const handleFormSubmit = e => {
       e.preventDefault();
       setIsEditing(!isEditing.current);
+
+      formData.forEach((value, name) => console.log(`${name}: ${value}`));
     };
 
     const handleFirstNameChange = e => {
       setFirstName(e.target.value);
+      // formData.set('firstName', e.target.value);
     };
 
     const handleLastNameChange = e => {
       setLastName(e.target.value);
+      // formData.set('lastName', e.target.value);
     };
 
     const setFirstName = value => {
@@ -50,6 +54,8 @@ const Task03 = () => {
         show(firstNameText);
         show(lastNameText);
       }
+      formData.set('firstName', firstName.current);
+      formData.set('lastName', lastName.current);
     };
 
     function hide(el) {
@@ -67,9 +73,14 @@ const Task03 = () => {
     let lastNameInput = document.getElementById('lastNameInput');
     let lastNameText = document.getElementById('lastNameText');
     // let helloText = document.getElementById('helloText');
+
     form.onsubmit = handleFormSubmit;
+    firstNameInput.value = firstName.current;
     firstNameInput.oninput = handleFirstNameChange;
+    lastNameInput.value = lastName.current;
     lastNameInput.oninput = handleLastNameChange;
+
+    const formData = new FormData(form);
   }, []);
 
   return (
@@ -86,8 +97,8 @@ const Task03 = () => {
         <input
           id="firstNameInput"
           style={{ display: 'none' }}
-          name="firstNameInput"
-          placeholder="Jane"
+          name="firstName"
+          placeholder="Type first name..."
         />
       </label>
       <label>
@@ -102,8 +113,8 @@ const Task03 = () => {
         <input
           id="lastNameInput"
           style={{ display: 'none' }}
-          name="lastNameInput"
-          placeholder="Jacobs"
+          name="lastName"
+          placeholder="Type last name..."
         />
       </label>
       <button type="submit" id="editButton">

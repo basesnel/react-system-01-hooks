@@ -55,6 +55,8 @@ const Task03 = () => {
       formData.set('firstName', firstName.current);
       formData.set('lastName', lastName.current);
       helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
+      firstNameText.textContent = firstName.current;
+      lastNameText.textContent = lastName.current;
     };
 
     function hide(el) {
@@ -87,7 +89,7 @@ const Task03 = () => {
     <form id="form">
       <label>
         First name:
-        <b id="firstNameText">Jane</b>
+        <b id="firstNameText">{firstName.current}</b>
         {/* <input
           id="firstNameInput"
           value="Jane"
@@ -103,7 +105,7 @@ const Task03 = () => {
       </label>
       <label>
         Last name:
-        <b id="lastNameText">Jacobs</b>
+        <b id="lastNameText">{lastName.current}</b>
         {/* <input
           id="lastNameInput"
           value="Jacobs"

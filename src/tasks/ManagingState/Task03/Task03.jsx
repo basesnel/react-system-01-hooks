@@ -1,4 +1,7 @@
 import { useEffect, useRef } from 'react';
+import { Paragraph, FlexBox } from 'components';
+
+import styles from './styles.module.css';
 
 const Task03 = () => {
   let firstName = useRef('Jane');
@@ -79,32 +82,40 @@ const Task03 = () => {
 
   return (
     <form id="form">
-      <label>
-        First name:
-        <b id="firstNameText">{firstName.current}</b>
+      <label className={styles.label}>
+        <span className={styles.span}>First name:</span>
+        <b className={styles.b} id="firstNameText">
+          {firstName.current}
+        </b>
         <input
           id="firstNameInput"
           style={{ display: 'none' }}
+          className={styles.input}
           name="firstName"
           placeholder="Type first name..."
         />
       </label>
-      <label>
-        Last name:
-        <b id="lastNameText">{lastName.current}</b>
+      <label className={styles.label}>
+        <span className={styles.span}>Last name:</span>
+        <b className={styles.b} id="lastNameText">
+          {lastName.current}
+        </b>
         <input
           id="lastNameInput"
           style={{ display: 'none' }}
+          className={styles.input}
           name="lastName"
           placeholder="Type last name..."
         />
       </label>
-      <button type="submit" id="editButton">
-        Edit Profile
-      </button>
-      <p>
+      <FlexBox>
+        <button type="submit" id="editButton">
+          Edit Profile
+        </button>
+      </FlexBox>
+      <Paragraph>
         <i id="helloText">Hello, Jane Jacobs!</i>
-      </p>
+      </Paragraph>
     </form>
   );
 };

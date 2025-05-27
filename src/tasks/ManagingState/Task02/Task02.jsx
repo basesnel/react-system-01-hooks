@@ -1,6 +1,6 @@
 import { useState } from 'react';
-
-// import styles from './styles.module.css';
+import { FiEdit3 } from 'react-icons/fi';
+import { Form, Input, Button, Paragraph, FlexBox } from 'components';
 
 const Task02 = () => {
   const [firstName, setFirstName] = useState('Jane');
@@ -21,30 +21,45 @@ const Task02 = () => {
   };
 
   return (
-    <form onSubmit={handleFormSubmit}>
-      <label>
+    <Form onSubmit={handleFormSubmit}>
+      <FlexBox align="flex-start">
         First name:
         {isProfileEditing ? (
-          <input value={firstName} onChange={handleFirstNameChange} />
+          <Input
+            inputName="Task02FirstName"
+            inputValue={firstName}
+            inputType="text"
+            handleChange={handleFirstNameChange}
+            icon={<FiEdit3 />}
+          />
         ) : (
           <b>{firstName}</b>
         )}
-      </label>
-      <label>
+      </FlexBox>
+      <FlexBox align="flex-start">
         Last name:{' '}
         {isProfileEditing ? (
-          <input value={lastName} onChange={handleLastNameChange} />
+          <Input
+            inputName="Task02LarstName"
+            inputValue={lastName}
+            inputType="text"
+            handleChange={handleLastNameChange}
+            icon={<FiEdit3 />}
+          />
         ) : (
           <b>{lastName}</b>
         )}
-      </label>
-      <button type="submit">
-        {isProfileEditing ? 'Save' : 'Edit'} Profile
-      </button>
-      <p>
+      </FlexBox>
+      <FlexBox>
+        <Button
+          type="submit"
+          caption={`${isProfileEditing ? 'Save' : 'Edit'} Profile`}
+        />
+      </FlexBox>
+      <Paragraph>
         <i>{`Hello, ${firstName} ${lastName}!`}</i>
-      </p>
-    </form>
+      </Paragraph>
+    </Form>
   );
 };
 

@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
 
-// import styles from './styles.module.css';
-
 const Task03 = () => {
   let firstName = useRef('Jane');
   let lastName = useRef('Jacobs');
@@ -11,8 +9,6 @@ const Task03 = () => {
     const handleFormSubmit = e => {
       e.preventDefault();
       setIsEditing(!isEditing.current);
-
-      // formData.forEach((value, name) => console.log(`${name}: ${value}`));
     };
 
     const handleFirstNameChange = e => {
@@ -52,8 +48,6 @@ const Task03 = () => {
         show(firstNameText);
         show(lastNameText);
       }
-      formData.set('firstName', firstName.current);
-      formData.set('lastName', lastName.current);
       helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
       firstNameText.textContent = firstName.current;
       lastNameText.textContent = lastName.current;
@@ -81,8 +75,6 @@ const Task03 = () => {
     lastNameInput.value = lastName.current;
     lastNameInput.oninput = handleLastNameChange;
     helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
-
-    const formData = new FormData(form);
   }, []);
 
   return (
@@ -90,12 +82,6 @@ const Task03 = () => {
       <label>
         First name:
         <b id="firstNameText">{firstName.current}</b>
-        {/* <input
-          id="firstNameInput"
-          value="Jane"
-          style={{ display: 'none' }}
-          onChange={() => {}}
-        /> */}
         <input
           id="firstNameInput"
           style={{ display: 'none' }}
@@ -106,12 +92,6 @@ const Task03 = () => {
       <label>
         Last name:
         <b id="lastNameText">{lastName.current}</b>
-        {/* <input
-          id="lastNameInput"
-          value="Jacobs"
-          style={{ display: 'none' }}
-          onChange={() => {}}
-        /> */}
         <input
           id="lastNameInput"
           style={{ display: 'none' }}

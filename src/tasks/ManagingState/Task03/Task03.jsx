@@ -92,6 +92,7 @@ const Task03 = () => {
           style={{ display: 'none' }}
           className={styles.input}
           name="firstName"
+          size={10}
           placeholder="Type first name..."
         />
       </label>
@@ -105,6 +106,7 @@ const Task03 = () => {
           style={{ display: 'none' }}
           className={styles.input}
           name="lastName"
+          size={10}
           placeholder="Type last name..."
         />
       </label>

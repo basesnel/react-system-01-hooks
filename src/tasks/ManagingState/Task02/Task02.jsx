@@ -1,6 +1,7 @@
 import { useState } from 'react';
-import { FiEdit3 } from 'react-icons/fi';
-import { Form, Input, Button, Paragraph, FlexBox } from 'components';
+import { Form, Button, Paragraph, FlexBox, Span } from 'components';
+
+import styles from './styles.module.css';
 
 const Task02 = () => {
   const [firstName, setFirstName] = useState('Jane');
@@ -22,42 +23,48 @@ const Task02 = () => {
 
   return (
     <Form onSubmit={handleFormSubmit}>
-      <FlexBox align="flex-start">
-        First name:
+      <label className={styles.label}>
+        <span className={styles.span}>First name:</span>
         {isProfileEditing ? (
-          <Input
-            inputName="Task02FirstName"
-            inputValue={firstName}
-            inputType="text"
-            handleChange={handleFirstNameChange}
-            icon={<FiEdit3 />}
+          <input
+            className={styles.input}
+            name="Task02FirstNameCopy"
+            size={10}
+            value={firstName}
+            onChange={handleFirstNameChange}
+            placeholder="Type first name..."
           />
         ) : (
           <b>{firstName}</b>
         )}
-      </FlexBox>
-      <FlexBox align="flex-start">
-        Last name:{' '}
+      </label>
+      <label className={styles.label}>
+        <span className={styles.span}>Last name:</span>
         {isProfileEditing ? (
-          <Input
-            inputName="Task02LarstName"
-            inputValue={lastName}
-            inputType="text"
-            handleChange={handleLastNameChange}
-            icon={<FiEdit3 />}
+          <input
+            className={styles.input}
+            name="Task02LastNameCopy"
+            size={10}
+            value={lastName}
+            onChange={handleLastNameChange}
+            placeholder="Type last name..."
           />
         ) : (
           <b>{lastName}</b>
         )}
-      </FlexBox>
+      </label>
       <FlexBox>
         <Button
           type="submit"
           caption={`${isProfileEditing ? 'Save' : 'Edit'} Profile`}
         />
       </FlexBox>
-      <Paragraph>
-        <i>{`Hello, ${firstName} ${lastName}!`}</i>
+      <Paragraph centered>
+        Hello,{' '}
+        <Span id="helloText" weighted>
+          {`${firstName} ${lastName}`}
+        </Span>
+        !
       </Paragraph>
     </Form>
   );

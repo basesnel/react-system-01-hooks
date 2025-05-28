@@ -18,7 +18,6 @@
 .span {
   display: inline-block;
   min-width: 90px;
-  /* flex-basis: 50px; */
 }
 
 .input {

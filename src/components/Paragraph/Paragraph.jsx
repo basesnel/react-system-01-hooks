@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Paragraph = props => {
-  const { centered, warned, succeeded, paragraphRef, children } = props;
+  const { id, centered, warned, succeeded, paragraphRef, children } = props;
 
   const styledText = () => {
     if (centered && succeeded) {
@@ -26,13 +26,14 @@ const Paragraph = props => {
   };
 
   return (
-    <p className={styledText()} ref={paragraphRef}>
+    <p id={id} className={styledText()} ref={paragraphRef}>
       {children}
     </p>
   );
 };
 
 Paragraph.propTypes = {
+  id: PropTypes.string,
   centered: PropTypes.bool,
   warned: PropTypes.bool,
   succeeded: PropTypes.bool,
@@ -41,6 +42,7 @@ Paragraph.propTypes = {
 };
 
 Paragraph.defaultProps = {
+  id: null,
   centered: null,
   warned: null,
   succeeded: null,

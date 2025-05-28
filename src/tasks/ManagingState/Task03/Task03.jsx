@@ -113,8 +113,8 @@ const Task03 = () => {
       <FlexBox>
         <Button id="editButton" type="submit" caption="Edit Profile" />
       </FlexBox>
-      <Paragraph>
-        <i id="helloText">Hello, Jane Jacobs!</i>
+      <Paragraph id="helloText" centered>
+        Hello, Jane Jacobs!
       </Paragraph>
     </Form>
   );

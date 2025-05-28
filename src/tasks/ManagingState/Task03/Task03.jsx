@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Form, Paragraph, FlexBox } from 'components';
+import { Form, Paragraph, FlexBox, Button } from 'components';
 
 import styles from './styles.module.css';
 
@@ -111,9 +111,7 @@ const Task03 = () => {
         />
       </label>
       <FlexBox>
-        <button type="submit" id="editButton">
-          Edit Profile
-        </button>
+        <Button id="editButton" type="submit" caption="Edit Profile" />
       </FlexBox>
       <Paragraph>
         <i id="helloText">Hello, Jane Jacobs!</i>

@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Button = props => {
-  const { type, caption, onClick, isDisabled, ...delegated } = props;
+  const { id, type, caption, onClick, isDisabled, ...delegated } = props;
 
   return (
     <button
+      id={id}
       className={styles.button}
       type={type}
       onClick={onClick}
@@ -27,6 +28,7 @@ Button.propTypes = {
 };
 
 Button.defaultProps = {
+  id: null,
   type: 'button',
   onClick: null,
   isDisabled: null,

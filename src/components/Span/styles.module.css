@@ -11,6 +11,10 @@
   text-align: center;
 }
 
+.text.weightedText {
+  font-weight: 700;
+}
+
 @media mobile-to {
   .text {
     font-size: var(--fs-text-smartphone);

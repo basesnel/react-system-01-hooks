@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Form, Paragraph, FlexBox, Button } from 'components';
+import { Form, Paragraph, FlexBox, Button, Span } from 'components';
 
 import styles from './styles.module.css';
 
@@ -51,7 +51,7 @@ const Task03 = () => {
         show(firstNameText);
         show(lastNameText);
       }
-      helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
+      helloText.textContent = `${firstName.current} ${lastName.current}`;
       firstNameText.textContent = firstName.current;
       lastNameText.textContent = lastName.current;
     };
@@ -77,7 +77,7 @@ const Task03 = () => {
     firstNameInput.oninput = handleFirstNameChange;
     lastNameInput.value = lastName.current;
     lastNameInput.oninput = handleLastNameChange;
-    helloText.textContent = `Hello, ${firstName.current} ${lastName.current}!`;
+    helloText.textContent = `${firstName.current} ${lastName.current}`;
   }, []);
 
   return (
@@ -113,8 +113,12 @@ const Task03 = () => {
       <FlexBox>
         <Button id="editButton" type="submit" caption="Edit Profile" />
       </FlexBox>
-      <Paragraph id="helloText" centered>
-        Hello, Jane Jacobs!
+      <Paragraph centered>
+        Hello,{' '}
+        <Span id="helloText" weighted>
+          Jane Jacobs
+        </Span>
+        !
       </Paragraph>
     </Form>
   );

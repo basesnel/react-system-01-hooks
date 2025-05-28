@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { Paragraph, FlexBox } from 'components';
+import { Form, Paragraph, FlexBox } from 'components';
 
 import styles from './styles.module.css';
 
@@ -81,7 +81,7 @@ const Task03 = () => {
   }, []);
 
   return (
-    <form id="form">
+    <Form id="form" onSubmit={() => {}}>
       <label className={styles.label}>
         <span className={styles.span}>First name:</span>
         <b className={styles.b} id="firstNameText">
@@ -118,7 +118,7 @@ const Task03 = () => {
       <Paragraph>
         <i id="helloText">Hello, Jane Jacobs!</i>
       </Paragraph>
-    </form>
+    </Form>
   );
 };
 

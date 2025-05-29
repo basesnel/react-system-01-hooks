@@ -5,16 +5,15 @@ import { Form, Input, Paragraph, Span, Title } from 'components';
 const Prac04 = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
-  const [fullName, setFullName] = useState('');
+
+  const fullName = firstName + ' ' + lastName;
 
   const handleFirstNameChange = e => {
     setFirstName(e.target.value);
-    setFullName(e.target.value + ' ' + lastName);
   };
 
   const handleLastNameChange = e => {
     setLastName(e.target.value);
-    setFullName(firstName + ' ' + e.target.value);
   };
 
   return (

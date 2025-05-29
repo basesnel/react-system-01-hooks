@@ -7,7 +7,7 @@ const ManagingStatePage = () => {
     Prac01,
     Prac02,
     Prac03,
-    //   Prac04,
+    Prac04,
     //   Prac05,
     //   Prac06,
     //   Prac07,
@@ -44,10 +44,10 @@ const ManagingStatePage = () => {
           <Card title="task 03: profile editor without react">
             <Task03 />
           </Card>
-          {/* <Card title="prac 07: updating objects inside arrays">
-            <Prac07 />
+          <Card title="prac 04: redundant state">
+            <Prac04 />
           </Card>
-          <Card title="prac 08: write concise update logic with immer">
+          {/* <Card title="prac 08: write concise update logic with immer">
             <Prac08 />
           </Card>
           <Card title="task 01: update an item in the shopping cart">

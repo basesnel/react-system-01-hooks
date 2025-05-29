@@ -9,7 +9,7 @@ const ManagingStatePage = () => {
     Prac03,
     Prac04,
     Prac05,
-    //   Prac06,
+    Prac06,
     //   Prac07,
     //   Prac08,
     Task01,
@@ -47,13 +47,13 @@ const ManagingStatePage = () => {
           <Card title="prac 04: redundant state">
             <Prac04 />
           </Card>
-          <Card title="prac 08: write concise update logic with immer">
+          <Card title="prac 05: group related state">
             <Prac05 />
           </Card>
-          {/* <Card title="task 01: update an item in the shopping cart">
-            <Task01 />
+          <Card title="prac 06: avoid contradictions in state">
+            <Prac06 />
           </Card>
-          <Card title="task 02: remove an item in the shopping cart">
+          {/* <Card title="task 02: remove an item in the shopping cart">
             <Task02 />
           </Card>
           <Card title="task 03: fix the mutations using non-mutative methods">

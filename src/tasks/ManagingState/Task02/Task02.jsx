@@ -28,7 +28,7 @@ const Task02 = () => {
         {isProfileEditing ? (
           <input
             className={styles.input}
-            name="Task02FirstNameCopy"
+            name="Task02FirstName"
             size={10}
             value={firstName}
             onChange={handleFirstNameChange}
@@ -43,7 +43,7 @@ const Task02 = () => {
         {isProfileEditing ? (
           <input
             className={styles.input}
-            name="Task02LastNameCopy"
+            name="Task02LastName"
             size={10}
             value={lastName}
             onChange={handleLastNameChange}

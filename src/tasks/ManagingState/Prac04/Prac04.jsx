@@ -24,7 +24,7 @@ const Prac04 = () => {
           inputType="text"
           inputName="firstNameP04"
           inputValue={firstName}
-          inputLabel="Name"
+          inputLabel="First name"
           handleChange={handleFirstNameChange}
           icon={<FiUser />}
         />
@@ -32,7 +32,7 @@ const Prac04 = () => {
           inputType="text"
           inputName="lastNameP04"
           inputValue={lastName}
-          inputLabel="Name"
+          inputLabel="Last name"
           handleChange={handleLastNameChange}
           icon={<FiUser />}
         />

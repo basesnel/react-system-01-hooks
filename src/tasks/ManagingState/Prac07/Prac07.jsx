@@ -1,6 +1,5 @@
 import { useState } from 'react';
-import { FiEdit3 } from 'react-icons/fi';
-import { RiSave3Fill } from 'react-icons/ri';
+import { FiEdit3, FiArrowLeftCircle } from 'react-icons/fi';
 import {
   Title,
   List,
@@ -54,7 +53,7 @@ const Prac07 = () => {
                 icon={<FiEdit3 />}
               />
               <IconButton
-                icon={<RiSave3Fill />}
+                icon={<FiArrowLeftCircle />}
                 caption="choose"
                 onClick={() => {
                   setSelectedId(item.id);

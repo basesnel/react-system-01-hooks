@@ -10,7 +10,7 @@ const ManagingStatePage = () => {
     Prac04,
     Prac05,
     Prac06,
-    //   Prac07,
+    Prac07,
     //   Prac08,
     Task01,
     Task02,
@@ -53,10 +53,10 @@ const ManagingStatePage = () => {
           <Card title="prac 06: avoid contradictions in state">
             <Prac06 />
           </Card>
-          {/* <Card title="task 02: remove an item in the shopping cart">
-            <Task02 />
+          <Card title="prac 07: avoid dublication in state">
+            <Prac07 />
           </Card>
-          <Card title="task 03: fix the mutations using non-mutative methods">
+          {/* <Card title="task 03: fix the mutations using non-mutative methods">
             <Task03 />
           </Card>
           <Card title="task 04: fix the mutations using immer">

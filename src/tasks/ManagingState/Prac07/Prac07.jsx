@@ -9,16 +9,35 @@ const initialItems = [
 ];
 
 const Prac07 = () => {
-  const [items] = useState(initialItems);
+  const [items, setItems] = useState(initialItems);
   const [selectedItem, setSelectedItem] = useState(items[0]);
+
+  const handleItemChange = (id, e) => {
+    setItems(
+      items.map(item => {
+        if (item.id === id) {
+          return {
+            ...item,
+            title: e.target.value,
+          };
+        } else {
+          return item;
+        }
+      })
+    );
+  };
 
   return (
     <>
-      <h2>What's your travel snack?</h2>
+      <h3>What's your travel snack?</h3>
       <ul>
         {items.map(item => (
           <li key={item.id}>
-            {item.title}{' '}
+            <input
+              value={item.title}
+              onChange={e => handleItemChange(item.id, e)}
+              size={10}
+            />{' '}
             <button
               onClick={() => {
                 setSelectedItem(item);

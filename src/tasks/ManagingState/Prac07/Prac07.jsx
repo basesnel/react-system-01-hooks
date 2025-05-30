@@ -1,6 +1,16 @@
 import { useState } from 'react';
-// import { FiEdit3 } from 'react-icons/fi';
-// import { Button, FlexBox, Form, Paragraph, TextArea } from 'components';
+import { FiEdit3 } from 'react-icons/fi';
+import { RiSave3Fill } from 'react-icons/ri';
+import {
+  Title,
+  List,
+  Item,
+  ItemFlex,
+  Input,
+  IconButton,
+  Paragraph,
+  Span,
+} from 'components';
 
 const initialItems = [
   { title: 'pretzels', id: 0 },
@@ -31,26 +41,32 @@ const Prac07 = () => {
 
   return (
     <>
-      <h3>What's your travel snack?</h3>
-      <ul>
+      <Title level={3} caption="what's your travel snack?" />
+      <List message="There is no elements in list.">
         {items.map(item => (
-          <li key={item.id}>
-            <input
-              value={item.title}
-              onChange={e => handleItemChange(item.id, e)}
-              size={10}
-            />{' '}
-            <button
-              onClick={() => {
-                setSelectedId(item.id);
-              }}
-            >
-              Choose
-            </button>
-          </li>
+          <Item key={item.id}>
+            <ItemFlex>
+              <Input
+                inputType="text"
+                inputName={`pickedP07${item.id}`}
+                inputValue={item.title}
+                handleChange={e => handleItemChange(item.id, e)}
+                icon={<FiEdit3 />}
+              />
+              <IconButton
+                icon={<RiSave3Fill />}
+                caption="choose"
+                onClick={() => {
+                  setSelectedId(item.id);
+                }}
+              />
+            </ItemFlex>
+          </Item>
         ))}
-      </ul>
-      <p>You picked {selectedItem.title}.</p>
+      </List>
+      <Paragraph centered>
+        You picked: <Span weighted>{selectedItem.title}</Span>.
+      </Paragraph>
     </>
   );
 };

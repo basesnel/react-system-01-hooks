@@ -2,14 +2,16 @@ import { useState } from 'react';
 import { initialTravelPlan } from './places';
 import { Title } from 'components';
 
+import styles from './styles.module.css';
+
 const PlaceTree = ({ place }) => {
   const childPlaces = place.childPlaces;
 
   return (
-    <li>
+    <li className={styles.item}>
       {place.title}
       {childPlaces.length > 0 && (
-        <ol>
+        <ol className={styles.list}>
           {childPlaces.map(place => (
             <PlaceTree key={place.id} place={place} />
           ))}
@@ -26,7 +28,7 @@ const Prac08 = () => {
   return (
     <>
       <Title level={3} caption="places to visit" />
-      <ol>
+      <ol className={styles.list}>
         {planets.map(place => (
           <PlaceTree key={place.id} place={place} />
         ))}

@@ -213,6 +213,43 @@ const initialTravelPlan = {
         },
       ],
     },
+    {
+      id: 42,
+      title: 'Moon',
+      childPlaces: [
+        {
+          id: 43,
+          title: 'Rheita',
+          childPlaces: [],
+        },
+        {
+          id: 44,
+          title: 'Piccolomini',
+          childPlaces: [],
+        },
+        {
+          id: 45,
+          title: 'Tycho',
+          childPlaces: [],
+        },
+      ],
+    },
+    {
+      id: 46,
+      title: 'Mars',
+      childPlaces: [
+        {
+          id: 47,
+          title: 'Corn Town',
+          childPlaces: [],
+        },
+        {
+          id: 48,
+          title: 'Green Hill',
+          childPlaces: [],
+        },
+      ],
+    },
   ],
 };
 

@@ -7,6 +7,7 @@ import { initialArtistsList } from './initialArtistsList';
 import { initialContacts } from './initialContacts';
 import { initialShapesList } from './initialShapesList';
 import { initialCountersList } from './initialCountersList';
+import { initialTravelPlan } from './places';
 import { initialSixArtsList } from './initialSixArtsList';
 import { initialSevenArtsList } from './initialSevenArtsList';
 import { initialProductsList } from './initialProductsList';
@@ -42,6 +43,7 @@ export {
   initialShapesList,
   initialCountersList,
   initialSixArtsList,
+  initialTravelPlan,
   initialSevenArtsList,
   initialProductsList,
   initialTodosList,

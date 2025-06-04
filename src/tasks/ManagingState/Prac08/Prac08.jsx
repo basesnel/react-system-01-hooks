@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { initialTravelPlan } from './places';
+import { initialTravelPlan } from 'constants';
 import { Title } from 'components';
 
 import styles from './styles.module.css';

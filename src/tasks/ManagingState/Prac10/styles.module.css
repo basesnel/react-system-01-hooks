@@ -1,7 +1,29 @@
-.list {
+/* .list {
   list-style: initial;
   list-style-type: decimal;
   padding: 4px 4px 4px 36px;
+} */
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 1px;
+  background-color: var(--color-text-opacity);
+  overflow: hidden;
+  list-style: initial;
+  list-style-type: decimal;
+  padding: 1px 1px 1px 24px;
+}
+
+.list:last-child {
+  margin-bottom: 0;
+}
+
+.list:only-child {
+  margin-bottom: 0;
 }
 
 .item {

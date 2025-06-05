@@ -13,6 +13,7 @@ const ManagingStatePage = () => {
     Prac07,
     Prac08,
     Prac09,
+    Prac10,
     Task01,
     Task02,
     Task03,
@@ -62,6 +63,9 @@ const ManagingStatePage = () => {
           </Card>
           <Card title="prac 09: avoid deeply nested state">
             <Prac09 />
+          </Card>
+          <Card title="prac 10: avoid deeply nested state (using immer)">
+            <Prac10 />
           </Card>
           {/* <Card title="task 04: fix the mutations using immer">
             <Task04 />

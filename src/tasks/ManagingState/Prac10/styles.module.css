@@ -1,7 +1,6 @@
 .list {
   display: flex;
   flex-direction: column;
-  /* gap: 1px; */
   margin-bottom: 10px;
   border-radius: 4px;
   padding: 1px;
@@ -22,8 +21,4 @@
 
 .list .list {
   margin: 0 2px;
-}
-
-.item {
-  padding: 4px 0;
 }

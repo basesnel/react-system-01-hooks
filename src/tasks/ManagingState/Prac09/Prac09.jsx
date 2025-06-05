@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { FiCheckCircle } from 'react-icons/fi';
+import { Title, IconButton, ItemFlex, Item } from 'components';
 import { modifiedTravelPlan } from 'constants';
-import { Title } from 'components';
 
 import styles from './styles.module.css';
 
@@ -9,15 +10,17 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
   const childIds = place.childIds;
 
   return (
-    <li className={styles.item}>
-      {place.title}
-      <button
-        onClick={() => {
-          onComplete(parentId, id);
-        }}
-      >
-        Complete
-      </button>
+    <Item>
+      <ItemFlex spaceBetween>
+        {place.title}
+        <IconButton
+          icon={<FiCheckCircle />}
+          caption="complete"
+          onClick={() => {
+            onComplete(parentId, id);
+          }}
+        />
+      </ItemFlex>
       {childIds.length > 0 && (
         <ol className={styles.list}>
           {childIds.map(childId => (
@@ -31,7 +34,7 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
           ))}
         </ol>
       )}
-    </li>
+    </Item>
   );
 };
 

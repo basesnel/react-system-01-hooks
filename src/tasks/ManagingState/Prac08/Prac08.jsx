@@ -1,6 +1,6 @@
 import { useState } from 'react';
+import { Title, Item, ItemFlex } from 'components';
 import { initialTravelPlan } from 'constants';
-import { Title } from 'components';
 
 import styles from './styles.module.css';
 
@@ -8,8 +8,8 @@ const PlaceTree = ({ place }) => {
   const childPlaces = place.childPlaces;
 
   return (
-    <li className={styles.item}>
-      {place.title}
+    <Item>
+      <ItemFlex>{place.title}</ItemFlex>
       {childPlaces.length > 0 && (
         <ol className={styles.list}>
           {childPlaces.map(place => (
@@ -17,7 +17,7 @@ const PlaceTree = ({ place }) => {
           ))}
         </ol>
       )}
-    </li>
+    </Item>
   );
 };
 

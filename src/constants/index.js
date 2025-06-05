@@ -8,7 +8,7 @@ import { initialContacts } from './initialContacts';
 import { initialShapesList } from './initialShapesList';
 import { initialCountersList } from './initialCountersList';
 import { initialItems } from './initialItems';
-import { initialTravelPlan } from './places';
+import { initialTravelPlan, modifiedTravelPlan } from './places';
 import { initialSixArtsList } from './initialSixArtsList';
 import { initialSevenArtsList } from './initialSevenArtsList';
 import { initialProductsList } from './initialProductsList';
@@ -46,6 +46,7 @@ export {
   initialItems,
   initialSixArtsList,
   initialTravelPlan,
+  modifiedTravelPlan,
   initialSevenArtsList,
   initialProductsList,
   initialTodosList,

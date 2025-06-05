@@ -6,6 +6,7 @@ import Prac05 from './Prac05';
 import Prac06 from './Prac06';
 import Prac07 from './Prac07';
 import Prac08 from './Prac08';
+import Prac09 from './Prac09';
 import Task01 from './Task01';
 import Task02 from './Task02';
 import Task03 from './Task03';
@@ -20,6 +21,7 @@ export {
   Prac06,
   Prac07,
   Prac08,
+  Prac09,
   Task01,
   Task02,
   Task03,

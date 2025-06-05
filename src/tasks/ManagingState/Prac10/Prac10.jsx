@@ -10,9 +10,8 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
   const childIds = place.childIds;
 
   return (
-    // <li className={styles.item}>
     <Item>
-      <ItemFlex>
+      <ItemFlex spaceBetween>
         {place.title}
         <IconButton
           icon={<FiCheckCircle />}
@@ -35,7 +34,6 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
           ))}
         </ol>
       )}
-      {/* </li> */}
     </Item>
   );
 };

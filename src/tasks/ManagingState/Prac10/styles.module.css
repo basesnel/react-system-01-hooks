@@ -1,13 +1,7 @@
-/* .list {
-  list-style: initial;
-  list-style-type: decimal;
-  padding: 4px 4px 4px 36px;
-} */
-
 .list {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  /* gap: 1px; */
   margin-bottom: 10px;
   border-radius: 4px;
   padding: 1px;
@@ -24,6 +18,10 @@
 
 .list:only-child {
   margin-bottom: 0;
+}
+
+.list .list {
+  margin: 0 2px;
 }
 
 .item {

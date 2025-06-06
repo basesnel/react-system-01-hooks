@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import { Title, Item, ItemFlex } from 'components';
+import { Title, NumberedList, Item, ItemFlex } from 'components';
 import { initialTravelPlan } from 'constants';
-
-import styles from './styles.module.css';
 
 const PlaceTree = ({ place }) => {
   const childPlaces = place.childPlaces;
@@ -11,11 +9,11 @@ const PlaceTree = ({ place }) => {
     <Item>
       <ItemFlex>{place.title}</ItemFlex>
       {childPlaces.length > 0 && (
-        <ol className={styles.list}>
+        <NumberedList message="no items in the plan">
           {childPlaces.map(place => (
             <PlaceTree key={place.id} place={place} />
           ))}
-        </ol>
+        </NumberedList>
       )}
     </Item>
   );
@@ -28,11 +26,11 @@ const Prac08 = () => {
   return (
     <>
       <Title level={3} caption="places to visit" />
-      <ol className={styles.list}>
+      <NumberedList message="no items in the plan">
         {planets.map(place => (
           <PlaceTree key={place.id} place={place} />
         ))}
-      </ol>
+      </NumberedList>
     </>
   );
 };

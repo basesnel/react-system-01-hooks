@@ -24,6 +24,7 @@ import Loader from './Loader';
 import Logo from './Logo';
 import MiniForm from './MiniForm';
 import Modal from './Modal';
+import NumberedList from './NumberedList';
 import NavBar from './NavBar';
 import Paragraph from './Paragraph';
 import ResponsiveImage from './ResponsiveImage';
@@ -65,6 +66,7 @@ export {
   MiniForm,
   Modal,
   NavBar,
+  NumberedList,
   Paragraph,
   ResponsiveImage,
   SearchBar,

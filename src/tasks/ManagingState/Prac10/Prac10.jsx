@@ -1,9 +1,7 @@
 import { useImmer } from 'use-immer';
 import { FiCheckCircle } from 'react-icons/fi';
-import { Title, IconButton, ItemFlex, Item } from 'components';
+import { Title, NumberedList, IconButton, ItemFlex, Item } from 'components';
 import { modifiedTravelPlan } from 'constants';
-
-import styles from './styles.module.css';
 
 const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
   const place = placesById[id];
@@ -22,7 +20,7 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
         />
       </ItemFlex>
       {childIds.length > 0 && (
-        <ol className={styles.list}>
+        <NumberedList message="no items in the plan">
           {childIds.map(childId => (
             <PlaceTree
               key={childId}
@@ -32,7 +30,7 @@ const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
               onComplete={onComplete}
             />
           ))}
-        </ol>
+        </NumberedList>
       )}
     </Item>
   );
@@ -61,7 +59,7 @@ const Prac10 = () => {
   return (
     <>
       <Title level={3} caption="places to visit" />
-      <ol className={styles.list}>
+      <NumberedList message="no items in the plan">
         {planets.map(id => (
           <PlaceTree
             key={id}
@@ -71,7 +69,7 @@ const Prac10 = () => {
             onComplete={handleComplete}
           />
         ))}
-      </ol>
+      </NumberedList>
     </>
   );
 };

@@ -1,40 +1,40 @@
 import { useState } from 'react';
-import { FiCheckCircle } from 'react-icons/fi';
-import { Title, NumberedList, IconButton, ItemFlex, Item } from 'components';
+import { Title, NumberedList } from 'components';
 import { modifiedTravelPlan } from 'constants';
+import PlaceTree from './PlaceTree';
 
-const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
-  const place = placesById[id];
-  const childIds = place.childIds;
+// const PlaceTree = ({ id, parentId, placesById, onComplete }) => {
+//   const place = placesById[id];
+//   const childIds = place.childIds;
 
-  return (
-    <Item>
-      <ItemFlex spaceBetween>
-        {place.title}
-        <IconButton
-          icon={<FiCheckCircle />}
-          caption="complete"
-          onClick={() => {
-            onComplete(parentId, id);
-          }}
-        />
-      </ItemFlex>
-      {childIds.length > 0 && (
-        <NumberedList message="no items in the plan">
-          {childIds.map(childId => (
-            <PlaceTree
-              key={childId}
-              id={childId}
-              parentId={id}
-              placesById={placesById}
-              onComplete={onComplete}
-            />
-          ))}
-        </NumberedList>
-      )}
-    </Item>
-  );
-};
+//   return (
+//     <Item>
+//       <ItemFlex spaceBetween>
+//         {place.title}
+//         <IconButton
+//           icon={<FiCheckCircle />}
+//           caption="complete"
+//           onClick={() => {
+//             onComplete(parentId, id);
+//           }}
+//         />
+//       </ItemFlex>
+//       {childIds.length > 0 && (
+//         <NumberedList message="no items in the plan">
+//           {childIds.map(childId => (
+//             <PlaceTree
+//               key={childId}
+//               id={childId}
+//               parentId={id}
+//               placesById={placesById}
+//               onComplete={onComplete}
+//             />
+//           ))}
+//         </NumberedList>
+//       )}
+//     </Item>
+//   );
+// };
 
 const Prac09 = () => {
   const [plan, setPlan] = useState(modifiedTravelPlan);

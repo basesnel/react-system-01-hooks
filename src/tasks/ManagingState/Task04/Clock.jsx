@@ -1,9 +1,14 @@
-// import { useState } from 'react';
+import PropTypes from 'prop-types';
 
 const Clock = props => {
   const { color, time } = props;
-  // const [color] = useState(props.color);
+
   return <h3 style={{ color: color }}>{time}</h3>;
 };
 
 export default Clock;
+
+Clock.propTypes = {
+  color: PropTypes.string.isRequired,
+  time: PropTypes.string.isRequired,
+};

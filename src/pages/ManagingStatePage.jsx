@@ -17,7 +17,7 @@ const ManagingStatePage = () => {
     Task01,
     Task02,
     Task03,
-    //   Task04,
+    Task04,
   } = managingState;
 
   return (
@@ -67,9 +67,9 @@ const ManagingStatePage = () => {
           <Card title="prac 10: avoid deeply nested state (using immer)">
             <Prac10 />
           </Card>
-          {/* <Card title="task 04: fix the mutations using immer">
+          <Card title="task 04: fix a component that's not updating">
             <Task04 />
-          </Card> */}
+          </Card>
         </Grid>
       </Container>
     </main>

@@ -40,7 +40,7 @@ Select.propTypes = {
 Select.defaultProps = {
   selectLabel: null,
   selected: '',
-  laist: null,
+  list: null,
   icon: null,
 };
 

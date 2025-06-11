@@ -3,8 +3,6 @@ import { CgColorPicker } from 'react-icons/cg';
 import Clock from './Clock';
 import { FlexBox, Select } from 'components';
 
-// import styles from './styles.module.css';
-
 const useTime = () => {
   const [time, setTime] = useState(() => new Date());
   useEffect(() => {

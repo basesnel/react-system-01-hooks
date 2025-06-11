@@ -18,6 +18,7 @@ const ManagingStatePage = () => {
     Task02,
     Task03,
     Task04,
+    Task05,
   } = managingState;
 
   return (
@@ -69,6 +70,9 @@ const ManagingStatePage = () => {
           </Card>
           <Card title="task 04: fix a component that's not updating">
             <Task04 />
+          </Card>
+          <Card title="task 05: fix a brocken packing list">
+            <Task05 />
           </Card>
         </Grid>
       </Container>

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { nanoid } from 'nanoid';
 import { RiAddCircleFill } from 'react-icons/ri';
-import { MiniForm } from 'components';
+import { Caption, MiniForm } from 'components';
 import PackingList from './PackingList';
 // import { FlexBox, Select } from 'components';
 
@@ -56,9 +56,7 @@ const Task05 = () => {
         onDeleteItem={handleDeleteItem}
       />
       <hr />
-      <b>
-        {packed} out of {total} packed!
-      </b>
+      <Caption text={`${packed} out of ${total} packed!`} />
     </>
   );
 };

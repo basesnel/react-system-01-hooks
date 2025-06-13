@@ -12,11 +12,8 @@ const initialItems = [
 
 const Task05 = () => {
   const [items, setItems] = useState(initialItems);
-  const [total, setTotal] = useState(3);
-  const [packed, setPacked] = useState(1);
 
   const handleAddItem = title => {
-    setTotal(total + 1);
     setItems([
       ...items,
       {
@@ -28,12 +25,6 @@ const Task05 = () => {
   };
 
   const handleChangeItem = nextItem => {
-    if (nextItem.packed) {
-      setPacked(packed + 1);
-    } else {
-      setPacked(packed - 1);
-    }
-
     setItems(
       items.map(item => {
         if (item.id === nextItem.id) {
@@ -46,7 +37,7 @@ const Task05 = () => {
   };
 
   const handleDeleteItem = itemId => {
-    setTotal(total - 1);
+    // setTotal(total - 1);
     setItems(items.filter(item => item.id !== itemId));
   };
 
@@ -60,7 +51,8 @@ const Task05 = () => {
       />
       <hr />
       <b>
-        {packed} out of {total} packed!
+        {items.reduce((acc, item) => acc + item.packed, 0)} out of{' '}
+        {items.length} packed!
       </b>
     </>
   );

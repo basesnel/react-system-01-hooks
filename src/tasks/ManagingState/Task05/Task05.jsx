@@ -12,6 +12,8 @@ const initialItems = [
 
 const Task05 = () => {
   const [items, setItems] = useState(initialItems);
+  const total = items.length;
+  const packed = items.reduce((acc, item) => acc + item.packed, 0);
 
   const handleAddItem = title => {
     setItems([
@@ -37,7 +39,6 @@ const Task05 = () => {
   };
 
   const handleDeleteItem = itemId => {
-    // setTotal(total - 1);
     setItems(items.filter(item => item.id !== itemId));
   };
 
@@ -51,8 +52,7 @@ const Task05 = () => {
       />
       <hr />
       <b>
-        {items.reduce((acc, item) => acc + item.packed, 0)} out of{' '}
-        {items.length} packed!
+        {packed} out of {total} packed!
       </b>
     </>
   );

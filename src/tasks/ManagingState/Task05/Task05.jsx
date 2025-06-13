@@ -1,10 +1,10 @@
 import { useState } from 'react';
+import { nanoid } from 'nanoid';
 import { RiAddCircleFill } from 'react-icons/ri';
 import { MiniForm } from 'components';
 import PackingList from './PackingList';
 // import { FlexBox, Select } from 'components';
 
-let nextId = 3;
 const initialItems = [
   { id: 0, title: 'Warm socks', packed: true },
   { id: 1, title: 'Travel journal', packed: false },
@@ -20,7 +20,7 @@ const Task05 = () => {
     setItems([
       ...items,
       {
-        id: nextId++,
+        id: nanoid(),
         title: title,
         packed: false,
       },

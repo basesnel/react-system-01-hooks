@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import AddItem from './AddItem';
+import { RiAddCircleFill } from 'react-icons/ri';
+import { MiniForm } from 'components';
 import PackingList from './PackingList';
 // import { FlexBox, Select } from 'components';
 
@@ -44,7 +45,11 @@ const Task05 = () => {
 
   return (
     <>
-      <AddItem onAddItem={handleAddItem} />
+      <MiniForm
+        onFormSubmit={handleAddItem}
+        filling="Add item"
+        icon={<RiAddCircleFill />}
+      />
       <PackingList
         items={items}
         onChangeItem={handleChangeItem}

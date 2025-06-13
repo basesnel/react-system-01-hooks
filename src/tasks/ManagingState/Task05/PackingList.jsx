@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { RiDeleteBinFill } from 'react-icons/ri';
 import { List, Item, ItemLabel, IconButton, ItemCheckedText } from 'components';
 
@@ -8,6 +9,7 @@ const PackingList = props => {
     <List message="There is no elements in list.">
       {items.map(item => (
         <PackingItem
+          key={item.id}
           item={item}
           onChangeItem={onChangeItem}
           onDeleteItem={onDeleteItem}
@@ -40,6 +42,28 @@ const PackingItem = props => {
       </ItemLabel>
     </Item>
   );
+};
+
+PackingList.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+      title: PropTypes.string.isRequired,
+      packed: PropTypes.bool.isRequired,
+    }).isRequired
+  ).isRequired,
+  onChangeItem: PropTypes.func.isRequired,
+  onDeleteItem: PropTypes.func.isRequired,
+};
+
+PackingItem.propTypes = {
+  item: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    title: PropTypes.string.isRequired,
+    packed: PropTypes.bool.isRequired,
+  }).isRequired,
+  onChangeItem: PropTypes.func.isRequired,
+  onDeleteItem: PropTypes.func.isRequired,
 };
 
 export default PackingList;

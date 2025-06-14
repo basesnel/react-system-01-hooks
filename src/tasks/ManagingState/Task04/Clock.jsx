@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const Clock = props => {
   const { color, time } = props;
 
-  return <h3 style={{ color: color, textAlign: 'center' }}>{time}</h3>;
+  return <span style={{ color: color, textAlign: 'center' }}>{time}</span>;
 };
 
 Clock.propTypes = {

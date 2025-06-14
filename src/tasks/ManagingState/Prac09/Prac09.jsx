@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Title, NumberedList } from 'components';
+import { HideOverflow, Title, NumberedList } from 'components';
 import { modifiedTravelPlan } from 'constants';
 import PlaceTree from './PlaceTree';
 
@@ -23,7 +23,7 @@ const Prac09 = () => {
   };
 
   return (
-    <>
+    <HideOverflow>
       <Title level={3} caption="places to visit" />
       <NumberedList message="no items in the plan">
         {planets.map(id => (
@@ -36,7 +36,7 @@ const Prac09 = () => {
           />
         ))}
       </NumberedList>
-    </>
+    </HideOverflow>
   );
 };
 

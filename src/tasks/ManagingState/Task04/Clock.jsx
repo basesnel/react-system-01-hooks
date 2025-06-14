@@ -1,13 +1,17 @@
-import { Span } from 'components';
+import { Box, FlexBox, Span } from 'components';
 import PropTypes from 'prop-types';
 
 const Clock = props => {
   const { color, time } = props;
 
   return (
-    <Span centered weighted color={color}>
-      {time}
-    </Span>
+    <Box>
+      <FlexBox>
+        <Span weighted color={color}>
+          {time}
+        </Span>
+      </FlexBox>
+    </Box>
   );
 };
 

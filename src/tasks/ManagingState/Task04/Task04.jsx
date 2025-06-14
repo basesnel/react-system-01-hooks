@@ -32,7 +32,6 @@ const Task04 = () => {
           onHandleSelect={e => setColor(e.target.value)}
         />
       </FlexBox>
-      <hr />
       <Clock color={color} time={time.toLocaleTimeString()} />
     </>
   );

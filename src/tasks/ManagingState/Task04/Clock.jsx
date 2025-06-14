@@ -1,9 +1,14 @@
+import { Span } from 'components';
 import PropTypes from 'prop-types';
 
 const Clock = props => {
   const { color, time } = props;
 
-  return <span style={{ color: color, textAlign: 'center' }}>{time}</span>;
+  return (
+    <Span centered weighted color={color}>
+      {time}
+    </Span>
+  );
 };
 
 Clock.propTypes = {

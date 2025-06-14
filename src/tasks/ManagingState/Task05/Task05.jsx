@@ -3,7 +3,6 @@ import { nanoid } from 'nanoid';
 import { RiAddCircleFill } from 'react-icons/ri';
 import { Caption, MiniForm } from 'components';
 import PackingList from './PackingList';
-// import { FlexBox, Select } from 'components';
 
 const initialItems = [
   { id: 0, title: 'Warm socks', packed: true },

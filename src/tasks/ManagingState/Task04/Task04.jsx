@@ -21,17 +21,20 @@ const Task04 = () => {
   const [color, setColor] = useState('lightcoral');
 
   return (
-    <FlexBox>
-      <Select
-        selectLabel="Choose the color: "
-        selectName="colorPicker"
-        selected={color}
-        list={colorList}
-        icon={<CgColorPicker />}
-        onHandleSelect={e => setColor(e.target.value)}
-      />
+    <>
+      <FlexBox>
+        <Select
+          selectLabel="Choose the color: "
+          selectName="colorPicker"
+          selected={color}
+          list={colorList}
+          icon={<CgColorPicker />}
+          onHandleSelect={e => setColor(e.target.value)}
+        />
+      </FlexBox>
+      <hr />
       <Clock color={color} time={time.toLocaleTimeString()} />
-    </FlexBox>
+    </>
   );
 };
 

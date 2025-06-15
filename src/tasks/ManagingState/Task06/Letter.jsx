@@ -11,10 +11,10 @@ const Letter = props => {
     <li
       className={isHighlighted ? `${styles.highlighted}` : ''}
       onFocus={() => {
-        onHover(letter);
+        onHover(letter.id);
       }}
       onPointerMove={() => {
-        onHover(letter);
+        onHover(letter.id);
       }}
     >
       <button

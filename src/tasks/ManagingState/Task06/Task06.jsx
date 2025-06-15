@@ -14,8 +14,8 @@ const Task06 = () => {
   const [letters, setLetters] = useState(initialLetters);
   const [highlightedId, setHighlightedId] = useState(null);
 
-  const handleHover = letter => {
-    setHighlightedId(letter.id);
+  const handleHover = letterId => {
+    setHighlightedId(letterId);
   };
 
   const handleStar = starred => {

@@ -12,10 +12,10 @@ const initialLetters = [
 
 const Task06 = () => {
   const [letters, setLetters] = useState(initialLetters);
-  const [highlightedLetter, setHighlightedLetter] = useState(null);
+  const [highlightedId, setHighlightedId] = useState(null);
 
   const handleHover = letter => {
-    setHighlightedLetter(letter);
+    setHighlightedId(letter.id);
   };
 
   const handleStar = starred => {
@@ -40,7 +40,7 @@ const Task06 = () => {
           <Letter
             key={letter.id}
             letter={letter}
-            isHighlighted={letter === highlightedLetter}
+            isHighlighted={letter.id === highlightedId}
             onHover={handleHover}
             onToggleStar={handleStar}
           />

@@ -19,6 +19,7 @@ const ManagingStatePage = () => {
     Task03,
     Task04,
     Task05,
+    Task06,
   } = managingState;
 
   return (
@@ -73,6 +74,9 @@ const ManagingStatePage = () => {
           </Card>
           <Card title="task 05: fix a brocken packing list">
             <Task05 />
+          </Card>
+          <Card title="task 06: fix the disappearing selection">
+            <Task06 />
           </Card>
         </Grid>
       </Container>

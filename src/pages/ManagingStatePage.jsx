@@ -21,6 +21,7 @@ const ManagingStatePage = () => {
     Task05,
     Task06,
     Task07,
+    Task08,
   } = managingState;
 
   return (
@@ -81,6 +82,9 @@ const ManagingStatePage = () => {
           </Card>
           <Card title="task 07: impliment multiple selection">
             <Task07 />
+          </Card>
+          <Card title="task 08: impliment multiple selection (alternate)">
+            <Task08 />
           </Card>
         </Grid>
       </Container>

@@ -14,6 +14,7 @@ import Task03 from './Task03';
 import Task04 from './Task04';
 import Task05 from './Task05';
 import Task06 from './Task06';
+import Task07 from './Task07';
 
 export {
   Prac01,
@@ -32,4 +33,5 @@ export {
   Task04,
   Task05,
   Task06,
+  Task07,
 };

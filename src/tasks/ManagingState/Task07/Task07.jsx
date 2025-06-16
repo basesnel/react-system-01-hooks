@@ -4,19 +4,25 @@ import { useState } from 'react';
 // import PackingList from './PackingList';
 import Letter from './Letter';
 
-const letters = [
+const initialLetters = [
   { id: 0, subject: 'Ready for adventure?', isStarred: true },
   { id: 1, subject: 'Time to check in!', isStarred: false },
   { id: 2, subject: 'Festival Begins In Just SEVEN Days!', isStarred: false },
 ];
 
 const Task07 = () => {
-  const [selectedId, setSelectedId] = useState(null);
+  const [letters, setLetters] = useState(initialLetters);
 
-  const selectedCount = 1;
+  const selectedCount = letters.reduce((acc, item) => acc + item.isStarred, 0);
 
   const handleToggle = toggledId => {
-    setSelectedId(toggledId);
+    setLetters(
+      letters.map(letter => {
+        if (letter.id === toggledId)
+          return { ...letter, isStarred: !letter.isStarred };
+        return letter;
+      })
+    );
   };
 
   return (
@@ -27,7 +33,7 @@ const Task07 = () => {
           <Letter
             key={letter.id}
             letter={letter}
-            isSelected={letter.id === selectedId}
+            isSelected={letter.isStarred}
             onToggle={handleToggle}
           />
         ))}

@@ -13,7 +13,7 @@ const initialLetters = [
 const Task09 = () => {
   const [selectedIds, setSelectedIds] = useState([]);
 
-  const selectedCount = selectedIds.size;
+  const selectedCount = selectedIds.length;
 
   const handleToggle = toggledId => {
     if (selectedIds.includes(toggledId)) {

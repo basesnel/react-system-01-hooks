@@ -6,18 +6,6 @@
   background-color: var(--color-logolight);
 }
 
-/* .letter:nth-child(odd) {
-  background-color: var(--color-light);
-}
-
-.letter:nth-child(even) {
-  background-color: var(--color-logolight);
-} */
-
-/* .letter:hover {
-  background-color: var(--color-accent-bg);
-} */
-
 .letter:first-child {
   border-radius: 3px 3px 0 0;
 }

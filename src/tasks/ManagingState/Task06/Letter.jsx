@@ -1,6 +1,4 @@
-// import PropTypes from 'prop-types';
-// import { RiDeleteBinFill } from 'react-icons/ri';
-// import { List, Item, ItemLabel, IconButton, ItemCheckedText } from 'components';
+import PropTypes from 'prop-types';
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import { IconButton, ItemFlex } from 'components';
 import styles from './styles.module.css';
@@ -34,17 +32,16 @@ const Letter = props => {
   );
 };
 
-// PackingList.propTypes = {
-//   items: PropTypes.arrayOf(
-//     PropTypes.shape({
-//       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-//       title: PropTypes.string.isRequired,
-//       packed: PropTypes.bool.isRequired,
-//     }).isRequired
-//   ).isRequired,
-//   onChangeItem: PropTypes.func.isRequired,
-//   onDeleteItem: PropTypes.func.isRequired,
-// };
+Letter.propTypes = {
+  letter: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    subject: PropTypes.string.isRequired,
+    isStarred: PropTypes.bool.isRequired,
+  }).isRequired,
+  isHighlighted: PropTypes.bool.isRequired,
+  onHover: PropTypes.func.isRequired,
+  onToggleStar: PropTypes.func.isRequired,
+};
 
 // PackingItem.propTypes = {
 //   item: PropTypes.shape({

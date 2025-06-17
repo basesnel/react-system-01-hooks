@@ -1,7 +1,8 @@
 // import PropTypes from 'prop-types';
 // import { RiDeleteBinFill } from 'react-icons/ri';
 // import { List, Item, ItemLabel, IconButton, ItemCheckedText } from 'components';
-
+import { FaRegStar, FaStar } from 'react-icons/fa';
+import { IconButton, ItemFlex } from 'components';
 import styles from './styles.module.css';
 
 const Letter = props => {
@@ -9,7 +10,9 @@ const Letter = props => {
 
   return (
     <li
-      className={isHighlighted ? `${styles.highlighted}` : ''}
+      className={
+        isHighlighted ? `${styles.letter} ${styles.highlighted}` : styles.letter
+      }
       onFocus={() => {
         onHover(letter.id);
       }}
@@ -17,14 +20,16 @@ const Letter = props => {
         onHover(letter.id);
       }}
     >
-      <button
-        onClick={() => {
-          onToggleStar(letter);
-        }}
-      >
-        {letter.isStarred ? 'Unstar' : 'Star'}
-      </button>
-      {letter.subject}
+      <ItemFlex>
+        <IconButton
+          caption={letter.isStarred ? 'Star' : 'Unstar'}
+          icon={letter.isStarred ? <FaStar /> : <FaRegStar />}
+          onClick={() => {
+            onToggleStar(letter);
+          }}
+        />
+        {letter.subject}
+      </ItemFlex>
     </li>
   );
 };

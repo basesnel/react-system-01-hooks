@@ -1,14 +1,9 @@
 import { useState } from 'react';
+import { initialLetters } from 'constants';
 // import { RiAddCircleFill } from 'react-icons/ri';
 // import { Caption, MiniForm } from 'components';
 // import PackingList from './PackingList';
 import Letter from './Letter';
-
-const initialLetters = [
-  { id: 0, subject: 'Ready for adventure?' },
-  { id: 1, subject: 'Time to check in!' },
-  { id: 2, subject: 'Festival Begins In Just SEVEN Days!' },
-];
 
 const Task08 = () => {
   const [selectedIds, setSelectedIds] = useState(new Set());

@@ -7,7 +7,7 @@ const ItemCheckedText = props => {
 
   const done = checked ? `${styles.checked}` : '';
 
-  return <span className={`${styles.content} ${done}`}>{content}</span>;
+  return <span className={`${styles.text} ${done}`}>{content}</span>;
 };
 
 ItemCheckedText.propTypes = {

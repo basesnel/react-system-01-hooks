@@ -1,5 +1,10 @@
 @value content from "../ItemText/styles.module.css";
 
+.text {
+  composes: content;
+  cursor: pointer;
+}
+
 .checked {
   text-decoration: line-through;
 }

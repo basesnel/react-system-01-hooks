@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { initialLettersStarred } from 'constants';
 // import { RiAddCircleFill } from 'react-icons/ri';
-// import { Caption, MiniForm } from 'components';
+import { Title, List, Caption } from 'components';
 // import PackingList from './PackingList';
 import Letter from './Letter';
 
@@ -28,8 +28,8 @@ const Task07 = () => {
 
   return (
     <>
-      <h3>Inbox</h3>
-      <ul>
+      <Title level={3} caption="inbox" />
+      <List>
         {letters.map(letter => (
           <Letter
             key={letter.id}
@@ -38,9 +38,9 @@ const Task07 = () => {
             onToggle={handleToggle}
           />
         ))}
-      </ul>
+      </List>
       <hr />
-      <p>You selected {selectedCount} letters</p>
+      <Caption text={`You selected ${selectedCount} letters`} />
     </>
   );
 };

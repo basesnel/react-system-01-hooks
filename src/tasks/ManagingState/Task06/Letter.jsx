@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import { FaRegStar, FaStar } from 'react-icons/fa';
 import { IconButton, ItemFlex } from 'components';
+
 import styles from './styles.module.css';
 
 const Letter = props => {
@@ -42,15 +43,5 @@ Letter.propTypes = {
   onHover: PropTypes.func.isRequired,
   onToggleStar: PropTypes.func.isRequired,
 };
-
-// PackingItem.propTypes = {
-//   item: PropTypes.shape({
-//     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-//     title: PropTypes.string.isRequired,
-//     packed: PropTypes.bool.isRequired,
-//   }).isRequired,
-//   onChangeItem: PropTypes.func.isRequired,
-//   onDeleteItem: PropTypes.func.isRequired,
-// };
 
 export default Letter;

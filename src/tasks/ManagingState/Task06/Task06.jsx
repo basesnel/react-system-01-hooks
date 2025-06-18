@@ -28,7 +28,7 @@ const Task06 = () => {
   return (
     <>
       <Title level={3} caption="inbox" />
-      <List>
+      <List message="There is no elements in list.">
         {letters.map(letter => (
           <Letter
             key={letter.id}

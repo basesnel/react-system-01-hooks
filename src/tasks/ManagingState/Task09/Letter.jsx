@@ -1,6 +1,5 @@
 // import PropTypes from 'prop-types';
-// import { RiDeleteBinFill } from 'react-icons/ri';
-// import { List, Item, ItemLabel, IconButton, ItemCheckedText } from 'components';
+import { ItemCheckedText } from 'components';
 
 import styles from './styles.module.css';
 
@@ -8,8 +7,12 @@ const Letter = props => {
   const { letter, onToggle, isSelected } = props;
 
   return (
-    <li className={isSelected ? `${styles.highlighted}` : ''}>
-      <label>
+    <li
+      className={
+        isSelected ? `${styles.letter} ${styles.highlighted}` : styles.letter
+      }
+    >
+      <label className={styles.label}>
         <input
           type="checkbox"
           checked={isSelected}
@@ -17,7 +20,7 @@ const Letter = props => {
             onToggle(letter.id);
           }}
         />
-        {letter.subject}
+        <ItemCheckedText content={letter.subject} checked={isSelected} />
       </label>
     </li>
   );

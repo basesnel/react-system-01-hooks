@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-// import { ItemCheckedText } from 'components';
 
 import styles from './styles.module.css';
 
-const Letter = props => {
+const LetterT08 = props => {
   const { letter, onToggle, isSelected } = props;
 
   return (
@@ -21,13 +20,12 @@ const Letter = props => {
           }}
         />
         {letter.subject}
-        {/* <ItemCheckedText content={letter.subject} checked={isSelected} /> */}
       </label>
     </li>
   );
 };
 
-Letter.propTypes = {
+LetterT08.propTypes = {
   letter: PropTypes.shape({
     id: PropTypes.number.isRequired,
     subject: PropTypes.string.isRequired,
@@ -36,4 +34,4 @@ Letter.propTypes = {
   isSelected: PropTypes.bool.isRequired,
 };
 
-export default Letter;
+export default LetterT08;

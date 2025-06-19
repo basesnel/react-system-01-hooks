@@ -1,4 +1,4 @@
-@value sizes: "../../../cssvariables/media.module.css";
+@value sizes: "../../../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to from sizes;
 
 .letter {

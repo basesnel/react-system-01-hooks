@@ -1,9 +1,16 @@
-.letter {
-  transition: var(--my-transition);
-}
+@value sizes: "../../../cssvariables/media.module.css";
+@value mobile-to, smartphone-to from sizes;
 
 .letter {
+  transition: var(--my-transition);
+  font-size: var(--fs-text-mobile);
+  color: var(--color-text);
   background-color: var(--color-logolight);
+}
+
+.letter:hover {
+  color: var(--color-dark);
+  background-color: var(--color-accent-bg);
 }
 
 .letter:first-child {
@@ -20,6 +27,7 @@
 
 .highlighted {
   background: #d2eaff;
+  text-decoration: line-through;
 }
 
 .label {
@@ -27,4 +35,16 @@
   gap: 12px;
   align-items: center;
   padding: 6px 12px;
+}
+
+@media mobile-to {
+  .letter {
+    font-size: var(--fs-text-smartphone);
+  }
+}
+
+@media smartphone-to {
+  .letter {
+    font-size: var(--fs-text-tablet);
+  }
 }

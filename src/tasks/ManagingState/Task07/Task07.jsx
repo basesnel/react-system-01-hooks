@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { initialLettersStarred } from 'constants';
 import { Title, List, Caption } from 'components';
-import Letter from './Letter';
+// import Letter from './Letter';
+import { LetterT07 } from '../intendendComponents';
 
 const Task07 = () => {
   const [letters, setLetters] = useState(initialLettersStarred);
@@ -23,7 +24,7 @@ const Task07 = () => {
       <Title level={3} caption="inbox" />
       <List message="There is no elements in list.">
         {letters.map(letter => (
-          <Letter
+          <LetterT07
             key={letter.id}
             letter={letter}
             isSelected={letter.isStarred}

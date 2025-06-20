@@ -3,7 +3,7 @@ import { ItemCheckedText } from 'components';
 
 import styles from './styles.module.css';
 
-const Letter = props => {
+const LetterT07 = props => {
   const { letter, onToggle, isSelected } = props;
 
   return (
@@ -26,13 +26,14 @@ const Letter = props => {
   );
 };
 
-Letter.propTypes = {
+LetterT07.propTypes = {
   letter: PropTypes.shape({
     id: PropTypes.number.isRequired,
     subject: PropTypes.string.isRequired,
+    isStarred: PropTypes.bool.isRequired,
   }).isRequired,
   onToggle: PropTypes.func.isRequired,
   isSelected: PropTypes.bool.isRequired,
 };
 
-export default Letter;
+export default LetterT07;

@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types';
-import { ItemCheckedText } from 'components';
 
 import styles from './styles.module.css';
 
@@ -20,7 +19,7 @@ const LetterT07 = props => {
             onToggle(letter.id);
           }}
         />
-        <ItemCheckedText content={letter.subject} checked={isSelected} />
+        {letter.subject}
       </label>
     </li>
   );

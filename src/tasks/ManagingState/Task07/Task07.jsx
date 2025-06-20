@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { initialLettersStarred } from 'constants';
 import { Title, List, Caption } from 'components';
-// import Letter from './Letter';
 import { LetterT07 } from '../intendendComponents';
 
 const Task07 = () => {

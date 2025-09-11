@@ -1,29 +1,29 @@
 import { Container, Title, Paragraph, Grid, Card } from 'components';
 
-// import { managingState } from 'tasks';
+import { managingStateP2 } from 'tasks';
 
 const ManagingStatePageP2 = () => {
-  // const {
-  //   Prac01,
-  //   Prac02,
-  //   Prac03,
-  //   Prac04,
-  //   Prac05,
-  //   Prac06,
-  //   Prac07,
-  //   Prac08,
-  //   Prac09,
-  //   Prac10,
-  //   Task01,
-  //   Task02,
-  //   Task03,
-  //   Task04,
-  //   Task05,
-  //   Task06,
-  //   Task07,
-  //   Task08,
-  //   Task09,
-  // } = managingState;
+  const {
+    Prac01,
+    // Prac02,
+    // Prac03,
+    // Prac04,
+    // Prac05,
+    // Prac06,
+    // Prac07,
+    // Prac08,
+    // Prac09,
+    // Prac10,
+    // Task01,
+    // Task02,
+    // Task03,
+    // Task04,
+    // Task05,
+    // Task06,
+    // Task07,
+    // Task08,
+    // Task09,
+  } = managingStateP2;
 
   return (
     <main>
@@ -33,7 +33,9 @@ const ManagingStatePageP2 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: lifting state up">{/* <Prac01 /> */}</Card>
+          <Card title="prac 01: lifting state up">
+            <Prac01 />
+          </Card>
           {/* <Card title="prac 02: mocking up from">
             <Prac02 />
           </Card>

@@ -6,6 +6,7 @@ import ColorPicker from './ColorPicker';
 import * as escapeHatchesP01 from './EscapeHatchesP01';
 import * as escapeHatchesP02 from './EscapeHatchesP02';
 import * as managingStateP1 from './ManagingStateP01';
+import * as managingStateP2 from './ManagingStateP02';
 import News from './News';
 import * as objectsInState from './ObjectsInState';
 import Pokemon from './Pokemon';
@@ -24,6 +25,7 @@ export {
   escapeHatchesP01,
   escapeHatchesP02,
   managingStateP1,
+  managingStateP2,
   News,
   objectsInState,
   Pokemon,

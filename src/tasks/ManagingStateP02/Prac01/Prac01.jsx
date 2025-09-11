@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Button, Paragraph, Title } from 'components';
 
 import styles from './styles.module.css';
@@ -35,6 +36,11 @@ const Panel = ({ title, children }) => {
       )}
     </section>
   );
+};
+
+Panel.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.any.isRequired,
 };
 
 export default Prac01;

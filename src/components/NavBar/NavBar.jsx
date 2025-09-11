@@ -131,9 +131,9 @@ const NavBar = () => {
         <li className={item}>
           <NavLink
             className={({ isActive }) => (isActive ? navlinkActive : navlink)}
-            to="/managing-state"
+            to="/managing-state-part-1"
           >
-            Managing state
+            Managing state - part I
           </NavLink>
         </li>
         <li className={item}>

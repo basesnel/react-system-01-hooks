@@ -1,8 +1,8 @@
 import { Container, Title, Paragraph, Grid, Card } from 'components';
 
-import { managingState } from 'tasks';
+import { managingStateP1 } from 'tasks';
 
-const ManagingStatePage = () => {
+const ManagingStatePageP1 = () => {
   const {
     Prac01,
     Prac02,
@@ -23,7 +23,7 @@ const ManagingStatePage = () => {
     Task07,
     Task08,
     Task09,
-  } = managingState;
+  } = managingStateP1;
 
   return (
     <main>
@@ -96,4 +96,4 @@ const ManagingStatePage = () => {
   );
 };
 
-export { ManagingStatePage };
+export { ManagingStatePageP1 };

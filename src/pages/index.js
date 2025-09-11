@@ -7,7 +7,7 @@ import { EscapeHatchesPageP1 } from './EscapeHatchesPageP1';
 import { EscapeHatchesPageP2 } from './EscapeHatchesPageP2';
 import { FormPage } from './FormPage';
 import { HomePage } from './HomePage';
-import { ManagingStatePage } from './ManagingStatePage';
+import { ManagingStatePageP1 } from './ManagingStatePageP1';
 import { ManagingStatePageP2 } from './ManagingStatePageP2';
 import { NewsPage } from './NewsPage';
 import { NotFoundPage } from './NotFoundPage';
@@ -28,7 +28,7 @@ export {
   EscapeHatchesPageP2,
   FormPage,
   HomePage,
-  ManagingStatePage,
+  ManagingStatePageP1,
   ManagingStatePageP2,
   NewsPage,
   NotFoundPage,

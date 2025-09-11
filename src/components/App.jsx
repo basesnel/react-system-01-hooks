@@ -20,7 +20,7 @@ import {
   UseEffectsPage,
   EscapeHatchesPageP1,
   EscapeHatchesPageP2,
-  ManagingStatePage,
+  ManagingStatePageP1,
   ManagingStatePageP2,
 } from 'pages';
 
@@ -53,7 +53,10 @@ function App() {
           path="/escape-hatches-part-2"
           element={<EscapeHatchesPageP2 />}
         />
-        <Route path="/managing-state" element={<ManagingStatePage />} />
+        <Route
+          path="/managing-state-part-1"
+          element={<ManagingStatePageP1 />}
+        />
         <Route
           path="/managing-state-part-2"
           element={<ManagingStatePageP2 />}

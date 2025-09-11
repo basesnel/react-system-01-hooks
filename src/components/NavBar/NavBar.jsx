@@ -136,6 +136,14 @@ const NavBar = () => {
             Managing state
           </NavLink>
         </li>
+        <li className={item}>
+          <NavLink
+            className={({ isActive }) => (isActive ? navlinkActive : navlink)}
+            to="/managing-state-part-2"
+          >
+            Managing state - part II
+          </NavLink>
+        </li>
       </ul>
     </nav>
   );

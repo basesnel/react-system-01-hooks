@@ -21,6 +21,7 @@ import {
   EscapeHatchesPageP1,
   EscapeHatchesPageP2,
   ManagingStatePage,
+  ManagingStatePageP2,
 } from 'pages';
 
 import AppBar from './AppBar';
@@ -53,6 +54,10 @@ function App() {
           element={<EscapeHatchesPageP2 />}
         />
         <Route path="/managing-state" element={<ManagingStatePage />} />
+        <Route
+          path="/managing-state-part-2"
+          element={<ManagingStatePageP2 />}
+        />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
       <ToastContainer autoClose={3000} />

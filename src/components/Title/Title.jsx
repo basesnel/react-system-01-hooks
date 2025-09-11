@@ -15,6 +15,9 @@ const Title = props => {
     case 3:
       return <h3 className={styles.title03}>{caption}</h3>;
 
+    case 4:
+      return <h4 className={styles.title04}>{caption}</h4>;
+
     default:
       return null;
   }

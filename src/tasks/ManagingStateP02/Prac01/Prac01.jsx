@@ -1,5 +1,7 @@
-import { Button, Paragraph, Title } from 'components';
 import { useState } from 'react';
+import { Button, Paragraph, Title } from 'components';
+
+import styles from './styles.module.css';
 
 const Prac01 = () => {
   return (
@@ -24,8 +26,8 @@ const Panel = ({ title, children }) => {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <section>
-      <h4>{title}</h4>
+    <section className={styles.panel}>
+      <Title level={4} caption={title} />
       {isActive ? (
         <Paragraph>{children}</Paragraph>
       ) : (

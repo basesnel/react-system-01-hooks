@@ -5,15 +5,6 @@ import PropTypes from 'prop-types';
 // import styles from './styles.module.css';
 
 const Task01 = () => {
-  return (
-    <>
-      <Input label="First input" />
-      <Input label="Second input" />
-    </>
-  );
-};
-
-const Input = ({ label }) => {
   const [text, setText] = useState('');
 
   const handleChange = e => {
@@ -21,14 +12,25 @@ const Input = ({ label }) => {
   };
 
   return (
+    <>
+      <Input label="First input" value={text} onChange={handleChange} />
+      <Input label="Second input" value={text} onChange={handleChange} />
+    </>
+  );
+};
+
+const Input = ({ label, value, onChange }) => {
+  return (
     <label>
-      {label} <input value={text} onChange={handleChange} />
+      {label} <input value={value} onChange={onChange} />
     </label>
   );
 };
 
 Input.propTypes = {
   label: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 export default Task01;

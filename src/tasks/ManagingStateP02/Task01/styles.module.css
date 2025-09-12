@@ -1,10 +1,42 @@
-.panel {
-  padding: 10px;
-  border-radius: 10px;
-  border: 1px solid var(--color-light);
-  margin-bottom: 10px;
+.label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  height: 33px;
+  margin: 0 0 10px;
+  color: var(--color-text);
+  cursor: pointer;
+  transition: var(--my-transition);
 }
 
-.panel:last-child {
-  margin-bottom: 0;
+.label:hover,
+.label:focus {
+  color: var(--color-accent);
+}
+
+.span {
+  display: inline-block;
+  min-width: 90px;
+}
+
+.input {
+  flex-grow: 1;
+  width: auto;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--color-text);
+  color: var(--color-text);
+  transition: var(--my-transition);
+}
+
+.label:hover .input:not(:disabled),
+.label:focus .input:not(:disabled) {
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.input:disabled {
+  color: var(--color-text-opacity);
+  border: 1px solid var(--color-text-opacity);
 }

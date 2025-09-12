@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 // import { Button, Paragraph, Title } from 'components';
 
-// import styles from './styles.module.css';
+import styles from './styles.module.css';
 
 const Task01 = () => {
   const [text, setText] = useState('');
@@ -13,22 +13,41 @@ const Task01 = () => {
 
   return (
     <>
-      <Input label="First input" value={text} onChange={handleChange} />
-      <Input label="Second input" value={text} onChange={handleChange} />
+      <Input
+        label="First input"
+        name="Task01first input"
+        value={text}
+        onChange={handleChange}
+      />
+      <Input
+        label="Second input"
+        name="Task01second input"
+        value={text}
+        onChange={handleChange}
+      />
     </>
   );
 };
 
-const Input = ({ label, value, onChange }) => {
+const Input = ({ label, name, value, onChange }) => {
   return (
-    <label>
-      {label} <input value={value} onChange={onChange} />
+    <label className={styles.label}>
+      <span className={styles.span}>{label}</span>
+      <input
+        className={styles.input}
+        name={name}
+        size={10}
+        value={value}
+        onChange={onChange}
+        placeholder="Type any text..."
+      />
     </label>
   );
 };
 
 Input.propTypes = {
   label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
 };

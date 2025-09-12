@@ -14,7 +14,7 @@ const ManagingStatePageP2 = () => {
     // Prac08,
     // Prac09,
     // Prac10,
-    // Task01,
+    Task01,
     // Task02,
     // Task03,
     // Task04,
@@ -42,10 +42,10 @@ const ManagingStatePageP2 = () => {
           <Card title="prac 03: set up lifting state up">
             <Prac03 />
           </Card>
-          {/* <Card title="task 01: add and remove a css class">
+          <Card title="task 01: synced inputs">
             <Task01 />
           </Card>
-          <Card title="task 02: profile editor">
+          {/* <Card title="task 02: profile editor">
             <Task02 />
           </Card>
           <Card title="task 03: profile editor without react">

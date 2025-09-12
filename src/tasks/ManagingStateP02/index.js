@@ -1,5 +1,5 @@
 import Prac01 from './Prac01';
-// import Prac02 from './Prac02';
+import Prac02 from './Prac02';
 // import Prac03 from './Prac03';
 // import Prac04 from './Prac04';
 // import Prac05 from './Prac05';
@@ -20,7 +20,7 @@ import Prac01 from './Prac01';
 
 export {
   Prac01,
-  // Prac02,
+  Prac02,
   // Prac03,
   // Prac04,
   // Prac05,

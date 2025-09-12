@@ -5,7 +5,7 @@ import { managingStateP2 } from 'tasks';
 const ManagingStatePageP2 = () => {
   const {
     Prac01,
-    // Prac02,
+    Prac02,
     // Prac03,
     // Prac04,
     // Prac05,
@@ -36,10 +36,10 @@ const ManagingStatePageP2 = () => {
           <Card title="prac 01: lifting state up">
             <Prac01 />
           </Card>
-          {/* <Card title="prac 02: mocking up from">
+          <Card title="prac 02: pass hardcoded value">
             <Prac02 />
           </Card>
-          <Card title="prac 03: “living styleguides” or “storybooks”">
+          {/* <Card title="prac 03: “living styleguides” or “storybooks”">
             <Prac03 />
           </Card>
           <Card title="task 01: add and remove a css class">

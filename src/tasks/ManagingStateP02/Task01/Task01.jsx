@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { Button, Paragraph, Title } from 'components';
 
 import styles from './styles.module.css';
 

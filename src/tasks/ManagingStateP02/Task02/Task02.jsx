@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { filterItems, foods } from './data';
 
 import styles from './styles.module.css';
@@ -53,11 +53,22 @@ const List = ({ items }) => {
   );
 };
 
-// Input.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-//   value: PropTypes.string.isRequired,
-//   onChange: PropTypes.func.isRequired,
-// };
+Searchbar.propTypes = {
+  query: PropTypes.string.isRequired,
+  handleQuery: PropTypes.func.isRequired,
+};
+
+List.propTypes = {
+  items: PropTypes.arrayOf(
+    PropTypes.shape({
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+List.defaultProps = {
+  list: null,
+};
 
 export default Task02;

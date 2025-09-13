@@ -30,28 +30,4 @@ PlaceTree.defaultProps = {
   place: { childPlaces: null },
 };
 
-// PlaceTree.propTypes = {
-//   place: PropTypes.shape({
-//     id: PropTypes.number.isRequired,
-//     title: PropTypes.string.isRequired,
-//     childPlaces: PropTypes.oneOf([
-//       null,
-//       PropTypes.arrayOf(
-//         PropTypes.shape({
-//           id: PropTypes.number.isRequired,
-//           title: PropTypes.string.isRequired,
-//           childPlaces: PropTypes.oneOf([
-//             null,
-//             PropTypes.arrayOf(PropTypes.object.isRequired),
-//           ]),
-//         }).isRequired
-//       ),
-//     ]),
-//   }).isRequired,
-// };
-
-// PlaceTree.defaultProps = {
-//   place: { childPlaces: null },
-// };
-
 export default PlaceTree;

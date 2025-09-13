@@ -1,32 +1,28 @@
 import { useState } from 'react';
 // import PropTypes from 'prop-types';
-import { foods } from './data';
+import { filterItems, foods } from './data';
 
 import styles from './styles.module.css';
 
 const Task02 = () => {
-  // const [text, setText] = useState('');
-
-  // const handleChange = e => {
-  //   setText(e.target.value);
-  // };
-
-  return (
-    <>
-      <Searchbar />
-      <hr />
-      <List items={foods} />
-    </>
-  );
-};
-
-const Searchbar = () => {
   const [query, setQuery] = useState('');
 
   const handleChange = e => {
     setQuery(e.target.value);
   };
 
+  const items = filterItems(foods, query);
+
+  return (
+    <>
+      <Searchbar query={query} handleQuery={handleChange} />
+      <hr />
+      <List items={items} />
+    </>
+  );
+};
+
+const Searchbar = ({ query, handleQuery }) => {
   return (
     <label className={styles.label}>
       <span className={styles.span}>Search: </span>
@@ -35,7 +31,7 @@ const Searchbar = () => {
         name="Task02 search"
         size={10}
         value={query}
-        onChange={handleChange}
+        onChange={handleQuery}
         placeholder="Type any text..."
       />
     </label>

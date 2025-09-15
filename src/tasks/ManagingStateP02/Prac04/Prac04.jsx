@@ -26,7 +26,6 @@ const Counter = () => {
       onPointerEnter={() => setHover(true)}
       onPointerLeave={() => setHover(false)}
     >
-      {/* <Title level={3} caption={score} /> */}
       <Span weighted>{score}</Span>
       <Button caption="Add one" onClick={() => setScore(score + 1)} />
     </div>

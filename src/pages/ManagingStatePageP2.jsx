@@ -7,7 +7,7 @@ const ManagingStatePageP2 = () => {
     Prac01,
     Prac02,
     Prac03,
-    // Prac04,
+    Prac04,
     // Prac05,
     // Prac06,
     // Prac07,
@@ -48,12 +48,13 @@ const ManagingStatePageP2 = () => {
           <Card title="task 02: profile editor">
             <Task02 />
           </Card>
+          <Card title="prac 04: state is tied to a position in the render tree">
+            <Prac04 />
+          </Card>
           {/* <Card title="task 03: profile editor without react">
             <Task03 />
           </Card>
-          <Card title="prac 04: redundant state">
-            <Prac04 />
-          </Card>
+
           <Card title="prac 05: group related state">
             <Prac05 />
           </Card>

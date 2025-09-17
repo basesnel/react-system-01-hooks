@@ -10,7 +10,7 @@ const ManagingStatePageP2 = () => {
     Prac04,
     Prac05,
     Prac06,
-    // Prac07,
+    Prac07,
     // Prac08,
     // Prac09,
     // Prac10,
@@ -57,11 +57,11 @@ const ManagingStatePageP2 = () => {
           <Card title="prac 06: same component at the same position preserves state">
             <Prac06 />
           </Card>
+          <Card title="prac 07: pitfall of the position in the ui-tree">
+            <Prac07 />
+          </Card>
           {/* <Card title="task 03: profile editor without react">
             <Task03 />
-          </Card>
-          <Card title="prac 07: avoid dublication in state">
-            <Prac07 />
           </Card>
           <Card title="prac 08: avoid deeply nested state">
             <Prac08 />

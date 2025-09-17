@@ -3,7 +3,7 @@ import Prac02 from './Prac02';
 import Prac03 from './Prac03';
 import Prac04 from './Prac04';
 import Prac05 from './Prac05';
-// import Prac06 from './Prac06';
+import Prac06 from './Prac06';
 // import Prac07 from './Prac07';
 // import Prac08 from './Prac08';
 // import Prac09 from './Prac09';
@@ -24,7 +24,7 @@ export {
   Prac03,
   Prac04,
   Prac05,
-  // Prac06,
+  Prac06,
   // Prac07,
   // Prac08,
   // Prac09,

@@ -11,7 +11,7 @@ const Prac07 = () => {
       <>
         <Counter isFancy={true} />
         <CheckBox
-          name="Prac05Checkbox"
+          name="Prac07Checkbox"
           checked={isFancy}
           onChange={e => setIsFancy(e.target.checked)}
           label="Use fancy styling"

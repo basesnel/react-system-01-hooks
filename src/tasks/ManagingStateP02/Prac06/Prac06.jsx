@@ -10,7 +10,7 @@ const Prac06 = () => {
     <>
       {isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
       <CheckBox
-        name="Prac05Checkbox"
+        name="Prac06Checkbox"
         checked={isFancy}
         onChange={e => setIsFancy(e.target.checked)}
         label="Use fancy styling"
@@ -34,7 +34,7 @@ const Counter = ({ isFancy }) => {
       onPointerEnter={() => setHover(true)}
       onPointerLeave={() => setHover(false)}
     >
-      <Span weighted color={isFancy && color}>
+      <Span weighted color={isFancy ? color : null}>
         {score}
       </Span>
       <Button caption="Add one" onClick={() => setScore(score + 1)} />

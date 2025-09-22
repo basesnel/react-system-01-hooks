@@ -11,7 +11,7 @@ const Prac05 = () => {
       <Counter />
       {showB && <Counter />}
       <CheckBox
-        name="Prac04Checkbox"
+        name="Prac05Checkbox"
         checked={showB}
         onChange={e => setShowB(e.target.checked)}
         label="Render the second counter"

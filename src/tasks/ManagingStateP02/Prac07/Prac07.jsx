@@ -37,7 +37,7 @@ const Counter = ({ isFancy }) => {
   const [hover, setHover] = useState(false);
 
   let className = `${styles.counter}`;
-  let color = '#ff6767';
+  let color = isFancy ? '#ff6767' : null;
   if (hover) className += ` ${styles.hover}`;
   if (isFancy) className += ` ${styles.fancy}`;
 
@@ -47,7 +47,7 @@ const Counter = ({ isFancy }) => {
       onPointerEnter={() => setHover(true)}
       onPointerLeave={() => setHover(false)}
     >
-      <Span weighted color={isFancy && color}>
+      <Span weighted color={color}>
         {score}
       </Span>
       <Button caption="Add one" onClick={() => setScore(score + 1)} />

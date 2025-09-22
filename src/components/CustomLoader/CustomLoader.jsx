@@ -1,13 +1,13 @@
 import { ImSpinner } from 'react-icons/im';
 
-import { Paragraph } from 'components';
+import { P } from 'components';
 
 import styles from './styles.module.css';
 
 const CustomLoader = () => {
   return (
     <div className={styles.spinner}>
-      <ImSpinner className={styles.icon} /> <Paragraph>Loading...</Paragraph>
+      <ImSpinner className={styles.icon} /> <P>Loading...</P>
     </div>
   );
 };

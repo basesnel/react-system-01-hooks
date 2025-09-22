@@ -7,7 +7,7 @@ import {
   ItemFlex,
   Input,
   IconButton,
-  Paragraph,
+  P,
   Span,
 } from 'components';
 import { initialItems } from 'constants';
@@ -58,9 +58,9 @@ const Prac07 = () => {
           </Item>
         ))}
       </List>
-      <Paragraph centered>
+      <P centered>
         You picked: <Span weighted>{selectedItem.title}</Span>.
-      </Paragraph>
+      </P>
     </>
   );
 };

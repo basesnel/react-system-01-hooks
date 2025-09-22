@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiUser } from 'react-icons/fi';
-import { Form, Input, Paragraph, Span, Title } from 'components';
+import { Form, Input, P, Span, Title } from 'components';
 
 const Prac04 = () => {
   const [firstName, setFirstName] = useState('');
@@ -37,9 +37,9 @@ const Prac04 = () => {
           icon={<FiUser />}
         />
       </Form>
-      <Paragraph centered>
+      <P centered>
         Your ticket will be issued to: <Span weighted>{fullName}</Span>
-      </Paragraph>
+      </P>
     </>
   );
 };

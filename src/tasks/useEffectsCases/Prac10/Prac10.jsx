@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FiUser } from 'react-icons/fi';
-import { FlexBox, Select, Paragraph } from 'components';
+import { FlexBox, Select, P } from 'components';
 import { fetchBio } from 'services';
 import { personList } from 'constants';
 
@@ -37,7 +37,7 @@ const Prac10 = () => {
           onHandleSelect={e => setPerson(e.target.value)}
         />
       </FlexBox>
-      <Paragraph>{bio ?? 'Loading...'}</Paragraph>
+      <P>{bio ?? 'Loading...'}</P>
     </>
   );
 };

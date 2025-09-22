@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph } from 'components';
+import { Container, Title, P } from 'components';
 
 import { colorPickerOptions } from 'constants';
 
@@ -9,7 +9,7 @@ const ColorPickerPage = () => {
     <main>
       <Container>
         <Title level={1} caption="color picker" />
-        <Paragraph>Color picker hook case.</Paragraph>
+        <P>Color picker hook case.</P>
       </Container>
       <Container>
         <Title level={2} caption="color picker" />

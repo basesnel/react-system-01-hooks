@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlexBox, Button, CheckBox, Paragraph } from 'components';
+import { FlexBox, Button, CheckBox, P } from 'components';
 import { MyInputT09 } from '../intendedComponents';
 
 const Task09 = () => {
@@ -23,9 +23,9 @@ const Task09 = () => {
               onChange={() => setUpper(!upper)}
               label="Make it uppercase"
             />
-            <Paragraph>
+            <P>
               Hello, <b>{upper ? name.toUpperCase() : name}</b>
-            </Paragraph>
+            </P>
           </>
         )}
       </FlexBox>

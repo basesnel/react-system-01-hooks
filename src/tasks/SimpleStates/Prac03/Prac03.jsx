@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Paragraph, FlexBox, Button } from 'components';
+import { P, FlexBox, Button } from 'components';
 
 const Prac03 = () => {
   const [counterA, setCounterA] = useState(0);
@@ -21,7 +21,7 @@ const Prac03 = () => {
 
   return (
     <>
-      <Paragraph>Counters with useEffect hook case.</Paragraph>
+      <P>Counters with useEffect hook case.</P>
       <FlexBox>
         <Button
           caption={`pressed the button ${counterA} times`}

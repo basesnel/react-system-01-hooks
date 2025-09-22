@@ -1,12 +1,5 @@
 import { useState } from 'react';
-import {
-  CheckBox,
-  List,
-  Item,
-  ItemFlex,
-  ItemText,
-  Paragraph,
-} from 'components';
+import { CheckBox, List, Item, ItemFlex, ItemText, P } from 'components';
 import { myTodos } from 'constants';
 import { NewTodoT01 } from '../intendendComponents';
 
@@ -45,7 +38,7 @@ const Task01 = () => {
         ))}
       </List>
       <footer>
-        <Paragraph>{countActiveTodos} todos left</Paragraph>
+        <P>{countActiveTodos} todos left</P>
       </footer>
     </>
   );

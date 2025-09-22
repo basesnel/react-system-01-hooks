@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph, VisuallyHidden } from 'components';
+import { Container, Title, P, VisuallyHidden } from 'components';
 
 import { News } from 'tasks';
 
@@ -8,7 +8,7 @@ const NewsPage = () => {
       <VisuallyHidden>
         <Container>
           <Title level={1} caption="news" />
-          <Paragraph>News hook case.</Paragraph>
+          <P>News hook case.</P>
         </Container>
       </VisuallyHidden>
       <Container>

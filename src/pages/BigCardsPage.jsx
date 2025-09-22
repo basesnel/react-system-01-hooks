@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph } from 'components';
+import { Container, Title, P } from 'components';
 
 import { BigCards } from 'tasks';
 
@@ -7,7 +7,7 @@ const BigCardsPage = () => {
     <main>
       <Container>
         <Title level={1} caption="big cards conception" />
-        <Paragraph>List for big cards</Paragraph>
+        <P>List for big cards</P>
       </Container>
       <Container>
         <BigCards />

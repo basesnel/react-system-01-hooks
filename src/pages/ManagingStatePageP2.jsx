@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph, Grid, Card } from 'components';
+import { Container, Title, P, Grid, Card } from 'components';
 
 import { managingStateP2 } from 'tasks';
 
@@ -29,7 +29,7 @@ const ManagingStatePageP2 = () => {
     <main>
       <Container>
         <Title level={1} caption="managing state, part II" />
-        <Paragraph>Managing state in react-components.</Paragraph>
+        <P>Managing state in react-components.</P>
       </Container>
       <Container>
         <Grid>

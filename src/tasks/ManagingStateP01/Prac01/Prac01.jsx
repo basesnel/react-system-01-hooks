@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
+import { Button, FlexBox, Form, P, TextArea, Title } from 'components';
 
 const Prac01 = () => {
   const [answer, setAnswer] = useState('');
@@ -9,9 +9,9 @@ const Prac01 = () => {
 
   if (status === 'success')
     return (
-      <Paragraph centered succeeded>
+      <P centered succeeded>
         That's right!
-      </Paragraph>
+      </P>
     );
 
   async function handleSubmit(e) {
@@ -33,9 +33,9 @@ const Prac01 = () => {
   return (
     <>
       <Title level={3} caption="city quiz" />
-      <Paragraph>
+      <P>
         In which city is there a billboard that runs air into drinkable water
-      </Paragraph>
+      </P>
       <Form onSubmit={handleSubmit}>
         <TextArea
           isDisabled={status === 'submitting'}
@@ -54,9 +54,9 @@ const Prac01 = () => {
           />
         </FlexBox>
         {error !== null && (
-          <Paragraph warned centered>
+          <P warned centered>
             {error.message}
-          </Paragraph>
+          </P>
         )}
       </Form>
     </>

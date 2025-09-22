@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { Button, Paragraph } from 'components';
+import { Button, P } from 'components';
 
 const SkipFirstRender = () => {
   const [count, setCount] = useState(0);
@@ -20,9 +20,9 @@ const SkipFirstRender = () => {
           setCount(c => c + 1);
         }}
       />
-      <Paragraph>
+      <P>
         <code>useEffect</code> of this component not run on the first render.
-      </Paragraph>
+      </P>
     </div>
   );
 };

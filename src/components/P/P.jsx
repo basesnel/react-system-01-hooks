@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-const Paragraph = props => {
+const P = props => {
   const { id, centered, warned, succeeded, paragraphRef, children } = props;
 
   const styledText = () => {
@@ -32,7 +32,7 @@ const Paragraph = props => {
   );
 };
 
-Paragraph.propTypes = {
+P.propTypes = {
   id: PropTypes.string,
   centered: PropTypes.bool,
   warned: PropTypes.bool,
@@ -41,7 +41,7 @@ Paragraph.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-Paragraph.defaultProps = {
+P.defaultProps = {
   id: null,
   centered: null,
   warned: null,
@@ -49,4 +49,4 @@ Paragraph.defaultProps = {
   paragraphRef: null,
 };
 
-export default Paragraph;
+export default P;

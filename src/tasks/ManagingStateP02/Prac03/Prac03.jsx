@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button, Paragraph, Title } from 'components';
+import { Button, P, Title } from 'components';
 
 import styles from './styles.module.css';
 
@@ -37,7 +37,7 @@ const Panel = ({ title, children, isActive, onShow }) => {
     <section className={styles.panel}>
       <Title level={4} caption={title} />
       {isActive ? (
-        <Paragraph>{children}</Paragraph>
+        <P>{children}</P>
       ) : (
         <Button caption="Show" onClick={onShow} />
       )}

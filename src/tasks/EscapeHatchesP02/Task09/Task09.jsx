@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
-import { FlexBox, Select, Paragraph } from 'components';
+import { FlexBox, Select, P } from 'components';
 import { fetchData } from 'services';
 
 const Task09 = () => {
@@ -63,9 +63,9 @@ const Task09 = () => {
         />
       </FlexBox>
       <hr />
-      <Paragraph>
+      <P>
         You are going to: {place || '???'} on {planet || '???'}
-      </Paragraph>
+      </P>
     </>
   );
 };

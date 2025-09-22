@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph, VisuallyHidden } from 'components';
+import { Container, Title, P, VisuallyHidden } from 'components';
 
 import { Pokemon } from 'tasks';
 
@@ -8,7 +8,7 @@ const PokemonPage = () => {
       <VisuallyHidden>
         <Container>
           <Title level={1} caption="pokemon API" />
-          <Paragraph>Pokemon rest API hook case.</Paragraph>
+          <P>Pokemon rest API hook case.</P>
         </Container>
       </VisuallyHidden>
       <Container>

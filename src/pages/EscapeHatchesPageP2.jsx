@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph, Grid, Card } from 'components';
+import { Container, Title, P, Grid, Card } from 'components';
 
 import { escapeHatchesP02 } from 'tasks';
 
@@ -37,10 +37,10 @@ const EscapeHatchesPageP2 = () => {
     <main>
       <Container>
         <Title level={1} caption="escape hatches ii" />
-        <Paragraph>
+        <P>
           Escape hatches cases that may need to control and synchronize with
           system outside of React.
-        </Paragraph>
+        </P>
       </Container>
       <Container>
         <Grid>

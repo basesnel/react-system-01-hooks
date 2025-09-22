@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Paragraph, FlexBox } from 'components';
+import { P, FlexBox } from 'components';
 
 import styles from './styles.module.css';
 
@@ -19,9 +19,9 @@ const ColorPicker = props => {
 
   return (
     <div className={styles.setOfOptions}>
-      <Paragraph>
+      <P>
         Color is selected: <span style={{ color: color }}>{label}</span>
-      </Paragraph>
+      </P>
       <FlexBox>
         {options.map(({ label, color }, index) => (
           <button

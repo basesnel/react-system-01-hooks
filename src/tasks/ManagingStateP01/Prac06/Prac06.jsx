@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Form, Paragraph, TextArea } from 'components';
+import { Button, FlexBox, Form, P, TextArea } from 'components';
 
 const Prac06 = () => {
   const [text, setText] = useState('');
@@ -18,9 +18,9 @@ const Prac06 = () => {
 
   if (isSent)
     return (
-      <Paragraph centered succeeded>
+      <P centered succeeded>
         Thanks for feedback!
-      </Paragraph>
+      </P>
     );
 
   return (

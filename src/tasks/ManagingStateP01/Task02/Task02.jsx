@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Form, Button, Paragraph, FlexBox, Span } from 'components';
+import { Form, Button, P, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
 
@@ -59,13 +59,13 @@ const Task02 = () => {
           caption={`${isProfileEditing ? 'Save' : 'Edit'} Profile`}
         />
       </FlexBox>
-      <Paragraph centered>
+      <P centered>
         Hello,{' '}
         <Span id="helloText" weighted>
           {`${firstName} ${lastName}`}
         </Span>
         !
-      </Paragraph>
+      </P>
     </Form>
   );
 };

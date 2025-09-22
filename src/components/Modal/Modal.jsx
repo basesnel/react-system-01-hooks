@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import { MdClose } from 'react-icons/md';
 
-import { Paragraph } from 'components';
+import { P } from 'components';
 
 import styles from './styles.module.css';
 
@@ -12,8 +12,8 @@ const Modal = props => {
   return (
     <div className={styles.backdrop} onClick={onHide}>
       <div className={styles.modal}>
-        <Paragraph>Modal</Paragraph>
-        <Paragraph>url: {url}</Paragraph>
+        <P>Modal</P>
+        <P>url: {url}</P>
         <button className={styles.close} onClick={onClose}>
           <MdClose className={styles.icon} />
         </button>

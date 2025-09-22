@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { ImSpinner } from 'react-icons/im';
-import { Paragraph } from 'components';
+import { P } from 'components';
 import PokemonDataView from '../PokemonDataView';
 import pendingImage from 'assets/images/pending.png';
 
@@ -24,8 +24,7 @@ const PokemonPendingView = props => {
   return (
     <div className={styles.box}>
       <div className={styles.spinner}>
-        <ImSpinner className={styles.iconSpin} />{' '}
-        <Paragraph>Loading...</Paragraph>
+        <ImSpinner className={styles.iconSpin} /> <P>Loading...</P>
       </div>
       <PokemonDataView pokemon={pokemon} style={{ opacity: 0.5 }} />
     </div>

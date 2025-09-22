@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
-import { Form, Button, TextArea, Paragraph, FlexBox } from 'components';
+import { Form, Button, TextArea, P, FlexBox } from 'components';
 
 const StateForm = ({ status }) => {
   const [answer, setAnswer] = useState('');
@@ -31,9 +31,9 @@ const StateForm = ({ status }) => {
           />
         </FlexBox>
         {status === 'error' && (
-          <Paragraph warned centered>
+          <P warned centered>
             Good guess but a wrong answer. Try again!
-          </Paragraph>
+          </P>
         )}
       </Form>
     </>

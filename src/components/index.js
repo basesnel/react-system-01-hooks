@@ -26,7 +26,7 @@ import MiniForm from './MiniForm';
 import Modal from './Modal';
 import NumberedList from './NumberedList';
 import NavBar from './NavBar';
-import Paragraph from './Paragraph';
+import P from './P';
 import ResponsiveImage from './ResponsiveImage';
 import SearchBar from './SearchBar';
 import Select from './Select';
@@ -67,7 +67,7 @@ export {
   Modal,
   NavBar,
   NumberedList,
-  Paragraph,
+  P,
   ResponsiveImage,
   SearchBar,
   Select,

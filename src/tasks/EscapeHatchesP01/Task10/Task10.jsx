@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FlexBox, Button, Paragraph } from 'components';
+import { FlexBox, Button, P } from 'components';
 import { MyFocusedInputT10 } from '../intendedComponents';
 
 const Task10 = () => {
@@ -30,9 +30,9 @@ const Task10 = () => {
               value={lastName}
               onChange={e => setLastName(e.target.value)}
             />
-            <Paragraph>
+            <P>
               Hello, <b>{`${firstName} ${lastName}`}</b>
-            </Paragraph>
+            </P>
           </>
         )}
       </FlexBox>

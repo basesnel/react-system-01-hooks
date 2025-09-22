@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph, Grid, Card } from 'components';
+import { Container, Title, P, Grid, Card } from 'components';
 
 import { arrayInState } from 'tasks';
 
@@ -22,7 +22,7 @@ const ArrayInStatePage = () => {
     <main>
       <Container>
         <Title level={1} caption="array in state" />
-        <Paragraph>Array in state of React-component case.</Paragraph>
+        <P>Array in state of React-component case.</P>
       </Container>
       <Container>
         <Grid>

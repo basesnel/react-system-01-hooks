@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Form, Paragraph, TextArea, Title } from 'components';
+import { Button, FlexBox, Form, P, TextArea, Title } from 'components';
 
 const Prac02 = ({ status = 'error' }) => {
   const [answer, setAnswer] = useState('');
@@ -15,9 +15,9 @@ const Prac02 = ({ status = 'error' }) => {
   return (
     <>
       <Title level={3} caption="city quiz" />
-      <Paragraph>
+      <P>
         In which city is there a billboard that runs air into drinkable water
-      </Paragraph>
+      </P>
       <Form onSubmit={() => {}}>
         <TextArea
           isDisabled={status === 'submitting'}
@@ -35,9 +35,9 @@ const Prac02 = ({ status = 'error' }) => {
           />
         </FlexBox>
         {status === 'error' && (
-          <Paragraph centered warned>
+          <P centered warned>
             Good guess but a wrong answer. Try again!
-          </Paragraph>
+          </P>
         )}
       </Form>
     </>

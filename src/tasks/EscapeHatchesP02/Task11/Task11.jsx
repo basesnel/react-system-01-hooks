@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Title, Button, Paragraph, FlexBox } from 'components';
+import { Title, Button, P, FlexBox } from 'components';
 
 const Task11 = () => {
   const [count, setCount] = useState(0);
@@ -22,7 +22,7 @@ const Task11 = () => {
         <Button onClick={() => setCount(0)} caption="Reset" />
       </FlexBox>
       <hr />
-      <Paragraph>Every second, increment by:</Paragraph>
+      <P>Every second, increment by:</P>
       <FlexBox>
         <Button
           isDisabled={increment === 0}

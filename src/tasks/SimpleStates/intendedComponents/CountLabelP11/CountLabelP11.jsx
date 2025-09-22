@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Title, Paragraph } from 'components';
+import { Title, P } from 'components';
 
 const CountLabelP11 = props => {
   const { count } = props;
@@ -16,7 +16,7 @@ const CountLabelP11 = props => {
   return (
     <>
       <Title level={3} caption={count} />
-      {trend && <Paragraph>The count is {trend}</Paragraph>}
+      {trend && <P>The count is {trend}</P>}
     </>
   );
 };

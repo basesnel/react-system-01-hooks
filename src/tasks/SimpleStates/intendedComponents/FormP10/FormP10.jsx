@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Input, Paragraph } from 'components';
+import { Input, P } from 'components';
 
 const FormP10 = () => {
   const [name, setName] = useState('Taylor');
@@ -15,7 +15,7 @@ const FormP10 = () => {
         handleChange={e => setName(e.target.value)}
         icon={<FiEdit3 />}
       />
-      <Paragraph>Hello, {name}.</Paragraph>
+      <P>Hello, {name}.</P>
     </>
   );
 };

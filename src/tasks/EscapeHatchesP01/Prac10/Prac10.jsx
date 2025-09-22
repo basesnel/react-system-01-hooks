@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { FlexBox, Button, Paragraph } from 'components';
+import { FlexBox, Button, P } from 'components';
 
 const Prac10 = () => {
   const [show, setShow] = useState(true);
@@ -26,9 +26,9 @@ const Prac10 = () => {
         />
       </FlexBox>
       {show && (
-        <Paragraph centered={true} paragraphRef={ref}>
+        <P centered={true} paragraphRef={ref}>
           Hello world
-        </Paragraph>
+        </P>
       )}
     </>
   );

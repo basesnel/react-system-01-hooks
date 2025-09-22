@@ -1,4 +1,4 @@
-import { Container, Title, Paragraph } from 'components';
+import { Container, Title, P } from 'components';
 
 import { SkipFirstRender } from 'tasks';
 
@@ -7,7 +7,7 @@ const SkipFirstRenderPage = () => {
     <main>
       <Container>
         <Title level={1} caption="skip first render" />
-        <Paragraph>Skip first render - useEffect case.</Paragraph>
+        <P>Skip first render - useEffect case.</P>
       </Container>
       <Container>
         <Title level={2} caption="skip first render" />

@@ -13,7 +13,7 @@ const ManagingStatePageP2 = () => {
     Prac07,
     Prac08,
     Prac09,
-    // Prac10,
+    Prac10,
     Task01,
     Task02,
     // Task03,
@@ -66,12 +66,11 @@ const ManagingStatePageP2 = () => {
           <Card title="prac 09: resetting state in the component's subtree">
             <Prac09 />
           </Card>
+          <Card title="prac 10: pitfall of nest component definition">
+            <Prac10 />
+          </Card>
           {/* <Card title="task 03: profile editor without react">
             <Task03 />
-          </Card>
-
-          <Card title="prac 10: avoid deeply nested state (using immer)">
-            <Prac10 />
           </Card>
           <Card title="task 04: fix a component that's not updating">
             <Task04 />

@@ -14,6 +14,7 @@ const ManagingStatePageP2 = () => {
     Prac08,
     Prac09,
     Prac10,
+    Prac11,
     Task01,
     Task02,
     // Task03,
@@ -68,6 +69,9 @@ const ManagingStatePageP2 = () => {
           </Card>
           <Card title="prac 10: pitfall of nest component definition">
             <Prac10 />
+          </Card>
+          <Card title="prac 11: resetting state at the same position">
+            <Prac11 />
           </Card>
           {/* <Card title="task 03: profile editor without react">
             <Task03 />

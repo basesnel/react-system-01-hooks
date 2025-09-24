@@ -20,7 +20,7 @@ const Button = props => {
 };
 
 Button.propTypes = {
-  type: PropTypes.oneOf(['button', 'submit']),
+  type: PropTypes.oneOf(['button', 'submit', 'reset']).isRequired,
   caption: PropTypes.any.isRequired,
   onClick: PropTypes.func,
   isDisabled: PropTypes.bool,

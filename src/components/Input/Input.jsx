@@ -48,7 +48,14 @@ const Input = props => {
 
 Input.propTypes = {
   isDisabled: PropTypes.bool,
-  inputType: PropTypes.string.isRequired,
+  inputType: PropTypes.oneOf([
+    'text',
+    'password',
+    'file',
+    'email',
+    'url',
+    'tel',
+  ]).isRequired,
   inputName: PropTypes.string.isRequired,
   inputValue: PropTypes.string,
   inputLabel: PropTypes.string,
@@ -59,6 +66,7 @@ Input.propTypes = {
 };
 
 Input.defaultProps = {
+  inputType: 'text',
   isDisabled: null,
   inputValue: null,
   inputLabel: null,

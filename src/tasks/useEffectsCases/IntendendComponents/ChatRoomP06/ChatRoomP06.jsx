@@ -15,7 +15,7 @@ const ChatRoomP06 = props => {
   });
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputType="text"
         inputName="chatroom"

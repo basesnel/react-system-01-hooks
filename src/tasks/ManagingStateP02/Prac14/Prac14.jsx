@@ -16,7 +16,7 @@ const Prac14 = () => {
   const [to, setTo] = useState(contacts[0]);
 
   return (
-    <FlexBox wrapped={false}>
+    <FlexBox>
       <ContactList
         contacts={contacts}
         selectedContact={to}

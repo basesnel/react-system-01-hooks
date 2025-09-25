@@ -20,7 +20,7 @@ const ChatRoom11 = props => {
   }, [serverUrl, roomId]);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputType="text"
         inputName="server"

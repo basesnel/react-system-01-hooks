@@ -4,11 +4,14 @@
 .flexed {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
   padding: 10px;
+}
+
+.wrapped {
+  flex-wrap: wrap;
 }
 
 .column {

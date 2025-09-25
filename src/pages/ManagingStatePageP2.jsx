@@ -18,6 +18,7 @@ const ManagingStatePageP2 = () => {
     Prac12,
     Prac13,
     Prac14,
+    Prac15,
     Task01,
     Task02,
     // Task03,
@@ -84,6 +85,9 @@ const ManagingStatePageP2 = () => {
           </Card>
           <Card title="prac 14: resetting a form with key">
             <Prac14 />
+          </Card>
+          <Card title="prac 15: resetting a form with key - fixed">
+            <Prac15 />
           </Card>
           {/* <Card title="task 03: profile editor without react">
             <Task03 />

@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import ContactList from './ContactList';
 import Chat from './Chat';
+import { FlexBox } from 'components';
 // import { Button, FlexBox, Span } from 'components';
 
 // import styles from './styles.module.css';
@@ -15,14 +16,14 @@ const Prac14 = () => {
   const [to, setTo] = useState(contacts[0]);
 
   return (
-    <div>
+    <FlexBox>
       <ContactList
         contacts={contacts}
         selectedContact={to}
         onSelect={contact => setTo(contact)}
       />
       <Chat contact={to} />
-    </div>
+    </FlexBox>
   );
 };
 

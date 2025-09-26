@@ -34,7 +34,7 @@ const Prac08 = () => {
   }
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <MyInput
         name="Prac08input"
         type="text"

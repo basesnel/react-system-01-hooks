@@ -14,7 +14,7 @@ const Prac04 = () => {
   }
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Button
         caption={`You clicked on state-button ${counterState} times`}
         onClick={handleStateClick}

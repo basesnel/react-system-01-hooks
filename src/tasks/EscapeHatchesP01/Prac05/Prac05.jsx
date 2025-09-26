@@ -11,7 +11,7 @@ const Prac05 = () => {
   }
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputRef={inputRef}
         inputType="text"

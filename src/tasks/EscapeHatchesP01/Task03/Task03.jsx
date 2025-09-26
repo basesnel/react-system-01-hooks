@@ -4,7 +4,7 @@ import { DebouncedButtonT03 } from '../intendedComponents';
 
 const Task03 = () => {
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <DebouncedButtonT03
         onClick={() => {
           return toast.info('Spaceship launched!');

@@ -9,7 +9,7 @@ const Prac12 = () => {
   const [text, setText] = useState('');
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <VideoPlayer isPlaying={isPlaying} src={videoSrc} />
       <Button
         caption={isPlaying ? 'Pause' : 'Play'}

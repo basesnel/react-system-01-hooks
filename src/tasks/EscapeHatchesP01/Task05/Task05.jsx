@@ -13,7 +13,7 @@ const Task05 = () => {
   }
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <video
         width="250"
         ref={videoRef}

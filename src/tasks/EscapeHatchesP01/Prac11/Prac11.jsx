@@ -7,7 +7,7 @@ const Prac11 = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <VideoPlayer src={videoSrc} isPlaying={isPlaying} />
       <Button
         caption={isPlaying ? 'Pause' : 'Play'}

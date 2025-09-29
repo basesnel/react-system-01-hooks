@@ -1,6 +1,15 @@
-import { useRef } from 'react';
-import { Slider, Slide, ResponsiveImage, FlexBox, Button } from 'components';
+import { forwardRef, useRef } from 'react';
+import {
+  Slider,
+  Slide,
+  ResponsiveImage,
+  // FlexBox,
+  Button,
+  Scroll,
+} from 'components';
 import { catList, imageSizes } from 'constants';
+
+import styles from './styles.module.css';
 
 const Prac07 = () => {
   const itemsRef = useRef(null);
@@ -25,14 +34,14 @@ const Prac07 = () => {
     return itemsRef.current;
   }
 
-  const buttonsList = [];
+  // const buttonsList = [];
 
-  for (let i = 0; i < kittens.length; i++) {
-    const id = (i + 1).toString().padStart(2, '0');
-    buttonsList.push(
-      <Button key={i} caption={id} onClick={() => scrollToId(i)} />
-    );
-  }
+  // for (let i = 0; i < kittens.length; i++) {
+  //   const id = (i + 1).toString().padStart(2, '0');
+  //   buttonsList.push(
+  //     <Button key={i} caption={id} onClick={() => scrollToId(i)} />
+  //   );
+  // }
 
   return (
     <>
@@ -61,9 +70,29 @@ const Prac07 = () => {
           </Slide>
         ))}
       </Slider>
-      <FlexBox>{buttonsList}</FlexBox>
+      {/* <FlexBox>{buttonsList}</FlexBox> */}
+      <Scroll>
+        <ButtonsList kittens={kittens} scrollToId={scrollToId} />
+      </Scroll>
     </>
   );
 };
+
+const ButtonsList = forwardRef(({ kittens, scrollToId }, ref) => {
+  const buttonsList = [];
+
+  for (let i = 0; i < kittens.length; i++) {
+    const id = (i + 1).toString().padStart(2, '0');
+    buttonsList.push(
+      <Button key={i} caption={id} onClick={() => scrollToId(i)} />
+    );
+  }
+
+  return (
+    <div ref={ref} className={styles.buttons}>
+      {buttonsList}
+    </div>
+  );
+});
 
 export default Prac07;

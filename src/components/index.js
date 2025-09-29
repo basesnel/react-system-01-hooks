@@ -28,6 +28,7 @@ import NumberedList from './NumberedList';
 import NavBar from './NavBar';
 import P from './P';
 import ResponsiveImage from './ResponsiveImage';
+import Scroll from './Scroll';
 import SearchBar from './SearchBar';
 import Select from './Select';
 import Slide from './Slide';
@@ -69,6 +70,7 @@ export {
   NumberedList,
   P,
   ResponsiveImage,
+  Scroll,
   SearchBar,
   Select,
   Slide,

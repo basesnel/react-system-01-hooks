@@ -11,6 +11,7 @@
   padding: 1px;
   background-color: var(--color-light);
   transition: var(--my-transition);
+  overflow: hidden;
 }
 
 .card:hover {

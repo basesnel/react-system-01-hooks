@@ -3,7 +3,7 @@ import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from 'react-icons/fa';
 import IconButton from 'components/IconButton';
 import styles from './styles.module.css';
 
-const Scroll = ({ children, step = 150 }) => {
+const Scroll = ({ children, step = 68 }) => {
   const scrollRef = useRef(null);
 
   const scrollLeft = () => {

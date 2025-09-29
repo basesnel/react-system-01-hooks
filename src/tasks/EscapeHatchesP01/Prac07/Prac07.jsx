@@ -1,12 +1,5 @@
 import { forwardRef, useRef } from 'react';
-import {
-  Slider,
-  Slide,
-  ResponsiveImage,
-  // FlexBox,
-  Button,
-  Scroll,
-} from 'components';
+import { Slider, Slide, ResponsiveImage, Button, Scroll } from 'components';
 import { catList, imageSizes } from 'constants';
 
 import styles from './styles.module.css';
@@ -33,15 +26,6 @@ const Prac07 = () => {
 
     return itemsRef.current;
   }
-
-  // const buttonsList = [];
-
-  // for (let i = 0; i < kittens.length; i++) {
-  //   const id = (i + 1).toString().padStart(2, '0');
-  //   buttonsList.push(
-  //     <Button key={i} caption={id} onClick={() => scrollToId(i)} />
-  //   );
-  // }
 
   return (
     <>
@@ -70,7 +54,6 @@ const Prac07 = () => {
           </Slide>
         ))}
       </Slider>
-      {/* <FlexBox>{buttonsList}</FlexBox> */}
       <Scroll>
         <ButtonsList kittens={kittens} scrollToId={scrollToId} />
       </Scroll>

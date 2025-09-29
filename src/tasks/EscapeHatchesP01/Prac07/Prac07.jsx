@@ -1,8 +1,7 @@
-import { forwardRef, useRef } from 'react';
-import { Slider, Slide, ResponsiveImage, Button, Scroll } from 'components';
+import { useRef } from 'react';
+import { Slider, Slide, ResponsiveImage, Scroll } from 'components';
 import { catList, imageSizes } from 'constants';
-
-import styles from './styles.module.css';
+import { ButtonsList } from '../intendedComponents';
 
 const Prac07 = () => {
   const itemsRef = useRef(null);
@@ -60,22 +59,5 @@ const Prac07 = () => {
     </>
   );
 };
-
-const ButtonsList = forwardRef(({ kittens, scrollToId }, ref) => {
-  const buttonsList = [];
-
-  for (let i = 0; i < kittens.length; i++) {
-    const id = (i + 1).toString().padStart(2, '0');
-    buttonsList.push(
-      <Button key={i} caption={id} onClick={() => scrollToId(i)} />
-    );
-  }
-
-  return (
-    <div ref={ref} className={styles.buttons}>
-      {buttonsList}
-    </div>
-  );
-});
 
 export default Prac07;

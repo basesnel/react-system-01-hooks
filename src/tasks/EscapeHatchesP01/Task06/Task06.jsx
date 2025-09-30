@@ -7,7 +7,7 @@ const Task06 = () => {
   const searchRef = useRef(null);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputRef={searchRef}
         inputType="text"

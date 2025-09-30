@@ -20,7 +20,7 @@ const PlaygroundP14 = () => {
   }, [text]);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputLabel="What to log:"
         inputName="sheduleP14"

@@ -30,7 +30,7 @@ const Task08 = () => {
   const inputRef = useRef(null);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <InputWithRef
         inputType="text"
         inputName="searchT08"

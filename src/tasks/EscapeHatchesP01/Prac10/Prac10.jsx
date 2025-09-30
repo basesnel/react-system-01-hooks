@@ -8,7 +8,7 @@ const Prac10 = () => {
 
   return (
     <>
-      <FlexBox>
+      <FlexBox wrapped="wrap">
         <Button
           caption="Toggle with state"
           onClick={() => {

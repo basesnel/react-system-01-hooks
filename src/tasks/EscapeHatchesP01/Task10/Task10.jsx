@@ -9,7 +9,7 @@ const Task10 = () => {
 
   return (
     <>
-      <FlexBox>
+      <FlexBox wrapped="wrap">
         <Button
           caption={`${showForm ? 'Hide' : 'Show'} form`}
           onClick={() => setShowForm(!showForm)}

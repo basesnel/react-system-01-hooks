@@ -17,7 +17,7 @@ const Task04 = () => {
   }
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputType="text"
         inputName="Task04message"

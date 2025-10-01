@@ -10,7 +10,7 @@ const Task08 = () => {
 
   return (
     <>
-      <FlexBox>
+      <FlexBox wrapped="wrap">
         <Select
           selectLabel="Choose the chat room: "
           selectName="ChatT08"

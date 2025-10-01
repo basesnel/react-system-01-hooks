@@ -14,7 +14,7 @@ const ChatRoomP02 = ({ roomId }) => {
   }, [roomId, serverUrl]);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Input
         inputType="text"
         inputName="serverP02"

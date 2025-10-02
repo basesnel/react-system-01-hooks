@@ -22,7 +22,7 @@ const ChatRoomP09 = ({ roomId }) => {
   }, [options]);
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Caption text={`Welcome to the ${roomId} room!`} />
       <Input
         inputType="text"

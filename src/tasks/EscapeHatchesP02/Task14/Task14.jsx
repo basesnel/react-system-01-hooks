@@ -19,7 +19,7 @@ const Task13 = () => {
 
   return (
     <div className={isDark ? styles.dark : styles.light}>
-      <FlexBox align="flex-end">
+      <FlexBox align="flex-end" wrapped="wrap">
         <Button caption="Toggle Theme" onClick={() => setIsDark(!isDark)} />
         <Input
           inputType="text"

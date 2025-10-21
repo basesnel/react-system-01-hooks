@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, CheckBox, Span } from 'components';
+import { Button, CheckBox, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
 
@@ -8,8 +8,10 @@ const Prac05 = () => {
 
   return (
     <>
-      <Counter />
-      {showB && <Counter />}
+      <FlexBox>
+        <Counter />
+        {showB && <Counter />}
+      </FlexBox>
       <CheckBox
         name="Prac05Checkbox"
         checked={showB}

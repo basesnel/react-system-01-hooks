@@ -10,7 +10,7 @@ const Prac10 = () => {
   };
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Button caption="Reset" onClick={handleReset} />
       <FormP10 key={version} />
     </FlexBox>

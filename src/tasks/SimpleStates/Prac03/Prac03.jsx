@@ -22,7 +22,7 @@ const Prac03 = () => {
   return (
     <>
       <P>Counters with useEffect hook case.</P>
-      <FlexBox>
+      <FlexBox wrapped="wrap">
         <Button
           caption={`pressed the button ${counterA} times`}
           onClick={handleCounterAIncrement}

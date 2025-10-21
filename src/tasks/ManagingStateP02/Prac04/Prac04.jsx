@@ -1,15 +1,15 @@
 import { useState } from 'react';
-import { Button, Span } from 'components';
+import { Button, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
 
 const Prac04 = () => {
   const counter = <Counter />;
   return (
-    <>
+    <FlexBox>
       {counter}
       {counter}
-    </>
+    </FlexBox>
   );
 };
 

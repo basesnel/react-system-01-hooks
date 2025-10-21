@@ -9,7 +9,7 @@ const Prac02 = () => {
   };
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <Button caption={`Clicked ${count} times`} onClick={handleClick} />
       <Button caption={`Clicked ${count} times`} onClick={handleClick} />
     </FlexBox>

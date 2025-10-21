@@ -3,7 +3,7 @@ import { ButtonCountP01 } from '../intendedComponents';
 
 const Prac01 = () => {
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <ButtonCountP01 />
       <ButtonCountP01 />
       <ButtonCountP01 />

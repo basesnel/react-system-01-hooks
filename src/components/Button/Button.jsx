@@ -3,12 +3,14 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Button = props => {
-  const { id, type, caption, onClick, isDisabled, ...delegated } = props;
+  const { id, type, caption, onClick, isDisabled, full, ...delegated } = props;
+
+  const filled = full ? `${styles['fullfilled']}` : '';
 
   return (
     <button
       id={id}
-      className={styles.button}
+      className={`${styles.button} ${filled}`}
       type={type}
       onClick={onClick}
       disabled={isDisabled}
@@ -24,6 +26,7 @@ Button.propTypes = {
   caption: PropTypes.any.isRequired,
   onClick: PropTypes.func,
   isDisabled: PropTypes.bool,
+  full: PropTypes.bool,
   delegated: PropTypes.any,
 };
 
@@ -32,6 +35,7 @@ Button.defaultProps = {
   type: 'button',
   onClick: null,
   isDisabled: null,
+  full: false,
   delegated: null,
 };
 

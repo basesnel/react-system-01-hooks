@@ -7,7 +7,7 @@ const Prac13 = () => {
   const [isPlayerA, setIsPlayerA] = useState(true);
 
   return (
-    <FlexBox>
+    <FlexBox direction="column">
       {isPlayerA ? (
         <Counter key="Taylor" person="Taylor" />
       ) : (

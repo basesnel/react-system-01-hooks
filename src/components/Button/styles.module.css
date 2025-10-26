@@ -24,6 +24,10 @@
   opacity: 0.15;
 }
 
+.fullfilled {
+  width: 100%;
+}
+
 @media mobile-to {
   .button {
     font-size: var(--fs-text-smartphone);

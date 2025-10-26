@@ -20,7 +20,7 @@ const Prac10 = () => {
   };
 
   return (
-    <FlexBox>
+    <FlexBox wrapped="wrap">
       <MyTextField />
       <Button
         type="button"

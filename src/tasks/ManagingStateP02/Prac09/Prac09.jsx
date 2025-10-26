@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button, CheckBox, Span } from 'components';
+import { Button, CheckBox, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
 
@@ -9,11 +9,11 @@ const Prac09 = () => {
   return (
     <>
       {isFancy ? (
-        <div>
+        <FlexBox>
           <Counter isFancy={true} />
-        </div>
+        </FlexBox>
       ) : (
-        <section>
+        <section className={styles.flexed}>
           <Counter isFancy={false} />
         </section>
       )}

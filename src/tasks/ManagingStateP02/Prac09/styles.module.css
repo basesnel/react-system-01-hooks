@@ -17,3 +17,12 @@
 .fancy {
   border: 5px solid gold;
 }
+
+.flexed {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}

@@ -1,21 +1,23 @@
+import { Button, Item, List } from 'components';
+
 import styles from './styles.module.css';
 
-const ContactList = ({ selectedContact, contacts, onSelect }) => {
+const ContactList = ({ contacts, onSelect }) => {
   return (
     <div className={styles.contactList}>
-      <ul>
+      <List message="There no one in contact-list">
         {contacts.map(contact => (
-          <li key={contact.id}>
-            <button
+          <Item key={contact.id}>
+            <Button
+              caption={contact.name}
+              full
               onClick={() => {
                 onSelect(contact);
               }}
-            >
-              {contact.name}
-            </button>
-          </li>
+            />
+          </Item>
         ))}
-      </ul>
+      </List>
     </div>
   );
 };

@@ -1,10 +1,7 @@
 import { useState } from 'react';
+import { FlexBox } from 'components';
 import ContactList from './ContactList';
 import Chat from './Chat';
-import { FlexBox } from 'components';
-// import { Button, FlexBox, Span } from 'components';
-
-// import styles from './styles.module.css';
 
 const contacts = [
   { id: 0, name: 'Taylor', email: 'taylor@mail.com' },

@@ -1,19 +1,20 @@
 import { useState } from 'react';
-
-import styles from './styles.module.css';
+import { MdChat } from 'react-icons/md';
+import { TextArea, Button } from 'components';
 
 const Chat = ({ contact }) => {
   const [text, setText] = useState('');
 
   return (
-    <div className={styles.chat}>
-      <textarea
-        value={text}
-        placeholder={'Chat to' + contact.name}
-        onChange={e => setText(e.target.value)}
+    <div>
+      <TextArea
+        textAreaName="Prac14Text"
+        textAreaValue={text}
+        handleChange={e => setText(e.target.value)}
+        textAreaPlaceholder={'Chat to' + contact.name}
+        icon={<MdChat />}
       />
-      <br />
-      <button>Send to {contact.name}</button>
+      <Button caption={`Send to ${contact.email}`} onClick={() => {}} />
     </div>
   );
 };

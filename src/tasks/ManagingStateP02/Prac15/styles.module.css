@@ -1,4 +1,7 @@
-.contactList,
+.contactList {
+  min-width: 100px;
+}
+
 .chat {
   float: left;
   margin-bottom: 20px;

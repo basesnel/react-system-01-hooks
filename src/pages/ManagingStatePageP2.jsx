@@ -33,7 +33,7 @@ const ManagingStatePageP2 = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="managing state, part II" />
+        <Title level={1} caption="managing state - part ii" />
         <P>Managing state in react-components.</P>
       </Container>
       <Container>

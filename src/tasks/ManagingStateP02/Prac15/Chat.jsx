@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
-import { TextArea, Button } from 'components';
+import { TextArea, Button, Form } from 'components';
 
 const Chat = ({ contact }) => {
   const [text, setText] = useState('');
 
   return (
-    <div>
+    <Form>
       <TextArea
         textAreaName="Prac14Text"
         textAreaValue={text}
@@ -15,7 +15,7 @@ const Chat = ({ contact }) => {
         icon={<MdChat />}
       />
       <Button caption={`Send to ${contact.email}`} onClick={() => {}} />
-    </div>
+    </Form>
   );
 };
 

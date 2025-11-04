@@ -28,7 +28,7 @@ const ManagingStatePageP1 = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="array in state" />
+        <Title level={1} caption="managing state, part i" />
         <P>Array in state of React-component case.</P>
       </Container>
       <Container>

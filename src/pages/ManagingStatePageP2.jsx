@@ -77,7 +77,7 @@ const ManagingStatePageP2 = () => {
           <Card title="prac 11: resetting state at the same position">
             <Prac11 />
           </Card>
-          <Card title="prac 12: resetting state at the same position - option 1">
+          <Card title="prac 12: resetting a component in diffrent positions - option 1">
             <Prac12 />
           </Card>
           <Card title="prac 13: resetting state with a key - option 2">

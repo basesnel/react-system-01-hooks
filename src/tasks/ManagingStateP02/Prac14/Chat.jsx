@@ -1,12 +1,24 @@
 import { useState } from 'react';
+import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
-import { TextArea, Button } from 'components';
+import { TextArea, Button, Form } from 'components';
 
 const Chat = ({ contact }) => {
   const [text, setText] = useState('');
 
+  const handleChatSubmit = event => {
+    event.preventDefault();
+    setText('');
+
+    if (!text.trim().length) {
+      return toast.error(`Text-field is empty - please, enter it!`);
+    }
+
+    return toast.success(`${text} sent!`);
+  };
+
   return (
-    <div>
+    <Form onSubmit={handleChatSubmit}>
       <TextArea
         textAreaName="Prac14Text"
         textAreaValue={text}
@@ -14,8 +26,8 @@ const Chat = ({ contact }) => {
         textAreaPlaceholder={'Chat to' + contact.name}
         icon={<MdChat />}
       />
-      <Button caption={`Send to ${contact.email}`} onClick={() => {}} />
-    </div>
+      <Button type="submit" caption={`Send to ${contact.email}`} />
+    </Form>
   );
 };
 

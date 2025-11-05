@@ -3,6 +3,8 @@
 }
 
 .item {
-  flex: 1 1 0px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
   padding: 0 5px;
 }

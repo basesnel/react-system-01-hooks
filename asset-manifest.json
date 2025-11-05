@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-system-01-hooks/static/css/main.a53ae89d.css",
-    "main.js": "/react-system-01-hooks/static/js/main.6f165640.js",
+    "main.css": "/react-system-01-hooks/static/css/main.c70c7908.css",
+    "main.js": "/react-system-01-hooks/static/js/main.cdf9db59.js",
     "static/media/kitten-1280-07.jpg": "/react-system-01-hooks/static/media/kitten-1280-07.ca5698a229340a4ee2bb.jpg",
     "static/media/kitten-1280-07.webp": "/react-system-01-hooks/static/media/kitten-1280-07.c7d22e4e6af01f2333c5.webp",
     "static/media/kitten-1280-04.jpg": "/react-system-01-hooks/static/media/kitten-1280-04.71b15735ef2da860c5a0.jpg",
@@ -80,11 +80,11 @@
     "static/media/kitten-320-01.webp": "/react-system-01-hooks/static/media/kitten-320-01.88207ab4a9d053d2baf1.webp",
     "index.html": "/react-system-01-hooks/index.html",
     "static/media/search.svg": "/react-system-01-hooks/static/media/search.c32f5a98ca5c9d1af425.svg",
-    "main.a53ae89d.css.map": "/react-system-01-hooks/static/css/main.a53ae89d.css.map",
-    "main.6f165640.js.map": "/react-system-01-hooks/static/js/main.6f165640.js.map"
+    "main.c70c7908.css.map": "/react-system-01-hooks/static/css/main.c70c7908.css.map",
+    "main.cdf9db59.js.map": "/react-system-01-hooks/static/js/main.cdf9db59.js.map"
   },
   "entrypoints": [
-    "static/css/main.a53ae89d.css",
-    "static/js/main.6f165640.js"
+    "static/css/main.c70c7908.css",
+    "static/js/main.cdf9db59.js"
   ]
 }

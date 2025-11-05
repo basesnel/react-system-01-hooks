@@ -1,17 +1,22 @@
-import { Button, FlexBox } from 'components';
+import { Button } from 'components';
+
+import styles from './styles.module.css';
 
 const ContactList = ({ contacts, onSelect }) => {
   return (
-    <FlexBox>
+    <ul className={styles.list}>
       {contacts.map(contact => (
-        <Button
-          caption={contact.name}
-          onClick={() => {
-            onSelect(contact);
-          }}
-        />
+        <li key={contact.id} className={styles.item}>
+          <Button
+            caption={contact.name}
+            full
+            onClick={() => {
+              onSelect(contact);
+            }}
+          />
+        </li>
       ))}
-    </FlexBox>
+    </ul>
   );
 };
 

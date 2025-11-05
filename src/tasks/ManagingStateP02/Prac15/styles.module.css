@@ -1,5 +1,10 @@
-.contactList {
-  min-width: 100px;
+.list {
+  display: flex;
+}
+
+.item {
+  flex: 1 1 0px;
+  padding: 0 5px;
 }
 
 .chat {

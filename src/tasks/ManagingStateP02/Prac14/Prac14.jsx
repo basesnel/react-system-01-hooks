@@ -13,7 +13,7 @@ const Prac14 = () => {
   const [to, setTo] = useState(contacts[0]);
 
   return (
-    <FlexBox>
+    <FlexBox direction="column-reverse">
       <ContactList
         contacts={contacts}
         selectedContact={to}

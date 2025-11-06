@@ -1,20 +1,18 @@
 import { useState } from 'react';
+import { MdChat } from 'react-icons/md';
+import { Button, P, TextArea } from 'components';
 
 const Task03 = () => {
   const [showHint, setShowHint] = useState(false);
 
   return (
     <div>
-      {showHint && (
-        <p>
-          <i>Hint your favorite city?</i>
-        </p>
-      )}
+      {showHint && <P>Hint your favorite city?</P>}
       <Form />
       {showHint ? (
-        <button onClick={() => setShowHint(false)}>Hide hint</button>
+        <Button onClick={() => setShowHint(false)} caption="Hide hint" />
       ) : (
-        <button onClick={() => setShowHint(true)}>Hide hint</button>
+        <Button onClick={() => setShowHint(true)} caption="Show hint" />
       )}
     </div>
   );
@@ -22,7 +20,14 @@ const Task03 = () => {
 
 const Form = () => {
   const [text, setText] = useState('');
-  return <textarea value={text} onChange={e => setText(e.target.value)} />;
+  return (
+    <TextArea
+      textAreaName="Task03Text"
+      textAreaValue={text}
+      handleChange={e => setText(e.target.value)}
+      icon={<MdChat />}
+    />
+  );
 };
 
 export default Task03;

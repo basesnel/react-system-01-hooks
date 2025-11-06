@@ -18,38 +18,35 @@ const Task03 = () => {
   if (reverse) {
     return (
       <>
-        <Field label="Last name" />
-        <Field label="First name" />
+        <Field label="Last name" name="task04fname" />
+        <Field label="First name" name="task04fname" />
         {checkbox}
       </>
     );
   } else {
     return (
       <>
-        <Field label="First name" />
-        <Field label="Last name" />
+        <Field label="First name" name="task04fname" />
+        <Field label="Last name" name="task04lname" />
         {checkbox}
       </>
     );
   }
 };
 
-// const Field = ({ label }) => {
-//   const [text, setText] = useState('');
-//   return (
-//     <label>
-//       {label}:{' '}
-//       <input
-//         type="text"
-//         value={text}
-//         placeholder={label}
-//         onChange={e => setText(e.target.value)}
-//       />
-//     </label>
-//   );
-// };
+const Field = ({ label, name }) => {
+  const [text, setText] = useState('');
+  return (
+    <Input
+      label={label}
+      name={name}
+      value={text}
+      onChange={e => setText(e.target.value)}
+    />
+  );
+};
 
-const Field = ({ label, name, value, onChange }) => {
+const Input = ({ label, name, value, onChange }) => {
   return (
     <label className={styles.label}>
       <span className={styles.span}>{label}: </span>

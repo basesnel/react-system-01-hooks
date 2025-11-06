@@ -22,7 +22,7 @@ const ManagingStatePageP2 = () => {
     Task01,
     Task02,
     Task03,
-    // Task04,
+    Task04,
     // Task05,
     // Task06,
     // Task07,
@@ -92,10 +92,10 @@ const ManagingStatePageP2 = () => {
           <Card title="task 03: fix disappering input text">
             <Task03 />
           </Card>
-          {/* <Card title="task 04: fix a component that's not updating">
+          <Card title="task 04: fix a component that's not updating">
             <Task04 />
           </Card>
-          <Card title="task 05: fix a brocken packing list">
+          {/* <Card title="task 05: fix a brocken packing list">
             <Task05 />
           </Card>
           <Card title="task 06: fix the disappearing selection">

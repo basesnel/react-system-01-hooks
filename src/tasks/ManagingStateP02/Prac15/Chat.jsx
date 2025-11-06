@@ -20,7 +20,7 @@ const Chat = ({ contact }) => {
   return (
     <Form onSubmit={handleChatSubmit}>
       <TextArea
-        textAreaName="Prac14Text"
+        textAreaName="Prac15Text"
         textAreaValue={text}
         handleChange={e => setText(e.target.value)}
         textAreaPlaceholder={'Chat to' + contact.name}

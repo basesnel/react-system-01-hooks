@@ -3,21 +3,19 @@ import { useState } from 'react';
 const Task03 = () => {
   const [showHint, setShowHint] = useState(false);
 
-  if (showHint)
-    return (
-      <div>
+  return (
+    <div>
+      {showHint && (
         <p>
           <i>Hint your favorite city?</i>
         </p>
-        <Form />
-        <button onClick={() => setShowHint(false)}>Hide hint</button>
-      </div>
-    );
-
-  return (
-    <div>
+      )}
       <Form />
-      <button onClick={() => setShowHint(true)}>Show hint</button>
+      {showHint ? (
+        <button onClick={() => setShowHint(false)}>Hide hint</button>
+      ) : (
+        <button onClick={() => setShowHint(true)}>Hide hint</button>
+      )}
     </div>
   );
 };

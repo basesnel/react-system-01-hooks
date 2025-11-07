@@ -1,26 +1,22 @@
 import { useState } from 'react';
+import { CheckBox } from 'components';
 
 import styles from './styles.module.css';
 
 const Task03 = () => {
   const [reverse, setReverse] = useState(false);
-  let checkbox = (
-    <label>
-      <input
-        type="checkbox"
-        checked={reverse}
-        onChange={e => setReverse(e.target.checked)}
-      />{' '}
-      Reverse order
-    </label>
-  );
 
   if (reverse) {
     return (
       <>
         <Field key="lname" label="Last name" name="task04lname" />
         <Field key="fname" label="First name" name="task04fname" />
-        {checkbox}
+        <CheckBox
+          name="task04check"
+          checked={reverse}
+          onChange={e => setReverse(e.target.checked)}
+          label="Reverse order"
+        />
       </>
     );
   } else {
@@ -28,7 +24,12 @@ const Task03 = () => {
       <>
         <Field key="fname" label="First name" name="task04fname" />
         <Field key="lname" label="Last name" name="task04lname" />
-        {checkbox}
+        <CheckBox
+          name="task04check"
+          checked={reverse}
+          onChange={e => setReverse(e.target.checked)}
+          label="Reverse order"
+        />
       </>
     );
   }

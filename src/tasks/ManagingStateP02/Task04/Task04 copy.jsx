@@ -18,16 +18,16 @@ const Task03 = () => {
   if (reverse) {
     return (
       <>
-        <Field key="lname" label="Last name" name="task04lname" />
-        <Field key="fname" label="First name" name="task04fname" />
+        <Field label="Last name" name="task04fname" />
+        <Field label="First name" name="task04fname" />
         {checkbox}
       </>
     );
   } else {
     return (
       <>
-        <Field key="fname" label="First name" name="task04fname" />
-        <Field key="lname" label="Last name" name="task04lname" />
+        <Field label="First name" name="task04fname" />
+        <Field label="Last name" name="task04lname" />
         {checkbox}
       </>
     );

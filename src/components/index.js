@@ -19,6 +19,7 @@ import ItemCheckedText from './ItemCheckedText';
 import ItemFlex from './ItemFlex';
 import ItemLabel from './ItemLabel';
 import ItemText from './ItemText';
+import Linput from './Linput';
 import List from './List';
 import Loader from './Loader';
 import Logo from './Logo';
@@ -61,6 +62,7 @@ export {
   ItemFlex,
   ItemLabel,
   ItemText,
+  Linput,
   List,
   Loader,
   Logo,

@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import { CheckBox } from 'components';
-
-import styles from './styles.module.css';
+import { CheckBox, Linput } from 'components';
 
 const Task03 = () => {
   const [reverse, setReverse] = useState(false);
@@ -38,28 +36,12 @@ const Task03 = () => {
 const Field = ({ label, name }) => {
   const [text, setText] = useState('');
   return (
-    <Input
+    <Linput
       label={label}
       name={name}
       value={text}
       onChange={e => setText(e.target.value)}
     />
-  );
-};
-
-const Input = ({ label, name, value, onChange }) => {
-  return (
-    <label className={styles.label}>
-      <span className={styles.span}>{label}: </span>
-      <input
-        className={styles.input}
-        name={name}
-        size={10}
-        value={value}
-        onChange={onChange}
-        placeholder={label}
-      />
-    </label>
   );
 };
 

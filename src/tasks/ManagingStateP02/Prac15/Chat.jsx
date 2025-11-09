@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
@@ -29,6 +30,14 @@ const Chat = ({ contact }) => {
       <Button type="submit" caption={`Send to ${contact.email}`} />
     </Form>
   );
+};
+
+Chat.propTypes = {
+  contact: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Chat;

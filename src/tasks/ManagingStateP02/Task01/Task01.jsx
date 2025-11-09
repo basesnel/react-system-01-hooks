@@ -1,7 +1,5 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-
-import styles from './styles.module.css';
+import { Linput } from 'components';
 
 const Task01 = () => {
   const [text, setText] = useState('');
@@ -12,13 +10,13 @@ const Task01 = () => {
 
   return (
     <>
-      <Input
+      <Linput
         label="First input"
         name="Task01first input"
         value={text}
         onChange={handleChange}
       />
-      <Input
+      <Linput
         label="Second input"
         name="Task01second input"
         value={text}
@@ -26,29 +24,6 @@ const Task01 = () => {
       />
     </>
   );
-};
-
-const Input = ({ label, name, value, onChange }) => {
-  return (
-    <label className={styles.label}>
-      <span className={styles.span}>{label}</span>
-      <input
-        className={styles.input}
-        name={name}
-        size={10}
-        value={value}
-        onChange={onChange}
-        placeholder="Type any text..."
-      />
-    </label>
-  );
-};
-
-Input.propTypes = {
-  label: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
 };
 
 export default Task01;

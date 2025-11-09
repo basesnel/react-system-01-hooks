@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { CheckBox, Linput } from 'components';
 
 const Task03 = () => {
@@ -43,6 +44,11 @@ const Field = ({ label, name }) => {
       onChange={e => setText(e.target.value)}
     />
   );
+};
+
+Field.propTypes = {
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default Task03;

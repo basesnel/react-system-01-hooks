@@ -1,6 +1,6 @@
-import { Button, FlexBox, Form, Linput } from 'components';
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { Button, FlexBox, Form, Linput } from 'components';
 
 const EditContact = ({ initialData, onSave }) => {
   const [name, setName] = useState(initialData.name);

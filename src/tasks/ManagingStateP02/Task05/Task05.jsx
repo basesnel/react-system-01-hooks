@@ -1,6 +1,5 @@
 import { useState } from 'react';
-// import PropTypes from 'prop-types';
-// import { CheckBox, Linput } from 'components';
+import { FlexBox } from 'components';
 import ContactList from './ContactList';
 import EditContact from './EditContact';
 
@@ -28,7 +27,7 @@ const Task05 = () => {
   };
 
   return (
-    <div>
+    <FlexBox direction="column-reverse">
       <ContactList
         contacts={contacts}
         selectedId={selectedId}
@@ -39,25 +38,8 @@ const Task05 = () => {
         initialData={selectedContact}
         onSave={handleSave}
       />
-    </div>
+    </FlexBox>
   );
 };
-
-// const Field = ({ label, name }) => {
-//   const [text, setText] = useState('');
-//   return (
-//     <Linput
-//       label={label}
-//       name={name}
-//       value={text}
-//       onChange={e => setText(e.target.value)}
-//     />
-//   );
-// };
-
-// Field.propTypes = {
-//   label: PropTypes.string.isRequired,
-//   name: PropTypes.string.isRequired,
-// };
 
 export default Task05;

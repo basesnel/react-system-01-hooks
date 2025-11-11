@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { CheckBox, Linput } from 'components';
 
-const Task03 = () => {
+const Task04 = () => {
   const [reverse, setReverse] = useState(false);
 
   if (reverse) {
@@ -51,4 +51,4 @@ Field.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-export default Task03;
+export default Task04;

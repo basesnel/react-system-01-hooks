@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Button, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
@@ -45,6 +46,10 @@ const Counter = ({ person }) => {
       />
     </div>
   );
+};
+
+Counter.propTypes = {
+  person: PropTypes.string.isRequired,
 };
 
 export default Prac13;

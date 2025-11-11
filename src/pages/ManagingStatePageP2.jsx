@@ -23,7 +23,7 @@ const ManagingStatePageP2 = () => {
     Task02,
     Task03,
     Task04,
-    // Task05,
+    Task05,
     // Task06,
     // Task07,
     // Task08,
@@ -95,10 +95,10 @@ const ManagingStatePageP2 = () => {
           <Card title="task 04: fix a component that's not updating">
             <Task04 />
           </Card>
-          {/* <Card title="task 05: fix a brocken packing list">
+          <Card title="task 05: reset a detail form">
             <Task05 />
           </Card>
-          <Card title="task 06: fix the disappearing selection">
+          {/* <Card title="task 06: fix the disappearing selection">
             <Task06 />
           </Card>
           <Card title="task 07: impliment multiple selection">

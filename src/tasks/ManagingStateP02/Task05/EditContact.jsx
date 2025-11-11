@@ -1,3 +1,4 @@
+import { Linput } from 'components';
 import { useState } from 'react';
 // import PropTypes from 'prop-types';
 // import { toast } from 'react-toastify';
@@ -10,22 +11,18 @@ const EditContact = ({ initialData, onSave }) => {
 
   return (
     <section>
-      <label>
-        Name:{' '}
-        <input
-          type="text"
-          value={name}
-          onChange={e => setName(e.target.value)}
-        />
-      </label>
-      <label>
-        Email:{' '}
-        <input
-          type="text"
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-        />
-      </label>
+      <Linput
+        label="Name"
+        name="task05Name"
+        value={name}
+        onChange={e => setName(e.target.value)}
+      />
+      <Linput
+        label="Email"
+        name="task05Email"
+        value={email}
+        onChange={e => setEmail(e.target.value)}
+      />
       <button
         onClick={() => {
           const updatedData = { id: initialData, name: name, email: email };

@@ -1,16 +1,25 @@
-import { Linput } from 'components';
+import { Button, FlexBox, Form, Linput } from 'components';
 import { useState } from 'react';
-// import PropTypes from 'prop-types';
-// import { toast } from 'react-toastify';
-// import { MdChat } from 'react-icons/md';
-// import { TextArea, Button, Form } from 'components';
+import PropTypes from 'prop-types';
 
 const EditContact = ({ initialData, onSave }) => {
   const [name, setName] = useState(initialData.name);
   const [email, setEmail] = useState(initialData.email);
 
+  const handleSave = e => {
+    e.preventDefault();
+
+    const updatedData = { id: initialData.id, name: name, email: email };
+    onSave(updatedData);
+  };
+
+  const handleReset = () => {
+    setName(initialData.name);
+    setEmail(initialData.email);
+  };
+
   return (
-    <section>
+    <Form onSubmit={handleSave}>
       <Linput
         label="Name"
         name="task05Name"
@@ -23,32 +32,21 @@ const EditContact = ({ initialData, onSave }) => {
         value={email}
         onChange={e => setEmail(e.target.value)}
       />
-      <button
-        onClick={() => {
-          const updatedData = { id: initialData.id, name: name, email: email };
-          onSave(updatedData);
-        }}
-      >
-        Save
-      </button>
-      <button
-        onClick={() => {
-          setName(initialData.name);
-          setEmail(initialData.email);
-        }}
-      >
-        Reset
-      </button>
-    </section>
+      <FlexBox>
+        <Button caption="Save" type="submit" />
+        <Button caption="Reset" onClick={handleReset} />
+      </FlexBox>
+    </Form>
   );
 };
 
-// EditContact.propTypes = {
-//   contact: PropTypes.shape({
-//     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
-//     name: PropTypes.string.isRequired,
-//     email: PropTypes.string.isRequired,
-//   }).isRequired,
-// };
+EditContact.propTypes = {
+  initialData: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }).isRequired,
+  onSave: PropTypes.func.isRequired,
+};
 
 export default EditContact;

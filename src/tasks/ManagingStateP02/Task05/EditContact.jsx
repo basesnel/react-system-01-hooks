@@ -25,7 +25,7 @@ const EditContact = ({ initialData, onSave }) => {
       />
       <button
         onClick={() => {
-          const updatedData = { id: initialData, name: name, email: email };
+          const updatedData = { id: initialData.id, name: name, email: email };
           onSave(updatedData);
         }}
       >

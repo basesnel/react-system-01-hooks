@@ -34,7 +34,11 @@ const Task05 = () => {
         selectedId={selectedId}
         onSelect={id => setSelectedId(id)}
       />
-      <EditContact initialData={selectedContact} onSave={handleSave} />
+      <EditContact
+        key={selectedId}
+        initialData={selectedContact}
+        onSave={handleSave}
+      />
     </div>
   );
 };

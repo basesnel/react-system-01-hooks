@@ -53,8 +53,10 @@ const Task06 = () => {
       <h3>
         Image {index + 1} of {images.length}
       </h3>
-      <img src={image.src} alt={image.place} />
-      <p>{image.place}</p>
+      <figure>
+        <img key={image.src} src={image.src} alt={image.place} />
+        <figcaption>{image.place}</figcaption>
+      </figure>
     </>
   );
 };

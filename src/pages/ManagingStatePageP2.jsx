@@ -50,7 +50,7 @@ const ManagingStatePageP2 = () => {
           <Card title="task 01: synced inputs">
             <Task01 />
           </Card>
-          <Card title="task 02: profile editor">
+          <Card title="task 02: filtering a list">
             <Task02 />
           </Card>
           <Card title="prac 04: state is tied to a position in the render tree">
@@ -98,7 +98,7 @@ const ManagingStatePageP2 = () => {
           <Card title="task 05: reset a detail form">
             <Task05 />
           </Card>
-          <Card title="task 06: fix the disappearing selection">
+          <Card title="task 06: clear an image while it's loading">
             <Task06 />
           </Card>
           {/* <Card title="task 07: impliment multiple selection">

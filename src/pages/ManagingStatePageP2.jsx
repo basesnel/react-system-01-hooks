@@ -24,7 +24,7 @@ const ManagingStatePageP2 = () => {
     Task03,
     Task04,
     Task05,
-    // Task06,
+    Task06,
     // Task07,
     // Task08,
     // Task09,
@@ -98,10 +98,10 @@ const ManagingStatePageP2 = () => {
           <Card title="task 05: reset a detail form">
             <Task05 />
           </Card>
-          {/* <Card title="task 06: fix the disappearing selection">
+          <Card title="task 06: fix the disappearing selection">
             <Task06 />
           </Card>
-          <Card title="task 07: impliment multiple selection">
+          {/* <Card title="task 07: impliment multiple selection">
             <Task07 />
           </Card>
           <Card title="task 08: impliment multiple selection (alternate)">

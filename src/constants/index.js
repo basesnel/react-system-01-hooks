@@ -30,6 +30,7 @@ import { sendMessage } from './sendMessage';
 import { createInitialTodos } from './createInitialTodos';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
+import { trams } from './trams';
 import { imageSizes } from './imageSizes';
 import * as myTodos from './todos';
 import { videoSrc } from './videoSrc';
@@ -67,6 +68,7 @@ export {
   createInitialTodos,
   catList,
   personList,
+  trams,
   imageSizes,
   myTodos,
   videoSrc,

@@ -1,6 +1,9 @@
+import { Button, Title, FlexBox } from 'components';
 import { useState } from 'react';
 // import PropTypes from 'prop-types';
 // import { CheckBox, Linput } from 'components';
+
+import styles from './styles.module.css';
 
 const images = [
   {
@@ -48,16 +51,19 @@ const Task06 = () => {
   let image = images[index];
 
   return (
-    <>
-      <button onClick={handleClick}>Next</button>
-      <h3>
-        Image {index + 1} of {images.length}
-      </h3>
-      <figure>
-        <img key={image.src} src={image.src} alt={image.place} />
-        <figcaption>{image.place}</figcaption>
+    <FlexBox direction="column">
+      <Title level={3} caption={`Image ${index + 1} of ${images.length}`} />
+      <figure className={styles.figure}>
+        <img
+          key={image.src}
+          src={image.src}
+          alt={image.place}
+          className={styles.image}
+        />
+        <figcaption className={styles.figcaption}>{image.place}</figcaption>
       </figure>
-    </>
+      <Button caption="Next" onClick={handleClick} />
+    </FlexBox>
   );
 };
 

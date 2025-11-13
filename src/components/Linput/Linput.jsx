@@ -12,7 +12,7 @@ const Linput = props => {
         className={styles.input}
         name={name}
         type={type}
-        size={10}
+        size={4}
         value={value}
         onChange={onChange}
         placeholder={label}

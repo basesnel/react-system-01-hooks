@@ -26,8 +26,6 @@ const ManagingStatePageP2 = () => {
     Task05,
     Task06,
     Task07,
-    // Task08,
-    // Task09,
   } = managingStateP2;
 
   return (
@@ -104,12 +102,6 @@ const ManagingStatePageP2 = () => {
           <Card title="task 07: fix misplaced state in the list">
             <Task07 />
           </Card>
-          {/* <Card title="task 08: impliment multiple selection (alternate)">
-            <Task08 />
-          </Card>
-          <Card title="task 09: impliment multiple selection (alternate)">
-            <Task09 />
-          </Card> */}
         </Grid>
       </Container>
     </main>

@@ -1,8 +1,5 @@
 import { useState } from 'react';
-// import { Button, Title, FlexBox } from 'components';
-// import { trams } from 'constants';
-
-// import styles from './styles.module.css';
+import { FlexBox, CheckBox, List, Item } from 'components';
 import Contact from './Contact';
 import { initialContacts } from 'constants';
 
@@ -16,21 +13,21 @@ const Task07 = () => {
 
   return (
     <>
-      <label>
-        <input
-          type="checkbox"
+      <FlexBox>
+        <CheckBox
+          name="checkboxTask07"
           checked={reverse}
           onChange={e => setReverse(e.target.checked)}
-        />{' '}
-        Show in reverse order
-      </label>
-      <ul>
+          label="Show in reverse order"
+        />
+      </FlexBox>
+      <List message="There is no items!">
         {displayedContacts.map(contact => (
-          <li key={contact.id}>
+          <Item key={contact.id}>
             <Contact contact={contact} />
-          </li>
+          </Item>
         ))}
-      </ul>
+      </List>
     </>
   );
 };

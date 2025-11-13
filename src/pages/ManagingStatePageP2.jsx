@@ -25,7 +25,7 @@ const ManagingStatePageP2 = () => {
     Task04,
     Task05,
     Task06,
-    // Task07,
+    Task07,
     // Task08,
     // Task09,
   } = managingStateP2;
@@ -101,10 +101,10 @@ const ManagingStatePageP2 = () => {
           <Card title="task 06: clear an image while it's loading">
             <Task06 />
           </Card>
-          {/* <Card title="task 07: impliment multiple selection">
+          <Card title="task 07: fix misplaced state in the list">
             <Task07 />
           </Card>
-          <Card title="task 08: impliment multiple selection (alternate)">
+          {/* <Card title="task 08: impliment multiple selection (alternate)">
             <Task08 />
           </Card>
           <Card title="task 09: impliment multiple selection (alternate)">

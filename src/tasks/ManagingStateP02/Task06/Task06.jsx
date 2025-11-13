@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { Button, Title, FlexBox } from 'components';
 import { trams } from 'constants';
+import Figure from './Figure';
 
-import styles from './styles.module.css';
+// import styles from './styles.module.css';
 
 const Task06 = () => {
   const [index, setIndex] = useState(0);
@@ -21,7 +22,7 @@ const Task06 = () => {
   return (
     <FlexBox direction="column">
       <Title level={3} caption={`Image ${index + 1} of ${trams.length}`} />
-      <figure className={styles.figure}>
+      {/* <figure className={styles.figure}>
         <img
           key={image.src}
           src={image.src}
@@ -29,7 +30,8 @@ const Task06 = () => {
           className={styles.image}
         />
         <figcaption className={styles.figcaption}>{image.place}</figcaption>
-      </figure>
+      </figure> */}
+      <Figure image={image} />
       <Button caption="Next" onClick={handleClick} />
     </FlexBox>
   );

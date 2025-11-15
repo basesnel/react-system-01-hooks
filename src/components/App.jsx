@@ -22,6 +22,7 @@ import {
   EscapeHatchesPageP2,
   ManagingStatePageP1,
   ManagingStatePageP2,
+  ManagingStatePageP3,
 } from 'pages';
 
 import AppBar from './AppBar';
@@ -60,6 +61,10 @@ function App() {
         <Route
           path="/managing-state-part-2"
           element={<ManagingStatePageP2 />}
+        />
+        <Route
+          path="/managing-state-part-3"
+          element={<ManagingStatePageP3 />}
         />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>

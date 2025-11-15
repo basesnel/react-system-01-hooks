@@ -9,6 +9,7 @@ import { FormPage } from './FormPage';
 import { HomePage } from './HomePage';
 import { ManagingStatePageP1 } from './ManagingStatePageP1';
 import { ManagingStatePageP2 } from './ManagingStatePageP2';
+import { ManagingStatePageP3 } from './ManagingStatePageP3';
 import { NewsPage } from './NewsPage';
 import { NotFoundPage } from './NotFoundPage';
 import { ObjectInStatePage } from './ObjectInStatePage';
@@ -30,6 +31,7 @@ export {
   HomePage,
   ManagingStatePageP1,
   ManagingStatePageP2,
+  ManagingStatePageP3,
   NewsPage,
   NotFoundPage,
   ObjectInStatePage,

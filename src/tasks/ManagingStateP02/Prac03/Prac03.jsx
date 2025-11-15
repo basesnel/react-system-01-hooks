@@ -1,23 +1,22 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Button, P, Title } from 'components';
-
-import styles from './styles.module.css';
+import { Title } from 'components';
+import { PanelP03 } from '../intendendComponents';
 
 const Prac03 = () => {
   const [activeIndex, setActiveIndex] = useState(0);
+
   return (
     <>
       <Title level={3} caption="Almaty, Kazachstan" />
-      <Panel
+      <PanelP03
         title="About"
         isActive={activeIndex === 0}
         onShow={() => setActiveIndex(0)}
       >
         With a population of about 2 million, Almaty is Kazakhstan's largest
         city. From 1929 to 1997, it was its capital city.
-      </Panel>
-      <Panel
+      </PanelP03>
+      <PanelP03
         title="Etymology"
         isActive={activeIndex === 1}
         onShow={() => setActiveIndex(1)}
@@ -27,29 +26,9 @@ const Prac03 = () => {
         surrounding Almaty is thought to be the ancestral home of the apple, and
         the wild <i lang="la">Malus sieversii</i> is considered a likely
         candidate for the ancestor of the modern domestic apple.
-      </Panel>
+      </PanelP03>
     </>
   );
-};
-
-const Panel = ({ title, children, isActive, onShow }) => {
-  return (
-    <section className={styles.panel}>
-      <Title level={4} caption={title} />
-      {isActive ? (
-        <P>{children}</P>
-      ) : (
-        <Button caption="Show" onClick={onShow} />
-      )}
-    </section>
-  );
-};
-
-Panel.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.any.isRequired,
-  isActive: PropTypes.bool.isRequired,
-  onShow: PropTypes.func.isRequired,
 };
 
 export default Prac03;

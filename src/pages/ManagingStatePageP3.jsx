@@ -1,32 +1,32 @@
 import { Container, Title, P, Grid, Card } from 'components';
 
-// import { managingStateP2 } from 'tasks';
+import { managingStateP3 } from 'tasks';
 
 const ManagingStatePageP3 = () => {
-  // const {
-  //   Prac01,
-  //   Prac02,
-  //   Prac03,
-  //   Prac04,
-  //   Prac05,
-  //   Prac06,
-  //   Prac07,
-  //   Prac08,
-  //   Prac09,
-  //   Prac10,
-  //   Prac11,
-  //   Prac12,
-  //   Prac13,
-  //   Prac14,
-  //   Prac15,
-  //   Task01,
-  //   Task02,
-  //   Task03,
-  //   Task04,
-  //   Task05,
-  //   Task06,
-  //   Task07,
-  // } = managingStateP2;
+  const {
+    Prac01,
+    // Prac02,
+    // Prac03,
+    // Prac04,
+    // Prac05,
+    // Prac06,
+    // Prac07,
+    // Prac08,
+    // Prac09,
+    // Prac10,
+    // Prac11,
+    // Prac12,
+    // Prac13,
+    // Prac14,
+    // Prac15,
+    // Task01,
+    // Task02,
+    // Task03,
+    // Task04,
+    // Task05,
+    // Task06,
+    // Task07,
+  } = managingStateP3;
 
   return (
     <main>
@@ -37,8 +37,7 @@ const ManagingStatePageP3 = () => {
       <Container>
         <Grid>
           <Card title="prac 01">
-            {/* <Prac01 /> */}
-            <p>prac01's body</p>
+            <Prac01 />
           </Card>
           {/* <Card title="prac 02: pass hardcoded value">
             <Prac02 />

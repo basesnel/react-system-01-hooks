@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import PropTypes from 'prop-types';
 import { Button, CheckBox, FlexBox, Span } from 'components';
 
 import styles from './styles.module.css';
@@ -57,6 +58,10 @@ const Counter = ({ isFancy }) => {
       <Button caption="Add one" onClick={() => setScore(score + 1)} />
     </div>
   );
+};
+
+Counter.propTypes = {
+  isFancy: PropTypes.bool.isRequired,
 };
 
 export default Prac07;

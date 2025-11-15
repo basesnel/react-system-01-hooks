@@ -1,34 +1,13 @@
-import { useState } from 'react';
-import { Button, FlexBox, Span } from 'components';
-
-import styles from './styles.module.css';
+import { FlexBox } from 'components';
+import { CounterP04 } from '../intendendComponents';
 
 const Prac04 = () => {
-  const counter = <Counter />;
+  const counter = <CounterP04 />;
   return (
     <FlexBox>
       {counter}
       {counter}
     </FlexBox>
-  );
-};
-
-const Counter = () => {
-  const [score, setScore] = useState(0);
-  const [hover, setHover] = useState(false);
-
-  let className = `${styles.counter}`;
-  if (hover) className += ` ${styles.hover}`;
-
-  return (
-    <div
-      className={className}
-      onPointerEnter={() => setHover(true)}
-      onPointerLeave={() => setHover(false)}
-    >
-      <Span weighted>{score}</Span>
-      <Button caption="Add one" onClick={() => setScore(score + 1)} />
-    </div>
   );
 };
 

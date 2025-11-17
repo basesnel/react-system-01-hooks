@@ -5,7 +5,7 @@ import { managingStateP3 } from 'tasks';
 const ManagingStatePageP3 = () => {
   const {
     Prac01,
-    // Prac02,
+    Prac02,
     // Prac03,
     // Prac04,
     // Prac05,
@@ -39,10 +39,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 01">
             <Prac01 />
           </Card>
-          {/* <Card title="prac 02: pass hardcoded value">
+          <Card title="prac 02: tasks by reducer">
             <Prac02 />
           </Card>
-          <Card title="prac 03: set up lifting state up">
+          {/* <Card title="prac 03: set up lifting state up">
             <Prac03 />
           </Card>
           <Card title="task 01: synced inputs">

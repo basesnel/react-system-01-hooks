@@ -9,16 +9,14 @@ const AddTodoT03T04 = props => {
   const [title, setTitle] = useState('');
 
   return (
-    <>
-      <MiniForm
-        onFormSubmit={title => {
-          onAddTodo(title);
-          setTitle('');
-        }}
-        filling={`Add element ${title}`}
-        icon={<RiAddCircleFill />}
-      />
-    </>
+    <MiniForm
+      onFormSubmit={title => {
+        onAddTodo(title);
+        setTitle('');
+      }}
+      filling={`Add element ${title}`}
+      icon={<RiAddCircleFill />}
+    />
   );
 };
 

@@ -1,25 +1,25 @@
-const { useState } = require('react');
+import { useState } from 'react';
+import PropTypes from 'prop-types';
+import { RiAddCircleFill } from 'react-icons/ri';
+import { MiniForm } from 'components';
 
 const AddTask = ({ onAddTask }) => {
   const [text, setText] = useState('');
 
   return (
-    <>
-      <input
-        placeholder="Add task"
-        value={text}
-        onChange={e => setText(e.target.value)}
-      />
-      <button
-        onClick={() => {
-          setText('');
-          onAddTask(text);
-        }}
-      >
-        Add
-      </button>
-    </>
+    <MiniForm
+      onFormSubmit={text => {
+        onAddTask(text);
+        setText('');
+      }}
+      filling={`Add element ${text}`}
+      icon={<RiAddCircleFill />}
+    />
   );
+};
+
+AddTask.propTypes = {
+  onAddTask: PropTypes.func.isRequired,
 };
 
 export default AddTask;

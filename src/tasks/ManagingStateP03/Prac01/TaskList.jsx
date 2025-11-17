@@ -30,12 +30,6 @@ const Task = ({ task, onChange, onDelete }) => {
   if (isEditing) {
     taskContent = (
       <>
-        {/* <input
-          value={task.text}
-          onChange={e => {
-            onChange({ ...task, text: e.target.value });
-          }}
-        /> */}
         <Input
           inputName={`TaskP01 ${task.id}`}
           inputValue={task.text}
@@ -44,7 +38,6 @@ const Task = ({ task, onChange, onDelete }) => {
           }}
           icon={<FiEdit3 />}
         />
-        {/* <button onClick={() => setIsEditing(false)}>Save</button> */}
         <IconButton
           icon={<RiSave3Fill />}
           caption="save"
@@ -56,7 +49,6 @@ const Task = ({ task, onChange, onDelete }) => {
     taskContent = (
       <>
         <ItemCheckedText content={task.text} checked={task.done} />
-        {/* <button onClick={() => setIsEditing(true)}>Edit</button> */}
         <IconButton
           icon={<RiFileEditFill />}
           caption="edit"
@@ -67,7 +59,6 @@ const Task = ({ task, onChange, onDelete }) => {
   }
 
   return (
-    // <label>
     <ItemLabel>
       <input
         type="checkbox"
@@ -77,7 +68,6 @@ const Task = ({ task, onChange, onDelete }) => {
         }}
       />
       {taskContent}
-      {/* <button onClick={() => onDelete(task.id)}>Delete</button> */}
       <IconButton
         icon={<RiDeleteBinFill />}
         caption="delete"

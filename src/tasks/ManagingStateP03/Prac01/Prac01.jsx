@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
+import { Title } from 'components';
 
 let nextId = 3;
 const initialTasks = [
@@ -41,7 +42,7 @@ const Prac01 = () => {
 
   return (
     <>
-      <h3>Prague itinerary</h3>
+      <Title level={3} caption="Prague itinerary" />
       <AddTask onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}

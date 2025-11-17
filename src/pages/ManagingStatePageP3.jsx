@@ -36,10 +36,10 @@ const ManagingStatePageP3 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01">
+          <Card title="prac 01: tasks bu usestate-hook">
             <Prac01 />
           </Card>
-          <Card title="prac 02: tasks by reducer">
+          <Card title="prac 02: tasks by usereducer-hook">
             <Prac02 />
           </Card>
           {/* <Card title="prac 03: set up lifting state up">

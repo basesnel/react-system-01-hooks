@@ -6,7 +6,7 @@ const ManagingStatePageP3 = () => {
   const {
     Prac01,
     Prac02,
-    // Prac03,
+    Prac03,
     // Prac04,
     // Prac05,
     // Prac06,
@@ -42,10 +42,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 02: tasks by usereducer-hook">
             <Prac02 />
           </Card>
-          {/* <Card title="prac 03: set up lifting state up">
+          <Card title="prac 03: tasks with extracted tasksReducer">
             <Prac03 />
           </Card>
-          <Card title="task 01: synced inputs">
+          {/* <Card title="task 01: synced inputs">
             <Task01 />
           </Card>
           <Card title="task 02: filtering a list">

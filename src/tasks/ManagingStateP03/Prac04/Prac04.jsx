@@ -11,7 +11,7 @@ const initialTasks = [
   { id: 2, text: 'Lennon Wall pic', done: false },
 ];
 
-const Prac03 = () => {
+const Prac04 = () => {
   const [tasks, dispatch] = useImmerReducer(tasksReducer, initialTasks);
 
   const handleAddTask = text => {
@@ -49,4 +49,4 @@ const Prac03 = () => {
   );
 };
 
-export default Prac03;
+export default Prac04;

@@ -1,6 +1,7 @@
 import { useReducer } from 'react';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
+import { Title } from 'components';
 import tasksReducer from './tasksReducer';
 
 let nextId = 3;
@@ -37,7 +38,7 @@ const Prac03 = () => {
 
   return (
     <>
-      <h3>Prague itinerary</h3>
+      <Title level={3} caption="Prague itinerary" />
       <AddTask onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}

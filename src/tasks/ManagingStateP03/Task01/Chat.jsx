@@ -1,10 +1,15 @@
-const Chat = ({ contact, message }) => {
+const Chat = ({ contact, message, dispatch }) => {
   return (
     <section>
       <textarea
         value={message}
         placeholder={'Chat to ' + contact.name}
-        onChange={() => {}}
+        onChange={e => {
+          dispatch({
+            type: 'edited_message',
+            message: e.target.value,
+          });
+        }}
       />
       <br />
       <button>Send to {contact.email}</button>

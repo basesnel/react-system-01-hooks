@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
+import { Title } from 'components';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
-import { Title } from 'components';
 import tasksReducer from './tasksReducer';
 
 let nextId = 3;

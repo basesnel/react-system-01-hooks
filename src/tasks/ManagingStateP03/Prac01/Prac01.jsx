@@ -1,7 +1,7 @@
 import { useState } from 'react';
+import { Title } from 'components';
 import AddTask from './AddTask';
 import TaskList from './TaskList';
-import { Title } from 'components';
 
 let nextId = 3;
 const initialTasks = [

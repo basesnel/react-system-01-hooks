@@ -19,7 +19,7 @@ const ManagingStatePageP3 = () => {
     // Prac13,
     // Prac14,
     // Prac15,
-    // Task01,
+    Task01,
     // Task02,
     // Task03,
     // Task04,
@@ -48,10 +48,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 04: tasks with extracted tasksReducer - by useImmerReducer">
             <Prac04 />
           </Card>
-          {/* <Card title="task 02: filtering a list">
-            <Task02 />
+          <Card title="task 01: dispatch actions from event handlers">
+            <Task01 />
           </Card>
-          <Card title="prac 04: state is tied to a position in the render tree">
+          {/* <Card title="prac 04: state is tied to a position in the render tree">
             <Prac04 />
           </Card>
           <Card title="prac 05: group related state">

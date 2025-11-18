@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { Button, CheckBox, FlexBox, Span } from 'components';
+import { CheckBox, FlexBox } from 'components';
+import { CounterP04 } from '../intendendComponents';
 
-import styles from './styles.module.css';
+// import styles from './styles.module.css';
 
 const Prac05 = () => {
   const [showB, setShowB] = useState(true);
@@ -9,8 +10,8 @@ const Prac05 = () => {
   return (
     <>
       <FlexBox>
-        <Counter />
-        {showB && <Counter />}
+        <CounterP04 />
+        {showB && <CounterP04 />}
       </FlexBox>
       <CheckBox
         name="Prac05Checkbox"
@@ -22,23 +23,23 @@ const Prac05 = () => {
   );
 };
 
-const Counter = () => {
-  const [score, setScore] = useState(0);
-  const [hover, setHover] = useState(false);
+// const Counter = () => {
+//   const [score, setScore] = useState(0);
+//   const [hover, setHover] = useState(false);
 
-  let className = `${styles.counter}`;
-  if (hover) className += ` ${styles.hover}`;
+//   let className = `${styles.counter}`;
+//   if (hover) className += ` ${styles.hover}`;
 
-  return (
-    <div
-      className={className}
-      onPointerEnter={() => setHover(true)}
-      onPointerLeave={() => setHover(false)}
-    >
-      <Span weighted>{score}</Span>
-      <Button caption="Add one" onClick={() => setScore(score + 1)} />
-    </div>
-  );
-};
+//   return (
+//     <div
+//       className={className}
+//       onPointerEnter={() => setHover(true)}
+//       onPointerLeave={() => setHover(false)}
+//     >
+//       <Span weighted>{score}</Span>
+//       <Button caption="Add one" onClick={() => setScore(score + 1)} />
+//     </div>
+//   );
+// };
 
 export default Prac05;

@@ -1,8 +1,6 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Button, CheckBox, FlexBox, Span } from 'components';
-
-import styles from './styles.module.css';
+import { CheckBox, FlexBox } from 'components';
+import { CounterP06 } from '../intendendComponents';
 
 const Prac06 = () => {
   const [isFancy, setIsFancy] = useState(false);
@@ -10,7 +8,11 @@ const Prac06 = () => {
   return (
     <>
       <FlexBox>
-        {isFancy ? <Counter isFancy={true} /> : <Counter isFancy={false} />}
+        {isFancy ? (
+          <CounterP06 isFancy={true} />
+        ) : (
+          <CounterP06 isFancy={false} />
+        )}
       </FlexBox>
       <CheckBox
         name="Prac06Checkbox"
@@ -20,33 +22,6 @@ const Prac06 = () => {
       />
     </>
   );
-};
-
-const Counter = ({ isFancy }) => {
-  const [score, setScore] = useState(0);
-  const [hover, setHover] = useState(false);
-
-  let className = `${styles.counter}`;
-  let color = isFancy ? '#ff6767' : null;
-  if (hover) className += ` ${styles.hover}`;
-  if (isFancy) className += ` ${styles.fancy}`;
-
-  return (
-    <div
-      className={className}
-      onPointerEnter={() => setHover(true)}
-      onPointerLeave={() => setHover(false)}
-    >
-      <Span weighted color={color}>
-        {score}
-      </Span>
-      <Button caption="Add one" onClick={() => setScore(score + 1)} />
-    </div>
-  );
-};
-
-Counter.propTypes = {
-  isFancy: PropTypes.bool.isRequired,
 };
 
 export default Prac06;

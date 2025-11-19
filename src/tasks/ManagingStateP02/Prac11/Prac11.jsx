@@ -1,15 +1,17 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-import { Button, FlexBox, Span } from 'components';
-
-import styles from './styles.module.css';
+import { Button, FlexBox } from 'components';
+import { CounterP11 } from '../intendendComponents';
 
 const Prac11 = () => {
   const [isPlayerA, setIsPlayerA] = useState(true);
 
   return (
     <FlexBox direction="column">
-      {isPlayerA ? <Counter person="Taylor" /> : <Counter person="Sarah" />}
+      {isPlayerA ? (
+        <CounterP11 person="Taylor" />
+      ) : (
+        <CounterP11 person="Sarah" />
+      )}
       <Button
         type="button"
         onClick={() => setIsPlayerA(!isPlayerA)}
@@ -17,35 +19,6 @@ const Prac11 = () => {
       />
     </FlexBox>
   );
-};
-
-const Counter = ({ person }) => {
-  const [score, setScore] = useState(0);
-  const [hover, setHover] = useState(false);
-
-  let className = `${styles.counter}`;
-  if (hover) className += ` ${styles.hover}`;
-
-  return (
-    <div
-      className={className}
-      onPointerEnter={() => setHover(true)}
-      onPointerLeave={() => setHover(false)}
-    >
-      <Span weighted>
-        {person}'s score: {score}
-      </Span>
-      <Button
-        type="button"
-        caption="Add one"
-        onClick={() => setScore(score + 1)}
-      />
-    </div>
-  );
-};
-
-Counter.propTypes = {
-  person: PropTypes.string.isRequired,
 };
 
 export default Prac11;

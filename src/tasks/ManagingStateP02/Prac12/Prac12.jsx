@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button, FlexBox } from 'components';
 import { CounterP11 } from '../intendendComponents';
 
-const Prac11 = () => {
+const Prac12 = () => {
   const [isPlayerA, setIsPlayerA] = useState(true);
 
   return (
@@ -18,4 +18,4 @@ const Prac11 = () => {
   );
 };
 
-export default Prac11;
+export default Prac12;

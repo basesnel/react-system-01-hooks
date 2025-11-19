@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { Button, Caption, CheckBox, FlexBox, Span } from 'components';
-
-import styles from './styles.module.css';
+import { Caption, CheckBox, FlexBox } from 'components';
+import { CounterP04 } from '../intendendComponents';
 
 const Prac08 = () => {
   const [isPaused, setIsPaused] = useState(false);
@@ -9,7 +8,7 @@ const Prac08 = () => {
   return (
     <>
       <FlexBox>
-        {isPaused ? <Caption text="See you later!" /> : <Counter />}
+        {isPaused ? <Caption text="See you later!" /> : <CounterP04 />}
       </FlexBox>
       <CheckBox
         name="Prac08Checkbox"
@@ -18,25 +17,6 @@ const Prac08 = () => {
         label="Take a break"
       />
     </>
-  );
-};
-
-const Counter = () => {
-  const [score, setScore] = useState(0);
-  const [hover, setHover] = useState(false);
-
-  let className = `${styles.counter}`;
-  if (hover) className += ` ${styles.hover}`;
-
-  return (
-    <div
-      className={className}
-      onPointerEnter={() => setHover(true)}
-      onPointerLeave={() => setHover(false)}
-    >
-      <Span weighted>{score}</Span>
-      <Button caption="Add one" onClick={() => setScore(score + 1)} />
-    </div>
   );
 };
 

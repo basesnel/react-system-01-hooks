@@ -1,6 +1,6 @@
 const initialState = {
   selectedId: 0,
-  messages: { 0: 'Hello, Tylor', 1: 'Hello, Alice', 3: 'Hello, Bob' },
+  messages: { 0: 'Hello, Tylor', 1: 'Hello, Alice', 2: 'Hello, Bob' },
 };
 
 const messengerReducer = (state, action) => {

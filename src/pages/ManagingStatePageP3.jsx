@@ -20,7 +20,7 @@ const ManagingStatePageP3 = () => {
     // Prac14,
     // Prac15,
     Task01,
-    // Task02,
+    Task02,
     // Task03,
     // Task04,
     // Task05,
@@ -51,10 +51,10 @@ const ManagingStatePageP3 = () => {
           <Card title="task 01: dispatch actions from event handlers">
             <Task01 />
           </Card>
-          {/* <Card title="prac 04: state is tied to a position in the render tree">
-            <Prac04 />
+          <Card title="task 02: clear the input on sending a message">
+            <Task02 />
           </Card>
-          <Card title="prac 05: group related state">
+          {/* <Card title="prac 05: group related state">
             <Prac05 />
           </Card>
           <Card title="prac 06: same component at the same position preserves state">

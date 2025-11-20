@@ -22,7 +22,7 @@ const ManagingStatePageP3 = () => {
     Task01,
     Task02,
     Task03,
-    // Task04,
+    Task04,
     // Task05,
     // Task06,
     // Task07,
@@ -56,6 +56,9 @@ const ManagingStatePageP3 = () => {
           </Card>
           <Card title="task 03: restore input values when switching between tabs">
             <Task03 />
+          </Card>
+          <Card title="task 04: implement useReducer from scratch">
+            <Task04 />
           </Card>
           {/* <Card title="prac 05: group related state">
             <Prac05 />

@@ -5,6 +5,7 @@ import CounterP04 from './CounterP04';
 import CounterP06 from './CounterP06';
 import CounterP11 from './CounterP11';
 import ChatP14 from './ChatP14';
+import ContactListP14 from './ContactListP14';
 
 export {
   PanelP01,
@@ -14,4 +15,5 @@ export {
   CounterP06,
   CounterP11,
   ChatP14,
+  ContactListP14,
 };

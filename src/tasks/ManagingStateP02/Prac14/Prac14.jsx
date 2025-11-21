@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FlexBox } from 'components';
 import ContactList from './ContactList';
-import Chat from './Chat';
+import { ChatP14 } from '../intendendComponents';
 
 const contacts = [
   { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
@@ -19,7 +19,7 @@ const Prac14 = () => {
         selectedContact={to}
         onSelect={contact => setTo(contact)}
       />
-      <Chat contact={to} />
+      <ChatP14 contact={to} />
     </FlexBox>
   );
 };

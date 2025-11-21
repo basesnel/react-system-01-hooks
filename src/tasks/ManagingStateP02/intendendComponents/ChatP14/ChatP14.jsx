@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
-const Chat = ({ contact }) => {
+const ChatP14 = ({ contact }) => {
   const [text, setText] = useState('');
 
   const handleChatSubmit = event => {
@@ -32,7 +32,7 @@ const Chat = ({ contact }) => {
   );
 };
 
-Chat.propTypes = {
+ChatP14.propTypes = {
   contact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
@@ -40,4 +40,4 @@ Chat.propTypes = {
   }).isRequired,
 };
 
-export default Chat;
+export default ChatP14;

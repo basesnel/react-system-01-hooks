@@ -24,7 +24,7 @@ const ChatP14 = ({ contact, name }) => {
         textAreaName={name}
         textAreaValue={text}
         handleChange={e => setText(e.target.value)}
-        textAreaPlaceholder={'Chat to' + contact.name}
+        textAreaPlaceholder={'Chat to ' + contact.name}
         icon={<MdChat />}
       />
       <Button type="submit" caption={`Send to ${contact.email}`} />

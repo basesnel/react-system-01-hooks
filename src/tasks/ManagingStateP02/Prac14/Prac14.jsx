@@ -18,7 +18,7 @@ const Prac14 = () => {
         selectedContact={to}
         onSelect={contact => setTo(contact)}
       />
-      <ChatP14 contact={to} />
+      <ChatP14 contact={to} name="Prac14Text" />
     </FlexBox>
   );
 };

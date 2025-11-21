@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
-const ChatP14 = ({ contact }) => {
+const ChatP14 = ({ contact, name }) => {
   const [text, setText] = useState('');
 
   const handleChatSubmit = event => {
@@ -21,7 +21,7 @@ const ChatP14 = ({ contact }) => {
   return (
     <Form onSubmit={handleChatSubmit}>
       <TextArea
-        textAreaName="Prac14Text"
+        textAreaName={name}
         textAreaValue={text}
         handleChange={e => setText(e.target.value)}
         textAreaPlaceholder={'Chat to' + contact.name}

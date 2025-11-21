@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { SearchBarT02 } from '../intendendComponents';
 import { filterItems, foods } from './data';
-
-import styles from './styles.module.css';
 
 const Task02 = () => {
   const [query, setQuery] = useState('');
@@ -15,26 +14,10 @@ const Task02 = () => {
 
   return (
     <>
-      <Searchbar query={query} handleQuery={handleChange} />
+      <SearchBarT02 query={query} handleQuery={handleChange} />
       <hr />
       <List items={items} />
     </>
-  );
-};
-
-const Searchbar = ({ query, handleQuery }) => {
-  return (
-    <label className={styles.label}>
-      <span className={styles.span}>Search: </span>
-      <input
-        className={styles.input}
-        name="Task02 search"
-        size={10}
-        value={query}
-        onChange={handleQuery}
-        placeholder="Type any text..."
-      />
-    </label>
   );
 };
 
@@ -51,11 +34,6 @@ const List = ({ items }) => {
       </tbody>
     </table>
   );
-};
-
-Searchbar.propTypes = {
-  query: PropTypes.string.isRequired,
-  handleQuery: PropTypes.func.isRequired,
 };
 
 List.propTypes = {

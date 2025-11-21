@@ -6,6 +6,7 @@ import CounterP06 from './CounterP06';
 import CounterP11 from './CounterP11';
 import ChatP14 from './ChatP14';
 import ContactListP14 from './ContactListP14';
+import SearchBarT02 from './SearchBarT02';
 
 export {
   PanelP01,
@@ -16,4 +17,5 @@ export {
   CounterP11,
   ChatP14,
   ContactListP14,
+  SearchBarT02,
 };

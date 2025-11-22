@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { Button, ItemFlex, ItemText } from 'components';
 
-const Contact = ({ contact }) => {
+const ContactT07 = ({ contact }) => {
   const [expanded, setExpanded] = useState(false);
 
   return (
@@ -19,7 +19,7 @@ const Contact = ({ contact }) => {
   );
 };
 
-Contact.propTypes = {
+ContactT07.propTypes = {
   contact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
@@ -27,4 +27,4 @@ Contact.propTypes = {
   }).isRequired,
 };
 
-export default Contact;
+export default ContactT07;

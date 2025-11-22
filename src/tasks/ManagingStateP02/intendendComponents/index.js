@@ -13,6 +13,7 @@ import FieldT04 from './FieldT04';
 import ContactListT05 from './ContactListT05';
 import EditContactT05 from './EditContactT05';
 import FigureT06 from './FigureT06';
+import ContactT07 from './ContactT07';
 
 export {
   PanelP01,
@@ -30,4 +31,5 @@ export {
   ContactListT05,
   EditContactT05,
   FigureT06,
+  ContactT07,
 };

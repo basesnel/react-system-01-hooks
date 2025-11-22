@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { FlexBox } from 'components';
-import ContactList from './ContactList';
+// import ContactList from './ContactList';
 import EditContact from './EditContact';
 import { initialContacts } from 'constants';
+import { ContactListT05 } from '../intendendComponents';
 
 const Task05 = () => {
   const [contacts, setContacts] = useState(initialContacts);
@@ -23,7 +24,7 @@ const Task05 = () => {
 
   return (
     <FlexBox direction="column-reverse">
-      <ContactList
+      <ContactListT05
         contacts={contacts}
         selectedId={selectedId}
         onSelect={id => setSelectedId(id)}

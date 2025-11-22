@@ -10,6 +10,7 @@ import SearchBarT02 from './SearchBarT02';
 import ListT02 from './ListT02';
 import FormT03 from './FormT03';
 import FieldT04 from './FieldT04';
+import ContactListT05 from './ContactListT05';
 
 export {
   PanelP01,
@@ -24,4 +25,5 @@ export {
   ListT02,
   FormT03,
   FieldT04,
+  ContactListT05,
 };

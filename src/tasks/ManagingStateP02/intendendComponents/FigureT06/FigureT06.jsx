@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-const Figure = ({ image }) => {
+const FigureT06 = ({ image }) => {
   return (
     <figure className={styles.figure}>
       <img
@@ -16,11 +16,11 @@ const Figure = ({ image }) => {
   );
 };
 
-Figure.propTypes = {
+FigureT06.propTypes = {
   image: PropTypes.shape({
     src: PropTypes.string.isRequired,
     place: PropTypes.string.isRequired,
   }).isRequired,
 };
 
-export default Figure;
+export default FigureT06;

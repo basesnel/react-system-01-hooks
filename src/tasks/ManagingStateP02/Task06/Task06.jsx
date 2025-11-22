@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button, Title, FlexBox } from 'components';
 import { trams } from 'constants';
-import Figure from './Figure';
+import { FigureT06 } from '../intendendComponents';
 
 const Task06 = () => {
   const [index, setIndex] = useState(0);
@@ -20,7 +20,7 @@ const Task06 = () => {
   return (
     <FlexBox direction="column">
       <Title level={3} caption={`Image ${index + 1} of ${trams.length}`} />
-      <Figure image={image} />
+      <FigureT06 image={image} />
       <Button caption="Next" onClick={handleClick} />
     </FlexBox>
   );

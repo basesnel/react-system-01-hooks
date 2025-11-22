@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ListT02, SearchBarT02 } from '../intendendComponents';
-import { filterItems, foods } from './data';
+import { filterItems, foods } from 'constants';
 
 const Task02 = () => {
   const [query, setQuery] = useState('');

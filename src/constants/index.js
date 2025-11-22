@@ -2,6 +2,7 @@ import * as sizes from './sizes';
 import { colorPickerOptions } from './colorPickerOptions';
 import { initialCharacters } from './characters';
 import { images } from './images';
+import { filterItems, foods } from './foods';
 import { getFinalState } from './getFinalState';
 import { initialArtistsList } from './initialArtistsList';
 import { initialContacts } from './initialContacts';
@@ -41,6 +42,8 @@ export {
   initialCharacters,
   images,
   getFinalState,
+  filterItems,
+  foods,
   initialArtistsList,
   initialContacts,
   initialShapesList,

@@ -11,6 +11,7 @@ import ListT02 from './ListT02';
 import FormT03 from './FormT03';
 import FieldT04 from './FieldT04';
 import ContactListT05 from './ContactListT05';
+import EditContactT05 from './EditContactT05';
 
 export {
   PanelP01,
@@ -26,4 +27,5 @@ export {
   FormT03,
   FieldT04,
   ContactListT05,
+  EditContactT05,
 };

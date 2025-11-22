@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import { FlexBox } from 'components';
-// import ContactList from './ContactList';
-import EditContact from './EditContact';
 import { initialContacts } from 'constants';
-import { ContactListT05 } from '../intendendComponents';
+import { ContactListT05, EditContactT05 } from '../intendendComponents';
 
 const Task05 = () => {
   const [contacts, setContacts] = useState(initialContacts);
@@ -29,7 +27,7 @@ const Task05 = () => {
         selectedId={selectedId}
         onSelect={id => setSelectedId(id)}
       />
-      <EditContact
+      <EditContactT05
         key={selectedId}
         initialData={selectedContact}
         onSave={handleSave}

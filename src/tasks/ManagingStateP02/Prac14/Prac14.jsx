@@ -1,20 +1,15 @@
 import { useState } from 'react';
 import { FlexBox } from 'components';
 import { ChatP14, ContactListP14 } from '../intendendComponents';
-
-const contacts = [
-  { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
-  { id: 1, name: 'Alice', email: 'alice@mail.com' },
-  { id: 2, name: 'Bob', email: 'bob@mail.com' },
-];
+import { initialContacts } from 'constants';
 
 const Prac14 = () => {
-  const [to, setTo] = useState(contacts[0]);
+  const [to, setTo] = useState(initialContacts[0]);
 
   return (
     <FlexBox direction="column-reverse">
       <ContactListP14
-        contacts={contacts}
+        contacts={initialContacts}
         selectedContact={to}
         onSelect={contact => setTo(contact)}
       />

@@ -38,6 +38,7 @@ ChatP14.propTypes = {
     name: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired,
   }).isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default ChatP14;

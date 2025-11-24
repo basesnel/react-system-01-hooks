@@ -1,9 +1,23 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { FiFilter } from 'react-icons/fi';
 import { Box, Button, Input, List, Item, ItemFlex, ItemText } from 'components';
 import { initialCharacters } from 'constants';
 
 const Characters = () => {
+  useEffect(() => {
+    const getCharacters = () => {
+      return fetch('./jsons/characters.json').then(response => response.json());
+    };
+
+    try {
+      getCharacters().then(value => {
+        console.log(value);
+      });
+    } catch (error) {
+      console.log(error);
+    }
+  }, []);
+
   const [count, setCount] = useState(0);
   const [characters] = useState(initialCharacters);
   const [filter, setFilter] = useState('');

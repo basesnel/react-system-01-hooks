@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
@@ -31,21 +32,21 @@ const Chat = ({ contact, message, name, dispatch }) => {
         textAreaPlaceholder={'Chat to ' + contact.name}
         icon={<MdChat />}
       />
-      {/* <textarea
-        value={message}
-        placeholder={'Chat to ' + contact.name}
-        onChange={e => {
-          dispatch({
-            type: 'edited_message',
-            message: e.target.value,
-          });
-        }}
-      /> */}
       <br />
       <Button type="submit" caption={`Send to ${contact.email}`} />
-      {/* <button>Send to {contact.email}</button> */}
     </Form>
   );
+};
+
+Chat.propTypes = {
+  contact: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    email: PropTypes.string.isRequired,
+  }).isRequired,
+  message: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  dispatch: PropTypes.func.isRequired,
 };
 
 export default Chat;

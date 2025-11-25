@@ -9,7 +9,7 @@ const ManagingStatePageP3 = () => {
     Prac03,
     Prac04,
     Prac05,
-    // Prac06,
+    Prac06,
     // Prac07,
     // Prac08,
     // Prac09,
@@ -63,10 +63,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 05: context: an alternative to passing props">
             <Prac05 />
           </Card>
-          {/* <Card title="prac 06: same component at the same position preserves state">
+          <Card title="prac 06: same component at the same position preserves state">
             <Prac06 />
           </Card>
-          <Card title="prac 07: pitfall of the position in the ui-tree">
+          {/* <Card title="prac 07: pitfall of the position in the ui-tree">
             <Prac07 />
           </Card>
           <Card title="prac 08: diffrent components at the same position reset state">

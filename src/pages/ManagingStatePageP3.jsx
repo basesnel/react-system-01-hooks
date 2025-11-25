@@ -8,7 +8,7 @@ const ManagingStatePageP3 = () => {
     Prac02,
     Prac03,
     Prac04,
-    // Prac05,
+    Prac05,
     // Prac06,
     // Prac07,
     // Prac08,
@@ -60,10 +60,10 @@ const ManagingStatePageP3 = () => {
           <Card title="task 04: implement useReducer from scratch">
             <Task04 />
           </Card>
-          {/* <Card title="prac 05: group related state">
+          <Card title="prac 05: context: an alternative to passing props">
             <Prac05 />
           </Card>
-          <Card title="prac 06: same component at the same position preserves state">
+          {/* <Card title="prac 06: same component at the same position preserves state">
             <Prac06 />
           </Card>
           <Card title="prac 07: pitfall of the position in the ui-tree">

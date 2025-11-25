@@ -32,7 +32,6 @@ const Chat = ({ contact, message, name, dispatch }) => {
         textAreaPlaceholder={'Chat to ' + contact.name}
         icon={<MdChat />}
       />
-      <br />
       <Button type="submit" caption={`Send to ${contact.email}`} />
     </Form>
   );

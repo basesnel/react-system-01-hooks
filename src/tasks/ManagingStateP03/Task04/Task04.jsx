@@ -26,6 +26,7 @@ const Task04 = () => {
         message={message}
         contact={contact}
         dispatch={dispatch}
+        name="TextAreaT04"
       />
     </div>
   );

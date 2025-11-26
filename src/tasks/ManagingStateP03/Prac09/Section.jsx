@@ -1,0 +1,17 @@
+import { useContext } from 'react';
+import { LevelContext } from './LevelContext';
+import styles from './styles.module.css';
+
+const Section = ({ isFancy, children }) => {
+  const level = useContext(LevelContext);
+
+  return (
+    <section className={`${styles.section} ${isFancy ? styles.isFancy : ''}`}>
+      <LevelContext.Provider value={level + 1}>
+        {children}
+      </LevelContext.Provider>
+    </section>
+  );
+};
+
+export default Section;

@@ -12,7 +12,7 @@ const ManagingStatePageP3 = () => {
     Prac06,
     Prac07,
     Prac08,
-    // Prac09,
+    Prac09,
     // Prac10,
     // Prac11,
     // Prac12,
@@ -72,10 +72,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 08: using and providing context from the same component">
             <Prac08 />
           </Card>
-          {/* <Card title="prac 09: resetting state in the component's subtree">
+          <Card title="prac 09: context pass throgh intermediate components">
             <Prac09 />
           </Card>
-          <Card title="prac 10: pitfall of nest component definition">
+          {/* <Card title="prac 10: pitfall of nest component definition">
             <Prac10 />
           </Card>
           <Card title="prac 11: resetting state at the same position">

@@ -1,15 +1,10 @@
-import { useContext } from 'react';
 import { LevelContext } from './LevelContext';
 import styles from './styles.module.css';
 
-const Section = ({ children }) => {
-  const level = useContext(LevelContext);
-
+const Section = ({ level, children }) => {
   return (
     <section className={styles.section}>
-      <LevelContext.Provider value={level + 1}>
-        {children}
-      </LevelContext.Provider>
+      <LevelContext.Provider value={level}>{children}</LevelContext.Provider>
     </section>
   );
 };

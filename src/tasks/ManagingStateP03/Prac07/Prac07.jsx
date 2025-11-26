@@ -3,17 +3,17 @@ import Section from './Section';
 
 const Prac07 = () => {
   return (
-    <Section>
+    <Section level={1}>
       <Heading>Title</Heading>
-      <Section>
+      <Section level={2}>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
         <Heading>Heading</Heading>
-        <Section>
+        <Section level={3}>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
           <Heading>Sub-heading</Heading>
-          <Section>
+          <Section level={4}>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>
             <Heading>Sub-sub-heading</Heading>

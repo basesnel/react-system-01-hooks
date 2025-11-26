@@ -5,9 +5,11 @@ import styles from './styles.module.css';
 const Section = ({ children }) => {
   const level = useContext(LevelContext);
   return (
-    <LevelContext value={level + 1}>
-      <section className={styles.section}>{children}</section>
-    </LevelContext>
+    <section className={styles.section}>
+      <LevelContext.Provider value={level + 1}>
+        {children}
+      </LevelContext.Provider>
+    </section>
   );
 };
 

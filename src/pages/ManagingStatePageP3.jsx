@@ -10,7 +10,7 @@ const ManagingStatePageP3 = () => {
     Prac04,
     Prac05,
     Prac06,
-    // Prac07,
+    Prac07,
     // Prac08,
     // Prac09,
     // Prac10,
@@ -66,10 +66,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 06: multiple headings">
             <Prac06 />
           </Card>
-          {/* <Card title="prac 07: craating a context">
+          <Card title="prac 07: craating a context">
             <Prac07 />
           </Card>
-          <Card title="prac 08: diffrent components at the same position reset state">
+          {/* <Card title="prac 08: diffrent components at the same position reset state">
             <Prac08 />
           </Card>
           <Card title="prac 09: resetting state in the component's subtree">

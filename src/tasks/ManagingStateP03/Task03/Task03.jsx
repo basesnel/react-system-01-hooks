@@ -2,6 +2,7 @@ import { useReducer } from 'react';
 import { initialState, messengerReducer } from './messengerReducer';
 import ContactList from './ContactList';
 import Chat from './Chat';
+import { FlexBox } from 'components';
 
 const contacts = [
   { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
@@ -15,7 +16,7 @@ const Task03 = () => {
   const contact = contacts.find(c => c.id === state.selectedId);
 
   return (
-    <div>
+    <FlexBox direction="column-reverse">
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
@@ -28,7 +29,7 @@ const Task03 = () => {
         name="TextAreaT03"
         dispatch={dispatch}
       />
-    </div>
+    </FlexBox>
   );
 };
 

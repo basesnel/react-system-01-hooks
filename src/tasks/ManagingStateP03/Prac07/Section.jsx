@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 
 const Section = ({ children }) => {
   const level = useContext(LevelContext);
+
   return (
     <section className={styles.section}>
       <LevelContext.Provider value={level + 1}>

@@ -52,8 +52,13 @@ const Heading = props => {
 
 Heading.propTypes = {
   level: PropTypes.number.isRequired,
+  isPageTitle: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
+};
+
+Heading.defaultProps = {
+  isPageTitle: false,
 };
 
 export default Heading;

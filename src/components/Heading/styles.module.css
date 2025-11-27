@@ -1,108 +1,30 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
 
-.title01 {
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid var(--color-caption);
-  text-align: center;
-  font-size: var(--fs-title-i-mobile);
-  font-weight: 700;
-  line-height: 1.25;
-  text-transform: uppercase;
+.heading {
   color: var(--color-caption);
 }
 
-@media mobile-to {
-  .title01 {
-    font-size: var(--fs-title-i-smartphone);
-  }
+.heading01 {
+  margin-bottom: 1em;
 }
 
-@media smartphone-to {
-  .title01 {
-    font-size: var(--fs-title-i-tablet);
-  }
+.heading02 {
+  margin-bottom: 0.75em;
 }
 
-@media tablet-to {
-  .title01 {
-    text-align: left;
-    font-size: var(--fs-title-i-desktop);
-  }
+.heading03 {
+  margin-bottom: 0.6em;
 }
 
-@media desktop-to {
-  .title01 {
-    font-size: var(--fs-title-i-tv);
-  }
+.heading04 {
+  margin-bottom: 0.5em;
 }
 
-.title02 {
-  padding-bottom: 10px;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: var(--fs-title-ii-mobile);
-  font-weight: 600;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: var(--color-caption);
+.heading05 {
+  margin-bottom: 0.4em;
 }
 
-@media mobile-to {
-  .title02 {
-    font-size: var(--fs-title-ii-smartphone);
-  }
-}
-
-@media smartphone-to {
-  .title02 {
-    font-size: var(--fs-title-ii-tablet);
-  }
-}
-
-.title03 {
-  padding-bottom: 10px;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: var(--fs-text-mobile);
-  font-weight: 600;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: var(--color-caption);
-}
-
-@media mobile-to {
-  .title03 {
-    font-size: var(--fs-text-smartphone);
-  }
-}
-
-@media smartphone-to {
-  .title03 {
-    font-size: var(--fs-text-tablet);
-  }
-}
-
-.title04 {
-  padding-bottom: 10px;
-  margin-bottom: 0;
-  text-align: center;
-  font-size: var(--fs-text-mobile);
-  font-weight: 600;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: var(--color-caption);
-}
-
-@media mobile-to {
-  .title04 {
-    font-size: var(--fs-text-smartphone);
-  }
-}
-
-@media smartphone-to {
-  .title04 {
-    font-size: var(--fs-text-tablet);
-  }
+.heading06 {
+  margin-bottom: 0.33em;
 }

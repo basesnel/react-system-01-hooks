@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Heading = props => {
-  const { level, children } = props;
+  const { level, isPageTitle, children } = props;
 
   switch (level) {
     case 0:
@@ -11,7 +11,13 @@ const Heading = props => {
 
     case 1:
       return (
-        <h1 className={`${styles.heading} ${styles.heading01}`}>{children}</h1>
+        <h1
+          className={`${styles.heading} ${styles.heading01} ${
+            isPageTitle ? styles.pageTitle : ''
+          }`}
+        >
+          {children}
+        </h1>
       );
 
     case 2:

@@ -6,16 +6,13 @@ import { TextArea, Button, Form } from 'components';
 const Chat = ({ contact, message, name, dispatch }) => {
   const handleChatSubmit = event => {
     event.preventDefault();
-    dispatch({
-      type: 'edited_message',
-      message: '',
-    });
+    dispatch({ type: 'sent_message' });
 
     if (!message.trim().length) {
       return toast.error(`Text-field is empty - please, enter it!`);
     }
 
-    return toast.success(`${message} sent!`);
+    return toast.success(`Sending "${message}" to ${contact.email}`);
   };
 
   return (

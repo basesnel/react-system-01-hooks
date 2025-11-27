@@ -1,4 +1,5 @@
-import Heading from './Heading';
+// import Heading from './Heading';
+import { Heading } from 'components';
 import Section from './Section';
 
 const Prac05 = () => {

@@ -31,7 +31,6 @@ const ManagingStatePageP3 = () => {
   return (
     <main>
       <Container>
-        {/* <Title level={1} caption="managing state - part iii" /> */}
         <Heading level={1} isPageTitle>
           managing state - part iii
         </Heading>

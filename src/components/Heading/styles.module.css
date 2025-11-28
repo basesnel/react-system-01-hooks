@@ -8,9 +8,13 @@
   line-height: 1.25;
 }
 
+.heading01,
+.pageTitle {
+  font-size: fs-page-title-mobile;
+}
+
 .heading01 {
-  margin-bottom: 32px;
-  font-size: 32px;
+  margin-bottom: fs-page-title-mobile;
 }
 
 .heading02 {
@@ -43,30 +47,49 @@
   border-bottom: 1px solid var(--color-caption);
   text-transform: uppercase;
   text-align: center;
-  font-size: fs-page-title-mobile;
 }
 
 @media mobile {
+  .heading01,
   .pageTitle {
     font-size: fs-page-title-smartphone;
+  }
+
+  .heading01 {
+    margin-bottom: fs-page-title-smartphone;
   }
 }
 
 @media smartphone {
+  .heading01,
   .pageTitle {
     font-size: fs-page-title-tablet;
+  }
+
+  .heading01 {
+    margin-bottom: fs-page-title-tablet;
   }
 }
 
 @media tablet {
+  .heading01,
   .pageTitle {
-    text-align: left;
+    text-align: initial;
     font-size: fs-page-title-desktop;
+  }
+
+  .heading01 {
+    margin-bottom: fs-page-title-desktop;
   }
 }
 
 @media desktop {
+  .heading01,
   .pageTitle {
     font-size: fs-page-title-tv;
+  }
+
+  .heading01 {
+    margin-bottom: fs-page-title-tv;
   }
 }

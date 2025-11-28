@@ -31,7 +31,7 @@ const ManagingStatePageP1 = () => {
         <Heading level={1} isPageTitle>
           managing state - part i
         </Heading>
-        <P>Array in state of React-component case.</P>
+        <P>Managing state in react-components.</P>
       </Container>
       <Container>
         <Grid>

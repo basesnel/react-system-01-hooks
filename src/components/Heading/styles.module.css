@@ -1,8 +1,9 @@
 @value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, smartphone-to, tablet-to, desktop-to from sizes;
+@value mobile, smartphone, tablet, desktop from sizes;
 
 .heading {
   color: var(--color-caption);
+  line-height: 1.25;
 }
 
 .heading01 {
@@ -33,4 +34,31 @@
   padding-bottom: 10px;
   border-bottom: 1px solid var(--color-caption);
   text-transform: uppercase;
+  text-align: center;
+  font-size: var(--fs-title-i-mobile);
+}
+
+@media mobile {
+  .pageTitle {
+    font-size: var(--fs-title-i-smartphone);
+  }
+}
+
+@media smartphone {
+  .pageTitle {
+    font-size: var(--fs-title-i-tablet);
+  }
+}
+
+@media tablet {
+  .pageTitle {
+    text-align: left;
+    font-size: var(--fs-title-i-desktop);
+  }
+}
+
+@media desktop {
+  .pageTitle {
+    font-size: var(--fs-title-i-tv);
+  }
 }

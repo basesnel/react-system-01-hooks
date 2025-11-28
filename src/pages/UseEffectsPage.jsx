@@ -1,4 +1,4 @@
-import { Container, Title, P, Grid, Card } from 'components';
+import { Container, P, Grid, Card, Heading } from 'components';
 
 import { useEffectsCases } from 'tasks';
 
@@ -25,7 +25,9 @@ const UseEffectsPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="useeffect cases" />
+        <Heading level={1} isPageTitle>
+          useeffect cases
+        </Heading>
         <P>useEffect hook cases.</P>
       </Container>
       <Container>

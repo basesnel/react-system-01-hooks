@@ -4,6 +4,7 @@
 @value heading1-mobile, heading1-smartphone, heading1-tablet, heading1-desktop, heading1-tv from fsheadings;
 @value heading2-mobile, heading2-smartphone, heading2-tablet, heading2-desktop, heading2-tv from fsheadings;
 @value heading3-mobile, heading3-smartphone, heading3-tablet, heading3-desktop, heading3-tv from fsheadings;
+@value heading4, heading5, heading6 from fsheadings;
 
 .heading {
   color: var(--color-caption);
@@ -30,18 +31,18 @@
 }
 
 .heading04 {
-  margin-bottom: 8px;
-  font-size: 16px;
+  margin-bottom: heading4;
+  font-size: heading4;
 }
 
 .heading05 {
-  margin-bottom: 5px;
-  font-size: 14px;
+  margin-bottom: heading5;
+  font-size: heading5;
 }
 
 .heading06 {
-  margin-bottom: 4px;
-  font-size: 11px;
+  margin-bottom: heading6;
+  font-size: heading6;
 }
 
 .pageTitle {

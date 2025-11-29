@@ -1,7 +1,9 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
 @value mobile, smartphone, tablet, desktop from mediasizes;
-@value fs-page-title-mobile, fs-page-title-smartphone, fs-page-title-tablet, fs-page-title-desktop, fs-page-title-tv from fsheadings;
+@value heading1-mobile, heading1-smartphone, heading1-tablet, heading1-desktop, heading1-tv from fsheadings;
+@value heading2-mobile, heading2-smartphone, heading2-tablet, heading2-desktop, heading2-tv from fsheadings;
+@value heading3-mobile, heading3-smartphone, heading3-tablet, heading3-desktop, heading3-tv from fsheadings;
 
 .heading {
   color: var(--color-caption);
@@ -10,21 +12,21 @@
 
 .heading01,
 .pageTitle {
-  font-size: fs-page-title-mobile;
+  font-size: heading1-mobile;
 }
 
 .heading01 {
-  margin-bottom: fs-page-title-mobile;
+  margin-bottom: heading1-mobile;
 }
 
 .heading02 {
-  margin-bottom: 18px;
-  font-size: 24px;
+  margin-bottom: heading3-mobile;
+  font-size: heading2-mobile;
 }
 
 .heading03 {
-  margin-bottom: 12px;
-  font-size: 18px;
+  margin-bottom: heading3-mobile;
+  font-size: heading3-mobile;
 }
 
 .heading04 {
@@ -52,22 +54,42 @@
 @media mobile {
   .heading01,
   .pageTitle {
-    font-size: fs-page-title-smartphone;
+    font-size: heading1-smartphone;
   }
 
   .heading01 {
-    margin-bottom: fs-page-title-smartphone;
+    margin-bottom: heading1-smartphone;
+  }
+
+  .heading02 {
+    margin-bottom: heading2-smartphone;
+    font-size: heading2-smartphone;
+  }
+
+  .heading03 {
+    margin-bottom: heading3-smartphone;
+    font-size: heading3-smartphone;
   }
 }
 
 @media smartphone {
   .heading01,
   .pageTitle {
-    font-size: fs-page-title-tablet;
+    font-size: heading1-tablet;
   }
 
   .heading01 {
-    margin-bottom: fs-page-title-tablet;
+    margin-bottom: heading1-tablet;
+  }
+
+  .heading02 {
+    margin-bottom: heading2-tablet;
+    font-size: heading2-tablet;
+  }
+
+  .heading03 {
+    margin-bottom: heading3-tablet;
+    font-size: heading3-tablet;
   }
 }
 
@@ -75,21 +97,41 @@
   .heading01,
   .pageTitle {
     text-align: initial;
-    font-size: fs-page-title-desktop;
+    font-size: heading1-desktop;
   }
 
   .heading01 {
-    margin-bottom: fs-page-title-desktop;
+    margin-bottom: heading1-desktop;
+  }
+
+  .heading02 {
+    margin-bottom: heading2-desktop;
+    font-size: heading2-desktop;
+  }
+
+  .heading03 {
+    margin-bottom: heading3-desktop;
+    font-size: heading3-desktop;
   }
 }
 
 @media desktop {
   .heading01,
   .pageTitle {
-    font-size: fs-page-title-tv;
+    font-size: heading1-tv;
   }
 
   .heading01 {
-    margin-bottom: fs-page-title-tv;
+    margin-bottom: heading1-tv;
+  }
+
+  .heading02 {
+    margin-bottom: heading2-tv;
+    font-size: heading2-tv;
+  }
+
+  .heading03 {
+    margin-bottom: heading3-tv;
+    font-size: heading3-tv;
   }
 }

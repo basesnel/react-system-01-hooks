@@ -1,5 +1,17 @@
-@value fs-page-title-mobile: 16px;
-@value fs-page-title-smartphone: 20px;
-@value fs-page-title-tablet: 24px;
-@value fs-page-title-desktop: 28px;
-@value fs-page-title-tv: 32px;
+@value heading1-mobile: 16px;
+@value heading1-smartphone: 20px;
+@value heading1-tablet: 24px;
+@value heading1-desktop: 28px;
+@value heading1-tv: 32px;
+
+@value heading2-mobile: 12px;
+@value heading2-smartphone: 15px;
+@value heading2-tablet: 18px;
+@value heading2-desktop: 21px;
+@value heading2-tv: 24px;
+
+@value heading3-mobile: 10px;
+@value heading3-smartphone: 12px;
+@value heading3-tablet: 15px;
+@value heading3-desktop: 16px;
+@value heading3-tv: 18px;

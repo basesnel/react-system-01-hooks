@@ -1,6 +1,5 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
-/* @value mobile, smartphone, tablet, desktop from mediasizes; */
 @value smartphone, desktop from mediasizes;
 @value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
 @value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
@@ -53,27 +52,6 @@
   text-align: center;
 }
 
-/* @media mobile {
-  .heading01,
-  .pageTitle {
-    font-size: heading1-smartphone;
-  }
-
-  .heading01 {
-    margin-bottom: heading1-smartphone;
-  }
-
-  .heading02 {
-    margin-bottom: heading2-smartphone;
-    font-size: heading2-smartphone;
-  }
-
-  .heading03 {
-    margin-bottom: heading3-smartphone;
-    font-size: heading3-smartphone;
-  }
-} */
-
 @media smartphone {
   .heading01,
   .pageTitle {
@@ -94,28 +72,6 @@
     font-size: heading3-tablet;
   }
 }
-
-/* @media tablet {
-  .heading01,
-  .pageTitle {
-    text-align: initial;
-    font-size: heading1-desktop;
-  }
-
-  .heading01 {
-    margin-bottom: heading1-desktop;
-  }
-
-  .heading02 {
-    margin-bottom: heading2-desktop;
-    font-size: heading2-desktop;
-  }
-
-  .heading03 {
-    margin-bottom: heading3-desktop;
-    font-size: heading3-desktop;
-  }
-} */
 
 @media desktop {
   .heading01,

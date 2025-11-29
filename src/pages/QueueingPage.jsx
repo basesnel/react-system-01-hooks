@@ -1,4 +1,4 @@
-import { Container, Title, P } from 'components';
+import { Container, Title, P, Heading } from 'components';
 
 import { queueing } from 'tasks';
 
@@ -8,11 +8,13 @@ const QueueingPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="queueing state tasks" />
+        <Heading level={1} isPageTitle>
+          queueing state tasks
+        </Heading>
         <P>Cases of queueing series states.</P>
       </Container>
       <Container>
-        <Title level={2} caption="fix a request counter" />
+        <Heading level={2}>fix a request counter</Heading>
         <P>
           You&apos;re working on an art marketplace app that lets the user
           submit multiple orders for an art item at the same time. Each time the
@@ -27,7 +29,7 @@ const QueueingPage = () => {
         </P>
         <P>Why does this happen? Fix both counters.</P>
         <FixRequestCounter />
-        <Title level={3} caption="solution" />
+        <Heading level={3}>solution</Heading>
         <P>
           Inside the handleClick event handler, the values of pending and
           completed correspond to what they were at the time of the click event.

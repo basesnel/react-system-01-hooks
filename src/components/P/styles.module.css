@@ -1,9 +1,11 @@
-@value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, smartphone-to from sizes;
+/* @value sizes: "../../cssvariables/media.module.css"; */
+@value fstext: "../../cssvariables/fstext.module.css";
+/* @value mobile-to, smartphone-to from sizes; */
+@value fstext from fstext;
 
 .text {
   padding-bottom: 10px;
-  font-size: var(--fs-text-mobile);
+  font-size: fstext;
   line-height: 1.8;
   color: var(--color-text);
 }
@@ -20,7 +22,7 @@
   color: green;
 }
 
-@media mobile-to {
+/* @media mobile-to {
   .text {
     font-size: var(--fs-text-smartphone);
   }
@@ -30,4 +32,4 @@
   .text {
     font-size: var(--fs-text-tablet);
   }
-}
+} */

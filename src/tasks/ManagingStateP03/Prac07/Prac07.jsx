@@ -1,22 +1,22 @@
-import Heading from './Heading';
 import Section from './Section';
+import Headings from './Headings';
 
 const Prac07 = () => {
   return (
     <Section level={1}>
-      <Heading>Title</Heading>
+      <Headings>Title</Headings>
       <Section level={2}>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
-        <Heading>Heading</Heading>
+        <Headings>Heading</Headings>
+        <Headings>Heading</Headings>
+        <Headings>Heading</Headings>
         <Section level={3}>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
-          <Heading>Sub-heading</Heading>
+          <Headings>Sub-heading</Headings>
+          <Headings>Sub-heading</Headings>
+          <Headings>Sub-heading</Headings>
           <Section level={4}>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
-            <Heading>Sub-sub-heading</Heading>
+            <Headings>Sub-sub-heading</Headings>
+            <Headings>Sub-sub-heading</Headings>
+            <Headings>Sub-sub-heading</Headings>
           </Section>
         </Section>
       </Section>

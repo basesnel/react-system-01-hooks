@@ -1,13 +1,15 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
+@value colors: "../../cssvariables/color.module.css";
 @value smartphone, desktop from mediasizes;
 @value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
 @value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
 @value heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading5, heading6 from fsheadings;
+@value color-text from colors;
 
 .heading {
-  color: var(--color-caption);
+  color: color-text;
   line-height: 1.25;
 }
 

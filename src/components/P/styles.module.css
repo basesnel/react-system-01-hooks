@@ -1,13 +1,13 @@
-/* @value sizes: "../../cssvariables/media.module.css"; */
 @value fstext: "../../cssvariables/fstext.module.css";
-/* @value mobile-to, smartphone-to from sizes; */
+@value color-text: "../../cssvariables/color.module.css";
 @value fstext from fstext;
+@value color-text from color-text;
 
 .text {
   padding-bottom: 10px;
   font-size: fstext;
   line-height: 1.8;
-  color: var(--color-text);
+  color: color-text;
 }
 
 .text.centeredText {
@@ -21,15 +21,3 @@
 .text.greenText {
   color: green;
 }
-
-/* @media mobile-to {
-  .text {
-    font-size: var(--fs-text-smartphone);
-  }
-}
-
-@media smartphone-to {
-  .text {
-    font-size: var(--fs-text-tablet);
-  }
-} */

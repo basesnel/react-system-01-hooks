@@ -19,31 +19,31 @@
 }
 
 .heading01 {
-  margin-bottom: heading1-mobile;
+  margin-bottom: calc(heading1-mobile * 0.5);
 }
 
 .heading02 {
-  margin-bottom: heading3-mobile;
+  margin-bottom: calc(heading2-mobile * 0.5);
   font-size: heading2-mobile;
 }
 
 .heading03 {
-  margin-bottom: heading3-mobile;
+  margin-bottom: calc(heading3-mobile * 0.5);
   font-size: heading3-mobile;
 }
 
 .heading04 {
-  margin-bottom: heading4;
+  margin-bottom: calc(heading4 * 0.5);
   font-size: heading4;
 }
 
 .heading05 {
-  margin-bottom: heading5;
+  margin-bottom: calc(heading5 * 0.5);
   font-size: heading5;
 }
 
 .heading06 {
-  margin-bottom: heading6;
+  margin-bottom: calc(heading6 * 0.5);
   font-size: heading6;
 }
 
@@ -61,16 +61,16 @@
   }
 
   .heading01 {
-    margin-bottom: heading1-tablet;
+    margin-bottom: calc(heading1-tablet * 0.5);
   }
 
   .heading02 {
-    margin-bottom: heading2-tablet;
+    margin-bottom: calc(heading2-tablet * 0.5);
     font-size: heading2-tablet;
   }
 
   .heading03 {
-    margin-bottom: heading3-tablet;
+    margin-bottom: calc(heading3-tablet * 0.5);
     font-size: heading3-tablet;
   }
 }
@@ -83,16 +83,16 @@
   }
 
   .heading01 {
-    margin-bottom: heading1-tv;
+    margin-bottom: calc(heading1-tv * 0.5);
   }
 
   .heading02 {
-    margin-bottom: heading2-tv;
+    margin-bottom: calc(heading2-tv * 0.5);
     font-size: heading2-tv;
   }
 
   .heading03 {
-    margin-bottom: heading3-tv;
+    margin-bottom: calc(heading2-tv * 0.5);
     font-size: heading3-tv;
   }
 }

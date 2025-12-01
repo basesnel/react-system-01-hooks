@@ -1,4 +1,4 @@
-import { Container, Title, P, Grid, Card } from 'components';
+import { Container, Heading, P, Grid, Card } from 'components';
 
 import { objectsInState } from 'tasks';
 
@@ -9,7 +9,9 @@ const ObjectInStatePage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="object in state" />
+        <Heading level={1} isPageTitle>
+          object in state
+        </Heading>
         <P>Object in state of React-component case.</P>
       </Container>
       <Container>

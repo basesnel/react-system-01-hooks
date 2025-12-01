@@ -1,4 +1,4 @@
-import { Container, Title, P, Grid, Card } from 'components';
+import { Container, Heading, P, Grid, Card } from 'components';
 
 import { simpleStates } from 'tasks';
 
@@ -20,7 +20,9 @@ const SimpleStatesPage = () => {
   return (
     <main>
       <Container>
-        <Title level={1} caption="examples of simple states" />
+        <Heading level={1} isPageTitle>
+          examples of simple states
+        </Heading>
         <P>Counter hook case.</P>
       </Container>
       <Container>

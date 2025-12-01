@@ -1,10 +1,10 @@
-import Heading from './Heading';
+import Headings from './Headings';
 import Section from './Section';
 
 const Prac09 = () => {
   return (
     <Section>
-      <Heading>My Profile</Heading>
+      <Headings>My Profile</Headings>
       <Post title="Hello traveller!" body="Read about my adventures." />
       <AllPosts />
     </Section>
@@ -14,7 +14,7 @@ const Prac09 = () => {
 const AllPosts = () => {
   return (
     <Section>
-      <Heading>Posts</Heading>
+      <Headings>Posts</Headings>
       <RecentPosts />
     </Section>
   );
@@ -23,7 +23,7 @@ const AllPosts = () => {
 const RecentPosts = () => {
   return (
     <Section>
-      <Heading>Recent posts</Heading>
+      <Headings>Recent posts</Headings>
       <Post title="Flavors of Lisbon" body="...those pasteis de nata!" />
       <Post title="Buenos Aires in the rithm of tango" body="I love it!" />
     </Section>
@@ -33,7 +33,7 @@ const RecentPosts = () => {
 const Post = ({ title, body }) => {
   return (
     <Section isFancy={true}>
-      <Heading>{title}</Heading>
+      <Headings>{title}</Headings>
       <p>
         <i>{body}</i>
       </p>

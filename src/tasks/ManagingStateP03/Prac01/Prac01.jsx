@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Title } from 'components';
+import { Heading } from 'components';
 import { initialTasks } from 'constants';
 import { AddTaskP01, TaskListP01 } from '../IntendendComponents';
 
@@ -36,7 +36,7 @@ const Prac01 = () => {
 
   return (
     <>
-      <Title level={3} caption="Prague itinerary" />
+      <Heading level={3}>Prague itinerary</Heading>
       <AddTaskP01 onAddTask={handleAddTask} />
       <TaskListP01
         tasks={tasks}

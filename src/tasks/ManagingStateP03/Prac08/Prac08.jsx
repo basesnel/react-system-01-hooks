@@ -6,9 +6,9 @@ const Prac08 = () => {
     <Section>
       <Headings>Title</Headings>
       <Section>
-        <Headings>Headings</Headings>
-        <Headings>Headings</Headings>
-        <Headings>Headings</Headings>
+        <Headings>Heading</Headings>
+        <Headings>Heading</Headings>
+        <Headings>Heading</Headings>
         <Section>
           <Headings>Sub-heading</Headings>
           <Headings>Sub-heading</Headings>

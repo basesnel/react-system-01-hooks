@@ -11,7 +11,7 @@ import {
   ItemCheckedText,
 } from 'components';
 
-const TaskList = ({ tasks, onChangeTask, onDeleteTask }) => {
+const TaskListP01 = ({ tasks, onChangeTask, onDeleteTask }) => {
   return (
     <List message="There is no elements in list.">
       {tasks.map(task => (
@@ -77,7 +77,7 @@ const Task = ({ task, onChange, onDelete }) => {
   );
 };
 
-TaskList.propTypes = {
+TaskListP01.propTypes = {
   tasks: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
@@ -99,4 +99,4 @@ Task.propTypes = {
   onDelete: PropTypes.func.isRequired,
 };
 
-export default TaskList;
+export default TaskListP01;

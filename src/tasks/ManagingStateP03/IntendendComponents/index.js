@@ -1,5 +1,5 @@
 import AddTaskP01 from './AddTaskP01';
-// import PanelP02 from './PanelP02';
+import TaskListP01 from './TaskListP01';
 // import PanelP03 from './PanelP03';
 // import CounterP04 from './CounterP04';
 // import CounterP06 from './CounterP06';
@@ -17,7 +17,7 @@ import AddTaskP01 from './AddTaskP01';
 
 export {
   AddTaskP01,
-  // PanelP02,
+  TaskListP01,
   // PanelP03,
   // CounterP04,
   // CounterP06,

@@ -38,7 +38,7 @@ const ManagingStatePageP3 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: tasks bu usestate-hook">
+          <Card title="prac 01: tasks by usestate-hook">
             <Prac01 />
           </Card>
           <Card title="prac 02: tasks by usereducer-hook">

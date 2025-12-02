@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { Title } from 'components';
-import AddTask from './AddTask';
+// import AddTask from './AddTask';
 import TaskList from './TaskList';
+import { AddTaskP01 } from '../IntendendComponents';
 
 let nextId = 3;
 const initialTasks = [
@@ -43,7 +44,8 @@ const Prac01 = () => {
   return (
     <>
       <Title level={3} caption="Prague itinerary" />
-      <AddTask onAddTask={handleAddTask} />
+      <AddTaskP01 onAddTask={handleAddTask} />
+      {/* <AddTask onAddTask={handleAddTask} /> */}
       <TaskList
         tasks={tasks}
         onChangeTask={handleChangeTask}

@@ -1,10 +1,11 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { places } from './data';
 import { getImageUrl } from './utils';
+import { imageSizeContext } from './Context';
 
 const Task05 = () => {
   const [isLarge, setIsLarge] = useState(false);
-  const imageSize = isLarge ? 150 : 100;
+  // const imageSize = isLarge ? 150 : 100;
 
   return (
     <>
@@ -17,24 +18,26 @@ const Task05 = () => {
         Use large images
       </label>
       <hr />
-      <List imageSize={imageSize} />
+      <imageSizeContext.Provider value={isLarge ? 150 : 100}>
+        <List />
+      </imageSizeContext.Provider>
     </>
   );
 };
 
-const List = ({ imageSize }) => {
+const List = () => {
   const listItems = places.map(place => (
     <li key={place.id}>
-      <Place place={place} imageSize={imageSize} />
+      <Place place={place} />
     </li>
   ));
   return <ul>{listItems}</ul>;
 };
 
-const Place = ({ place, imageSize }) => {
+const Place = ({ place }) => {
   return (
     <>
-      <PlaceImage place={place} imageSize={imageSize} />
+      <PlaceImage place={place} />
       <p>
         <b>{place.name}</b>
         {': ' + place.description}
@@ -43,7 +46,9 @@ const Place = ({ place, imageSize }) => {
   );
 };
 
-const PlaceImage = ({ place, imageSize }) => {
+const PlaceImage = ({ place }) => {
+  const imageSize = useContext(imageSizeContext);
+
   return (
     <img
       src={getImageUrl(place)}

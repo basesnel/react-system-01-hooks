@@ -1,8 +1,8 @@
 import { useReducer } from 'react';
 import { Heading } from 'components';
-import AddTask from './AddTask';
 import TaskList from './TaskList';
 import { initialTasks } from 'constants';
+import { AddTaskP01 } from '../IntendendComponents';
 
 let nextId = 3;
 
@@ -34,7 +34,7 @@ const Prac02 = () => {
   return (
     <>
       <Heading level={3}>Prague itinerary</Heading>
-      <AddTask onAddTask={handleAddTask} />
+      <AddTaskP01 onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}
         onChangeTask={handleChangeTask}

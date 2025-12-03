@@ -23,7 +23,7 @@ const ManagingStatePageP3 = () => {
     Task02,
     Task03,
     Task04,
-    // Task05,
+    Task05,
     // Task06,
     // Task07,
   } = managingStateP3;
@@ -77,10 +77,10 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 09: context pass throgh intermediate components">
             <Prac09 />
           </Card>
-          {/* <Card title="prac 10: pitfall of nest component definition">
-            <Prac10 />
+          <Card title="task 05: replace prop drilling with context">
+            <Task05 />
           </Card>
-          <Card title="prac 11: resetting state at the same position">
+          {/* <Card title="prac 11: resetting state at the same position">
             <Prac11 />
           </Card>
           <Card title="prac 12: resetting a component in diffrent positions - option 1">

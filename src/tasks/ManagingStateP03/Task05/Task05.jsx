@@ -5,10 +5,10 @@ import { imageSizeContext } from './Context';
 
 const Task05 = () => {
   const [isLarge, setIsLarge] = useState(false);
-  // const imageSize = isLarge ? 150 : 100;
+  const imageSize = isLarge ? 150 : 100;
 
   return (
-    <>
+    <imageSizeContext.Provider value={imageSize}>
       <label>
         <input
           type="checkbox"
@@ -18,10 +18,8 @@ const Task05 = () => {
         Use large images
       </label>
       <hr />
-      <imageSizeContext.Provider value={isLarge ? 150 : 100}>
-        <List />
-      </imageSizeContext.Provider>
-    </>
+      <List />
+    </imageSizeContext.Provider>
   );
 };
 

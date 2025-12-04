@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
 
-const Section = ({ children }) => {
+const SectionP05 = ({ children }) => {
   return <section className={styles.section}>{children}</section>;
 };
 
-export default Section;
+export default SectionP05;

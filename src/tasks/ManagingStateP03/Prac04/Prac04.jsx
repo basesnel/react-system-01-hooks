@@ -1,8 +1,8 @@
 import { useImmerReducer } from 'use-immer';
 import { Title } from 'components';
-import AddTask from './AddTask';
 import TaskList from './TaskList';
 import tasksReducer from './tasksReducer';
+import { AddTaskP01 } from '../IntendendComponents';
 
 let nextId = 3;
 const initialTasks = [
@@ -39,7 +39,7 @@ const Prac04 = () => {
   return (
     <>
       <Title level={3} caption="Prague itinerary" />
-      <AddTask onAddTask={handleAddTask} />
+      <AddTaskP01 onAddTask={handleAddTask} />
       <TaskList
         tasks={tasks}
         onChangeTask={handleChangeTask}

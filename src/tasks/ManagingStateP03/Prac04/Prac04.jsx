@@ -1,14 +1,10 @@
 import { useImmerReducer } from 'use-immer';
 import { Title } from 'components';
 import tasksReducer from './tasksReducer';
+import { initialTasks } from 'constants';
 import { AddTaskP01, TaskListP01 } from '../IntendendComponents';
 
 let nextId = 3;
-const initialTasks = [
-  { id: 0, text: 'Visit Kafka Museum', done: true },
-  { id: 1, text: 'Watch a puppet show', done: false },
-  { id: 2, text: 'Lennon Wall pic', done: false },
-];
 
 const Prac04 = () => {
   const [tasks, dispatch] = useImmerReducer(tasksReducer, initialTasks);

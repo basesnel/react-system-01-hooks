@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { Heading } from 'components';
-import { LevelContext } from 'contexts/LevelContext';
+import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP07';
 
 const Headings = ({ children }) => {
   const level = useContext(LevelContext);

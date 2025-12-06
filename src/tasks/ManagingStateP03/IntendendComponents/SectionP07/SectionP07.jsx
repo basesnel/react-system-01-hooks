@@ -1,4 +1,4 @@
-import { LevelContext } from 'contexts/LevelContext';
+import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP07';
 import styles from './styles.module.css';
 
 const SectionP07 = ({ level, children }) => {

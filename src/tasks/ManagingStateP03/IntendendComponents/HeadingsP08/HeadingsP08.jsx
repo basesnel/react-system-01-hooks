@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP08';
 import { Heading } from 'components';
 
-const Headings = ({ children }) => {
+const HeadingsP08 = ({ children }) => {
   const level = useContext(LevelContext);
 
   switch (level) {
@@ -25,4 +25,4 @@ const Headings = ({ children }) => {
   }
 };
 
-export default Headings;
+export default HeadingsP08;

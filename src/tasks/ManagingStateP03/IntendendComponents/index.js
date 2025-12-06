@@ -3,8 +3,7 @@ import TaskListP01 from './TaskListP01';
 import SectionP05 from './SectionP05';
 import HeadingsP07 from './HeadingsP07';
 import SectionP07 from './SectionP07';
-// import CounterP06 from './CounterP06';
-// import CounterP11 from './CounterP11';
+import HeadingsP08 from './HeadingsP08';
 // import ChatP14 from './ChatP14';
 // import ContactListP14 from './ContactListP14';
 // import SearchBarT02 from './SearchBarT02';
@@ -22,6 +21,7 @@ export {
   SectionP05,
   HeadingsP07,
   SectionP07,
+  HeadingsP08,
   // CounterP06,
   // CounterP11,
   // ChatP14,

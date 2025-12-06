@@ -2,6 +2,7 @@ import AddTaskP01 from './AddTaskP01';
 import TaskListP01 from './TaskListP01';
 import SectionP05 from './SectionP05';
 import HeadingsP07 from './HeadingsP07';
+import SectionP07 from './SectionP07';
 // import CounterP06 from './CounterP06';
 // import CounterP11 from './CounterP11';
 // import ChatP14 from './ChatP14';
@@ -20,6 +21,7 @@ export {
   TaskListP01,
   SectionP05,
   HeadingsP07,
+  SectionP07,
   // CounterP06,
   // CounterP11,
   // ChatP14,

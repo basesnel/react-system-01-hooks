@@ -1,7 +1,7 @@
 import { LevelContext } from 'contexts/LevelContext';
 import styles from './styles.module.css';
 
-const Section = ({ level, children }) => {
+const SectionP07 = ({ level, children }) => {
   return (
     <section className={styles.section}>
       <LevelContext.Provider value={level}>{children}</LevelContext.Provider>
@@ -9,4 +9,4 @@ const Section = ({ level, children }) => {
   );
 };
 
-export default Section;
+export default SectionP07;

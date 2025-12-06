@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP08';
 import styles from './styles.module.css';
 
-const Section = ({ children }) => {
+const SectionP08 = ({ children }) => {
   const level = useContext(LevelContext);
 
   return (
@@ -14,4 +14,4 @@ const Section = ({ children }) => {
   );
 };
 
-export default Section;
+export default SectionP08;

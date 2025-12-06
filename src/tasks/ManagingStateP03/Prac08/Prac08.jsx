@@ -1,26 +1,25 @@
-import { HeadingsP08 } from '../IntendendComponents';
-import Section from './Section';
+import { HeadingsP08, SectionP08 } from '../IntendendComponents';
 
 const Prac08 = () => {
   return (
-    <Section>
+    <SectionP08>
       <HeadingsP08>Title</HeadingsP08>
-      <Section>
+      <SectionP08>
         <HeadingsP08>Heading</HeadingsP08>
         <HeadingsP08>Heading</HeadingsP08>
         <HeadingsP08>Heading</HeadingsP08>
-        <Section>
+        <SectionP08>
           <HeadingsP08>Sub-heading</HeadingsP08>
           <HeadingsP08>Sub-heading</HeadingsP08>
           <HeadingsP08>Sub-heading</HeadingsP08>
-          <Section>
+          <SectionP08>
             <HeadingsP08>Sub-sub-heading</HeadingsP08>
             <HeadingsP08>Sub-sub-heading</HeadingsP08>
             <HeadingsP08>Sub-sub-heading</HeadingsP08>
-          </Section>
-        </Section>
-      </Section>
-    </Section>
+          </SectionP08>
+        </SectionP08>
+      </SectionP08>
+    </SectionP08>
   );
 };
 

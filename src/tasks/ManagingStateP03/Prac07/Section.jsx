@@ -1,4 +1,4 @@
-import { LevelContext } from './LevelContext';
+import { LevelContext } from 'contexts/LevelContext';
 import styles from './styles.module.css';
 
 const Section = ({ level, children }) => {

@@ -1,43 +1,42 @@
-import { HeadingsP08 } from '../IntendendComponents';
-import Section from './Section';
+import { HeadingsP08, SectionP09 } from '../IntendendComponents';
 
 const Prac09 = () => {
   return (
-    <Section>
+    <SectionP09>
       <HeadingsP08>My Profile</HeadingsP08>
       <Post title="Hello traveller!" body="Read about my adventures." />
       <AllPosts />
-    </Section>
+    </SectionP09>
   );
 };
 
 const AllPosts = () => {
   return (
-    <Section>
+    <SectionP09>
       <HeadingsP08>Posts</HeadingsP08>
       <RecentPosts />
-    </Section>
+    </SectionP09>
   );
 };
 
 const RecentPosts = () => {
   return (
-    <Section>
+    <SectionP09>
       <HeadingsP08>Recent posts</HeadingsP08>
       <Post title="Flavors of Lisbon" body="...those pasteis de nata!" />
       <Post title="Buenos Aires in the rithm of tango" body="I love it!" />
-    </Section>
+    </SectionP09>
   );
 };
 
 const Post = ({ title, body }) => {
   return (
-    <Section isFancy={true}>
+    <SectionP09 isFancy={true}>
       <HeadingsP08>{title}</HeadingsP08>
       <p>
         <i>{body}</i>
       </p>
-    </Section>
+    </SectionP09>
   );
 };
 

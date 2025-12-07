@@ -5,6 +5,7 @@ import HeadingsP07 from './HeadingsP07';
 import SectionP07 from './SectionP07';
 import HeadingsP08 from './HeadingsP08';
 import SectionP08 from './SectionP08';
+import SectionP09 from './SectionP09';
 // import ChatP14 from './ChatP14';
 // import ContactListP14 from './ContactListP14';
 // import SearchBarT02 from './SearchBarT02';
@@ -24,6 +25,7 @@ export {
   SectionP07,
   HeadingsP08,
   SectionP08,
+  SectionP09,
   // CounterP06,
   // CounterP11,
   // ChatP14,

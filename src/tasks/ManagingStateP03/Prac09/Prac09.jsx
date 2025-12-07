@@ -1,10 +1,10 @@
-import Headings from './Headings';
+import { HeadingsP08 } from '../IntendendComponents';
 import Section from './Section';
 
 const Prac09 = () => {
   return (
     <Section>
-      <Headings>My Profile</Headings>
+      <HeadingsP08>My Profile</HeadingsP08>
       <Post title="Hello traveller!" body="Read about my adventures." />
       <AllPosts />
     </Section>
@@ -14,7 +14,7 @@ const Prac09 = () => {
 const AllPosts = () => {
   return (
     <Section>
-      <Headings>Posts</Headings>
+      <HeadingsP08>Posts</HeadingsP08>
       <RecentPosts />
     </Section>
   );
@@ -23,7 +23,7 @@ const AllPosts = () => {
 const RecentPosts = () => {
   return (
     <Section>
-      <Headings>Recent posts</Headings>
+      <HeadingsP08>Recent posts</HeadingsP08>
       <Post title="Flavors of Lisbon" body="...those pasteis de nata!" />
       <Post title="Buenos Aires in the rithm of tango" body="I love it!" />
     </Section>
@@ -33,7 +33,7 @@ const RecentPosts = () => {
 const Post = ({ title, body }) => {
   return (
     <Section isFancy={true}>
-      <Headings>{title}</Headings>
+      <HeadingsP08>{title}</HeadingsP08>
       <p>
         <i>{body}</i>
       </p>

@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP08';
 import { Heading } from 'components';
 
@@ -23,6 +24,11 @@ const HeadingsP08 = ({ children }) => {
     default:
       throw Error('Unknown level: ' + level);
   }
+};
+
+HeadingsP08.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
 };
 
 export default HeadingsP08;

@@ -1,5 +1,7 @@
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP08';
+
 import styles from './styles.module.css';
 
 const SectionP08 = ({ children }) => {
@@ -12,6 +14,10 @@ const SectionP08 = ({ children }) => {
       </LevelContext.Provider>
     </section>
   );
+};
+
+SectionP08.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default SectionP08;

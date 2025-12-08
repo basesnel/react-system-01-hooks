@@ -1,8 +1,9 @@
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { Heading } from 'components';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP07';
 
-const Headings = ({ children }) => {
+const HeadingsP07 = ({ children }) => {
   const level = useContext(LevelContext);
 
   switch (level) {
@@ -23,4 +24,9 @@ const Headings = ({ children }) => {
   }
 };
 
-export default Headings;
+HeadingsP07.propTypes = {
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
+    .isRequired,
+};
+
+export default HeadingsP07;

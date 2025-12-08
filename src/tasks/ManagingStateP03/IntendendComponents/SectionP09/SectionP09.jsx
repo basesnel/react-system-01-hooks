@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP08';
 import styles from './styles.module.css';
 
@@ -12,6 +13,15 @@ const SectionP09 = ({ isFancy, children }) => {
       </LevelContext.Provider>
     </section>
   );
+};
+
+SectionP09.propTypes = {
+  isFancy: PropTypes.bool,
+  children: PropTypes.node.isRequired,
+};
+
+SectionP09.defaultProps = {
+  isFancy: false,
 };
 
 export default SectionP09;

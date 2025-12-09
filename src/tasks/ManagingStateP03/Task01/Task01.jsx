@@ -1,8 +1,8 @@
 import { useReducer } from 'react';
 import { FlexBox } from 'components';
 import { initialContacts } from 'constants';
-import { initialState, messengerReducer } from './messengerReducer';
 import { ChatT01, ContactListT01 } from '../IntendendComponents';
+import { initialState, messengerReducer } from './messengerReducer';
 
 const Task01 = () => {
   const [state, dispatch] = useReducer(messengerReducer, initialState);

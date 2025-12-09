@@ -3,7 +3,7 @@ import { Button } from 'components';
 
 import styles from './styles.module.css';
 
-const ContactList = ({ contacts, selectedId, dispatch }) => {
+const ContactListT01 = ({ contacts, selectedId, dispatch }) => {
   return (
     <ul className={styles.list}>
       {contacts.map(contact => (
@@ -26,7 +26,7 @@ const ContactList = ({ contacts, selectedId, dispatch }) => {
   );
 };
 
-ContactList.propTypes = {
+ContactListT01.propTypes = {
   contacts: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
@@ -38,4 +38,4 @@ ContactList.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default ContactList;
+export default ContactListT01;

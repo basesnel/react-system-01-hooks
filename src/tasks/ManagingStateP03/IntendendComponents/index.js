@@ -9,6 +9,7 @@ import SectionP09 from './SectionP09';
 import ChatT01 from './ChatT01';
 import ChatT02 from './ChatT02';
 import ChatT02V2 from './ChatT02V2';
+import ChatT03 from './ChatT03';
 import ContactListT01 from './ContactListT01';
 // import SearchBarT02 from './SearchBarT02';
 // import ListT02 from './ListT02';
@@ -31,6 +32,7 @@ export {
   ChatT01,
   ChatT02,
   ChatT02V2,
+  ChatT03,
   ContactListT01,
   // SearchBarT02,
   // ListT02,

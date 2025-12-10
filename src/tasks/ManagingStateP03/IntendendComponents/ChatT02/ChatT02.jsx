@@ -3,7 +3,7 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
-const ChatT01 = ({ contact, message, name, dispatch }) => {
+const ChatT02 = ({ contact, message, name, dispatch }) => {
   const handleChatSubmit = event => {
     event.preventDefault();
     dispatch({
@@ -15,7 +15,7 @@ const ChatT01 = ({ contact, message, name, dispatch }) => {
       return toast.error(`Text-field is empty - please, enter it!`);
     }
 
-    return toast.success(`${message} sent!`);
+    return toast.success(`Sending "${message}" to ${contact.email}!`);
   };
 
   return (
@@ -37,7 +37,7 @@ const ChatT01 = ({ contact, message, name, dispatch }) => {
   );
 };
 
-ChatT01.propTypes = {
+ChatT02.propTypes = {
   contact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
@@ -48,4 +48,4 @@ ChatT01.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default ChatT01;
+export default ChatT02;

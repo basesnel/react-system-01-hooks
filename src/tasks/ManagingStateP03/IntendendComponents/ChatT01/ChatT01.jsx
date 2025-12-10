@@ -3,8 +3,8 @@ import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
 const ChatT01 = ({ contact, message, name, dispatch }) => {
-  const handleChatSubmit = e => {
-    e.preventDefault();
+  const handleChatSubmit = event => {
+    event.preventDefault();
   };
 
   return (

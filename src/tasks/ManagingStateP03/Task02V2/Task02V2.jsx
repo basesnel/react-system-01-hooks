@@ -1,7 +1,7 @@
 import { useReducer } from 'react';
 import { FlexBox } from 'components';
 import { initialContacts } from 'constants';
-import { ChatT02, ContactListT01 } from '../IntendendComponents';
+import { ChatT02V2, ContactListT01 } from '../IntendendComponents';
 import { initialState, messengerReducer } from './messengerReducer';
 
 const Task02 = () => {
@@ -16,11 +16,11 @@ const Task02 = () => {
         selectedId={state.selectedId}
         dispatch={dispatch}
       />
-      <ChatT02
+      <ChatT02V2
         key={contact.id}
         message={message}
         contact={contact}
-        name="TextAreaT02"
+        name="TextAreaT02V2"
         dispatch={dispatch}
       />
     </FlexBox>

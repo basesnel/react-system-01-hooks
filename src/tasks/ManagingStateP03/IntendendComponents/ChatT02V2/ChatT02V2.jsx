@@ -3,13 +3,12 @@ import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
-const ChatT02 = ({ contact, message, name, dispatch }) => {
+const ChatT02V2 = ({ contact, message, name, dispatch }) => {
   const handleChatSubmit = event => {
     event.preventDefault();
 
     dispatch({
-      type: 'edited_message',
-      message: '',
+      type: 'sent_message',
     });
 
     if (!message.trim().length) {
@@ -38,7 +37,7 @@ const ChatT02 = ({ contact, message, name, dispatch }) => {
   );
 };
 
-ChatT02.propTypes = {
+ChatT02V2.propTypes = {
   contact: PropTypes.shape({
     id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
     name: PropTypes.string.isRequired,
@@ -49,4 +48,4 @@ ChatT02.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-export default ChatT02;
+export default ChatT02V2;

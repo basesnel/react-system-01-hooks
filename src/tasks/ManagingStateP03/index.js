@@ -15,6 +15,7 @@ import Prac09 from './Prac09';
 // import Prac15 from './Prac15';
 import Task01 from './Task01';
 import Task02 from './Task02';
+import Task02V2 from './Task02V2';
 import Task03 from './Task03';
 import Task04 from './Task04';
 import Task05 from './Task05';
@@ -39,6 +40,7 @@ export {
   // Prac15,
   Task01,
   Task02,
+  Task02V2,
   Task03,
   Task04,
   Task05,

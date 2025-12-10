@@ -21,6 +21,7 @@ const ManagingStatePageP3 = () => {
     // Prac15,
     Task01,
     Task02,
+    Task02V2,
     Task03,
     Task04,
     Task05,
@@ -55,6 +56,9 @@ const ManagingStatePageP3 = () => {
           </Card>
           <Card title="task 02: clear the input on sending a message">
             <Task02 />
+          </Card>
+          <Card title="task 02: clear the input on sending a message, variant 2">
+            <Task02V2 />
           </Card>
           <Card title="task 03: restore input values when switching between tabs">
             <Task03 />

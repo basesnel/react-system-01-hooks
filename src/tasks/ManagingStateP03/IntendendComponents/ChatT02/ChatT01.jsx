@@ -1,10 +1,21 @@
 import PropTypes from 'prop-types';
+import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
 import { TextArea, Button, Form } from 'components';
 
 const ChatT01 = ({ contact, message, name, dispatch }) => {
-  const handleChatSubmit = e => {
-    e.preventDefault();
+  const handleChatSubmit = event => {
+    event.preventDefault();
+    dispatch({
+      type: 'edited_message',
+      message: '',
+    });
+
+    if (!message.trim().length) {
+      return toast.error(`Text-field is empty - please, enter it!`);
+    }
+
+    return toast.success(`${message} sent!`);
   };
 
   return (

@@ -1,23 +1,18 @@
 import { useReducer } from './myReact';
 import { FlexBox } from 'components';
+import { initialContacts } from 'constants';
 import { initialState, messengerReducer } from './messengerReducer';
 import { ChatT03, ContactListT01 } from '../IntendendComponents';
-
-const contacts = [
-  { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
-  { id: 1, name: 'Alice', email: 'alice@mail.com' },
-  { id: 2, name: 'Bob', email: 'bob@mail.com' },
-];
 
 const Task04 = () => {
   const [state, dispatch] = useReducer(messengerReducer, initialState);
   const message = state.messages[state.selectedId];
-  const contact = contacts.find(c => c.id === state.selectedId);
+  const contact = initialContacts.find(c => c.id === state.selectedId);
 
   return (
     <FlexBox direction="column-reverse">
       <ContactListT01
-        contacts={contacts}
+        contacts={initialContacts}
         selectedId={state.selectedId}
         dispatch={dispatch}
       />

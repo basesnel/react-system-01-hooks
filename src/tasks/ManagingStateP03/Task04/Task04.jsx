@@ -2,7 +2,7 @@ import { useReducer } from './myReact';
 import { FlexBox } from 'components';
 import { initialState, messengerReducer } from './messengerReducer';
 import ContactList from './ContactList';
-import Chat from './Chat';
+import { ChatT03 } from '../IntendendComponents';
 
 const contacts = [
   { id: 0, name: 'Taylor', email: 'taylor@mail.com' },
@@ -22,7 +22,7 @@ const Task04 = () => {
         selectedId={state.selectedId}
         dispatch={dispatch}
       />
-      <Chat
+      <ChatT03
         key={contact.id}
         message={message}
         contact={contact}

@@ -1,4 +1,4 @@
-const places = [
+const paintedHouses = [
   {
     id: 0,
     name: 'Bo-Kaap in Cape Town, South Africa',
@@ -50,4 +50,4 @@ const places = [
   },
 ];
 
-export { places };
+export { paintedHouses };

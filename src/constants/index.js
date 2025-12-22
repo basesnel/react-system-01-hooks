@@ -32,6 +32,7 @@ import { sendMessage } from './sendMessage';
 import { createInitialTodos } from './createInitialTodos';
 import { catList } from './catList';
 import { personList } from './initialPersonList';
+import { paintedHouses } from './paintedHouses';
 import { trams } from './trams';
 import { imageSizes } from './imageSizes';
 import * as myTodos from './todos';
@@ -73,6 +74,7 @@ export {
   createInitialTodos,
   catList,
   personList,
+  paintedHouses,
   trams,
   imageSizes,
   myTodos,

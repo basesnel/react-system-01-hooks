@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { places } from './data';
+import { paintedHouses } from 'constants';
 import { getImageUrl } from './utils';
 
 import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
@@ -7,7 +7,7 @@ import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
 import styles from './styles.module.css';
 
 const ListT05 = () => {
-  const listItems = places.map(place => (
+  const listItems = paintedHouses.map(place => (
     <li key={place.id}>
       <Place place={place} />
     </li>

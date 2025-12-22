@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { CheckBox } from 'components';
 import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
 import { ListT05 } from '../IntendendComponents';
 
@@ -8,14 +9,12 @@ const Task05 = () => {
 
   return (
     <imageSizeContext.Provider value={imageSize}>
-      <label>
-        <input
-          type="checkbox"
-          checked={isLarge}
-          onChange={e => setIsLarge(e.target.checked)}
-        />
-        Use large images
-      </label>
+      <CheckBox
+        name="CheckBoxT05"
+        checked={isLarge}
+        onChange={e => setIsLarge(e.target.checked)}
+        label="Use large images"
+      />
       <hr />
       <ListT05 />
     </imageSizeContext.Provider>

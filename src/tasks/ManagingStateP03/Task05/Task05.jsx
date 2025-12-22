@@ -1,7 +1,8 @@
 import { useContext, useState } from 'react';
 import { places } from './data';
 import { getImageUrl } from './utils';
-import { imageSizeContext } from './Context';
+// import { imageSizeContext } from './Context';
+import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
 
 import styles from './styles.module.css';
 

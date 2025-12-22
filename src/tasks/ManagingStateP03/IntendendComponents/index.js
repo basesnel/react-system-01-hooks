@@ -11,8 +11,7 @@ import ChatT02 from './ChatT02';
 import ChatT02V2 from './ChatT02V2';
 import ChatT03 from './ChatT03';
 import ContactListT01 from './ContactListT01';
-// import SearchBarT02 from './SearchBarT02';
-// import ListT02 from './ListT02';
+import ListT05 from './ListT05';
 // import FormT03 from './FormT03';
 // import FieldT04 from './FieldT04';
 // import ContactListT05 from './ContactListT05';
@@ -34,8 +33,7 @@ export {
   ChatT02V2,
   ChatT03,
   ContactListT01,
-  // SearchBarT02,
-  // ListT02,
+  ListT05,
   // FormT03,
   // FieldT04,
   // ContactListT05,

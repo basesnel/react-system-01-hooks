@@ -3,6 +3,8 @@ import { places } from './data';
 import { getImageUrl } from './utils';
 import { imageSizeContext } from './Context';
 
+import styles from './styles.module.css';
+
 const Task05 = () => {
   const [isLarge, setIsLarge] = useState(false);
   const imageSize = isLarge ? 150 : 100;
@@ -29,18 +31,18 @@ const List = () => {
       <Place place={place} />
     </li>
   ));
-  return <ul>{listItems}</ul>;
+  return <ul className={styles.list}>{listItems}</ul>;
 };
 
 const Place = ({ place }) => {
   return (
-    <>
+    <figure className={styles.figure}>
       <PlaceImage place={place} />
-      <p>
+      <figcaption className={styles.figcaption}>
         <b>{place.name}</b>
         {': ' + place.description}
-      </p>
-    </>
+      </figcaption>
+    </figure>
   );
 };
 
@@ -51,6 +53,7 @@ const PlaceImage = ({ place }) => {
     <img
       src={getImageUrl(place)}
       alt={place.name}
+      className={styles.image}
       width={imageSize}
       height={imageSize}
     />

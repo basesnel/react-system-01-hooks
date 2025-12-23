@@ -1,6 +1,5 @@
 import { useContext } from 'react';
-import { paintedHouses } from 'constants';
-import { getImageUrl } from './utils';
+import { paintedHouses, getImageUrl } from 'constants';
 
 import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
 

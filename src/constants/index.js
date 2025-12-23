@@ -4,6 +4,7 @@ import { initialCharacters } from './characters';
 import { images } from './images';
 import { filterItems, foods } from './foods';
 import { getFinalState } from './getFinalState';
+import { getImageUrl } from './getImageUrl';
 import { initialArtistsList } from './initialArtistsList';
 import { initialContacts } from './initialContacts';
 import { initialShapesList } from './initialShapesList';
@@ -44,6 +45,7 @@ export {
   initialCharacters,
   images,
   getFinalState,
+  getImageUrl,
   filterItems,
   foods,
   initialArtistsList,

@@ -5,7 +5,7 @@ import { ListT05 } from '../IntendendComponents';
 
 const Task05 = () => {
   const [isLarge, setIsLarge] = useState(false);
-  const imageSize = isLarge ? 150 : 100;
+  const imageSize = isLarge ? 150 : 75;
 
   return (
     <imageSizeContext.Provider value={imageSize}>

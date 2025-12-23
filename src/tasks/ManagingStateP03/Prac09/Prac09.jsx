@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { HeadingsP08, SectionP09 } from '../IntendendComponents';
 
 const Prac09 = () => {
@@ -38,6 +39,11 @@ const Post = ({ title, body }) => {
       </p>
     </SectionP09>
   );
+};
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
 };
 
 export default Prac09;

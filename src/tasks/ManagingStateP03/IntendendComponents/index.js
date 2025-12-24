@@ -1,7 +1,9 @@
 import AddTaskP01 from './AddTaskP01';
+import AddTaskP11 from './AddTaskP11';
 import AllPostsP09 from './AllPostsP09';
 import PostP09 from './PostP09';
 import TaskListP01 from './TaskListP01';
+import TaskListP11 from './TaskListP11';
 import SectionP05 from './SectionP05';
 import HeadingsP07 from './HeadingsP07';
 import SectionP07 from './SectionP07';
@@ -23,9 +25,11 @@ import ListT05 from './ListT05';
 
 export {
   AddTaskP01,
+  AddTaskP11,
   AllPostsP09,
   PostP09,
   TaskListP01,
+  TaskListP11,
   SectionP05,
   HeadingsP07,
   SectionP07,

@@ -14,7 +14,7 @@ const ManagingStatePageP3 = () => {
     Prac08,
     Prac09,
     Prac10,
-    // Prac11,
+    Prac11,
     // Prac12,
     // Prac13,
     // Prac14,
@@ -84,8 +84,11 @@ const ManagingStatePageP3 = () => {
           <Card title="task 05: replace prop drilling with context">
             <Task05 />
           </Card>
-          <Card title="prac 10: combining a reducer with context">
+          <Card title="prac 10: combining a reducer with context - init">
             <Prac10 />
+          </Card>
+          <Card title="prac 11: combining a reducer with context - processing">
+            <Prac11 />
           </Card>
           {/* <Card title="prac 12: resetting a component in diffrent positions - option 1">
             <Prac12 />

@@ -42,11 +42,21 @@ const PlaceImage = ({ place }) => {
 };
 
 Place.propTypes = {
-  place: PropTypes.string.isRequired,
+  place: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    imageId: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 PlaceImage.propTypes = {
-  place: PropTypes.string.isRequired,
+  place: PropTypes.shape({
+    id: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    imageId: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ListT05;

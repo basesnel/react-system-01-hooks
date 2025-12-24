@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import PropTypes from 'prop-types';
 import { paintedHouses, getImageUrl } from 'constants';
 
 import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
@@ -38,6 +39,14 @@ const PlaceImage = ({ place }) => {
       height={imageSize}
     />
   );
+};
+
+Place.propTypes = {
+  place: PropTypes.string.isRequired,
+};
+
+PlaceImage.propTypes = {
+  place: PropTypes.string.isRequired,
 };
 
 export default ListT05;

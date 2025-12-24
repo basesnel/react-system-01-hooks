@@ -1,4 +1,3 @@
-// import PropTypes from 'prop-types';
 import SectionP09 from '../SectionP09';
 import HeadingsP08 from '../HeadingsP08';
 import PostP09 from '../PostP09';
@@ -21,21 +20,5 @@ const RecentPosts = () => {
     </SectionP09>
   );
 };
-
-// const Post = ({ title, body }) => {
-//   return (
-//     <SectionP09 isFancy={true}>
-//       <HeadingsP08>{title}</HeadingsP08>
-//       <p>
-//         <i>{body}</i>
-//       </p>
-//     </SectionP09>
-//   );
-// };
-
-// Post.propTypes = {
-//   title: PropTypes.string.isRequired,
-//   body: PropTypes.string.isRequired,
-// };
 
 export default AllPostsP09;

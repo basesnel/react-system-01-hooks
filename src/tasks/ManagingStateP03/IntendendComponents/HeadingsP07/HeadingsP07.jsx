@@ -1,10 +1,10 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { Heading } from 'components';
-import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP07';
+import { LevelContextP07 } from 'contexts';
 
 const HeadingsP07 = ({ children }) => {
-  const level = useContext(LevelContext);
+  const level = useContext(LevelContextP07);
 
   switch (level) {
     case 1:

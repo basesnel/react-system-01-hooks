@@ -1,5 +1,5 @@
 import { createContext } from 'react';
 
-const LevelContext = createContext(1);
+const LevelContextP07 = createContext(1);
 
-export { LevelContext };
+export { LevelContextP07 };

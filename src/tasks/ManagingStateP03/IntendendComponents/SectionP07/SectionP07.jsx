@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
-import { LevelContext } from 'contexts/mpiiiContexts/LevelContextP07';
+import { LevelContextP07 } from 'contexts';
 import styles from './styles.module.css';
 
 const SectionP07 = ({ level, children }) => {
   return (
     <section className={styles.section}>
-      <LevelContext.Provider value={level}>{children}</LevelContext.Provider>
+      <LevelContextP07.Provider value={level}>
+        {children}
+      </LevelContextP07.Provider>
     </section>
   );
 };

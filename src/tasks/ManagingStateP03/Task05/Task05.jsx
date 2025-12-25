@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { CheckBox } from 'components';
-import { imageSizeContext } from 'contexts/mpiiiContexts/imageSizeContextT05';
+import { imageSizeContext } from 'contexts';
 import { ListT05 } from '../IntendendComponents';
 
 const Task05 = () => {

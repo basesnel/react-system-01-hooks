@@ -1,25 +1,22 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
+import { useContext } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
+import { TasksDispatchContext } from 'contexts';
 import { MiniForm } from 'components';
 
-const AddTaskP11 = ({ onAddTask }) => {
-  const [text, setText] = useState('');
+let nextId = 3;
+
+const AddTaskP11 = () => {
+  const dispatch = useContext(TasksDispatchContext);
 
   return (
     <MiniForm
       onFormSubmit={text => {
-        onAddTask(text);
-        setText('');
+        dispatch({ type: 'added', id: nextId++, text: text });
       }}
-      filling={`Add element ${text}`}
+      filling="Add element"
       icon={<RiAddCircleFill />}
     />
   );
-};
-
-AddTaskP11.propTypes = {
-  onAddTask: PropTypes.func.isRequired,
 };
 
 export default AddTaskP11;

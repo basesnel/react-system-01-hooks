@@ -2,6 +2,7 @@ import { useContext, useState } from 'react';
 import PropTypes from 'prop-types';
 import { RiSave3Fill, RiFileEditFill, RiDeleteBinFill } from 'react-icons/ri';
 import { FiEdit3 } from 'react-icons/fi';
+import { TasksContext, TasksDispatchContext } from 'contexts';
 import {
   List,
   Item,
@@ -10,7 +11,6 @@ import {
   Input,
   ItemCheckedText,
 } from 'components';
-import { TasksContext, TasksDispatchContext } from './TasksContext';
 
 const TaskListP11 = () => {
   const tasks = useContext(TasksContext);

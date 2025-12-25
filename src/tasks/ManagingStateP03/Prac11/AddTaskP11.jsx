@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { RiAddCircleFill } from 'react-icons/ri';
+import { TasksDispatchContext } from 'contexts';
 import { MiniForm } from 'components';
-import { TasksDispatchContext } from './TasksContext';
 
 let nextId = 3;
 

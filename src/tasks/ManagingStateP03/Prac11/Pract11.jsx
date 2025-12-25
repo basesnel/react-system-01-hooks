@@ -1,9 +1,8 @@
 import { Heading } from 'components';
 import { useReducer } from 'react';
-// import { TaskListP01 } from '../IntendendComponents';
-import { TasksContext, TasksDispatchContext } from './TasksContext';
 import AddTaskP11 from './AddTaskP11';
 import TaskListP11 from './TaskListP11';
+import { TasksContext, TasksDispatchContext } from 'contexts';
 
 const tasksReducer = (tasks, action) => {
   switch (action.type) {

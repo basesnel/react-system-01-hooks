@@ -1,10 +1,10 @@
-import { Container, H, P } from 'components';
+import { Container, H, Main, P } from 'components';
 
 import { Characters } from 'tasks';
 
 const CharactersPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
         <H level={1} isPageTitle>
           characters
@@ -14,7 +14,7 @@ const CharactersPage = () => {
       <Container>
         <Characters />
       </Container>
-    </main>
+    </Main>
   );
 };
 

@@ -1,4 +1,4 @@
-import { Container, H, P, Grid, Card } from 'components';
+import { Container, H, P, Grid, Card, Main } from 'components';
 
 import { arrayInState } from 'tasks';
 
@@ -19,7 +19,7 @@ const ArrayInStatePage = () => {
   } = arrayInState;
 
   return (
-    <main>
+    <Main>
       <Container>
         <H level={1} isPageTitle>
           array in state
@@ -66,7 +66,7 @@ const ArrayInStatePage = () => {
           </Card>
         </Grid>
       </Container>
-    </main>
+    </Main>
   );
 };
 

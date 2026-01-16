@@ -1,10 +1,10 @@
-import { Container, H, P } from 'components';
+import { Container, H, Main, P } from 'components';
 
 import { BigCards } from 'tasks';
 
 const BigCardsPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
         <H level={1} isPageTitle>
           big cards conception
@@ -14,7 +14,7 @@ const BigCardsPage = () => {
       <Container>
         <BigCards />
       </Container>
-    </main>
+    </Main>
   );
 };
 

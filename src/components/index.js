@@ -25,6 +25,7 @@ import Linput from './Linput';
 import List from './List';
 import Loader from './Loader';
 import Logo from './Logo';
+import Main from './Main';
 import MiniForm from './MiniForm';
 import Modal from './Modal';
 import NumberedList from './NumberedList';
@@ -70,6 +71,7 @@ export {
   List,
   Loader,
   Logo,
+  Main,
   MiniForm,
   Modal,
   NavBar,

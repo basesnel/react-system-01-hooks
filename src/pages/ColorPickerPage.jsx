@@ -1,4 +1,4 @@
-import { Container, Heading, P } from 'components';
+import { Main, Container, H, P } from 'components';
 
 import { colorPickerOptions } from 'constants';
 
@@ -6,17 +6,15 @@ import { ColorPicker } from 'tasks';
 
 const ColorPickerPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          color picker
-        </Heading>
+        <H level={1}>color picker</H>
         <P>Color picker hook case.</P>
       </Container>
       <Container>
         <ColorPicker options={colorPickerOptions} />
       </Container>
-    </main>
+    </Main>
   );
 };
 

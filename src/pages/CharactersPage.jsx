@@ -1,4 +1,4 @@
-import { Container, Heading, P } from 'components';
+import { Container, H, P } from 'components';
 
 import { Characters } from 'tasks';
 
@@ -6,9 +6,9 @@ const CharactersPage = () => {
   return (
     <main>
       <Container>
-        <Heading level={1} isPageTitle>
+        <H level={1} isPageTitle>
           characters
-        </Heading>
+        </H>
         <P>Character list case</P>
       </Container>
       <Container>

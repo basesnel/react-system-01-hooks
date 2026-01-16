@@ -1,0 +1,98 @@
+@value mediasizes: "../../cssvariables/media.module.css";
+@value fsheadings: "../../cssvariables/fsheading.module.css";
+@value colors: "../../cssvariables/color.module.css";
+@value smartphone, desktop from mediasizes;
+@value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
+@value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
+@value heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
+@value heading4, heading5, heading6 from fsheadings;
+@value color-text from colors;
+
+.heading {
+  color: color-text;
+  line-height: 1.25;
+}
+
+.heading01,
+.pageTitle {
+  font-size: heading1-mobile;
+}
+
+.heading01 {
+  margin-bottom: calc(heading1-mobile * 0.5);
+}
+
+.heading02 {
+  margin-bottom: calc(heading2-mobile * 0.5);
+  font-size: heading2-mobile;
+}
+
+.heading03 {
+  margin-bottom: calc(heading3-mobile * 0.5);
+  font-size: heading3-mobile;
+}
+
+.heading04 {
+  margin-bottom: calc(heading4 * 0.5);
+  font-size: heading4;
+}
+
+.heading05 {
+  margin-bottom: calc(heading5 * 0.5);
+  font-size: heading5;
+}
+
+.heading06 {
+  margin-bottom: calc(heading6 * 0.5);
+  font-size: heading6;
+}
+
+.pageTitle {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-caption);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media smartphone {
+  .heading01,
+  .pageTitle {
+    font-size: heading1-tablet;
+  }
+
+  .heading01 {
+    margin-bottom: calc(heading1-tablet * 0.5);
+  }
+
+  .heading02 {
+    margin-bottom: calc(heading2-tablet * 0.5);
+    font-size: heading2-tablet;
+  }
+
+  .heading03 {
+    margin-bottom: calc(heading3-tablet * 0.5);
+    font-size: heading3-tablet;
+  }
+}
+
+@media desktop {
+  .heading01,
+  .pageTitle {
+    text-align: initial;
+    font-size: heading1-tv;
+  }
+
+  .heading01 {
+    margin-bottom: calc(heading1-tv * 0.5);
+  }
+
+  .heading02 {
+    margin-bottom: calc(heading2-tv * 0.5);
+    font-size: heading2-tv;
+  }
+
+  .heading03 {
+    margin-bottom: calc(heading2-tv * 0.5);
+    font-size: heading3-tv;
+  }
+}

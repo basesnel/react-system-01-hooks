@@ -7,6 +7,7 @@ import Card from './Card';
 import CheckBox from './CheckBox';
 import Container from './Container';
 import CustomLoader from './CustomLoader';
+import H from './H';
 import Heading from './Heading';
 import FlexBox from './FlexBox';
 import Form from './Form';
@@ -51,6 +52,7 @@ export {
   CheckBox,
   Container,
   CustomLoader,
+  H,
   Heading,
   FlexBox,
   Form,

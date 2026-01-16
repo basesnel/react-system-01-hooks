@@ -1,4 +1,4 @@
-import { Container, P, Grid, Card, Heading } from 'components';
+import { Main, Container, P, Grid, Card, H } from 'components';
 
 import { managingStateP1 } from 'tasks';
 
@@ -26,11 +26,9 @@ const ManagingStatePageP1 = () => {
   } = managingStateP1;
 
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          managing state - part i
-        </Heading>
+        <H level={1}>managing state - part i</H>
         <P>Managing state in react-components.</P>
       </Container>
       <Container>
@@ -94,7 +92,7 @@ const ManagingStatePageP1 = () => {
           </Card>
         </Grid>
       </Container>
-    </main>
+    </Main>
   );
 };
 

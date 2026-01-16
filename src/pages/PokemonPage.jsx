@@ -1,20 +1,18 @@
-import { Container, Heading, P } from 'components';
+import { Main, Container, H, P } from 'components';
 
 import { Pokemon } from 'tasks';
 
 const PokemonPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          pokemon api
-        </Heading>
+        <H level={1}>pokemon api</H>
         <P>Pokemon rest API hook case.</P>
       </Container>
       <Container>
         <Pokemon />
       </Container>
-    </main>
+    </Main>
   );
 };
 

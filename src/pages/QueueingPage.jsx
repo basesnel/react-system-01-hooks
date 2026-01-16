@@ -1,4 +1,4 @@
-import { Container, Heading, P } from 'components';
+import { Main, Container, H, P } from 'components';
 
 import { queueing } from 'tasks';
 
@@ -6,16 +6,14 @@ const QueueingPage = () => {
   const { FixRequestCounter, ImpStateQueue } = queueing;
 
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          queueing state tasks
-        </Heading>
+        <H level={1}>queueing state tasks</H>
         <P>Cases of queueing series states.</P>
       </Container>
       <Container>
-        <Heading level={2}>Fix a request counter</Heading>
-        <Heading level={3}>Task</Heading>
+        <H level={2}>Fix a request counter</H>
+        <H level={3}>Task</H>
         <P>
           You&apos;re working on an art marketplace app that lets the user
           submit multiple orders for an art item at the same time. Each time the
@@ -30,7 +28,7 @@ const QueueingPage = () => {
         </P>
         <P>Why does this happen? Fix both counters.</P>
         <FixRequestCounter />
-        <Heading level={3}>Solution</Heading>
+        <H level={3}>Solution</H>
         <P>
           Inside the handleClick event handler, the values of pending and
           completed correspond to what they were at the time of the click event.
@@ -42,8 +40,8 @@ const QueueingPage = () => {
         </P>
       </Container>
       <Container>
-        <Heading level={2}>Implement the state queue yourself</Heading>
-        <Heading level={3}>Task</Heading>
+        <H level={2}>Implement the state queue yourself</H>
+        <H level={3}>Task</H>
         <P>
           In this challenge, you will reimplement a tiny part of React from
           scratch! It&apos;s not as hard as it sounds.
@@ -66,14 +64,14 @@ const QueueingPage = () => {
           page show!
         </P>
         <ImpStateQueue />
-        <Heading level={3}>Solution</Heading>
+        <H level={3}>Solution</H>
         <P>
           The exact algorithm described on this page that React uses to
           calculate the final state - is in the code of function
           getFinalState&#40;&#41;.
         </P>
       </Container>
-    </main>
+    </Main>
   );
 };
 

@@ -1,9 +1,14 @@
 import PropTypes from 'prop-types';
+import { mainContext } from 'contexts';
 
 const Main = props => {
   const { children } = props;
 
-  return <main>{children}</main>;
+  return (
+    <main>
+      <mainContext.Provider value={true}>{children}</mainContext.Provider>
+    </main>
+  );
 };
 
 Main.propTypes = {

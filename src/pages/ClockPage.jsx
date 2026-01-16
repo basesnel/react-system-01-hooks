@@ -1,4 +1,4 @@
-import { Container, Heading, P } from 'components';
+import { Container, H, P } from 'components';
 
 import { Clock } from 'tasks';
 
@@ -6,9 +6,7 @@ const ClockPage = () => {
   return (
     <main>
       <Container>
-        <Heading level={1} isPageTitle>
-          clock
-        </Heading>
+        <H level={1}>clock</H>
         <P>Clock hook case.</P>
       </Container>
       <Container>

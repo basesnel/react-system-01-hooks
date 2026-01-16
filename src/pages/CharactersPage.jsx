@@ -6,9 +6,7 @@ const CharactersPage = () => {
   return (
     <Main>
       <Container>
-        <H level={1} isPageTitle>
-          characters
-        </H>
+        <H level={1}>characters</H>
         <P>Character list case</P>
       </Container>
       <Container>

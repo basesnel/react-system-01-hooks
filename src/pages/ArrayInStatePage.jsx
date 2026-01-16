@@ -21,9 +21,7 @@ const ArrayInStatePage = () => {
   return (
     <Main>
       <Container>
-        <H level={1} isPageTitle>
-          array in state
-        </H>
+        <H level={1}>array in state</H>
         <P>Array in state of React-component case.</P>
       </Container>
       <Container>

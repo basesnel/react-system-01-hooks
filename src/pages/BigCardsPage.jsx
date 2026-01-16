@@ -6,9 +6,7 @@ const BigCardsPage = () => {
   return (
     <Main>
       <Container>
-        <H level={1} isPageTitle>
-          big cards conception
-        </H>
+        <H level={1}>big cards conception</H>
         <P>List for big cards</P>
       </Container>
       <Container>

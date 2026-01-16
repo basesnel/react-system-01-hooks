@@ -1,9 +1,12 @@
+import { useContext } from 'react';
 import PropTypes from 'prop-types';
+import { mainContext } from 'contexts';
 
 import styles from './styles.module.css';
 
 const H = props => {
-  const { level, isPageTitle, children } = props;
+  const { level, children } = props;
+  const isMain = useContext(mainContext);
 
   switch (level) {
     case 0:
@@ -13,7 +16,7 @@ const H = props => {
       return (
         <h1
           className={`${styles.heading} ${styles.heading01} ${
-            isPageTitle ? styles.pageTitle : ''
+            isMain ? styles.pageTitle : ''
           }`}
         >
           {children}
@@ -52,13 +55,8 @@ const H = props => {
 
 H.propTypes = {
   level: PropTypes.number.isRequired,
-  isPageTitle: PropTypes.bool,
   children: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     .isRequired,
-};
-
-H.defaultProps = {
-  isPageTitle: false,
 };
 
 export default H;

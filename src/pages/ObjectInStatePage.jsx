@@ -1,4 +1,4 @@
-import { Container, Heading, P, Grid, Card } from 'components';
+import { Main, Container, H, P, Grid, Card } from 'components';
 
 import { objectsInState } from 'tasks';
 
@@ -7,11 +7,9 @@ const ObjectInStatePage = () => {
     objectsInState;
 
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          object in state
-        </Heading>
+        <H level={1}>object in state</H>
         <P>Object in state of React-component case.</P>
       </Container>
       <Container>
@@ -39,7 +37,7 @@ const ObjectInStatePage = () => {
           </Card>
         </Grid>
       </Container>
-    </main>
+    </Main>
   );
 };
 

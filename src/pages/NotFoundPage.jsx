@@ -1,13 +1,13 @@
-import { Container, Title } from 'components';
+import { Main, Container, H, P } from 'components';
 
 const NotFoundPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
-        <Title level={1} caption="sorry, page isn't found" />
-        <p>Oops, there is no content. Error 404.</p>
+        <H level={1}>sorry, page isn't found</H>
+        <P>Oops, there is no content. Error 404.</P>
       </Container>
-    </main>
+    </Main>
   );
 };
 

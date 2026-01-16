@@ -1,15 +1,13 @@
-import { Container, Heading, P } from 'components';
+import { Main, Container, H, P } from 'components';
 
 const HomePage = () => {
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          react hook cases
-        </Heading>
+        <H level={1}>react hook cases</H>
         <P>Welcome to hook cases on React!</P>
       </Container>
-    </main>
+    </Main>
   );
 };
 

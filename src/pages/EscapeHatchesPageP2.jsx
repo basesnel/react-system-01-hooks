@@ -1,4 +1,4 @@
-import { Container, P, Grid, Card, Heading } from 'components';
+import { Main, Container, P, Grid, Card, H } from 'components';
 
 import { escapeHatchesP02 } from 'tasks';
 
@@ -34,11 +34,9 @@ const EscapeHatchesPageP2 = () => {
   } = escapeHatchesP02;
 
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          escape hatches - part ii
-        </Heading>
+        <H level={1}>escape hatches - part ii</H>
         <P>
           Escape hatches cases that may need to control and synchronize with
           system outside of React.
@@ -129,7 +127,7 @@ const EscapeHatchesPageP2 = () => {
           </Card>
         </Grid>
       </Container>
-    </main>
+    </Main>
   );
 };
 

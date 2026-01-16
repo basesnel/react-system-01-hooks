@@ -1,19 +1,17 @@
-import { Container, Heading, P } from 'components';
+import { Main, Container, H, P } from 'components';
 import { SignupForm } from 'tasks';
 
 const FormPage = () => {
   return (
-    <main>
+    <Main>
       <Container>
-        <Heading level={1} isPageTitle>
-          form
-        </Heading>
+        <H level={1}>form</H>
         <P>Form hook case.</P>
       </Container>
       <Container>
         <SignupForm />
       </Container>
-    </main>
+    </Main>
   );
 };
 

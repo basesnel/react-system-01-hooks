@@ -1,5 +1,6 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
+@value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value smartphone, desktop from mediasizes;
 @value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
@@ -54,6 +55,18 @@
   text-align: center;
 }
 
+.cardTitle {
+  padding: 0;
+  margin-bottom: 0;
+  font-size: var(--fs-text-mobile);
+  font-weight: 700;
+  text-transform: lowercase;
+  text-align: center;
+  color: var(--color-text);
+  opacity: 0.85;
+  transition: var(--my-transition);
+}
+
 @media smartphone {
   .heading01,
   .pageTitle {
@@ -72,6 +85,11 @@
   .heading03 {
     margin-bottom: calc(heading3-tablet * 0.5);
     font-size: heading3-tablet;
+  }
+
+  .cardTitle {
+    margin-bottom: 0;
+    font-size: var(--fs-text-smartphone);
   }
 }
 
@@ -94,5 +112,10 @@
   .heading03 {
     margin-bottom: calc(heading2-tv * 0.5);
     font-size: heading3-tv;
+  }
+
+  .cardTitle {
+    margin-bottom: 0;
+    font-size: var(--fs-text-tablet);
   }
 }

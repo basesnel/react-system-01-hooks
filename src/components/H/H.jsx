@@ -1,12 +1,13 @@
 import { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { mainContext } from 'contexts';
+import { mainContext, cardContext } from 'contexts';
 
 import styles from './styles.module.css';
 
 const H = props => {
   const { level, children } = props;
   const isMain = useContext(mainContext);
+  const isCard = useContext(cardContext);
 
   switch (level) {
     case 0:
@@ -15,9 +16,7 @@ const H = props => {
     case 1:
       return (
         <h1
-          className={`${styles.heading} ${styles.heading01} ${
-            isMain ? styles.pageTitle : ''
-          }`}
+          className={`${styles.heading} ${styles.heading01} ${isMain ? styles.pageTitle : ''}`}
         >
           {children}
         </h1>
@@ -25,7 +24,11 @@ const H = props => {
 
     case 2:
       return (
-        <h2 className={`${styles.heading} ${styles.heading02}`}>{children}</h2>
+        <h2
+          className={`${styles.heading} ${styles.heading02} ${isCard ? styles.cardTitle : ''}`}
+        >
+          {children}
+        </h2>
       );
 
     case 3:

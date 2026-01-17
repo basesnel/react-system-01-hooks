@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-
-import { Title } from 'components';
+import { cardContext } from 'contexts';
+import { H } from 'components';
 
 import styles from './styles.module.css';
 
@@ -9,10 +9,12 @@ const Card = props => {
 
   return (
     <div className={styles.card}>
-      <div className={styles.header}>
-        <Title level={2} caption={title} />
-      </div>
-      <div className={styles.content}>{children}</div>
+      <cardContext.Provider value={true}>
+        <div className={styles.header}>
+          <H level={2}>{title}</H>
+        </div>
+        <div className={styles.content}>{children}</div>
+      </cardContext.Provider>
     </div>
   );
 };

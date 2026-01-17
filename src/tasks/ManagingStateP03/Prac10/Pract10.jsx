@@ -1,4 +1,4 @@
-import { Heading } from 'components';
+import { H } from 'components';
 import { useReducer } from 'react';
 import { AddTaskP01, TaskListP01 } from '../IntendendComponents';
 
@@ -56,7 +56,7 @@ const Prac10 = () => {
 
   return (
     <>
-      <Heading level={3}>Day off in Kyoto</Heading>
+      <H level={3}>Day off in Kyoto</H>
       <AddTaskP01 onAddTask={handleAddTask} />
       <TaskListP01
         tasks={tasks}

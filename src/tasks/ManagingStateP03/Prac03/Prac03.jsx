@@ -1,8 +1,8 @@
 import { useReducer } from 'react';
 import { H } from 'components';
 import { initialTasks } from 'constants';
-import tasksReducer from './tasksReducer';
 import { AddTaskP01, TaskListP01 } from '../IntendendComponents';
+import tasksReducer from './tasksReducer';
 
 let nextId = 3;
 

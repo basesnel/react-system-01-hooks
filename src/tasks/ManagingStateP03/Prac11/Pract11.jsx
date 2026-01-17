@@ -1,5 +1,5 @@
-import { Heading } from 'components';
 import { useReducer } from 'react';
+import { H } from 'components';
 import { TasksContext, TasksDispatchContext } from 'contexts';
 import { AddTaskP11, TaskListP11 } from '../IntendendComponents';
 
@@ -45,7 +45,7 @@ const Prac10 = () => {
   return (
     <TasksContext.Provider value={tasks}>
       <TasksDispatchContext.Provider value={dispatch}>
-        <Heading level={3}>Day off in Kyoto</Heading>
+        <H level={3}>Day off in Kyoto</H>
         <AddTaskP11 />
         <TaskListP11 />
       </TasksDispatchContext.Provider>

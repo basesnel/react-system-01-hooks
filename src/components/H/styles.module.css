@@ -67,6 +67,18 @@
   transition: var(--my-transition);
 }
 
+.cardTitle03 {
+  padding: 0;
+  margin-bottom: 10px;
+  font-size: var(--fs-text-mobile);
+  font-weight: 700;
+  text-transform: lowercase;
+  text-align: center;
+  color: var(--color-text);
+  opacity: 0.85;
+  transition: var(--my-transition);
+}
+
 @media smartphone {
   .heading01,
   .pageTitle {
@@ -89,6 +101,10 @@
 
   .cardTitle {
     margin-bottom: 0;
+    font-size: var(--fs-text-smartphone);
+  }
+
+  .cardTitle03 {
     font-size: var(--fs-text-smartphone);
   }
 }
@@ -116,6 +132,10 @@
 
   .cardTitle {
     margin-bottom: 0;
+    font-size: var(--fs-text-tablet);
+  }
+
+  .cardTitle03 {
     font-size: var(--fs-text-tablet);
   }
 }

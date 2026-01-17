@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Title } from 'components';
+import { H } from 'components';
 import { PanelP03 } from '../intendendComponents';
 
 const Prac03 = () => {
@@ -7,7 +7,7 @@ const Prac03 = () => {
 
   return (
     <>
-      <Title level={3} caption="Almaty, Kazachstan" />
+      <H level={3}>Almaty, Kazachstan</H>
       <PanelP03
         title="About"
         isActive={activeIndex === 0}

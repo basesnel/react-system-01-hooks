@@ -1,10 +1,10 @@
-import { Title } from 'components';
+import { H } from 'components';
 import { PanelP02 } from '../intendendComponents';
 
 const Prac02 = () => {
   return (
     <>
-      <Title level={3} caption="Almaty, Kazachstan" />
+      <H level={3}>Almaty, Kazachstan</H>
       <PanelP02 title="About" isActive={true}>
         With a population of about 2 million, Almaty is Kazakhstan's largest
         city. From 1929 to 1997, it was its capital city.

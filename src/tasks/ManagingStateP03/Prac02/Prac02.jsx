@@ -1,5 +1,5 @@
 import { useReducer } from 'react';
-import { Heading } from 'components';
+import { H } from 'components';
 import { initialTasks } from 'constants';
 import { AddTaskP01, TaskListP01 } from '../IntendendComponents';
 
@@ -32,7 +32,7 @@ const Prac02 = () => {
 
   return (
     <>
-      <Heading level={3}>Prague itinerary</Heading>
+      <H level={3}>Prague itinerary</H>
       <AddTaskP01 onAddTask={handleAddTask} />
       <TaskListP01
         tasks={tasks}

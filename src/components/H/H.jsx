@@ -25,7 +25,7 @@ const H = props => {
     case 2:
       return (
         <h2
-          className={`${styles.heading} ${styles.heading02} ${isCard ? styles.cardTitle : ''}`}
+          className={`${styles.heading} ${styles.heading02} ${isCard ? styles.cardTitle02 : ''}`}
         >
           {children}
         </h2>
@@ -42,7 +42,11 @@ const H = props => {
 
     case 4:
       return (
-        <h4 className={`${styles.heading} ${styles.heading04}`}>{children}</h4>
+        <h4
+          className={`${styles.heading} ${styles.heading04} ${isCard ? styles.cardTitle04 : ''}`}
+        >
+          {children}
+        </h4>
       );
 
     case 5:

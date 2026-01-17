@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Button, P, Title } from 'components';
+import { H, P, Button } from 'components';
 
 import styles from './styles.module.css';
 
@@ -9,7 +9,7 @@ const PanelP01 = ({ title, children }) => {
 
   return (
     <section className={styles.panel}>
-      <Title level={4} caption={title} />
+      <H level={4}>{title}</H>
       {isActive ? (
         <P>{children}</P>
       ) : (

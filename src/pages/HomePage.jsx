@@ -42,21 +42,39 @@ const HomePage = () => {
         <H level={5}>Practice 01</H>
         <P>It shows how state lifts up.</P>
         <H level={6}>About</H>
-        <P>There is text of about.</P>
+        <P>
+          There is text of about. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
         <H level={6}>Etymology</H>
-        <P>There is text of etymology.</P>
+        <P>
+          There is text of etymology. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
         <H level={5}>Practice 02</H>
         <P>There is hardcoded value.</P>
         <H level={6}>About</H>
-        <P>There is text of about.</P>
+        <P>
+          There is text of about. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
         <H level={6}>Etymology</H>
-        <P>There is text of etymology.</P>
+        <P>
+          There is text of etymology. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
         <H level={5}>Practice 03</H>
         <P>There is updating of lifting state up.</P>
         <H level={6}>About</H>
-        <P>There is text of about.</P>
+        <P>
+          There is text of about. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
         <H level={6}>Etymology</H>
-        <P>There is text of etymology.</P>
+        <P>
+          There is text of etymology. This sample text is serves for content and
+          visualizes the task's description.
+        </P>
       </Container>
     </Main>
   );

@@ -12,6 +12,7 @@
 .heading {
   color: color-text;
   line-height: 1.25;
+  text-align: center;
 }
 
 .heading01,
@@ -20,32 +21,33 @@
 }
 
 .heading01 {
-  margin-bottom: calc(heading1-mobile * 0.5);
+  margin-bottom: calc(heading1-mobile);
 }
 
 .heading02 {
-  margin-bottom: calc(heading2-mobile * 0.5);
+  margin-bottom: calc(heading2-mobile);
   font-size: heading2-mobile;
 }
 
 .heading03 {
-  margin-bottom: calc(heading3-mobile * 0.5);
+  margin-bottom: calc(heading3-mobile);
   font-size: heading3-mobile;
 }
 
 .heading04 {
-  margin-bottom: calc(heading4 * 0.5);
+  margin-bottom: calc(heading4);
   font-size: heading4;
 }
 
 .heading05 {
-  margin-bottom: calc(heading5 * 0.5);
+  margin-bottom: calc(heading5);
   font-size: heading5;
 }
 
 .heading06 {
-  margin-bottom: calc(heading6 * 0.5);
+  margin-bottom: calc(heading6);
   font-size: heading6;
+  text-align: left;
 }
 
 .pageTitle {
@@ -96,7 +98,7 @@
   }
 
   .heading01 {
-    margin-bottom: calc(heading1-tablet * 0.5);
+    margin-bottom: calc(heading1-tablet);
   }
 
   .heading02 {

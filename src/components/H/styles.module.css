@@ -7,10 +7,10 @@
 @value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
 @value heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading5, heading6 from fsheadings;
-@value color-text from colors;
+@value color-dark from colors;
 
 .heading {
-  color: color-text;
+  color: color-dark;
   line-height: 1.25;
   text-align: center;
 }

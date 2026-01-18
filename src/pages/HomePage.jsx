@@ -7,73 +7,89 @@ const HomePage = () => {
         <H level={1}>react hook cases</H>
         <H level={2}>Welcome to hook cases on React!</H>
         <P>
-          Content of this page isn't important. But I need it to think headings
-          and text over by describing this project.
+          The content of this page is not important. But I had to think through
+          the size and styling of the headings and text in accordance with a11y
+          requirements. That was the purpose of this page—nothing more.
         </P>
-        <P>This practice project is about React-hooks' cases.</P>
+        <P>This practical project is dedicated to use cases for React hooks.</P>
         <H level={3}>Project's structure</H>
-        <P>There is short project's description.</P>
+        <P>
+          Here is a brief description of the project using headings and text.
+        </P>
         <H level={4}>Form page</H>
-        <P>Form page shows simple hook-case on React.</P>
+        <P>
+          This page shows a simple use case for hooks in React using a web form
+          as an example.
+        </P>
         <H level={4}>Clock page</H>
-        <P>Clock page shows simple useEffect-hook cases on React.</P>
+        <P>
+          The Clock page shows a simple use case for the useEffect hook in
+          React.
+        </P>
         <H level={4}>Pokemon page</H>
         <P>
-          Pokemon page shows simple Rest-request to Pokemon-api case on React.
+          The Pokemon page shows a simple example of a Rest request to
+          Pokemon-api on React.
         </P>
         <H level={4}>Simple-state page</H>
-        <P>Simple page shows simple useState-hook cases on React.</P>
+        <P>
+          The Simple-state page shows the simplest use cases for the useState
+          hook in React.
+        </P>
         <H level={5}>Practice 01</H>
         <P>
-          It shows useState-hook case on React for components with own state.
+          It demonstrates the use of the useState hook in React for components
+          with their own state.
         </P>
         <H level={5}>Practice 02</H>
         <P>
-          It shows useState-hook case on React for components with general
-          state.
+          It demonstrates the use of the useState hook in React for components
+          with shared state.
         </P>
         <H level={5}>Practice 03</H>
         <P>
-          In this case title of web-page shows sum of buttons' clickings by
-          useEffect.
+          In this case, the web page title shows the number of clicks on the
+          buttons using useEffect.
         </P>
         <H level={4}>Manage-state page part II</H>
-        <P>It shows some managing of state cases on React for components.</P>
+        <P>
+          This page shows some ways to manage state in React for components.
+        </P>
         <H level={5}>Practice 01</H>
         <P>It shows how state lifts up.</P>
         <H level={6}>About</H>
         <P>
-          There is text of about. This sample text is serves for content and
-          visualizes the task's description.
+          There is text of about. This sample text serves to fill in and
+          visualize the task description.
         </P>
         <H level={6}>Etymology</H>
         <P>
-          There is text of etymology. This sample text is serves for content and
-          visualizes the task's description.
+          There is a text on etymology. This sample text serves to fill in and
+          visualize the task description.
         </P>
         <H level={5}>Practice 02</H>
         <P>There is hardcoded value.</P>
         <H level={6}>About</H>
         <P>
-          There is text of about. This sample text is serves for content and
-          visualizes the task's description.
+          There is text of about. This sample text serves to fill in and
+          visualize the task description.
         </P>
         <H level={6}>Etymology</H>
         <P>
-          There is text of etymology. This sample text is serves for content and
-          visualizes the task's description.
+          There is text of etymology. This sample text serves to fill in and
+          visualize the task description.
         </P>
         <H level={5}>Practice 03</H>
         <P>There is updating of lifting state up.</P>
         <H level={6}>About</H>
         <P>
-          There is text of about. This sample text is serves for content and
-          visualizes the task's description.
+          There is text of about. This sample text serves to fill in and
+          visualize the task description.
         </P>
         <H level={6}>Etymology</H>
         <P>
-          There is text of etymology. This sample text is serves for content and
-          visualizes the task's description.
+          There is text of etymology. This sample text serves to fill in and
+          visualize the task description.
         </P>
       </Container>
     </Main>

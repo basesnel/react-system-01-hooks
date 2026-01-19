@@ -3,8 +3,8 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, desktop from mediasizes;
-@value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
-@value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
+@value heading1, heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
+@value heading2, heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
 @value heading3, heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading4-mobile from fsheadings;
 @value heading5, heading5-mobile from fsheadings;
@@ -19,22 +19,24 @@
 
 .heading01,
 .pageTitle {
-  font-size: heading1-mobile;
+  font-size: heading1;
+  text-transform: uppercase;
 }
 
 .heading01 {
-  margin-bottom: calc(heading1-mobile);
+  margin-bottom: calc(heading1);
 }
 
 .heading02 {
-  margin-bottom: calc(heading2-mobile);
-  font-size: heading2-mobile;
+  margin-bottom: calc(heading2);
+  font-size: heading2;
+  text-transform: uppercase;
 }
 
 .heading02::before {
   content: '';
   display: block;
-  height: calc(heading2-mobile);
+  height: calc(heading2);
 }
 
 .heading03 {
@@ -125,6 +127,22 @@
 }
 
 @media mobile {
+  .heading01 {
+    margin-bottom: calc(heading1-mobile);
+    font-size: heading1-mobile;
+  }
+
+  .heading02 {
+    margin-bottom: calc(heading2-mobile);
+    font-size: heading2-mobile;
+  }
+
+  .heading02::before {
+    content: '';
+    display: block;
+    height: calc(heading2-mobile);
+  }
+
   .heading03 {
     margin-bottom: calc(heading3-mobile);
     font-size: heading3-mobile;

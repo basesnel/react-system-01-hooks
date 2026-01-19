@@ -87,9 +87,7 @@
 
 .pageTitle {
   padding-bottom: 10px;
-  border-bottom: 1px solid var(--color-caption);
-  text-transform: uppercase;
-  text-align: center;
+  border-bottom: 1px solid color-dark;
 }
 
 .cardTitle02 {

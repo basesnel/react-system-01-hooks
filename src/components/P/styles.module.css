@@ -1,6 +1,8 @@
-@value fstext: "../../cssvariables/fstext.module.css";
+@value mediasizes: "../../cssvariables/media.module.css";
+@value fstexts: "../../cssvariables/fstext.module.css";
 @value color-text: "../../cssvariables/color.module.css";
-@value fstext from fstext;
+@value mobile, smartphone, desktop from mediasizes;
+@value fstext, fstext-smartphone from fstexts;
 @value color-text from color-text;
 
 .text {
@@ -21,4 +23,10 @@
 
 .text.greenText {
   color: green;
+}
+
+@media smartphone {
+  .text {
+    font-size: fstext-smartphone;
+  }
 }

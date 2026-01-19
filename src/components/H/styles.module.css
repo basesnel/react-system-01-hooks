@@ -5,8 +5,8 @@
 @value mobile, smartphone, desktop from mediasizes;
 @value heading1, heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
 @value heading2, heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
-@value heading3, heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
-@value heading4, heading4-mobile from fsheadings;
+@value heading3, heading3-mobile, heading3-smartphone, heading3-tablet, heading3-tv from fsheadings;
+@value heading4, heading4-mobile, heading4-smartphone from fsheadings;
 @value heading5, heading5-mobile, heading5-smartphone from fsheadings;
 @value heading6, heading6-mobile, heading6-smartphone from fsheadings;
 @value color-dark from colors;
@@ -218,6 +218,28 @@
 
   .cardTitle04 {
     font-size: var(--fs-text-smartphone);
+  }
+
+  .heading03 {
+    margin-bottom: heading3-smartphone;
+    font-size: heading3-smartphone;
+  }
+
+  .heading03::before {
+    content: '';
+    display: block;
+    height: heading3-smartphone;
+  }
+
+  .heading04 {
+    margin-bottom: heading4-smartphone;
+    font-size: heading4-smartphone;
+  }
+
+  .heading04::before {
+    content: '';
+    display: block;
+    height: heading4-smartphone;
   }
 
   .heading05 {

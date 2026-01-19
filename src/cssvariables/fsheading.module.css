@@ -10,11 +10,13 @@
 
 @value heading3: 22px;
 @value heading3-mobile: 24px;
+@value heading3-smartphone: 26px;
 @value heading3-tablet: 26px;
 @value heading3-tv: 28px;
 
 @value heading4: 20px;
 @value heading4-mobile: 22px;
+@value heading4-smartphone: 24px;
 
 @value heading5: 18px;
 @value heading5-mobile: 20px;

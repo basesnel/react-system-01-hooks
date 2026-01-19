@@ -2,11 +2,13 @@
 @value fsheadings: "../../cssvariables/fsheading.module.css";
 @value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
-@value smartphone, desktop from mediasizes;
+@value mobile, smartphone, desktop from mediasizes;
 @value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
 @value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
 @value heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
-@value heading4, heading5, heading6 from fsheadings;
+@value heading4 from fsheadings;
+@value heading5, heading5-mobile from fsheadings;
+@value heading6, heading6-mobile from fsheadings;
 @value color-dark from colors;
 
 .heading {
@@ -119,6 +121,31 @@
   color: var(--color-text);
   opacity: 0.85;
   transition: var(--my-transition);
+}
+
+@media mobile {
+  .heading05 {
+    margin-bottom: calc(heading5-mobile);
+    font-size: heading5-mobile;
+  }
+
+  .heading05::before {
+    content: '';
+    display: block;
+    height: calc(heading5-mobile);
+  }
+
+  .heading06 {
+    margin-bottom: calc(heading6-mobile);
+    font-size: heading6-mobile;
+    text-align: left;
+  }
+
+  .heading06::before {
+    content: '';
+    display: block;
+    height: calc(heading6-mobile);
+  }
 }
 
 @media smartphone {

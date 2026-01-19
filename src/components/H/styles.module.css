@@ -24,11 +24,11 @@
 }
 
 .heading01 {
-  margin-bottom: calc(heading1);
+  margin-bottom: heading1;
 }
 
 .heading02 {
-  margin-bottom: calc(heading2);
+  margin-bottom: heading2;
   font-size: heading2;
   text-transform: uppercase;
 }
@@ -36,11 +36,11 @@
 .heading02::before {
   content: '';
   display: block;
-  height: calc(heading2);
+  height: heading2;
 }
 
 .heading03 {
-  margin-bottom: calc(heading3);
+  margin-bottom: heading3;
   font-size: heading3;
   text-transform: uppercase;
 }
@@ -48,33 +48,33 @@
 .heading03::before {
   content: '';
   display: block;
-  height: calc(heading3);
+  height: heading3;
 }
 
 .heading04 {
-  margin-bottom: calc(heading4);
+  margin-bottom: heading4;
   font-size: heading4;
 }
 
 .heading04::before {
   content: '';
   display: block;
-  height: calc(heading4);
+  height: heading4;
 }
 
 .heading05 {
-  margin-bottom: calc(heading5);
+  margin-bottom: heading5;
   font-size: heading5;
 }
 
 .heading05::before {
   content: '';
   display: block;
-  height: calc(heading5);
+  height: heading5;
 }
 
 .heading06 {
-  margin-bottom: calc(heading6);
+  margin-bottom: heading6;
   font-size: heading6;
   text-align: left;
 }
@@ -82,7 +82,7 @@
 .heading06::before {
   content: '';
   display: block;
-  height: calc(heading6);
+  height: heading6;
 }
 
 .pageTitle {

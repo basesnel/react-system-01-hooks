@@ -7,8 +7,8 @@
 @value heading2, heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
 @value heading3, heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading4-mobile from fsheadings;
-@value heading5, heading5-mobile from fsheadings;
-@value heading6, heading6-mobile from fsheadings;
+@value heading5, heading5-mobile, heading5-smartphone from fsheadings;
+@value heading6, heading6-mobile, heading6-smartphone from fsheadings;
 @value color-dark from colors;
 
 .heading {
@@ -218,6 +218,31 @@
 
   .cardTitle04 {
     font-size: var(--fs-text-smartphone);
+  }
+
+  .heading05 {
+    margin-bottom: heading5-smartphone;
+    padding-left: heading5-smartphone;
+    font-size: heading5-smartphone;
+    text-align: left;
+  }
+
+  .heading05::before {
+    content: '';
+    display: block;
+    height: heading5-smartphone;
+  }
+
+  .heading06 {
+    margin-bottom: heading6-smartphone;
+    font-size: heading6-smartphone;
+    text-align: left;
+  }
+
+  .heading06::before {
+    content: '';
+    display: block;
+    height: heading6-smartphone;
   }
 }
 

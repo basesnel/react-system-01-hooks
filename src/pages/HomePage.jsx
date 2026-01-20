@@ -8,11 +8,12 @@ const HomePage = () => {
         <H level={2}>Welcome to hook cases on React!</H>
         <P>
           The content of this page is not important. But I had to think through
-          the size and styling of the headings and text in accordance with a11y
-          requirements. That was the purpose of this page—nothing more.
+          the size and styling of the headings and text in accordance with{' '}
+          <b>a11y</b>&ndash;recommendations. That was the purpose of this page
+          &mdash; nothing more.
         </P>
         <P>This practical project is dedicated to use cases for React hooks.</P>
-        <H level={3}>Project's structure</H>
+        <H level={3}>Project's contents</H>
         <P>
           Here is a brief description of the project using headings and text.
         </P>

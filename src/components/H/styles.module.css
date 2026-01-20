@@ -6,7 +6,7 @@
 @value heading1, heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
 @value heading2, heading2-mobile, heading2-smartphone, heading2-tablet, heading2-tv from fsheadings;
 @value heading3, heading3-mobile, heading3-smartphone, heading3-tablet, heading3-tv from fsheadings;
-@value heading4, heading4-mobile, heading4-smartphone from fsheadings;
+@value heading4, heading4-mobile, heading4-smartphone, heading4-tablet from fsheadings;
 @value heading5, heading5-mobile, heading5-smartphone, heading5-tablet from fsheadings;
 @value heading6, heading6-mobile, heading6-smartphone, heading6-tablet from fsheadings;
 @value color-dark from colors;
@@ -256,6 +256,24 @@
 }
 
 @media tablet {
+  .heading03 {
+    margin-bottom: heading3-tablet;
+    font-size: heading3-tablet;
+  }
+
+  .heading03::before {
+    height: heading3-tablet;
+  }
+
+  .heading04 {
+    margin-bottom: heading4-tablet;
+    font-size: heading4-tablet;
+  }
+
+  .heading04::before {
+    height: heading4-tablet;
+  }
+
   .heading05 {
     margin-bottom: heading5-tablet;
     padding-left: calc(heading5-tablet * 1.5);

@@ -136,8 +136,6 @@
   }
 
   .heading02::before {
-    content: '';
-    display: block;
     height: heading2-mobile;
   }
 
@@ -147,8 +145,6 @@
   }
 
   .heading03::before {
-    content: '';
-    display: block;
     height: heading3-mobile;
   }
 
@@ -158,8 +154,6 @@
   }
 
   .heading04::before {
-    content: '';
-    display: block;
     height: heading4-mobile;
   }
 
@@ -169,8 +163,6 @@
   }
 
   .heading05::before {
-    content: '';
-    display: block;
     height: heading5-mobile;
   }
 
@@ -181,8 +173,6 @@
   }
 
   .heading06::before {
-    content: '';
-    display: block;
     height: heading6-mobile;
   }
 }

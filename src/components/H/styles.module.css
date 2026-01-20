@@ -3,7 +3,7 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, tablet, desktop from mediasizes;
-@value heading1, heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
+@value heading1, heading1-mobile, heading1-smartphone, heading1-tablet, heading1-tv from fsheadings;
 @value heading2, heading2-mobile, heading2-smartphone, heading2-tablet, heading2-tv from fsheadings;
 @value heading3, heading3-mobile, heading3-smartphone, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading4-mobile, heading4-smartphone, heading4-tablet from fsheadings;
@@ -256,6 +256,20 @@
 }
 
 @media tablet {
+  .heading01 {
+    margin-bottom: heading1-tablet;
+    font-size: heading1-tablet;
+  }
+
+  .heading02 {
+    margin-bottom: heading2-tablet;
+    font-size: heading2-tablet;
+  }
+
+  .heading02::before {
+    height: heading2-tablet;
+  }
+
   .heading03 {
     margin-bottom: heading3-tablet;
     font-size: heading3-tablet;

@@ -280,12 +280,24 @@
   }
 
   .heading04 {
+    position: relative;
     margin-bottom: heading4-tablet;
+    padding-left: calc(heading4-tablet * 1.5);
     font-size: heading4-tablet;
+    text-align: left;
   }
 
   .heading04::before {
     height: heading4-tablet;
+  }
+
+  .heading04::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 13px;
+    height: calc(heading4-tablet * 1.5);
+    background-color: color-dark;
   }
 
   .heading05 {

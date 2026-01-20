@@ -4,7 +4,7 @@
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, desktop from mediasizes;
 @value heading1, heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
-@value heading2, heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
+@value heading2, heading2-mobile, heading2-smartphone, heading2-tablet, heading2-tv from fsheadings;
 @value heading3, heading3-mobile, heading3-smartphone, heading3-tablet, heading3-tv from fsheadings;
 @value heading4, heading4-mobile, heading4-smartphone from fsheadings;
 @value heading5, heading5-mobile, heading5-smartphone from fsheadings;
@@ -178,23 +178,57 @@
 }
 
 @media smartphone {
-  .heading01,
-  .pageTitle {
-    font-size: heading1-tablet;
-  }
-
   .heading01 {
-    margin-bottom: calc(heading1-tablet);
+    margin-bottom: heading1-smartphone;
+    font-size: heading1-smartphone;
   }
 
   .heading02 {
-    margin-bottom: calc(heading2-tablet * 0.5);
-    font-size: heading2-tablet;
+    margin-bottom: heading2-smartphone;
+    font-size: heading2-smartphone;
+  }
+
+  .heading02::before {
+    height: heading2-smartphone;
   }
 
   .heading03 {
-    margin-bottom: calc(heading3-tablet * 0.5);
-    font-size: heading3-tablet;
+    margin-bottom: heading3-smartphone;
+    font-size: heading3-smartphone;
+  }
+
+  .heading03::before {
+    height: heading3-smartphone;
+  }
+
+  .heading04 {
+    margin-bottom: heading4-smartphone;
+    font-size: heading4-smartphone;
+  }
+
+  .heading04::before {
+    height: heading4-smartphone;
+  }
+
+  .heading05 {
+    margin-bottom: heading5-smartphone;
+    padding-left: heading5-smartphone;
+    font-size: heading5-smartphone;
+    text-align: left;
+  }
+
+  .heading05::before {
+    height: heading5-smartphone;
+  }
+
+  .heading06 {
+    margin-bottom: heading6-smartphone;
+    font-size: heading6-smartphone;
+    text-align: left;
+  }
+
+  .heading06::before {
+    height: heading6-smartphone;
   }
 
   .cardTitle02 {
@@ -208,53 +242,6 @@
 
   .cardTitle04 {
     font-size: var(--fs-text-smartphone);
-  }
-
-  .heading03 {
-    margin-bottom: heading3-smartphone;
-    font-size: heading3-smartphone;
-  }
-
-  .heading03::before {
-    content: '';
-    display: block;
-    height: heading3-smartphone;
-  }
-
-  .heading04 {
-    margin-bottom: heading4-smartphone;
-    font-size: heading4-smartphone;
-  }
-
-  .heading04::before {
-    content: '';
-    display: block;
-    height: heading4-smartphone;
-  }
-
-  .heading05 {
-    margin-bottom: heading5-smartphone;
-    padding-left: heading5-smartphone;
-    font-size: heading5-smartphone;
-    text-align: left;
-  }
-
-  .heading05::before {
-    content: '';
-    display: block;
-    height: heading5-smartphone;
-  }
-
-  .heading06 {
-    margin-bottom: heading6-smartphone;
-    font-size: heading6-smartphone;
-    text-align: left;
-  }
-
-  .heading06::before {
-    content: '';
-    display: block;
-    height: heading6-smartphone;
   }
 }
 

@@ -24,8 +24,10 @@
 @value heading5-mobile: 20px;
 @value heading5-smartphone: 22px;
 @value heading5-tablet: 24px;
+@value heading5-desktop: 26px;
 
 @value heading6: 16px;
 @value heading6-mobile: 18px;
 @value heading6-smartphone: 20px;
 @value heading6-tablet: 22px;
+@value heading6-desktop: 24px;

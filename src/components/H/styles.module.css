@@ -211,6 +211,7 @@
   }
 
   .heading05 {
+    position: relative;
     margin-bottom: heading5-smartphone;
     padding-left: heading5-smartphone;
     font-size: heading5-smartphone;
@@ -219,6 +220,15 @@
 
   .heading05::before {
     height: heading5-smartphone;
+  }
+
+  .heading05::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 8px;
+    height: calc(heading5-smartphone * 1.5);
+    background-color: color-dark;
   }
 
   .heading06 {

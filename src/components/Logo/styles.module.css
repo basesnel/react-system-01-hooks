@@ -1,22 +1,24 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fstexts: "../../cssvariables/fstext.module.css";
+@value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone from mediasizes;
 @value fstext, fstext-smartphone from fstexts;
+@value color-light, color-accent from colors;
 
 .logo {
   display: block;
   padding: 10px 0;
-  border-bottom: 1px solid var(--color-logolight);
+  border-bottom: 1px solid color-light;
   font-size: fstext;
   font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
   text-align: center;
-  color: var(--color-accent);
+  color: color-accent;
 }
 
 .decor {
-  color: var(--color-logolight);
+  color: color-light;
 }
 
 @media smartphone {

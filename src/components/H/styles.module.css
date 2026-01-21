@@ -211,7 +211,6 @@
   }
 
   .heading05 {
-    position: relative;
     margin-bottom: heading5-smartphone;
     padding-left: heading5-smartphone;
     font-size: heading5-smartphone;
@@ -220,15 +219,6 @@
 
   .heading05::before {
     height: heading5-smartphone;
-  }
-
-  .heading05::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 5px;
-    height: calc(heading5-smartphone * 1.5);
-    background-color: color-dark;
   }
 
   .heading06 {
@@ -280,7 +270,6 @@
   }
 
   .heading04 {
-    position: relative;
     margin-bottom: heading4-tablet;
     padding-left: calc(heading4-tablet * 1.5);
     font-size: heading4-tablet;
@@ -291,28 +280,14 @@
     height: heading4-tablet;
   }
 
-  .heading04::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 13px;
-    height: calc(heading4-tablet * 1.5);
-    background-color: color-dark;
-  }
-
   .heading05 {
     margin-bottom: heading5-tablet;
-    padding-left: calc(heading5-tablet * 1.5);
+    padding-left: calc(heading5-tablet * 1);
     font-size: heading5-tablet;
   }
 
   .heading05::before {
     height: heading5-tablet;
-  }
-
-  .heading05::after {
-    width: 8px;
-    height: calc(heading5-tablet * 1.5);
   }
 
   .heading06 {
@@ -352,7 +327,6 @@
   }
 
   .heading03 {
-    position: relative;
     margin-bottom: heading3-desktop;
     padding-left: calc(heading3-desktop * 2);
     font-size: heading3-desktop;
@@ -362,15 +336,6 @@
   .heading03::before {
     height: heading3-desktop;
   }
-
-  /* .heading03::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    width: 21px;
-    height: calc(heading3-desktop * 1.5);
-    background-color: color-dark;
-  } */
 
   .heading04 {
     position: relative;
@@ -384,23 +349,14 @@
     height: heading4-desktop;
   }
 
-  .heading04::after {
-    height: calc(heading4-desktop * 1.5);
-  }
-
   .heading05 {
     margin-bottom: heading5-desktop;
-    padding-left: calc(heading5-desktop * 1.5);
+    padding-left: calc(heading5-desktop * 1);
     font-size: heading5-desktop;
   }
 
   .heading05::before {
     height: heading5-desktop;
-  }
-
-  .heading05::after {
-    width: 8px;
-    height: calc(heading5-desktop * 1.5);
   }
 
   .heading06 {

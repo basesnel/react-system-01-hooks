@@ -1,11 +1,13 @@
-@value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, tablet-to from sizes;
+@value mediasizes: "../../cssvariables/media.module.css";
+@value fstexts: "../../cssvariables/fstext.module.css";
+@value mobile, smartphone from mediasizes;
+@value fstext, fstext-smartphone from fstexts;
 
 .logo {
   display: block;
   padding: 10px 0;
   border-bottom: 1px solid var(--color-logolight);
-  font-size: var(--fs-title-ii-mobile);
+  font-size: fstext;
   font-weight: 600;
   line-height: 1.25;
   text-decoration: none;
@@ -13,24 +15,18 @@
   color: var(--color-accent);
 }
 
-@media mobile-to {
+.decor {
+  color: var(--color-logolight);
+}
+
+@media smartphone {
   .logo {
-    font-size: var(--fs-title-ii-smartphone);
+    font-size: fstext-smartphone;
   }
 }
 
-@media smartphone-to {
-  .logo {
-    font-size: var(--fs-title-ii-tablet);
-  }
-}
-
-@media tablet-to {
+@media tablet {
   .logo {
     border: none;
   }
-}
-
-.decor {
-  color: var(--color-logolight);
 }

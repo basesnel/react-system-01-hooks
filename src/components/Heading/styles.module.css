@@ -2,9 +2,9 @@
 @value fsheadings: "../../cssvariables/fsheading.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value smartphone, desktop from mediasizes;
-@value heading1-mobile, heading1-tablet, heading1-tv from fsheadings;
-@value heading2-mobile, heading2-tablet, heading2-tv from fsheadings;
-@value heading3-mobile, heading3-tablet, heading3-tv from fsheadings;
+@value heading1-mobile, heading1-tablet, heading1-desktop from fsheadings;
+@value heading2-mobile, heading2-tablet, heading2-desktop from fsheadings;
+@value heading3-mobile, heading3-tablet, heading3-desktop from fsheadings;
 @value heading4, heading5, heading6 from fsheadings;
 @value color-text from colors;
 
@@ -79,20 +79,20 @@
   .heading01,
   .pageTitle {
     text-align: initial;
-    font-size: heading1-tv;
+    font-size: heading1-desktop;
   }
 
   .heading01 {
-    margin-bottom: calc(heading1-tv * 0.5);
+    margin-bottom: calc(heading1-desktop * 0.5);
   }
 
   .heading02 {
-    margin-bottom: calc(heading2-tv * 0.5);
-    font-size: heading2-tv;
+    margin-bottom: calc(heading2-desktop * 0.5);
+    font-size: heading2-desktop;
   }
 
   .heading03 {
-    margin-bottom: calc(heading2-tv * 0.5);
-    font-size: heading3-tv;
+    margin-bottom: calc(heading2-desktop * 0.5);
+    font-size: heading3-desktop;
   }
 }

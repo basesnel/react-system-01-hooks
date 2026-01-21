@@ -76,7 +76,7 @@
 .heading06 {
   margin-bottom: heading6;
   font-size: heading6;
-  text-align: left;
+  text-align: initial;
 }
 
 .heading06::before {
@@ -118,7 +118,7 @@
   margin-bottom: 10px;
   font-size: var(--fs-text-mobile);
   font-weight: 700;
-  text-align: left;
+  text-align: initial;
   color: var(--color-text);
   opacity: 0.85;
   transition: var(--my-transition);
@@ -169,7 +169,7 @@
   .heading06 {
     margin-bottom: heading6-mobile;
     font-size: heading6-mobile;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading06::before {
@@ -215,7 +215,7 @@
     margin-bottom: heading5-smartphone;
     padding-left: heading5-smartphone;
     font-size: heading5-smartphone;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading05::before {
@@ -234,7 +234,7 @@
   .heading06 {
     margin-bottom: heading6-smartphone;
     font-size: heading6-smartphone;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading06::before {
@@ -284,7 +284,7 @@
     margin-bottom: heading4-tablet;
     padding-left: calc(heading4-tablet * 1.5);
     font-size: heading4-tablet;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading04::before {
@@ -329,11 +329,13 @@
   .heading01 {
     margin-bottom: heading1-desktop;
     font-size: heading1-desktop;
+    text-align: initial;
   }
 
   .heading02 {
     margin-bottom: heading2-desktop;
     font-size: heading2-desktop;
+    text-align: initial;
   }
 
   .heading02::before {
@@ -354,28 +356,28 @@
     margin-bottom: heading3-desktop;
     padding-left: calc(heading3-desktop * 2);
     font-size: heading3-desktop;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading03::before {
     height: heading3-desktop;
   }
 
-  .heading03::after {
+  /* .heading03::after {
     content: '';
     position: absolute;
     left: 0;
     width: 21px;
     height: calc(heading3-desktop * 1.5);
     background-color: color-dark;
-  }
+  } */
 
   .heading04 {
     position: relative;
     margin-bottom: heading4-desktop;
     padding-left: calc(heading4-desktop * 1.5);
     font-size: heading4-desktop;
-    text-align: left;
+    text-align: initial;
   }
 
   .heading04::before {

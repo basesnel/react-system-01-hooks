@@ -344,7 +344,7 @@
   .heading03 {
     position: relative;
     margin-bottom: heading3-desktop;
-    padding-left: calc(heading5-desktop * 2);
+    padding-left: calc(heading3-desktop * 2);
     font-size: heading3-desktop;
     text-align: left;
   }

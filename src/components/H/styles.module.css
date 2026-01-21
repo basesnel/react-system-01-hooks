@@ -3,8 +3,8 @@
 @value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, tablet, desktop from mediasizes;
-@value heading1, heading1-mobile, heading1-smartphone, heading1-tablet, heading1-tv from fsheadings;
-@value heading2, heading2-mobile, heading2-smartphone, heading2-tablet, heading2-tv from fsheadings;
+@value heading1, heading1-mobile, heading1-smartphone, heading1-tablet, heading1-desktop from fsheadings;
+@value heading2, heading2-mobile, heading2-smartphone, heading2-tablet, heading2-desktop from fsheadings;
 @value heading3, heading3-mobile, heading3-smartphone, heading3-tablet, heading3-desktop from fsheadings;
 @value heading4, heading4-mobile, heading4-smartphone, heading4-tablet, heading4-desktop from fsheadings;
 @value heading5, heading5-mobile, heading5-smartphone, heading5-tablet, heading5-desktop from fsheadings;
@@ -326,19 +326,27 @@
 }
 
 @media desktop {
-  .heading01,
-  .pageTitle {
-    text-align: initial;
-    font-size: heading1-tv;
-  }
-
   .heading01 {
-    margin-bottom: calc(heading1-tv * 0.5);
+    margin-bottom: heading1-desktop;
+    font-size: heading1-desktop;
   }
 
   .heading02 {
-    margin-bottom: calc(heading2-tv * 0.5);
-    font-size: heading2-tv;
+    margin-bottom: heading2-desktop;
+    font-size: heading2-desktop;
+  }
+
+  .heading02::before {
+    height: heading2-desktop;
+  }
+
+  .heading03 {
+    margin-bottom: heading3-desktop;
+    font-size: heading3-desktop;
+  }
+
+  .heading03::before {
+    height: heading3-desktop;
   }
 
   .heading03 {

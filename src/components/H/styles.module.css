@@ -309,6 +309,7 @@
 
   .heading02 {
     margin-bottom: heading2-desktop;
+    padding-left: calc(heading3-desktop * 2.5);
     font-size: heading2-desktop;
     text-align: initial;
   }

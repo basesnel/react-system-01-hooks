@@ -6,7 +6,8 @@ import styles from './styles.module.css';
 
 const H = props => {
   const { level, children } = props;
-  const { heading01, heading02, heading03, heading04 } = styles;
+  const { heading01, heading02, heading03, heading04, heading05, heading06 } =
+    styles;
   const isMain = useContext(mainContext);
   const isCard = useContext(cardContext);
 
@@ -43,14 +44,10 @@ const H = props => {
       );
 
     case 5:
-      return (
-        <h5 className={`${styles.heading} ${styles.heading05}`}>{children}</h5>
-      );
+      return <h5 className={heading05}>{children}</h5>;
 
     case 6:
-      return (
-        <h6 className={`${styles.heading} ${styles.heading06}`}>{children}</h6>
-      );
+      return <h6 className={heading06}>{children}</h6>;
 
     default:
       throw Error('Unknown level: ' + level);

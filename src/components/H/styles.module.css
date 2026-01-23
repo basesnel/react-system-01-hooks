@@ -63,6 +63,7 @@
 }
 
 .heading05 {
+  composes: heading;
   margin-bottom: heading5;
   font-size: heading5;
 }
@@ -74,6 +75,7 @@
 }
 
 .heading06 {
+  composes: heading;
   margin-bottom: heading6;
   font-size: heading6;
   text-align: initial;

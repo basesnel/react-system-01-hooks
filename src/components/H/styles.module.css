@@ -25,6 +25,7 @@
 }
 
 .heading02 {
+  composes: heading;
   margin-bottom: heading2;
   font-size: heading2;
   text-transform: uppercase;

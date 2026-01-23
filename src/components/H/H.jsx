@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const H = props => {
   const { level, children } = props;
-  const { heading01 } = styles;
+  const { heading01, heading02 } = styles;
   const isMain = useContext(mainContext);
   const isCard = useContext(cardContext);
 
@@ -23,9 +23,7 @@ const H = props => {
 
     case 2:
       return (
-        <h2
-          className={`${styles.heading} ${styles.heading02} ${isCard ? styles.cardTitle02 : ''}`}
-        >
+        <h2 className={`${heading02} ${isCard ? styles.cardTitle02 : ''}`}>
           {children}
         </h2>
       );

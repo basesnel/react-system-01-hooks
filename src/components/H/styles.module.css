@@ -17,14 +17,11 @@
   text-align: center;
 }
 
-.heading01,
-.pageTitle {
+.heading01 {
+  composes: heading;
+  margin-bottom: heading1;
   font-size: heading1;
   text-transform: uppercase;
-}
-
-.heading01 {
-  margin-bottom: heading1;
 }
 
 .heading02 {

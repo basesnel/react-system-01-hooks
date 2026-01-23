@@ -2,8 +2,6 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-console.log(styles);
-
 const P = props => {
   const { id, centered, warned, succeeded, paragraphRef, children } = props;
   const {

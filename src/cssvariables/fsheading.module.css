@@ -1,7 +1,8 @@
 @value heading1: 30px;
 @value heading1-mobile: 32px;
-@value heading1-tablet: 34px;
-@value heading1-desktop: 36px;
+@value heading1-smartphone: 34px;
+@value heading1-tablet: 36px;
+@value heading1-desktop: 38px;
 
 @value heading2: 24px;
 @value heading2-mobile: 26px;

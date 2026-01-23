@@ -2,28 +2,30 @@ import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
+console.log(styles);
+
 const P = props => {
   const { id, centered, warned, succeeded, paragraphRef, children } = props;
-  const { text, centeredText, greenText, redText } = styles;
+  const { text, centeredText, greenText, warnText, warnCenteredText } = styles;
 
   const styledText = () => {
     if (centered && succeeded) {
-      return `${text} ${centeredText} ${greenText}`;
+      return `${centeredText} ${greenText}`;
     }
 
     if (centered && warned) {
-      return `${text} ${centeredText} ${redText}`;
+      return warnCenteredText;
     }
 
     if (centered) {
-      return `${text} ${centeredText}`;
+      return centeredText;
     }
 
     if (warned) {
-      return `${text} ${redText}`;
+      return warnText;
     }
 
-    return `${text}`;
+    return text;
   };
 
   return (

@@ -14,15 +14,22 @@
 }
 
 .centeredText {
+  composes: text;
   text-align: center;
 }
 
-.redText {
+.warnText {
+  composes: text;
   color: red;
 }
 
 .greenText {
   color: green;
+}
+
+.warnCenteredText {
+  composes: centeredText;
+  color: red;
 }
 
 @media smartphone {

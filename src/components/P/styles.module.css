@@ -13,15 +13,15 @@
   color: color-text;
 }
 
-.text.centeredText {
+.centeredText {
   text-align: center;
 }
 
-.text.redText {
+.redText {
   color: red;
 }
 
-.text.greenText {
+.greenText {
   color: green;
 }
 

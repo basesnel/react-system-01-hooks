@@ -4,25 +4,26 @@ import styles from './styles.module.css';
 
 const P = props => {
   const { id, centered, warned, succeeded, paragraphRef, children } = props;
+  const { text, centeredText, greenText, redText } = styles;
 
   const styledText = () => {
     if (centered && succeeded) {
-      return `${styles.text} ${styles.centeredText} ${styles.greenText}`;
+      return `${text} ${centeredText} ${greenText}`;
     }
 
     if (centered && warned) {
-      return `${styles.text} ${styles.centeredText} ${styles.redText}`;
+      return `${text} ${centeredText} ${redText}`;
     }
 
     if (centered) {
-      return `${styles.text} ${styles.centeredText}`;
+      return `${text} ${centeredText}`;
     }
 
     if (warned) {
-      return `${styles.text} ${styles.redText}`;
+      return `${text} ${redText}`;
     }
 
-    return `${styles.text}`;
+    return `${text}`;
   };
 
   return (

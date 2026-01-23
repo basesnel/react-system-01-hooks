@@ -13,23 +13,29 @@
   color: color-text;
 }
 
-.centeredText {
-  composes: text;
-  text-align: center;
-}
-
 .warnText {
   composes: text;
   color: red;
 }
 
-.greenText {
+.successText {
+  composes: text;
   color: green;
+}
+
+.centeredText {
+  composes: text;
+  text-align: center;
 }
 
 .warnCenteredText {
   composes: centeredText;
   color: red;
+}
+
+.successCenteredText {
+  composes: centeredText;
+  color: green;
 }
 
 @media smartphone {

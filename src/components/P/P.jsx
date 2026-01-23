@@ -6,11 +6,18 @@ console.log(styles);
 
 const P = props => {
   const { id, centered, warned, succeeded, paragraphRef, children } = props;
-  const { text, centeredText, greenText, warnText, warnCenteredText } = styles;
+  const {
+    text,
+    warnText,
+    successText,
+    centeredText,
+    warnCenteredText,
+    successCenteredText,
+  } = styles;
 
   const styledText = () => {
     if (centered && succeeded) {
-      return `${centeredText} ${greenText}`;
+      return successCenteredText;
     }
 
     if (centered && warned) {
@@ -19,6 +26,10 @@ const P = props => {
 
     if (centered) {
       return centeredText;
+    }
+
+    if (succeeded) {
+      return successText;
     }
 
     if (warned) {

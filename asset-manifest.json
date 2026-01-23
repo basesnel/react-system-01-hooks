@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-system-01-hooks/static/css/main.86d140d2.css",
+    "main.css": "/react-system-01-hooks/static/css/main.7a8fcde5.css",
     "main.js": "/react-system-01-hooks/static/js/main.82652ca0.js",
     "static/media/kitten-1280-07.jpg": "/react-system-01-hooks/static/media/kitten-1280-07.ca5698a229340a4ee2bb.jpg",
     "static/media/kitten-1280-07.webp": "/react-system-01-hooks/static/media/kitten-1280-07.c7d22e4e6af01f2333c5.webp",
@@ -80,11 +80,11 @@
     "static/media/kitten-320-01.webp": "/react-system-01-hooks/static/media/kitten-320-01.88207ab4a9d053d2baf1.webp",
     "index.html": "/react-system-01-hooks/index.html",
     "static/media/search.svg": "/react-system-01-hooks/static/media/search.c32f5a98ca5c9d1af425.svg",
-    "main.86d140d2.css.map": "/react-system-01-hooks/static/css/main.86d140d2.css.map",
+    "main.7a8fcde5.css.map": "/react-system-01-hooks/static/css/main.7a8fcde5.css.map",
     "main.82652ca0.js.map": "/react-system-01-hooks/static/js/main.82652ca0.js.map"
   },
   "entrypoints": [
-    "static/css/main.86d140d2.css",
+    "static/css/main.7a8fcde5.css",
     "static/js/main.82652ca0.js"
   ]
 }

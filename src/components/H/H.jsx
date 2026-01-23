@@ -6,7 +6,7 @@ import styles from './styles.module.css';
 
 const H = props => {
   const { level, children } = props;
-  const { heading01, heading02 } = styles;
+  const { heading01, heading02, heading03, heading04 } = styles;
   const isMain = useContext(mainContext);
   const isCard = useContext(cardContext);
 
@@ -30,18 +30,14 @@ const H = props => {
 
     case 3:
       return (
-        <h3
-          className={`${styles.heading} ${styles.heading03} ${isCard ? styles.cardTitle03 : ''}`}
-        >
+        <h3 className={`${heading03} ${isCard ? styles.cardTitle03 : ''}`}>
           {children}
         </h3>
       );
 
     case 4:
       return (
-        <h4
-          className={`${styles.heading} ${styles.heading04} ${isCard ? styles.cardTitle04 : ''}`}
-        >
+        <h4 className={`${heading04} ${isCard ? styles.cardTitle04 : ''}`}>
           {children}
         </h4>
       );

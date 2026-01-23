@@ -38,6 +38,7 @@
 }
 
 .heading03 {
+  composes: heading;
   margin-bottom: heading3;
   font-size: heading3;
   text-transform: uppercase;
@@ -50,6 +51,7 @@
 }
 
 .heading04 {
+  composes: heading;
   margin-bottom: heading4;
   font-size: heading4;
 }

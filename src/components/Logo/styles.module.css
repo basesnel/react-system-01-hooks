@@ -1,7 +1,7 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fstexts: "../../cssvariables/fstext.module.css";
 @value colors: "../../cssvariables/color.module.css";
-@value mobile, smartphone from mediasizes;
+@value mobile, smartphone, tablet from mediasizes;
 @value fstext, fstext-smartphone from fstexts;
 @value color-light, color-accent from colors;
 

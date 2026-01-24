@@ -6,12 +6,12 @@ const Button = props => {
   const { id, type, caption, onClick, isDisabled, full, ...delegated } = props;
   const { button, fullfilled } = styles;
 
-  const filled = full ? fullfilled : '';
+  const btnStyle = full ? fullfilled : button;
 
   return (
     <button
       id={id}
-      className={`${button} ${filled}`}
+      className={btnStyle}
       type={type}
       onClick={onClick}
       disabled={isDisabled}

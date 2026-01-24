@@ -1,5 +1,9 @@
-@value sizes: "../../cssvariables/media.module.css";
-@value mobile-to, smartphone-to from sizes;
+@value mediasizes: "../../cssvariables/media.module.css";
+@value fstexts: "../../cssvariables/fstext.module.css";
+@value colors: "../../cssvariables/color.module.css";
+@value mobile, smartphone, desktop from mediasizes;
+@value fstext, fstext-smartphone from fstexts;
+@value color-text, color-accent from colors;
 
 .field {
   display: flex;
@@ -10,14 +14,14 @@
 
 .label {
   font-size: 10px;
-  color: var(--color-text);
+  color: color-text;
   cursor: pointer;
   transition: var(--my-transition);
 }
 
 .field:hover .label,
 .field:focus .label {
-  color: var(--color-accent);
+  color: color-accent;
 }
 
 .wrap {
@@ -28,16 +32,16 @@
   width: 100%;
   padding: 4px 20px 4px 31px;
   border-radius: 4px;
-  border: 1px solid var(--color-text);
-  font-size: var(--fs-text-mobile);
-  color: var(--color-text);
+  border: 1px solid color-text;
+  font-size: fstext;
+  color: color-text;
   transition: var(--my-transition);
 }
 
 .field:hover .input:not(:disabled),
 .field:focus .input:not(:disabled) {
-  color: var(--color-accent);
-  border: 1px solid var(--color-accent);
+  color: color-accent;
+  border: 1px solid color-accent;
 }
 
 .input:disabled {
@@ -50,17 +54,17 @@
   top: 50%;
   left: 12px;
   display: block;
-  width: var(--fs-text-mobile);
-  height: var(--fs-text-mobile);
+  width: fstext;
+  height: fstext;
   transform: translate(0, -50%);
-  font-size: var(--fs-text-mobile);
-  color: var(--color-text);
+  font-size: fstext;
+  color: color-text;
   transition: var(--my-transition);
 }
 
 .field:hover .icon,
 .field:focus .icon {
-  color: var(--color-accent);
+  color: color-accent;
 }
 
 .input:disabled + .icon {
@@ -71,7 +75,7 @@
   color: var(--color-text-opacity);
 }
 
-@media mobile-to {
+@media mobile {
   .label {
     font-size: 12px;
   }
@@ -88,7 +92,7 @@
   }
 }
 
-@media smartphone-to {
+@media smartphone {
   .input {
     padding: 6px 20px 6px 35px;
     font-size: var(--fs-text-tablet);

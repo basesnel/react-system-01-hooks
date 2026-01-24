@@ -1,18 +1,20 @@
-@value sizes: "../../cssvariables/media.module.css";
-@value tablet-to from sizes;
+@value mediasizes: "../../cssvariables/media.module.css";
+@value colors: "../../cssvariables/color.module.css";
+@value tablet from mediasizes;
+@value color-text from colors;
 
 .form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
-  border: 1px solid var(--color-text);
+  border: 1px solid color-text;
   border-radius: 6px;
   padding: 15px 10px;
   margin-bottom: 10px;
 }
 
-@media tablet-to {
+@media tablet {
   .form {
     max-width: 400px;
     margin: 0 auto 10px;

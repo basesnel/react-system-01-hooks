@@ -4,13 +4,14 @@ import styles from './styles.module.css';
 
 const Button = props => {
   const { id, type, caption, onClick, isDisabled, full, ...delegated } = props;
+  const { button, fullfilled } = styles;
 
-  const filled = full ? `${styles['fullfilled']}` : '';
+  const filled = full ? fullfilled : '';
 
   return (
     <button
       id={id}
-      className={`${styles.button} ${filled}`}
+      className={`${button} ${filled}`}
       type={type}
       onClick={onClick}
       disabled={isDisabled}

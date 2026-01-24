@@ -1,6 +1,5 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
-@value sizes: "../../cssvariables/media.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, tablet, desktop from mediasizes;
 @value heading1, heading1-mobile, heading1-smartphone, heading1-tablet, heading1-desktop from fsheadings;

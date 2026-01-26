@@ -14,6 +14,7 @@ const Input = props => {
     icon,
     inputRef,
   } = props;
+  const { field, caption, wrap, input, pictogram } = styles;
 
   const valueProps = {
     ...(inputValue === null || handleChange === null
@@ -22,25 +23,25 @@ const Input = props => {
   };
 
   return (
-    <div className={styles.field}>
+    <div className={field}>
       {inputLabel && (
-        <label className={styles.label} htmlFor={inputName}>
+        <label className={caption} htmlFor={inputName}>
           {inputLabel}
         </label>
       )}
-      <div className={styles.wrap}>
+      <div className={wrap}>
         <input
+          className={input}
           disabled={isDisabled}
           type={inputType}
           name={inputName}
           id={inputName}
           {...valueProps}
           autoComplete="off"
-          className={styles.input}
           placeholder={inputPlaceholder}
           ref={inputRef}
         />
-        <span className={styles.icon}>{icon}</span>
+        <span className={pictogram}>{icon}</span>
       </div>
     </div>
   );

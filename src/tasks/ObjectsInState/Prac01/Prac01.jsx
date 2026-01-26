@@ -37,7 +37,7 @@ const Prac01 = () => {
           value={person.email}
           label="E-mail"
           placeholder="Type the e-mail..."
-          handleChange={handleChange}
+          onChange={handleChange}
           icon={<FiMail />}
         />
       </Form>

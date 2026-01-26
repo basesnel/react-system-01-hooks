@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Input, P } from 'components';
+import { TextInput, P } from 'components';
 
 const FormP10 = () => {
   const [name, setName] = useState('Taylor');
 
   return (
     <>
-      <Input
-        inputType="text"
-        inputName="name"
-        inputValue={name}
-        inputLabel="name"
-        handleChange={e => setName(e.target.value)}
+      <TextInput
+        type="text"
+        name="name"
+        value={name}
+        label="name"
+        placeholder="Input your name..."
+        onChange={e => setName(e.target.value)}
         icon={<FiEdit3 />}
       />
       <P>Hello, {name}.</P>

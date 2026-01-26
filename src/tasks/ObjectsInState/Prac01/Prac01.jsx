@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FiMail, FiEdit3 } from 'react-icons/fi';
+import { FiMail, FiUser } from 'react-icons/fi';
 import { Form, TextInput, Caption } from 'components';
 import { initialFirstPerson } from 'constants';
 
@@ -20,7 +20,7 @@ const Prac01 = () => {
           label="First name"
           placeholder="Type first name..."
           onChange={handleChange}
-          icon={<FiEdit3 />}
+          icon={<FiUser />}
         />
         <TextInput
           type="text"
@@ -29,7 +29,7 @@ const Prac01 = () => {
           label="Last name"
           placeholder="Type last name..."
           onChange={handleChange}
-          icon={<FiEdit3 />}
+          icon={<FiUser />}
         />
         <TextInput
           type="email"

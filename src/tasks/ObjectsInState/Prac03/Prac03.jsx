@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
-import { Form, Input } from 'components';
+import { Form, TextInput } from 'components';
 import { initialThirdPerson } from 'constants';
 import { FieldOverlayP03P04, FigureP03P04 } from '../IntendendComponents';
 
@@ -47,37 +47,39 @@ const Prac03 = () => {
   return (
     <>
       <Form onSubmit={e => e.preventDefault()}>
-        <Input
-          inputType="text"
-          inputName="name"
-          inputValue={person.name}
-          inputLabel="Name"
-          handleChange={handleNameChange}
+        <TextInput
+          type="text"
+          name="name"
+          value={person.name}
+          label="Name"
+          placeholder="Type a person's name..."
+          onChange={handleNameChange}
           icon={<FiUser />}
         />
-        <Input
-          inputType="text"
-          inputName="title"
-          inputValue={person.artwork.title}
-          inputLabel="Title"
-          handleChange={handleTitleChange}
+        <TextInput
+          type="text"
+          name="title"
+          value={person.artwork.title}
+          placeholder="Type the artwork's title"
+          onChange={handleTitleChange}
           icon={<FiEdit3 />}
         />
-        <Input
-          inputType="text"
-          inputName="city"
-          inputValue={person.artwork.city}
-          inputLabel="City"
-          handleChange={handleCityChange}
+        <TextInput
+          type="text"
+          name="city"
+          value={person.artwork.city}
+          placeholder="Type the artwork's city"
+          onChange={handleCityChange}
           icon={<FiEdit3 />}
         />
         <FieldOverlayP03P04>
-          <Input
-            inputType="text"
-            inputName="image"
-            inputValue={person.artwork.image}
-            inputLabel="Photo"
-            handleChange={handleImageChange}
+          <TextInput
+            type="text"
+            name="image"
+            value={person.artwork.image}
+            label="Photo"
+            placeholder="Choose the artwork's photo"
+            onChange={handleImageChange}
             icon={<FiImage />}
           />
         </FieldOverlayP03P04>

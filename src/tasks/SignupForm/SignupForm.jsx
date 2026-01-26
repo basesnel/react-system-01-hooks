@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { FiLock, FiMail } from 'react-icons/fi';
-import { Form, Input, FlexBox, Button } from 'components';
+import { Form, TextInput, FlexBox, Button } from 'components';
 import { useLocalStorage } from 'hooks';
 
 const SignupForm = () => {
@@ -63,22 +63,22 @@ const SignupForm = () => {
 
   return (
     <Form onSubmit={handleSubmitForm}>
-      <Input
-        inputType="email"
-        inputName="email"
-        inputValue={email}
-        inputLabel="E-mail"
-        inputPlaceholder="Input e-mail"
-        handleChange={handleChange}
+      <TextInput
+        type="email"
+        name="email"
+        value={email}
+        label="E-mail"
+        placeholder="Input e-mail"
+        onChange={handleChange}
         icon={<FiMail />}
       />
-      <Input
-        inputType="password"
-        inputName="password"
-        inputValue={password}
-        inputLabel="Password"
-        inputPlaceholder="Input password"
-        handleChange={handleChange}
+      <TextInput
+        type="password"
+        name="password"
+        value={password}
+        label="Password"
+        placeholder="Input password"
+        onChange={handleChange}
         icon={<FiLock />}
       />
       <FlexBox>

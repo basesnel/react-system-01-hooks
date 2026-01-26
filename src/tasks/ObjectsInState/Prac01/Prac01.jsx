@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiMail, FiEdit3 } from 'react-icons/fi';
-import { Form, Input, Caption } from 'components';
+import { Form, TextInput, Caption } from 'components';
 import { initialFirstPerson } from 'constants';
 
 const Prac01 = () => {
@@ -13,27 +13,30 @@ const Prac01 = () => {
   return (
     <>
       <Form onSubmit={e => e.preventDefault()}>
-        <Input
-          inputType="text"
-          inputName="firstName"
-          inputValue={person.firstName}
-          inputLabel="First name"
-          handleChange={handleChange}
+        <TextInput
+          type="text"
+          name="firstName"
+          value={person.firstName}
+          label="First name"
+          placeholder="Type first name..."
+          onChange={handleChange}
           icon={<FiEdit3 />}
         />
-        <Input
-          inputType="text"
-          inputName="lastName"
-          inputValue={person.lastName}
-          inputLabel="Last name"
-          handleChange={handleChange}
+        <TextInput
+          type="text"
+          name="lastName"
+          value={person.lastName}
+          label="Last name"
+          placeholder="Type last name..."
+          onChange={handleChange}
           icon={<FiEdit3 />}
         />
-        <Input
-          inputType="email"
-          inputName="email"
-          inputValue={person.email}
-          inputLabel="E-mail"
+        <TextInput
+          type="email"
+          name="email"
+          value={person.email}
+          label="E-mail"
+          placeholder="Type the e-mail..."
           handleChange={handleChange}
           icon={<FiMail />}
         />

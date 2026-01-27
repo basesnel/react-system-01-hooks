@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Form, Input, Button } from 'components';
+import { Form, TextInput, Button } from 'components';
 import { initialTaskFirstPerson } from 'constants';
 
 import css from './Task01.module.css';
@@ -30,20 +30,22 @@ const Task01 = () => {
 
   return (
     <Form onSubmit={e => e.preventDefault()}>
-      <Input
-        inputType="text"
-        inputName="firstName"
-        inputValue={player.firstName}
-        inputLabel="First name"
-        handleChange={handleFirstNameChange}
+      <TextInput
+        type="text"
+        name="firstName"
+        value={player.firstName}
+        label="First name"
+        placeholder="Type a person's first name..."
+        onChange={handleFirstNameChange}
         icon={<FiEdit3 />}
       />
-      <Input
-        inputType="text"
-        inputName="lastName"
-        inputValue={player.lastName}
-        inputLabel="Last name"
-        handleChange={handleLastNameChange}
+      <TextInput
+        type="text"
+        name="lastName"
+        value={player.lastName}
+        label="Last name"
+        placeholder="Type a person's last name..."
+        onChange={handleLastNameChange}
         icon={<FiEdit3 />}
       />
       <label className={labelWrap}>

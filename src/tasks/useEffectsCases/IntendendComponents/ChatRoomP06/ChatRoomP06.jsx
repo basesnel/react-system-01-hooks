@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiServer } from 'react-icons/fi';
-import { Input, Caption, FlexBox } from 'components';
+import { FlexBox, Caption, TextInput } from 'components';
 import { useChatRoom } from 'hooks';
 
 const ChatRoomP06 = props => {
@@ -16,12 +16,13 @@ const ChatRoomP06 = props => {
 
   return (
     <FlexBox wrapped="wrap">
-      <Input
-        inputType="text"
-        inputName="chatroom"
-        inputValue={serverUrl}
-        inputLabel="Server URL: "
-        handleChange={e => setServerUrl(e.target.value)}
+      <TextInput
+        type="text"
+        name="chatroomP06"
+        value={serverUrl}
+        label="Server URL:"
+        placeholder="Type server URL..."
+        onChange={e => setServerUrl(e.target.value)}
         icon={<FiServer />}
       />
       <Caption text={`Welcome to the ${roomId} room!`} />

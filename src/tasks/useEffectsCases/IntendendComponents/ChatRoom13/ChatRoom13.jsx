@@ -25,16 +25,17 @@ const ChatRoom13 = props => {
         name="serverP13"
         value={serverUrl}
         label="Server URL:"
+        placeholder="Type server URL..."
         handleChange={e => setServerUrl(e.target.value)}
         icon={<FiServer />}
       />
       <Caption text={`Welcome to the ${roomId} room!`} />
       <TextInput
         type="text"
-        name="message"
+        name="messageP13"
         value={message}
         label="Your message:"
-        placeholder="Type"
+        placeholder="Type your message..."
         handleChange={e => setMessage(e.target.value)}
         icon={<FiMessageCircle />}
       />

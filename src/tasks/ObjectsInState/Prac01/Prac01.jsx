@@ -15,7 +15,7 @@ const Prac01 = () => {
       <Form onSubmit={e => e.preventDefault()}>
         <TextInput
           type="text"
-          name="firstName"
+          name="firstNameP01"
           value={person.firstName}
           label="First name"
           placeholder="Type first name..."
@@ -24,7 +24,7 @@ const Prac01 = () => {
         />
         <TextInput
           type="text"
-          name="lastName"
+          name="lastNameP01"
           value={person.lastName}
           label="Last name"
           placeholder="Type last name..."
@@ -33,7 +33,7 @@ const Prac01 = () => {
         />
         <TextInput
           type="email"
-          name="email"
+          name="emailP01"
           value={person.email}
           label="E-mail"
           placeholder="Type the e-mail..."

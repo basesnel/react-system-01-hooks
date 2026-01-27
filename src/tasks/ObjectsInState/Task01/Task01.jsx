@@ -32,7 +32,7 @@ const Task01 = () => {
     <Form onSubmit={e => e.preventDefault()}>
       <TextInput
         type="text"
-        name="firstName"
+        name="firstNameT01"
         value={player.firstName}
         label="First name"
         placeholder="Type a person's first name..."
@@ -41,7 +41,7 @@ const Task01 = () => {
       />
       <TextInput
         type="text"
-        name="lastName"
+        name="lastNameT01"
         value={player.lastName}
         label="Last name"
         placeholder="Type a person's last name..."

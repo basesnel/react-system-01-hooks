@@ -36,7 +36,7 @@ const Prac04 = () => {
       <Form onSubmit={e => e.preventDefault()}>
         <TextInput
           type="text"
-          name="name"
+          name="nameP04"
           value={person.name}
           label="Name"
           placeholder="Type a person's name..."
@@ -45,7 +45,7 @@ const Prac04 = () => {
         />
         <TextInput
           type="text"
-          name="title"
+          name="titleP04"
           value={person.artwork.title}
           label="Title"
           placeholder="Type the artwork's title"
@@ -54,7 +54,7 @@ const Prac04 = () => {
         />
         <TextInput
           type="text"
-          name="city"
+          name="cityP04"
           value={person.artwork.city}
           label="City"
           placeholder="Type the artwork's city"
@@ -64,7 +64,7 @@ const Prac04 = () => {
         <FieldOverlayP03P04>
           <TextInput
             type="text"
-            name="image"
+            name="imageP04"
             value={person.artwork.image}
             label="Photo"
             placeholder="Choose the artwork's photo"

@@ -49,7 +49,7 @@ const Prac03 = () => {
       <Form onSubmit={e => e.preventDefault()}>
         <TextInput
           type="text"
-          name="name"
+          name="nameP03"
           value={person.name}
           label="Name"
           placeholder="Type a person's name..."
@@ -58,7 +58,7 @@ const Prac03 = () => {
         />
         <TextInput
           type="text"
-          name="title"
+          name="titleP03"
           value={person.artwork.title}
           placeholder="Type the artwork's title"
           onChange={handleTitleChange}
@@ -66,7 +66,7 @@ const Prac03 = () => {
         />
         <TextInput
           type="text"
-          name="city"
+          name="cityP03"
           value={person.artwork.city}
           placeholder="Type the artwork's city"
           onChange={handleCityChange}

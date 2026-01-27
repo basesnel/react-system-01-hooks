@@ -26,7 +26,7 @@ const ChatRoom13 = props => {
         value={serverUrl}
         label="Server URL:"
         placeholder="Type server URL..."
-        handleChange={e => setServerUrl(e.target.value)}
+        onChange={e => setServerUrl(e.target.value)}
         icon={<FiServer />}
       />
       <Caption text={`Welcome to the ${roomId} room!`} />
@@ -36,7 +36,7 @@ const ChatRoom13 = props => {
         value={message}
         label="Your message:"
         placeholder="Type your message..."
-        handleChange={e => setMessage(e.target.value)}
+        onChange={e => setMessage(e.target.value)}
         icon={<FiMessageCircle />}
       />
     </FlexBox>

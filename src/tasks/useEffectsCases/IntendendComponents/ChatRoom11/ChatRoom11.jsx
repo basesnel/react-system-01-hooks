@@ -27,7 +27,7 @@ const ChatRoom11 = props => {
         value={serverUrl}
         label="Server URL:"
         placeholder="Type server URL..."
-        onhange={e => setServerUrl(e.target.value)}
+        onChange={e => setServerUrl(e.target.value)}
         icon={<FiServer />}
       />
       <Caption text={`Welcome to the ${roomId} room!`} />

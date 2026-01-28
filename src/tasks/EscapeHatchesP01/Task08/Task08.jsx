@@ -6,21 +6,22 @@ import { FlexBox, Button } from 'components';
 import styles from './styles.module.css';
 
 const InputWithRef = forwardRef((props, ref) => {
-  const { inputType, inputName, inputLabel, inputPlaceholder, icon } = props;
+  const { type, name, label, placeholder, icon } = props;
+  const { field, caption, wrap, input, pictogram } = styles;
 
   return (
-    <label className={styles.field}>
-      {inputLabel && <span className={styles.label}>{inputLabel}</span>}
-      <div className={styles.wrap}>
+    <label className={field}>
+      {label && <span className={caption}>{label}</span>}
+      <div className={wrap}>
         <input
-          type={inputType}
-          name={inputName}
+          type={type}
+          name={name}
           autoComplete="off"
-          className={styles.input}
-          placeholder={inputPlaceholder}
+          className={input}
+          placeholder={placeholder}
           ref={ref}
         />
-        <span className={styles.icon}>{icon}</span>
+        <span className={pictogram}>{icon}</span>
       </div>
     </label>
   );
@@ -32,9 +33,9 @@ const Task08 = () => {
   return (
     <FlexBox wrapped="wrap">
       <InputWithRef
-        inputType="text"
-        inputName="searchT08"
-        inputPlaceholder="Lookung for something?"
+        type="text"
+        name="searchT08"
+        placeholder="Lookung for something?"
         icon={<MdSearch />}
         ref={inputRef}
       />
@@ -49,16 +50,16 @@ const Task08 = () => {
 };
 
 InputWithRef.propTypes = {
-  inputType: PropTypes.string.isRequired,
-  inputName: PropTypes.string.isRequired,
-  inputLabel: PropTypes.string,
-  inputPlaceholder: PropTypes.string,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
   icon: PropTypes.node,
 };
 
 InputWithRef.defaultProps = {
-  inputLabel: null,
-  inputPlaceholder: null,
+  label: null,
+  placeholder: null,
   icon: null,
 };
 

@@ -6,7 +6,8 @@ import { FlexBox, Button } from 'components';
 import styles from './styles.module.css';
 
 const MyInput = forwardRef((props, ref) => {
-  const { icon } = props;
+  const { icon, type, name } = props;
+  const { field, wrap, input, pictogram } = styles;
 
   const realInputRef = useRef(null);
 
@@ -17,10 +18,10 @@ const MyInput = forwardRef((props, ref) => {
   }));
 
   return (
-    <div className={styles.field}>
-      <div className={styles.wrap}>
-        <input {...props} className={styles.input} ref={realInputRef} />
-        <span className={styles.icon}>{icon}</span>
+    <div className={field}>
+      <div className={wrap}>
+        <input type={type} name={name} className={input} ref={realInputRef} />
+        <span className={pictogram}>{icon}</span>
       </div>
     </div>
   );

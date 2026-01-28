@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiMessageCircle } from 'react-icons/fi';
-import { FlexBox, Caption, Input } from 'components';
+import { TextInput, Caption, FlexBox } from 'components';
 import { createConnection } from 'constants';
 
 const serverUrl = 'https://localhost:1234';
@@ -29,12 +29,13 @@ const ChatRoom16 = props => {
   return (
     <FlexBox wrapped="wrap">
       <Caption text={`Welcome to the ${roomId} room!`} />
-      <Input
-        inputType="text"
-        inputName="funcMessage"
-        inputValue={message}
-        inputLabel="Your message:"
-        handleChange={e => setMessage(e.target.value)}
+      <TextInput
+        type="text"
+        name="messageP16"
+        value={message}
+        label="Your message:"
+        placeholder="Type your message..."
+        onChange={e => setMessage(e.target.value)}
         icon={<FiMessageCircle />}
       />
     </FlexBox>

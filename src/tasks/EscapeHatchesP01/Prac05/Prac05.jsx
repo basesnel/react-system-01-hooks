@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { FiEdit } from 'react-icons/fi';
-import { FlexBox, Input, Button } from 'components';
+import { FlexBox, TextInput, Button } from 'components';
 
 const Prac05 = () => {
   const [inputValue, setInputValue] = useState('');
@@ -12,13 +12,13 @@ const Prac05 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <Input
+      <TextInput
         inputRef={inputRef}
-        inputType="text"
-        inputName="ref-inputP05"
-        inputValue={inputValue}
-        handleChange={e => setInputValue(e.target.value)}
-        inputPlaceholder="Input something"
+        type="text"
+        name="ref-inputP05"
+        value={inputValue}
+        placeholder="Input something..."
+        onChange={e => setInputValue(e.target.value)}
         icon={<FiEdit />}
       />
       <Button caption="Focus the input" onClick={handleClick} />

@@ -21,6 +21,7 @@ const Task10 = () => {
               label="Enter first name"
               name="firstNameT10"
               value={firstName}
+              placeholder="Type your first name..."
               onChange={e => setFirstName(e.target.value)}
             />
             <MyFocusedInputT10
@@ -28,6 +29,7 @@ const Task10 = () => {
               label="Enter last name"
               name="lastNameT10"
               value={lastName}
+              placeholder="Type your last name..."
               onChange={e => setLastName(e.target.value)}
             />
             <P>

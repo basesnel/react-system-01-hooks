@@ -1,10 +1,10 @@
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
-import { Input } from 'components';
+import { TextInput } from 'components';
 
 const MyFocusedInputT10 = props => {
-  const { shouldFocus, label, name, value, onChange } = props;
+  const { shouldFocus, label, name, value, placeholder, onChange } = props;
 
   const ref = useRef(null);
 
@@ -13,13 +13,14 @@ const MyFocusedInputT10 = props => {
   }, [shouldFocus]);
 
   return (
-    <Input
+    <TextInput
       inputRef={ref}
-      inputType="text"
-      inputLabel={label}
-      inputName={name}
-      inputValue={value}
-      handleChange={onChange}
+      type="text"
+      name={name}
+      value={value}
+      label={label}
+      placeholder={placeholder}
+      onChange={onChange}
       icon={<FiEdit />}
     />
   );
@@ -30,6 +31,7 @@ MyFocusedInputT10.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
   onChange: PropTypes.func,
 };
 

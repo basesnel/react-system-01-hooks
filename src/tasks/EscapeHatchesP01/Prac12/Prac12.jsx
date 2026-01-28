@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { FlexBox, Button, Input } from 'components';
+import { FlexBox, Button, TextInput } from 'components';
 import { videoSrc } from 'constants';
 import { VideoPlayer } from '../intendedComponents';
 
@@ -15,11 +15,12 @@ const Prac12 = () => {
         caption={isPlaying ? 'Pause' : 'Play'}
         onClick={() => setIsPlaying(!isPlaying)}
       />
-      <Input
-        inputType="text"
-        inputName="textP12"
-        inputValue={text}
-        handleChange={e => setText(e.target.value)}
+      <TextInput
+        type="text"
+        name="textP12"
+        value={text}
+        placeholder="Type text..."
+        onChange={e => setText(e.target.value)}
         icon={<FiEdit3 />}
       />
     </FlexBox>

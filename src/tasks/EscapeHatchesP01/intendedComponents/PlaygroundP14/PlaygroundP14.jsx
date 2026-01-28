@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MdTask } from 'react-icons/md';
-import { FlexBox, Input, Title } from 'components';
+import { FlexBox, TextInput, H } from 'components';
 
 const PlaygroundP14 = () => {
   const [text, setText] = useState('a');
@@ -21,16 +21,16 @@ const PlaygroundP14 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <Input
-        inputLabel="What to log:"
-        inputName="sheduleP14"
-        inputType="text"
-        inputPlaceholder="type a shedule name"
-        inputValue={text}
-        handleChange={e => setText(e.target.value)}
+      <TextInput
+        type="text"
+        name="sheduleP14"
+        value={text}
+        label="What to log:"
+        placeholder="Type a shedule name..."
+        onChange={e => setText(e.target.value)}
         icon={<MdTask />}
       />
-      <Title level={3} caption={text} />
+      <H level={3}>{text}</H>
     </FlexBox>
   );
 };

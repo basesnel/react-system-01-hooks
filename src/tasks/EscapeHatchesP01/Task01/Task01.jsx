@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { FiEdit } from 'react-icons/fi';
-import { Input, FlexBox, Button } from 'components';
+import { TextInput, FlexBox, Button } from 'components';
 
 const Task01 = () => {
   const [text, setText] = useState('');
@@ -25,13 +25,13 @@ const Task01 = () => {
 
   return (
     <>
-      <Input
-        isDisabled={isSending}
-        inputType="text"
-        inputName="Task01message"
-        inputValue={text}
-        inputPlaceholder="Input message"
-        handleChange={e => setText(e.target.value)}
+      <TextInput
+        disabled={isSending}
+        type="text"
+        name="messageT01"
+        value={text}
+        placeholder="Input message"
+        onChange={e => setText(e.target.value)}
         icon={<FiEdit />}
       />
       <FlexBox>

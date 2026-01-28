@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
-import { Input } from 'components';
+import { TextInput } from 'components';
 
 const MyInputT09 = props => {
   const { value, onChange } = props;
@@ -13,13 +13,13 @@ const MyInputT09 = props => {
   }, []);
 
   return (
-    <Input
-      inputRef={ref}
-      inputType="text"
-      inputLabel="Enter your name"
-      inputName="nameT09"
-      inputPlaceholder="Input Your name"
-      inputValue={value}
+    <TextInput
+      ref={ref}
+      type="text"
+      name="nameT09"
+      value={value}
+      label="Enter your name"
+      placeholder="Type your name..."
       handleChange={onChange}
       icon={<FiEdit />}
     />

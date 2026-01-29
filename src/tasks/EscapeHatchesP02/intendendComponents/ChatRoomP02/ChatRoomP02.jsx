@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiServer } from 'react-icons/fi';
-import { FlexBox, Input, Caption } from 'components';
+import { FlexBox, TextInput, Caption } from 'components';
 import { createConnection } from 'constants';
 
 const ChatRoomP02 = ({ roomId }) => {
@@ -15,12 +15,13 @@ const ChatRoomP02 = ({ roomId }) => {
 
   return (
     <FlexBox wrapped="wrap">
-      <Input
-        inputType="text"
-        inputName="serverP02"
-        inputValue={serverUrl}
-        inputLabel="Server URL: "
-        handleChange={e => setServerUrl(e.target.value)}
+      <TextInput
+        type="text"
+        name="serverP02"
+        value={serverUrl}
+        label="Server URL: "
+        placeholder="Type server URL..."
+        onChange={e => setServerUrl(e.target.value)}
         icon={<FiServer />}
       />
       <Caption text={`Welcome to the ${roomId} room!`} />

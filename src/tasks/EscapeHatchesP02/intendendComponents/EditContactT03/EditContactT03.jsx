@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiUser, FiMail } from 'react-icons/fi';
-import { Form, Input, FlexBox, Button } from 'components';
+import { Form, TextInput, FlexBox, Button } from 'components';
 
 const EditContactT03 = props => {
   return <FormContact {...props} key={props.savedContact.id} />;
@@ -15,20 +15,22 @@ const FormContact = props => {
 
   return (
     <Form onSubmit={onSave}>
-      <Input
-        inputType="text"
-        inputName="nameT03"
-        inputValue={name}
-        inputLabel="Name"
-        handleChange={e => setName(e.target.value)}
+      <TextInput
+        type="text"
+        name="nameT03"
+        value={name}
+        label="Name"
+        placeholder="Type name..."
+        onChange={e => setName(e.target.value)}
         icon={<FiUser />}
       />
-      <Input
-        inputType="email"
-        inputName="emailT03"
-        inputValue={email}
-        inputLabel="E-mail"
-        handleChange={e => setEmail(e.target.value)}
+      <TextInput
+        type="email"
+        name="emailT03"
+        value={email}
+        label="E-mail"
+        placeholder="Type e-mail..."
+        onChange={e => setEmail(e.target.value)}
         icon={<FiMail />}
       />
       <FlexBox>

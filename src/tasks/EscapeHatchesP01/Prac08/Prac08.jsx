@@ -36,12 +36,7 @@ const Prac08 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <MyInput
-        name="Prac08input"
-        type="text"
-        icon={<FiEdit3 />}
-        ref={inputRef}
-      />
+      <MyInput name="inputP08" type="text" icon={<FiEdit3 />} ref={inputRef} />
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>
   );

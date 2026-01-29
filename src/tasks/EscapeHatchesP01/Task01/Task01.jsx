@@ -9,6 +9,8 @@ const Task01 = () => {
   const timeoutId = useRef(null);
 
   function handleSend(e) {
+    if (!text.trim().length) return toast.warning('Please, input message!');
+
     setIsSending(true);
 
     timeoutId.current = setTimeout(() => {
@@ -30,7 +32,7 @@ const Task01 = () => {
         type="text"
         name="messageT01"
         value={text}
-        placeholder="Input message"
+        placeholder="Input message..."
         onChange={e => setText(e.target.value)}
         icon={<FiEdit />}
       />

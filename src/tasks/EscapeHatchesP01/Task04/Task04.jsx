@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
-import { FlexBox, Input, Button } from 'components';
+import { FlexBox, TextInput, Button } from 'components';
 
 const Task04 = () => {
   const [text, setText] = useState('');
@@ -18,12 +18,12 @@ const Task04 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <Input
-        inputType="text"
-        inputName="Task04message"
-        inputValue={text}
-        inputPlaceholder="Input message"
-        handleChange={e => {
+      <TextInput
+        type="text"
+        name="messageT04"
+        value={text}
+        placeholder="Input message..."
+        onChange={e => {
           setText(e.target.value);
           actualText.current = e.target.value;
         }}

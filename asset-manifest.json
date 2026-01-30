@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-system-01-hooks/static/css/main.d7da9f75.css",
-    "main.js": "/react-system-01-hooks/static/js/main.78890c1f.js",
+    "main.js": "/react-system-01-hooks/static/js/main.de65f1a2.js",
     "static/media/kitten-1280-07.jpg": "/react-system-01-hooks/static/media/kitten-1280-07.ca5698a229340a4ee2bb.jpg",
     "static/media/kitten-1280-07.webp": "/react-system-01-hooks/static/media/kitten-1280-07.c7d22e4e6af01f2333c5.webp",
     "static/media/kitten-1280-04.jpg": "/react-system-01-hooks/static/media/kitten-1280-04.71b15735ef2da860c5a0.jpg",
@@ -81,10 +81,10 @@
     "index.html": "/react-system-01-hooks/index.html",
     "static/media/search.svg": "/react-system-01-hooks/static/media/search.c32f5a98ca5c9d1af425.svg",
     "main.d7da9f75.css.map": "/react-system-01-hooks/static/css/main.d7da9f75.css.map",
-    "main.78890c1f.js.map": "/react-system-01-hooks/static/js/main.78890c1f.js.map"
+    "main.de65f1a2.js.map": "/react-system-01-hooks/static/js/main.de65f1a2.js.map"
   },
   "entrypoints": [
     "static/css/main.d7da9f75.css",
-    "static/js/main.78890c1f.js"
+    "static/js/main.de65f1a2.js"
   ]
 }

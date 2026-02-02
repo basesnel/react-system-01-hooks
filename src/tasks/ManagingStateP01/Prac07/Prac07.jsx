@@ -5,7 +5,7 @@ import {
   List,
   Item,
   ItemFlex,
-  Input,
+  TextInput,
   IconButton,
   P,
   Span,
@@ -40,11 +40,12 @@ const Prac07 = () => {
         {items.map(item => (
           <Item key={item.id}>
             <ItemFlex>
-              <Input
-                inputType="text"
-                inputName={`pickedP07${item.id}`}
-                inputValue={item.title}
-                handleChange={e => handleItemChange(item.id, e)}
+              <TextInput
+                type="text"
+                name={`pickedP07${item.id}`}
+                value={item.title}
+                placeholder="Type your travel..."
+                onChange={e => handleItemChange(item.id, e)}
                 icon={<FiEdit3 />}
               />
               <IconButton

@@ -15,7 +15,6 @@ const MyFocusedInputT10 = props => {
   return (
     <TextInput
       inputRef={ref}
-      type="text"
       name={name}
       value={value}
       label={label}

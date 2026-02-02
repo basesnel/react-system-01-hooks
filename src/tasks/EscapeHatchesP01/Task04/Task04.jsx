@@ -19,7 +19,6 @@ const Task04 = () => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        type="text"
         name="messageT04"
         value={text}
         placeholder="Input message..."

@@ -16,7 +16,6 @@ const Prac12 = () => {
         onClick={() => setIsPlaying(!isPlaying)}
       />
       <TextInput
-        type="text"
         name="textP12"
         value={text}
         placeholder="Type text..."

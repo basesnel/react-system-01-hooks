@@ -29,7 +29,6 @@ const Task01 = () => {
     <>
       <TextInput
         disabled={isSending}
-        type="text"
         name="messageT01"
         value={text}
         placeholder="Input message..."

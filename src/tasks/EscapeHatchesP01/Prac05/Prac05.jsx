@@ -14,7 +14,6 @@ const Prac05 = () => {
     <FlexBox wrapped="wrap">
       <TextInput
         inputRef={inputRef}
-        type="text"
         name="ref-inputP05"
         value={inputValue}
         placeholder="Input something..."

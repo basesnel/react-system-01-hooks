@@ -22,7 +22,6 @@ const PlaygroundP14 = () => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        type="text"
         name="sheduleP14"
         value={text}
         label="What to log:"

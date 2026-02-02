@@ -10,7 +10,6 @@ const Task06 = () => {
     <FlexBox wrapped="wrap">
       <TextInput
         inputRef={searchRef}
-        type="text"
         name="searchT06"
         value={inputValue}
         placeholder="Lookung for something?"

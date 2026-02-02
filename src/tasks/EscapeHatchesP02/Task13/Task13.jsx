@@ -22,7 +22,6 @@ const Task13 = () => {
       <FlexBox align="flex-end" wrapped="wrap">
         <Button caption="Toggle Theme" onClick={() => setIsDark(!isDark)} />
         <TextInput
-          type="text"
           name="serverT13"
           value={serverUrl}
           label="Server URL: "

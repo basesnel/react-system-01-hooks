@@ -16,7 +16,6 @@ const FormContact = props => {
   return (
     <Form onSubmit={onSave}>
       <TextInput
-        type="text"
         name="nameT03"
         value={name}
         label="Name"
@@ -25,7 +24,6 @@ const FormContact = props => {
         icon={<FiUser />}
       />
       <TextInput
-        type="email"
         name="emailT03"
         value={email}
         label="E-mail"

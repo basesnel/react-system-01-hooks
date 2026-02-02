@@ -20,7 +20,6 @@ const ChatRoomT05 = ({ roomId }) => {
       <Caption text={`Welcome to the ${roomId} room!`} />
       <TextInput
         disabled={false}
-        type="text"
         name="messageT05"
         value={message}
         placeholder="Input message..."

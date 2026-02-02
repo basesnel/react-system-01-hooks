@@ -25,7 +25,6 @@ const ChatRoomP09 = ({ roomId }) => {
     <FlexBox wrapped="wrap">
       <Caption text={`Welcome to the ${roomId} room!`} />
       <TextInput
-        type="text"
         name="messageP09"
         value={message}
         label="Your message:"

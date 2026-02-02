@@ -41,7 +41,6 @@ const Prac07 = () => {
           <Item key={item.id}>
             <ItemFlex>
               <TextInput
-                type="text"
                 name={`pickedP07${item.id}`}
                 value={item.title}
                 placeholder="Type your travel..."

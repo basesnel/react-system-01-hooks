@@ -21,7 +21,6 @@ const Prac04 = () => {
       <Title level={3} caption="let's check you in" />
       <Form onSubmit={() => {}}>
         <TextInput
-          type="text"
           name="firstNameP04"
           value={firstName}
           label="First name"
@@ -30,7 +29,6 @@ const Prac04 = () => {
           icon={<FiUser />}
         />
         <TextInput
-          type="text"
           name="lastNameP04"
           value={lastName}
           label="Last name"

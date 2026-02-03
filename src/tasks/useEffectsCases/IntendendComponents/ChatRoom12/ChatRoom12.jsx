@@ -20,7 +20,6 @@ const ChatRoom12 = () => {
     <>
       <Caption text={`Welcome to the ${roomId} room!`} />
       <TextInput
-        type="text"
         name="messageP12"
         value={message}
         label="Your message:"

@@ -21,7 +21,6 @@ const ChatRoomP01 = props => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        type="text"
         name="chatroomP01"
         value={serverUrl}
         label="Server URL:"

@@ -22,7 +22,6 @@ const ChatRoom11 = props => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        type="text"
         name="serverP11"
         value={serverUrl}
         label="Server URL:"
@@ -32,7 +31,6 @@ const ChatRoom11 = props => {
       />
       <Caption text={`Welcome to the ${roomId} room!`} />
       <TextInput
-        type="text"
         name="messageP11"
         value={message}
         label="Your message:"

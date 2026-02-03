@@ -30,6 +30,7 @@ const Prac01 = () => {
           icon={<FiUser />}
         />
         <TextInput
+          type="email"
           name="emailP01"
           value={person.email}
           label="E-mail"

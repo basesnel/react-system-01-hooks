@@ -31,7 +31,6 @@ const Task01 = () => {
   return (
     <Form onSubmit={e => e.preventDefault()}>
       <TextInput
-        type="text"
         name="firstNameT01"
         value={player.firstName}
         label="First name"
@@ -40,7 +39,6 @@ const Task01 = () => {
         icon={<FiEdit3 />}
       />
       <TextInput
-        type="text"
         name="lastNameT01"
         value={player.lastName}
         label="Last name"

@@ -48,7 +48,6 @@ const Prac03 = () => {
     <>
       <Form onSubmit={e => e.preventDefault()}>
         <TextInput
-          type="text"
           name="nameP03"
           value={person.name}
           label="Name"
@@ -57,7 +56,6 @@ const Prac03 = () => {
           icon={<FiUser />}
         />
         <TextInput
-          type="text"
           name="titleP03"
           value={person.artwork.title}
           placeholder="Type the artwork's title"
@@ -65,7 +63,6 @@ const Prac03 = () => {
           icon={<FiEdit3 />}
         />
         <TextInput
-          type="text"
           name="cityP03"
           value={person.artwork.city}
           placeholder="Type the artwork's city"
@@ -74,7 +71,6 @@ const Prac03 = () => {
         />
         <FieldOverlayP03P04>
           <TextInput
-            type="text"
             name="image"
             value={person.artwork.image}
             label="Photo"

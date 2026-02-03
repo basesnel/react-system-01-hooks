@@ -14,7 +14,6 @@ const Prac01 = () => {
     <>
       <Form onSubmit={e => e.preventDefault()}>
         <TextInput
-          type="text"
           name="firstNameP01"
           value={person.firstName}
           label="First name"
@@ -23,7 +22,6 @@ const Prac01 = () => {
           icon={<FiUser />}
         />
         <TextInput
-          type="text"
           name="lastNameP01"
           value={person.lastName}
           label="Last name"
@@ -32,7 +30,6 @@ const Prac01 = () => {
           icon={<FiUser />}
         />
         <TextInput
-          type="email"
           name="emailP01"
           value={person.email}
           label="E-mail"

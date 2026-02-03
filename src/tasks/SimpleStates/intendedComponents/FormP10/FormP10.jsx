@@ -8,8 +8,7 @@ const FormP10 = () => {
   return (
     <>
       <TextInput
-        type="text"
-        name="name"
+        name="nameP10"
         value={name}
         label="name"
         placeholder="Input your name..."

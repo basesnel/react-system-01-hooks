@@ -13,12 +13,12 @@ const Prac05 = () => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        inputRef={inputRef}
         name="ref-inputP05"
         value={inputValue}
         placeholder="Input something..."
         onChange={e => setInputValue(e.target.value)}
         icon={<FiEdit />}
+        ref={inputRef}
       />
       <Button caption="Focus the input" onClick={handleClick} />
     </FlexBox>

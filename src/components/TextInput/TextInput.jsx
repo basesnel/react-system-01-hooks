@@ -1,19 +1,11 @@
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-const TextInput = props => {
-  const {
-    disabled,
-    type,
-    name,
-    value,
-    label,
-    placeholder,
-    onChange,
-    icon,
-    inputRef,
-  } = props;
+const TextInput = forwardRef((props, ref) => {
+  const { disabled, type, name, value, label, placeholder, onChange, icon } =
+    props;
 
   const { field, caption, wrap, input, pictogram } = styles;
 
@@ -40,13 +32,13 @@ const TextInput = props => {
           placeholder={placeholder}
           autoComplete="off"
           {...valueProps}
-          ref={inputRef}
+          ref={ref}
         />
         <span className={pictogram}>{icon}</span>
       </div>
     </div>
   );
-};
+});
 
 TextInput.propTypes = {
   disabled: PropTypes.bool,
@@ -58,7 +50,6 @@ TextInput.propTypes = {
   placeholder: PropTypes.string,
   onChange: PropTypes.func,
   icon: PropTypes.node,
-  inputRef: PropTypes.any,
 };
 
 TextInput.defaultProps = {
@@ -69,7 +60,6 @@ TextInput.defaultProps = {
   placeholder: null,
   onChange: null,
   icon: null,
-  inputRef: null,
 };
 
 export default TextInput;

@@ -9,12 +9,12 @@ const Task06 = () => {
   return (
     <FlexBox wrapped="wrap">
       <TextInput
-        inputRef={searchRef}
         name="searchT06"
         value={inputValue}
         placeholder="Lookung for something?"
         onChange={e => setInputValue(e.target.value)}
         icon={<MdSearch />}
+        ref={searchRef}
       />
       <Button
         caption="Search"

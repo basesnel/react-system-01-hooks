@@ -14,13 +14,13 @@ const MyFocusedInputT10 = props => {
 
   return (
     <TextInput
-      inputRef={ref}
       name={name}
       value={value}
       label={label}
       placeholder={placeholder}
       onChange={onChange}
       icon={<FiEdit />}
+      ref={ref}
     />
   );
 };

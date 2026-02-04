@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
-import { Form, TextArea, Button, Title, FlexBox } from 'components';
+import { Form, Textarea, Button, Title, FlexBox } from 'components';
 
 const Task04 = () => {
   const [showForm, setShowForm] = useState(false);
@@ -33,11 +33,11 @@ const Task04 = () => {
 
   return (
     <Form onSubmit={handleSubmit}>
-      <TextArea
-        textAreaName="messageT04"
-        textAreaPlaceholder="Message"
-        textAreaValue={message}
-        handleChange={e => setMessage(e.target.value)}
+      <Textarea
+        name="messageT04"
+        placeholder="Type a message..."
+        value={message}
+        onChange={e => setMessage(e.target.value)}
         icon={<MdChat />}
       />
       <FlexBox>

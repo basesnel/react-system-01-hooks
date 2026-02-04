@@ -39,6 +39,7 @@ import Slide from './Slide';
 import Slider from './Slider';
 import Span from './Span';
 import TextArea from './TextArea';
+import Textarea from './Textarea2';
 import TextInput from './TextInput';
 import Title from './Title';
 import UserMenu from './UserMenu';
@@ -86,6 +87,7 @@ export {
   Slider,
   Span,
   TextArea,
+  Textarea,
   TextInput,
   Title,
   UserMenu,

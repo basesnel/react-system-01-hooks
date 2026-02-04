@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Input } from 'components';
+import { Button, FlexBox, TextInput } from 'components';
 
 const Prac10 = () => {
   const [counter, setCounter] = useState(0);
@@ -9,11 +9,11 @@ const Prac10 = () => {
     const [text, setText] = useState('');
 
     return (
-      <Input
-        inputType="text"
-        inputName="Prac10input"
-        inputValue={text}
-        handleChange={e => setText(e.target.value)}
+      <TextInput
+        name="inputP10"
+        value={text}
+        placeholder="Type something..."
+        onChange={e => setText(e.target.value)}
         icon={<FiEdit3 />}
       />
     );

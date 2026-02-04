@@ -14,6 +14,8 @@ const TextArea = props => {
     textAreaRef,
   } = props;
 
+  const { field, caption, wrap, input, pictogram, iconTextarea } = styles;
+
   const valueProps = {
     ...(textAreaValue === null || handleChange === null
       ? { defaultValue: '', readOnly: true }
@@ -21,23 +23,23 @@ const TextArea = props => {
   };
 
   return (
-    <div className={styles.field}>
+    <div className={field}>
       {textAreaLabel && (
-        <label className={styles.label} htmlFor={textAreaName}>
+        <label className={caption} htmlFor={textAreaName}>
           {textAreaLabel}
         </label>
       )}
-      <div className={styles.wrap}>
+      <div className={wrap}>
         <textarea
           disabled={isDisabled}
           id={textAreaName}
           {...valueProps}
           autoComplete="off"
-          className={styles.input}
+          className={input}
           placeholder={textAreaPlaceholder}
           ref={textAreaRef}
         />
-        <span className={`${styles.icon} ${styles.iconTextarea}`}>{icon}</span>
+        <span className={`${pictogram} ${iconTextarea}`}>{icon}</span>
       </div>
     </div>
   );

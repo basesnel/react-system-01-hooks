@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
-import { Form, Button, TextArea, P, FlexBox } from 'components';
+import { Form, Button, Textarea, P, FlexBox } from 'components';
 
 const StateForm = ({ status }) => {
   const [answer, setAnswer] = useState('');
@@ -15,13 +15,13 @@ const StateForm = ({ status }) => {
   return (
     <>
       <Form onSubmit={() => {}}>
-        <TextArea
-          isDisabled={status === 'submitting'}
-          textAreaName={`prac03textarea${status}`}
-          textAreaValue={answer}
-          textAreaLabel="Your answer:"
-          textAreaPlaceholder="Type your answer..."
-          handleChange={handleTextareaChange}
+        <Textarea
+          disabled={status === 'submitting'}
+          name={`prac03textarea${status}`}
+          value={answer}
+          label="Your answer:"
+          placeholder="Type your answer..."
+          onChange={handleTextareaChange}
           icon={<FiEdit3 />}
         />
         <FlexBox>

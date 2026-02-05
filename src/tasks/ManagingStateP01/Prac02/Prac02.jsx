@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Form, P, TextArea, Title } from 'components';
+import { Button, FlexBox, Form, P, Textarea, Title } from 'components';
 
-const Prac02 = ({ status = 'error' }) => {
+const Prac02 = ({ status }) => {
   const [answer, setAnswer] = useState('');
 
   function handleTextareaChange(e) {
@@ -19,13 +19,13 @@ const Prac02 = ({ status = 'error' }) => {
         In which city is there a billboard that runs air into drinkable water
       </P>
       <Form onSubmit={() => {}}>
-        <TextArea
-          isDisabled={status === 'submitting'}
-          textAreaName="prac02textarea"
-          textAreaValue={answer}
-          textAreaLabel="Your answer:"
-          textAreaPlaceholder="Type your answer..."
-          handleChange={handleTextareaChange}
+        <Textarea
+          disabled={status === 'submitting'}
+          name="prac02textarea"
+          value={answer}
+          label="Your answer:"
+          placeholder="Type your answer..."
+          onChange={handleTextareaChange}
           icon={<FiEdit3 />}
         />
         <FlexBox>

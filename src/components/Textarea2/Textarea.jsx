@@ -10,7 +10,7 @@ const Textarea = props => {
 
   const valueProps = {
     ...(value === null || onChange === null
-      ? { defaultValue: '', readOnly: true }
+      ? null
       : { value: value, onChange: onChange }),
   };
 

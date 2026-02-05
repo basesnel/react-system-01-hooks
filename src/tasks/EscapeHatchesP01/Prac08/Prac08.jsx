@@ -20,7 +20,13 @@ const MyInput = forwardRef((props, ref) => {
   return (
     <div className={field}>
       <div className={wrap}>
-        <input type={type} name={name} className={input} ref={realInputRef} />
+        <input
+          type={type}
+          name={name}
+          className={input}
+          placeholder="Type something..."
+          ref={realInputRef}
+        />
         <span className={pictogram}>{icon}</span>
       </div>
     </div>

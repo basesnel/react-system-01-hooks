@@ -4,14 +4,23 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const TextInput = forwardRef((props, ref) => {
-  const { disabled, type, name, value, label, placeholder, onChange, icon } =
-    props;
+  const {
+    disabled,
+    type,
+    name,
+    value,
+    label,
+    placeholder,
+    autoComplete,
+    onChange,
+    icon,
+  } = props;
 
   const { field, caption, wrap, input, pictogram } = styles;
 
   const valueProps = {
     ...(value === null || onChange === null
-      ? { defaultValue: '', readOnly: true }
+      ? null
       : { value: value, onChange: onChange }),
   };
 
@@ -30,7 +39,7 @@ const TextInput = forwardRef((props, ref) => {
           type={type}
           disabled={disabled}
           placeholder={placeholder}
-          autoComplete="off"
+          autoComplete={autoComplete}
           {...valueProps}
           ref={ref}
         />
@@ -48,6 +57,7 @@ TextInput.propTypes = {
   value: PropTypes.string,
   label: PropTypes.string,
   placeholder: PropTypes.string,
+  autoComplete: PropTypes.oneOf(['on', 'off']),
   onChange: PropTypes.func,
   icon: PropTypes.node,
 };
@@ -58,6 +68,7 @@ TextInput.defaultProps = {
   value: null,
   label: null,
   placeholder: null,
+  autoComplete: 'off',
   onChange: null,
   icon: null,
 };

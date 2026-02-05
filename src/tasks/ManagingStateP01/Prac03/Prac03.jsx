@@ -1,5 +1,5 @@
 import { HideOverflow, Title } from 'components';
-import StateForm from './StateForm';
+import { StateFormP03 } from '../intendendComponents';
 
 const Prac03 = () => {
   const statuses = ['empty', 'typing', 'submitting', 'success', 'error'];
@@ -9,7 +9,7 @@ const Prac03 = () => {
       {statuses.map(status => (
         <section key={status}>
           <Title level={3} caption={`Form (${status}):`} />
-          <StateForm status={status} />
+          <StateFormP03 status={status} />
         </section>
       ))}
     </HideOverflow>

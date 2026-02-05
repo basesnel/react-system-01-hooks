@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { FiEdit3 } from 'react-icons/fi';
 import { Form, Button, Textarea, P, FlexBox } from 'components';
 
-const StateForm = ({ status }) => {
+const StateFormP03 = ({ status }) => {
   const [answer, setAnswer] = useState('');
 
   function handleTextareaChange(e) {
@@ -40,12 +40,12 @@ const StateForm = ({ status }) => {
   );
 };
 
-StateForm.propTypes = {
+StateFormP03.propTypes = {
   status: PropTypes.string,
 };
 
-StateForm.defaultProps = {
+StateFormP03.defaultProps = {
   status: 'error',
 };
 
-export default StateForm;
+export default StateFormP03;

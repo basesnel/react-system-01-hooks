@@ -1,4 +1,4 @@
-@value field, label, wrap, input, pictogram from "../Input/styles.module.css";
+@value field, caption, wrap, input, pictogram from "../Input/styles.module.css";
 
 .iconTextarea {
   top: 12px;

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Button, FlexBox, Form, P, TextArea } from 'components';
+import { Button, FlexBox, Form, P, Textarea } from 'components';
 
 const Prac06 = () => {
   const [text, setText] = useState('');
@@ -26,13 +26,13 @@ const Prac06 = () => {
   return (
     <>
       <Form onSubmit={handleSubmit}>
-        <TextArea
-          isDisabled={isSending}
-          textAreaName="textareaP06"
-          textAreaValue={text}
-          textAreaLabel="Your feedback:"
-          textAreaPlaceholder="Type your feedback..."
-          handleChange={e => setText(e.target.value)}
+        <Textarea
+          disabled={isSending}
+          name="textareaP06"
+          value={text}
+          label="Your feedback:"
+          placeholder="Type your feedback..."
+          onChange={e => setText(e.target.value)}
           icon={<FiEdit3 />}
         />
         <FlexBox>

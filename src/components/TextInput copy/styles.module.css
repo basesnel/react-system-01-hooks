@@ -6,7 +6,6 @@
 @value color-text, color-accent from colors;
 
 .field {
-  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -25,9 +24,13 @@
   color: color-accent;
 }
 
+.wrap {
+  position: relative;
+}
+
 .input {
   width: 100%;
-  padding: 4px 10px 4px 36px;
+  padding: 4px 20px 4px 31px;
   border-radius: 4px;
   border: 1px solid color-text;
   font-size: fstext;
@@ -53,13 +56,10 @@
   display: block;
   width: fstext;
   height: fstext;
+  transform: translate(0, -50%);
   font-size: fstext;
   color: color-text;
   transition: var(--my-transition);
-}
-
-.labPictogram {
-  top: 28px;
 }
 
 .field:hover .pictogram,
@@ -79,11 +79,15 @@
   .caption {
     font-size: fslabel-mobile;
   }
+
+  .input {
+    padding: 4px 20px 4px 33px;
+  }
 }
 
 @media smartphone {
   .input {
-    padding: 6px 12px 6px 39px;
+    padding: 6px 20px 6px 35px;
     font-size: fstext-smartphone;
   }
 
@@ -91,10 +95,5 @@
     width: fstext-smartphone;
     height: fstext-smartphone;
     font-size: fstext-smartphone;
-    top: 12px;
-  }
-
-  .labPictogram {
-    top: 30px;
   }
 }

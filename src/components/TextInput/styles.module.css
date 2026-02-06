@@ -73,6 +73,12 @@
 
 .input:disabled ~ .caption {
   color: var(--color-text-opacity);
+  cursor: not-allowed;
+}
+
+.caption:has(+ .input:disabled) {
+  color: var(--color-text-opacity);
+  cursor: not-allowed;
 }
 
 @media mobile {

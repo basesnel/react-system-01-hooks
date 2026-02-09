@@ -16,15 +16,13 @@ const TextInput = forwardRef((props, ref) => {
     icon,
   } = props;
 
-  const { field, caption, input, pictogram, labPictogram } = styles;
+  const { field, caption, input, pictogram } = styles;
 
   const valueProps = {
     ...(value === null || onChange === null
       ? null
       : { value: value, onChange: onChange }),
   };
-
-  const iconClass = label ? `${pictogram} ${labPictogram}` : pictogram;
 
   return (
     <div className={field}>
@@ -44,7 +42,7 @@ const TextInput = forwardRef((props, ref) => {
         {...valueProps}
         ref={ref}
       />
-      <span className={iconClass}>{icon}</span>
+      <span className={pictogram}>{icon}</span>
     </div>
   );
 });

@@ -48,7 +48,7 @@
 
 .pictogram {
   position: absolute;
-  top: 50%;
+  top: 9px;
   left: 12px;
   display: block;
   width: fstext;
@@ -56,10 +56,6 @@
   font-size: fstext;
   color: color-text;
   transition: var(--my-transition);
-}
-
-.labPictogram {
-  top: 28px;
 }
 
 .field:hover .pictogram,
@@ -71,19 +67,22 @@
   color: var(--color-text-opacity);
 }
 
-.input:disabled ~ .caption {
-  color: var(--color-text-opacity);
-  cursor: not-allowed;
-}
-
 .caption:has(+ .input:disabled) {
   color: var(--color-text-opacity);
   cursor: not-allowed;
 }
 
+.caption ~ .pictogram {
+  top: 26px;
+}
+
 @media mobile {
   .caption {
     font-size: fslabel-mobile;
+  }
+
+  .caption ~ .pictogram {
+    top: 28px;
   }
 }
 
@@ -100,7 +99,7 @@
     top: 12px;
   }
 
-  .labPictogram {
+  .caption ~ .pictogram {
     top: 30px;
   }
 }

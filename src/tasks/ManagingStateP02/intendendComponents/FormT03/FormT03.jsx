@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
-import { Textarea } from 'components';
+import { TextArea } from 'components';
 
 const FormT03 = () => {
   const [text, setText] = useState('');
   return (
-    <Textarea
+    <TextArea
       name="Task03Text"
       value={text}
       placeholder="Type something..."

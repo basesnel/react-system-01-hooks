@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { toast } from 'react-toastify';
 import { MdChat } from 'react-icons/md';
-import { Form, Textarea, Button } from 'components';
+import { Form, TextArea, Button } from 'components';
 
 const ChatP14 = ({ contact, name }) => {
   const [text, setText] = useState('');
@@ -20,7 +20,7 @@ const ChatP14 = ({ contact, name }) => {
 
   return (
     <Form onSubmit={handleChatSubmit}>
-      <Textarea
+      <TextArea
         name={name}
         value={text}
         placeholder={'Chat to ' + contact.name}

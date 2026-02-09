@@ -3,68 +3,58 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const TextArea = props => {
-  const {
-    isDisabled,
-    textAreaName,
-    textAreaValue,
-    textAreaLabel,
-    textAreaPlaceholder,
-    handleChange,
-    icon,
-    textAreaRef,
-  } = props;
+  const { disabled, name, value, label, placeholder, onChange, icon, ref } =
+    props;
 
-  const { field, caption, wrap, input, pictogram, iconTextarea } = styles;
+  const { field, caption, input, pictogram } = styles;
 
   const valueProps = {
-    ...(textAreaValue === null || handleChange === null
-      ? { defaultValue: '', readOnly: true }
-      : { value: textAreaValue, onChange: handleChange }),
+    ...(value === null || onChange === null
+      ? null
+      : { value: value, onChange: onChange }),
   };
 
   return (
     <div className={field}>
-      {textAreaLabel && (
-        <label className={caption} htmlFor={textAreaName}>
-          {textAreaLabel}
+      {label && (
+        <label className={caption} htmlFor={name}>
+          {label}
         </label>
       )}
-      <div className={wrap}>
-        <textarea
-          disabled={isDisabled}
-          id={textAreaName}
-          {...valueProps}
-          autoComplete="off"
-          className={input}
-          placeholder={textAreaPlaceholder}
-          ref={textAreaRef}
-        />
-        <span className={`${pictogram} ${iconTextarea}`}>{icon}</span>
-      </div>
+      <textarea
+        disabled={disabled}
+        id={name}
+        {...valueProps}
+        autoComplete="off"
+        className={input}
+        placeholder={placeholder}
+        ref={ref}
+      />
+      <span className={pictogram}>{icon}</span>
     </div>
   );
 };
 
 TextArea.propTypes = {
-  isDisabled: PropTypes.bool,
-  textAreaName: PropTypes.string,
-  textAreaValue: PropTypes.string,
-  textAreaLabel: PropTypes.string,
-  textAreaPlaceholder: PropTypes.string,
-  handleChange: PropTypes.func,
+  disabled: PropTypes.bool,
+  name: PropTypes.string,
+  value: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  onChange: PropTypes.func,
   icon: PropTypes.node,
-  textAreaRef: PropTypes.any,
+  ref: PropTypes.any,
 };
 
 TextArea.defaultProps = {
-  isDisabled: null,
-  textAreaName: null,
-  textAreaValue: null,
-  textAreaLabel: null,
-  textAreaPlaceholder: null,
-  handleChange: null,
+  disabled: null,
+  name: null,
+  value: null,
+  label: null,
+  placeholder: null,
+  onChange: null,
   icon: null,
-  textAreaRef: null,
+  ref: null,
 };
 
 export default TextArea;

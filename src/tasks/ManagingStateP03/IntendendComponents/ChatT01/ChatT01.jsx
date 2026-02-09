@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { MdChat } from 'react-icons/md';
-import { Form, Textarea, Button } from 'components';
+import { Form, TextArea, Button } from 'components';
 
 const ChatT01 = ({ contact, message, name, dispatch }) => {
   const handleChatSubmit = event => {
@@ -9,7 +9,7 @@ const ChatT01 = ({ contact, message, name, dispatch }) => {
 
   return (
     <Form onSubmit={handleChatSubmit}>
-      <Textarea
+      <TextArea
         name={name}
         value={message}
         placeholder={'Chat to ' + contact.name}

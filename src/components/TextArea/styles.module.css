@@ -1,6 +1,1 @@
-@value field, label, wrap, input, pictogram from "../Input/styles.module.css";
-
-.iconTextarea {
-  top: 12px;
-  transform: translate(0, 0);
-}
+@value field, caption, wrap, input, pictogram from "../Input/styles.module.css";

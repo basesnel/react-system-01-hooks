@@ -39,7 +39,6 @@ import Slide from './Slide';
 import Slider from './Slider';
 import Span from './Span';
 import TextArea from './TextArea';
-import Textarea from './Textarea2';
 import Title from './Title';
 import UserMenu from './UserMenu';
 import VisuallyHidden from './VisuallyHidden';
@@ -86,7 +85,6 @@ export {
   Slider,
   Span,
   TextArea,
-  Textarea,
   Title,
   UserMenu,
   VisuallyHidden,

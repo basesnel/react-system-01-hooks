@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { FiEdit } from 'react-icons/fi';
-import { FlexBox, TextInput, Button } from 'components';
+import { FlexBox, Input, Button } from 'components';
 
 const Prac05 = () => {
   const [inputValue, setInputValue] = useState('');
@@ -12,7 +12,7 @@ const Prac05 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <TextInput
+      <Input
         name="ref-inputP05"
         value={inputValue}
         placeholder="Input something..."

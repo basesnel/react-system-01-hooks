@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
-import { Form, TextInput } from 'components';
+import { Form, Input } from 'components';
 import { initialThirdPerson } from 'constants';
 import { FieldOverlayP03P04, FigureP03P04 } from '../IntendendComponents';
 
@@ -47,7 +47,7 @@ const Prac03 = () => {
   return (
     <>
       <Form onSubmit={e => e.preventDefault()}>
-        <TextInput
+        <Input
           name="nameP03"
           value={person.name}
           label="Name"
@@ -55,14 +55,14 @@ const Prac03 = () => {
           onChange={handleNameChange}
           icon={<FiUser />}
         />
-        <TextInput
+        <Input
           name="titleP03"
           value={person.artwork.title}
           placeholder="Type the artwork's title"
           onChange={handleTitleChange}
           icon={<FiEdit3 />}
         />
-        <TextInput
+        <Input
           name="cityP03"
           value={person.artwork.city}
           placeholder="Type the artwork's city"
@@ -70,7 +70,7 @@ const Prac03 = () => {
           icon={<FiEdit3 />}
         />
         <FieldOverlayP03P04>
-          <TextInput
+          <Input
             name="image"
             value={person.artwork.image}
             label="Photo"

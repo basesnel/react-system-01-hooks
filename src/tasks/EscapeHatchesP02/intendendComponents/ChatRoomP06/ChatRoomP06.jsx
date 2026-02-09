@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiMessageCircle } from 'react-icons/fi';
-import { Button, FlexBox, Caption, TextInput } from 'components';
+import { Button, FlexBox, Caption, Input } from 'components';
 import { createConnection, sendMessage } from 'constants';
 
 const serverUrl = 'https://localhost:1234';
@@ -22,7 +22,7 @@ const ChatRoomP06 = ({ roomId }) => {
   return (
     <FlexBox wrapped="wrap">
       <Caption text={`Welcome to the ${roomId} room!`} />
-      <TextInput
+      <Input
         name="messageP06"
         value={message}
         label="Your message:"

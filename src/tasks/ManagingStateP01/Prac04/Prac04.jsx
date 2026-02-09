@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiUser } from 'react-icons/fi';
-import { Title, Form, TextInput, P, Span } from 'components';
+import { Title, Form, Input, P, Span } from 'components';
 
 const Prac04 = () => {
   const [firstName, setFirstName] = useState('');
@@ -20,7 +20,7 @@ const Prac04 = () => {
     <>
       <Title level={3} caption="let's check you in" />
       <Form onSubmit={() => {}}>
-        <TextInput
+        <Input
           name="firstNameP04"
           value={firstName}
           label="First name"
@@ -28,7 +28,7 @@ const Prac04 = () => {
           onChange={handleFirstNameChange}
           icon={<FiUser />}
         />
-        <TextInput
+        <Input
           name="lastNameP04"
           value={lastName}
           label="Last name"

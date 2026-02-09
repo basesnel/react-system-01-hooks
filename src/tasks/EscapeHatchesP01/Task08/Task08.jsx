@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 import { MdSearch } from 'react-icons/md';
-import { FlexBox, TextInput, Button } from 'components';
+import { FlexBox, Input, Button } from 'components';
 
 const Task08 = () => {
   const inputRef = useRef(null);
 
   return (
     <FlexBox wrapped="wrap">
-      <TextInput
+      <Input
         name="searchT08"
         placeholder="Lookung for something?"
         icon={<MdSearch />}

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MdTask } from 'react-icons/md';
-import { FlexBox, TextInput, H } from 'components';
+import { FlexBox, Input, H } from 'components';
 
 const PlaygroundP14 = () => {
   const [text, setText] = useState('a');
@@ -21,7 +21,7 @@ const PlaygroundP14 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <TextInput
+      <Input
         name="sheduleP14"
         value={text}
         label="What to log:"

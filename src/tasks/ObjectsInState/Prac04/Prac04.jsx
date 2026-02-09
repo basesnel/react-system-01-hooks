@@ -1,6 +1,6 @@
 import { useImmer } from 'use-immer';
 import { FiUser, FiEdit3, FiImage } from 'react-icons/fi';
-import { Form, TextInput } from 'components';
+import { Form, Input } from 'components';
 import { initialThirdPerson } from 'constants';
 import { FieldOverlayP03P04, FigureP03P04 } from '../IntendendComponents';
 
@@ -34,7 +34,7 @@ const Prac04 = () => {
   return (
     <>
       <Form onSubmit={e => e.preventDefault()}>
-        <TextInput
+        <Input
           name="nameP04"
           value={person.name}
           label="Name"
@@ -42,7 +42,7 @@ const Prac04 = () => {
           onChange={handleNameChange}
           icon={<FiUser />}
         />
-        <TextInput
+        <Input
           name="titleP04"
           value={person.artwork.title}
           label="Title"
@@ -50,7 +50,7 @@ const Prac04 = () => {
           onChange={handleTitleChange}
           icon={<FiEdit3 />}
         />
-        <TextInput
+        <Input
           name="cityP04"
           value={person.artwork.city}
           label="City"
@@ -59,7 +59,7 @@ const Prac04 = () => {
           icon={<FiEdit3 />}
         />
         <FieldOverlayP03P04>
-          <TextInput
+          <Input
             name="imageP04"
             value={person.artwork.image}
             label="Photo"

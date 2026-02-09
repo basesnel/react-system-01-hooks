@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { MdSearch } from 'react-icons/md';
-import { FlexBox, TextInput, Button } from 'components';
+import { FlexBox, Input, Button } from 'components';
 
 const Task06 = () => {
   const [inputValue, setInputValue] = useState('');
@@ -8,7 +8,7 @@ const Task06 = () => {
 
   return (
     <FlexBox wrapped="wrap">
-      <TextInput
+      <Input
         name="searchT06"
         value={inputValue}
         placeholder="Lookung for something?"

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 import { FiServer } from 'react-icons/fi';
-import { FlexBox, Caption, TextInput } from 'components';
+import { FlexBox, Caption, Input } from 'components';
 import { useChatRoom } from 'hooks';
 
 const ChatRoomP06 = props => {
@@ -16,7 +16,7 @@ const ChatRoomP06 = props => {
 
   return (
     <FlexBox wrapped="wrap">
-      <TextInput
+      <Input
         name="chatroomP06"
         value={serverUrl}
         label="Server URL:"

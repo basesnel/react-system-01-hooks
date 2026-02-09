@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { Form, TextInput, Button } from 'components';
+import { Form, Input, Button } from 'components';
 import { initialTaskFirstPerson } from 'constants';
 
 import css from './Task01.module.css';
@@ -30,7 +30,7 @@ const Task01 = () => {
 
   return (
     <Form onSubmit={e => e.preventDefault()}>
-      <TextInput
+      <Input
         name="firstNameT01"
         value={player.firstName}
         label="First name"
@@ -38,7 +38,7 @@ const Task01 = () => {
         onChange={handleFirstNameChange}
         icon={<FiEdit3 />}
       />
-      <TextInput
+      <Input
         name="lastNameT01"
         value={player.lastName}
         label="Last name"

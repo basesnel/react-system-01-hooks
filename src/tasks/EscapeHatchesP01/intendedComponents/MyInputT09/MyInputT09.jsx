@@ -1,7 +1,7 @@
 import { useRef, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
-import { TextInput } from 'components';
+import { Input } from 'components';
 
 const MyInputT09 = props => {
   const { value, onChange } = props;
@@ -13,7 +13,7 @@ const MyInputT09 = props => {
   }, []);
 
   return (
-    <TextInput
+    <Input
       ref={ref}
       type="text"
       name="nameT09"

@@ -1,80 +1,74 @@
+import { forwardRef } from 'react';
 import PropTypes from 'prop-types';
 
 import styles from './styles.module.css';
 
-const Input = props => {
+const Input = forwardRef((props, ref) => {
   const {
-    isDisabled,
-    inputType,
-    inputName,
-    inputValue,
-    inputLabel,
-    inputPlaceholder,
-    handleChange,
+    disabled,
+    type,
+    name,
+    value,
+    label,
+    placeholder,
+    autoComplete,
+    onChange,
     icon,
-    inputRef,
   } = props;
-  const { field, caption, wrap, input, pictogram } = styles;
+
+  const { field, caption, input, pictogram } = styles;
 
   const valueProps = {
-    ...(inputValue === null || handleChange === null
-      ? { defaultValue: '', readOnly: true }
-      : { value: inputValue, onChange: handleChange }),
+    ...(value === null || onChange === null
+      ? null
+      : { value: value, onChange: onChange }),
   };
 
   return (
     <div className={field}>
-      {inputLabel && (
-        <label className={caption} htmlFor={inputName}>
-          {inputLabel}
+      {label && (
+        <label className={caption} htmlFor={name}>
+          {label}
         </label>
       )}
-      <div className={wrap}>
-        <input
-          className={input}
-          disabled={isDisabled}
-          type={inputType}
-          name={inputName}
-          id={inputName}
-          {...valueProps}
-          autoComplete="off"
-          placeholder={inputPlaceholder}
-          ref={inputRef}
-        />
-        <span className={pictogram}>{icon}</span>
-      </div>
+      <input
+        className={input}
+        id={name}
+        name={name}
+        type={type}
+        disabled={disabled}
+        placeholder={placeholder}
+        autoComplete={autoComplete}
+        {...valueProps}
+        ref={ref}
+      />
+      <span className={pictogram}>{icon}</span>
     </div>
   );
-};
+});
 
 Input.propTypes = {
-  isDisabled: PropTypes.bool,
-  inputType: PropTypes.oneOf([
-    'text',
-    'password',
-    'file',
-    'email',
-    'url',
-    'tel',
-  ]).isRequired,
-  inputName: PropTypes.string.isRequired,
-  inputValue: PropTypes.string,
-  inputLabel: PropTypes.string,
-  inputPlaceholder: PropTypes.string,
-  handleChange: PropTypes.func,
+  disabled: PropTypes.bool,
+  type: PropTypes.oneOf(['text', 'password', 'file', 'email', 'url', 'tel'])
+    .isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
+  label: PropTypes.string,
+  placeholder: PropTypes.string,
+  autoComplete: PropTypes.oneOf(['on', 'off']),
+  onChange: PropTypes.func,
   icon: PropTypes.node,
-  inputRef: PropTypes.any,
 };
 
 Input.defaultProps = {
-  inputType: 'text',
-  isDisabled: null,
-  inputValue: null,
-  inputLabel: null,
-  inputPlaceholder: null,
-  handleChange: null,
+  disabled: null,
+  type: 'text',
+  value: null,
+  label: null,
+  placeholder: null,
+  autoComplete: 'off',
+  onChange: null,
   icon: null,
-  inputRef: null,
 };
 
 export default Input;

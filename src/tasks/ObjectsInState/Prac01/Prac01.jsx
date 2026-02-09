@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FiMail, FiUser } from 'react-icons/fi';
-import { Form, TextInput, Caption } from 'components';
+import { Form, Input, Caption } from 'components';
 import { initialFirstPerson } from 'constants';
 
 const Prac01 = () => {
@@ -13,7 +13,7 @@ const Prac01 = () => {
   return (
     <>
       <Form onSubmit={e => e.preventDefault()}>
-        <TextInput
+        <Input
           name="firstNameP01"
           value={person.firstName}
           label="First name"
@@ -21,7 +21,7 @@ const Prac01 = () => {
           onChange={handleChange}
           icon={<FiUser />}
         />
-        <TextInput
+        <Input
           name="lastNameP01"
           value={person.lastName}
           label="Last name"
@@ -29,7 +29,7 @@ const Prac01 = () => {
           onChange={handleChange}
           icon={<FiUser />}
         />
-        <TextInput
+        <Input
           type="email"
           name="emailP01"
           value={person.email}

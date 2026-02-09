@@ -6,7 +6,7 @@ const Textarea = props => {
   const { disabled, name, value, label, placeholder, onChange, icon, ref } =
     props;
 
-  const { field, caption, wrap, input, pictogram, iconTextarea } = styles;
+  const { field, caption, input, pictogram } = styles;
 
   const valueProps = {
     ...(value === null || onChange === null
@@ -21,18 +21,16 @@ const Textarea = props => {
           {label}
         </label>
       )}
-      <div className={wrap}>
-        <textarea
-          disabled={disabled}
-          id={name}
-          {...valueProps}
-          autoComplete="off"
-          className={input}
-          placeholder={placeholder}
-          ref={ref}
-        />
-        <span className={`${pictogram} ${iconTextarea}`}>{icon}</span>
-      </div>
+      <textarea
+        disabled={disabled}
+        id={name}
+        {...valueProps}
+        autoComplete="off"
+        className={input}
+        placeholder={placeholder}
+        ref={ref}
+      />
+      <span className={pictogram}>{icon}</span>
     </div>
   );
 };

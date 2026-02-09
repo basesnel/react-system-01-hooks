@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { FiEdit3 } from 'react-icons/fi';
-import { TextInput, P } from 'components';
+import { Input, P } from 'components';
 
 const FormP10 = () => {
   const [name, setName] = useState('Taylor');
 
   return (
     <>
-      <TextInput
+      <Input
         name="nameP10"
         value={name}
         label="name"

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FiServer } from 'react-icons/fi';
 import { MdChat } from 'react-icons/md';
-import { FlexBox, TextInput, Select, Button } from 'components';
+import { FlexBox, Input, Select, Button } from 'components';
 import { chatRoom } from 'constants';
 import { ChatRoomT13 } from '../intendendComponents';
 
@@ -21,7 +21,7 @@ const Task13 = () => {
     <div className={isDark ? styles.dark : styles.light}>
       <FlexBox align="flex-end" wrapped="wrap">
         <Button caption="Toggle Theme" onClick={() => setIsDark(!isDark)} />
-        <TextInput
+        <Input
           name="serverT13"
           value={serverUrl}
           label="Server URL: "

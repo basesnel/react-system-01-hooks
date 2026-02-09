@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { FiLock, FiMail } from 'react-icons/fi';
-import { Form, TextInput, FlexBox, Button } from 'components';
+import { Form, Input, FlexBox, Button } from 'components';
 import { useLocalStorage } from 'hooks';
 
 const SignupForm = () => {
@@ -63,7 +63,7 @@ const SignupForm = () => {
 
   return (
     <Form onSubmit={handleSubmitForm}>
-      <TextInput
+      <Input
         type="email"
         name="email"
         value={email}
@@ -72,7 +72,7 @@ const SignupForm = () => {
         onChange={handleChange}
         icon={<FiMail />}
       />
-      <TextInput
+      <Input
         type="password"
         name="password"
         value={password}

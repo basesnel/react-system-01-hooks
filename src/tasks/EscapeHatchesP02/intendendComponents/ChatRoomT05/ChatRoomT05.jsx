@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FiEdit } from 'react-icons/fi';
-import { Caption, TextInput } from 'components';
+import { Caption, Input } from 'components';
 import { createConnection } from 'constants';
 
 const serverUrl = 'https://localhost:1234';
@@ -18,7 +18,7 @@ const ChatRoomT05 = ({ roomId }) => {
   return (
     <>
       <Caption text={`Welcome to the ${roomId} room!`} />
-      <TextInput
+      <Input
         disabled={false}
         name="messageT05"
         value={message}

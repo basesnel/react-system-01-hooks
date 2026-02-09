@@ -5,7 +5,7 @@ import {
   List,
   Item,
   ItemFlex,
-  TextInput,
+  Input,
   IconButton,
   P,
   Span,
@@ -40,7 +40,7 @@ const Prac07 = () => {
         {items.map(item => (
           <Item key={item.id}>
             <ItemFlex>
-              <TextInput
+              <Input
                 name={`pickedP07${item.id}`}
                 value={item.title}
                 placeholder="Type your travel..."

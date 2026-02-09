@@ -1,14 +1,6 @@
 import { useState, useMemo, useEffect } from 'react';
 import { FiFilter } from 'react-icons/fi';
-import {
-  Box,
-  Button,
-  List,
-  Item,
-  ItemFlex,
-  ItemText,
-  TextInput,
-} from 'components';
+import { Box, Button, List, Item, ItemFlex, ItemText, Input } from 'components';
 import { initialCharacters } from 'constants';
 
 const Characters = () => {
@@ -42,7 +34,7 @@ const Characters = () => {
       <Button caption={count} onClick={() => setCount(c => c + 1)} />
       <hr />
       <Box>
-        <TextInput
+        <Input
           type="text"
           name="Character"
           value={filter}

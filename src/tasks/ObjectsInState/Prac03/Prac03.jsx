@@ -58,6 +58,7 @@ const Prac03 = () => {
         <Input
           name="titleP03"
           value={person.artwork.title}
+          label="Artwork title"
           placeholder="Type the artwork's title"
           onChange={handleTitleChange}
           icon={<FiEdit3 />}
@@ -65,6 +66,7 @@ const Prac03 = () => {
         <Input
           name="cityP03"
           value={person.artwork.city}
+          label="Artwork city"
           placeholder="Type the artwork's city"
           onChange={handleCityChange}
           icon={<FiEdit3 />}

@@ -1,6 +1,6 @@
 import { useImmer } from 'use-immer';
 import { MdOutlineSelectAll } from 'react-icons/md';
-import { FlexBox, Select } from 'components';
+import { FlexBox, Select2 } from 'components';
 import { initialPosition, colorOptions } from 'constants';
 import {
   WrapperT02T03,
@@ -30,12 +30,12 @@ const Task03 = () => {
   return (
     <WrapperT02T03>
       <FlexBox>
-        <Select
-          selectName="color"
-          selected={shape.color}
+        <Select2
+          name="colorT03"
+          value={shape.color}
           list={colorOptions}
           icon={<MdOutlineSelectAll />}
-          onHandleSelect={handleColorChange}
+          onChange={handleColorChange}
         />
       </FlexBox>
       <BackgroundT02T03 position={initialPosition} />

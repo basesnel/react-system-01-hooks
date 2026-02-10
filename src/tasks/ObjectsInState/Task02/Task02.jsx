@@ -34,7 +34,7 @@ const Task02 = () => {
     <WrapperT02T03>
       <FlexBox>
         <Select2
-          name="Color"
+          name="ColorT02"
           value={shape.color}
           list={colorOptions}
           icon={<MdOutlineSelectAll />}

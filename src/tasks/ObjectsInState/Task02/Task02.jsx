@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MdOutlineSelectAll } from 'react-icons/md';
-import { FlexBox, Select } from 'components';
+import { FlexBox, Select2 } from 'components';
 import { initialPosition, colorOptions } from 'constants';
 import {
   WrapperT02T03,
@@ -33,12 +33,12 @@ const Task02 = () => {
   return (
     <WrapperT02T03>
       <FlexBox>
-        <Select
-          selectName="Color"
-          selected={shape.color}
+        <Select2
+          name="Color"
+          value={shape.color}
           list={colorOptions}
           icon={<MdOutlineSelectAll />}
-          onHandleSelect={handleColorChange}
+          onChange={handleColorChange}
         />
       </FlexBox>
       <BackgroundT02T03 position={initialPosition} />

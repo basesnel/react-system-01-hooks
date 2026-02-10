@@ -27,7 +27,7 @@ Select.propTypes = {
   value: PropTypes.string,
   list: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,
-  onHandleSelect: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 Select.defaultProps = {

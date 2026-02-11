@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { FiUser } from 'react-icons/fi';
-import { FlexBox, Select, P } from 'components';
+import { FlexBox, Select2, P } from 'components';
 import { fetchBio } from 'services';
 import { personList } from 'constants';
 
@@ -28,13 +28,13 @@ const Prac10 = () => {
   return (
     <>
       <FlexBox>
-        <Select
-          selectLabel="Choose the person: "
-          selectName="Person"
-          selected={person}
+        <Select2
+          label="Choose the person: "
+          name="PersonP10"
+          value={person}
           list={personList}
           icon={<FiUser />}
-          onHandleSelect={e => setPerson(e.target.value)}
+          onChange={e => setPerson(e.target.value)}
         />
       </FlexBox>
       <P>{bio ?? 'Loading...'}</P>

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
-import { FlexBox, Select, P } from 'components';
+import { FlexBox, Select2, P } from 'components';
 import { fetchData } from 'services';
 
 const Task09 = () => {
@@ -45,21 +45,21 @@ const Task09 = () => {
   return (
     <>
       <FlexBox align="flex-start" wrapped="wrap">
-        <Select
-          selectLabel="Pick a planet: "
-          selectName="PlanetT09"
-          selected={planet}
+        <Select2
+          label="Pick a planet: "
+          name="PlanetT09"
+          value={planet}
           list={planetList}
           icon={<MdOutlineLanguage />}
-          onHandleSelect={e => setPlanet(e.target.value)}
+          onChange={e => setPlanet(e.target.value)}
         />
-        <Select
-          selectLabel="Pick a place: "
-          selectName="PlaceT09"
-          selected={place}
+        <Select2
+          label="Pick a place: "
+          name="PlaceT09"
+          value={place}
           list={placeList}
           icon={<MdPlace />}
-          onHandleSelect={e => setPlace(e.target.value)}
+          onChange={e => setPlace(e.target.value)}
         />
       </FlexBox>
       <hr />

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MdChat } from 'react-icons/md';
-import { FlexBox, Select, CheckBox } from 'components';
+import { FlexBox, Select2, CheckBox } from 'components';
 import { chatRoom } from 'constants';
 import { ChatRoomT08 } from '../intendendComponents';
 
@@ -11,13 +11,13 @@ const Task08 = () => {
   return (
     <>
       <FlexBox wrapped="wrap">
-        <Select
-          selectLabel="Choose the chat room: "
-          selectName="ChatT08"
-          selected={roomId}
+        <Select2
+          label="Choose the chat room: "
+          name="ChatT08"
+          value={roomId}
           list={chatRoom}
           icon={<MdChat />}
-          onHandleSelect={e => setRoomId(e.target.value)}
+          onChange={e => setRoomId(e.target.value)}
         />
         <CheckBox
           name="isEncryptedT08"

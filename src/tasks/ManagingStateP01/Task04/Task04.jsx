@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CgColorPicker } from 'react-icons/cg';
 import Clock from './Clock';
-import { FlexBox, Select } from 'components';
+import { FlexBox, Select2 } from 'components';
 
 const useTime = () => {
   const [time, setTime] = useState(() => new Date());
@@ -23,13 +23,13 @@ const Task04 = () => {
   return (
     <>
       <FlexBox>
-        <Select
-          selectLabel="Choose the color: "
-          selectName="colorPicker"
-          selected={color}
+        <Select2
+          label="Choose the color: "
+          name="colorPickerT04"
+          value={color}
           list={colorList}
           icon={<CgColorPicker />}
-          onHandleSelect={e => setColor(e.target.value)}
+          onChange={e => setColor(e.target.value)}
         />
       </FlexBox>
       <Clock color={color} time={time.toLocaleTimeString()} />

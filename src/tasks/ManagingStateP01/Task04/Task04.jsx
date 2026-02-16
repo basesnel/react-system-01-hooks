@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { CgColorPicker } from 'react-icons/cg';
 import Clock from './Clock';
-import { FlexBox, Select2 } from 'components';
+import { FlexBox, Select } from 'components';
 
 const useTime = () => {
   const [time, setTime] = useState(() => new Date());
@@ -23,7 +23,7 @@ const Task04 = () => {
   return (
     <>
       <FlexBox>
-        <Select2
+        <Select
           label="Choose the color: "
           name="colorPickerT04"
           value={color}

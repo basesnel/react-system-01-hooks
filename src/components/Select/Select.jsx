@@ -3,43 +3,36 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Select = props => {
-  const { selectLabel, selectName, selected, list, icon, onHandleSelect } =
-    props;
+  const { label, name, value, list, icon, onChange } = props;
+  const { field, caption, input, pictogram } = styles;
 
   return (
-    <label className={styles.field}>
-      {selectLabel && <span className={styles.label}>{selectLabel}</span>}
-      <div className={styles.wrap}>
-        <select
-          name={selectName}
-          value={selected}
-          onChange={onHandleSelect}
-          className={styles.input}
-        >
-          {list?.map(item => (
-            <option key={item} value={item}>
-              {item}
-            </option>
-          ))}
-        </select>
-        <span className={styles.icon}>{icon}</span>
-      </div>
-    </label>
+    <div className={field}>
+      {label && <label className={caption}>{label}</label>}
+      <select name={name} value={value} onChange={onChange} className={input}>
+        {list?.map(item => (
+          <option key={item} value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
+      <span className={pictogram}>{icon}</span>
+    </div>
   );
 };
 
 Select.propTypes = {
-  selectLabel: PropTypes.string,
-  selectName: PropTypes.string.isRequired,
-  selected: PropTypes.string,
+  label: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string,
   list: PropTypes.arrayOf(PropTypes.string),
   icon: PropTypes.node,
-  onHandleSelect: PropTypes.func.isRequired,
+  onChange: PropTypes.func.isRequired,
 };
 
 Select.defaultProps = {
-  selectLabel: null,
-  selected: '',
+  label: null,
+  value: '',
   list: null,
   icon: null,
 };

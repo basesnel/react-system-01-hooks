@@ -1,5 +1,5 @@
 import { MdOutlineLanguage, MdPlace } from 'react-icons/md';
-import { FlexBox, Select2, P } from 'components';
+import { FlexBox, Select, P } from 'components';
 import { useSelectOptions } from './useSelectOptions';
 
 const Task10 = () => {
@@ -11,7 +11,7 @@ const Task10 = () => {
   return (
     <>
       <FlexBox align="flex-start" wrapped="wrap">
-        <Select2
+        <Select
           label="Pick a planet: "
           name="PlanetT10"
           value={planet}
@@ -19,7 +19,7 @@ const Task10 = () => {
           icon={<MdOutlineLanguage />}
           onChange={e => setPlanet(e.target.value)}
         />
-        <Select2
+        <Select
           label="Pick a place: "
           name="PlaceT10"
           value={place}

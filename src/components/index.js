@@ -35,7 +35,6 @@ import ResponsiveImage from './ResponsiveImage';
 import Scroll from './Scroll';
 import SearchBar from './SearchBar';
 import Select from './Select';
-import Select2 from './Select2';
 import Slide from './Slide';
 import Slider from './Slider';
 import Span from './Span';
@@ -82,7 +81,6 @@ export {
   Scroll,
   SearchBar,
   Select,
-  Select2,
   Slide,
   Slider,
   Span,

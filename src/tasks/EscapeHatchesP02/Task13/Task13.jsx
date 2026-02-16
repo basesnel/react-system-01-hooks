@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FiServer } from 'react-icons/fi';
 import { MdChat } from 'react-icons/md';
-import { FlexBox, Input, Select, Button } from 'components';
+import { FlexBox, Input, Select2, Button } from 'components';
 import { chatRoom } from 'constants';
 import { ChatRoomT13 } from '../intendendComponents';
 
@@ -29,13 +29,13 @@ const Task13 = () => {
           onChange={e => setServerUrl(e.target.value)}
           icon={<FiServer />}
         />
-        <Select
-          selectLabel="Choose the chat room: "
-          selectName="ChatT13"
-          selected={roomId}
+        <Select2
+          label="Choose the chat room: "
+          name="ChatT13"
+          value={roomId}
           list={chatRoom}
           icon={<MdChat />}
-          onHandleSelect={e => setRoomId(e.target.value)}
+          onChange={e => setRoomId(e.target.value)}
         />
       </FlexBox>
       <hr />

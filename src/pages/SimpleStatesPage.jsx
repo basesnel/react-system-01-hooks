@@ -1,4 +1,4 @@
-import { Main, Container, H, P, Grid, Card } from 'components';
+import { Main, Container, H, P, Grid, Card, Card2 } from 'components';
 
 import { simpleStates } from 'tasks';
 
@@ -25,9 +25,9 @@ const SimpleStatesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac01: counters with own state">
+          <Card2 title="prac01: counters with own state">
             <Prac01 />
-          </Card>
+          </Card2>
           <Card title="prac02: counter with general state">
             <Prac02 />
           </Card>

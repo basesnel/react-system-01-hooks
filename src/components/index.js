@@ -4,6 +4,7 @@ import Button from './Button';
 import Canvas from './Canvas';
 import Caption from './Caption';
 import Card from './Card';
+import Card2 from './Card2';
 import CheckBox from './CheckBox';
 import Container from './Container';
 import CustomLoader from './CustomLoader';
@@ -50,6 +51,7 @@ export {
   Canvas,
   Caption,
   Card,
+  Card2,
   CheckBox,
   Container,
   CustomLoader,

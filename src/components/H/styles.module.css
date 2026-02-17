@@ -96,30 +96,9 @@
 .cardTitle {
   font-size: fstext;
   font-weight: 700;
+  line-height: 1.5;
   text-align: center;
   color: color-text;
-}
-
-.cardTitle03 {
-  padding: 0;
-  margin-bottom: 10px;
-  font-size: var(--fs-text-mobile);
-  font-weight: 700;
-  text-align: center;
-  color: var(--color-text);
-  opacity: 0.85;
-  transition: var(--my-transition);
-}
-
-.cardTitle04 {
-  padding: 0;
-  margin-bottom: 10px;
-  font-size: var(--fs-text-mobile);
-  font-weight: 700;
-  text-align: initial;
-  color: var(--color-text);
-  opacity: 0.85;
-  transition: var(--my-transition);
 }
 
 @media mobile {
@@ -231,14 +210,6 @@
 
   .cardTitle {
     font-size: fstext-smartphone;
-  }
-
-  .cardTitle03 {
-    font-size: var(--fs-text-smartphone);
-  }
-
-  .cardTitle04 {
-    font-size: var(--fs-text-smartphone);
   }
 }
 
@@ -364,18 +335,5 @@
 
   .heading06::before {
     height: heading6-desktop;
-  }
-
-  .cardTitle02 {
-    margin-bottom: 0;
-    font-size: var(--fs-text-tablet);
-  }
-
-  .cardTitle03 {
-    font-size: var(--fs-text-tablet);
-  }
-
-  .cardTitle04 {
-    font-size: var(--fs-text-tablet);
   }
 }

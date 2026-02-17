@@ -9,12 +9,12 @@ const Card = props => {
 
   return (
     <div className={styles.card}>
-      <cardContext.Provider value={true}>
-        <div className={styles.header}>
+      <div className={styles.header}>
+        <cardContext.Provider value={true}>
           <H level={2}>{title}</H>
-        </div>
-        <div className={styles.content}>{children}</div>
-      </cardContext.Provider>
+        </cardContext.Provider>
+      </div>
+      <div className={styles.content}>{children}</div>
     </div>
   );
 };

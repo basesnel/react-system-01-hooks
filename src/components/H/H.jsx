@@ -30,24 +30,16 @@ const H = props => {
       return <h2 className={isCard ? cardTitle : heading02}>{children}</h2>;
 
     case 3:
-      return (
-        <h3 className={`${heading03} ${isCard ? styles.cardTitle03 : ''}`}>
-          {children}
-        </h3>
-      );
+      return <h3 className={isCard ? cardTitle : heading03}>{children}</h3>;
 
     case 4:
-      return (
-        <h4 className={`${heading04} ${isCard ? styles.cardTitle04 : ''}`}>
-          {children}
-        </h4>
-      );
+      return <h4 className={isCard ? cardTitle : heading04}>{children}</h4>;
 
     case 5:
-      return <h5 className={heading05}>{children}</h5>;
+      return <h5 className={isCard ? cardTitle : heading05}>{children}</h5>;
 
     case 6:
-      return <h6 className={heading06}>{children}</h6>;
+      return <h6 className={isCard ? cardTitle : heading06}>{children}</h6>;
 
     default:
       throw Error('Unknown level: ' + level);

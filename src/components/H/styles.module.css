@@ -94,7 +94,6 @@
 }
 
 .cardTitle {
-  margin-bottom: 0;
   font-size: fstext;
   font-weight: 700;
   text-align: center;
@@ -230,9 +229,8 @@
     height: heading6-smartphone;
   }
 
-  .cardTitle02 {
-    margin-bottom: 0;
-    font-size: var(--fs-text-smartphone);
+  .cardTitle {
+    font-size: fstext-smartphone;
   }
 
   .cardTitle03 {

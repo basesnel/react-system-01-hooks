@@ -6,8 +6,16 @@ import styles from './styles.module.css';
 
 const H = props => {
   const { level, children } = props;
-  const { heading01, heading02, heading03, heading04, heading05, heading06 } =
-    styles;
+  const {
+    heading01,
+    heading02,
+    heading03,
+    heading04,
+    heading05,
+    heading06,
+    pageTitle,
+    cardTitle,
+  } = styles;
   const isMain = useContext(mainContext);
   const isCard = useContext(cardContext);
 
@@ -16,18 +24,10 @@ const H = props => {
       throw Error('Heading must be inside a section!');
 
     case 1:
-      return (
-        <h1 className={`${heading01} ${isMain ? styles.pageTitle : ''}`}>
-          {children}
-        </h1>
-      );
+      return <h1 className={isMain ? pageTitle : heading01}>{children}</h1>;
 
     case 2:
-      return (
-        <h2 className={`${heading02} ${isCard ? styles.cardTitle02 : ''}`}>
-          {children}
-        </h2>
-      );
+      return <h2 className={isCard ? cardTitle : heading02}>{children}</h2>;
 
     case 3:
       return (

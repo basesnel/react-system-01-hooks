@@ -1,5 +1,6 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fsheadings: "../../cssvariables/fsheading.module.css";
+@value fstexts: "../../cssvariables/fstext.module.css";
 @value colors: "../../cssvariables/color.module.css";
 @value mobile, smartphone, tablet, desktop from mediasizes;
 @value heading1, heading1-mobile, heading1-smartphone, heading1-tablet, heading1-desktop from fsheadings;
@@ -8,7 +9,8 @@
 @value heading4, heading4-mobile, heading4-smartphone, heading4-tablet, heading4-desktop from fsheadings;
 @value heading5, heading5-mobile, heading5-smartphone, heading5-tablet, heading5-desktop from fsheadings;
 @value heading6, heading6-mobile, heading6-smartphone, heading6-tablet, heading6-desktop from fsheadings;
-@value color-dark from colors;
+@value fstext, fstext-smartphone from fstexts;
+@value color-text, color-dark from colors;
 
 .heading {
   color: color-dark;
@@ -91,16 +93,12 @@
   border-bottom: 1px solid color-dark;
 }
 
-.cardTitle02 {
-  padding: 0;
+.cardTitle {
   margin-bottom: 0;
-  font-size: var(--fs-text-mobile);
+  font-size: fstext;
   font-weight: 700;
-  text-transform: lowercase;
   text-align: center;
-  color: var(--color-text);
-  opacity: 0.85;
-  transition: var(--my-transition);
+  color: color-text;
 }
 
 .cardTitle03 {

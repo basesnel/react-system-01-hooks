@@ -1,5 +1,7 @@
 @value colors: "../../cssvariables/color.module.css";
+@value animations: "../../cssvariables/animation.module.css";
 @value color-text, color-logo-light from colors;
+@value transition from animations;
 
 .card {
   position: relative;
@@ -9,15 +11,15 @@
   border-radius: 10px;
   padding: 1px;
   background-color: color-text;
-  transition: var(--my-transition);
+  transition: transition;
   overflow: hidden;
 }
 
 .card:hover {
   box-shadow:
-    0px 1px 1px rgba(0, 0, 0, 0.24),
-    0px 4px 4px rgba(0, 0, 0, 0.12),
-    1px 4px 6px rgba(0, 0, 0, 0.12);
+    0px 1px 1px rgba(0, 0, 0, 0.36),
+    0px 4px 4px rgba(0, 0, 0, 0.18),
+    1px 4px 6px rgba(0, 0, 0, 0.18);
   transform: scale(1.02);
   z-index: 200;
 }

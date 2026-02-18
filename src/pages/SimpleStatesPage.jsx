@@ -28,15 +28,15 @@ const SimpleStatesPage = () => {
           <Card2 title={<H level={2}>prac01: counters with own state</H>}>
             <Prac01 />
           </Card2>
-          <Card2 title={<H level={2}>"prac02: counter with general state"</H>}>
+          <Card2 title={<H level={2}>prac02: counter with general state</H>}>
             <Prac02 />
           </Card2>
-          <Card title="prac03: counter a and counter b">
+          <Card2 title={<H level={2}>prac03: counter a and counter b</H>}>
             <Prac03 />
-          </Card>
-          <Card title="prac04: counter with reducer">
+          </Card2>
+          <Card2 title={<H level={2}>prac04: counter with reducer</H>}>
             <Prac04 />
-          </Card>
+          </Card2>
           <Card title="prac05: update the same counter multiple times before the next render">
             <Prac05 />
           </Card>

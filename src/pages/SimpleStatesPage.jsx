@@ -28,9 +28,9 @@ const SimpleStatesPage = () => {
           <Card2 title={<H level={2}>prac01: counters with own state</H>}>
             <Prac01 />
           </Card2>
-          <Card title="prac02: counter with general state">
+          <Card2 title={<H level={2}>"prac02: counter with general state"</H>}>
             <Prac02 />
-          </Card>
+          </Card2>
           <Card title="prac03: counter a and counter b">
             <Prac03 />
           </Card>

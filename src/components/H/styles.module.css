@@ -89,6 +89,7 @@
 }
 
 .pageTitle {
+  composes: heading01;
   padding-bottom: 10px;
   border-bottom: 1px solid color-dark;
 }

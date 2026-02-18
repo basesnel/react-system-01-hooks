@@ -25,7 +25,7 @@ const SimpleStatesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card2 title="prac01: counters with own state">
+          <Card2 title={<H level={2}>prac01: counters with own state</H>}>
             <Prac01 />
           </Card2>
           <Card title="prac02: counter with general state">

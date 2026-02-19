@@ -1,4 +1,4 @@
-import { Main, Container, H, P, Grid, Card } from 'components';
+import { Main, Container, H, P, Grid, Card2 } from 'components';
 
 import { objectsInState } from 'tasks';
 
@@ -14,27 +14,35 @@ const ObjectInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: copying objects with the spread syntax">
+          <Card2
+            title={
+              <H level={2}>prac 01: copying objects with the spread syntax</H>
+            }
+          >
             <Prac01 />
-          </Card>
-          <Card title="prac 02: treat state as read-only">
+          </Card2>
+          <Card2 title={<H level={2}>prac 02: treat state as read-only</H>}>
             <Prac02 />
-          </Card>
-          <Card title="prac 03: updating a nested object">
+          </Card2>
+          <Card2 title={<H level={2}>prac 03: updating a nested object</H>}>
             <Prac03 />
-          </Card>
-          <Card title="prac 04: write concise update logic with Immer">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>prac 04: write concise update logic with Immer</H>
+            }
+          >
             <Prac04 />
-          </Card>
-          <Card title="task 01: fix incorrect state updates">
+          </Card2>
+          <Card2 title={<H level={2}>task 01: fix incorrect state updates</H>}>
             <Task01 />
-          </Card>
-          <Card title="task 02: find and fix the mutation">
+          </Card2>
+          <Card2 title={<H level={2}>task 02: find and fix the mutation</H>}>
             <Task02 />
-          </Card>
-          <Card title="task 03: update an object with immer">
+          </Card2>
+          <Card2 title={<H level={2}>task 03: update an object with immer</H>}>
             <Task03 />
-          </Card>
+          </Card2>
         </Grid>
       </Container>
     </Main>

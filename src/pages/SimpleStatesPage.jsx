@@ -1,4 +1,4 @@
-import { Main, Container, H, P, Grid, Card, Card2 } from 'components';
+import { Main, Container, H, P, Grid, Card2 } from 'components';
 
 import { simpleStates } from 'tasks';
 
@@ -37,27 +37,35 @@ const SimpleStatesPage = () => {
           <Card2 title={<H level={2}>prac04: counter with reducer</H>}>
             <Prac04 />
           </Card2>
-          <Card title="prac05: update the same counter multiple times before the next render">
+          <Card2 title={<H level={2}>prac05: multi-updating to next render</H>}>
             <Prac05 />
-          </Card>
-          <Card title="prac06: update state after replacing it">
+          </Card2>
+          <Card2 title={<H level={2}>prac06: update state after replacing</H>}>
             <Prac06 />
-          </Card>
-          <Card title="prac07: replace state after updating it">
+          </Card2>
+          <Card2 title={<H level={2}>prac07: replace state after updating</H>}>
             <Prac07 />
-          </Card>
-          <Card title="prac08: passing the initializer function">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac08: passing the initializer function</H>}
+          >
             <Prac08 />
-          </Card>
-          <Card title="prac09: passing the initial state directly">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac09: passing the initial state directly</H>}
+          >
             <Prac09 />
-          </Card>
-          <Card title="prac10: resetting state with a key">
+          </Card2>
+          <Card2 title={<H level={2}>prac10: resetting state with a key</H>}>
             <Prac10 />
-          </Card>
-          <Card title="prac11: storing information from previous renders">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>prac11: storing information from previous renders</H>
+            }
+          >
             <Prac11 />
-          </Card>
+          </Card2>
         </Grid>
       </Container>
     </Main>

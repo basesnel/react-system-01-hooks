@@ -1,4 +1,4 @@
-import { Container, H, P, Grid, Card, Card2, Main } from 'components';
+import { Container, H, P, Grid, Card2, Main } from 'components';
 
 import { arrayInState } from 'tasks';
 
@@ -51,21 +51,41 @@ const ArrayInStatePage = () => {
           >
             <Prac07 />
           </Card2>
-          <Card title="prac 08: write concise update logic with immer">
+          <Card2
+            title={
+              <H level={2}>prac 08: write concise update logic with immer</H>
+            }
+          >
             <Prac08 />
-          </Card>
-          <Card title="task 01: update an item in the shopping cart">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>task 01: update an item in the shopping cart</H>
+            }
+          >
             <Task01 />
-          </Card>
-          <Card title="task 02: remove an item in the shopping cart">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>task 02: remove an item in the shopping cart</H>
+            }
+          >
             <Task02 />
-          </Card>
-          <Card title="task 03: fix the mutations using non-mutative methods">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                task 03: fix the mutations using non-mutative methods
+              </H>
+            }
+          >
             <Task03 />
-          </Card>
-          <Card title="task 04: fix the mutations using immer">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 04: fix the mutations using immer</H>}
+          >
             <Task04 />
-          </Card>
+          </Card2>
         </Grid>
       </Container>
     </Main>

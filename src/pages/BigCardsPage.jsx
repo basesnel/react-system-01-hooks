@@ -1,5 +1,4 @@
 import { Container, H, Main, P } from 'components';
-
 import { BigCards } from 'tasks';
 
 const BigCardsPage = () => {

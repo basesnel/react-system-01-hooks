@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import PropTypes from 'prop-types';
-import { Grid, Card, Modal } from 'components';
+import { Grid, Card2, H, Modal } from 'components';
 import { images } from 'constants';
 
 import styles from './styles.module.css';
@@ -24,7 +24,7 @@ const Item = props => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <Card title={item.preview}>
+    <Card2 title={<H level={2}>{item.preview}</H>}>
       <div className={styles.card} onClick={() => setIsModalOpen(true)}>
         <span>{item.preview}</span>
       </div>
@@ -39,7 +39,7 @@ const Item = props => {
           />,
           document.body
         )}
-    </Card>
+    </Card2>
   );
 };
 

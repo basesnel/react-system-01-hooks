@@ -1,4 +1,4 @@
-import { Container, H, P, Grid, Card, Main } from 'components';
+import { Container, H, P, Grid, Card, Card2, Main } from 'components';
 
 import { arrayInState } from 'tasks';
 
@@ -26,27 +26,31 @@ const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: adding to an array">
+          <Card2 title={<H level={2}>prac 01: adding to an array</H>}>
             <Prac01 />
-          </Card>
-          <Card title="prac 02: removing from an array">
+          </Card2>
+          <Card2 title={<H level={2}>prac 02: removing from an array</H>}>
             <Prac02 />
-          </Card>
-          <Card title="prac 03: transforming an array">
+          </Card2>
+          <Card2 title={<H level={2}>prac 03: transforming an array</H>}>
             <Prac03 />
-          </Card>
-          <Card title="prac 04: replacing items in an array">
+          </Card2>
+          <Card2 title={<H level={2}>prac 04: replacing items in an array</H>}>
             <Prac04 />
-          </Card>
-          <Card title="prac 05: inserting into an array">
+          </Card2>
+          <Card2 title={<H level={2}>prac 05: inserting into an array</H>}>
             <Prac05 />
-          </Card>
-          <Card title="prac 06: making other changes to an array">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 06: making other changes to an array</H>}
+          >
             <Prac06 />
-          </Card>
-          <Card title="prac 07: updating objects inside arrays">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 07: updating objects inside arrays</H>}
+          >
             <Prac07 />
-          </Card>
+          </Card2>
           <Card title="prac 08: write concise update logic with immer">
             <Prac08 />
           </Card>

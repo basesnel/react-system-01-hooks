@@ -97,24 +97,42 @@ const EscapeHatchesPageP1 = () => {
           >
             <Prac08 />
           </Card2>
-          <Card title="prac 09: flushing state updates synchronously with flushsync">
+          <Card2
+            title={
+              <H level={2}>
+                prac 09: flushing state updates synchronously with flushsync
+              </H>
+            }
+          >
             <Prac09 />
-          </Card>
-          <Card title="prac 10: best pracices for dom manipulation with refs">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                prac 10: best pracices for dom manipulation with refs
+              </H>
+            }
+          >
             <Prac10 />
-          </Card>
-          <Card title="task 05: play and pause the video">
+          </Card2>
+          <Card2 title={<H level={2}>task 05: play and pause the video</H>}>
             <Task05 />
-          </Card>
-          <Card title="task 06: focus the search field">
+          </Card2>
+          <Card2 title={<H level={2}>task 06: focus the search field</H>}>
             <Task06 />
-          </Card>
-          <Card title="task 07: scrolling an image carousel">
+          </Card2>
+          <Card2 title={<H level={2}>task 07: scrolling an image carousel</H>}>
             <Task07 />
-          </Card>
-          <Card title="task 08: focusing the search field  with separate components">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                task 08: focusing the search field with separate components
+              </H>
+            }
+          >
             <Task08 />
-          </Card>
+          </Card2>
           <Card title="prac 11: declare an effect">
             <Prac11 />
           </Card>

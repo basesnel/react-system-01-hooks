@@ -67,24 +67,36 @@ const EscapeHatchesPageP1 = () => {
           >
             <Task02 />
           </Card2>
-          <Card title="task 03: fix debouncing">
+          <Card2 title={<H level={2}>task 03: fix debouncing</H>}>
             <Task03 />
-          </Card>
-          <Card title="task 04: read the latest state">
+          </Card2>
+          <Card2 title={<H level={2}>task 04: read the latest state</H>}>
             <Task04 />
-          </Card>
-          <Card title="prac 05: manipulating the dom with refs">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 05: manipulating the dom with refs</H>}
+          >
             <Prac05 />
-          </Card>
-          <Card title="prac 06: scrolling to an element">
+          </Card2>
+          <Card2 title={<H level={2}>prac 06: scrolling to an element</H>}>
             <Prac06 />
-          </Card>
-          <Card title="prac 07: how to manage a list of refs using a ref callback">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                prac 07: how to manage a list of refs using a ref callback
+              </H>
+            }
+          >
             <Prac07 />
-          </Card>
-          <Card title="prac 08: accessing another component's dom node">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>prac 08: accessing another component's dom node</H>
+            }
+          >
             <Prac08 />
-          </Card>
+          </Card2>
           <Card title="prac 09: flushing state updates synchronously with flushsync">
             <Prac09 />
           </Card>

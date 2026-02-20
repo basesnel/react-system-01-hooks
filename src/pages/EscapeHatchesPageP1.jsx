@@ -1,4 +1,4 @@
-import { Main, Container, P, Grid, Card, H } from 'components';
+import { Main, Container, P, Grid, Card2, Card, H } from 'components';
 
 import { escapeHatchesP01 } from 'tasks';
 
@@ -43,24 +43,30 @@ const EscapeHatchesPageP1 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: referencing values with refs">
+          <Card2 title={<H level={2}>prac 01: referencing values with refs</H>}>
             <Prac01 />
-          </Card>
-          <Card title="prac 02: starting a stopwatch">
+          </Card2>
+          <Card2 title={<H level={2}>prac 02: starting a stopwatch</H>}>
             <Prac02 />
-          </Card>
-          <Card title="prac 03: building a stopwatch">
+          </Card2>
+          <Card2 title={<H level={2}>prac 03: building a stopwatch</H>}>
             <Prac03 />
-          </Card>
-          <Card title="prac 04: difference between refs and state">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 04: difference between refs and state</H>}
+          >
             <Prac04 />
-          </Card>
-          <Card title="task 01: fix a broken chat input">
+          </Card2>
+          <Card2 title={<H level={2}>task 01: fix a broken chat input</H>}>
             <Task01 />
-          </Card>
-          <Card title="task 02: fix a component failed to re-render">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>task 02: fix a component failed to re-render</H>
+            }
+          >
             <Task02 />
-          </Card>
+          </Card2>
           <Card title="task 03: fix debouncing">
             <Task03 />
           </Card>

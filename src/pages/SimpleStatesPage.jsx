@@ -4,9 +4,7 @@ import { simpleStates } from 'tasks';
 
 const SimpleStatesPage = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
+    tasks,
     Prac04,
     Prac05,
     Prac06,
@@ -25,15 +23,11 @@ const SimpleStatesPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card2 title={<H level={2}>prac01: counters with own state</H>}>
-            <Prac01 />
-          </Card2>
-          <Card2 title={<H level={2}>prac02: counter with general state</H>}>
-            <Prac02 />
-          </Card2>
-          <Card2 title={<H level={2}>prac03: counter a and counter b</H>}>
-            <Prac03 />
-          </Card2>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
           <Card2 title={<H level={2}>prac04: counter with reducer</H>}>
             <Prac04 />
           </Card2>

@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Prac01 from './Prac01';
 import Prac02 from './Prac02';
 import Prac03 from './Prac03';
@@ -10,7 +11,23 @@ import Prac09 from './Prac09';
 import Prac10 from './Prac10';
 import Prac11 from './Prac11';
 
+const tasks = [
+  {
+    title: <H level={2}>prac01: counters with own state</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac02: counter with general state</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac03: counter a and counter b</H>,
+    task: <Prac03 />,
+  },
+];
+
 export {
+  tasks,
   Prac01,
   Prac02,
   Prac03,

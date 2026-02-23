@@ -1,4 +1,4 @@
-import { Main, Container, P, Grid, Card, Card2, H } from 'components';
+import { Main, Container, P, Grid, Card2, H } from 'components';
 
 import { useEffectsCases } from 'tasks';
 
@@ -62,30 +62,52 @@ const UseEffectsPage = () => {
           >
             <Prac08 />
           </Card2>
-          <Card title="prac 09: controlling  a non-react widget">
+          <Card2
+            title={<H level={2}>prac 09: controlling a non-react widget</H>}
+          >
             <Prac09 />
-          </Card>
-          <Card title="prac 10: fetching data with effects">
+          </Card2>
+          <Card2 title={<H level={2}>prac 10: fetching data with effects</H>}>
             <Prac10 />
-          </Card>
-          <Card title="prac 11: passing a dependancy array">
+          </Card2>
+          <Card2 title={<H level={2}>prac 11: passing a dependancy array</H>}>
             <Prac11 />
-          </Card>
-          <Card title="prac 12: passing an empty dependancy array">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 12: passing an empty dependancy array</H>}
+          >
             <Prac12 />
-          </Card>
-          <Card title="prac 13: passing no dependancy array at all">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 13: passing no dependancy array at all</H>}
+          >
             <Prac13 />
-          </Card>
-          <Card title="prac 14: updating state based on previous state from an effect">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                prac 14: updating state based on previous state from an effect
+              </H>
+            }
+          >
             <Prac14 />
-          </Card>
-          <Card title="prac 15: removing unnecessary object dependancies">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>prac 15: removing unnecessary object dependancies</H>
+            }
+          >
             <Prac15 />
-          </Card>
-          <Card title="prac 16: removing unnecessary function dependancies">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>
+                prac 16: removing unnecessary function dependancies
+              </H>
+            }
+          >
             <Prac16 />
-          </Card>
+          </Card2>
         </Grid>
       </Container>
     </Main>

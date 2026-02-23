@@ -1,4 +1,4 @@
-import { Main, Container, P, Grid, Card, H } from 'components';
+import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 
 import { useEffectsCases } from 'tasks';
 
@@ -30,30 +30,38 @@ const UseEffectsPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: connecting to chat server">
+          <Card2 title={<H level={2}>prac 01: connecting to chat server</H>}>
             <Prac01 />
-          </Card>
-          <Card title="prac 02: listening to global browser event">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 02: listening to global browser event</H>}
+          >
             <Prac02 />
-          </Card>
-          <Card title="prac 03: triggering an animation">
+          </Card2>
+          <Card2 title={<H level={2}>prac 03: triggering an animation</H>}>
             <Prac03 />
-          </Card>
-          <Card title="prac 04: controlling a modal dialog">
+          </Card2>
+          <Card2 title={<H level={2}>prac 04: controlling a modal dialog</H>}>
             <Prac04 />
-          </Card>
-          <Card title="prac 05: tracking element visibility">
+          </Card2>
+          <Card2 title={<H level={2}>prac 05: tracking element visibility</H>}>
             <Prac05 />
-          </Card>
-          <Card title="prac 06: custom usechatroom hook">
+          </Card2>
+          <Card2 title={<H level={2}>prac 06: custom usechatroom hook</H>}>
             <Prac06 />
-          </Card>
-          <Card title="prac 07: custom usecwindowlistener hook">
+          </Card2>
+          <Card2
+            title={<H level={2}>prac 07: custom usecwindowlistener hook</H>}
+          >
             <Prac07 />
-          </Card>
-          <Card title="prac 08: custom useintersectionobserver hook">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>prac 08: custom useintersectionobserver hook</H>
+            }
+          >
             <Prac08 />
-          </Card>
+          </Card2>
           <Card title="prac 09: controlling  a non-react widget">
             <Prac09 />
           </Card>

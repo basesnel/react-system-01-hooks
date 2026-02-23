@@ -73,27 +73,39 @@ const EscapeHatchesPageP2 = () => {
           <Card2 title={<H level={2}>prac 03: effects to reactive values</H>}>
             <Prac03 />
           </Card2>
-          <Card title="prac 04: react verifies values as dependancy">
+          <Card2
+            title={
+              <H level={2}>prac 04: react verifies values as dependancy</H>
+            }
+          >
             <Prac04 />
-          </Card>
-          <Card title="prac 05: variables is reactive">
+          </Card2>
+          <Card2 title={<H level={2}>prac 05: variables is reactive</H>}>
             <Prac05 />
-          </Card>
-          <Card title="task 05: fix connecting on every keystroke">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 05: fix connecting on every keystroke</H>}
+          >
             <Task05 />
-          </Card>
-          <Card title="task 06: switch synchronisztion on and off">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 06: switch synchronisztion on and off</H>}
+          >
             <Task06 />
-          </Card>
-          <Card title="task 07: investigate a state value bug">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 07: investigate a state value bug</H>}
+          >
             <Task07 />
-          </Card>
-          <Card title="task 08: fix a connection switch">
+          </Card2>
+          <Card2 title={<H level={2}>task 08: fix a connection switch</H>}>
             <Task08 />
-          </Card>
-          <Card title="task 09: populate a chain of selected boxes">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 09: populate a chain of selected boxes</H>}
+          >
             <Task09 />
-          </Card>
+          </Card2>
           <Card title="task 10: populate a chain of selected boxes (custom hook)">
             <Task10 />
           </Card>

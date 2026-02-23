@@ -1,4 +1,4 @@
-import { Main, Container, P, Grid, Card, H } from 'components';
+import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 
 import { escapeHatchesP02 } from 'tasks';
 
@@ -44,27 +44,35 @@ const EscapeHatchesPageP2 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="task 01: transform data without effects">
+          <Card2
+            title={<H level={2}>task 01: transform data without effects</H>}
+          >
             <Task01 />
-          </Card>
-          <Card title="task 02: cache a calculation without effects">
+          </Card2>
+          <Card2
+            title={
+              <H level={2}>task 02: cache a calculation without effects</H>
+            }
+          >
             <Task02 />
-          </Card>
-          <Card title="task 03: reset state without effects">
+          </Card2>
+          <Card2 title={<H level={2}>task 03: reset state without effects</H>}>
             <Task03 />
-          </Card>
-          <Card title="task 04: submit a form without effects">
+          </Card2>
+          <Card2
+            title={<H level={2}>task 04: submit a form without effects</H>}
+          >
             <Task04 />
-          </Card>
-          <Card title="prac 01: re-synchonize effect">
+          </Card2>
+          <Card2 title={<H level={2}>prac 01: re-synchonize effect</H>}>
             <Prac01 />
-          </Card>
-          <Card title="prac 02: effects to reactive values">
+          </Card2>
+          <Card2 title={<H level={2}>prac 02: effects to reactive values</H>}>
             <Prac02 />
-          </Card>
-          <Card title="prac 03: effects to reactive values">
+          </Card2>
+          <Card2 title={<H level={2}>prac 03: effects to reactive values</H>}>
             <Prac03 />
-          </Card>
+          </Card2>
           <Card title="prac 04: react verifies values as dependancy">
             <Prac04 />
           </Card>

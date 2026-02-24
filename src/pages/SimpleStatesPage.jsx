@@ -3,17 +3,7 @@ import { Main, Container, H, P, Grid, Card2 } from 'components';
 import { simpleStates } from 'tasks';
 
 const SimpleStatesPage = () => {
-  const {
-    tasks,
-    Prac04,
-    Prac05,
-    Prac06,
-    Prac07,
-    Prac08,
-    Prac09,
-    Prac10,
-    Prac11,
-  } = simpleStates;
+  const { tasks, Prac07, Prac08, Prac09, Prac10, Prac11 } = simpleStates;
 
   return (
     <Main>
@@ -28,15 +18,6 @@ const SimpleStatesPage = () => {
               {task}
             </Card2>
           ))}
-          <Card2 title={<H level={2}>prac04: counter with reducer</H>}>
-            <Prac04 />
-          </Card2>
-          <Card2 title={<H level={2}>prac05: multi-updating to next render</H>}>
-            <Prac05 />
-          </Card2>
-          <Card2 title={<H level={2}>prac06: update state after replacing</H>}>
-            <Prac06 />
-          </Card2>
           <Card2 title={<H level={2}>prac07: replace state after updating</H>}>
             <Prac07 />
           </Card2>

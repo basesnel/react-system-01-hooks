@@ -24,19 +24,18 @@ const tasks = [
     title: <H level={2}>prac03: counter a and counter b</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>prac04: counter with reducer</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>prac05: multi-updating to next render</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac06: update state after replacing</H>,
+    task: <Prac06 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac01,
-  Prac02,
-  Prac03,
-  Prac04,
-  Prac05,
-  Prac06,
-  Prac07,
-  Prac08,
-  Prac09,
-  Prac10,
-  Prac11,
-};
+export { tasks, Prac07, Prac08, Prac09, Prac10, Prac11 };

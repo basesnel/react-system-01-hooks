@@ -36,6 +36,26 @@ const tasks = [
     title: <H level={2}>prac06: update state after replacing</H>,
     task: <Prac06 />,
   },
+  {
+    title: <H level={2}>prac07: replace state after updating</H>,
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>prac08: passing the initializer function</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac09: passing the initial state directly</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>prac10: resetting state with a key</H>,
+    task: <Prac10 />,
+  },
+  {
+    title: <H level={2}>prac11: storing information from previous renders</H>,
+    task: <Prac11 />,
+  },
 ];
 
-export { tasks, Prac07, Prac08, Prac09, Prac10, Prac11 };
+export { tasks };

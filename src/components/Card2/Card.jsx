@@ -7,12 +7,12 @@ const Card = props => {
   const { title, children } = props;
 
   return (
-    <div className={styles.card}>
+    <section className={styles.card}>
       <div className={styles.header}>
         <cardContext.Provider value={true}>{title}</cardContext.Provider>
       </div>
       <div className={styles.content}>{children}</div>
-    </div>
+    </section>
   );
 };
 

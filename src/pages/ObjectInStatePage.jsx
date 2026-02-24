@@ -3,7 +3,7 @@ import { Main, Container, H, P, Grid, Card2 } from 'components';
 import { objectsInState } from 'tasks';
 
 const ObjectInStatePage = () => {
-  const { tasks, Prac04, Task01, Task02, Task03 } = objectsInState;
+  const { tasks } = objectsInState;
 
   return (
     <Main>
@@ -18,22 +18,6 @@ const ObjectInStatePage = () => {
               {task}
             </Card2>
           ))}
-          <Card2
-            title={
-              <H level={2}>prac 04: write concise update logic with Immer</H>
-            }
-          >
-            <Prac04 />
-          </Card2>
-          <Card2 title={<H level={2}>task 01: fix incorrect state updates</H>}>
-            <Task01 />
-          </Card2>
-          <Card2 title={<H level={2}>task 02: find and fix the mutation</H>}>
-            <Task02 />
-          </Card2>
-          <Card2 title={<H level={2}>task 03: update an object with immer</H>}>
-            <Task03 />
-          </Card2>
         </Grid>
       </Container>
     </Main>

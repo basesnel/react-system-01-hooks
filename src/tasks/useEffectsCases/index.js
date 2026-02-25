@@ -69,6 +69,18 @@ const tasks = [
     title: <H level={2}>prac 13: passing no dependancy array at all</H>,
     task: <Prac13 />,
   },
+  {
+    title: <H level={2}>prac 14: updating state based on previous state</H>,
+    task: <Prac14 />,
+  },
+  {
+    title: <H level={2}>prac 15: removing unnecessary object dependancies</H>,
+    task: <Prac15 />,
+  },
+  {
+    title: <H level={2}>prac 16: removing unnecessary function dependancies</H>,
+    task: <Prac16 />,
+  },
 ];
 
-export { tasks, Prac14, Prac15, Prac16 };
+export { tasks };

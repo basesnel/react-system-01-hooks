@@ -4,9 +4,7 @@ import { useEffectsCases } from 'tasks';
 
 const UseEffectsPage = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
+    tasks,
     Prac04,
     Prac05,
     Prac06,
@@ -30,17 +28,11 @@ const UseEffectsPage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card2 title={<H level={2}>prac 01: connecting to chat server</H>}>
-            <Prac01 />
-          </Card2>
-          <Card2
-            title={<H level={2}>prac 02: listening to global browser event</H>}
-          >
-            <Prac02 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 03: triggering an animation</H>}>
-            <Prac03 />
-          </Card2>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
           <Card2 title={<H level={2}>prac 04: controlling a modal dialog</H>}>
             <Prac04 />
           </Card2>

@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Prac01 from './Prac01';
 import Prac02 from './Prac02';
 import Prac03 from './Prac03';
@@ -15,10 +16,23 @@ import Prac14 from './Prac14';
 import Prac15 from './Prac15';
 import Prac16 from './Prac16';
 
+const tasks = [
+  {
+    title: <H level={2}>prac 01: connecting to chat server</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac 02: listening to global browser event</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac 03: triggering an animation</H>,
+    task: <Prac03 />,
+  },
+];
+
 export {
-  Prac01,
-  Prac02,
-  Prac03,
+  tasks,
   Prac04,
   Prac05,
   Prac06,

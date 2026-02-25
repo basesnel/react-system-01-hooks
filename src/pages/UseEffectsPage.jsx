@@ -5,11 +5,6 @@ import { useEffectsCases } from 'tasks';
 const UseEffectsPage = () => {
   const {
     tasks,
-    Prac04,
-    Prac05,
-    Prac06,
-    Prac07,
-    Prac08,
     Prac09,
     Prac10,
     Prac11,
@@ -33,27 +28,6 @@ const UseEffectsPage = () => {
               {task}
             </Card2>
           ))}
-          <Card2 title={<H level={2}>prac 04: controlling a modal dialog</H>}>
-            <Prac04 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 05: tracking element visibility</H>}>
-            <Prac05 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 06: custom usechatroom hook</H>}>
-            <Prac06 />
-          </Card2>
-          <Card2
-            title={<H level={2}>prac 07: custom usecwindowlistener hook</H>}
-          >
-            <Prac07 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>prac 08: custom useintersectionobserver hook</H>
-            }
-          >
-            <Prac08 />
-          </Card2>
           <Card2
             title={<H level={2}>prac 09: controlling a non-react widget</H>}
           >

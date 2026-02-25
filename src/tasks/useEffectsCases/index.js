@@ -29,15 +29,30 @@ const tasks = [
     title: <H level={2}>prac 03: triggering an animation</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>prac 04: controlling a modal dialog</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>prac 05: tracking element visibility</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: custom usechatroom hook</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: <H level={2}>prac 07: custom usecwindowlistener hook</H>,
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>prac 08: custom useintersectionobserver hook</H>,
+    task: <Prac08 />,
+  },
 ];
 
 export {
   tasks,
-  Prac04,
-  Prac05,
-  Prac06,
-  Prac07,
-  Prac08,
   Prac09,
   Prac10,
   Prac11,

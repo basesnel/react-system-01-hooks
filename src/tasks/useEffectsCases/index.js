@@ -49,16 +49,26 @@ const tasks = [
     title: <H level={2}>prac 08: custom useintersectionobserver hook</H>,
     task: <Prac08 />,
   },
+  {
+    title: <H level={2}>prac 09: controlling a non-react widget</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>prac 10: fetching data with effects</H>,
+    task: <Prac10 />,
+  },
+  {
+    title: <H level={2}>prac 11: passing a dependancy array</H>,
+    task: <Prac11 />,
+  },
+  {
+    title: <H level={2}>prac 12: passing an empty dependancy array</H>,
+    task: <Prac12 />,
+  },
+  {
+    title: <H level={2}>prac 13: passing no dependancy array at all</H>,
+    task: <Prac13 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac09,
-  Prac10,
-  Prac11,
-  Prac12,
-  Prac13,
-  Prac14,
-  Prac15,
-  Prac16,
-};
+export { tasks, Prac14, Prac15, Prac16 };

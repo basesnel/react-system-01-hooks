@@ -100,27 +100,21 @@ const tasks = [
     task: <Task08 />,
   },
   {
-    title: <H level={2}>task 06: focus the search field</H>,
-    task: <Task06 />,
+    title: <H level={2}>prac 11: declare an effect</H>,
+    task: <Prac11 />,
   },
   {
-    title: <H level={2}>task 07: scrolling an image carousel</H>,
-    task: <Task07 />,
+    title: <H level={2}>prac 12: specify the effect dependancies</H>,
+    task: <Prac12 />,
   },
   {
-    title: <H level={2}>task 08: focusing search field by other components</H>,
-    task: <Task08 />,
+    title: <H level={2}>prac 13: add cleanup if needed</H>,
+    task: <Prac13 />,
+  },
+  {
+    title: <H level={2}>prac 14: putting it all together</H>,
+    task: <Prac14 />,
   },
 ];
 
-export {
-  tasks,
-  Prac11,
-  Prac12,
-  Prac13,
-  Prac14,
-  Task09,
-  Task10,
-  Task11,
-  Task12,
-};
+export { tasks, Task09, Task10, Task11, Task12 };

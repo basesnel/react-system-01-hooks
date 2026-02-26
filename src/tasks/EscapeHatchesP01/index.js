@@ -39,11 +39,30 @@ const tasks = [
     title: <H level={2}>prac 03: building a stopwatch</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>prac 04: difference between refs and state</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>task 01: fix a broken chat input</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: fix a component failed to re-render</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>task 03: fix debouncing</H>,
+    task: <Task03 />,
+  },
+  {
+    title: <H level={2}>task 04: read the latest state</H>,
+    task: <Task04 />,
+  },
 ];
 
 export {
   tasks,
-  Prac04,
   Prac05,
   Prac06,
   Prac07,
@@ -54,10 +73,6 @@ export {
   Prac12,
   Prac13,
   Prac14,
-  Task01,
-  Task02,
-  Task03,
-  Task04,
   Task05,
   Task06,
   Task07,

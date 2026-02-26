@@ -4,9 +4,6 @@ import { escapeHatchesP01 } from 'tasks';
 
 const EscapeHatchesPageP1 = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
     Prac04,
     Prac05,
     Prac06,
@@ -30,6 +27,7 @@ const EscapeHatchesPageP1 = () => {
     Task10,
     Task11,
     Task12,
+    tasks,
   } = escapeHatchesP01;
 
   return (
@@ -43,15 +41,12 @@ const EscapeHatchesPageP1 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card2 title={<H level={2}>prac 01: referencing values with refs</H>}>
-            <Prac01 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 02: starting a stopwatch</H>}>
-            <Prac02 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 03: building a stopwatch</H>}>
-            <Prac03 />
-          </Card2>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
+
           <Card2
             title={<H level={2}>prac 04: difference between refs and state</H>}
           >

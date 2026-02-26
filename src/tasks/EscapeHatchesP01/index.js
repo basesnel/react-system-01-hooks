@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Prac01 from './Prac01';
 import Prac02 from './Prac02';
 import Prac03 from './Prac03';
@@ -25,10 +26,23 @@ import Task10 from './Task10';
 import Task11 from './Task11';
 import Task12 from './Task12';
 
+const tasks = [
+  {
+    title: <H level={2}>prac 01: referencing values with refs</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac 02: starting a stopwatch</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac 03: building a stopwatch</H>,
+    task: <Prac03 />,
+  },
+];
+
 export {
-  Prac01,
-  Prac02,
-  Prac03,
+  tasks,
   Prac04,
   Prac05,
   Prac06,

@@ -59,15 +59,32 @@ const tasks = [
     title: <H level={2}>task 04: read the latest state</H>,
     task: <Task04 />,
   },
+  {
+    title: <H level={2}>prac 05: manipulating the dom with refs</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: scrolling to an element</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: (
+      <H level={2}>prac 07: managing a list of refs using a ref callback</H>
+    ),
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>prac 08: accessing another component's dom node</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac 09: flushing state updates sync with flushsync</H>,
+    task: <Prac09 />,
+  },
 ];
 
 export {
   tasks,
-  Prac05,
-  Prac06,
-  Prac07,
-  Prac08,
-  Prac09,
   Prac10,
   Prac11,
   Prac12,

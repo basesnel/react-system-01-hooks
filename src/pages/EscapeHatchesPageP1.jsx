@@ -4,11 +4,6 @@ import { escapeHatchesP01 } from 'tasks';
 
 const EscapeHatchesPageP1 = () => {
   const {
-    Prac05,
-    Prac06,
-    Prac07,
-    Prac08,
-    Prac09,
     Prac10,
     Prac11,
     Prac12,
@@ -41,39 +36,6 @@ const EscapeHatchesPageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card2
-            title={<H level={2}>prac 05: manipulating the dom with refs</H>}
-          >
-            <Prac05 />
-          </Card2>
-          <Card2 title={<H level={2}>prac 06: scrolling to an element</H>}>
-            <Prac06 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>
-                prac 07: how to manage a list of refs using a ref callback
-              </H>
-            }
-          >
-            <Prac07 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>prac 08: accessing another component's dom node</H>
-            }
-          >
-            <Prac08 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>
-                prac 09: flushing state updates synchronously with flushsync
-              </H>
-            }
-          >
-            <Prac09 />
-          </Card2>
           <Card2
             title={
               <H level={2}>

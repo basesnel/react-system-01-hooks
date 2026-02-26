@@ -68,9 +68,7 @@ const tasks = [
     task: <Prac06 />,
   },
   {
-    title: (
-      <H level={2}>prac 07: managing a list of refs using a ref callback</H>
-    ),
+    title: <H level={2}>prac 07: managing a refs list using a ref callback</H>,
     task: <Prac07 />,
   },
   {
@@ -81,19 +79,46 @@ const tasks = [
     title: <H level={2}>prac 09: flushing state updates sync with flushsync</H>,
     task: <Prac09 />,
   },
+  {
+    title: <H level={2}>prac 10: best pracices for dom control with refs</H>,
+    task: <Prac10 />,
+  },
+  {
+    title: <H level={2}>task 05: play and pause the video</H>,
+    task: <Task05 />,
+  },
+  {
+    title: <H level={2}>task 06: focus the search field</H>,
+    task: <Task06 />,
+  },
+  {
+    title: <H level={2}>task 07: scrolling an image carousel</H>,
+    task: <Task07 />,
+  },
+  {
+    title: <H level={2}>task 08: focusing search field by other components</H>,
+    task: <Task08 />,
+  },
+  {
+    title: <H level={2}>task 06: focus the search field</H>,
+    task: <Task06 />,
+  },
+  {
+    title: <H level={2}>task 07: scrolling an image carousel</H>,
+    task: <Task07 />,
+  },
+  {
+    title: <H level={2}>task 08: focusing search field by other components</H>,
+    task: <Task08 />,
+  },
 ];
 
 export {
   tasks,
-  Prac10,
   Prac11,
   Prac12,
   Prac13,
   Prac14,
-  Task05,
-  Task06,
-  Task07,
-  Task08,
   Task09,
   Task10,
   Task11,

@@ -4,15 +4,10 @@ import { escapeHatchesP01 } from 'tasks';
 
 const EscapeHatchesPageP1 = () => {
   const {
-    Prac10,
     Prac11,
     Prac12,
     Prac13,
     Prac14,
-    Task05,
-    Task06,
-    Task07,
-    Task08,
     Task09,
     Task10,
     Task11,
@@ -36,33 +31,7 @@ const EscapeHatchesPageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card2
-            title={
-              <H level={2}>
-                prac 10: best pracices for dom manipulation with refs
-              </H>
-            }
-          >
-            <Prac10 />
-          </Card2>
-          <Card2 title={<H level={2}>task 05: play and pause the video</H>}>
-            <Task05 />
-          </Card2>
-          <Card2 title={<H level={2}>task 06: focus the search field</H>}>
-            <Task06 />
-          </Card2>
-          <Card2 title={<H level={2}>task 07: scrolling an image carousel</H>}>
-            <Task07 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>
-                task 08: focusing the search field with separate components
-              </H>
-            }
-          >
-            <Task08 />
-          </Card2>
+
           <Card2 title={<H level={2}>prac 11: declare an effect</H>}>
             <Prac11 />
           </Card2>

@@ -40,15 +40,30 @@ const tasks = [
     title: <H level={2}>task 03: reset state without effects</H>,
     task: <Task03 />,
   },
+  {
+    title: <H level={2}>task 04: submit a form without effects</H>,
+    task: <Task04 />,
+  },
+  {
+    title: <H level={2}>prac 01: re-synchonize effect</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac 02: effects to reactive values</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac 03: effects to reactive values</H>,
+    task: <Prac03 />,
+  },
+  {
+    title: <H level={2}>prac 04: react verifies values as dependancy</H>,
+    task: <Prac04 />,
+  },
 ];
 
 export {
   tasks,
-  Task04,
-  Prac01,
-  Prac02,
-  Prac03,
-  Prac04,
   Prac05,
   Task05,
   Task06,

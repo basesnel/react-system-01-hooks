@@ -3,7 +3,7 @@ import { Main, Container, P, Grid, Card2, H } from 'components';
 import { escapeHatchesP01 } from 'tasks';
 
 const EscapeHatchesPageP1 = () => {
-  const { Task09, Task10, Task11, Task12, tasks } = escapeHatchesP01;
+  const { tasks } = escapeHatchesP01;
 
   return (
     <Main>
@@ -21,22 +21,6 @@ const EscapeHatchesPageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card2 title={<H level={2}>task 09: focus on field on mount</H>}>
-            <Task09 />
-          </Card2>
-          <Card2 title={<H level={2}>task 10: focus a field conditionally</H>}>
-            <Task10 />
-          </Card2>
-          <Card2
-            title={<H level={2}>task 11: fix an interval that fires twice</H>}
-          >
-            <Task11 />
-          </Card2>
-          <Card2
-            title={<H level={2}>task 12: fix fetching inside an effect</H>}
-          >
-            <Task12 />
-          </Card2>
         </Grid>
       </Container>
     </Main>

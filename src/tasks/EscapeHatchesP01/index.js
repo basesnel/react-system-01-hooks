@@ -115,6 +115,22 @@ const tasks = [
     title: <H level={2}>prac 14: putting it all together</H>,
     task: <Prac14 />,
   },
+  {
+    title: <H level={2}>task 09: focus on field on mount</H>,
+    task: <Task09 />,
+  },
+  {
+    title: <H level={2}>task 10: focus a field conditionally</H>,
+    task: <Task10 />,
+  },
+  {
+    title: <H level={2}>task 11: fix an interval that fires twice</H>,
+    task: <Task11 />,
+  },
+  {
+    title: <H level={2}>task 12: fix fetching inside an effect</H>,
+    task: <Task12 />,
+  },
 ];
 
-export { tasks, Task09, Task10, Task11, Task12 };
+export { tasks };

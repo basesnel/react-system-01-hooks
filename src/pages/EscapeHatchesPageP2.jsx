@@ -4,9 +4,7 @@ import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
   const {
-    Task01,
-    Task02,
-    Task03,
+    tasks,
     Task04,
     Prac01,
     Prac02,
@@ -44,21 +42,11 @@ const EscapeHatchesPageP2 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card2
-            title={<H level={2}>task 01: transform data without effects</H>}
-          >
-            <Task01 />
-          </Card2>
-          <Card2
-            title={
-              <H level={2}>task 02: cache a calculation without effects</H>
-            }
-          >
-            <Task02 />
-          </Card2>
-          <Card2 title={<H level={2}>task 03: reset state without effects</H>}>
-            <Task03 />
-          </Card2>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
           <Card2
             title={<H level={2}>task 04: submit a form without effects</H>}
           >

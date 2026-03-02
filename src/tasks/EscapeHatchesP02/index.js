@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Task01 from './Task01';
 import Task02 from './Task02';
 import Task03 from './Task03';
@@ -26,10 +27,23 @@ import Task12 from './Task12';
 import Task13 from './Task13';
 import Task14 from './Task14';
 
+const tasks = [
+  {
+    title: <H level={2}>task 01: transform data without effects</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: cache a calculation without effects</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>task 03: reset state without effects</H>,
+    task: <Task03 />,
+  },
+];
+
 export {
-  Task01,
-  Task02,
-  Task03,
+  tasks,
   Task04,
   Prac01,
   Prac02,

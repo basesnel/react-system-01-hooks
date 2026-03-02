@@ -72,14 +72,26 @@ const tasks = [
     title: <H level={2}>task 06: switch synchronisztion on and off</H>,
     task: <Task06 />,
   },
+  {
+    title: <H level={2}>task 07: investigate a state value bug</H>,
+    task: <Task07 />,
+  },
+  {
+    title: <H level={2}>task 08: fix a connection switch</H>,
+    task: <Task08 />,
+  },
+  {
+    title: <H level={2}>task 09: chain of selected fields</H>,
+    task: <Task09 />,
+  },
+  {
+    title: <H level={2}>task 10: chain of selected fields (custom hook)</H>,
+    task: <Task10 />,
+  },
 ];
 
 export {
   tasks,
-  Task07,
-  Task08,
-  Task09,
-  Task10,
   Prac06,
   Prac07,
   Task11,

@@ -5,9 +5,6 @@ import { escapeHatchesP02 } from 'tasks';
 const EscapeHatchesPageP2 = () => {
   const {
     tasks,
-    Prac05,
-    Task05,
-    Task06,
     Task07,
     Task08,
     Task09,
@@ -42,19 +39,7 @@ const EscapeHatchesPageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card2 title={<H level={2}>prac 05: variables is reactive</H>}>
-            <Prac05 />
-          </Card2>
-          <Card2
-            title={<H level={2}>task 05: fix connecting on every keystroke</H>}
-          >
-            <Task05 />
-          </Card2>
-          <Card2
-            title={<H level={2}>task 06: switch synchronisztion on and off</H>}
-          >
-            <Task06 />
-          </Card2>
+
           <Card2
             title={<H level={2}>task 07: investigate a state value bug</H>}
           >

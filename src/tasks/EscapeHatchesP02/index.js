@@ -60,13 +60,22 @@ const tasks = [
     title: <H level={2}>prac 04: react verifies values as dependancy</H>,
     task: <Prac04 />,
   },
+  {
+    title: <H level={2}>prac 05: variables is reactive</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>task 05: fix connecting on every keystroke</H>,
+    task: <Task05 />,
+  },
+  {
+    title: <H level={2}>task 06: switch synchronisztion on and off</H>,
+    task: <Task06 />,
+  },
 ];
 
 export {
   tasks,
-  Prac05,
-  Task05,
-  Task06,
   Task07,
   Task08,
   Task09,

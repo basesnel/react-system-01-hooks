@@ -5,9 +5,6 @@ import { escapeHatchesP02 } from 'tasks';
 const EscapeHatchesPageP2 = () => {
   const {
     tasks,
-    Prac06,
-    Prac07,
-    Task11,
     Prac08,
     Prac09,
     Prac10,
@@ -35,15 +32,6 @@ const EscapeHatchesPageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 06: effects run whenever sync is needed">
-            <Prac06 />
-          </Card>
-          <Card title="prac 07: extracting non-reactive logic out of Effects">
-            <Prac07 />
-          </Card>
-          <Card title="task 11: fix variable that doesn't update">
-            <Task11 />
-          </Card>
           <Card title="prac 08: experiment with effect dependancy">
             <Prac08 />
           </Card>

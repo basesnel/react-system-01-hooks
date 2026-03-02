@@ -88,13 +88,22 @@ const tasks = [
     title: <H level={2}>task 10: chain of selected fields (custom hook)</H>,
     task: <Task10 />,
   },
+  {
+    title: <H level={2}>prac 06: effects run whenever sync is needed</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: <H level={2}>prac 07: non-reactive logic is outside of effects</H>,
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>task 11: fix variable that doesn't update</H>,
+    task: <Task11 />,
+  },
 ];
 
 export {
   tasks,
-  Prac06,
-  Prac07,
-  Task11,
   Prac08,
   Prac09,
   Prac10,

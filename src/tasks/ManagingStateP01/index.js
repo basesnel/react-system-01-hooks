@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Prac01 from './Prac01';
 import Prac02 from './Prac02';
 import Prac03 from './Prac03';
@@ -18,10 +19,23 @@ import Task07 from './Task07';
 import Task08 from './Task08';
 import Task09 from './Task09';
 
+const tasks = [
+  {
+    title: <H level={2}>prac 01: reacting to input with state</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac 02: mocking up from</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac 03: “living styleguides” or “storybooks”</H>,
+    task: <Prac03 />,
+  },
+];
+
 export {
-  Prac01,
-  Prac02,
-  Prac03,
+  tasks,
   Prac04,
   Prac05,
   Prac06,

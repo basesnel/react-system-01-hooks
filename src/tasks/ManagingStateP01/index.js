@@ -32,20 +32,38 @@ const tasks = [
     title: <H level={2}>prac 03: “living styleguides” or “storybooks”</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>task 01: add and remove a css class</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: profile editor</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>task 03: profile editor without react</H>,
+    task: <Task03 />,
+  },
+  {
+    title: <H level={2}>prac 04: redundant state</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>prac 05: group related state</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: avoid contradictions in state</H>,
+    task: <Prac06 />,
+  },
 ];
 
 export {
   tasks,
-  Prac04,
-  Prac05,
-  Prac06,
   Prac07,
   Prac08,
   Prac09,
   Prac10,
-  Task01,
-  Task02,
-  Task03,
   Task04,
   Task05,
   Task06,

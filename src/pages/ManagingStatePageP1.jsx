@@ -5,16 +5,10 @@ import { managingStateP1 } from 'tasks';
 const ManagingStatePageP1 = () => {
   const {
     tasks,
-    Prac04,
-    Prac05,
-    Prac06,
     Prac07,
     Prac08,
     Prac09,
     Prac10,
-    Task01,
-    Task02,
-    Task03,
     Task04,
     Task05,
     Task06,
@@ -36,24 +30,6 @@ const ManagingStatePageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="task 01: add and remove a css class">
-            <Task01 />
-          </Card>
-          <Card title="task 02: profile editor">
-            <Task02 />
-          </Card>
-          <Card title="task 03: profile editor without react">
-            <Task03 />
-          </Card>
-          <Card title="prac 04: redundant state">
-            <Prac04 />
-          </Card>
-          <Card title="prac 05: group related state">
-            <Prac05 />
-          </Card>
-          <Card title="prac 06: avoid contradictions in state">
-            <Prac06 />
-          </Card>
           <Card title="prac 07: avoid dublication in state">
             <Prac07 />
           </Card>

@@ -3,18 +3,7 @@ import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
-  const {
-    tasks,
-    Prac08,
-    Prac09,
-    Prac10,
-    Prac11,
-    Prac12,
-    Prac13,
-    Task12,
-    Task13,
-    Task14,
-  } = escapeHatchesP02;
+  const { tasks, Task12, Task13, Task14 } = escapeHatchesP02;
 
   return (
     <Main>
@@ -32,24 +21,6 @@ const EscapeHatchesPageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 08: experiment with effect dependancy">
-            <Prac08 />
-          </Card>
-          <Card title="prac 09: does some reactive value change unintentionally?">
-            <Prac09 />
-          </Card>
-          <Card title="prac 10: move static object outside component">
-            <Prac10 />
-          </Card>
-          <Card title="prac 11: object works as function">
-            <Prac11 />
-          </Card>
-          <Card title="prac 12: move dynamic objecct inside effect">
-            <Prac12 />
-          </Card>
-          <Card title="prac 13: move dynamic objecct inside effect (by function)">
-            <Prac13 />
-          </Card>
           <Card title="task 12: fix a resetting interval">
             <Task12 />
           </Card>

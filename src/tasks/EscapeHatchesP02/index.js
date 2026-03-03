@@ -100,17 +100,30 @@ const tasks = [
     title: <H level={2}>task 11: fix variable that doesn't update</H>,
     task: <Task11 />,
   },
+  {
+    title: <H level={2}>prac 08: experiment with effect dependancy</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac 09: does some value change unintentionally?</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>prac 10: move static object outside component</H>,
+    task: <Prac10 />,
+  },
+  {
+    title: <H level={2}>prac 11: object works as function</H>,
+    task: <Prac11 />,
+  },
+  {
+    title: <H level={2}>prac 12: move dynamic objecct inside effect</H>,
+    task: <Prac12 />,
+  },
+  {
+    title: <H level={2}>prac 13: move dynamic objecct inside effect</H>,
+    task: <Prac13 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac08,
-  Prac09,
-  Prac10,
-  Prac11,
-  Prac12,
-  Prac13,
-  Task12,
-  Task13,
-  Task14,
-};
+export { tasks, Task12, Task13, Task14 };

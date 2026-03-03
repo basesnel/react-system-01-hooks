@@ -124,6 +124,18 @@ const tasks = [
     title: <H level={2}>prac 13: move dynamic objecct inside effect</H>,
     task: <Prac13 />,
   },
+  {
+    title: <H level={2}>task 12: fix a resetting interval</H>,
+    task: <Task12 />,
+  },
+  {
+    title: <H level={2}>task 13: fix a reconnecting chat</H>,
+    task: <Task13 />,
+  },
+  {
+    title: <H level={2}>task 14: fix a reconnecting chat II variant</H>,
+    task: <Task14 />,
+  },
 ];
 
-export { tasks, Task12, Task13, Task14 };
+export { tasks };

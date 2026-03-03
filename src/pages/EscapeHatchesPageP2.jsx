@@ -1,9 +1,9 @@
-import { Main, Container, P, Grid, Card, Card2, H } from 'components';
+import { Main, Container, P, Grid, Card2, H } from 'components';
 
 import { escapeHatchesP02 } from 'tasks';
 
 const EscapeHatchesPageP2 = () => {
-  const { tasks, Task12, Task13, Task14 } = escapeHatchesP02;
+  const { tasks } = escapeHatchesP02;
 
   return (
     <Main>
@@ -21,15 +21,6 @@ const EscapeHatchesPageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="task 12: fix a resetting interval">
-            <Task12 />
-          </Card>
-          <Card title="task 13: fix a reconnecting chat">
-            <Task13 />
-          </Card>
-          <Card title="task 14: fix a reconnecting chat II variant">
-            <Task14 />
-          </Card>
         </Grid>
       </Container>
     </Main>

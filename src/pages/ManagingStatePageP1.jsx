@@ -3,19 +3,8 @@ import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 import { managingStateP1 } from 'tasks';
 
 const ManagingStatePageP1 = () => {
-  const {
-    tasks,
-    Prac07,
-    Prac08,
-    Prac09,
-    Prac10,
-    Task04,
-    Task05,
-    Task06,
-    Task07,
-    Task08,
-    Task09,
-  } = managingStateP1;
+  const { tasks, Task04, Task05, Task06, Task07, Task08, Task09 } =
+    managingStateP1;
 
   return (
     <Main>
@@ -30,18 +19,6 @@ const ManagingStatePageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 07: avoid dublication in state">
-            <Prac07 />
-          </Card>
-          <Card title="prac 08: avoid deeply nested state">
-            <Prac08 />
-          </Card>
-          <Card title="prac 09: avoid deeply nested state">
-            <Prac09 />
-          </Card>
-          <Card title="prac 10: avoid deeply nested state (using immer)">
-            <Prac10 />
-          </Card>
           <Card title="task 04: fix a component that's not updating">
             <Task04 />
           </Card>

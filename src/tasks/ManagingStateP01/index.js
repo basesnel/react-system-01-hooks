@@ -56,18 +56,22 @@ const tasks = [
     title: <H level={2}>prac 06: avoid contradictions in state</H>,
     task: <Prac06 />,
   },
+  {
+    title: <H level={2}>prac 07: avoid dublication in state</H>,
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>prac 08: avoid deeply nested state</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac 09: avoid deeply nested state</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>prac 10: avoid deeply nested state (using immer)</H>,
+    task: <Prac10 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac07,
-  Prac08,
-  Prac09,
-  Prac10,
-  Task04,
-  Task05,
-  Task06,
-  Task07,
-  Task08,
-  Task09,
-};
+export { tasks, Task04, Task05, Task06, Task07, Task08, Task09 };

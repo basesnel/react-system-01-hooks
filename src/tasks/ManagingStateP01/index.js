@@ -72,6 +72,30 @@ const tasks = [
     title: <H level={2}>prac 10: avoid deeply nested state (using immer)</H>,
     task: <Prac10 />,
   },
+  {
+    title: <H level={2}>task 04: fix a component that's not updating</H>,
+    task: <Task04 />,
+  },
+  {
+    title: <H level={2}>task 05: fix a brocken packing list</H>,
+    task: <Task05 />,
+  },
+  {
+    title: <H level={2}>task 06: fix the disappearing selection</H>,
+    task: <Task06 />,
+  },
+  {
+    title: <H level={2}>task 07: impliment multiple selection</H>,
+    task: <Task07 />,
+  },
+  {
+    title: <H level={2}>task 08: impliment multiple selection (alternate)</H>,
+    task: <Task08 />,
+  },
+  {
+    title: <H level={2}>task 09: impliment multiple selection (alternate)</H>,
+    task: <Task09 />,
+  },
 ];
 
-export { tasks, Task04, Task05, Task06, Task07, Task08, Task09 };
+export { tasks };

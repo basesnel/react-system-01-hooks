@@ -1,10 +1,9 @@
-import { Main, Container, P, Grid, Card, Card2, H } from 'components';
+import { Main, Container, P, Grid, Card2, H } from 'components';
 
 import { managingStateP1 } from 'tasks';
 
 const ManagingStatePageP1 = () => {
-  const { tasks, Task04, Task05, Task06, Task07, Task08, Task09 } =
-    managingStateP1;
+  const { tasks } = managingStateP1;
 
   return (
     <Main>
@@ -19,24 +18,6 @@ const ManagingStatePageP1 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="task 04: fix a component that's not updating">
-            <Task04 />
-          </Card>
-          <Card title="task 05: fix a brocken packing list">
-            <Task05 />
-          </Card>
-          <Card title="task 06: fix the disappearing selection">
-            <Task06 />
-          </Card>
-          <Card title="task 07: impliment multiple selection">
-            <Task07 />
-          </Card>
-          <Card title="task 08: impliment multiple selection (alternate)">
-            <Task08 />
-          </Card>
-          <Card title="task 09: impliment multiple selection (alternate)">
-            <Task09 />
-          </Card>
         </Grid>
       </Container>
     </Main>

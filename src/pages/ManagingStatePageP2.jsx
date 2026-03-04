@@ -5,7 +5,6 @@ import { managingStateP2 } from 'tasks';
 const ManagingStatePageP2 = () => {
   const {
     tasks,
-    Prac04,
     Prac05,
     Prac06,
     Prac07,
@@ -17,8 +16,6 @@ const ManagingStatePageP2 = () => {
     Prac13,
     Prac14,
     Prac15,
-    Task01,
-    Task02,
     Task03,
     Task04,
     Task05,
@@ -39,15 +36,6 @@ const ManagingStatePageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="task 01: synced inputs">
-            <Task01 />
-          </Card>
-          <Card title="task 02: filtering a list">
-            <Task02 />
-          </Card>
-          <Card title="prac 04: state is tied to a position in the render tree">
-            <Prac04 />
-          </Card>
           <Card title="prac 05: group related state">
             <Prac05 />
           </Card>

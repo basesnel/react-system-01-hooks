@@ -35,11 +35,22 @@ const tasks = [
     title: <H level={2}>prac 03: set up lifting state up</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>task 01: synced inputs</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: filtering a list</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>prac 04: state is tied to a render tree position</H>,
+    task: <Prac04 />,
+  },
 ];
 
 export {
   tasks,
-  Prac04,
   Prac05,
   Prac06,
   Prac07,
@@ -51,8 +62,6 @@ export {
   Prac13,
   Prac14,
   Prac15,
-  Task01,
-  Task02,
   Task03,
   Task04,
   Task05,

@@ -1,12 +1,10 @@
-import { Main, Container, P, Grid, Card, H } from 'components';
+import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 
 import { managingStateP2 } from 'tasks';
 
 const ManagingStatePageP2 = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
+    tasks,
     Prac04,
     Prac05,
     Prac06,
@@ -36,15 +34,11 @@ const ManagingStatePageP2 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: lifting state up">
-            <Prac01 />
-          </Card>
-          <Card title="prac 02: pass hardcoded value">
-            <Prac02 />
-          </Card>
-          <Card title="prac 03: set up lifting state up">
-            <Prac03 />
-          </Card>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
           <Card title="task 01: synced inputs">
             <Task01 />
           </Card>

@@ -5,9 +5,6 @@ import { managingStateP2 } from 'tasks';
 const ManagingStatePageP2 = () => {
   const {
     tasks,
-    Prac05,
-    Prac06,
-    Prac07,
     Prac08,
     Prac09,
     Prac10,
@@ -36,15 +33,6 @@ const ManagingStatePageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 05: group related state">
-            <Prac05 />
-          </Card>
-          <Card title="prac 06: same component at the same position preserves state">
-            <Prac06 />
-          </Card>
-          <Card title="prac 07: pitfall of the position in the ui-tree">
-            <Prac07 />
-          </Card>
           <Card title="prac 08: diffrent components at the same position reset state">
             <Prac08 />
           </Card>

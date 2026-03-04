@@ -47,13 +47,22 @@ const tasks = [
     title: <H level={2}>prac 04: state is tied to a render tree position</H>,
     task: <Prac04 />,
   },
+  {
+    title: <H level={2}>prac 05: group related state</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: component preserves state (the same place)</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: <H level={2}>prac 07: pitfall of the position in the ui-tree</H>,
+    task: <Prac07 />,
+  },
 ];
 
 export {
   tasks,
-  Prac05,
-  Prac06,
-  Prac07,
   Prac08,
   Prac09,
   Prac10,

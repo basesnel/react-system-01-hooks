@@ -3,19 +3,7 @@ import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 import { managingStateP2 } from 'tasks';
 
 const ManagingStatePageP2 = () => {
-  const {
-    tasks,
-    Prac11,
-    Prac12,
-    Prac13,
-    Prac14,
-    Prac15,
-    Task03,
-    Task04,
-    Task05,
-    Task06,
-    Task07,
-  } = managingStateP2;
+  const { tasks, Task03, Task04, Task05, Task06, Task07 } = managingStateP2;
 
   return (
     <Main>
@@ -30,21 +18,6 @@ const ManagingStatePageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 11: resetting state at the same position">
-            <Prac11 />
-          </Card>
-          <Card title="prac 12: resetting a component in diffrent positions - option 1">
-            <Prac12 />
-          </Card>
-          <Card title="prac 13: resetting state with a key - option 2">
-            <Prac13 />
-          </Card>
-          <Card title="prac 14: resetting a form with key">
-            <Prac14 />
-          </Card>
-          <Card title="prac 15: resetting a form with key - fixed">
-            <Prac15 />
-          </Card>
           <Card title="task 03: fix disappering input text">
             <Task03 />
           </Card>

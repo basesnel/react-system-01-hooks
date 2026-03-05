@@ -71,18 +71,26 @@ const tasks = [
     title: <H level={2}>prac 10: pitfall of nest component definition</H>,
     task: <Prac10 />,
   },
+  {
+    title: <H level={2}>prac 11: resetting state at the same position</H>,
+    task: <Prac11 />,
+  },
+  {
+    title: <H level={2}>prac 12: resetting in diff. places - option 1</H>,
+    task: <Prac12 />,
+  },
+  {
+    title: <H level={2}>prac 13: resetting state with a key - option 2</H>,
+    task: <Prac13 />,
+  },
+  {
+    title: <H level={2}>prac 14: resetting a form with key</H>,
+    task: <Prac14 />,
+  },
+  {
+    title: <H level={2}>prac 15: resetting a form with key - fixed</H>,
+    task: <Prac15 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac11,
-  Prac12,
-  Prac13,
-  Prac14,
-  Prac15,
-  Task03,
-  Task04,
-  Task05,
-  Task06,
-  Task07,
-};
+export { tasks, Task03, Task04, Task05, Task06, Task07 };

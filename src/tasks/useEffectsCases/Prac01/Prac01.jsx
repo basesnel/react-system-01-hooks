@@ -10,7 +10,7 @@ const Prac01 = () => {
 
   return (
     <>
-      <FlexBox align="flex-end">
+      <FlexBox align="flex-end" wrapped="wrap">
         <Select
           label="Choose the chat room: "
           name="ChatP01"

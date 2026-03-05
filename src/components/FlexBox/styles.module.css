@@ -11,14 +11,17 @@
 }
 
 .wrap {
+  composes: flexed;
   flex-wrap: wrap;
 }
 
 .nowrap {
+  composes: flexed;
   flex-wrap: nowrap;
 }
 
 .wrap-reverse {
+  composes: flexed;
   flex-wrap: wrap-reverse;
 }
 

@@ -4,15 +4,14 @@ import styles from './styles.module.css';
 
 const FlexBox = props => {
   const { direction, align, wrapped, children } = props;
+  const { flexed } = styles;
 
-  const alignItems = align ? `${styles[align]}` : '';
   const directionItems = direction ? `${styles[direction]}` : '';
-  const wrapItems = wrapped ? `${styles[wrapped]}` : '';
+  const alignItems = align ? `${styles[align]}` : '';
+  const wrapItems = wrapped ? `${styles[wrapped]}` : flexed;
 
   return (
-    <div
-      className={`${styles.flexed} ${directionItems} ${alignItems} ${wrapItems}`}
-    >
+    <div className={`${directionItems} ${alignItems} ${wrapItems}`}>
       {children}
     </div>
   );

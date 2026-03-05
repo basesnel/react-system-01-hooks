@@ -5,9 +5,6 @@ import { managingStateP2 } from 'tasks';
 const ManagingStatePageP2 = () => {
   const {
     tasks,
-    Prac08,
-    Prac09,
-    Prac10,
     Prac11,
     Prac12,
     Prac13,
@@ -33,15 +30,6 @@ const ManagingStatePageP2 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 08: diffrent components at the same position reset state">
-            <Prac08 />
-          </Card>
-          <Card title="prac 09: resetting state in the component's subtree">
-            <Prac09 />
-          </Card>
-          <Card title="prac 10: pitfall of nest component definition">
-            <Prac10 />
-          </Card>
           <Card title="prac 11: resetting state at the same position">
             <Prac11 />
           </Card>

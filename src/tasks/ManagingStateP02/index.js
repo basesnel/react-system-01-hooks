@@ -59,13 +59,22 @@ const tasks = [
     title: <H level={2}>prac 07: pitfall of the position in the ui-tree</H>,
     task: <Prac07 />,
   },
+  {
+    title: <H level={2}>prac 08: diffrent components reset state</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac 09: resetting state in the component's subtree</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>prac 10: pitfall of nest component definition</H>,
+    task: <Prac10 />,
+  },
 ];
 
 export {
   tasks,
-  Prac08,
-  Prac09,
-  Prac10,
   Prac11,
   Prac12,
   Prac13,

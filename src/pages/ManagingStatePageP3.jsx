@@ -1,12 +1,10 @@
-import { Main, Container, P, Grid, Card, H } from 'components';
+import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 
 import { managingStateP3 } from 'tasks';
 
 const ManagingStatePageP3 = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
+    tasks,
     Prac04,
     Prac05,
     Prac06,
@@ -31,15 +29,11 @@ const ManagingStatePageP3 = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title="prac 01: tasks by usestate-hook">
-            <Prac01 />
-          </Card>
-          <Card title="prac 02: tasks by usereducer-hook">
-            <Prac02 />
-          </Card>
-          <Card title="prac 03: tasks with extracted tasksReducer">
-            <Prac03 />
-          </Card>
+          {tasks.map(({ title, task }, i) => (
+            <Card2 key={i} title={title}>
+              {task}
+            </Card2>
+          ))}
           <Card title="prac 04: tasks with extracted tasksReducer - by useImmerReducer">
             <Prac04 />
           </Card>
@@ -82,33 +76,6 @@ const ManagingStatePageP3 = () => {
           <Card title="prac 11: combining a reducer with context - processing">
             <Prac11 />
           </Card>
-          {/* <Card title="prac 12: resetting a component in diffrent positions - option 1">
-            <Prac12 />
-          </Card>
-          <Card title="prac 13: resetting state with a key - option 2">
-            <Prac13 />
-          </Card>
-          <Card title="prac 14: resetting a form with key">
-            <Prac14 />
-          </Card>
-          <Card title="prac 15: resetting a form with key - fixed">
-            <Prac15 />
-          </Card>
-          <Card title="task 03: fix disappering input text">
-            <Task03 />
-          </Card>
-          <Card title="task 04: fix a component that's not updating">
-            <Task04 />
-          </Card>
-          <Card title="task 05: reset a detail form">
-            <Task05 />
-          </Card>
-          <Card title="task 06: clear an image while it's loading">
-            <Task06 />
-          </Card>
-          <Card title="task 07: fix misplaced state in the list">
-            <Task07 />
-          </Card> */}
         </Grid>
       </Container>
     </Main>

@@ -91,6 +91,26 @@ const tasks = [
     title: <H level={2}>prac 15: resetting a form with key - fixed</H>,
     task: <Prac15 />,
   },
+  {
+    title: <H level={2}>task 03: fix disappering input text</H>,
+    task: <Task03 />,
+  },
+  {
+    title: <H level={2}>task 04: fix a component that's not updating</H>,
+    task: <Task04 />,
+  },
+  {
+    title: <H level={2}>task 05: reset a detail form</H>,
+    task: <Task05 />,
+  },
+  {
+    title: <H level={2}>task 06: clear an image while it's loading</H>,
+    task: <Task06 />,
+  },
+  {
+    title: <H level={2}>task 07: fix misplaced state in the list</H>,
+    task: <Task07 />,
+  },
 ];
 
-export { tasks, Task03, Task04, Task05, Task06, Task07 };
+export { tasks };

@@ -54,16 +54,18 @@ const tasks = [
     title: <H level={2}>task 04: implement useReducer from scratch</H>,
     task: <Task04 />,
   },
+  {
+    title: <H level={2}>prac 05: context: an alternative to passing props</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: multiple headings</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: <H level={2}>prac 07: craating a context</H>,
+    task: <Prac07 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac05,
-  Prac06,
-  Prac07,
-  Prac08,
-  Prac09,
-  Prac10,
-  Prac11,
-  Task05,
-};
+export { tasks, Prac08, Prac09, Prac10, Prac11, Task05 };

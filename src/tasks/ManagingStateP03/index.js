@@ -30,11 +30,34 @@ const tasks = [
     title: <H level={2}>prac 03: tasks with extracted tasksReducer</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>prac 04: the same tasks - by useImmerReducer</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>task 01: dispatch actions from event handlers</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: clear the input on sending a message</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>task 02: the same task, variant 2</H>,
+    task: <Task02V2 />,
+  },
+  {
+    title: <H level={2}>task 03: restore input values by tabs switching</H>,
+    task: <Task03 />,
+  },
+  {
+    title: <H level={2}>task 04: implement useReducer from scratch</H>,
+    task: <Task04 />,
+  },
 ];
 
 export {
   tasks,
-  Prac04,
   Prac05,
   Prac06,
   Prac07,
@@ -42,10 +65,5 @@ export {
   Prac09,
   Prac10,
   Prac11,
-  Task01,
-  Task02,
-  Task02V2,
-  Task03,
-  Task04,
   Task05,
 };

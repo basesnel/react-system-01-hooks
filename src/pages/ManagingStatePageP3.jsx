@@ -5,7 +5,6 @@ import { managingStateP3 } from 'tasks';
 const ManagingStatePageP3 = () => {
   const {
     tasks,
-    Prac04,
     Prac05,
     Prac06,
     Prac07,
@@ -13,11 +12,6 @@ const ManagingStatePageP3 = () => {
     Prac09,
     Prac10,
     Prac11,
-    Task01,
-    Task02,
-    Task02V2,
-    Task03,
-    Task04,
     Task05,
   } = managingStateP3;
 
@@ -34,24 +28,6 @@ const ManagingStatePageP3 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 04: tasks with extracted tasksReducer - by useImmerReducer">
-            <Prac04 />
-          </Card>
-          <Card title="task 01: dispatch actions from event handlers">
-            <Task01 />
-          </Card>
-          <Card title="task 02: clear the input on sending a message">
-            <Task02 />
-          </Card>
-          <Card title="task 02: clear the input on sending a message, variant 2">
-            <Task02V2 />
-          </Card>
-          <Card title="task 03: restore input values when switching between tabs">
-            <Task03 />
-          </Card>
-          <Card title="task 04: implement useReducer from scratch">
-            <Task04 />
-          </Card>
           <Card title="prac 05: context: an alternative to passing props">
             <Prac05 />
           </Card>

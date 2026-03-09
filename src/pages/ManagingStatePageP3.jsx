@@ -3,7 +3,7 @@ import { Main, Container, P, Grid, Card, Card2, H } from 'components';
 import { managingStateP3 } from 'tasks';
 
 const ManagingStatePageP3 = () => {
-  const { tasks, Prac08, Prac09, Prac10, Prac11, Task05 } = managingStateP3;
+  const { tasks, Prac10, Prac11 } = managingStateP3;
 
   return (
     <Main>
@@ -18,15 +18,6 @@ const ManagingStatePageP3 = () => {
               {task}
             </Card2>
           ))}
-          <Card title="prac 08: using and providing context from the same component">
-            <Prac08 />
-          </Card>
-          <Card title="prac 09: context pass throgh intermediate components">
-            <Prac09 />
-          </Card>
-          <Card title="task 05: replace prop drilling with context">
-            <Task05 />
-          </Card>
           <Card title="prac 10: combining a reducer with context - init">
             <Prac10 />
           </Card>

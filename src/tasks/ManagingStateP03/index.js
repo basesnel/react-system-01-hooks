@@ -66,6 +66,18 @@ const tasks = [
     title: <H level={2}>prac 07: craating a context</H>,
     task: <Prac07 />,
   },
+  {
+    title: <H level={2}>prac 08: providing context from the same component</H>,
+    task: <Prac08 />,
+  },
+  {
+    title: <H level={2}>prac 09: context through intermediate components</H>,
+    task: <Prac09 />,
+  },
+  {
+    title: <H level={2}>task 05: replace prop drilling with context</H>,
+    task: <Task05 />,
+  },
 ];
 
-export { tasks, Prac08, Prac09, Prac10, Prac11, Task05 };
+export { tasks, Prac10, Prac11 };

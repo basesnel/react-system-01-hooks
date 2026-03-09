@@ -78,6 +78,14 @@ const tasks = [
     title: <H level={2}>task 05: replace prop drilling with context</H>,
     task: <Task05 />,
   },
+  {
+    title: <H level={2}>prac 10: combining a reducer with context - init</H>,
+    task: <Prac10 />,
+  },
+  {
+    title: <H level={2}>prac 11: combining a reducer with context</H>,
+    task: <Prac11 />,
+  },
 ];
 
-export { tasks, Prac10, Prac11 };
+export { tasks };

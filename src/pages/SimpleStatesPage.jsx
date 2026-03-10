@@ -1,4 +1,4 @@
-import { Main, Container, H, P, Grid, Card2 } from 'components';
+import { Main, Container, H, P, Grid, Card } from 'components';
 
 import { simpleStates } from 'tasks';
 
@@ -14,9 +14,9 @@ const SimpleStatesPage = () => {
       <Container>
         <Grid>
           {tasks.map(({ title, task }, i) => (
-            <Card2 key={i} title={title}>
+            <Card key={i} title={title}>
               {task}
-            </Card2>
+            </Card>
           ))}
         </Grid>
       </Container>

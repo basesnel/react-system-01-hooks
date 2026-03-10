@@ -1,4 +1,4 @@
-import { Main, Container, P, Grid, Card2, H } from 'components';
+import { Main, Container, P, Grid, Card, H } from 'components';
 
 import { useEffectsCases } from 'tasks';
 
@@ -14,9 +14,9 @@ const UseEffectsPage = () => {
       <Container>
         <Grid>
           {tasks.map(({ title, task }, i) => (
-            <Card2 key={i} title={title}>
+            <Card key={i} title={title}>
               {task}
-            </Card2>
+            </Card>
           ))}
         </Grid>
       </Container>

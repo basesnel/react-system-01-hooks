@@ -3,18 +3,7 @@ import { Container, H, P, Grid, Card, Main } from 'components';
 import { arrayInState } from 'tasks';
 
 const ArrayInStatePage = () => {
-  const {
-    tasks,
-    Prac04,
-    Prac05,
-    Prac06,
-    Prac07,
-    Prac08,
-    Task01,
-    Task02,
-    Task03,
-    Task04,
-  } = arrayInState;
+  const { tasks, Task01, Task02, Task03, Task04 } = arrayInState;
 
   return (
     <Main>
@@ -29,29 +18,6 @@ const ArrayInStatePage = () => {
               {task}
             </Card>
           ))}
-          <Card title={<H level={2}>prac 04: replacing items in an array</H>}>
-            <Prac04 />
-          </Card>
-          <Card title={<H level={2}>prac 05: inserting into an array</H>}>
-            <Prac05 />
-          </Card>
-          <Card
-            title={<H level={2}>prac 06: making other changes to an array</H>}
-          >
-            <Prac06 />
-          </Card>
-          <Card
-            title={<H level={2}>prac 07: updating objects inside arrays</H>}
-          >
-            <Prac07 />
-          </Card>
-          <Card
-            title={
-              <H level={2}>prac 08: write concise update logic with immer</H>
-            }
-          >
-            <Prac08 />
-          </Card>
           <Card
             title={
               <H level={2}>task 01: update an item in the shopping cart</H>

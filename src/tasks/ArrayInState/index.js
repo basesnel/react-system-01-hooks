@@ -25,17 +25,26 @@ const tasks = [
     title: <H level={2}>prac 03: transforming an array</H>,
     task: <Prac03 />,
   },
+  {
+    title: <H level={2}>prac 04: replacing items in an array</H>,
+    task: <Prac04 />,
+  },
+  {
+    title: <H level={2}>prac 05: inserting into an array</H>,
+    task: <Prac05 />,
+  },
+  {
+    title: <H level={2}>prac 06: making other changes to an array</H>,
+    task: <Prac06 />,
+  },
+  {
+    title: <H level={2}>prac 07: updating objects inside arrays</H>,
+    task: <Prac07 />,
+  },
+  {
+    title: <H level={2}>prac 08: write concise update logic with immer</H>,
+    task: <Prac08 />,
+  },
 ];
 
-export {
-  tasks,
-  Prac04,
-  Prac05,
-  Prac06,
-  Prac07,
-  Prac08,
-  Task01,
-  Task02,
-  Task03,
-  Task04,
-};
+export { tasks, Task01, Task02, Task03, Task04 };

@@ -1,3 +1,4 @@
+import { H } from 'components';
 import Prac01 from './Prac01';
 import Prac02 from './Prac02';
 import Prac03 from './Prac03';
@@ -11,10 +12,23 @@ import Task02 from './Task02';
 import Task03 from './Task03';
 import Task04 from './Task04';
 
+const tasks = [
+  {
+    title: <H level={2}>prac 01: adding to an array</H>,
+    task: <Prac01 />,
+  },
+  {
+    title: <H level={2}>prac 02: removing from an array</H>,
+    task: <Prac02 />,
+  },
+  {
+    title: <H level={2}>prac 03: transforming an array</H>,
+    task: <Prac03 />,
+  },
+];
+
 export {
-  Prac01,
-  Prac02,
-  Prac03,
+  tasks,
   Prac04,
   Prac05,
   Prac06,

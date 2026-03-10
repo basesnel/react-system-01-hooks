@@ -4,9 +4,7 @@ import { arrayInState } from 'tasks';
 
 const ArrayInStatePage = () => {
   const {
-    Prac01,
-    Prac02,
-    Prac03,
+    tasks,
     Prac04,
     Prac05,
     Prac06,
@@ -26,15 +24,11 @@ const ArrayInStatePage = () => {
       </Container>
       <Container>
         <Grid>
-          <Card title={<H level={2}>prac 01: adding to an array</H>}>
-            <Prac01 />
-          </Card>
-          <Card title={<H level={2}>prac 02: removing from an array</H>}>
-            <Prac02 />
-          </Card>
-          <Card title={<H level={2}>prac 03: transforming an array</H>}>
-            <Prac03 />
-          </Card>
+          {tasks.map(({ title, task }, i) => (
+            <Card key={i} title={title}>
+              {task}
+            </Card>
+          ))}
           <Card title={<H level={2}>prac 04: replacing items in an array</H>}>
             <Prac04 />
           </Card>

@@ -45,6 +45,22 @@ const tasks = [
     title: <H level={2}>prac 08: write concise update logic with immer</H>,
     task: <Prac08 />,
   },
+  {
+    title: <H level={2}>task 01: update an item in the shopping cart</H>,
+    task: <Task01 />,
+  },
+  {
+    title: <H level={2}>task 02: remove an item in the shopping cart</H>,
+    task: <Task02 />,
+  },
+  {
+    title: <H level={2}>task 03: fix the mutations by non-mutative methods</H>,
+    task: <Task03 />,
+  },
+  {
+    title: <H level={2}>task 04: fix the mutations using immer</H>,
+    task: <Task04 />,
+  },
 ];
 
-export { tasks, Task01, Task02, Task03, Task04 };
+export { tasks };

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styles from './styles.module.css';
 
 const Linput = props => {
-  const { label, type, name, value, onChange } = props;
+  const { label, type, name, value, onChange, disabled } = props;
 
   return (
     <label className={styles.label}>
@@ -16,6 +16,7 @@ const Linput = props => {
         value={value}
         onChange={onChange}
         placeholder={label}
+        disabled={disabled}
       />
     </label>
   );
@@ -27,6 +28,7 @@ Linput.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,
+  disabled: PropTypes.bool,
 };
 
 Linput.defaultProps = {
@@ -35,6 +37,7 @@ Linput.defaultProps = {
   name: 'name',
   value: null,
   onChange: null,
+  disabled: false,
 };
 
 export default Linput;

@@ -23,8 +23,7 @@ const Linput = props => {
 
 Linput.propTypes = {
   label: PropTypes.string.isRequired,
-  type: PropTypes.oneOf(['text', 'password', 'file', 'email', 'url', 'tel'])
-    .isRequired,
+  type: PropTypes.oneOf(['text', 'password', 'file', 'email', 'url', 'tel']),
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func,

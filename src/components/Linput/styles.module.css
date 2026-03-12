@@ -5,7 +5,7 @@
 @value color-text, color-accent, color-text-opacity from colors;
 @value transition from animations;
 
-.label {
+.caption {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -18,13 +18,13 @@
   transition: transition;
 }
 
-.label:hover,
-.label:focus {
+.caption:hover,
+.caption:focus {
   color: color-accent;
 }
 
-.label:last-child,
-.label:only-child {
+.caption:last-child,
+.caption:only-child {
   margin: 0 0 0;
 }
 
@@ -37,8 +37,8 @@
   transition: transition;
 }
 
-.label:hover .input:not(:disabled),
-.label:focus .input:not(:disabled) {
+.caption:hover .input:not(:disabled),
+.caption:focus .input:not(:disabled) {
   color: color-accent;
   border: 1px solid color-accent;
 }
@@ -55,7 +55,7 @@
 }
 
 @media smartphone {
-  .label {
+  .caption {
     flex-direction: row;
     align-items: center;
   }

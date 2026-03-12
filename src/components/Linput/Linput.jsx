@@ -4,12 +4,13 @@ import styles from './styles.module.css';
 
 const Linput = props => {
   const { label, type, name, value, onChange, disabled } = props;
+  const { caption, span, input } = styles;
 
   return (
-    <label className={styles.label}>
-      <span className={styles.span}>{label}: </span>
+    <label className={caption}>
+      <span className={span}>{label}: </span>
       <input
-        className={styles.input}
+        className={input}
         name={name}
         type={type}
         size={4}

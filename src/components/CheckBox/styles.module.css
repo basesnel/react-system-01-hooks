@@ -1,12 +1,16 @@
+@value mediasizes: "../../cssvariables/media.module.css";
+@value smartphone from mediasizes;
+@value fstexts: "../../cssvariables/fstext.module.css";
+@value fstext, fstext-smartphone, fslabel, fslabel-mobile from fstexts;
 @value colors: "../../cssvariables/color.module.css";
 @value color-text, color-accent from colors;
 
 .field {
   display: flex;
-  gap: 5px;
+  gap: 10px;
   width: 100%;
   max-width: 400px;
-  padding: 3px 14px;
+  padding: 14px;
   color: color-text;
 }
 
@@ -15,6 +19,7 @@
 }
 
 .span {
+  font-size: fstext;
   transition: transition;
   cursor: pointer;
 }
@@ -32,4 +37,10 @@
 .check:not(:disabled) + .span:hover,
 .check:not(:disabled) + .span:hover {
   color: color-accent;
+}
+
+@media smartphone {
+  .span {
+    font-size: fstext-smartphone;
+  }
 }

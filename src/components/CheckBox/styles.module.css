@@ -1,11 +1,35 @@
+@value colors: "../../cssvariables/color.module.css";
+@value color-text, color-accent from colors;
+
 .field {
   display: flex;
   gap: 5px;
   width: 100%;
   max-width: 400px;
   padding: 3px 14px;
+  color: color-text;
 }
 
 .check {
   transform: translateY(-1px);
+}
+
+.span {
+  transition: transition;
+  cursor: pointer;
+}
+
+.check:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.check:disabled + .span {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.check:not(:disabled) + .span:hover,
+.check:not(:disabled) + .span:hover {
+  color: color-accent;
 }

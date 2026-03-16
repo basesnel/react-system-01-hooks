@@ -1,8 +1,8 @@
 @value mediasizes: "../../cssvariables/media.module.css";
-@value colors: "../../cssvariables/color.module.css";
 @value smartphone from mediasizes;
-@value animations: "../../cssvariables/animation.module.css";
+@value colors: "../../cssvariables/color.module.css";
 @value color-text, color-accent, color-text-opacity from colors;
+@value animations: "../../cssvariables/animation.module.css";
 @value transition from animations;
 
 .caption {

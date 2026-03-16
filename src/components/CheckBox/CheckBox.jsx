@@ -1,22 +1,22 @@
 import PropTypes from 'prop-types';
 
-import { Span } from 'components';
-
 import styles from './styles.module.css';
 
 const CheckBox = props => {
-  const { name, checked, onChange, label } = props;
+  const { name, checked, onChange, label, disabled } = props;
+  const { field, check, span } = styles;
 
   return (
-    <label className={styles.field}>
+    <label className={field}>
       <input
-        className={styles.check}
+        className={check}
         type="checkbox"
         name={name}
         checked={checked}
         onChange={onChange}
+        disabled={disabled}
       />
-      <Span>{label}</Span>
+      <span className={span}>{label}</span>
     </label>
   );
 };
@@ -26,6 +26,11 @@ CheckBox.propTypes = {
   checked: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
   label: PropTypes.string.isRequired,
+  disabled: PropTypes.bool,
+};
+
+CheckBox.defaultProps = {
+  disabled: false,
 };
 
 export default CheckBox;

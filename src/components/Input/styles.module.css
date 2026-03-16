@@ -1,9 +1,11 @@
 @value mediasizes: "../../cssvariables/media.module.css";
 @value fstexts: "../../cssvariables/fstext.module.css";
 @value colors: "../../cssvariables/color.module.css";
+@value animations: "../../cssvariables/animation.module.css";
 @value mobile, smartphone, desktop from mediasizes;
 @value fstext, fstext-smartphone, fslabel, fslabel-mobile from fstexts;
-@value color-text, color-accent from colors;
+@value color-text, color-accent, color-text-opacity from colors;
+@value transition from animations;
 
 .field {
   position: relative;
@@ -17,7 +19,7 @@
   font-size: fslabel;
   color: color-text;
   cursor: pointer;
-  transition: var(--my-transition);
+  transition: transition;
 }
 
 .field:hover .caption,
@@ -32,7 +34,7 @@
   border: 1px solid color-text;
   font-size: fstext;
   color: color-text;
-  transition: var(--my-transition);
+  transition: transition;
 }
 
 .field:hover .input:not(:disabled),
@@ -42,8 +44,9 @@
 }
 
 .input:disabled {
-  color: var(--color-text-opacity);
-  border: 1px solid var(--color-text-opacity);
+  color: color-text-opacity;
+  border: 1px solid color-text-opacity;
+  cursor: not-allowed;
 }
 
 .pictogram {
@@ -55,7 +58,7 @@
   height: fstext;
   font-size: fstext;
   color: color-text;
-  transition: var(--my-transition);
+  transition: transition;
 }
 
 .field:hover .pictogram,
@@ -64,11 +67,12 @@
 }
 
 .input:disabled + .pictogram {
-  color: var(--color-text-opacity);
+  color: color-text-opacity;
+  cursor: not-allowed;
 }
 
 .caption:has(+ .input:disabled) {
-  color: var(--color-text-opacity);
+  color: color-text-opacity;
   cursor: not-allowed;
 }
 

@@ -1,10 +1,10 @@
 @value mediasizes: "../../cssvariables/media.module.css";
-@value fstexts: "../../cssvariables/fstext.module.css";
-@value colors: "../../cssvariables/color.module.css";
-@value animations: "../../cssvariables/animation.module.css";
 @value mobile, smartphone, desktop from mediasizes;
+@value fstexts: "../../cssvariables/fstext.module.css";
 @value fstext, fstext-smartphone, fslabel, fslabel-mobile from fstexts;
+@value colors: "../../cssvariables/color.module.css";
 @value color-text, color-accent, color-text-opacity from colors;
+@value animations: "../../cssvariables/animation.module.css";
 @value transition from animations;
 
 .field {
